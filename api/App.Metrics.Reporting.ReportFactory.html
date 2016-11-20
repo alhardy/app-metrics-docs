@@ -37,7 +37,7 @@
               <a class="navbar-brand" href="../index.html">
                 <img id="logo" class="svg" src="../logo.png" alt="">
               </a><span class="app-name">App Metrics</span>   
-                 <a href="https://github.com/alhardy/app-metrics" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;z-index:1000;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+                 <a href="https://github.com/alhardy/AppMetrics" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;z-index:1000;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
@@ -79,47 +79,23 @@
                   <div class="level0"><span class="xref">System.Object</span></div>
                   <div class="level1"><span class="xref">ReportFactory</span></div>
               </div>
-              <div class="inheritedMembers">
-                <h5>Inherited Members</h5>
-                <div>
-                  <span class="xref">System.Object.Equals(System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.GetHashCode()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.GetType()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.MemberwiseClone()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.ToString()</span>
-                </div>
-              </div>
               <h6><strong>Namespace</strong>:App.Metrics.Reporting</h6>
               <h6><strong>Assembly</strong>:App.Metrics.dll</h6>
               <h5 id="App_Metrics_Reporting_ReportFactory_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public sealed class ReportFactory : IReportFactory, IDisposable</code></pre>
+                <pre><code class="lang-csharp hljs">public sealed class ReportFactory : object, IReportFactory, IDisposable</code></pre>
               </div>
               <h3 id="constructors">Constructors
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/aspnet-metrics/new/metricsnet-port/docfx_project/apispec/new?filename=App_Metrics_Reporting_ReportFactory__ctor_Microsoft_Extensions_Logging_ILoggerFactory_.md&amp;value=---%0Auid%3A%20App.Metrics.Reporting.ReportFactory.%23ctor(Microsoft.Extensions.Logging.ILoggerFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Reporting_ReportFactory__ctor_ILoggerFactory_.md&amp;value=---%0Auid%3A%20App.Metrics.Reporting.ReportFactory.%23ctor(ILoggerFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/aspnet-metrics/blob/metricsnet-port/src/App.Metrics/Reporting/ReportFactory.cs/#L22">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Reporting/ReportFactory.cs/#L22">View Source</a>
               </span>
               <a id="App_Metrics_Reporting_ReportFactory__ctor_" data-uid="App.Metrics.Reporting.ReportFactory.#ctor*"></a>
-              <h4 id="App_Metrics_Reporting_ReportFactory__ctor_Microsoft_Extensions_Logging_ILoggerFactory_" data-uid="App.Metrics.Reporting.ReportFactory.#ctor(Microsoft.Extensions.Logging.ILoggerFactory)">ReportFactory(ILoggerFactory)</h4>
+              <h4 id="App_Metrics_Reporting_ReportFactory__ctor_ILoggerFactory_" data-uid="App.Metrics.Reporting.ReportFactory.#ctor(ILoggerFactory)">ReportFactory(ILoggerFactory)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
@@ -137,7 +113,7 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">Microsoft.Extensions.Logging.ILoggerFactory</span></td>
+                    <td><span class="xref">ILoggerFactory</span></td>
                     <td><em>loggerFactory</em></td>
                     <td></td>
                   </tr>
@@ -147,10 +123,10 @@
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/aspnet-metrics/new/metricsnet-port/docfx_project/apispec/new?filename=App_Metrics_Reporting_ReportFactory_AddProvider_App_Metrics_Reporting_Interfaces_IReporterProvider_.md&amp;value=---%0Auid%3A%20App.Metrics.Reporting.ReportFactory.AddProvider(App.Metrics.Reporting.Interfaces.IReporterProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Reporting_ReportFactory_AddProvider_App_Metrics_Reporting_Interfaces_IReporterProvider_.md&amp;value=---%0Auid%3A%20App.Metrics.Reporting.ReportFactory.AddProvider(App.Metrics.Reporting.Interfaces.IReporterProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/aspnet-metrics/blob/metricsnet-port/src/App.Metrics/Reporting/ReportFactory.cs/#L27">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Reporting/ReportFactory.cs/#L27">View Source</a>
               </span>
               <a id="App_Metrics_Reporting_ReportFactory_AddProvider_" data-uid="App.Metrics.Reporting.ReportFactory.AddProvider*"></a>
               <h4 id="App_Metrics_Reporting_ReportFactory_AddProvider_App_Metrics_Reporting_Interfaces_IReporterProvider_" data-uid="App.Metrics.Reporting.ReportFactory.AddProvider(App.Metrics.Reporting.Interfaces.IReporterProvider)">AddProvider(IReporterProvider)</h4>
@@ -181,10 +157,10 @@
                   <div><a class="xref" href="App.Metrics.Reporting.Interfaces.IReportFactory.html#App_Metrics_Reporting_Interfaces_IReportFactory_AddProvider_App_Metrics_Reporting_Interfaces_IReporterProvider_">IReportFactory.AddProvider(IReporterProvider)</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/aspnet-metrics/new/metricsnet-port/docfx_project/apispec/new?filename=App_Metrics_Reporting_ReportFactory_CreateReporter.md&amp;value=---%0Auid%3A%20App.Metrics.Reporting.ReportFactory.CreateReporter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Reporting_ReportFactory_CreateReporter.md&amp;value=---%0Auid%3A%20App.Metrics.Reporting.ReportFactory.CreateReporter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/aspnet-metrics/blob/metricsnet-port/src/App.Metrics/Reporting/ReportFactory.cs/#L50">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Reporting/ReportFactory.cs/#L50">View Source</a>
               </span>
               <a id="App_Metrics_Reporting_ReportFactory_CreateReporter_" data-uid="App.Metrics.Reporting.ReportFactory.CreateReporter*"></a>
               <h4 id="App_Metrics_Reporting_ReportFactory_CreateReporter" data-uid="App.Metrics.Reporting.ReportFactory.CreateReporter">CreateReporter()</h4>
@@ -213,10 +189,10 @@
                   <div><a class="xref" href="App.Metrics.Reporting.Interfaces.IReportFactory.html#App_Metrics_Reporting_Interfaces_IReportFactory_CreateReporter">IReportFactory.CreateReporter()</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/aspnet-metrics/new/metricsnet-port/docfx_project/apispec/new?filename=App_Metrics_Reporting_ReportFactory_CreateReporter_App_Metrics_Scheduling_Interfaces_IScheduler_.md&amp;value=---%0Auid%3A%20App.Metrics.Reporting.ReportFactory.CreateReporter(App.Metrics.Scheduling.Interfaces.IScheduler)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Reporting_ReportFactory_CreateReporter_App_Metrics_Scheduling_Interfaces_IScheduler_.md&amp;value=---%0Auid%3A%20App.Metrics.Reporting.ReportFactory.CreateReporter(App.Metrics.Scheduling.Interfaces.IScheduler)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/aspnet-metrics/blob/metricsnet-port/src/App.Metrics/Reporting/ReportFactory.cs/#L40">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Reporting/ReportFactory.cs/#L40">View Source</a>
               </span>
               <a id="App_Metrics_Reporting_ReportFactory_CreateReporter_" data-uid="App.Metrics.Reporting.ReportFactory.CreateReporter*"></a>
               <h4 id="App_Metrics_Reporting_ReportFactory_CreateReporter_App_Metrics_Scheduling_Interfaces_IScheduler_" data-uid="App.Metrics.Reporting.ReportFactory.CreateReporter(App.Metrics.Scheduling.Interfaces.IScheduler)">CreateReporter(IScheduler)</h4>
@@ -262,10 +238,10 @@
                   <div><a class="xref" href="App.Metrics.Reporting.Interfaces.IReportFactory.html#App_Metrics_Reporting_Interfaces_IReportFactory_CreateReporter_App_Metrics_Scheduling_Interfaces_IScheduler_">IReportFactory.CreateReporter(IScheduler)</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/aspnet-metrics/new/metricsnet-port/docfx_project/apispec/new?filename=App_Metrics_Reporting_ReportFactory_Dispose.md&amp;value=---%0Auid%3A%20App.Metrics.Reporting.ReportFactory.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Reporting_ReportFactory_Dispose.md&amp;value=---%0Auid%3A%20App.Metrics.Reporting.ReportFactory.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/aspnet-metrics/blob/metricsnet-port/src/App.Metrics/Reporting/ReportFactory.cs/#L55">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Reporting/ReportFactory.cs/#L55">View Source</a>
               </span>
               <a id="App_Metrics_Reporting_ReportFactory_Dispose_" data-uid="App.Metrics.Reporting.ReportFactory.Dispose*"></a>
               <h4 id="App_Metrics_Reporting_ReportFactory_Dispose" data-uid="App.Metrics.Reporting.ReportFactory.Dispose">Dispose()</h4>
@@ -275,21 +251,6 @@
               <div class="codewrapper">
                 <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
               </div>
-              <h5 class="implements">Implements</h5>
-                  <div><span class="xref">System.IDisposable.Dispose()</span></div>
-              <h3 id="extensionmethods">Extension Methods</h3>
-              <div>
-                  <a class="xref" href="App.Metrics.Extensions.Reporting.Console.ConsoleReporterExtensions.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporterExtensions_AddConsole_App_Metrics_Reporting_Interfaces_IReportFactory_App_Metrics_Extensions_Reporting_Console_IConsoleReporterSettings_App_Metrics_IMetricsFilter_">ConsoleReporterExtensions.AddConsole(IReportFactory, IConsoleReporterSettings, IMetricsFilter)</a>
-              </div>
-              <div>
-                  <a class="xref" href="App.Metrics.Extensions.Reporting.Console.ConsoleReporterExtensions.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporterExtensions_AddConsole_App_Metrics_Reporting_Interfaces_IReportFactory_App_Metrics_IMetricsFilter_">ConsoleReporterExtensions.AddConsole(IReportFactory, IMetricsFilter)</a>
-              </div>
-              <div>
-                  <a class="xref" href="App.Metrics.Extensions.Reporting.TextFile.TextFileReporterExtensions.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporterExtensions_AddTextFile_App_Metrics_Reporting_Interfaces_IReportFactory_App_Metrics_Extensions_Reporting_TextFile_ITextFileReporterSettings_App_Metrics_IMetricsFilter_">TextFileReporterExtensions.AddTextFile(IReportFactory, ITextFileReporterSettings, IMetricsFilter)</a>
-              </div>
-              <div>
-                  <a class="xref" href="App.Metrics.Extensions.Reporting.TextFile.TextFileReporterExtensions.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporterExtensions_AddTextFile_App_Metrics_Reporting_Interfaces_IReportFactory_App_Metrics_IMetricsFilter_">TextFileReporterExtensions.AddTextFile(IReportFactory, IMetricsFilter)</a>
-              </div>
             </article>
           </div>
           
@@ -298,10 +259,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/alhardy/aspnet-metrics/new/metricsnet-port/docfx_project/apispec/new?filename=App_Metrics_Reporting_ReportFactory.md&amp;value=---%0Auid%3A%20App.Metrics.Reporting.ReportFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
+                    <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Reporting_ReportFactory.md&amp;value=---%0Auid%3A%20App.Metrics.Reporting.ReportFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/alhardy/aspnet-metrics/blob/metricsnet-port/src/App.Metrics/Reporting/ReportFactory.cs/#L15" class="contribution-link">View Source</a>
+                    <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Reporting/ReportFactory.cs/#L15" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

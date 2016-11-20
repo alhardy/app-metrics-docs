@@ -37,7 +37,7 @@
               <a class="navbar-brand" href="../index.html">
                 <img id="logo" class="svg" src="../logo.png" alt="">
               </a><span class="app-name">App Metrics</span>   
-                 <a href="https://github.com/alhardy/app-metrics" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;z-index:1000;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+                 <a href="https://github.com/alhardy/AppMetrics" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;z-index:1000;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
@@ -79,44 +79,20 @@
                   <div class="level0"><span class="xref">System.Object</span></div>
                   <div class="level1"><span class="xref">TimerMetric</span></div>
               </div>
-              <div class="inheritedMembers">
-                <h5>Inherited Members</h5>
-                <div>
-                  <span class="xref">System.Object.Equals(System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.GetHashCode()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.GetType()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.MemberwiseClone()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.ToString()</span>
-                </div>
-              </div>
               <h6><strong>Namespace</strong>:App.Metrics.Core</h6>
               <h6><strong>Assembly</strong>:App.Metrics.dll</h6>
               <h5 id="App_Metrics_Core_TimerMetric_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public sealed class TimerMetric : ITimerMetric, ITimer, IResetableMetric, IMetricValueProvider&lt;TimerValue&gt;, IHideObjectMembers, IDisposable</code></pre>
+                <pre><code class="lang-csharp hljs">public sealed class TimerMetric : object, ITimerMetric, ITimer, IResetableMetric, IMetricValueProvider&lt;TimerValue&gt;, IHideObjectMembers, IDisposable</code></pre>
               </div>
               <h3 id="constructors">Constructors
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/aspnet-metrics/new/metricsnet-port/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric__ctor_App_Metrics_Core_Interfaces_IHistogramMetric_App_Metrics_Core_Interfaces_IMeterMetric_App_Metrics_Utils_IClock_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.%23ctor(App.Metrics.Core.Interfaces.IHistogramMetric%2CApp.Metrics.Core.Interfaces.IMeterMetric%2CApp.Metrics.Utils.IClock)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric__ctor_App_Metrics_Core_Interfaces_IHistogramMetric_App_Metrics_Core_Interfaces_IMeterMetric_App_Metrics_Utils_IClock_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.%23ctor(App.Metrics.Core.Interfaces.IHistogramMetric%2CApp.Metrics.Core.Interfaces.IMeterMetric%2CApp.Metrics.Utils.IClock)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/aspnet-metrics/blob/metricsnet-port/src/App.Metrics/Core/TimerMetric.cs/#L73">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Core/TimerMetric.cs/#L73">View Source</a>
               </span>
               <a id="App_Metrics_Core_TimerMetric__ctor_" data-uid="App.Metrics.Core.TimerMetric.#ctor*"></a>
               <h4 id="App_Metrics_Core_TimerMetric__ctor_App_Metrics_Core_Interfaces_IHistogramMetric_App_Metrics_Core_Interfaces_IMeterMetric_App_Metrics_Utils_IClock_" data-uid="App.Metrics.Core.TimerMetric.#ctor(App.Metrics.Core.Interfaces.IHistogramMetric,App.Metrics.Core.Interfaces.IMeterMetric,App.Metrics.Utils.IClock)">TimerMetric(IHistogramMetric, IMeterMetric, IClock)</h4>
@@ -159,10 +135,10 @@
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/aspnet-metrics/new/metricsnet-port/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric__ctor_App_Metrics_Core_Interfaces_IHistogramMetric_App_Metrics_Utils_IClock_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.%23ctor(App.Metrics.Core.Interfaces.IHistogramMetric%2CApp.Metrics.Utils.IClock)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric__ctor_App_Metrics_Core_Interfaces_IHistogramMetric_App_Metrics_Utils_IClock_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.%23ctor(App.Metrics.Core.Interfaces.IHistogramMetric%2CApp.Metrics.Utils.IClock)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/aspnet-metrics/blob/metricsnet-port/src/App.Metrics/Core/TimerMetric.cs/#L41">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Core/TimerMetric.cs/#L41">View Source</a>
               </span>
               <a id="App_Metrics_Core_TimerMetric__ctor_" data-uid="App.Metrics.Core.TimerMetric.#ctor*"></a>
               <h4 id="App_Metrics_Core_TimerMetric__ctor_App_Metrics_Core_Interfaces_IHistogramMetric_App_Metrics_Utils_IClock_" data-uid="App.Metrics.Core.TimerMetric.#ctor(App.Metrics.Core.Interfaces.IHistogramMetric,App.Metrics.Utils.IClock)">TimerMetric(IHistogramMetric, IClock)</h4>
@@ -199,10 +175,10 @@
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/aspnet-metrics/new/metricsnet-port/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric__ctor_App_Metrics_Sampling_Interfaces_IReservoir_App_Metrics_Utils_IClock_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.%23ctor(App.Metrics.Sampling.Interfaces.IReservoir%2CApp.Metrics.Utils.IClock)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric__ctor_App_Metrics_Sampling_Interfaces_IReservoir_App_Metrics_Utils_IClock_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.%23ctor(App.Metrics.Sampling.Interfaces.IReservoir%2CApp.Metrics.Utils.IClock)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/aspnet-metrics/blob/metricsnet-port/src/App.Metrics/Core/TimerMetric.cs/#L51">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Core/TimerMetric.cs/#L51">View Source</a>
               </span>
               <a id="App_Metrics_Core_TimerMetric__ctor_" data-uid="App.Metrics.Core.TimerMetric.#ctor*"></a>
               <h4 id="App_Metrics_Core_TimerMetric__ctor_App_Metrics_Sampling_Interfaces_IReservoir_App_Metrics_Utils_IClock_" data-uid="App.Metrics.Core.TimerMetric.#ctor(App.Metrics.Sampling.Interfaces.IReservoir,App.Metrics.Utils.IClock)">TimerMetric(IReservoir, IClock)</h4>
@@ -239,10 +215,10 @@
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/aspnet-metrics/new/metricsnet-port/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric__ctor_App_Metrics_SamplingType_App_Metrics_Core_Interfaces_IMeterMetric_App_Metrics_Utils_IClock_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.%23ctor(App.Metrics.SamplingType%2CApp.Metrics.Core.Interfaces.IMeterMetric%2CApp.Metrics.Utils.IClock)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric__ctor_App_Metrics_SamplingType_App_Metrics_Core_Interfaces_IMeterMetric_App_Metrics_Utils_IClock_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.%23ctor(App.Metrics.SamplingType%2CApp.Metrics.Core.Interfaces.IMeterMetric%2CApp.Metrics.Utils.IClock)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/aspnet-metrics/blob/metricsnet-port/src/App.Metrics/Core/TimerMetric.cs/#L62">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Core/TimerMetric.cs/#L62">View Source</a>
               </span>
               <a id="App_Metrics_Core_TimerMetric__ctor_" data-uid="App.Metrics.Core.TimerMetric.#ctor*"></a>
               <h4 id="App_Metrics_Core_TimerMetric__ctor_App_Metrics_SamplingType_App_Metrics_Core_Interfaces_IMeterMetric_App_Metrics_Utils_IClock_" data-uid="App.Metrics.Core.TimerMetric.#ctor(App.Metrics.SamplingType,App.Metrics.Core.Interfaces.IMeterMetric,App.Metrics.Utils.IClock)">TimerMetric(SamplingType, IMeterMetric, IClock)</h4>
@@ -285,10 +261,10 @@
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/aspnet-metrics/new/metricsnet-port/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric__ctor_App_Metrics_SamplingType_App_Metrics_Utils_IClock_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.%23ctor(App.Metrics.SamplingType%2CApp.Metrics.Utils.IClock)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric__ctor_App_Metrics_SamplingType_App_Metrics_Utils_IClock_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.%23ctor(App.Metrics.SamplingType%2CApp.Metrics.Utils.IClock)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/aspnet-metrics/blob/metricsnet-port/src/App.Metrics/Core/TimerMetric.cs/#L31">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Core/TimerMetric.cs/#L31">View Source</a>
               </span>
               <a id="App_Metrics_Core_TimerMetric__ctor_" data-uid="App.Metrics.Core.TimerMetric.#ctor*"></a>
               <h4 id="App_Metrics_Core_TimerMetric__ctor_App_Metrics_SamplingType_App_Metrics_Utils_IClock_" data-uid="App.Metrics.Core.TimerMetric.#ctor(App.Metrics.SamplingType,App.Metrics.Utils.IClock)">TimerMetric(SamplingType, IClock)</h4>
@@ -327,10 +303,10 @@
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/aspnet-metrics/new/metricsnet-port/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_Value.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.Value%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_Value.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.Value%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/aspnet-metrics/blob/metricsnet-port/src/App.Metrics/Core/TimerMetric.cs/#L86">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Core/TimerMetric.cs/#L86">View Source</a>
               </span>
               <a id="App_Metrics_Core_TimerMetric_Value_" data-uid="App.Metrics.Core.TimerMetric.Value*"></a>
               <h4 id="App_Metrics_Core_TimerMetric_Value" data-uid="App.Metrics.Core.TimerMetric.Value">Value</h4>
@@ -361,10 +337,10 @@
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/aspnet-metrics/new/metricsnet-port/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_CurrentTime.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.CurrentTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_CurrentTime.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.CurrentTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/aspnet-metrics/blob/metricsnet-port/src/App.Metrics/Core/TimerMetric.cs/#L89">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Core/TimerMetric.cs/#L89">View Source</a>
               </span>
               <a id="App_Metrics_Core_TimerMetric_CurrentTime_" data-uid="App.Metrics.Core.TimerMetric.CurrentTime*"></a>
               <h4 id="App_Metrics_Core_TimerMetric_CurrentTime" data-uid="App.Metrics.Core.TimerMetric.CurrentTime">CurrentTime()</h4>
@@ -393,10 +369,10 @@
                   <div><a class="xref" href="App.Metrics.ITimer.html#App_Metrics_ITimer_CurrentTime">ITimer.CurrentTime()</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/aspnet-metrics/new/metricsnet-port/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_Dispose.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_Dispose.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/aspnet-metrics/blob/metricsnet-port/src/App.Metrics/Core/TimerMetric.cs/#L94">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Core/TimerMetric.cs/#L94">View Source</a>
               </span>
               <a id="App_Metrics_Core_TimerMetric_Dispose_" data-uid="App.Metrics.Core.TimerMetric.Dispose*"></a>
               <h4 id="App_Metrics_Core_TimerMetric_Dispose" data-uid="App.Metrics.Core.TimerMetric.Dispose">Dispose()</h4>
@@ -406,14 +382,12 @@
               <div class="codewrapper">
                 <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
               </div>
-              <h5 class="implements">Implements</h5>
-                  <div><span class="xref">System.IDisposable.Dispose()</span></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/aspnet-metrics/new/metricsnet-port/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/aspnet-metrics/blob/metricsnet-port/src/App.Metrics/Core/TimerMetric.cs/#L100">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Core/TimerMetric.cs/#L100">View Source</a>
               </span>
               <a id="App_Metrics_Core_TimerMetric_Dispose_" data-uid="App.Metrics.Core.TimerMetric.Dispose*"></a>
               <h4 id="App_Metrics_Core_TimerMetric_Dispose_System_Boolean_" data-uid="App.Metrics.Core.TimerMetric.Dispose(System.Boolean)">Dispose(Boolean)</h4>
@@ -442,10 +416,10 @@
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/aspnet-metrics/new/metricsnet-port/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_EndRecording.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.EndRecording%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_EndRecording.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.EndRecording%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/aspnet-metrics/blob/metricsnet-port/src/App.Metrics/Core/TimerMetric.cs/#L118">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Core/TimerMetric.cs/#L118">View Source</a>
               </span>
               <a id="App_Metrics_Core_TimerMetric_EndRecording_" data-uid="App.Metrics.Core.TimerMetric.EndRecording*"></a>
               <h4 id="App_Metrics_Core_TimerMetric_EndRecording" data-uid="App.Metrics.Core.TimerMetric.EndRecording">EndRecording()</h4>
@@ -474,10 +448,10 @@
                   <div><a class="xref" href="App.Metrics.ITimer.html#App_Metrics_ITimer_EndRecording">ITimer.EndRecording()</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/aspnet-metrics/new/metricsnet-port/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_Finalize.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.Finalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_Finalize.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.Finalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/aspnet-metrics/blob/metricsnet-port/src/App.Metrics/Core/TimerMetric.cs/#L80">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Core/TimerMetric.cs/#L80">View Source</a>
               </span>
               <a id="App_Metrics_Core_TimerMetric_Finalize_" data-uid="App.Metrics.Core.TimerMetric.Finalize*"></a>
               <h4 id="App_Metrics_Core_TimerMetric_Finalize" data-uid="App.Metrics.Core.TimerMetric.Finalize">Finalize()</h4>
@@ -489,10 +463,10 @@
               </div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/aspnet-metrics/new/metricsnet-port/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_GetValue_System_Boolean_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.GetValue(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_GetValue_System_Boolean_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.GetValue(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/aspnet-metrics/blob/metricsnet-port/src/App.Metrics/Core/TimerMetric.cs/#L125">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Core/TimerMetric.cs/#L125">View Source</a>
               </span>
               <a id="App_Metrics_Core_TimerMetric_GetValue_" data-uid="App.Metrics.Core.TimerMetric.GetValue*"></a>
               <h4 id="App_Metrics_Core_TimerMetric_GetValue_System_Boolean_" data-uid="App.Metrics.Core.TimerMetric.GetValue(System.Boolean)">GetValue(Boolean)</h4>
@@ -538,10 +512,10 @@
                   <div><a class="xref" href="App.Metrics.Data.Interfaces.IMetricValueProvider-1.html#App_Metrics_Data_Interfaces_IMetricValueProvider_1_GetValue_System_Boolean_">IMetricValueProvider&lt;T&gt;.GetValue(Boolean)</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/aspnet-metrics/new/metricsnet-port/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_NewContext_System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.NewContext(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_NewContext_System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.NewContext(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/aspnet-metrics/blob/metricsnet-port/src/App.Metrics/Core/TimerMetric.cs/#L133">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Core/TimerMetric.cs/#L133">View Source</a>
               </span>
               <a id="App_Metrics_Core_TimerMetric_NewContext_" data-uid="App.Metrics.Core.TimerMetric.NewContext*"></a>
               <h4 id="App_Metrics_Core_TimerMetric_NewContext_System_String_" data-uid="App.Metrics.Core.TimerMetric.NewContext(System.String)">NewContext(String)</h4>
@@ -587,10 +561,10 @@
                   <div><a class="xref" href="App.Metrics.ITimer.html#App_Metrics_ITimer_NewContext_System_String_">ITimer.NewContext(String)</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/aspnet-metrics/new/metricsnet-port/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_Record_System_Int64_App_Metrics_TimeUnit_System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.Record(System.Int64%2CApp.Metrics.TimeUnit%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_Record_System_Int64_App_Metrics_TimeUnit_System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.Record(System.Int64%2CApp.Metrics.TimeUnit%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/aspnet-metrics/blob/metricsnet-port/src/App.Metrics/Core/TimerMetric.cs/#L139">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Core/TimerMetric.cs/#L139">View Source</a>
               </span>
               <a id="App_Metrics_Core_TimerMetric_Record_" data-uid="App.Metrics.Core.TimerMetric.Record*"></a>
               <h4 id="App_Metrics_Core_TimerMetric_Record_System_Int64_App_Metrics_TimeUnit_System_String_" data-uid="App.Metrics.Core.TimerMetric.Record(System.Int64,App.Metrics.TimeUnit,System.String)">Record(Int64, TimeUnit, String)</h4>
@@ -631,10 +605,10 @@
                   <div><a class="xref" href="App.Metrics.ITimer.html#App_Metrics_ITimer_Record_System_Int64_App_Metrics_TimeUnit_System_String_">ITimer.Record(Int64, TimeUnit, String)</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/aspnet-metrics/new/metricsnet-port/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_Reset.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_Reset.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/aspnet-metrics/blob/metricsnet-port/src/App.Metrics/Core/TimerMetric.cs/#L150">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Core/TimerMetric.cs/#L150">View Source</a>
               </span>
               <a id="App_Metrics_Core_TimerMetric_Reset_" data-uid="App.Metrics.Core.TimerMetric.Reset*"></a>
               <h4 id="App_Metrics_Core_TimerMetric_Reset" data-uid="App.Metrics.Core.TimerMetric.Reset">Reset()</h4>
@@ -648,10 +622,10 @@
                   <div><a class="xref" href="App.Metrics.IResetableMetric.html#App_Metrics_IResetableMetric_Reset">IResetableMetric.Reset()</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/aspnet-metrics/new/metricsnet-port/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_StartRecording.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.StartRecording%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_StartRecording.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.StartRecording%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/aspnet-metrics/blob/metricsnet-port/src/App.Metrics/Core/TimerMetric.cs/#L157">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Core/TimerMetric.cs/#L157">View Source</a>
               </span>
               <a id="App_Metrics_Core_TimerMetric_StartRecording_" data-uid="App.Metrics.Core.TimerMetric.StartRecording*"></a>
               <h4 id="App_Metrics_Core_TimerMetric_StartRecording" data-uid="App.Metrics.Core.TimerMetric.StartRecording">StartRecording()</h4>
@@ -680,13 +654,13 @@
                   <div><a class="xref" href="App.Metrics.ITimer.html#App_Metrics_ITimer_StartRecording">ITimer.StartRecording()</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/aspnet-metrics/new/metricsnet-port/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_Time_System_Action_System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.Time(System.Action%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_Time_Action_System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.Time(Action%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/aspnet-metrics/blob/metricsnet-port/src/App.Metrics/Core/TimerMetric.cs/#L164">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Core/TimerMetric.cs/#L164">View Source</a>
               </span>
               <a id="App_Metrics_Core_TimerMetric_Time_" data-uid="App.Metrics.Core.TimerMetric.Time*"></a>
-              <h4 id="App_Metrics_Core_TimerMetric_Time_System_Action_System_String_" data-uid="App.Metrics.Core.TimerMetric.Time(System.Action,System.String)">Time(Action, String)</h4>
+              <h4 id="App_Metrics_Core_TimerMetric_Time_Action_System_String_" data-uid="App.Metrics.Core.TimerMetric.Time(Action,System.String)">Time(Action, String)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
@@ -704,7 +678,7 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Action</span></td>
+                    <td><span class="xref">Action</span></td>
                     <td><em>action</em></td>
                     <td></td>
                   </tr>
@@ -716,16 +690,16 @@
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="App.Metrics.ITimer.html#App_Metrics_ITimer_Time_System_Action_System_String_">ITimer.Time(Action, String)</a></div>
+                  <div><a class="xref" href="App.Metrics.ITimer.html#App_Metrics_ITimer_Time_Action_System_String_">ITimer.Time(Action, String)</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/aspnet-metrics/new/metricsnet-port/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_Time__1_System_Func___0__System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.Time%60%601(System.Func%7B%60%600%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_Time__1_Func___0__System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.Time%60%601(Func%7B%60%600%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/aspnet-metrics/blob/metricsnet-port/src/App.Metrics/Core/TimerMetric.cs/#L180">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Core/TimerMetric.cs/#L180">View Source</a>
               </span>
               <a id="App_Metrics_Core_TimerMetric_Time_" data-uid="App.Metrics.Core.TimerMetric.Time*"></a>
-              <h4 id="App_Metrics_Core_TimerMetric_Time__1_System_Func___0__System_String_" data-uid="App.Metrics.Core.TimerMetric.Time``1(System.Func{``0},System.String)">Time&lt;T&gt;(Func&lt;T&gt;, String)</h4>
+              <h4 id="App_Metrics_Core_TimerMetric_Time__1_Func___0__System_String_" data-uid="App.Metrics.Core.TimerMetric.Time``1(Func{``0},System.String)">Time&lt;T&gt;(Func&lt;T&gt;, String)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
@@ -743,7 +717,7 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Func&lt;TResult&gt;</span>&lt;T&gt;</td>
+                    <td><span class="xref">Func&lt;&gt;</span>&lt;T&gt;</td>
                     <td><em>action</em></td>
                     <td></td>
                   </tr>
@@ -785,7 +759,7 @@
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="App.Metrics.ITimer.html#App_Metrics_ITimer_Time__1_System_Func___0__System_String_">ITimer.Time&lt;T&gt;(Func&lt;T&gt;, String)</a></div>
+                  <div><a class="xref" href="App.Metrics.ITimer.html#App_Metrics_ITimer_Time__1_Func___0__System_String_">ITimer.Time&lt;T&gt;(Func&lt;T&gt;, String)</a></div>
             </article>
           </div>
           
@@ -794,10 +768,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/alhardy/aspnet-metrics/new/metricsnet-port/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
+                    <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/alhardy/aspnet-metrics/blob/metricsnet-port/src/App.Metrics/Core/TimerMetric.cs/#L17" class="contribution-link">View Source</a>
+                    <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Core/TimerMetric.cs/#L17" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
