@@ -3370,6 +3370,593 @@ references:
   commentId: Overload:App.Metrics.Extensions.MetricDataExtensions.ToMetricValueSource
   name: ToMetricValueSource
   fullName: App.Metrics.Extensions.MetricDataExtensions.ToMetricValueSource(App.Metrics.MetricData)
+- uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options
+  name: App.Metrics.Extensions.Middleware.DependencyInjection.Options
+  href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.html#App_Metrics_Extensions_Middleware_DependencyInjection_Options
+  commentId: N:App.Metrics.Extensions.Middleware.DependencyInjection.Options
+  fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options
+  nameWithType: App.Metrics.Extensions.Middleware.DependencyInjection.Options
+- uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions
+  name: AspNetMetricsOptions
+  href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.html#App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions
+  commentId: T:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions
+  fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions
+  nameWithType: AspNetMetricsOptions
+- uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.#ctor
+  name: AspNetMetricsOptions()
+  href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.html#App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions__ctor
+  commentId: M:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.#ctor
+  fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.AspNetMetricsOptions()
+  nameWithType: AspNetMetricsOptions.AspNetMetricsOptions()
+- uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.#ctor*
+  href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.html#App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions__ctor_
+  commentId: Overload:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.#ctor
+  name: AspNetMetricsOptions
+  fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.AspNetMetricsOptions()
+- uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.HealthEndpoint
+  name: HealthEndpoint
+  href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.html#App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_HealthEndpoint
+  commentId: P:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.HealthEndpoint
+  fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.HealthEndpoint
+  nameWithType: AspNetMetricsOptions.HealthEndpoint
+- uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.HealthEndpoint*
+  href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.html#App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_HealthEndpoint_
+  commentId: Overload:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.HealthEndpoint
+  name: HealthEndpoint
+  fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.HealthEndpoint
+- uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.HealthEndpointEnabled
+  name: HealthEndpointEnabled
+  href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.html#App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_HealthEndpointEnabled
+  commentId: P:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.HealthEndpointEnabled
+  fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.HealthEndpointEnabled
+  nameWithType: AspNetMetricsOptions.HealthEndpointEnabled
+- uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.HealthEndpointEnabled*
+  href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.html#App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_HealthEndpointEnabled_
+  commentId: Overload:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.HealthEndpointEnabled
+  name: HealthEndpointEnabled
+  fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.HealthEndpointEnabled
+- uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.IgnoredRoutesRegexPatterns
+  name: IgnoredRoutesRegexPatterns
+  href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.html#App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_IgnoredRoutesRegexPatterns
+  commentId: P:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.IgnoredRoutesRegexPatterns
+  fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.IgnoredRoutesRegexPatterns
+  nameWithType: AspNetMetricsOptions.IgnoredRoutesRegexPatterns
+- uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.IgnoredRoutesRegexPatterns*
+  href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.html#App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_IgnoredRoutesRegexPatterns_
+  commentId: Overload:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.IgnoredRoutesRegexPatterns
+  name: IgnoredRoutesRegexPatterns
+  fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.IgnoredRoutesRegexPatterns
+- uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.MetricsEndpoint
+  name: MetricsEndpoint
+  href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.html#App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_MetricsEndpoint
+  commentId: P:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.MetricsEndpoint
+  fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.MetricsEndpoint
+  nameWithType: AspNetMetricsOptions.MetricsEndpoint
+- uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.MetricsEndpoint*
+  href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.html#App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_MetricsEndpoint_
+  commentId: Overload:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.MetricsEndpoint
+  name: MetricsEndpoint
+  fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.MetricsEndpoint
+- uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.MetricsEndpointEnabled
+  name: MetricsEndpointEnabled
+  href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.html#App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_MetricsEndpointEnabled
+  commentId: P:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.MetricsEndpointEnabled
+  fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.MetricsEndpointEnabled
+  nameWithType: AspNetMetricsOptions.MetricsEndpointEnabled
+- uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.MetricsEndpointEnabled*
+  href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.html#App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_MetricsEndpointEnabled_
+  commentId: Overload:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.MetricsEndpointEnabled
+  name: MetricsEndpointEnabled
+  fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.MetricsEndpointEnabled
+- uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.MetricsTextEndpoint
+  name: MetricsTextEndpoint
+  href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.html#App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_MetricsTextEndpoint
+  commentId: P:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.MetricsTextEndpoint
+  fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.MetricsTextEndpoint
+  nameWithType: AspNetMetricsOptions.MetricsTextEndpoint
+- uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.MetricsTextEndpoint*
+  href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.html#App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_MetricsTextEndpoint_
+  commentId: Overload:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.MetricsTextEndpoint
+  name: MetricsTextEndpoint
+  fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.MetricsTextEndpoint
+- uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.MetricsTextEndpointEnabled
+  name: MetricsTextEndpointEnabled
+  href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.html#App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_MetricsTextEndpointEnabled
+  commentId: P:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.MetricsTextEndpointEnabled
+  fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.MetricsTextEndpointEnabled
+  nameWithType: AspNetMetricsOptions.MetricsTextEndpointEnabled
+- uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.MetricsTextEndpointEnabled*
+  href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.html#App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_MetricsTextEndpointEnabled_
+  commentId: Overload:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.MetricsTextEndpointEnabled
+  name: MetricsTextEndpointEnabled
+  fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.MetricsTextEndpointEnabled
+- uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.OAuth2TrackingEnabled
+  name: OAuth2TrackingEnabled
+  href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.html#App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_OAuth2TrackingEnabled
+  commentId: P:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.OAuth2TrackingEnabled
+  fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.OAuth2TrackingEnabled
+  nameWithType: AspNetMetricsOptions.OAuth2TrackingEnabled
+- uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.OAuth2TrackingEnabled*
+  href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.html#App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_OAuth2TrackingEnabled_
+  commentId: Overload:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.OAuth2TrackingEnabled
+  name: OAuth2TrackingEnabled
+  fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.OAuth2TrackingEnabled
+- uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.PingEndpoint
+  name: PingEndpoint
+  href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.html#App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_PingEndpoint
+  commentId: P:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.PingEndpoint
+  fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.PingEndpoint
+  nameWithType: AspNetMetricsOptions.PingEndpoint
+- uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.PingEndpoint*
+  href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.html#App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_PingEndpoint_
+  commentId: Overload:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.PingEndpoint
+  name: PingEndpoint
+  fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.PingEndpoint
+- uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.PingEndpointEnabled
+  name: PingEndpointEnabled
+  href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.html#App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_PingEndpointEnabled
+  commentId: P:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.PingEndpointEnabled
+  fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.PingEndpointEnabled
+  nameWithType: AspNetMetricsOptions.PingEndpointEnabled
+- uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.PingEndpointEnabled*
+  href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.html#App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_PingEndpointEnabled_
+  commentId: Overload:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.PingEndpointEnabled
+  name: PingEndpointEnabled
+  fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.PingEndpointEnabled
+- uid: App.Metrics.Extensions.Middleware.Infrastructure
+  name: App.Metrics.Extensions.Middleware.Infrastructure
+  href: api/App.Metrics.Extensions.Middleware.Infrastructure.html#App_Metrics_Extensions_Middleware_Infrastructure
+  commentId: N:App.Metrics.Extensions.Middleware.Infrastructure
+  fullName: App.Metrics.Extensions.Middleware.Infrastructure
+  nameWithType: App.Metrics.Extensions.Middleware.Infrastructure
+- uid: App.Metrics.Extensions.Middleware.Infrastructure.DefaultRouteTemplateResolver
+  name: DefaultRouteTemplateResolver
+  href: api/App.Metrics.Extensions.Middleware.Infrastructure.DefaultRouteTemplateResolver.html#App_Metrics_Extensions_Middleware_Infrastructure_DefaultRouteTemplateResolver
+  commentId: T:App.Metrics.Extensions.Middleware.Infrastructure.DefaultRouteTemplateResolver
+  fullName: App.Metrics.Extensions.Middleware.Infrastructure.DefaultRouteTemplateResolver
+  nameWithType: DefaultRouteTemplateResolver
+- uid: App.Metrics.Extensions.Middleware.Infrastructure.DefaultRouteTemplateResolver.ResolveMatchingTemplateRoute(RouteData)
+  name: ResolveMatchingTemplateRoute(RouteData)
+  href: api/App.Metrics.Extensions.Middleware.Infrastructure.DefaultRouteTemplateResolver.html#App_Metrics_Extensions_Middleware_Infrastructure_DefaultRouteTemplateResolver_ResolveMatchingTemplateRoute_RouteData_
+  commentId: M:App.Metrics.Extensions.Middleware.Infrastructure.DefaultRouteTemplateResolver.ResolveMatchingTemplateRoute(RouteData)
+  fullName: App.Metrics.Extensions.Middleware.Infrastructure.DefaultRouteTemplateResolver.ResolveMatchingTemplateRoute(RouteData)
+  nameWithType: DefaultRouteTemplateResolver.ResolveMatchingTemplateRoute(RouteData)
+- uid: App.Metrics.Extensions.Middleware.Infrastructure.DefaultRouteTemplateResolver.ResolveMatchingTemplateRoute*
+  href: api/App.Metrics.Extensions.Middleware.Infrastructure.DefaultRouteTemplateResolver.html#App_Metrics_Extensions_Middleware_Infrastructure_DefaultRouteTemplateResolver_ResolveMatchingTemplateRoute_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Infrastructure.DefaultRouteTemplateResolver.ResolveMatchingTemplateRoute
+  name: ResolveMatchingTemplateRoute
+  fullName: App.Metrics.Extensions.Middleware.Infrastructure.DefaultRouteTemplateResolver.ResolveMatchingTemplateRoute(RouteData)
+- uid: App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver
+  name: IRouteNameResolver
+  href: api/App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver.html#App_Metrics_Extensions_Middleware_Infrastructure_IRouteNameResolver
+  commentId: T:App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver
+  fullName: App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver
+  nameWithType: IRouteNameResolver
+- uid: App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver.ResolveMatchingTemplateRoute(RouteData)
+  name: ResolveMatchingTemplateRoute(RouteData)
+  href: api/App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver.html#App_Metrics_Extensions_Middleware_Infrastructure_IRouteNameResolver_ResolveMatchingTemplateRoute_RouteData_
+  commentId: M:App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver.ResolveMatchingTemplateRoute(RouteData)
+  fullName: App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver.ResolveMatchingTemplateRoute(RouteData)
+  nameWithType: IRouteNameResolver.ResolveMatchingTemplateRoute(RouteData)
+- uid: App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver.ResolveMatchingTemplateRoute*
+  href: api/App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver.html#App_Metrics_Extensions_Middleware_Infrastructure_IRouteNameResolver_ResolveMatchingTemplateRoute_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver.ResolveMatchingTemplateRoute
+  name: ResolveMatchingTemplateRoute
+  fullName: App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver.ResolveMatchingTemplateRoute(RouteData)
+- uid: App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter
+  name: MetricsResourceFilter
+  href: api/App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.html#App_Metrics_Extensions_Middleware_Infrastructure_MetricsResourceFilter
+  commentId: T:App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter
+  fullName: App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter
+  nameWithType: MetricsResourceFilter
+- uid: App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.#ctor(App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver)
+  name: MetricsResourceFilter(IRouteNameResolver)
+  href: api/App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.html#App_Metrics_Extensions_Middleware_Infrastructure_MetricsResourceFilter__ctor_App_Metrics_Extensions_Middleware_Infrastructure_IRouteNameResolver_
+  commentId: M:App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.#ctor(App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver)
+  fullName: App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.MetricsResourceFilter(App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver)
+  nameWithType: MetricsResourceFilter.MetricsResourceFilter(IRouteNameResolver)
+- uid: App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.#ctor*
+  href: api/App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.html#App_Metrics_Extensions_Middleware_Infrastructure_MetricsResourceFilter__ctor_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.#ctor
+  name: MetricsResourceFilter
+  fullName: App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.MetricsResourceFilter(App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver)
+- uid: App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.OnResourceExecutionAsync(ResourceExecutingContext,ResourceExecutionDelegate)
+  name: OnResourceExecutionAsync(ResourceExecutingContext, ResourceExecutionDelegate)
+  href: api/App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.html#App_Metrics_Extensions_Middleware_Infrastructure_MetricsResourceFilter_OnResourceExecutionAsync_ResourceExecutingContext_ResourceExecutionDelegate_
+  commentId: M:App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.OnResourceExecutionAsync(ResourceExecutingContext,ResourceExecutionDelegate)
+  fullName: App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.OnResourceExecutionAsync(ResourceExecutingContext, ResourceExecutionDelegate)
+  nameWithType: MetricsResourceFilter.OnResourceExecutionAsync(ResourceExecutingContext, ResourceExecutionDelegate)
+- uid: App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.OnResourceExecutionAsync*
+  href: api/App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.html#App_Metrics_Extensions_Middleware_Infrastructure_MetricsResourceFilter_OnResourceExecutionAsync_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.OnResourceExecutionAsync
+  name: OnResourceExecutionAsync
+  fullName: App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.OnResourceExecutionAsync(ResourceExecutingContext, ResourceExecutionDelegate)
+- uid: App.Metrics.Extensions.Middleware.Middleware
+  name: App.Metrics.Extensions.Middleware.Middleware
+  href: api/App.Metrics.Extensions.Middleware.Middleware.html#App_Metrics_Extensions_Middleware_Middleware
+  commentId: N:App.Metrics.Extensions.Middleware.Middleware
+  fullName: App.Metrics.Extensions.Middleware.Middleware
+  nameWithType: App.Metrics.Extensions.Middleware.Middleware
+- uid: App.Metrics.Extensions.Middleware.Middleware.ActiveRequestCounterEndpointMiddleware
+  name: ActiveRequestCounterEndpointMiddleware
+  href: api/App.Metrics.Extensions.Middleware.Middleware.ActiveRequestCounterEndpointMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_ActiveRequestCounterEndpointMiddleware
+  commentId: T:App.Metrics.Extensions.Middleware.Middleware.ActiveRequestCounterEndpointMiddleware
+  fullName: App.Metrics.Extensions.Middleware.Middleware.ActiveRequestCounterEndpointMiddleware
+  nameWithType: ActiveRequestCounterEndpointMiddleware
+- uid: App.Metrics.Extensions.Middleware.Middleware.ActiveRequestCounterEndpointMiddleware.#ctor(RequestDelegate,App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions,ILoggerFactory,IMetrics)
+  name: ActiveRequestCounterEndpointMiddleware(RequestDelegate, AspNetMetricsOptions, ILoggerFactory, IMetrics)
+  href: api/App.Metrics.Extensions.Middleware.Middleware.ActiveRequestCounterEndpointMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_ActiveRequestCounterEndpointMiddleware__ctor_RequestDelegate_App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_ILoggerFactory_IMetrics_
+  commentId: M:App.Metrics.Extensions.Middleware.Middleware.ActiveRequestCounterEndpointMiddleware.#ctor(RequestDelegate,App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions,ILoggerFactory,IMetrics)
+  fullName: App.Metrics.Extensions.Middleware.Middleware.ActiveRequestCounterEndpointMiddleware.ActiveRequestCounterEndpointMiddleware(RequestDelegate, App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions, ILoggerFactory, IMetrics)
+  nameWithType: ActiveRequestCounterEndpointMiddleware.ActiveRequestCounterEndpointMiddleware(RequestDelegate, AspNetMetricsOptions, ILoggerFactory, IMetrics)
+- uid: App.Metrics.Extensions.Middleware.Middleware.ActiveRequestCounterEndpointMiddleware.#ctor*
+  href: api/App.Metrics.Extensions.Middleware.Middleware.ActiveRequestCounterEndpointMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_ActiveRequestCounterEndpointMiddleware__ctor_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Middleware.ActiveRequestCounterEndpointMiddleware.#ctor
+  name: ActiveRequestCounterEndpointMiddleware
+  fullName: App.Metrics.Extensions.Middleware.Middleware.ActiveRequestCounterEndpointMiddleware.ActiveRequestCounterEndpointMiddleware(RequestDelegate, App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions, ILoggerFactory, IMetrics)
+- uid: App.Metrics.Extensions.Middleware.Middleware.ActiveRequestCounterEndpointMiddleware.Invoke(HttpContext)
+  name: Invoke(HttpContext)
+  href: api/App.Metrics.Extensions.Middleware.Middleware.ActiveRequestCounterEndpointMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_ActiveRequestCounterEndpointMiddleware_Invoke_HttpContext_
+  commentId: M:App.Metrics.Extensions.Middleware.Middleware.ActiveRequestCounterEndpointMiddleware.Invoke(HttpContext)
+  fullName: App.Metrics.Extensions.Middleware.Middleware.ActiveRequestCounterEndpointMiddleware.Invoke(HttpContext)
+  nameWithType: ActiveRequestCounterEndpointMiddleware.Invoke(HttpContext)
+- uid: App.Metrics.Extensions.Middleware.Middleware.ActiveRequestCounterEndpointMiddleware.Invoke*
+  href: api/App.Metrics.Extensions.Middleware.Middleware.ActiveRequestCounterEndpointMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_ActiveRequestCounterEndpointMiddleware_Invoke_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Middleware.ActiveRequestCounterEndpointMiddleware.Invoke
+  name: Invoke
+  fullName: App.Metrics.Extensions.Middleware.Middleware.ActiveRequestCounterEndpointMiddleware.Invoke(HttpContext)
+- uid: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1
+  name: AppMetricsMiddleware<TOptions>
+  href: api/App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware-1.html#App_Metrics_Extensions_Middleware_Middleware_AppMetricsMiddleware_1
+  commentId: T:App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1
+  name.vb: AppMetricsMiddleware(Of TOptions)
+  fullName: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware<TOptions>
+  fullName.vb: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware(Of TOptions)
+  nameWithType: AppMetricsMiddleware<TOptions>
+  nameWithType.vb: AppMetricsMiddleware(Of TOptions)
+- uid: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.#ctor(RequestDelegate,`0,ILoggerFactory,IMetrics)
+  name: AppMetricsMiddleware(RequestDelegate, TOptions, ILoggerFactory, IMetrics)
+  href: api/App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware-1.html#App_Metrics_Extensions_Middleware_Middleware_AppMetricsMiddleware_1__ctor_RequestDelegate__0_ILoggerFactory_IMetrics_
+  commentId: M:App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.#ctor(RequestDelegate,`0,ILoggerFactory,IMetrics)
+  fullName: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware<TOptions>.AppMetricsMiddleware(RequestDelegate, TOptions, ILoggerFactory, IMetrics)
+  fullName.vb: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware(Of TOptions).AppMetricsMiddleware(RequestDelegate, TOptions, ILoggerFactory, IMetrics)
+  nameWithType: AppMetricsMiddleware<TOptions>.AppMetricsMiddleware(RequestDelegate, TOptions, ILoggerFactory, IMetrics)
+- uid: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.#ctor*
+  href: api/App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware-1.html#App_Metrics_Extensions_Middleware_Middleware_AppMetricsMiddleware_1__ctor_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.#ctor
+  name: AppMetricsMiddleware
+  fullName: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware<TOptions>.AppMetricsMiddleware(RequestDelegate, TOptions, ILoggerFactory, IMetrics)
+  fullName.vb: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware
+- uid: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.Logger
+  name: Logger
+  href: api/App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware-1.html#App_Metrics_Extensions_Middleware_Middleware_AppMetricsMiddleware_1_Logger
+  commentId: P:App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.Logger
+  fullName: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware<TOptions>.Logger
+  fullName.vb: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware(Of TOptions).Logger
+  nameWithType: AppMetricsMiddleware<TOptions>.Logger
+- uid: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.Logger*
+  href: api/App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware-1.html#App_Metrics_Extensions_Middleware_Middleware_AppMetricsMiddleware_1_Logger_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.Logger
+  name: Logger
+  fullName: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware<TOptions>.Logger
+  fullName.vb: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware
+- uid: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.Metrics
+  name: Metrics
+  href: api/App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware-1.html#App_Metrics_Extensions_Middleware_Middleware_AppMetricsMiddleware_1_Metrics
+  commentId: P:App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.Metrics
+  fullName: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware<TOptions>.Metrics
+  fullName.vb: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware(Of TOptions).Metrics
+  nameWithType: AppMetricsMiddleware<TOptions>.Metrics
+- uid: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.Metrics*
+  href: api/App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware-1.html#App_Metrics_Extensions_Middleware_Middleware_AppMetricsMiddleware_1_Metrics_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.Metrics
+  name: Metrics
+  fullName: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware<TOptions>.Metrics
+  fullName.vb: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware
+- uid: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.Next
+  name: Next
+  href: api/App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware-1.html#App_Metrics_Extensions_Middleware_Middleware_AppMetricsMiddleware_1_Next
+  commentId: P:App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.Next
+  fullName: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware<TOptions>.Next
+  fullName.vb: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware(Of TOptions).Next
+  nameWithType: AppMetricsMiddleware<TOptions>.Next
+- uid: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.Next*
+  href: api/App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware-1.html#App_Metrics_Extensions_Middleware_Middleware_AppMetricsMiddleware_1_Next_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.Next
+  name: Next
+  fullName: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware<TOptions>.Next
+  fullName.vb: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware
+- uid: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.Options
+  name: Options
+  href: api/App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware-1.html#App_Metrics_Extensions_Middleware_Middleware_AppMetricsMiddleware_1_Options
+  commentId: P:App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.Options
+  fullName: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware<TOptions>.Options
+  fullName.vb: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware(Of TOptions).Options
+  nameWithType: AppMetricsMiddleware<TOptions>.Options
+- uid: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.Options*
+  href: api/App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware-1.html#App_Metrics_Extensions_Middleware_Middleware_AppMetricsMiddleware_1_Options_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.Options
+  name: Options
+  fullName: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware<TOptions>.Options
+  fullName.vb: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware
+- uid: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.PerformMetric(HttpContext)
+  name: PerformMetric(HttpContext)
+  href: api/App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware-1.html#App_Metrics_Extensions_Middleware_Middleware_AppMetricsMiddleware_1_PerformMetric_HttpContext_
+  commentId: M:App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.PerformMetric(HttpContext)
+  fullName: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware<TOptions>.PerformMetric(HttpContext)
+  fullName.vb: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware(Of TOptions).PerformMetric(HttpContext)
+  nameWithType: AppMetricsMiddleware<TOptions>.PerformMetric(HttpContext)
+- uid: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.PerformMetric*
+  href: api/App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware-1.html#App_Metrics_Extensions_Middleware_Middleware_AppMetricsMiddleware_1_PerformMetric_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.PerformMetric
+  name: PerformMetric
+  fullName: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware<TOptions>.PerformMetric(HttpContext)
+  fullName.vb: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware
+- uid: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.WriteResponseAsync(HttpContext,System.String,System.String,HttpStatusCode)
+  name: WriteResponseAsync(HttpContext, String, String, HttpStatusCode)
+  href: api/App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware-1.html#App_Metrics_Extensions_Middleware_Middleware_AppMetricsMiddleware_1_WriteResponseAsync_HttpContext_System_String_System_String_HttpStatusCode_
+  commentId: M:App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.WriteResponseAsync(HttpContext,System.String,System.String,HttpStatusCode)
+  fullName: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware<TOptions>.WriteResponseAsync(HttpContext, System.String, System.String, HttpStatusCode)
+  fullName.vb: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware(Of TOptions).WriteResponseAsync(HttpContext, System.String, System.String, HttpStatusCode)
+  nameWithType: AppMetricsMiddleware<TOptions>.WriteResponseAsync(HttpContext, String, String, HttpStatusCode)
+- uid: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.WriteResponseAsync*
+  href: api/App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware-1.html#App_Metrics_Extensions_Middleware_Middleware_AppMetricsMiddleware_1_WriteResponseAsync_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.WriteResponseAsync
+  name: WriteResponseAsync
+  fullName: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware<TOptions>.WriteResponseAsync(HttpContext, System.String, System.String, HttpStatusCode)
+  fullName.vb: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware
+- uid: App.Metrics.Extensions.Middleware.Middleware.ErrorRequestMeterMiddleware
+  name: ErrorRequestMeterMiddleware
+  href: api/App.Metrics.Extensions.Middleware.Middleware.ErrorRequestMeterMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_ErrorRequestMeterMiddleware
+  commentId: T:App.Metrics.Extensions.Middleware.Middleware.ErrorRequestMeterMiddleware
+  fullName: App.Metrics.Extensions.Middleware.Middleware.ErrorRequestMeterMiddleware
+  nameWithType: ErrorRequestMeterMiddleware
+- uid: App.Metrics.Extensions.Middleware.Middleware.ErrorRequestMeterMiddleware.#ctor(RequestDelegate,App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions,ILoggerFactory,IMetrics)
+  name: ErrorRequestMeterMiddleware(RequestDelegate, AspNetMetricsOptions, ILoggerFactory, IMetrics)
+  href: api/App.Metrics.Extensions.Middleware.Middleware.ErrorRequestMeterMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_ErrorRequestMeterMiddleware__ctor_RequestDelegate_App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_ILoggerFactory_IMetrics_
+  commentId: M:App.Metrics.Extensions.Middleware.Middleware.ErrorRequestMeterMiddleware.#ctor(RequestDelegate,App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions,ILoggerFactory,IMetrics)
+  fullName: App.Metrics.Extensions.Middleware.Middleware.ErrorRequestMeterMiddleware.ErrorRequestMeterMiddleware(RequestDelegate, App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions, ILoggerFactory, IMetrics)
+  nameWithType: ErrorRequestMeterMiddleware.ErrorRequestMeterMiddleware(RequestDelegate, AspNetMetricsOptions, ILoggerFactory, IMetrics)
+- uid: App.Metrics.Extensions.Middleware.Middleware.ErrorRequestMeterMiddleware.#ctor*
+  href: api/App.Metrics.Extensions.Middleware.Middleware.ErrorRequestMeterMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_ErrorRequestMeterMiddleware__ctor_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Middleware.ErrorRequestMeterMiddleware.#ctor
+  name: ErrorRequestMeterMiddleware
+  fullName: App.Metrics.Extensions.Middleware.Middleware.ErrorRequestMeterMiddleware.ErrorRequestMeterMiddleware(RequestDelegate, App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions, ILoggerFactory, IMetrics)
+- uid: App.Metrics.Extensions.Middleware.Middleware.ErrorRequestMeterMiddleware.Invoke(HttpContext)
+  name: Invoke(HttpContext)
+  href: api/App.Metrics.Extensions.Middleware.Middleware.ErrorRequestMeterMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_ErrorRequestMeterMiddleware_Invoke_HttpContext_
+  commentId: M:App.Metrics.Extensions.Middleware.Middleware.ErrorRequestMeterMiddleware.Invoke(HttpContext)
+  fullName: App.Metrics.Extensions.Middleware.Middleware.ErrorRequestMeterMiddleware.Invoke(HttpContext)
+  nameWithType: ErrorRequestMeterMiddleware.Invoke(HttpContext)
+- uid: App.Metrics.Extensions.Middleware.Middleware.ErrorRequestMeterMiddleware.Invoke*
+  href: api/App.Metrics.Extensions.Middleware.Middleware.ErrorRequestMeterMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_ErrorRequestMeterMiddleware_Invoke_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Middleware.ErrorRequestMeterMiddleware.Invoke
+  name: Invoke
+  fullName: App.Metrics.Extensions.Middleware.Middleware.ErrorRequestMeterMiddleware.Invoke(HttpContext)
+- uid: App.Metrics.Extensions.Middleware.Middleware.HealthCheckEndpointMiddleware
+  name: HealthCheckEndpointMiddleware
+  href: api/App.Metrics.Extensions.Middleware.Middleware.HealthCheckEndpointMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_HealthCheckEndpointMiddleware
+  commentId: T:App.Metrics.Extensions.Middleware.Middleware.HealthCheckEndpointMiddleware
+  fullName: App.Metrics.Extensions.Middleware.Middleware.HealthCheckEndpointMiddleware
+  nameWithType: HealthCheckEndpointMiddleware
+- uid: App.Metrics.Extensions.Middleware.Middleware.HealthCheckEndpointMiddleware.#ctor(RequestDelegate,App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions,ILoggerFactory,IMetrics,IHealthStatusSerializer)
+  name: HealthCheckEndpointMiddleware(RequestDelegate, AspNetMetricsOptions, ILoggerFactory, IMetrics, IHealthStatusSerializer)
+  href: api/App.Metrics.Extensions.Middleware.Middleware.HealthCheckEndpointMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_HealthCheckEndpointMiddleware__ctor_RequestDelegate_App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_ILoggerFactory_IMetrics_IHealthStatusSerializer_
+  commentId: M:App.Metrics.Extensions.Middleware.Middleware.HealthCheckEndpointMiddleware.#ctor(RequestDelegate,App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions,ILoggerFactory,IMetrics,IHealthStatusSerializer)
+  fullName: App.Metrics.Extensions.Middleware.Middleware.HealthCheckEndpointMiddleware.HealthCheckEndpointMiddleware(RequestDelegate, App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions, ILoggerFactory, IMetrics, IHealthStatusSerializer)
+  nameWithType: HealthCheckEndpointMiddleware.HealthCheckEndpointMiddleware(RequestDelegate, AspNetMetricsOptions, ILoggerFactory, IMetrics, IHealthStatusSerializer)
+- uid: App.Metrics.Extensions.Middleware.Middleware.HealthCheckEndpointMiddleware.#ctor*
+  href: api/App.Metrics.Extensions.Middleware.Middleware.HealthCheckEndpointMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_HealthCheckEndpointMiddleware__ctor_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Middleware.HealthCheckEndpointMiddleware.#ctor
+  name: HealthCheckEndpointMiddleware
+  fullName: App.Metrics.Extensions.Middleware.Middleware.HealthCheckEndpointMiddleware.HealthCheckEndpointMiddleware(RequestDelegate, App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions, ILoggerFactory, IMetrics, IHealthStatusSerializer)
+- uid: App.Metrics.Extensions.Middleware.Middleware.HealthCheckEndpointMiddleware.Invoke(HttpContext)
+  name: Invoke(HttpContext)
+  href: api/App.Metrics.Extensions.Middleware.Middleware.HealthCheckEndpointMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_HealthCheckEndpointMiddleware_Invoke_HttpContext_
+  commentId: M:App.Metrics.Extensions.Middleware.Middleware.HealthCheckEndpointMiddleware.Invoke(HttpContext)
+  fullName: App.Metrics.Extensions.Middleware.Middleware.HealthCheckEndpointMiddleware.Invoke(HttpContext)
+  nameWithType: HealthCheckEndpointMiddleware.Invoke(HttpContext)
+- uid: App.Metrics.Extensions.Middleware.Middleware.HealthCheckEndpointMiddleware.Invoke*
+  href: api/App.Metrics.Extensions.Middleware.Middleware.HealthCheckEndpointMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_HealthCheckEndpointMiddleware_Invoke_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Middleware.HealthCheckEndpointMiddleware.Invoke
+  name: Invoke
+  fullName: App.Metrics.Extensions.Middleware.Middleware.HealthCheckEndpointMiddleware.Invoke(HttpContext)
+- uid: App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointMiddleware
+  name: MetricsEndpointMiddleware
+  href: api/App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_MetricsEndpointMiddleware
+  commentId: T:App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointMiddleware
+  fullName: App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointMiddleware
+  nameWithType: MetricsEndpointMiddleware
+- uid: App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointMiddleware.#ctor(RequestDelegate,App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions,ILoggerFactory,IMetrics,IMetricDataSerializer)
+  name: MetricsEndpointMiddleware(RequestDelegate, AspNetMetricsOptions, ILoggerFactory, IMetrics, IMetricDataSerializer)
+  href: api/App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_MetricsEndpointMiddleware__ctor_RequestDelegate_App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_ILoggerFactory_IMetrics_IMetricDataSerializer_
+  commentId: M:App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointMiddleware.#ctor(RequestDelegate,App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions,ILoggerFactory,IMetrics,IMetricDataSerializer)
+  fullName: App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointMiddleware.MetricsEndpointMiddleware(RequestDelegate, App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions, ILoggerFactory, IMetrics, IMetricDataSerializer)
+  nameWithType: MetricsEndpointMiddleware.MetricsEndpointMiddleware(RequestDelegate, AspNetMetricsOptions, ILoggerFactory, IMetrics, IMetricDataSerializer)
+- uid: App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointMiddleware.#ctor*
+  href: api/App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_MetricsEndpointMiddleware__ctor_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointMiddleware.#ctor
+  name: MetricsEndpointMiddleware
+  fullName: App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointMiddleware.MetricsEndpointMiddleware(RequestDelegate, App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions, ILoggerFactory, IMetrics, IMetricDataSerializer)
+- uid: App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointMiddleware.Invoke(HttpContext)
+  name: Invoke(HttpContext)
+  href: api/App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_MetricsEndpointMiddleware_Invoke_HttpContext_
+  commentId: M:App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointMiddleware.Invoke(HttpContext)
+  fullName: App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointMiddleware.Invoke(HttpContext)
+  nameWithType: MetricsEndpointMiddleware.Invoke(HttpContext)
+- uid: App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointMiddleware.Invoke*
+  href: api/App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_MetricsEndpointMiddleware_Invoke_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointMiddleware.Invoke
+  name: Invoke
+  fullName: App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointMiddleware.Invoke(HttpContext)
+- uid: App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointTextEndpointMiddleware
+  name: MetricsEndpointTextEndpointMiddleware
+  href: api/App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointTextEndpointMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_MetricsEndpointTextEndpointMiddleware
+  commentId: T:App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointTextEndpointMiddleware
+  fullName: App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointTextEndpointMiddleware
+  nameWithType: MetricsEndpointTextEndpointMiddleware
+- uid: App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointTextEndpointMiddleware.#ctor(RequestDelegate,App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions,ILoggerFactory,IMetrics)
+  name: MetricsEndpointTextEndpointMiddleware(RequestDelegate, AspNetMetricsOptions, ILoggerFactory, IMetrics)
+  href: api/App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointTextEndpointMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_MetricsEndpointTextEndpointMiddleware__ctor_RequestDelegate_App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_ILoggerFactory_IMetrics_
+  commentId: M:App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointTextEndpointMiddleware.#ctor(RequestDelegate,App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions,ILoggerFactory,IMetrics)
+  fullName: App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointTextEndpointMiddleware.MetricsEndpointTextEndpointMiddleware(RequestDelegate, App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions, ILoggerFactory, IMetrics)
+  nameWithType: MetricsEndpointTextEndpointMiddleware.MetricsEndpointTextEndpointMiddleware(RequestDelegate, AspNetMetricsOptions, ILoggerFactory, IMetrics)
+- uid: App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointTextEndpointMiddleware.#ctor*
+  href: api/App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointTextEndpointMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_MetricsEndpointTextEndpointMiddleware__ctor_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointTextEndpointMiddleware.#ctor
+  name: MetricsEndpointTextEndpointMiddleware
+  fullName: App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointTextEndpointMiddleware.MetricsEndpointTextEndpointMiddleware(RequestDelegate, App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions, ILoggerFactory, IMetrics)
+- uid: App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointTextEndpointMiddleware.Invoke(HttpContext)
+  name: Invoke(HttpContext)
+  href: api/App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointTextEndpointMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_MetricsEndpointTextEndpointMiddleware_Invoke_HttpContext_
+  commentId: M:App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointTextEndpointMiddleware.Invoke(HttpContext)
+  fullName: App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointTextEndpointMiddleware.Invoke(HttpContext)
+  nameWithType: MetricsEndpointTextEndpointMiddleware.Invoke(HttpContext)
+- uid: App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointTextEndpointMiddleware.Invoke*
+  href: api/App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointTextEndpointMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_MetricsEndpointTextEndpointMiddleware_Invoke_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointTextEndpointMiddleware.Invoke
+  name: Invoke
+  fullName: App.Metrics.Extensions.Middleware.Middleware.MetricsEndpointTextEndpointMiddleware.Invoke(HttpContext)
+- uid: App.Metrics.Extensions.Middleware.Middleware.OAuth2ClientWebRequestMeterMiddleware
+  name: OAuth2ClientWebRequestMeterMiddleware
+  href: api/App.Metrics.Extensions.Middleware.Middleware.OAuth2ClientWebRequestMeterMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_OAuth2ClientWebRequestMeterMiddleware
+  commentId: T:App.Metrics.Extensions.Middleware.Middleware.OAuth2ClientWebRequestMeterMiddleware
+  fullName: App.Metrics.Extensions.Middleware.Middleware.OAuth2ClientWebRequestMeterMiddleware
+  nameWithType: OAuth2ClientWebRequestMeterMiddleware
+- uid: App.Metrics.Extensions.Middleware.Middleware.OAuth2ClientWebRequestMeterMiddleware.#ctor(RequestDelegate,App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions,ILoggerFactory,IMetrics)
+  name: OAuth2ClientWebRequestMeterMiddleware(RequestDelegate, AspNetMetricsOptions, ILoggerFactory, IMetrics)
+  href: api/App.Metrics.Extensions.Middleware.Middleware.OAuth2ClientWebRequestMeterMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_OAuth2ClientWebRequestMeterMiddleware__ctor_RequestDelegate_App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_ILoggerFactory_IMetrics_
+  commentId: M:App.Metrics.Extensions.Middleware.Middleware.OAuth2ClientWebRequestMeterMiddleware.#ctor(RequestDelegate,App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions,ILoggerFactory,IMetrics)
+  fullName: App.Metrics.Extensions.Middleware.Middleware.OAuth2ClientWebRequestMeterMiddleware.OAuth2ClientWebRequestMeterMiddleware(RequestDelegate, App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions, ILoggerFactory, IMetrics)
+  nameWithType: OAuth2ClientWebRequestMeterMiddleware.OAuth2ClientWebRequestMeterMiddleware(RequestDelegate, AspNetMetricsOptions, ILoggerFactory, IMetrics)
+- uid: App.Metrics.Extensions.Middleware.Middleware.OAuth2ClientWebRequestMeterMiddleware.#ctor*
+  href: api/App.Metrics.Extensions.Middleware.Middleware.OAuth2ClientWebRequestMeterMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_OAuth2ClientWebRequestMeterMiddleware__ctor_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Middleware.OAuth2ClientWebRequestMeterMiddleware.#ctor
+  name: OAuth2ClientWebRequestMeterMiddleware
+  fullName: App.Metrics.Extensions.Middleware.Middleware.OAuth2ClientWebRequestMeterMiddleware.OAuth2ClientWebRequestMeterMiddleware(RequestDelegate, App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions, ILoggerFactory, IMetrics)
+- uid: App.Metrics.Extensions.Middleware.Middleware.OAuth2ClientWebRequestMeterMiddleware.Invoke(HttpContext)
+  name: Invoke(HttpContext)
+  href: api/App.Metrics.Extensions.Middleware.Middleware.OAuth2ClientWebRequestMeterMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_OAuth2ClientWebRequestMeterMiddleware_Invoke_HttpContext_
+  commentId: M:App.Metrics.Extensions.Middleware.Middleware.OAuth2ClientWebRequestMeterMiddleware.Invoke(HttpContext)
+  fullName: App.Metrics.Extensions.Middleware.Middleware.OAuth2ClientWebRequestMeterMiddleware.Invoke(HttpContext)
+  nameWithType: OAuth2ClientWebRequestMeterMiddleware.Invoke(HttpContext)
+- uid: App.Metrics.Extensions.Middleware.Middleware.OAuth2ClientWebRequestMeterMiddleware.Invoke*
+  href: api/App.Metrics.Extensions.Middleware.Middleware.OAuth2ClientWebRequestMeterMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_OAuth2ClientWebRequestMeterMiddleware_Invoke_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Middleware.OAuth2ClientWebRequestMeterMiddleware.Invoke
+  name: Invoke
+  fullName: App.Metrics.Extensions.Middleware.Middleware.OAuth2ClientWebRequestMeterMiddleware.Invoke(HttpContext)
+- uid: App.Metrics.Extensions.Middleware.Middleware.PerRequestTimerMiddleware
+  name: PerRequestTimerMiddleware
+  href: api/App.Metrics.Extensions.Middleware.Middleware.PerRequestTimerMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_PerRequestTimerMiddleware
+  commentId: T:App.Metrics.Extensions.Middleware.Middleware.PerRequestTimerMiddleware
+  fullName: App.Metrics.Extensions.Middleware.Middleware.PerRequestTimerMiddleware
+  nameWithType: PerRequestTimerMiddleware
+- uid: App.Metrics.Extensions.Middleware.Middleware.PerRequestTimerMiddleware.#ctor(RequestDelegate,App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions,ILoggerFactory,IMetrics)
+  name: PerRequestTimerMiddleware(RequestDelegate, AspNetMetricsOptions, ILoggerFactory, IMetrics)
+  href: api/App.Metrics.Extensions.Middleware.Middleware.PerRequestTimerMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_PerRequestTimerMiddleware__ctor_RequestDelegate_App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_ILoggerFactory_IMetrics_
+  commentId: M:App.Metrics.Extensions.Middleware.Middleware.PerRequestTimerMiddleware.#ctor(RequestDelegate,App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions,ILoggerFactory,IMetrics)
+  fullName: App.Metrics.Extensions.Middleware.Middleware.PerRequestTimerMiddleware.PerRequestTimerMiddleware(RequestDelegate, App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions, ILoggerFactory, IMetrics)
+  nameWithType: PerRequestTimerMiddleware.PerRequestTimerMiddleware(RequestDelegate, AspNetMetricsOptions, ILoggerFactory, IMetrics)
+- uid: App.Metrics.Extensions.Middleware.Middleware.PerRequestTimerMiddleware.#ctor*
+  href: api/App.Metrics.Extensions.Middleware.Middleware.PerRequestTimerMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_PerRequestTimerMiddleware__ctor_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Middleware.PerRequestTimerMiddleware.#ctor
+  name: PerRequestTimerMiddleware
+  fullName: App.Metrics.Extensions.Middleware.Middleware.PerRequestTimerMiddleware.PerRequestTimerMiddleware(RequestDelegate, App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions, ILoggerFactory, IMetrics)
+- uid: App.Metrics.Extensions.Middleware.Middleware.PerRequestTimerMiddleware.Invoke(HttpContext)
+  name: Invoke(HttpContext)
+  href: api/App.Metrics.Extensions.Middleware.Middleware.PerRequestTimerMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_PerRequestTimerMiddleware_Invoke_HttpContext_
+  commentId: M:App.Metrics.Extensions.Middleware.Middleware.PerRequestTimerMiddleware.Invoke(HttpContext)
+  fullName: App.Metrics.Extensions.Middleware.Middleware.PerRequestTimerMiddleware.Invoke(HttpContext)
+  nameWithType: PerRequestTimerMiddleware.Invoke(HttpContext)
+- uid: App.Metrics.Extensions.Middleware.Middleware.PerRequestTimerMiddleware.Invoke*
+  href: api/App.Metrics.Extensions.Middleware.Middleware.PerRequestTimerMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_PerRequestTimerMiddleware_Invoke_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Middleware.PerRequestTimerMiddleware.Invoke
+  name: Invoke
+  fullName: App.Metrics.Extensions.Middleware.Middleware.PerRequestTimerMiddleware.Invoke(HttpContext)
+- uid: App.Metrics.Extensions.Middleware.Middleware.PingEndpointMiddleware
+  name: PingEndpointMiddleware
+  href: api/App.Metrics.Extensions.Middleware.Middleware.PingEndpointMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_PingEndpointMiddleware
+  commentId: T:App.Metrics.Extensions.Middleware.Middleware.PingEndpointMiddleware
+  fullName: App.Metrics.Extensions.Middleware.Middleware.PingEndpointMiddleware
+  nameWithType: PingEndpointMiddleware
+- uid: App.Metrics.Extensions.Middleware.Middleware.PingEndpointMiddleware.#ctor(RequestDelegate,App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions,ILoggerFactory,IMetrics)
+  name: PingEndpointMiddleware(RequestDelegate, AspNetMetricsOptions, ILoggerFactory, IMetrics)
+  href: api/App.Metrics.Extensions.Middleware.Middleware.PingEndpointMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_PingEndpointMiddleware__ctor_RequestDelegate_App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_ILoggerFactory_IMetrics_
+  commentId: M:App.Metrics.Extensions.Middleware.Middleware.PingEndpointMiddleware.#ctor(RequestDelegate,App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions,ILoggerFactory,IMetrics)
+  fullName: App.Metrics.Extensions.Middleware.Middleware.PingEndpointMiddleware.PingEndpointMiddleware(RequestDelegate, App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions, ILoggerFactory, IMetrics)
+  nameWithType: PingEndpointMiddleware.PingEndpointMiddleware(RequestDelegate, AspNetMetricsOptions, ILoggerFactory, IMetrics)
+- uid: App.Metrics.Extensions.Middleware.Middleware.PingEndpointMiddleware.#ctor*
+  href: api/App.Metrics.Extensions.Middleware.Middleware.PingEndpointMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_PingEndpointMiddleware__ctor_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Middleware.PingEndpointMiddleware.#ctor
+  name: PingEndpointMiddleware
+  fullName: App.Metrics.Extensions.Middleware.Middleware.PingEndpointMiddleware.PingEndpointMiddleware(RequestDelegate, App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions, ILoggerFactory, IMetrics)
+- uid: App.Metrics.Extensions.Middleware.Middleware.PingEndpointMiddleware.Invoke(HttpContext)
+  name: Invoke(HttpContext)
+  href: api/App.Metrics.Extensions.Middleware.Middleware.PingEndpointMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_PingEndpointMiddleware_Invoke_HttpContext_
+  commentId: M:App.Metrics.Extensions.Middleware.Middleware.PingEndpointMiddleware.Invoke(HttpContext)
+  fullName: App.Metrics.Extensions.Middleware.Middleware.PingEndpointMiddleware.Invoke(HttpContext)
+  nameWithType: PingEndpointMiddleware.Invoke(HttpContext)
+- uid: App.Metrics.Extensions.Middleware.Middleware.PingEndpointMiddleware.Invoke*
+  href: api/App.Metrics.Extensions.Middleware.Middleware.PingEndpointMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_PingEndpointMiddleware_Invoke_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Middleware.PingEndpointMiddleware.Invoke
+  name: Invoke
+  fullName: App.Metrics.Extensions.Middleware.Middleware.PingEndpointMiddleware.Invoke(HttpContext)
+- uid: App.Metrics.Extensions.Middleware.Middleware.PostAndPutRequestSizeHistogramMiddleware
+  name: PostAndPutRequestSizeHistogramMiddleware
+  href: api/App.Metrics.Extensions.Middleware.Middleware.PostAndPutRequestSizeHistogramMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_PostAndPutRequestSizeHistogramMiddleware
+  commentId: T:App.Metrics.Extensions.Middleware.Middleware.PostAndPutRequestSizeHistogramMiddleware
+  fullName: App.Metrics.Extensions.Middleware.Middleware.PostAndPutRequestSizeHistogramMiddleware
+  nameWithType: PostAndPutRequestSizeHistogramMiddleware
+- uid: App.Metrics.Extensions.Middleware.Middleware.PostAndPutRequestSizeHistogramMiddleware.#ctor(RequestDelegate,App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions,ILoggerFactory,IMetrics)
+  name: PostAndPutRequestSizeHistogramMiddleware(RequestDelegate, AspNetMetricsOptions, ILoggerFactory, IMetrics)
+  href: api/App.Metrics.Extensions.Middleware.Middleware.PostAndPutRequestSizeHistogramMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_PostAndPutRequestSizeHistogramMiddleware__ctor_RequestDelegate_App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_ILoggerFactory_IMetrics_
+  commentId: M:App.Metrics.Extensions.Middleware.Middleware.PostAndPutRequestSizeHistogramMiddleware.#ctor(RequestDelegate,App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions,ILoggerFactory,IMetrics)
+  fullName: App.Metrics.Extensions.Middleware.Middleware.PostAndPutRequestSizeHistogramMiddleware.PostAndPutRequestSizeHistogramMiddleware(RequestDelegate, App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions, ILoggerFactory, IMetrics)
+  nameWithType: PostAndPutRequestSizeHistogramMiddleware.PostAndPutRequestSizeHistogramMiddleware(RequestDelegate, AspNetMetricsOptions, ILoggerFactory, IMetrics)
+- uid: App.Metrics.Extensions.Middleware.Middleware.PostAndPutRequestSizeHistogramMiddleware.#ctor*
+  href: api/App.Metrics.Extensions.Middleware.Middleware.PostAndPutRequestSizeHistogramMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_PostAndPutRequestSizeHistogramMiddleware__ctor_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Middleware.PostAndPutRequestSizeHistogramMiddleware.#ctor
+  name: PostAndPutRequestSizeHistogramMiddleware
+  fullName: App.Metrics.Extensions.Middleware.Middleware.PostAndPutRequestSizeHistogramMiddleware.PostAndPutRequestSizeHistogramMiddleware(RequestDelegate, App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions, ILoggerFactory, IMetrics)
+- uid: App.Metrics.Extensions.Middleware.Middleware.PostAndPutRequestSizeHistogramMiddleware.Invoke(HttpContext)
+  name: Invoke(HttpContext)
+  href: api/App.Metrics.Extensions.Middleware.Middleware.PostAndPutRequestSizeHistogramMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_PostAndPutRequestSizeHistogramMiddleware_Invoke_HttpContext_
+  commentId: M:App.Metrics.Extensions.Middleware.Middleware.PostAndPutRequestSizeHistogramMiddleware.Invoke(HttpContext)
+  fullName: App.Metrics.Extensions.Middleware.Middleware.PostAndPutRequestSizeHistogramMiddleware.Invoke(HttpContext)
+  nameWithType: PostAndPutRequestSizeHistogramMiddleware.Invoke(HttpContext)
+- uid: App.Metrics.Extensions.Middleware.Middleware.PostAndPutRequestSizeHistogramMiddleware.Invoke*
+  href: api/App.Metrics.Extensions.Middleware.Middleware.PostAndPutRequestSizeHistogramMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_PostAndPutRequestSizeHistogramMiddleware_Invoke_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Middleware.PostAndPutRequestSizeHistogramMiddleware.Invoke
+  name: Invoke
+  fullName: App.Metrics.Extensions.Middleware.Middleware.PostAndPutRequestSizeHistogramMiddleware.Invoke(HttpContext)
+- uid: App.Metrics.Extensions.Middleware.Middleware.RequestTimerMiddleware
+  name: RequestTimerMiddleware
+  href: api/App.Metrics.Extensions.Middleware.Middleware.RequestTimerMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_RequestTimerMiddleware
+  commentId: T:App.Metrics.Extensions.Middleware.Middleware.RequestTimerMiddleware
+  fullName: App.Metrics.Extensions.Middleware.Middleware.RequestTimerMiddleware
+  nameWithType: RequestTimerMiddleware
+- uid: App.Metrics.Extensions.Middleware.Middleware.RequestTimerMiddleware.#ctor(RequestDelegate,App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions,ILoggerFactory,IMetrics)
+  name: RequestTimerMiddleware(RequestDelegate, AspNetMetricsOptions, ILoggerFactory, IMetrics)
+  href: api/App.Metrics.Extensions.Middleware.Middleware.RequestTimerMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_RequestTimerMiddleware__ctor_RequestDelegate_App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_ILoggerFactory_IMetrics_
+  commentId: M:App.Metrics.Extensions.Middleware.Middleware.RequestTimerMiddleware.#ctor(RequestDelegate,App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions,ILoggerFactory,IMetrics)
+  fullName: App.Metrics.Extensions.Middleware.Middleware.RequestTimerMiddleware.RequestTimerMiddleware(RequestDelegate, App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions, ILoggerFactory, IMetrics)
+  nameWithType: RequestTimerMiddleware.RequestTimerMiddleware(RequestDelegate, AspNetMetricsOptions, ILoggerFactory, IMetrics)
+- uid: App.Metrics.Extensions.Middleware.Middleware.RequestTimerMiddleware.#ctor*
+  href: api/App.Metrics.Extensions.Middleware.Middleware.RequestTimerMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_RequestTimerMiddleware__ctor_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Middleware.RequestTimerMiddleware.#ctor
+  name: RequestTimerMiddleware
+  fullName: App.Metrics.Extensions.Middleware.Middleware.RequestTimerMiddleware.RequestTimerMiddleware(RequestDelegate, App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions, ILoggerFactory, IMetrics)
+- uid: App.Metrics.Extensions.Middleware.Middleware.RequestTimerMiddleware.Invoke(HttpContext)
+  name: Invoke(HttpContext)
+  href: api/App.Metrics.Extensions.Middleware.Middleware.RequestTimerMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_RequestTimerMiddleware_Invoke_HttpContext_
+  commentId: M:App.Metrics.Extensions.Middleware.Middleware.RequestTimerMiddleware.Invoke(HttpContext)
+  fullName: App.Metrics.Extensions.Middleware.Middleware.RequestTimerMiddleware.Invoke(HttpContext)
+  nameWithType: RequestTimerMiddleware.Invoke(HttpContext)
+- uid: App.Metrics.Extensions.Middleware.Middleware.RequestTimerMiddleware.Invoke*
+  href: api/App.Metrics.Extensions.Middleware.Middleware.RequestTimerMiddleware.html#App_Metrics_Extensions_Middleware_Middleware_RequestTimerMiddleware_Invoke_
+  commentId: Overload:App.Metrics.Extensions.Middleware.Middleware.RequestTimerMiddleware.Invoke
+  name: Invoke
+  fullName: App.Metrics.Extensions.Middleware.Middleware.RequestTimerMiddleware.Invoke(HttpContext)
 - uid: App.Metrics.Extensions.Reporting.Console
   name: App.Metrics.Extensions.Reporting.Console
   href: api/App.Metrics.Extensions.Reporting.Console.html#App_Metrics_Extensions_Reporting_Console
@@ -9519,12 +10106,96 @@ references:
   commentId: Overload:App.Metrics.Utils.TestClock.UtcDateTime
   name: UtcDateTime
   fullName: App.Metrics.Utils.TestClock.UtcDateTime
+- uid: Microsoft.AspNetCore.Builder
+  name: Microsoft.AspNetCore.Builder
+  href: api/Microsoft.AspNetCore.Builder.html#Microsoft_AspNetCore_Builder
+  commentId: N:Microsoft.AspNetCore.Builder
+  fullName: Microsoft.AspNetCore.Builder
+  nameWithType: Microsoft.AspNetCore.Builder
+- uid: Microsoft.AspNetCore.Builder.AspNetMetricsAppBuilderExtensions
+  name: AspNetMetricsAppBuilderExtensions
+  href: api/Microsoft.AspNetCore.Builder.AspNetMetricsAppBuilderExtensions.html#Microsoft_AspNetCore_Builder_AspNetMetricsAppBuilderExtensions
+  commentId: T:Microsoft.AspNetCore.Builder.AspNetMetricsAppBuilderExtensions
+  fullName: Microsoft.AspNetCore.Builder.AspNetMetricsAppBuilderExtensions
+  nameWithType: AspNetMetricsAppBuilderExtensions
+- uid: Microsoft.AspNetCore.Builder.AspNetMetricsAppBuilderExtensions.UseMetrics(IApplicationBuilder)
+  name: UseMetrics(IApplicationBuilder)
+  href: api/Microsoft.AspNetCore.Builder.AspNetMetricsAppBuilderExtensions.html#Microsoft_AspNetCore_Builder_AspNetMetricsAppBuilderExtensions_UseMetrics_IApplicationBuilder_
+  commentId: M:Microsoft.AspNetCore.Builder.AspNetMetricsAppBuilderExtensions.UseMetrics(IApplicationBuilder)
+  fullName: Microsoft.AspNetCore.Builder.AspNetMetricsAppBuilderExtensions.UseMetrics(IApplicationBuilder)
+  nameWithType: AspNetMetricsAppBuilderExtensions.UseMetrics(IApplicationBuilder)
+- uid: Microsoft.AspNetCore.Builder.AspNetMetricsAppBuilderExtensions.UseMetrics*
+  href: api/Microsoft.AspNetCore.Builder.AspNetMetricsAppBuilderExtensions.html#Microsoft_AspNetCore_Builder_AspNetMetricsAppBuilderExtensions_UseMetrics_
+  commentId: Overload:Microsoft.AspNetCore.Builder.AspNetMetricsAppBuilderExtensions.UseMetrics
+  name: UseMetrics
+  fullName: Microsoft.AspNetCore.Builder.AspNetMetricsAppBuilderExtensions.UseMetrics(IApplicationBuilder)
+- uid: Microsoft.AspNetCore.Mvc
+  name: Microsoft.AspNetCore.Mvc
+  href: api/Microsoft.AspNetCore.Mvc.html#Microsoft_AspNetCore_Mvc
+  commentId: N:Microsoft.AspNetCore.Mvc
+  fullName: Microsoft.AspNetCore.Mvc
+  nameWithType: Microsoft.AspNetCore.Mvc
+- uid: Microsoft.AspNetCore.Mvc.MvcOptionsExtensions
+  name: MvcOptionsExtensions
+  href: api/Microsoft.AspNetCore.Mvc.MvcOptionsExtensions.html#Microsoft_AspNetCore_Mvc_MvcOptionsExtensions
+  commentId: T:Microsoft.AspNetCore.Mvc.MvcOptionsExtensions
+  fullName: Microsoft.AspNetCore.Mvc.MvcOptionsExtensions
+  nameWithType: MvcOptionsExtensions
+- uid: Microsoft.AspNetCore.Mvc.MvcOptionsExtensions.AddMetricsResourceFilter(MvcOptions)
+  name: AddMetricsResourceFilter(MvcOptions)
+  href: api/Microsoft.AspNetCore.Mvc.MvcOptionsExtensions.html#Microsoft_AspNetCore_Mvc_MvcOptionsExtensions_AddMetricsResourceFilter_MvcOptions_
+  commentId: M:Microsoft.AspNetCore.Mvc.MvcOptionsExtensions.AddMetricsResourceFilter(MvcOptions)
+  fullName: Microsoft.AspNetCore.Mvc.MvcOptionsExtensions.AddMetricsResourceFilter(MvcOptions)
+  nameWithType: MvcOptionsExtensions.AddMetricsResourceFilter(MvcOptions)
+- uid: Microsoft.AspNetCore.Mvc.MvcOptionsExtensions.AddMetricsResourceFilter(MvcOptions,App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver)
+  name: AddMetricsResourceFilter(MvcOptions, IRouteNameResolver)
+  href: api/Microsoft.AspNetCore.Mvc.MvcOptionsExtensions.html#Microsoft_AspNetCore_Mvc_MvcOptionsExtensions_AddMetricsResourceFilter_MvcOptions_App_Metrics_Extensions_Middleware_Infrastructure_IRouteNameResolver_
+  commentId: M:Microsoft.AspNetCore.Mvc.MvcOptionsExtensions.AddMetricsResourceFilter(MvcOptions,App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver)
+  fullName: Microsoft.AspNetCore.Mvc.MvcOptionsExtensions.AddMetricsResourceFilter(MvcOptions, App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver)
+  nameWithType: MvcOptionsExtensions.AddMetricsResourceFilter(MvcOptions, IRouteNameResolver)
+- uid: Microsoft.AspNetCore.Mvc.MvcOptionsExtensions.AddMetricsResourceFilter*
+  href: api/Microsoft.AspNetCore.Mvc.MvcOptionsExtensions.html#Microsoft_AspNetCore_Mvc_MvcOptionsExtensions_AddMetricsResourceFilter_
+  commentId: Overload:Microsoft.AspNetCore.Mvc.MvcOptionsExtensions.AddMetricsResourceFilter
+  name: AddMetricsResourceFilter
+  fullName: Microsoft.AspNetCore.Mvc.MvcOptionsExtensions.AddMetricsResourceFilter(MvcOptions)
 - uid: Microsoft.Extensions.DependencyInjection
   name: Microsoft.Extensions.DependencyInjection
   href: api/Microsoft.Extensions.DependencyInjection.html#Microsoft_Extensions_DependencyInjection
   commentId: N:Microsoft.Extensions.DependencyInjection
   fullName: Microsoft.Extensions.DependencyInjection
   nameWithType: Microsoft.Extensions.DependencyInjection
+- uid: Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions
+  name: AspNetMetricsCoreBuilderExtensions
+  href: api/Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions.html#Microsoft_Extensions_DependencyInjection_AspNetMetricsCoreBuilderExtensions
+  commentId: T:Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions
+  fullName: Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions
+  nameWithType: AspNetMetricsCoreBuilderExtensions
+- uid: Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions.AddMetricsMiddleware(IMetricsHostBuilder)
+  name: AddMetricsMiddleware(IMetricsHostBuilder)
+  href: api/Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions.html#Microsoft_Extensions_DependencyInjection_AspNetMetricsCoreBuilderExtensions_AddMetricsMiddleware_IMetricsHostBuilder_
+  commentId: M:Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions.AddMetricsMiddleware(IMetricsHostBuilder)
+  fullName: Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions.AddMetricsMiddleware(IMetricsHostBuilder)
+  nameWithType: AspNetMetricsCoreBuilderExtensions.AddMetricsMiddleware(IMetricsHostBuilder)
+- uid: Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions.AddMetricsMiddleware(IMetricsHostBuilder,Action{App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions})
+  name: AddMetricsMiddleware(IMetricsHostBuilder, Action<AspNetMetricsOptions>)
+  href: api/Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions.html#Microsoft_Extensions_DependencyInjection_AspNetMetricsCoreBuilderExtensions_AddMetricsMiddleware_IMetricsHostBuilder_Action_App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions__
+  commentId: M:Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions.AddMetricsMiddleware(IMetricsHostBuilder,Action{App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions})
+  name.vb: AddMetricsMiddleware(IMetricsHostBuilder, Action(Of AspNetMetricsOptions))
+  fullName: Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions.AddMetricsMiddleware(IMetricsHostBuilder, Action<App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions>)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions.AddMetricsMiddleware(IMetricsHostBuilder, Action(Of App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions))
+  nameWithType: AspNetMetricsCoreBuilderExtensions.AddMetricsMiddleware(IMetricsHostBuilder, Action<AspNetMetricsOptions>)
+  nameWithType.vb: AddMetricsMiddleware(IMetricsHostBuilder, Action(Of AspNetMetricsOptions))
+- uid: Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions.AddMetricsMiddleware(IMetricsHostBuilder,IConfiguration)
+  name: AddMetricsMiddleware(IMetricsHostBuilder, IConfiguration)
+  href: api/Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions.html#Microsoft_Extensions_DependencyInjection_AspNetMetricsCoreBuilderExtensions_AddMetricsMiddleware_IMetricsHostBuilder_IConfiguration_
+  commentId: M:Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions.AddMetricsMiddleware(IMetricsHostBuilder,IConfiguration)
+  fullName: Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions.AddMetricsMiddleware(IMetricsHostBuilder, IConfiguration)
+  nameWithType: AspNetMetricsCoreBuilderExtensions.AddMetricsMiddleware(IMetricsHostBuilder, IConfiguration)
+- uid: Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions.AddMetricsMiddleware*
+  href: api/Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions.html#Microsoft_Extensions_DependencyInjection_AspNetMetricsCoreBuilderExtensions_AddMetricsMiddleware_
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions.AddMetricsMiddleware
+  name: AddMetricsMiddleware
+  fullName: Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions.AddMetricsMiddleware(IMetricsHostBuilder)
 - uid: Microsoft.Extensions.DependencyInjection.IMetricsHostBuilder
   name: IMetricsHostBuilder
   href: api/Microsoft.Extensions.DependencyInjection.IMetricsHostBuilder.html#Microsoft_Extensions_DependencyInjection_IMetricsHostBuilder
@@ -9553,6 +10224,23 @@ references:
   commentId: Overload:Microsoft.Extensions.DependencyInjection.IMetricsHostBuilder.Services
   name: Services
   fullName: Microsoft.Extensions.DependencyInjection.IMetricsHostBuilder.Services
+- uid: Microsoft.Extensions.DependencyInjection.MetricsHostBuilderExtensionsAspNetCore
+  name: MetricsHostBuilderExtensionsAspNetCore
+  href: api/Microsoft.Extensions.DependencyInjection.MetricsHostBuilderExtensionsAspNetCore.html#Microsoft_Extensions_DependencyInjection_MetricsHostBuilderExtensionsAspNetCore
+  commentId: T:Microsoft.Extensions.DependencyInjection.MetricsHostBuilderExtensionsAspNetCore
+  fullName: Microsoft.Extensions.DependencyInjection.MetricsHostBuilderExtensionsAspNetCore
+  nameWithType: MetricsHostBuilderExtensionsAspNetCore
+- uid: Microsoft.Extensions.DependencyInjection.MetricsHostBuilderExtensionsAspNetCore.AddRequiredAspNetPlatformServices(IMetricsHostBuilder)
+  name: AddRequiredAspNetPlatformServices(IMetricsHostBuilder)
+  href: api/Microsoft.Extensions.DependencyInjection.MetricsHostBuilderExtensionsAspNetCore.html#Microsoft_Extensions_DependencyInjection_MetricsHostBuilderExtensionsAspNetCore_AddRequiredAspNetPlatformServices_IMetricsHostBuilder_
+  commentId: M:Microsoft.Extensions.DependencyInjection.MetricsHostBuilderExtensionsAspNetCore.AddRequiredAspNetPlatformServices(IMetricsHostBuilder)
+  fullName: Microsoft.Extensions.DependencyInjection.MetricsHostBuilderExtensionsAspNetCore.AddRequiredAspNetPlatformServices(IMetricsHostBuilder)
+  nameWithType: MetricsHostBuilderExtensionsAspNetCore.AddRequiredAspNetPlatformServices(IMetricsHostBuilder)
+- uid: Microsoft.Extensions.DependencyInjection.MetricsHostBuilderExtensionsAspNetCore.AddRequiredAspNetPlatformServices*
+  href: api/Microsoft.Extensions.DependencyInjection.MetricsHostBuilderExtensionsAspNetCore.html#Microsoft_Extensions_DependencyInjection_MetricsHostBuilderExtensionsAspNetCore_AddRequiredAspNetPlatformServices_
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.MetricsHostBuilderExtensionsAspNetCore.AddRequiredAspNetPlatformServices
+  name: AddRequiredAspNetPlatformServices
+  fullName: Microsoft.Extensions.DependencyInjection.MetricsHostBuilderExtensionsAspNetCore.AddRequiredAspNetPlatformServices(IMetricsHostBuilder)
 - uid: Microsoft.Extensions.DependencyInjection.MetricsHostBuilderExtensionsCore
   name: MetricsHostBuilderExtensionsCore
   href: api/Microsoft.Extensions.DependencyInjection.MetricsHostBuilderExtensionsCore.html#Microsoft_Extensions_DependencyInjection_MetricsHostBuilderExtensionsCore

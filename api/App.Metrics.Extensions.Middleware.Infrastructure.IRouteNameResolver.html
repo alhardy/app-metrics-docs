@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace Microsoft.Extensions.DependencyInjection
+    <title>Interface IRouteNameResolver
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace Microsoft.Extensions.DependencyInjection
+    <meta name="title" content="Interface IRouteNameResolver
    ">
     <meta name="generator" content="docfx 2.7.3.0">
     
@@ -69,29 +69,66 @@
           <div class="col-md-10">
             <article class="content wrap" id="_content">
               
-              <h1 id="Microsoft_Extensions_DependencyInjection" data-uid="Microsoft.Extensions.DependencyInjection">Namespace Microsoft.Extensions.DependencyInjection
+              
+              <h1 id="App_Metrics_Extensions_Middleware_Infrastructure_IRouteNameResolver" data-uid="App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver">Interface IRouteNameResolver
               </h1>
               <div class="markdown level0 summary"></div>
               <div class="markdown level0 conceptual"></div>
-              <div class="markdown level0 remarks"></div>
-                <h3 id="classes">Classes
+              <h6><strong>Namespace</strong>:App.Metrics.Extensions.Middleware.Infrastructure</h6>
+              <h6><strong>Assembly</strong>:App.Metrics.Extensions.Middleware.dll</h6>
+              <h5 id="App_Metrics_Extensions_Middleware_Infrastructure_IRouteNameResolver_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public interface IRouteNameResolver</code></pre>
+              </div>
+              <h3 id="methods">Methods
               </h3>
-                  <h4><a class="xref" href="Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions.html#Microsoft_Extensions_DependencyInjection_AspNetMetricsCoreBuilderExtensions">AspNetMetricsCoreBuilderExtensions</a></h4>
-                  <section></section>
-                  <h4><a class="xref" href="Microsoft.Extensions.DependencyInjection.MetricsHostBuilderExtensionsAspNetCore.html#Microsoft_Extensions_DependencyInjection_MetricsHostBuilderExtensionsAspNetCore">MetricsHostBuilderExtensionsAspNetCore</a></h4>
-                  <section></section>
-                  <h4><a class="xref" href="Microsoft.Extensions.DependencyInjection.MetricsHostBuilderExtensionsCore.html#Microsoft_Extensions_DependencyInjection_MetricsHostBuilderExtensionsCore">MetricsHostBuilderExtensionsCore</a></h4>
-                  <section></section>
-                  <h4><a class="xref" href="Microsoft.Extensions.DependencyInjection.MetricsHostBuilderExtensionsOptional.html#Microsoft_Extensions_DependencyInjection_MetricsHostBuilderExtensionsOptional">MetricsHostBuilderExtensionsOptional</a></h4>
-                  <section></section>
-                  <h4><a class="xref" href="Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.html#Microsoft_Extensions_DependencyInjection_MetricsHostExtensions">MetricsHostExtensions</a></h4>
-                  <section></section>
-                  <h4><a class="xref" href="Microsoft.Extensions.DependencyInjection.MetricsServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_MetricsServiceCollectionExtensions">MetricsServiceCollectionExtensions</a></h4>
-                  <section></section>
-                <h3 id="interfaces">Interfaces
-              </h3>
-                  <h4><a class="xref" href="Microsoft.Extensions.DependencyInjection.IMetricsHostBuilder.html#Microsoft_Extensions_DependencyInjection_IMetricsHostBuilder">IMetricsHostBuilder</a></h4>
-                  <section></section>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Extensions_Middleware_Infrastructure_IRouteNameResolver_ResolveMatchingTemplateRoute_RouteData_.md&amp;value=---%0Auid%3A%20App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver.ResolveMatchingTemplateRoute(RouteData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics.Extensions.Middleware/Infrastructure/IRouteNameResolver.cs/#L12">View Source</a>
+              </span>
+              <a id="App_Metrics_Extensions_Middleware_Infrastructure_IRouteNameResolver_ResolveMatchingTemplateRoute_" data-uid="App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver.ResolveMatchingTemplateRoute*"></a>
+              <h4 id="App_Metrics_Extensions_Middleware_Infrastructure_IRouteNameResolver_ResolveMatchingTemplateRoute_RouteData_" data-uid="App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver.ResolveMatchingTemplateRoute(RouteData)">ResolveMatchingTemplateRoute(RouteData)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">Task&lt;string&gt; ResolveMatchingTemplateRoute(RouteData routeData)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RouteData</span></td>
+                    <td><em>routeData</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task&lt;&gt;</span>&lt;<span class="xref">System.String</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
             </article>
           </div>
           
@@ -100,7 +137,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=Microsoft_Extensions_DependencyInjection.md&amp;value=---%0Auid%3A%20Microsoft.Extensions.DependencyInjection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
+                    <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Extensions_Middleware_Infrastructure_IRouteNameResolver.md&amp;value=---%0Auid%3A%20App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics.Extensions.Middleware/Infrastructure/IRouteNameResolver.cs/#L10" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
