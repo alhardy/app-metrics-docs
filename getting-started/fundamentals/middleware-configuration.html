@@ -83,8 +83,7 @@
 <li><strong>PingEndpoint</strong>: Allows customization of the ping endpoint which simply returns pong. The default path is <code>/ping</code></li>
 <li><strong>PingEndpointEnabled</strong>: Allows enabling/disabling of the <code>/ping</code> endpoint, when disabled will result in a 404 status code, the default is true.</li>
 </ul>
-<hr>
-<h3 id="changing-options-using-actionaspnetmetricsoptions">Changing options using <code>Action&lt;AspNetMetricsOptions&gt;</code></h3>
+<h2 id="changing-options-using-actionaspnetmetricsoptions">Changing options using <code>Action&lt;AspNetMetricsOptions&gt;</code></h2>
 <pre><code class="lang-csharp" name="Main" highlight-lines="8">public class Startup
 {
     public void ConfigureServices(IServiceCollection services)
@@ -113,8 +112,7 @@
         app.UseMetrics();
     }
 }
-</code></pre><hr>
-<h3 id="changing-options-using-microsoftextensionsconfigurationiconfiguration">Changing options using <code>Microsoft.Extensions.Configuration.IConfiguration</code></h3>
+</code></pre><h2 id="changing-options-using-microsoftextensionsconfigurationiconfiguration">Changing options using <code>Microsoft.Extensions.Configuration.IConfiguration</code></h2>
 <p>Below is an example <code>Startup.cs</code> using <code>appsettings.json</code> as a configuration source:</p>
 <pre><code class="lang-csharp" name="Main" highlight-lines="20">public class Startup
 {
@@ -158,8 +156,7 @@
         &quot;IgnoredRequestPatterns&quot;: [ &quot;(?i)^api/test/ignore&quot; ]
     }
 }
-</code></pre><hr>
-<h3 id="next-steps">Next Steps</h3>
+</code></pre><h2 id="next-steps">Next Steps</h2>
 <ul>
 <li><a href="configuration.html">App MetricsConfiguration Options</a></li>
 <li><a href="../../samples/index.html">Sample Applications</a></li>

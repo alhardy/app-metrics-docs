@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Introduction </title>
+    <title>What is App Metrics? </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Introduction ">
+    <meta name="title" content="What is App Metrics? ">
     <meta name="generator" content="docfx 2.7.3.0">
     
     <link rel="shortcut icon" href="favicon.ico">
@@ -59,17 +59,8 @@
         <div class="article row grid">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-              <h2 id="introduction">Introduction</h2>
+              <h2 id="what-is-app-metrics">What is App Metrics?</h2>
               
-<p>App Metrics is a significant redesign and .NET Standard port of the <a href="https://github.com/etishor/Metrics.NET">Metrics.NET</a> library, which is a port of the Java <a href="https://github.com/dropwizard/metrics">Metrics</a> library. This library for now includes the <a href="https://github.com/etishor/Metrics.NET/tree/master/Src/Metrics/Sampling">sampling code</a> written by Metrics.NET. Metrics.NET features that have been removed for now are the following:</p>
-<ol>
-<li>Visualization, I believe most will be using something like Grafana to visualize their metrics</li>
-<li>Remote Metrics</li>
-<li>Performance counters as they are windows specific</li>
-<li>The Graphite, InfluxDB and Elasticsearch reporters, which can be re-written as an App Metrics Report Provider</li>
-</ol>
-<p>Why another .NET port? The main reason for porting Metrics.NET was to have it run on .NET Standard. Intially I refactored Metrics.NET stripping out features which required a fairly large refactor such as visualization, however the maintainers did not see .NET Standard or Core a priority at the time. </p>
-<h2 id="what-is-app-metrics">What is App Metrics?</h2>
 <p>App Metrics is an open-source and cross-platform .NET library used to record metrics within an application. App Metrics can run on .NET Core or on the full .NET framework. App Metrics abstracts away the underlaying repository of your Metrics for example InfluxDB, Graphite, Elasticsearch etc, by sampling and aggregating in memory and providing extensibility points to flush metrics to a repository at a specified interval. </p>
 <p>App Metrics provides various metric types to measure things such as the rate of requests, counting the number of user logins over time, measure the time taken to execute a database query, measure the amount of free memory and so on. Metrics types supporter are Gauges, Counters, Meters, Histograms and Timers.</p>
 <p>App Metrics also provides a health checking system allowing you to monitor the health of your application through user defined checks.</p>
@@ -82,6 +73,12 @@
 <li>Automatically measure the performance and error of each endpoint in an MVC or Web API project</li>
 <li>When securing an API with OAuth2, automatically measure the request rate and error rate per client</li>
 <li>Choose where to persist captured metrics and the dashboard you wish to use to visualize these metrics</li>
+</ul>
+<h3 id="next-steps">Next Steps</h3>
+<ul>
+<li><a href="getting-started/intro.html">Getting Started</a></li>
+<li><a href="getting-started/fundamentals/nuget-packages.html">Nuget Packages</a></li>
+<li><a href="samples/index.html">Sample Applications</a></li>
 </ul>
 
             </article>

@@ -79,23 +79,47 @@
                   <div class="level0"><span class="xref">System.Object</span></div>
                   <div class="level1"><span class="xref">ConsoleReporterProvider</span></div>
               </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+              </div>
               <h6><strong>Namespace</strong>:App.Metrics.Extensions.Reporting.Console</h6>
               <h6><strong>Assembly</strong>:App.Metrics.Extensions.Reporting.Console.dll</h6>
               <h5 id="App_Metrics_Extensions_Reporting_Console_ConsoleReporterProvider_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public class ConsoleReporterProvider : IReporterProvider</code></pre>
+                <pre><code class="lang-csharp hljs">public class ConsoleReporterProvider : IReporterProvider, IDisposable</code></pre>
               </div>
               <h3 id="constructors">Constructors
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Extensions_Reporting_Console_ConsoleReporterProvider__ctor_App_Metrics_Extensions_Reporting_Console_IConsoleReporterSettings_IMetricsFilter_.md&amp;value=---%0Auid%3A%20App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.%23ctor(App.Metrics.Extensions.Reporting.Console.IConsoleReporterSettings%2CIMetricsFilter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Extensions_Reporting_Console_ConsoleReporterProvider__ctor_App_Metrics_Extensions_Reporting_Console_IConsoleReporterSettings_App_Metrics_IMetricsFilter_.md&amp;value=---%0Auid%3A%20App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.%23ctor(App.Metrics.Extensions.Reporting.Console.IConsoleReporterSettings%2CApp.Metrics.IMetricsFilter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
                 <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics.Extensions.Reporting.Console/ConsoleReporterProvider.cs/#L17">View Source</a>
               </span>
               <a id="App_Metrics_Extensions_Reporting_Console_ConsoleReporterProvider__ctor_" data-uid="App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.#ctor*"></a>
-              <h4 id="App_Metrics_Extensions_Reporting_Console_ConsoleReporterProvider__ctor_App_Metrics_Extensions_Reporting_Console_IConsoleReporterSettings_IMetricsFilter_" data-uid="App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.#ctor(App.Metrics.Extensions.Reporting.Console.IConsoleReporterSettings,IMetricsFilter)">ConsoleReporterProvider(IConsoleReporterSettings, IMetricsFilter)</h4>
+              <h4 id="App_Metrics_Extensions_Reporting_Console_ConsoleReporterProvider__ctor_App_Metrics_Extensions_Reporting_Console_IConsoleReporterSettings_App_Metrics_IMetricsFilter_" data-uid="App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.#ctor(App.Metrics.Extensions.Reporting.Console.IConsoleReporterSettings,App.Metrics.IMetricsFilter)">ConsoleReporterProvider(IConsoleReporterSettings, IMetricsFilter)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
@@ -118,7 +142,7 @@
                     <td></td>
                   </tr>
                   <tr>
-                    <td><span class="xref">IMetricsFilter</span></td>
+                    <td><a class="xref" href="App.Metrics.IMetricsFilter.html#App_Metrics_IMetricsFilter">IMetricsFilter</a></td>
                     <td><em>filter</em></td>
                     <td></td>
                   </tr>
@@ -151,11 +175,13 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">IMetricsFilter</span></td>
+                    <td><a class="xref" href="App.Metrics.IMetricsFilter.html#App_Metrics_IMetricsFilter">IMetricsFilter</a></td>
                     <td></td>
                   </tr>
                 </tbody>
               </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="App.Metrics.Reporting.Interfaces.IReporterProvider.html#App_Metrics_Reporting_Interfaces_IReporterProvider_Filter">IReporterProvider.Filter</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Extensions_Reporting_Console_ConsoleReporterProvider_Settings.md&amp;value=---%0Auid%3A%20App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.Settings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
@@ -181,11 +207,13 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">IReporterSettings</span></td>
+                    <td><a class="xref" href="App.Metrics.Reporting.Interfaces.IReporterSettings.html#App_Metrics_Reporting_Interfaces_IReporterSettings">IReporterSettings</a></td>
                     <td></td>
                   </tr>
                 </tbody>
               </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="App.Metrics.Reporting.Interfaces.IReporterProvider.html#App_Metrics_Reporting_Interfaces_IReporterProvider_Settings">IReporterProvider.Settings</a></div>
               <h3 id="methods">Methods
               </h3>
               <span class="small pull-right mobile-hide">
@@ -230,11 +258,13 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">IMetricReporter</span></td>
+                    <td><a class="xref" href="App.Metrics.Reporting.Interfaces.IMetricReporter.html#App_Metrics_Reporting_Interfaces_IMetricReporter">IMetricReporter</a></td>
                     <td></td>
                   </tr>
                 </tbody>
               </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="App.Metrics.Reporting.Interfaces.IReporterProvider.html#App_Metrics_Reporting_Interfaces_IReporterProvider_CreateMetricReporter_System_String_">IReporterProvider.CreateMetricReporter(String)</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Extensions_Reporting_Console_ConsoleReporterProvider_Dispose.md&amp;value=---%0Auid%3A%20App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
@@ -250,6 +280,8 @@
               <div class="codewrapper">
                 <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
               </div>
+              <h5 class="implements">Implements</h5>
+                  <div><span class="xref">System.IDisposable.Dispose()</span></div>
             </article>
           </div>
           

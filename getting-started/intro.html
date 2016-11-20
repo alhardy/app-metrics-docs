@@ -66,15 +66,15 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-              <h2 id="getting-started">Getting started</h2>
+              <h1 id="getting-started">Getting started</h1>
               
-<h3 id="configure-a-web-application">Configure a web application</h3>
-<p>Add the App Metrics AspNet extension nuget package to your project.json, as well as the json serilization formatter nuget package.</p>
-<pre><code>    &quot;App.Metrics.Extensions.Middleware&quot;: &quot;1.0.0-*
-
-    &quot;App.Metrics.Formatters.Json&quot;: &quot;1.0.0-*&quot;
-</code></pre><hr>
-<p>App Metrics is configured using the usual pattern to provide services and configuration to an ASP.NET Core project by adding required services to the <code>ConfigureServices</code> method in the <code>Startup.cs</code></p>
+<h2 id="configuring-a-web-host">Configuring a Web Host</h2>
+<ol>
+<li><p>Add the <a href="fundamentals/nuget-packages.html">App.Metrics.Extensions.Middleware</a> and <a href="fundamentals/nuget-packages.html">App.Metrics.Formatters.Json</a> nuget packages to your project.</p>
+</li>
+<li><p>App Metrics is configured using the usual pattern to provide services and configuration to an ASP.NET Core project by adding required services to the <code>ConfigureServices</code> method in the <code>Startup.cs</code></p>
+</li>
+</ol>
 <p>Modify your <code>Startup.cs</code> with the following:</p>
 <pre><code class="lang-csharp" name="Main">public class Startup
 {
@@ -91,7 +91,8 @@
 		app.UseMetrics();
 	}
 }
-</code></pre><ul>
+</code></pre><p>What does the above configuration do?</p>
+<ul>
 <li><code>AddMetrics</code> registers App Metrics services with the <code>IServiceCollection</code>. This method also also provides options to change the default metrics configuration if you wish to do so.</li>
 <li><code>AddHealthChecks</code> registers the Health Checking sytem, it will scan for classes within the project and any other project which has a reference to App Metrics and register any class which inherits <code>HealthCheck</code>. Alternatively, this method also provides access to the <code>IHealthCheckFactory</code> where you can register health checks inline.</li>
 <li><code>AddMetricsMiddleware</code> registers middleware components providing a serveral metrics related endpoints, which are:<ol>
@@ -102,11 +103,15 @@
 </ol>
 </li>
 </ul>
-<h3 id="configure-a-console-application">Configure a console application</h3>
-<p>Add the App Metrics nuget package to your project.json, as well as the console reporter nuget package</p>
-<pre><code>    &quot;App.Metrics&quot;: &quot;1.0.0-*&quot;    
-    &quot;App.Metrics.Extensions.Reporting.Console&quot;: &quot;1.0.0-*&quot;
-</code></pre><hr>
+<div class="NOTE"><h5>Note</h5><p>Try either the <a href="https://github.com/alhardy/AppMetrics/tree/master/samples/Api.Sample">AspNet Core Api</a> or <a href="https://github.com/alhardy/AppMetrics/tree/master/samples/Mvc.Sample">AspNet Core MVC</a> Sample</p>
+</div>
+<h2 id="configuring-a-console-application">Configuring a Console Application</h2>
+<ol>
+<li><p>Add the <a href="fundamentals/nuget-packages.html">App.Metrics</a> and <a href="fundamentals/nuget-packages.html">App.Metrics.Extensions.Reporting.Console</a> nuget packages to your project.</p>
+</li>
+<li><p>App Metrics is configured using the usual pattern to provide services and configuration to an ASP.NET Core project by adding required services to the <code>ConfigureServices</code> method in the <code>Startup.cs</code> </p>
+</li>
+</ol>
 <p>Modify your <code>Program.cs</code> with the following:</p>
 <pre><code class="lang-csharp" name="Main">public class Host
 { 
@@ -157,10 +162,20 @@
 <li><code>AddHealthChecks</code> registers the Health Checking sytem, it will scan for classes within the project and any other project which has a reference to App Metrics and register any class which inherits <code>HealthCheck</code>. Alternatively, this method also provides access to the <code>IHealthCheckFactory</code> where you can register health checks inline.</li>
 <li><code>AddReporting</code> provides access to the <code>IReportFactory</code> allowing multiple metric report providers to be configured that will execute on each report run at the specified interval</li>
 </ul>
-<hr>
-<h3 id="recording-metrics">Recording Metrics</h3>
+<div class="NOTE"><h5>Note</h5><p>Try the <a href="https://github.com/alhardy/AppMetrics/tree/master/samples/App.Sample">.NET Core Console Application</a> Sample.</p>
+</div>
+<h2 id="measuring-application-metrics">Measuring Application Metrics</h2>
 <p>App Metrics provides access to an <code>IMetrics</code> interface which is registered as a Single Instance. This can be injected where required to start mesuring different types of metrics.</p>
-<p>Each metric being measured should be described through one of the following: <code>GaugeOptions</code>, <code>CounterOptions</code>, <code>MeterOptions</code>, <code>TimerOptions</code>, <code>HistogramOptions</code>. They provide the details about the metric being measured, the only required property is the <code>Name</code> property.</p>
+<p>Each metric being measured should be described through one of the below, which provides details about the metric being measured, the only required property is the <code>Name</code> property.</p>
+<ul>
+<li><code>GaugeOptions</code>: Allows the metric context, metric name, unit of measurement, and tags to be specified.</li>
+<li><code>CounterOptions</code>: Allows the metric context, metric name, unit of measurement, and tags to be specified.</li>
+<li><code>MeterOptions</code>: Allows the metric context, metric name, unit of measurement, rate unit and tags to be specified.</li>
+<li><code>TimerOptions</code>: Allows the metric context, metric name, unit of measurement, rate unit, duration unit, sampling type and tags to be specified. Also allows a custom <code>IResevoir</code> to be used for sampling.</li>
+<li><code>HistogramOptions</code>: Allows the metric context, metric name, unit of measurement, sampling type and tags to be specified. Also allows a custom <code>IResevoir</code> to be used for sampling.</li>
+</ul>
+<div class="NOTE"><h5>Note</h5><p>See the <a href="../api/App.Metrics.Core.Options.html">Api Documentation</a> for details on each of the above.</p>
+</div>
 <p>Below is an example of how organize an application&#39;s metrics</p>
 <pre><code class="lang-csharp" name="Main">public static class AppMetricsRegistery
 {
@@ -211,8 +226,7 @@ using(_metrics.Time(AppMetricsRegistery.SampleTimer))
 {
     // Do something
 }
-</code></pre><hr>
-<h3 id="next-steps">Next Steps</h3>
+</code></pre><h2 id="next-steps">Next Steps</h2>
 <ul>
 <li>Supported Metrics Types: <a href="metric-types/gauges.html">Gauges</a>, <a href="metric-types/counters.html">Counters</a>, <a href="metric-types/meters.html">Meters</a>, <a href="metric-types/histograms.html">Histograms</a>, <a href="metric-types/timers.html">Timers</a></li>
 <li><a href="fundamentals/configuration.html">Configuration Options</a>  </li>

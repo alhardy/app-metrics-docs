@@ -77,8 +77,7 @@
 <li><strong>MetricsEnabled</strong>: Allows recording of all metrics to be disabled.</li>
 <li><strong>ReportingEnabled</strong>: Allows all configured reporters to be disabled.</li>
 </ul>
-<hr>
-<h3 id="changing-options-using-actionappmetricoptions">Changing options using <code>Action&lt;AppMetricOptions&gt;</code></h3>
+<h2 id="changing-options-using-actionappmetricoptions">Changing options using <code>Action&lt;AppMetricOptions&gt;</code></h2>
 <pre><code class="lang-csharp" name="Main" highlight-lines="5">public class Startup
 {
     public void ConfigureServices(IServiceCollection services)
@@ -100,8 +99,7 @@
         app.UseMetrics();
     }
 }
-</code></pre><hr>
-<h3 id="changing-options-using-microsoftextensionsconfigurationiconfiguration">Changing options using <code>Microsoft.Extensions.Configuration.IConfiguration</code></h3>
+</code></pre><h2 id="changing-options-using-microsoftextensionsconfigurationiconfiguration">Changing options using <code>Microsoft.Extensions.Configuration.IConfiguration</code></h2>
 <p>Below is an example <code>Startup.cs</code> using <code>appsettings.json</code> as a configuration source:</p>
 <pre><code class="lang-csharp" name="Main" highlight-lines="17">public class Startup
 {
@@ -140,8 +138,7 @@
         &quot;GlobalTags&quot;: { &quot;env&quot;: &quot;stage&quot; }  
     }
 }
-</code></pre><hr>
-<h3 id="next-steps">Next Steps</h3>
+</code></pre><h2 id="next-steps">Next Steps</h2>
 <ul>
 <li><a href="middleware-configuration.html">AspNet Core Middleware Configuration Options</a></li>
 <li><a href="../../samples/index.html">Sample Applications</a></li>

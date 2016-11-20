@@ -89,6 +89,27 @@
                 <div>
                   <a class="xref" href="App.Metrics.Core.FunctionGauge.html#App_Metrics_Core_FunctionGauge_GetValue_System_Boolean_">FunctionGauge.GetValue(Boolean)</a>
                 </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
               </div>
               <h6><strong>Namespace</strong>:App.Metrics.Core</h6>
               <h6><strong>Assembly</strong>:App.Metrics.dll</h6>
@@ -139,13 +160,13 @@ meters.</p>
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_HitRatioGauge__ctor_App_Metrics_IMeter_App_Metrics_IMeter_Func_App_Metrics_Data_MeterValue_System_Double__.md&amp;value=---%0Auid%3A%20App.Metrics.Core.HitRatioGauge.%23ctor(App.Metrics.IMeter%2CApp.Metrics.IMeter%2CFunc%7BApp.Metrics.Data.MeterValue%2CSystem.Double%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_HitRatioGauge__ctor_App_Metrics_IMeter_App_Metrics_IMeter_System_Func_App_Metrics_Data_MeterValue_System_Double__.md&amp;value=---%0Auid%3A%20App.Metrics.Core.HitRatioGauge.%23ctor(App.Metrics.IMeter%2CApp.Metrics.IMeter%2CSystem.Func%7BApp.Metrics.Data.MeterValue%2CSystem.Double%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
                 <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Core/HitRatioGauge.cs/#L36">View Source</a>
               </span>
               <a id="App_Metrics_Core_HitRatioGauge__ctor_" data-uid="App.Metrics.Core.HitRatioGauge.#ctor*"></a>
-              <h4 id="App_Metrics_Core_HitRatioGauge__ctor_App_Metrics_IMeter_App_Metrics_IMeter_Func_App_Metrics_Data_MeterValue_System_Double__" data-uid="App.Metrics.Core.HitRatioGauge.#ctor(App.Metrics.IMeter,App.Metrics.IMeter,Func{App.Metrics.Data.MeterValue,System.Double})">HitRatioGauge(IMeter, IMeter, Func&lt;MeterValue, Double&gt;)</h4>
+              <h4 id="App_Metrics_Core_HitRatioGauge__ctor_App_Metrics_IMeter_App_Metrics_IMeter_System_Func_App_Metrics_Data_MeterValue_System_Double__" data-uid="App.Metrics.Core.HitRatioGauge.#ctor(App.Metrics.IMeter,App.Metrics.IMeter,System.Func{App.Metrics.Data.MeterValue,System.Double})">HitRatioGauge(IMeter, IMeter, Func&lt;MeterValue, Double&gt;)</h4>
               <div class="markdown level1 summary"><p>Creates a new HitRatioGauge with externally tracked Meters, and uses the provided meter rate function to extract
 the value for the ratio.</p>
 </div>
@@ -177,7 +198,7 @@ the value for the ratio.</p>
 </td>
                   </tr>
                   <tr>
-                    <td><span class="xref">Func&lt;, &gt;</span>&lt;<a class="xref" href="App.Metrics.Data.MeterValue.html#App_Metrics_Data_MeterValue">MeterValue</a>, <span class="xref">System.Double</span>&gt;</td>
+                    <td><span class="xref">System.Func&lt;T, TResult&gt;</span>&lt;<a class="xref" href="App.Metrics.Data.MeterValue.html#App_Metrics_Data_MeterValue">MeterValue</a>, <span class="xref">System.Double</span>&gt;</td>
                     <td><em>meterRateFunc</em></td>
                     <td><p>The function to extract a value from the MeterValue. Will be applied to both the numerator
 and denominator meters.</p>
@@ -228,13 +249,13 @@ of the meters.</p>
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_HitRatioGauge__ctor_App_Metrics_IMeter_App_Metrics_ITimer_Func_App_Metrics_Data_MeterValue_System_Double__.md&amp;value=---%0Auid%3A%20App.Metrics.Core.HitRatioGauge.%23ctor(App.Metrics.IMeter%2CApp.Metrics.ITimer%2CFunc%7BApp.Metrics.Data.MeterValue%2CSystem.Double%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_HitRatioGauge__ctor_App_Metrics_IMeter_App_Metrics_ITimer_System_Func_App_Metrics_Data_MeterValue_System_Double__.md&amp;value=---%0Auid%3A%20App.Metrics.Core.HitRatioGauge.%23ctor(App.Metrics.IMeter%2CApp.Metrics.ITimer%2CSystem.Func%7BApp.Metrics.Data.MeterValue%2CSystem.Double%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
                 <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Core/HitRatioGauge.cs/#L64">View Source</a>
               </span>
               <a id="App_Metrics_Core_HitRatioGauge__ctor_" data-uid="App.Metrics.Core.HitRatioGauge.#ctor*"></a>
-              <h4 id="App_Metrics_Core_HitRatioGauge__ctor_App_Metrics_IMeter_App_Metrics_ITimer_Func_App_Metrics_Data_MeterValue_System_Double__" data-uid="App.Metrics.Core.HitRatioGauge.#ctor(App.Metrics.IMeter,App.Metrics.ITimer,Func{App.Metrics.Data.MeterValue,System.Double})">HitRatioGauge(IMeter, ITimer, Func&lt;MeterValue, Double&gt;)</h4>
+              <h4 id="App_Metrics_Core_HitRatioGauge__ctor_App_Metrics_IMeter_App_Metrics_ITimer_System_Func_App_Metrics_Data_MeterValue_System_Double__" data-uid="App.Metrics.Core.HitRatioGauge.#ctor(App.Metrics.IMeter,App.Metrics.ITimer,System.Func{App.Metrics.Data.MeterValue,System.Double})">HitRatioGauge(IMeter, ITimer, Func&lt;MeterValue, Double&gt;)</h4>
               <div class="markdown level1 summary"><p>Creates a new HitRatioGauge with externally tracked Meter and Timer, and uses the provided meter rate function to
 extract the value for the ratio.</p>
 </div>
@@ -266,7 +287,7 @@ extract the value for the ratio.</p>
 </td>
                   </tr>
                   <tr>
-                    <td><span class="xref">Func&lt;, &gt;</span>&lt;<a class="xref" href="App.Metrics.Data.MeterValue.html#App_Metrics_Data_MeterValue">MeterValue</a>, <span class="xref">System.Double</span>&gt;</td>
+                    <td><span class="xref">System.Func&lt;T, TResult&gt;</span>&lt;<a class="xref" href="App.Metrics.Data.MeterValue.html#App_Metrics_Data_MeterValue">MeterValue</a>, <span class="xref">System.Double</span>&gt;</td>
                     <td><em>meterRateFunc</em></td>
                     <td><p>The function to extract a value from the MeterValue. Will be applied to both the numerator
 and denominator meters.</p>

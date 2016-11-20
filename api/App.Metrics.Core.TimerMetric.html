@@ -79,11 +79,35 @@
                   <div class="level0"><span class="xref">System.Object</span></div>
                   <div class="level1"><span class="xref">TimerMetric</span></div>
               </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+              </div>
               <h6><strong>Namespace</strong>:App.Metrics.Core</h6>
               <h6><strong>Assembly</strong>:App.Metrics.dll</h6>
               <h5 id="App_Metrics_Core_TimerMetric_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public sealed class TimerMetric : object, ITimerMetric, ITimer, IResetableMetric, IMetricValueProvider&lt;TimerValue&gt;, IHideObjectMembers, IDisposable</code></pre>
+                <pre><code class="lang-csharp hljs">public sealed class TimerMetric : ITimerMetric, ITimer, IResetableMetric, IMetricValueProvider&lt;TimerValue&gt;, IHideObjectMembers, IDisposable</code></pre>
               </div>
               <h3 id="constructors">Constructors
               </h3>
@@ -382,6 +406,8 @@
               <div class="codewrapper">
                 <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
               </div>
+              <h5 class="implements">Implements</h5>
+                  <div><span class="xref">System.IDisposable.Dispose()</span></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
@@ -654,13 +680,13 @@
                   <div><a class="xref" href="App.Metrics.ITimer.html#App_Metrics_ITimer_StartRecording">ITimer.StartRecording()</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_Time_Action_System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.Time(Action%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_Time_System_Action_System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.Time(System.Action%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
                 <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Core/TimerMetric.cs/#L164">View Source</a>
               </span>
               <a id="App_Metrics_Core_TimerMetric_Time_" data-uid="App.Metrics.Core.TimerMetric.Time*"></a>
-              <h4 id="App_Metrics_Core_TimerMetric_Time_Action_System_String_" data-uid="App.Metrics.Core.TimerMetric.Time(Action,System.String)">Time(Action, String)</h4>
+              <h4 id="App_Metrics_Core_TimerMetric_Time_System_Action_System_String_" data-uid="App.Metrics.Core.TimerMetric.Time(System.Action,System.String)">Time(Action, String)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
@@ -678,7 +704,7 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">Action</span></td>
+                    <td><span class="xref">System.Action</span></td>
                     <td><em>action</em></td>
                     <td></td>
                   </tr>
@@ -690,16 +716,16 @@
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="App.Metrics.ITimer.html#App_Metrics_ITimer_Time_Action_System_String_">ITimer.Time(Action, String)</a></div>
+                  <div><a class="xref" href="App.Metrics.ITimer.html#App_Metrics_ITimer_Time_System_Action_System_String_">ITimer.Time(Action, String)</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_Time__1_Func___0__System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.Time%60%601(Func%7B%60%600%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_TimerMetric_Time__1_System_Func___0__System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.TimerMetric.Time%60%601(System.Func%7B%60%600%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
                 <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/Core/TimerMetric.cs/#L180">View Source</a>
               </span>
               <a id="App_Metrics_Core_TimerMetric_Time_" data-uid="App.Metrics.Core.TimerMetric.Time*"></a>
-              <h4 id="App_Metrics_Core_TimerMetric_Time__1_Func___0__System_String_" data-uid="App.Metrics.Core.TimerMetric.Time``1(Func{``0},System.String)">Time&lt;T&gt;(Func&lt;T&gt;, String)</h4>
+              <h4 id="App_Metrics_Core_TimerMetric_Time__1_System_Func___0__System_String_" data-uid="App.Metrics.Core.TimerMetric.Time``1(System.Func{``0},System.String)">Time&lt;T&gt;(Func&lt;T&gt;, String)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
@@ -717,7 +743,7 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">Func&lt;&gt;</span>&lt;T&gt;</td>
+                    <td><span class="xref">System.Func&lt;TResult&gt;</span>&lt;T&gt;</td>
                     <td><em>action</em></td>
                     <td></td>
                   </tr>
@@ -759,7 +785,7 @@
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="App.Metrics.ITimer.html#App_Metrics_ITimer_Time__1_Func___0__System_String_">ITimer.Time&lt;T&gt;(Func&lt;T&gt;, String)</a></div>
+                  <div><a class="xref" href="App.Metrics.ITimer.html#App_Metrics_ITimer_Time__1_System_Func___0__System_String_">ITimer.Time&lt;T&gt;(Func&lt;T&gt;, String)</a></div>
             </article>
           </div>
           

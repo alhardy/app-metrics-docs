@@ -74,21 +74,6 @@
               </h1>
               <div class="markdown level0 summary"></div>
               <div class="markdown level0 conceptual"></div>
-              <div class="inheritedMembers">
-                <h5>Inherited Members</h5>
-                <div>
-                  <a class="xref" href="App.Metrics.Utils.IHideObjectMembers.html#App_Metrics_Utils_IHideObjectMembers_Equals_System_Object_">IHideObjectMembers.Equals(Object)</a>
-                </div>
-                <div>
-                  <a class="xref" href="App.Metrics.Utils.IHideObjectMembers.html#App_Metrics_Utils_IHideObjectMembers_GetHashCode">IHideObjectMembers.GetHashCode()</a>
-                </div>
-                <div>
-                  <a class="xref" href="App.Metrics.Utils.IHideObjectMembers.html#App_Metrics_Utils_IHideObjectMembers_GetType">IHideObjectMembers.GetType()</a>
-                </div>
-                <div>
-                  <a class="xref" href="App.Metrics.Utils.IHideObjectMembers.html#App_Metrics_Utils_IHideObjectMembers_ToString">IHideObjectMembers.ToString()</a>
-                </div>
-              </div>
               <h6><strong>Namespace</strong>:App.Metrics</h6>
               <h6><strong>Assembly</strong>:App.Metrics.dll</h6>
               <h5 id="App_Metrics_IHealthCheckFactory_syntax">Syntax</h5>
@@ -122,7 +107,7 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">IReadOnlyDictionary&lt;, &gt;</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="App.Metrics.Core.HealthCheck.html#App_Metrics_Core_HealthCheck">HealthCheck</a>&gt;</td>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary&lt;TKey, TValue&gt;</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="App.Metrics.Core.HealthCheck.html#App_Metrics_Core_HealthCheck">HealthCheck</a>&gt;</td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -131,13 +116,13 @@
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_IHealthCheckFactory_Register_System_String_Func_Task_App_Metrics_Core_HealthCheckResult___.md&amp;value=---%0Auid%3A%20App.Metrics.IHealthCheckFactory.Register(System.String%2CFunc%7BTask%7BApp.Metrics.Core.HealthCheckResult%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_IHealthCheckFactory_Register_System_String_System_Func_System_Threading_Tasks_Task_App_Metrics_Core_HealthCheckResult___.md&amp;value=---%0Auid%3A%20App.Metrics.IHealthCheckFactory.Register(System.String%2CSystem.Func%7BSystem.Threading.Tasks.Task%7BApp.Metrics.Core.HealthCheckResult%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
                 <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/IHealthCheckFactory.cs/#L19">View Source</a>
               </span>
               <a id="App_Metrics_IHealthCheckFactory_Register_" data-uid="App.Metrics.IHealthCheckFactory.Register*"></a>
-              <h4 id="App_Metrics_IHealthCheckFactory_Register_System_String_Func_Task_App_Metrics_Core_HealthCheckResult___" data-uid="App.Metrics.IHealthCheckFactory.Register(System.String,Func{Task{App.Metrics.Core.HealthCheckResult}})">Register(String, Func&lt;Task&lt;HealthCheckResult&gt;&gt;)</h4>
+              <h4 id="App_Metrics_IHealthCheckFactory_Register_System_String_System_Func_System_Threading_Tasks_Task_App_Metrics_Core_HealthCheckResult___" data-uid="App.Metrics.IHealthCheckFactory.Register(System.String,System.Func{System.Threading.Tasks.Task{App.Metrics.Core.HealthCheckResult}})">Register(String, Func&lt;Task&lt;HealthCheckResult&gt;&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
@@ -160,7 +145,7 @@
                     <td></td>
                   </tr>
                   <tr>
-                    <td><span class="xref">Func&lt;&gt;</span>&lt;<span class="xref">Task&lt;&gt;</span>&lt;<a class="xref" href="App.Metrics.Core.HealthCheckResult.html#App_Metrics_Core_HealthCheckResult">HealthCheckResult</a>&gt;&gt;</td>
+                    <td><span class="xref">System.Func&lt;TResult&gt;</span>&lt;<span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="App.Metrics.Core.HealthCheckResult.html#App_Metrics_Core_HealthCheckResult">HealthCheckResult</a>&gt;&gt;</td>
                     <td><em>check</em></td>
                     <td></td>
                   </tr>
@@ -168,13 +153,13 @@
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_IHealthCheckFactory_Register_System_String_Func_Task_System_String___.md&amp;value=---%0Auid%3A%20App.Metrics.IHealthCheckFactory.Register(System.String%2CFunc%7BTask%7BSystem.String%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_IHealthCheckFactory_Register_System_String_System_Func_System_Threading_Tasks_Task_System_String___.md&amp;value=---%0Auid%3A%20App.Metrics.IHealthCheckFactory.Register(System.String%2CSystem.Func%7BSystem.Threading.Tasks.Task%7BSystem.String%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
                 <a href="https://github.com/alhardy/AppMetrics/blob/dev/src/App.Metrics/IHealthCheckFactory.cs/#L17">View Source</a>
               </span>
               <a id="App_Metrics_IHealthCheckFactory_Register_" data-uid="App.Metrics.IHealthCheckFactory.Register*"></a>
-              <h4 id="App_Metrics_IHealthCheckFactory_Register_System_String_Func_Task_System_String___" data-uid="App.Metrics.IHealthCheckFactory.Register(System.String,Func{Task{System.String}})">Register(String, Func&lt;Task&lt;String&gt;&gt;)</h4>
+              <h4 id="App_Metrics_IHealthCheckFactory_Register_System_String_System_Func_System_Threading_Tasks_Task_System_String___" data-uid="App.Metrics.IHealthCheckFactory.Register(System.String,System.Func{System.Threading.Tasks.Task{System.String}})">Register(String, Func&lt;Task&lt;String&gt;&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
@@ -197,7 +182,7 @@
                     <td></td>
                   </tr>
                   <tr>
-                    <td><span class="xref">Func&lt;&gt;</span>&lt;<span class="xref">Task&lt;&gt;</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+                    <td><span class="xref">System.Func&lt;TResult&gt;</span>&lt;<span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
                     <td><em>check</em></td>
                     <td></td>
                   </tr>

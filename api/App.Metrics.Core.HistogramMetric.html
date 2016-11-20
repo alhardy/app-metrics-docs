@@ -79,11 +79,35 @@
                   <div class="level0"><span class="xref">System.Object</span></div>
                   <div class="level1"><span class="xref">HistogramMetric</span></div>
               </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+              </div>
               <h6><strong>Namespace</strong>:App.Metrics.Core</h6>
               <h6><strong>Assembly</strong>:App.Metrics.dll</h6>
               <h5 id="App_Metrics_Core_HistogramMetric_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public sealed class HistogramMetric : object, IHistogramMetric, IHistogram, IResetableMetric, IMetricValueProvider&lt;HistogramValue&gt;, IHideObjectMembers, IDisposable</code></pre>
+                <pre><code class="lang-csharp hljs">public sealed class HistogramMetric : IHistogramMetric, IHistogram, IResetableMetric, IMetricValueProvider&lt;HistogramValue&gt;, IHideObjectMembers, IDisposable</code></pre>
               </div>
               <h3 id="constructors">Constructors
               </h3>
@@ -202,6 +226,8 @@
               <div class="codewrapper">
                 <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
               </div>
+              <h5 class="implements">Implements</h5>
+                  <div><span class="xref">System.IDisposable.Dispose()</span></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/alhardy/AppMetrics/new/dev/docfx_project/apispec/new?filename=App_Metrics_Core_HistogramMetric_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.HistogramMetric.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
