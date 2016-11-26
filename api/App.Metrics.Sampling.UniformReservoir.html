@@ -72,7 +72,16 @@
               
               <h1 id="App_Metrics_Sampling_UniformReservoir" data-uid="App.Metrics.Sampling.UniformReservoir">Class UniformReservoir
               </h1>
-              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 summary"><p>A histogram with a uniform reservoir produces <a href="https://en.wikipedia.org/wiki/Quantile">quantiles</a>
+which are valid for the entirely of the histogram’s lifetime.</p>
+<p>
+    This sampling resevoir can be used when you are interested in long-term measurements, it does not offer a sence
+    of recency.
+</p>
+<p>
+    All samples are equally likely to be evicted when the reservoir is at full capacity.
+</p>
+</div>
               <div class="markdown level0 conceptual"></div>
               <div class="inheritance">
                 <h5>Inheritance</h5>
@@ -109,37 +118,46 @@
               <div class="codewrapper">
                 <pre><code class="lang-csharp hljs">public sealed class UniformReservoir : IReservoir</code></pre>
               </div>
+              <h5 id="App_Metrics_Sampling_UniformReservoir_remarks"><strong>Remarks</strong></h5>
+              <div class="markdown level0 remarks"><p>Uses <a href="http://www.cs.umd.edu/~samir/498/vitter.pdf">Vitter&#39;s Algorithm R</a> for</p>
+<p><a class="xref" href="App.Metrics.Sampling.Interfaces.IReservoir.html#App_Metrics_Sampling_Interfaces_IReservoir">IReservoir</a> sampling</p>
+</div>
               <h3 id="constructors">Constructors
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics/new/master/docfx_project/apispec/new?filename=App_Metrics_Sampling_UniformReservoir__ctor.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.UniformReservoir.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/1.0.0-beta1/docfx_project/apispec/new?filename=App_Metrics_Sampling_UniformReservoir__ctor.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.UniformReservoir.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Sampling/UniformReservoir.cs/#L23">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Sampling/UniformReservoir.cs/#L45">View Source</a>
               </span>
               <a id="App_Metrics_Sampling_UniformReservoir__ctor_" data-uid="App.Metrics.Sampling.UniformReservoir.#ctor*"></a>
               <h4 id="App_Metrics_Sampling_UniformReservoir__ctor" data-uid="App.Metrics.Sampling.UniformReservoir.#ctor">UniformReservoir()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="App.Metrics.Sampling.UniformReservoir.html#App_Metrics_Sampling_UniformReservoir">UniformReservoir</a> class.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
                 <pre><code class="lang-csharp hljs">public UniformReservoir()</code></pre>
               </div>
+              <h5 id="App_Metrics_Sampling_UniformReservoir__ctor_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The default sample size is 1028</p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics/new/master/docfx_project/apispec/new?filename=App_Metrics_Sampling_UniformReservoir__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.UniformReservoir.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/1.0.0-beta1/docfx_project/apispec/new?filename=App_Metrics_Sampling_UniformReservoir__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.UniformReservoir.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Sampling/UniformReservoir.cs/#L28">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Sampling/UniformReservoir.cs/#L54">View Source</a>
               </span>
               <a id="App_Metrics_Sampling_UniformReservoir__ctor_" data-uid="App.Metrics.Sampling.UniformReservoir.#ctor*"></a>
               <h4 id="App_Metrics_Sampling_UniformReservoir__ctor_System_Int32_" data-uid="App.Metrics.Sampling.UniformReservoir.#ctor(System.Int32)">UniformReservoir(Int32)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="App.Metrics.Sampling.UniformReservoir.html#App_Metrics_Sampling_UniformReservoir">UniformReservoir</a> class.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public UniformReservoir(int size)</code></pre>
+                <pre><code class="lang-csharp hljs">public UniformReservoir(int sampleSize)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -153,8 +171,9 @@
                 <tbody>
                   <tr>
                     <td><span class="xref">System.Int32</span></td>
-                    <td><em>size</em></td>
-                    <td></td>
+                    <td><em>sampleSize</em></td>
+                    <td><p>The random sample size to generate, defaults to 1028</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -162,10 +181,10 @@
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics/new/master/docfx_project/apispec/new?filename=App_Metrics_Sampling_UniformReservoir_Size.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.UniformReservoir.Size%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/1.0.0-beta1/docfx_project/apispec/new?filename=App_Metrics_Sampling_UniformReservoir_Size.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.UniformReservoir.Size%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Sampling/UniformReservoir.cs/#L33">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Sampling/UniformReservoir.cs/#L60">View Source</a>
               </span>
               <a id="App_Metrics_Sampling_UniformReservoir_Size_" data-uid="App.Metrics.Sampling.UniformReservoir.Size*"></a>
               <h4 id="App_Metrics_Sampling_UniformReservoir_Size" data-uid="App.Metrics.Sampling.UniformReservoir.Size">Size</h4>
@@ -194,10 +213,10 @@
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics/new/master/docfx_project/apispec/new?filename=App_Metrics_Sampling_UniformReservoir_GetSnapshot_System_Boolean_.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.UniformReservoir.GetSnapshot(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/1.0.0-beta1/docfx_project/apispec/new?filename=App_Metrics_Sampling_UniformReservoir_GetSnapshot_System_Boolean_.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.UniformReservoir.GetSnapshot(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Sampling/UniformReservoir.cs/#L35">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Sampling/UniformReservoir.cs/#L63">View Source</a>
               </span>
               <a id="App_Metrics_Sampling_UniformReservoir_GetSnapshot_" data-uid="App.Metrics.Sampling.UniformReservoir.GetSnapshot*"></a>
               <h4 id="App_Metrics_Sampling_UniformReservoir_GetSnapshot_System_Boolean_" data-uid="App.Metrics.Sampling.UniformReservoir.GetSnapshot(System.Boolean)">GetSnapshot(Boolean)</h4>
@@ -243,10 +262,10 @@
                   <div><a class="xref" href="App.Metrics.Sampling.Interfaces.IReservoir.html#App_Metrics_Sampling_Interfaces_IReservoir_GetSnapshot_System_Boolean_">IReservoir.GetSnapshot(Boolean)</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics/new/master/docfx_project/apispec/new?filename=App_Metrics_Sampling_UniformReservoir_Reset.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.UniformReservoir.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/1.0.0-beta1/docfx_project/apispec/new?filename=App_Metrics_Sampling_UniformReservoir_Reset.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.UniformReservoir.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Sampling/UniformReservoir.cs/#L58">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Sampling/UniformReservoir.cs/#L94">View Source</a>
               </span>
               <a id="App_Metrics_Sampling_UniformReservoir_Reset_" data-uid="App.Metrics.Sampling.UniformReservoir.Reset*"></a>
               <h4 id="App_Metrics_Sampling_UniformReservoir_Reset" data-uid="App.Metrics.Sampling.UniformReservoir.Reset">Reset()</h4>
@@ -260,14 +279,15 @@
                   <div><a class="xref" href="App.Metrics.Sampling.Interfaces.IReservoir.html#App_Metrics_Sampling_Interfaces_IReservoir_Reset">IReservoir.Reset()</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics/new/master/docfx_project/apispec/new?filename=App_Metrics_Sampling_UniformReservoir_Update_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.UniformReservoir.Update(System.Int64%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/1.0.0-beta1/docfx_project/apispec/new?filename=App_Metrics_Sampling_UniformReservoir_Update_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.UniformReservoir.Update(System.Int64%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Sampling/UniformReservoir.cs/#L63">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Sampling/UniformReservoir.cs/#L121">View Source</a>
               </span>
               <a id="App_Metrics_Sampling_UniformReservoir_Update_" data-uid="App.Metrics.Sampling.UniformReservoir.Update*"></a>
               <h4 id="App_Metrics_Sampling_UniformReservoir_Update_System_Int64_System_String_" data-uid="App.Metrics.Sampling.UniformReservoir.Update(System.Int64,System.String)">Update(Int64, String)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Updates the sample set adding the specified value using <a href="http://www.cs.umd.edu/~samir/498/vitter.pdf">Vitter&#39;s Algorithm R</a>.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -286,17 +306,36 @@
                   <tr>
                     <td><span class="xref">System.Int64</span></td>
                     <td><em>value</em></td>
-                    <td></td>
+                    <td><p>The value to add to the sample set.</p>
+</td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.String</span></td>
                     <td><em>userValue</em></td>
-                    <td></td>
+                    <td><p>The user value to track, which records the last, min and max user values within the sample.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="App.Metrics.Sampling.Interfaces.IReservoir.html#App_Metrics_Sampling_Interfaces_IReservoir_Update_System_Int64_System_String_">IReservoir.Update(Int64, String)</a></div>
+              <h5 id="App_Metrics_Sampling_UniformReservoir_Update_System_Int64_System_String__examples">Examples</h5>
+              
+<pre><code>-- S has items to sample, R will contain the result
+ReservoirSample(S[1..n], R[1..k])
+    -- fill the reservoir array
+    for i = 1 to k
+        R[i] := S[i]
+        -- replace elements with gradually decreasing probability
+    for i = k+1 to n
+        j := random(1, i)   -- important: inclusive range
+        if j &lt;= k
+        R[j] := S[i]</code></pre>
+
+              <h3 id="seealso">See Also</h3>
+              <div class="seealso">
+                  <div><a class="xref" href="App.Metrics.Sampling.Interfaces.IReservoir.html#App_Metrics_Sampling_Interfaces_IReservoir">IReservoir</a></div>
+              </div>
             </article>
           </div>
           
@@ -305,10 +344,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics/new/master/docfx_project/apispec/new?filename=App_Metrics_Sampling_UniformReservoir.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.UniformReservoir%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
+                    <a href="https://github.com/alhardy/AppMetrics/new/1.0.0-beta1/docfx_project/apispec/new?filename=App_Metrics_Sampling_UniformReservoir.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.UniformReservoir%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Sampling/UniformReservoir.cs/#L15" class="contribution-link">View Source</a>
+                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Sampling/UniformReservoir.cs/#L31" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

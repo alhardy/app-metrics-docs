@@ -72,9 +72,10 @@
               
               <h1 id="App_Metrics_Sampling_HdrHistogramReservoir" data-uid="App.Metrics.Sampling.HdrHistogramReservoir">Class HdrHistogramReservoir
               </h1>
-              <div class="markdown level0 summary"><p>Sampling reservoir based on HdrHistogram.
-Based on the java version from Marshall Pierce
-<a href="https://bitbucket.org/marshallpierce/hdrhistogram-metrics-reservoir/src/83a8ec568a1e?at=master">https://bitbucket.org/marshallpierce/hdrhistogram-metrics-reservoir/src/83a8ec568a1e?at=master</a></p>
+              <div class="markdown level0 summary"><p>A Histogram that supports recording and analyzing sampled data value counts across a configurable integer value
+range with configurable value precision within the range. Value precision is expressed as the number of significant
+digits in the value recording, and provides control over value quantization behavior across the value range and the
+subsequent value resolution at any given level.</p>
 </div>
               <div class="markdown level0 conceptual"></div>
               <div class="inheritance">
@@ -112,18 +113,25 @@ Based on the java version from Marshall Pierce
               <div class="codewrapper">
                 <pre><code class="lang-csharp hljs">public sealed class HdrHistogramReservoir : IReservoir</code></pre>
               </div>
+              <h5 id="App_Metrics_Sampling_HdrHistogramReservoir_remarks"><strong>Remarks</strong></h5>
+              <div class="markdown level0 remarks"><p>Based on the
+<a href="https://bitbucket.org/marshallpierce/hdrhistogram-metrics-reservoir/src/83a8ec568a1e?at=master">
+    java version from Marshall Pierce
+</a></p>
+</div>
               <h3 id="constructors">Constructors
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics/new/master/docfx_project/apispec/new?filename=App_Metrics_Sampling_HdrHistogramReservoir__ctor.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.HdrHistogramReservoir.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/1.0.0-beta1/docfx_project/apispec/new?filename=App_Metrics_Sampling_HdrHistogramReservoir__ctor.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.HdrHistogramReservoir.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Sampling/HdrHistogramReservoir.cs/#L34">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Sampling/HdrHistogramReservoir.cs/#L45">View Source</a>
               </span>
               <a id="App_Metrics_Sampling_HdrHistogramReservoir__ctor_" data-uid="App.Metrics.Sampling.HdrHistogramReservoir.#ctor*"></a>
               <h4 id="App_Metrics_Sampling_HdrHistogramReservoir__ctor" data-uid="App.Metrics.Sampling.HdrHistogramReservoir.#ctor">HdrHistogramReservoir()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="App.Metrics.Sampling.HdrHistogramReservoir.html#App_Metrics_Sampling_HdrHistogramReservoir">HdrHistogramReservoir</a> class.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -133,10 +141,10 @@ Based on the java version from Marshall Pierce
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics/new/master/docfx_project/apispec/new?filename=App_Metrics_Sampling_HdrHistogramReservoir_GetSnapshot_System_Boolean_.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.HdrHistogramReservoir.GetSnapshot(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/1.0.0-beta1/docfx_project/apispec/new?filename=App_Metrics_Sampling_HdrHistogramReservoir_GetSnapshot_System_Boolean_.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.HdrHistogramReservoir.GetSnapshot(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Sampling/HdrHistogramReservoir.cs/#L47">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Sampling/HdrHistogramReservoir.cs/#L66">View Source</a>
               </span>
               <a id="App_Metrics_Sampling_HdrHistogramReservoir_GetSnapshot_" data-uid="App.Metrics.Sampling.HdrHistogramReservoir.GetSnapshot*"></a>
               <h4 id="App_Metrics_Sampling_HdrHistogramReservoir_GetSnapshot_System_Boolean_" data-uid="App.Metrics.Sampling.HdrHistogramReservoir.GetSnapshot(System.Boolean)">GetSnapshot(Boolean)</h4>
@@ -182,10 +190,10 @@ Based on the java version from Marshall Pierce
                   <div><a class="xref" href="App.Metrics.Sampling.Interfaces.IReservoir.html#App_Metrics_Sampling_Interfaces_IReservoir_GetSnapshot_System_Boolean_">IReservoir.GetSnapshot(Boolean)</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics/new/master/docfx_project/apispec/new?filename=App_Metrics_Sampling_HdrHistogramReservoir_Reset.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.HdrHistogramReservoir.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/1.0.0-beta1/docfx_project/apispec/new?filename=App_Metrics_Sampling_HdrHistogramReservoir_Reset.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.HdrHistogramReservoir.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Sampling/HdrHistogramReservoir.cs/#L58">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Sampling/HdrHistogramReservoir.cs/#L78">View Source</a>
               </span>
               <a id="App_Metrics_Sampling_HdrHistogramReservoir_Reset_" data-uid="App.Metrics.Sampling.HdrHistogramReservoir.Reset*"></a>
               <h4 id="App_Metrics_Sampling_HdrHistogramReservoir_Reset" data-uid="App.Metrics.Sampling.HdrHistogramReservoir.Reset">Reset()</h4>
@@ -199,10 +207,10 @@ Based on the java version from Marshall Pierce
                   <div><a class="xref" href="App.Metrics.Sampling.Interfaces.IReservoir.html#App_Metrics_Sampling_Interfaces_IReservoir_Reset">IReservoir.Reset()</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics/new/master/docfx_project/apispec/new?filename=App_Metrics_Sampling_HdrHistogramReservoir_Update_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.HdrHistogramReservoir.Update(System.Int64%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/1.0.0-beta1/docfx_project/apispec/new?filename=App_Metrics_Sampling_HdrHistogramReservoir_Update_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.HdrHistogramReservoir.Update(System.Int64%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Sampling/HdrHistogramReservoir.cs/#L65">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Sampling/HdrHistogramReservoir.cs/#L86">View Source</a>
               </span>
               <a id="App_Metrics_Sampling_HdrHistogramReservoir_Update_" data-uid="App.Metrics.Sampling.HdrHistogramReservoir.Update*"></a>
               <h4 id="App_Metrics_Sampling_HdrHistogramReservoir_Update_System_Int64_System_String_" data-uid="App.Metrics.Sampling.HdrHistogramReservoir.Update(System.Int64,System.String)">Update(Int64, String)</h4>
@@ -236,6 +244,10 @@ Based on the java version from Marshall Pierce
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="App.Metrics.Sampling.Interfaces.IReservoir.html#App_Metrics_Sampling_Interfaces_IReservoir_Update_System_Int64_System_String_">IReservoir.Update(Int64, String)</a></div>
+              <h3 id="seealso">See Also</h3>
+              <div class="seealso">
+                  <div><a class="xref" href="App.Metrics.Sampling.Interfaces.IReservoir.html#App_Metrics_Sampling_Interfaces_IReservoir">IReservoir</a></div>
+              </div>
             </article>
           </div>
           
@@ -244,10 +256,10 @@ Based on the java version from Marshall Pierce
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics/new/master/docfx_project/apispec/new?filename=App_Metrics_Sampling_HdrHistogramReservoir.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.HdrHistogramReservoir%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
+                    <a href="https://github.com/alhardy/AppMetrics/new/1.0.0-beta1/docfx_project/apispec/new?filename=App_Metrics_Sampling_HdrHistogramReservoir.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.HdrHistogramReservoir%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Sampling/HdrHistogramReservoir.cs/#L19" class="contribution-link">View Source</a>
+                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Sampling/HdrHistogramReservoir.cs/#L27" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

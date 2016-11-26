@@ -72,7 +72,17 @@
               
               <h1 id="App_Metrics_Sampling_Interfaces_IReservoir" data-uid="App.Metrics.Sampling.Interfaces.IReservoir">Interface IReservoir
               </h1>
-              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 summary"><p>Provides access to a Resevoir Sampling implementation. Reservoir sampling is a family of randomized algorithms for
+randomly choosing a sample of k items from a list S containing n items, where n is either a very large or unknown
+number. Typically n is large enough that the list doesn&#39;t fit into main memory.</p>
+<ul><li>
+<a class="xref" href="App.Metrics.Sampling.UniformReservoir.html#App_Metrics_Sampling_UniformReservoir">UniformReservoir</a>
+</li><li>
+<a class="xref" href="App.Metrics.Sampling.ExponentiallyDecayingReservoir.html#App_Metrics_Sampling_ExponentiallyDecayingReservoir">ExponentiallyDecayingReservoir</a>
+</li><li><a class="xref" href="App.Metrics.Sampling.SlidingWindowReservoir.html#App_Metrics_Sampling_SlidingWindowReservoir">SlidingWindowReservoir</a>.</li><li>
+<a class="xref" href="App.Metrics.Sampling.HdrHistogramReservoir.html#App_Metrics_Sampling_HdrHistogramReservoir">HdrHistogramReservoir</a>
+</li></ul>
+</div>
               <div class="markdown level0 conceptual"></div>
               <h6><strong>Namespace</strong>:App.Metrics.Sampling.Interfaces</h6>
               <h6><strong>Assembly</strong>:App.Metrics.dll</h6>
@@ -80,18 +90,27 @@
               <div class="codewrapper">
                 <pre><code class="lang-csharp hljs">public interface IReservoir</code></pre>
               </div>
+              <h5 id="App_Metrics_Sampling_Interfaces_IReservoir_remarks"><strong>Remarks</strong></h5>
+              <div class="markdown level0 remarks"><p>To specify the type of reservoir sampling to use either set the <a class="xref" href="App.Metrics.SamplingType.html#App_Metrics_SamplingType_Default">Default</a> type
+globally using the<a class="xref" href="App.Metrics.Configuration.AppMetricsOptions.html#App_Metrics_Configuration_AppMetricsOptions">AppMetricsOptions</a> on startup, or use the</p>
+<p><a class="xref" href="App.Metrics.Core.Options.HistogramOptions.html#App_Metrics_Core_Options_HistogramOptions">HistogramOptions</a> or <a class="xref" href="App.Metrics.Core.Options.TimerOptions.html#App_Metrics_Core_Options_TimerOptions">TimerOptions</a> when defining
+these metrics types which support resevoir sampling. If no sampling type is specified the</p>
+<p><a class="xref" href="App.Metrics.Sampling.ExponentiallyDecayingReservoir.html#App_Metrics_Sampling_ExponentiallyDecayingReservoir">ExponentiallyDecayingReservoir</a> will be used.</p>
+</div>
               <h3 id="methods">Methods
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics/new/master/docfx_project/apispec/new?filename=App_Metrics_Sampling_Interfaces_IReservoir_GetSnapshot_System_Boolean_.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.Interfaces.IReservoir.GetSnapshot(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/1.0.0-beta1/docfx_project/apispec/new?filename=App_Metrics_Sampling_Interfaces_IReservoir_GetSnapshot_System_Boolean_.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.Interfaces.IReservoir.GetSnapshot(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Sampling/Interfaces/IReservoir.cs/#L12">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Sampling/Interfaces/IReservoir.cs/#L53">View Source</a>
               </span>
               <a id="App_Metrics_Sampling_Interfaces_IReservoir_GetSnapshot_" data-uid="App.Metrics.Sampling.Interfaces.IReservoir.GetSnapshot*"></a>
               <h4 id="App_Metrics_Sampling_Interfaces_IReservoir_GetSnapshot_System_Boolean_" data-uid="App.Metrics.Sampling.Interfaces.IReservoir.GetSnapshot(System.Boolean)">GetSnapshot(Boolean)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Gets a statistical <a class="xref" href="App.Metrics.Sampling.Interfaces.ISnapshot.html#App_Metrics_Sampling_Interfaces_ISnapshot">ISnapshot</a> including
+<a href="https://en.wikipedia.org/wiki/Percentile">percentiles</a> of the current sample.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -110,7 +129,8 @@
                   <tr>
                     <td><span class="xref">System.Boolean</span></td>
                     <td><em>resetReservoir</em></td>
-                    <td></td>
+                    <td><p>if set to <code>true</code> [reset reservoir].</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -125,20 +145,22 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="App.Metrics.Sampling.Interfaces.ISnapshot.html#App_Metrics_Sampling_Interfaces_ISnapshot">ISnapshot</a></td>
-                    <td></td>
+                    <td><p>A <a class="xref" href="App.Metrics.Sampling.Interfaces.ISnapshot.html#App_Metrics_Sampling_Interfaces_ISnapshot">ISnapshot</a> of the current sample</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics/new/master/docfx_project/apispec/new?filename=App_Metrics_Sampling_Interfaces_IReservoir_Reset.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.Interfaces.IReservoir.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/1.0.0-beta1/docfx_project/apispec/new?filename=App_Metrics_Sampling_Interfaces_IReservoir_Reset.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.Interfaces.IReservoir.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Sampling/Interfaces/IReservoir.cs/#L14">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Sampling/Interfaces/IReservoir.cs/#L58">View Source</a>
               </span>
               <a id="App_Metrics_Sampling_Interfaces_IReservoir_Reset_" data-uid="App.Metrics.Sampling.Interfaces.IReservoir.Reset*"></a>
               <h4 id="App_Metrics_Sampling_Interfaces_IReservoir_Reset" data-uid="App.Metrics.Sampling.Interfaces.IReservoir.Reset">Reset()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Reset all statistics, in addition to the underlying reservoir.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -146,14 +168,15 @@
               </div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics/new/master/docfx_project/apispec/new?filename=App_Metrics_Sampling_Interfaces_IReservoir_Update_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.Interfaces.IReservoir.Update(System.Int64%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/1.0.0-beta1/docfx_project/apispec/new?filename=App_Metrics_Sampling_Interfaces_IReservoir_Update_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.Interfaces.IReservoir.Update(System.Int64%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Sampling/Interfaces/IReservoir.cs/#L16">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Sampling/Interfaces/IReservoir.cs/#L65">View Source</a>
               </span>
               <a id="App_Metrics_Sampling_Interfaces_IReservoir_Update_" data-uid="App.Metrics.Sampling.Interfaces.IReservoir.Update*"></a>
               <h4 id="App_Metrics_Sampling_Interfaces_IReservoir_Update_System_Int64_System_String_" data-uid="App.Metrics.Sampling.Interfaces.IReservoir.Update(System.Int64,System.String)">Update(Int64, String)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Update statistics and the reservoir with a new sample.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -172,12 +195,14 @@
                   <tr>
                     <td><span class="xref">System.Int64</span></td>
                     <td><em>value</em></td>
-                    <td></td>
+                    <td><p>The value.</p>
+</td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.String</span></td>
                     <td><em>userValue</em></td>
-                    <td></td>
+                    <td><p>The user value.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -189,10 +214,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics/new/master/docfx_project/apispec/new?filename=App_Metrics_Sampling_Interfaces_IReservoir.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.Interfaces.IReservoir%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
+                    <a href="https://github.com/alhardy/AppMetrics/new/1.0.0-beta1/docfx_project/apispec/new?filename=App_Metrics_Sampling_Interfaces_IReservoir.md&amp;value=---%0Auid%3A%20App.Metrics.Sampling.Interfaces.IReservoir%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Sampling/Interfaces/IReservoir.cs/#L10" class="contribution-link">View Source</a>
+                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Sampling/Interfaces/IReservoir.cs/#L45" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

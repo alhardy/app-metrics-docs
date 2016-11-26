@@ -30,6 +30,17 @@ references:
   commentId: Overload:App.Metrics.Configuration.AppMetricsOptions.DefaultContextLabel
   name: DefaultContextLabel
   fullName: App.Metrics.Configuration.AppMetricsOptions.DefaultContextLabel
+- uid: App.Metrics.Configuration.AppMetricsOptions.DefaultSamplingSize
+  name: DefaultSamplingSize
+  href: api/App.Metrics.Configuration.AppMetricsOptions.html#App_Metrics_Configuration_AppMetricsOptions_DefaultSamplingSize
+  commentId: P:App.Metrics.Configuration.AppMetricsOptions.DefaultSamplingSize
+  fullName: App.Metrics.Configuration.AppMetricsOptions.DefaultSamplingSize
+  nameWithType: AppMetricsOptions.DefaultSamplingSize
+- uid: App.Metrics.Configuration.AppMetricsOptions.DefaultSamplingSize*
+  href: api/App.Metrics.Configuration.AppMetricsOptions.html#App_Metrics_Configuration_AppMetricsOptions_DefaultSamplingSize_
+  commentId: Overload:App.Metrics.Configuration.AppMetricsOptions.DefaultSamplingSize
+  name: DefaultSamplingSize
+  fullName: App.Metrics.Configuration.AppMetricsOptions.DefaultSamplingSize
 - uid: App.Metrics.Configuration.AppMetricsOptions.DefaultSamplingType
   name: DefaultSamplingType
   href: api/App.Metrics.Configuration.AppMetricsOptions.html#App_Metrics_Configuration_AppMetricsOptions_DefaultSamplingType
@@ -478,6 +489,34 @@ references:
   commentId: T:App.Metrics.Core.HealthCheckResult
   fullName: App.Metrics.Core.HealthCheckResult
   nameWithType: HealthCheckResult
+- uid: App.Metrics.Core.HealthCheckResult.Degraded
+  name: Degraded()
+  href: api/App.Metrics.Core.HealthCheckResult.html#App_Metrics_Core_HealthCheckResult_Degraded
+  commentId: M:App.Metrics.Core.HealthCheckResult.Degraded
+  fullName: App.Metrics.Core.HealthCheckResult.Degraded()
+  nameWithType: HealthCheckResult.Degraded()
+- uid: App.Metrics.Core.HealthCheckResult.Degraded(System.Exception)
+  name: Degraded(Exception)
+  href: api/App.Metrics.Core.HealthCheckResult.html#App_Metrics_Core_HealthCheckResult_Degraded_System_Exception_
+  commentId: M:App.Metrics.Core.HealthCheckResult.Degraded(System.Exception)
+  fullName: App.Metrics.Core.HealthCheckResult.Degraded(System.Exception)
+  nameWithType: HealthCheckResult.Degraded(Exception)
+- uid: App.Metrics.Core.HealthCheckResult.Degraded(System.String,System.Object[])
+  name: Degraded(String, Object[])
+  href: api/App.Metrics.Core.HealthCheckResult.html#App_Metrics_Core_HealthCheckResult_Degraded_System_String_System_Object___
+  commentId: M:App.Metrics.Core.HealthCheckResult.Degraded(System.String,System.Object[])
+  name.vb: Degraded(String, Object())
+  fullName: App.Metrics.Core.HealthCheckResult.Degraded(System.String, System.Object[])
+  fullName.vb: App.Metrics.Core.HealthCheckResult.Degraded(System.String, System.Object())
+  nameWithType: HealthCheckResult.Degraded(String, Object[])
+  nameWithType.vb: Degraded(String, Object())
+- uid: App.Metrics.Core.HealthCheckResult.Degraded*
+  href: api/App.Metrics.Core.HealthCheckResult.html#App_Metrics_Core_HealthCheckResult_Degraded_
+  commentId: Overload:App.Metrics.Core.HealthCheckResult.Degraded
+  name: Degraded
+  name.vb: Degraded
+  fullName: App.Metrics.Core.HealthCheckResult.Degraded(System.String, System.Object[])
+  fullName.vb: App.Metrics.Core.HealthCheckResult.Degraded
 - uid: App.Metrics.Core.HealthCheckResult.Healthy
   name: Healthy()
   href: api/App.Metrics.Core.HealthCheckResult.html#App_Metrics_Core_HealthCheckResult_Healthy
@@ -498,18 +537,18 @@ references:
   commentId: Overload:App.Metrics.Core.HealthCheckResult.Healthy
   name: Healthy
   fullName: App.Metrics.Core.HealthCheckResult.Healthy()
-- uid: App.Metrics.Core.HealthCheckResult.IsHealthy
-  name: IsHealthy
-  href: api/App.Metrics.Core.HealthCheckResult.html#App_Metrics_Core_HealthCheckResult_IsHealthy
-  commentId: F:App.Metrics.Core.HealthCheckResult.IsHealthy
-  fullName: App.Metrics.Core.HealthCheckResult.IsHealthy
-  nameWithType: HealthCheckResult.IsHealthy
 - uid: App.Metrics.Core.HealthCheckResult.Message
   name: Message
   href: api/App.Metrics.Core.HealthCheckResult.html#App_Metrics_Core_HealthCheckResult_Message
   commentId: F:App.Metrics.Core.HealthCheckResult.Message
   fullName: App.Metrics.Core.HealthCheckResult.Message
   nameWithType: HealthCheckResult.Message
+- uid: App.Metrics.Core.HealthCheckResult.Status
+  name: Status
+  href: api/App.Metrics.Core.HealthCheckResult.html#App_Metrics_Core_HealthCheckResult_Status
+  commentId: F:App.Metrics.Core.HealthCheckResult.Status
+  fullName: App.Metrics.Core.HealthCheckResult.Status
+  nameWithType: HealthCheckResult.Status
 - uid: App.Metrics.Core.HealthCheckResult.Unhealthy
   name: Unhealthy()
   href: api/App.Metrics.Core.HealthCheckResult.html#App_Metrics_Core_HealthCheckResult_Unhealthy
@@ -536,6 +575,69 @@ references:
   commentId: Overload:App.Metrics.Core.HealthCheckResult.Unhealthy
   name: Unhealthy
   fullName: App.Metrics.Core.HealthCheckResult.Unhealthy()
+- uid: App.Metrics.Core.HealthCheckStatus
+  name: HealthCheckStatus
+  href: api/App.Metrics.Core.HealthCheckStatus.html#App_Metrics_Core_HealthCheckStatus
+  commentId: T:App.Metrics.Core.HealthCheckStatus
+  fullName: App.Metrics.Core.HealthCheckStatus
+  nameWithType: HealthCheckStatus
+- uid: App.Metrics.Core.HealthCheckStatus.Degraded
+  name: Degraded
+  href: api/App.Metrics.Core.HealthCheckStatus.html#App_Metrics_Core_HealthCheckStatus_Degraded
+  commentId: F:App.Metrics.Core.HealthCheckStatus.Degraded
+  fullName: App.Metrics.Core.HealthCheckStatus.Degraded
+  nameWithType: HealthCheckStatus.Degraded
+- uid: App.Metrics.Core.HealthCheckStatus.Healthy
+  name: Healthy
+  href: api/App.Metrics.Core.HealthCheckStatus.html#App_Metrics_Core_HealthCheckStatus_Healthy
+  commentId: F:App.Metrics.Core.HealthCheckStatus.Healthy
+  fullName: App.Metrics.Core.HealthCheckStatus.Healthy
+  nameWithType: HealthCheckStatus.Healthy
+- uid: App.Metrics.Core.HealthCheckStatus.Unhealthy
+  name: Unhealthy
+  href: api/App.Metrics.Core.HealthCheckStatus.html#App_Metrics_Core_HealthCheckStatus_Unhealthy
+  commentId: F:App.Metrics.Core.HealthCheckStatus.Unhealthy
+  fullName: App.Metrics.Core.HealthCheckStatus.Unhealthy
+  nameWithType: HealthCheckStatus.Unhealthy
+- uid: App.Metrics.Core.HealthCheckStatusExtensions
+  name: HealthCheckStatusExtensions
+  href: api/App.Metrics.Core.HealthCheckStatusExtensions.html#App_Metrics_Core_HealthCheckStatusExtensions
+  commentId: T:App.Metrics.Core.HealthCheckStatusExtensions
+  fullName: App.Metrics.Core.HealthCheckStatusExtensions
+  nameWithType: HealthCheckStatusExtensions
+- uid: App.Metrics.Core.HealthCheckStatusExtensions.IsDegraded(App.Metrics.Core.HealthCheckStatus)
+  name: IsDegraded(HealthCheckStatus)
+  href: api/App.Metrics.Core.HealthCheckStatusExtensions.html#App_Metrics_Core_HealthCheckStatusExtensions_IsDegraded_App_Metrics_Core_HealthCheckStatus_
+  commentId: M:App.Metrics.Core.HealthCheckStatusExtensions.IsDegraded(App.Metrics.Core.HealthCheckStatus)
+  fullName: App.Metrics.Core.HealthCheckStatusExtensions.IsDegraded(App.Metrics.Core.HealthCheckStatus)
+  nameWithType: HealthCheckStatusExtensions.IsDegraded(HealthCheckStatus)
+- uid: App.Metrics.Core.HealthCheckStatusExtensions.IsDegraded*
+  href: api/App.Metrics.Core.HealthCheckStatusExtensions.html#App_Metrics_Core_HealthCheckStatusExtensions_IsDegraded_
+  commentId: Overload:App.Metrics.Core.HealthCheckStatusExtensions.IsDegraded
+  name: IsDegraded
+  fullName: App.Metrics.Core.HealthCheckStatusExtensions.IsDegraded(App.Metrics.Core.HealthCheckStatus)
+- uid: App.Metrics.Core.HealthCheckStatusExtensions.IsHealthy(App.Metrics.Core.HealthCheckStatus)
+  name: IsHealthy(HealthCheckStatus)
+  href: api/App.Metrics.Core.HealthCheckStatusExtensions.html#App_Metrics_Core_HealthCheckStatusExtensions_IsHealthy_App_Metrics_Core_HealthCheckStatus_
+  commentId: M:App.Metrics.Core.HealthCheckStatusExtensions.IsHealthy(App.Metrics.Core.HealthCheckStatus)
+  fullName: App.Metrics.Core.HealthCheckStatusExtensions.IsHealthy(App.Metrics.Core.HealthCheckStatus)
+  nameWithType: HealthCheckStatusExtensions.IsHealthy(HealthCheckStatus)
+- uid: App.Metrics.Core.HealthCheckStatusExtensions.IsHealthy*
+  href: api/App.Metrics.Core.HealthCheckStatusExtensions.html#App_Metrics_Core_HealthCheckStatusExtensions_IsHealthy_
+  commentId: Overload:App.Metrics.Core.HealthCheckStatusExtensions.IsHealthy
+  name: IsHealthy
+  fullName: App.Metrics.Core.HealthCheckStatusExtensions.IsHealthy(App.Metrics.Core.HealthCheckStatus)
+- uid: App.Metrics.Core.HealthCheckStatusExtensions.IsUnhealthy(App.Metrics.Core.HealthCheckStatus)
+  name: IsUnhealthy(HealthCheckStatus)
+  href: api/App.Metrics.Core.HealthCheckStatusExtensions.html#App_Metrics_Core_HealthCheckStatusExtensions_IsUnhealthy_App_Metrics_Core_HealthCheckStatus_
+  commentId: M:App.Metrics.Core.HealthCheckStatusExtensions.IsUnhealthy(App.Metrics.Core.HealthCheckStatus)
+  fullName: App.Metrics.Core.HealthCheckStatusExtensions.IsUnhealthy(App.Metrics.Core.HealthCheckStatus)
+  nameWithType: HealthCheckStatusExtensions.IsUnhealthy(HealthCheckStatus)
+- uid: App.Metrics.Core.HealthCheckStatusExtensions.IsUnhealthy*
+  href: api/App.Metrics.Core.HealthCheckStatusExtensions.html#App_Metrics_Core_HealthCheckStatusExtensions_IsUnhealthy_
+  commentId: Overload:App.Metrics.Core.HealthCheckStatusExtensions.IsUnhealthy
+  name: IsUnhealthy
+  fullName: App.Metrics.Core.HealthCheckStatusExtensions.IsUnhealthy(App.Metrics.Core.HealthCheckStatus)
 - uid: App.Metrics.Core.HealthStatus
   name: HealthStatus
   href: api/App.Metrics.Core.HealthStatus.html#App_Metrics_Core_HealthStatus
@@ -564,18 +666,23 @@ references:
   commentId: F:App.Metrics.Core.HealthStatus.HasRegisteredChecks
   fullName: App.Metrics.Core.HealthStatus.HasRegisteredChecks
   nameWithType: HealthStatus.HasRegisteredChecks
-- uid: App.Metrics.Core.HealthStatus.IsHealthy
-  name: IsHealthy
-  href: api/App.Metrics.Core.HealthStatus.html#App_Metrics_Core_HealthStatus_IsHealthy
-  commentId: F:App.Metrics.Core.HealthStatus.IsHealthy
-  fullName: App.Metrics.Core.HealthStatus.IsHealthy
-  nameWithType: HealthStatus.IsHealthy
 - uid: App.Metrics.Core.HealthStatus.Results
   name: Results
   href: api/App.Metrics.Core.HealthStatus.html#App_Metrics_Core_HealthStatus_Results
   commentId: F:App.Metrics.Core.HealthStatus.Results
   fullName: App.Metrics.Core.HealthStatus.Results
   nameWithType: HealthStatus.Results
+- uid: App.Metrics.Core.HealthStatus.Status
+  name: Status
+  href: api/App.Metrics.Core.HealthStatus.html#App_Metrics_Core_HealthStatus_Status
+  commentId: P:App.Metrics.Core.HealthStatus.Status
+  fullName: App.Metrics.Core.HealthStatus.Status
+  nameWithType: HealthStatus.Status
+- uid: App.Metrics.Core.HealthStatus.Status*
+  href: api/App.Metrics.Core.HealthStatus.html#App_Metrics_Core_HealthStatus_Status_
+  commentId: Overload:App.Metrics.Core.HealthStatus.Status
+  name: Status
+  fullName: App.Metrics.Core.HealthStatus.Status
 - uid: App.Metrics.Core.HistogramMetric
   name: HistogramMetric
   href: api/App.Metrics.Core.HistogramMetric.html#App_Metrics_Core_HistogramMetric
@@ -712,6 +819,23 @@ references:
   commentId: Overload:App.Metrics.Core.HitRatioGauge.#ctor
   name: HitRatioGauge
   fullName: App.Metrics.Core.HitRatioGauge.HitRatioGauge(App.Metrics.IMeter, App.Metrics.IMeter)
+- uid: App.Metrics.Core.HumannizeHealthCheckStatus
+  name: HumannizeHealthCheckStatus
+  href: api/App.Metrics.Core.HumannizeHealthCheckStatus.html#App_Metrics_Core_HumannizeHealthCheckStatus
+  commentId: T:App.Metrics.Core.HumannizeHealthCheckStatus
+  fullName: App.Metrics.Core.HumannizeHealthCheckStatus
+  nameWithType: HumannizeHealthCheckStatus
+- uid: App.Metrics.Core.HumannizeHealthCheckStatus.Hummanize(App.Metrics.Core.HealthCheckStatus)
+  name: Hummanize(HealthCheckStatus)
+  href: api/App.Metrics.Core.HumannizeHealthCheckStatus.html#App_Metrics_Core_HumannizeHealthCheckStatus_Hummanize_App_Metrics_Core_HealthCheckStatus_
+  commentId: M:App.Metrics.Core.HumannizeHealthCheckStatus.Hummanize(App.Metrics.Core.HealthCheckStatus)
+  fullName: App.Metrics.Core.HumannizeHealthCheckStatus.Hummanize(App.Metrics.Core.HealthCheckStatus)
+  nameWithType: HumannizeHealthCheckStatus.Hummanize(HealthCheckStatus)
+- uid: App.Metrics.Core.HumannizeHealthCheckStatus.Hummanize*
+  href: api/App.Metrics.Core.HumannizeHealthCheckStatus.html#App_Metrics_Core_HumannizeHealthCheckStatus_Hummanize_
+  commentId: Overload:App.Metrics.Core.HumannizeHealthCheckStatus.Hummanize
+  name: Hummanize
+  fullName: App.Metrics.Core.HumannizeHealthCheckStatus.Hummanize(App.Metrics.Core.HealthCheckStatus)
 - uid: App.Metrics.Core.Interfaces
   name: App.Metrics.Core.Interfaces
   href: api/App.Metrics.Core.Interfaces.html#App_Metrics_Core_Interfaces
@@ -3692,18 +3816,18 @@ references:
   name: PerformMetric
   fullName: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware<TOptions>.PerformMetric(Microsoft.AspNetCore.Http.HttpContext)
   fullName.vb: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware
-- uid: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.WriteResponseAsync(Microsoft.AspNetCore.Http.HttpContext,System.String,System.String,System.Net.HttpStatusCode)
-  name: WriteResponseAsync(HttpContext, String, String, HttpStatusCode)
-  href: api/App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware-1.html#App_Metrics_Extensions_Middleware_Middleware_AppMetricsMiddleware_1_WriteResponseAsync_Microsoft_AspNetCore_Http_HttpContext_System_String_System_String_System_Net_HttpStatusCode_
-  commentId: M:App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.WriteResponseAsync(Microsoft.AspNetCore.Http.HttpContext,System.String,System.String,System.Net.HttpStatusCode)
-  fullName: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware<TOptions>.WriteResponseAsync(Microsoft.AspNetCore.Http.HttpContext, System.String, System.String, System.Net.HttpStatusCode)
-  fullName.vb: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware(Of TOptions).WriteResponseAsync(Microsoft.AspNetCore.Http.HttpContext, System.String, System.String, System.Net.HttpStatusCode)
-  nameWithType: AppMetricsMiddleware<TOptions>.WriteResponseAsync(HttpContext, String, String, HttpStatusCode)
+- uid: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.WriteResponseAsync(Microsoft.AspNetCore.Http.HttpContext,System.String,System.String,System.Net.HttpStatusCode,System.String)
+  name: WriteResponseAsync(HttpContext, String, String, HttpStatusCode, String)
+  href: api/App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware-1.html#App_Metrics_Extensions_Middleware_Middleware_AppMetricsMiddleware_1_WriteResponseAsync_Microsoft_AspNetCore_Http_HttpContext_System_String_System_String_System_Net_HttpStatusCode_System_String_
+  commentId: M:App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.WriteResponseAsync(Microsoft.AspNetCore.Http.HttpContext,System.String,System.String,System.Net.HttpStatusCode,System.String)
+  fullName: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware<TOptions>.WriteResponseAsync(Microsoft.AspNetCore.Http.HttpContext, System.String, System.String, System.Net.HttpStatusCode, System.String)
+  fullName.vb: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware(Of TOptions).WriteResponseAsync(Microsoft.AspNetCore.Http.HttpContext, System.String, System.String, System.Net.HttpStatusCode, System.String)
+  nameWithType: AppMetricsMiddleware<TOptions>.WriteResponseAsync(HttpContext, String, String, HttpStatusCode, String)
 - uid: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.WriteResponseAsync*
   href: api/App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware-1.html#App_Metrics_Extensions_Middleware_Middleware_AppMetricsMiddleware_1_WriteResponseAsync_
   commentId: Overload:App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware`1.WriteResponseAsync
   name: WriteResponseAsync
-  fullName: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware<TOptions>.WriteResponseAsync(Microsoft.AspNetCore.Http.HttpContext, System.String, System.String, System.Net.HttpStatusCode)
+  fullName: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware<TOptions>.WriteResponseAsync(Microsoft.AspNetCore.Http.HttpContext, System.String, System.String, System.Net.HttpStatusCode, System.String)
   fullName.vb: App.Metrics.Extensions.Middleware.Middleware.AppMetricsMiddleware
 - uid: App.Metrics.Extensions.Middleware.Middleware.ErrorRequestMeterMiddleware
   name: ErrorRequestMeterMiddleware
@@ -4041,21 +4165,21 @@ references:
   commentId: Overload:App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportEnvironment
   name: ReportEnvironment
   fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportEnvironment(App.Metrics.Data.EnvironmentInfo)
-- uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportHealth(System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
-  name: ReportHealth(IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
-  href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporter.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporter_ReportHealth_System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__
-  commentId: M:App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportHealth(System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
-  name.vb: ReportHealth(IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
-  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportHealth(System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
-  fullName.vb: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportHealth(System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result))
-  nameWithType: ConsoleReporter.ReportHealth(IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
-  nameWithType.vb: ReportHealth(IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
+- uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportHealth(System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
+  name: ReportHealth(IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
+  href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporter.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporter_ReportHealth_System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__
+  commentId: M:App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportHealth(System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
+  name.vb: ReportHealth(IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
+  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportHealth(System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
+  fullName.vb: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportHealth(System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result))
+  nameWithType: ConsoleReporter.ReportHealth(IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
+  nameWithType.vb: ReportHealth(IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
 - uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportHealth*
   href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporter.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporter_ReportHealth_
   commentId: Overload:App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportHealth
   name: ReportHealth
   name.vb: ReportHealth
-  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportHealth(System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
+  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportHealth(System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
   fullName.vb: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportHealth
 - uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportInterval
   name: ReportInterval
@@ -4331,21 +4455,21 @@ references:
   commentId: Overload:App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportEnvironment
   name: ReportEnvironment
   fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportEnvironment(App.Metrics.Data.EnvironmentInfo)
-- uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportHealth(System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
-  name: ReportHealth(IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
-  href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporter_ReportHealth_System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__
-  commentId: M:App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportHealth(System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
-  name.vb: ReportHealth(IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
-  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportHealth(System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
-  fullName.vb: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportHealth(System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result))
-  nameWithType: TextFileReporter.ReportHealth(IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
-  nameWithType.vb: ReportHealth(IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
+- uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportHealth(System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
+  name: ReportHealth(IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
+  href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporter_ReportHealth_System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__
+  commentId: M:App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportHealth(System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
+  name.vb: ReportHealth(IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
+  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportHealth(System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
+  fullName.vb: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportHealth(System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result))
+  nameWithType: TextFileReporter.ReportHealth(IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
+  nameWithType.vb: ReportHealth(IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
 - uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportHealth*
   href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporter_ReportHealth_
   commentId: Overload:App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportHealth
   name: ReportHealth
   name.vb: ReportHealth
-  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportHealth(System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
+  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportHealth(System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
   fullName.vb: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportHealth
 - uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportInterval
   name: ReportInterval
@@ -5375,6 +5499,17 @@ references:
   commentId: T:App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions
   fullName: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions
   nameWithType: HumanizingMetricsStringBuilderExtensions
+- uid: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteDegradedHealthChecksHeader(System.Text.StringBuilder)
+  name: WriteDegradedHealthChecksHeader(StringBuilder)
+  href: api/App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.html#App_Metrics_Formatting_Humanize_HumanizingMetricsStringBuilderExtensions_WriteDegradedHealthChecksHeader_System_Text_StringBuilder_
+  commentId: M:App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteDegradedHealthChecksHeader(System.Text.StringBuilder)
+  fullName: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteDegradedHealthChecksHeader(System.Text.StringBuilder)
+  nameWithType: HumanizingMetricsStringBuilderExtensions.WriteDegradedHealthChecksHeader(StringBuilder)
+- uid: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteDegradedHealthChecksHeader*
+  href: api/App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.html#App_Metrics_Formatting_Humanize_HumanizingMetricsStringBuilderExtensions_WriteDegradedHealthChecksHeader_
+  commentId: Overload:App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteDegradedHealthChecksHeader
+  name: WriteDegradedHealthChecksHeader
+  fullName: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteDegradedHealthChecksHeader(System.Text.StringBuilder)
 - uid: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteEndMetricType(System.Text.StringBuilder,System.Type)
   name: WriteEndMetricType(StringBuilder, Type)
   href: api/App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.html#App_Metrics_Formatting_Humanize_HumanizingMetricsStringBuilderExtensions_WriteEndMetricType_System_Text_StringBuilder_System_Type_
@@ -5419,17 +5554,17 @@ references:
   commentId: Overload:App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteHealthCheckResult
   name: WriteHealthCheckResult
   fullName: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteHealthCheckResult(System.Text.StringBuilder, App.Metrics.Core.HealthCheck.Result)
-- uid: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteHealthStatus(System.Text.StringBuilder,System.Boolean)
-  name: WriteHealthStatus(StringBuilder, Boolean)
-  href: api/App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.html#App_Metrics_Formatting_Humanize_HumanizingMetricsStringBuilderExtensions_WriteHealthStatus_System_Text_StringBuilder_System_Boolean_
-  commentId: M:App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteHealthStatus(System.Text.StringBuilder,System.Boolean)
-  fullName: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteHealthStatus(System.Text.StringBuilder, System.Boolean)
-  nameWithType: HumanizingMetricsStringBuilderExtensions.WriteHealthStatus(StringBuilder, Boolean)
+- uid: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteHealthStatus(System.Text.StringBuilder,System.String)
+  name: WriteHealthStatus(StringBuilder, String)
+  href: api/App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.html#App_Metrics_Formatting_Humanize_HumanizingMetricsStringBuilderExtensions_WriteHealthStatus_System_Text_StringBuilder_System_String_
+  commentId: M:App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteHealthStatus(System.Text.StringBuilder,System.String)
+  fullName: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteHealthStatus(System.Text.StringBuilder, System.String)
+  nameWithType: HumanizingMetricsStringBuilderExtensions.WriteHealthStatus(StringBuilder, String)
 - uid: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteHealthStatus*
   href: api/App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.html#App_Metrics_Formatting_Humanize_HumanizingMetricsStringBuilderExtensions_WriteHealthStatus_
   commentId: Overload:App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteHealthStatus
   name: WriteHealthStatus
-  fullName: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteHealthStatus(System.Text.StringBuilder, System.Boolean)
+  fullName: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteHealthStatus(System.Text.StringBuilder, System.String)
 - uid: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteMetricEndReport(System.Text.StringBuilder,System.String,System.String)
   name: WriteMetricEndReport(StringBuilder, String, String)
   href: api/App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.html#App_Metrics_Formatting_Humanize_HumanizingMetricsStringBuilderExtensions_WriteMetricEndReport_System_Text_StringBuilder_System_String_System_String_
@@ -5562,6 +5697,17 @@ references:
   commentId: T:App.Metrics.HealthStatusData
   fullName: App.Metrics.HealthStatusData
   nameWithType: HealthStatusData
+- uid: App.Metrics.HealthStatusData.Degraded
+  name: Degraded
+  href: api/App.Metrics.HealthStatusData.html#App_Metrics_HealthStatusData_Degraded
+  commentId: P:App.Metrics.HealthStatusData.Degraded
+  fullName: App.Metrics.HealthStatusData.Degraded
+  nameWithType: HealthStatusData.Degraded
+- uid: App.Metrics.HealthStatusData.Degraded*
+  href: api/App.Metrics.HealthStatusData.html#App_Metrics_HealthStatusData_Degraded_
+  commentId: Overload:App.Metrics.HealthStatusData.Degraded
+  name: Degraded
+  fullName: App.Metrics.HealthStatusData.Degraded
 - uid: App.Metrics.HealthStatusData.Healthy
   name: Healthy
   href: api/App.Metrics.HealthStatusData.html#App_Metrics_HealthStatusData_Healthy
@@ -5573,17 +5719,17 @@ references:
   commentId: Overload:App.Metrics.HealthStatusData.Healthy
   name: Healthy
   fullName: App.Metrics.HealthStatusData.Healthy
-- uid: App.Metrics.HealthStatusData.IsHealthy
-  name: IsHealthy
-  href: api/App.Metrics.HealthStatusData.html#App_Metrics_HealthStatusData_IsHealthy
-  commentId: P:App.Metrics.HealthStatusData.IsHealthy
-  fullName: App.Metrics.HealthStatusData.IsHealthy
-  nameWithType: HealthStatusData.IsHealthy
-- uid: App.Metrics.HealthStatusData.IsHealthy*
-  href: api/App.Metrics.HealthStatusData.html#App_Metrics_HealthStatusData_IsHealthy_
-  commentId: Overload:App.Metrics.HealthStatusData.IsHealthy
-  name: IsHealthy
-  fullName: App.Metrics.HealthStatusData.IsHealthy
+- uid: App.Metrics.HealthStatusData.Status
+  name: Status
+  href: api/App.Metrics.HealthStatusData.html#App_Metrics_HealthStatusData_Status
+  commentId: P:App.Metrics.HealthStatusData.Status
+  fullName: App.Metrics.HealthStatusData.Status
+  nameWithType: HealthStatusData.Status
+- uid: App.Metrics.HealthStatusData.Status*
+  href: api/App.Metrics.HealthStatusData.html#App_Metrics_HealthStatusData_Status_
+  commentId: Overload:App.Metrics.HealthStatusData.Status
+  name: Status
+  fullName: App.Metrics.HealthStatusData.Status
 - uid: App.Metrics.HealthStatusData.Timestamp
   name: Timestamp
   href: api/App.Metrics.HealthStatusData.html#App_Metrics_HealthStatusData_Timestamp
@@ -7162,21 +7308,21 @@ references:
   commentId: Overload:App.Metrics.Reporting.Interfaces.IMetricReporter.ReportEnvironment
   name: ReportEnvironment
   fullName: App.Metrics.Reporting.Interfaces.IMetricReporter.ReportEnvironment(App.Metrics.Data.EnvironmentInfo)
-- uid: App.Metrics.Reporting.Interfaces.IMetricReporter.ReportHealth(System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
-  name: ReportHealth(IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
-  href: api/App.Metrics.Reporting.Interfaces.IMetricReporter.html#App_Metrics_Reporting_Interfaces_IMetricReporter_ReportHealth_System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__
-  commentId: M:App.Metrics.Reporting.Interfaces.IMetricReporter.ReportHealth(System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
-  name.vb: ReportHealth(IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
-  fullName: App.Metrics.Reporting.Interfaces.IMetricReporter.ReportHealth(System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
-  fullName.vb: App.Metrics.Reporting.Interfaces.IMetricReporter.ReportHealth(System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result))
-  nameWithType: IMetricReporter.ReportHealth(IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
-  nameWithType.vb: ReportHealth(IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
+- uid: App.Metrics.Reporting.Interfaces.IMetricReporter.ReportHealth(System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
+  name: ReportHealth(IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
+  href: api/App.Metrics.Reporting.Interfaces.IMetricReporter.html#App_Metrics_Reporting_Interfaces_IMetricReporter_ReportHealth_System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__
+  commentId: M:App.Metrics.Reporting.Interfaces.IMetricReporter.ReportHealth(System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
+  name.vb: ReportHealth(IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
+  fullName: App.Metrics.Reporting.Interfaces.IMetricReporter.ReportHealth(System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
+  fullName.vb: App.Metrics.Reporting.Interfaces.IMetricReporter.ReportHealth(System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result))
+  nameWithType: IMetricReporter.ReportHealth(IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
+  nameWithType.vb: ReportHealth(IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
 - uid: App.Metrics.Reporting.Interfaces.IMetricReporter.ReportHealth*
   href: api/App.Metrics.Reporting.Interfaces.IMetricReporter.html#App_Metrics_Reporting_Interfaces_IMetricReporter_ReportHealth_
   commentId: Overload:App.Metrics.Reporting.Interfaces.IMetricReporter.ReportHealth
   name: ReportHealth
   name.vb: ReportHealth
-  fullName: App.Metrics.Reporting.Interfaces.IMetricReporter.ReportHealth(System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
+  fullName: App.Metrics.Reporting.Interfaces.IMetricReporter.ReportHealth(System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
   fullName.vb: App.Metrics.Reporting.Interfaces.IMetricReporter.ReportHealth
 - uid: App.Metrics.Reporting.Interfaces.IMetricReporter.ReportInterval
   name: ReportInterval
@@ -7485,21 +7631,21 @@ references:
   commentId: Overload:App.Metrics.Reporting.StringReporter.ReportEnvironment
   name: ReportEnvironment
   fullName: App.Metrics.Reporting.StringReporter.ReportEnvironment(App.Metrics.Data.EnvironmentInfo)
-- uid: App.Metrics.Reporting.StringReporter.ReportHealth(System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
-  name: ReportHealth(IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
-  href: api/App.Metrics.Reporting.StringReporter.html#App_Metrics_Reporting_StringReporter_ReportHealth_System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__
-  commentId: M:App.Metrics.Reporting.StringReporter.ReportHealth(System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
-  name.vb: ReportHealth(IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
-  fullName: App.Metrics.Reporting.StringReporter.ReportHealth(System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
-  fullName.vb: App.Metrics.Reporting.StringReporter.ReportHealth(System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result))
-  nameWithType: StringReporter.ReportHealth(IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
-  nameWithType.vb: ReportHealth(IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
+- uid: App.Metrics.Reporting.StringReporter.ReportHealth(System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
+  name: ReportHealth(IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
+  href: api/App.Metrics.Reporting.StringReporter.html#App_Metrics_Reporting_StringReporter_ReportHealth_System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__
+  commentId: M:App.Metrics.Reporting.StringReporter.ReportHealth(System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
+  name.vb: ReportHealth(IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
+  fullName: App.Metrics.Reporting.StringReporter.ReportHealth(System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
+  fullName.vb: App.Metrics.Reporting.StringReporter.ReportHealth(System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result))
+  nameWithType: StringReporter.ReportHealth(IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
+  nameWithType.vb: ReportHealth(IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
 - uid: App.Metrics.Reporting.StringReporter.ReportHealth*
   href: api/App.Metrics.Reporting.StringReporter.html#App_Metrics_Reporting_StringReporter_ReportHealth_
   commentId: Overload:App.Metrics.Reporting.StringReporter.ReportHealth
   name: ReportHealth
   name.vb: ReportHealth
-  fullName: App.Metrics.Reporting.StringReporter.ReportHealth(System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
+  fullName: App.Metrics.Reporting.StringReporter.ReportHealth(System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
   fullName.vb: App.Metrics.Reporting.StringReporter.ReportHealth
 - uid: App.Metrics.Reporting.StringReporter.ReportInterval
   name: ReportInterval
@@ -7619,6 +7765,17 @@ references:
   commentId: Overload:App.Metrics.Sampling.ExponentiallyDecayingReservoir.Dispose
   name: Dispose
   fullName: App.Metrics.Sampling.ExponentiallyDecayingReservoir.Dispose()
+- uid: App.Metrics.Sampling.ExponentiallyDecayingReservoir.Finalize
+  name: Finalize()
+  href: api/App.Metrics.Sampling.ExponentiallyDecayingReservoir.html#App_Metrics_Sampling_ExponentiallyDecayingReservoir_Finalize
+  commentId: M:App.Metrics.Sampling.ExponentiallyDecayingReservoir.Finalize
+  fullName: App.Metrics.Sampling.ExponentiallyDecayingReservoir.Finalize()
+  nameWithType: ExponentiallyDecayingReservoir.Finalize()
+- uid: App.Metrics.Sampling.ExponentiallyDecayingReservoir.Finalize*
+  href: api/App.Metrics.Sampling.ExponentiallyDecayingReservoir.html#App_Metrics_Sampling_ExponentiallyDecayingReservoir_Finalize_
+  commentId: Overload:App.Metrics.Sampling.ExponentiallyDecayingReservoir.Finalize
+  name: Finalize
+  fullName: App.Metrics.Sampling.ExponentiallyDecayingReservoir.Finalize()
 - uid: App.Metrics.Sampling.ExponentiallyDecayingReservoir.GetSnapshot(System.Boolean)
   name: GetSnapshot(Boolean)
   href: api/App.Metrics.Sampling.ExponentiallyDecayingReservoir.html#App_Metrics_Sampling_ExponentiallyDecayingReservoir_GetSnapshot_System_Boolean_
