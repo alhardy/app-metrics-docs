@@ -30,17 +30,6 @@ references:
   commentId: Overload:App.Metrics.Configuration.AppMetricsOptions.DefaultContextLabel
   name: DefaultContextLabel
   fullName: App.Metrics.Configuration.AppMetricsOptions.DefaultContextLabel
-- uid: App.Metrics.Configuration.AppMetricsOptions.DefaultSamplingSize
-  name: DefaultSamplingSize
-  href: api/App.Metrics.Configuration.AppMetricsOptions.html#App_Metrics_Configuration_AppMetricsOptions_DefaultSamplingSize
-  commentId: P:App.Metrics.Configuration.AppMetricsOptions.DefaultSamplingSize
-  fullName: App.Metrics.Configuration.AppMetricsOptions.DefaultSamplingSize
-  nameWithType: AppMetricsOptions.DefaultSamplingSize
-- uid: App.Metrics.Configuration.AppMetricsOptions.DefaultSamplingSize*
-  href: api/App.Metrics.Configuration.AppMetricsOptions.html#App_Metrics_Configuration_AppMetricsOptions_DefaultSamplingSize_
-  commentId: Overload:App.Metrics.Configuration.AppMetricsOptions.DefaultSamplingSize
-  name: DefaultSamplingSize
-  fullName: App.Metrics.Configuration.AppMetricsOptions.DefaultSamplingSize
 - uid: App.Metrics.Configuration.AppMetricsOptions.DefaultSamplingType
   name: DefaultSamplingType
   href: api/App.Metrics.Configuration.AppMetricsOptions.html#App_Metrics_Configuration_AppMetricsOptions_DefaultSamplingType
@@ -695,17 +684,17 @@ references:
   commentId: M:App.Metrics.Core.HistogramMetric.#ctor(App.Metrics.Sampling.Interfaces.IReservoir)
   fullName: App.Metrics.Core.HistogramMetric.HistogramMetric(App.Metrics.Sampling.Interfaces.IReservoir)
   nameWithType: HistogramMetric.HistogramMetric(IReservoir)
-- uid: App.Metrics.Core.HistogramMetric.#ctor(App.Metrics.SamplingType)
-  name: HistogramMetric(SamplingType)
-  href: api/App.Metrics.Core.HistogramMetric.html#App_Metrics_Core_HistogramMetric__ctor_App_Metrics_SamplingType_
-  commentId: M:App.Metrics.Core.HistogramMetric.#ctor(App.Metrics.SamplingType)
-  fullName: App.Metrics.Core.HistogramMetric.HistogramMetric(App.Metrics.SamplingType)
-  nameWithType: HistogramMetric.HistogramMetric(SamplingType)
+- uid: App.Metrics.Core.HistogramMetric.#ctor(App.Metrics.SamplingType,System.Int32,System.Double)
+  name: HistogramMetric(SamplingType, Int32, Double)
+  href: api/App.Metrics.Core.HistogramMetric.html#App_Metrics_Core_HistogramMetric__ctor_App_Metrics_SamplingType_System_Int32_System_Double_
+  commentId: M:App.Metrics.Core.HistogramMetric.#ctor(App.Metrics.SamplingType,System.Int32,System.Double)
+  fullName: App.Metrics.Core.HistogramMetric.HistogramMetric(App.Metrics.SamplingType, System.Int32, System.Double)
+  nameWithType: HistogramMetric.HistogramMetric(SamplingType, Int32, Double)
 - uid: App.Metrics.Core.HistogramMetric.#ctor*
   href: api/App.Metrics.Core.HistogramMetric.html#App_Metrics_Core_HistogramMetric__ctor_
   commentId: Overload:App.Metrics.Core.HistogramMetric.#ctor
   name: HistogramMetric
-  fullName: App.Metrics.Core.HistogramMetric.HistogramMetric(App.Metrics.SamplingType)
+  fullName: App.Metrics.Core.HistogramMetric.HistogramMetric(App.Metrics.SamplingType, System.Int32, System.Double)
 - uid: App.Metrics.Core.HistogramMetric.Dispose
   name: Dispose()
   href: api/App.Metrics.Core.HistogramMetric.html#App_Metrics_Core_HistogramMetric_Dispose
@@ -1360,6 +1349,28 @@ references:
   commentId: T:App.Metrics.Core.Options.MetricValueWithSamplingOption
   fullName: App.Metrics.Core.Options.MetricValueWithSamplingOption
   nameWithType: MetricValueWithSamplingOption
+- uid: App.Metrics.Core.Options.MetricValueWithSamplingOption.ExponentialDecayFactor
+  name: ExponentialDecayFactor
+  href: api/App.Metrics.Core.Options.MetricValueWithSamplingOption.html#App_Metrics_Core_Options_MetricValueWithSamplingOption_ExponentialDecayFactor
+  commentId: P:App.Metrics.Core.Options.MetricValueWithSamplingOption.ExponentialDecayFactor
+  fullName: App.Metrics.Core.Options.MetricValueWithSamplingOption.ExponentialDecayFactor
+  nameWithType: MetricValueWithSamplingOption.ExponentialDecayFactor
+- uid: App.Metrics.Core.Options.MetricValueWithSamplingOption.ExponentialDecayFactor*
+  href: api/App.Metrics.Core.Options.MetricValueWithSamplingOption.html#App_Metrics_Core_Options_MetricValueWithSamplingOption_ExponentialDecayFactor_
+  commentId: Overload:App.Metrics.Core.Options.MetricValueWithSamplingOption.ExponentialDecayFactor
+  name: ExponentialDecayFactor
+  fullName: App.Metrics.Core.Options.MetricValueWithSamplingOption.ExponentialDecayFactor
+- uid: App.Metrics.Core.Options.MetricValueWithSamplingOption.SampleSize
+  name: SampleSize
+  href: api/App.Metrics.Core.Options.MetricValueWithSamplingOption.html#App_Metrics_Core_Options_MetricValueWithSamplingOption_SampleSize
+  commentId: P:App.Metrics.Core.Options.MetricValueWithSamplingOption.SampleSize
+  fullName: App.Metrics.Core.Options.MetricValueWithSamplingOption.SampleSize
+  nameWithType: MetricValueWithSamplingOption.SampleSize
+- uid: App.Metrics.Core.Options.MetricValueWithSamplingOption.SampleSize*
+  href: api/App.Metrics.Core.Options.MetricValueWithSamplingOption.html#App_Metrics_Core_Options_MetricValueWithSamplingOption_SampleSize_
+  commentId: Overload:App.Metrics.Core.Options.MetricValueWithSamplingOption.SampleSize
+  name: SampleSize
+  fullName: App.Metrics.Core.Options.MetricValueWithSamplingOption.SampleSize
 - uid: App.Metrics.Core.Options.MetricValueWithSamplingOption.SamplingType
   name: SamplingType
   href: api/App.Metrics.Core.Options.MetricValueWithSamplingOption.html#App_Metrics_Core_Options_MetricValueWithSamplingOption_SamplingType
@@ -1517,23 +1528,23 @@ references:
   commentId: M:App.Metrics.Core.TimerMetric.#ctor(App.Metrics.Sampling.Interfaces.IReservoir,App.Metrics.Utils.IClock)
   fullName: App.Metrics.Core.TimerMetric.TimerMetric(App.Metrics.Sampling.Interfaces.IReservoir, App.Metrics.Utils.IClock)
   nameWithType: TimerMetric.TimerMetric(IReservoir, IClock)
-- uid: App.Metrics.Core.TimerMetric.#ctor(App.Metrics.SamplingType,App.Metrics.Core.Interfaces.IMeterMetric,App.Metrics.Utils.IClock)
-  name: TimerMetric(SamplingType, IMeterMetric, IClock)
-  href: api/App.Metrics.Core.TimerMetric.html#App_Metrics_Core_TimerMetric__ctor_App_Metrics_SamplingType_App_Metrics_Core_Interfaces_IMeterMetric_App_Metrics_Utils_IClock_
-  commentId: M:App.Metrics.Core.TimerMetric.#ctor(App.Metrics.SamplingType,App.Metrics.Core.Interfaces.IMeterMetric,App.Metrics.Utils.IClock)
-  fullName: App.Metrics.Core.TimerMetric.TimerMetric(App.Metrics.SamplingType, App.Metrics.Core.Interfaces.IMeterMetric, App.Metrics.Utils.IClock)
-  nameWithType: TimerMetric.TimerMetric(SamplingType, IMeterMetric, IClock)
-- uid: App.Metrics.Core.TimerMetric.#ctor(App.Metrics.SamplingType,App.Metrics.Utils.IClock)
-  name: TimerMetric(SamplingType, IClock)
-  href: api/App.Metrics.Core.TimerMetric.html#App_Metrics_Core_TimerMetric__ctor_App_Metrics_SamplingType_App_Metrics_Utils_IClock_
-  commentId: M:App.Metrics.Core.TimerMetric.#ctor(App.Metrics.SamplingType,App.Metrics.Utils.IClock)
-  fullName: App.Metrics.Core.TimerMetric.TimerMetric(App.Metrics.SamplingType, App.Metrics.Utils.IClock)
-  nameWithType: TimerMetric.TimerMetric(SamplingType, IClock)
+- uid: App.Metrics.Core.TimerMetric.#ctor(App.Metrics.SamplingType,System.Int32,System.Double,App.Metrics.Core.Interfaces.IMeterMetric,App.Metrics.Utils.IClock)
+  name: TimerMetric(SamplingType, Int32, Double, IMeterMetric, IClock)
+  href: api/App.Metrics.Core.TimerMetric.html#App_Metrics_Core_TimerMetric__ctor_App_Metrics_SamplingType_System_Int32_System_Double_App_Metrics_Core_Interfaces_IMeterMetric_App_Metrics_Utils_IClock_
+  commentId: M:App.Metrics.Core.TimerMetric.#ctor(App.Metrics.SamplingType,System.Int32,System.Double,App.Metrics.Core.Interfaces.IMeterMetric,App.Metrics.Utils.IClock)
+  fullName: App.Metrics.Core.TimerMetric.TimerMetric(App.Metrics.SamplingType, System.Int32, System.Double, App.Metrics.Core.Interfaces.IMeterMetric, App.Metrics.Utils.IClock)
+  nameWithType: TimerMetric.TimerMetric(SamplingType, Int32, Double, IMeterMetric, IClock)
+- uid: App.Metrics.Core.TimerMetric.#ctor(App.Metrics.SamplingType,System.Int32,System.Double,App.Metrics.Utils.IClock)
+  name: TimerMetric(SamplingType, Int32, Double, IClock)
+  href: api/App.Metrics.Core.TimerMetric.html#App_Metrics_Core_TimerMetric__ctor_App_Metrics_SamplingType_System_Int32_System_Double_App_Metrics_Utils_IClock_
+  commentId: M:App.Metrics.Core.TimerMetric.#ctor(App.Metrics.SamplingType,System.Int32,System.Double,App.Metrics.Utils.IClock)
+  fullName: App.Metrics.Core.TimerMetric.TimerMetric(App.Metrics.SamplingType, System.Int32, System.Double, App.Metrics.Utils.IClock)
+  nameWithType: TimerMetric.TimerMetric(SamplingType, Int32, Double, IClock)
 - uid: App.Metrics.Core.TimerMetric.#ctor*
   href: api/App.Metrics.Core.TimerMetric.html#App_Metrics_Core_TimerMetric__ctor_
   commentId: Overload:App.Metrics.Core.TimerMetric.#ctor
   name: TimerMetric
-  fullName: App.Metrics.Core.TimerMetric.TimerMetric(App.Metrics.SamplingType, App.Metrics.Utils.IClock)
+  fullName: App.Metrics.Core.TimerMetric.TimerMetric(App.Metrics.SamplingType, System.Int32, System.Double, App.Metrics.Utils.IClock)
 - uid: App.Metrics.Core.TimerMetric.CurrentTime
   name: CurrentTime()
   href: api/App.Metrics.Core.TimerMetric.html#App_Metrics_Core_TimerMetric_CurrentTime
@@ -7719,18 +7730,6 @@ references:
   commentId: T:App.Metrics.Sampling.ExponentiallyDecayingReservoir
   fullName: App.Metrics.Sampling.ExponentiallyDecayingReservoir
   nameWithType: ExponentiallyDecayingReservoir
-- uid: App.Metrics.Sampling.ExponentiallyDecayingReservoir.#ctor
-  name: ExponentiallyDecayingReservoir()
-  href: api/App.Metrics.Sampling.ExponentiallyDecayingReservoir.html#App_Metrics_Sampling_ExponentiallyDecayingReservoir__ctor
-  commentId: M:App.Metrics.Sampling.ExponentiallyDecayingReservoir.#ctor
-  fullName: App.Metrics.Sampling.ExponentiallyDecayingReservoir.ExponentiallyDecayingReservoir()
-  nameWithType: ExponentiallyDecayingReservoir.ExponentiallyDecayingReservoir()
-- uid: App.Metrics.Sampling.ExponentiallyDecayingReservoir.#ctor(App.Metrics.Utils.IClock,App.Metrics.Scheduling.Interfaces.IScheduler)
-  name: ExponentiallyDecayingReservoir(IClock, IScheduler)
-  href: api/App.Metrics.Sampling.ExponentiallyDecayingReservoir.html#App_Metrics_Sampling_ExponentiallyDecayingReservoir__ctor_App_Metrics_Utils_IClock_App_Metrics_Scheduling_Interfaces_IScheduler_
-  commentId: M:App.Metrics.Sampling.ExponentiallyDecayingReservoir.#ctor(App.Metrics.Utils.IClock,App.Metrics.Scheduling.Interfaces.IScheduler)
-  fullName: App.Metrics.Sampling.ExponentiallyDecayingReservoir.ExponentiallyDecayingReservoir(App.Metrics.Utils.IClock, App.Metrics.Scheduling.Interfaces.IScheduler)
-  nameWithType: ExponentiallyDecayingReservoir.ExponentiallyDecayingReservoir(IClock, IScheduler)
 - uid: App.Metrics.Sampling.ExponentiallyDecayingReservoir.#ctor(System.Int32,System.Double)
   name: ExponentiallyDecayingReservoir(Int32, Double)
   href: api/App.Metrics.Sampling.ExponentiallyDecayingReservoir.html#App_Metrics_Sampling_ExponentiallyDecayingReservoir__ctor_System_Int32_System_Double_
@@ -7747,7 +7746,7 @@ references:
   href: api/App.Metrics.Sampling.ExponentiallyDecayingReservoir.html#App_Metrics_Sampling_ExponentiallyDecayingReservoir__ctor_
   commentId: Overload:App.Metrics.Sampling.ExponentiallyDecayingReservoir.#ctor
   name: ExponentiallyDecayingReservoir
-  fullName: App.Metrics.Sampling.ExponentiallyDecayingReservoir.ExponentiallyDecayingReservoir()
+  fullName: App.Metrics.Sampling.ExponentiallyDecayingReservoir.ExponentiallyDecayingReservoir(System.Int32, System.Double)
 - uid: App.Metrics.Sampling.ExponentiallyDecayingReservoir.Dispose
   name: Dispose()
   href: api/App.Metrics.Sampling.ExponentiallyDecayingReservoir.html#App_Metrics_Sampling_ExponentiallyDecayingReservoir_Dispose
@@ -8103,12 +8102,6 @@ references:
   commentId: T:App.Metrics.Sampling.SlidingWindowReservoir
   fullName: App.Metrics.Sampling.SlidingWindowReservoir
   nameWithType: SlidingWindowReservoir
-- uid: App.Metrics.Sampling.SlidingWindowReservoir.#ctor
-  name: SlidingWindowReservoir()
-  href: api/App.Metrics.Sampling.SlidingWindowReservoir.html#App_Metrics_Sampling_SlidingWindowReservoir__ctor
-  commentId: M:App.Metrics.Sampling.SlidingWindowReservoir.#ctor
-  fullName: App.Metrics.Sampling.SlidingWindowReservoir.SlidingWindowReservoir()
-  nameWithType: SlidingWindowReservoir.SlidingWindowReservoir()
 - uid: App.Metrics.Sampling.SlidingWindowReservoir.#ctor(System.Int32)
   name: SlidingWindowReservoir(Int32)
   href: api/App.Metrics.Sampling.SlidingWindowReservoir.html#App_Metrics_Sampling_SlidingWindowReservoir__ctor_System_Int32_
@@ -8119,7 +8112,7 @@ references:
   href: api/App.Metrics.Sampling.SlidingWindowReservoir.html#App_Metrics_Sampling_SlidingWindowReservoir__ctor_
   commentId: Overload:App.Metrics.Sampling.SlidingWindowReservoir.#ctor
   name: SlidingWindowReservoir
-  fullName: App.Metrics.Sampling.SlidingWindowReservoir.SlidingWindowReservoir()
+  fullName: App.Metrics.Sampling.SlidingWindowReservoir.SlidingWindowReservoir(System.Int32)
 - uid: App.Metrics.Sampling.SlidingWindowReservoir.GetSnapshot(System.Boolean)
   name: GetSnapshot(Boolean)
   href: api/App.Metrics.Sampling.SlidingWindowReservoir.html#App_Metrics_Sampling_SlidingWindowReservoir_GetSnapshot_System_Boolean_
@@ -8159,12 +8152,6 @@ references:
   commentId: T:App.Metrics.Sampling.UniformReservoir
   fullName: App.Metrics.Sampling.UniformReservoir
   nameWithType: UniformReservoir
-- uid: App.Metrics.Sampling.UniformReservoir.#ctor
-  name: UniformReservoir()
-  href: api/App.Metrics.Sampling.UniformReservoir.html#App_Metrics_Sampling_UniformReservoir__ctor
-  commentId: M:App.Metrics.Sampling.UniformReservoir.#ctor
-  fullName: App.Metrics.Sampling.UniformReservoir.UniformReservoir()
-  nameWithType: UniformReservoir.UniformReservoir()
 - uid: App.Metrics.Sampling.UniformReservoir.#ctor(System.Int32)
   name: UniformReservoir(Int32)
   href: api/App.Metrics.Sampling.UniformReservoir.html#App_Metrics_Sampling_UniformReservoir__ctor_System_Int32_
@@ -8175,7 +8162,7 @@ references:
   href: api/App.Metrics.Sampling.UniformReservoir.html#App_Metrics_Sampling_UniformReservoir__ctor_
   commentId: Overload:App.Metrics.Sampling.UniformReservoir.#ctor
   name: UniformReservoir
-  fullName: App.Metrics.Sampling.UniformReservoir.UniformReservoir()
+  fullName: App.Metrics.Sampling.UniformReservoir.UniformReservoir(System.Int32)
 - uid: App.Metrics.Sampling.UniformReservoir.GetSnapshot(System.Boolean)
   name: GetSnapshot(Boolean)
   href: api/App.Metrics.Sampling.UniformReservoir.html#App_Metrics_Sampling_UniformReservoir_GetSnapshot_System_Boolean_

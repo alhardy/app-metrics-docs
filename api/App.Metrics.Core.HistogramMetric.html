@@ -116,7 +116,7 @@
                 <a href="https://github.com/alhardy/AppMetrics/new/1.0.0-beta1/docfx_project/apispec/new?filename=App_Metrics_Core_HistogramMetric__ctor_App_Metrics_Sampling_Interfaces_IReservoir_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.HistogramMetric.%23ctor(App.Metrics.Sampling.Interfaces.IReservoir)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Core/HistogramMetric.cs/#L28">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Core/HistogramMetric.cs/#L37">View Source</a>
               </span>
               <a id="App_Metrics_Core_HistogramMetric__ctor_" data-uid="App.Metrics.Core.HistogramMetric.#ctor*"></a>
               <h4 id="App_Metrics_Core_HistogramMetric__ctor_App_Metrics_Sampling_Interfaces_IReservoir_" data-uid="App.Metrics.Core.HistogramMetric.#ctor(App.Metrics.Sampling.Interfaces.IReservoir)">HistogramMetric(IReservoir)</h4>
@@ -145,18 +145,19 @@
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics/new/1.0.0-beta1/docfx_project/apispec/new?filename=App_Metrics_Core_HistogramMetric__ctor_App_Metrics_SamplingType_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.HistogramMetric.%23ctor(App.Metrics.SamplingType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics/new/1.0.0-beta1/docfx_project/apispec/new?filename=App_Metrics_Core_HistogramMetric__ctor_App_Metrics_SamplingType_System_Int32_System_Double_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.HistogramMetric.%23ctor(App.Metrics.SamplingType%2CSystem.Int32%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Core/HistogramMetric.cs/#L23">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Core/HistogramMetric.cs/#L32">View Source</a>
               </span>
               <a id="App_Metrics_Core_HistogramMetric__ctor_" data-uid="App.Metrics.Core.HistogramMetric.#ctor*"></a>
-              <h4 id="App_Metrics_Core_HistogramMetric__ctor_App_Metrics_SamplingType_" data-uid="App.Metrics.Core.HistogramMetric.#ctor(App.Metrics.SamplingType)">HistogramMetric(SamplingType)</h4>
-              <div class="markdown level1 summary"></div>
+              <h4 id="App_Metrics_Core_HistogramMetric__ctor_App_Metrics_SamplingType_System_Int32_System_Double_" data-uid="App.Metrics.Core.HistogramMetric.#ctor(App.Metrics.SamplingType,System.Int32,System.Double)">HistogramMetric(SamplingType, Int32, Double)</h4>
+              <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="App.Metrics.Core.HistogramMetric.html#App_Metrics_Core_HistogramMetric">HistogramMetric</a> class.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public HistogramMetric(SamplingType samplingType)</code></pre>
+                <pre><code class="lang-csharp hljs">public HistogramMetric(SamplingType samplingType, int sampleSize, double alpha)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -171,7 +172,21 @@
                   <tr>
                     <td><a class="xref" href="App.Metrics.SamplingType.html#App_Metrics_SamplingType">SamplingType</a></td>
                     <td><em>samplingType</em></td>
-                    <td></td>
+                    <td><p>Type of the reservoir sampling to use.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>sampleSize</em></td>
+                    <td><p>The number of samples to keep in the sampling reservoir</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><em>alpha</em></td>
+                    <td><p>The alpha value, e.g 0.015 will heavily biases the reservoir to the past 5 mins of measurements. The higher the
+value the more biased the reservoir will be towards newer values.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -182,7 +197,7 @@
                 <a href="https://github.com/alhardy/AppMetrics/new/1.0.0-beta1/docfx_project/apispec/new?filename=App_Metrics_Core_HistogramMetric_Value.md&amp;value=---%0Auid%3A%20App.Metrics.Core.HistogramMetric.Value%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Core/HistogramMetric.cs/#L38">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Core/HistogramMetric.cs/#L47">View Source</a>
               </span>
               <a id="App_Metrics_Core_HistogramMetric_Value_" data-uid="App.Metrics.Core.HistogramMetric.Value*"></a>
               <h4 id="App_Metrics_Core_HistogramMetric_Value" data-uid="App.Metrics.Core.HistogramMetric.Value">Value</h4>
@@ -216,7 +231,7 @@
                 <a href="https://github.com/alhardy/AppMetrics/new/1.0.0-beta1/docfx_project/apispec/new?filename=App_Metrics_Core_HistogramMetric_Dispose.md&amp;value=---%0Auid%3A%20App.Metrics.Core.HistogramMetric.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Core/HistogramMetric.cs/#L40">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Core/HistogramMetric.cs/#L49">View Source</a>
               </span>
               <a id="App_Metrics_Core_HistogramMetric_Dispose_" data-uid="App.Metrics.Core.HistogramMetric.Dispose*"></a>
               <h4 id="App_Metrics_Core_HistogramMetric_Dispose" data-uid="App.Metrics.Core.HistogramMetric.Dispose">Dispose()</h4>
@@ -233,7 +248,7 @@
                 <a href="https://github.com/alhardy/AppMetrics/new/1.0.0-beta1/docfx_project/apispec/new?filename=App_Metrics_Core_HistogramMetric_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.HistogramMetric.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Core/HistogramMetric.cs/#L46">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Core/HistogramMetric.cs/#L55">View Source</a>
               </span>
               <a id="App_Metrics_Core_HistogramMetric_Dispose_" data-uid="App.Metrics.Core.HistogramMetric.Dispose*"></a>
               <h4 id="App_Metrics_Core_HistogramMetric_Dispose_System_Boolean_" data-uid="App.Metrics.Core.HistogramMetric.Dispose(System.Boolean)">Dispose(Boolean)</h4>
@@ -265,7 +280,7 @@
                 <a href="https://github.com/alhardy/AppMetrics/new/1.0.0-beta1/docfx_project/apispec/new?filename=App_Metrics_Core_HistogramMetric_Finalize.md&amp;value=---%0Auid%3A%20App.Metrics.Core.HistogramMetric.Finalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Core/HistogramMetric.cs/#L33">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Core/HistogramMetric.cs/#L42">View Source</a>
               </span>
               <a id="App_Metrics_Core_HistogramMetric_Finalize_" data-uid="App.Metrics.Core.HistogramMetric.Finalize*"></a>
               <h4 id="App_Metrics_Core_HistogramMetric_Finalize" data-uid="App.Metrics.Core.HistogramMetric.Finalize">Finalize()</h4>
@@ -280,7 +295,7 @@
                 <a href="https://github.com/alhardy/AppMetrics/new/1.0.0-beta1/docfx_project/apispec/new?filename=App_Metrics_Core_HistogramMetric_GetValue_System_Boolean_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.HistogramMetric.GetValue(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Core/HistogramMetric.cs/#L60">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Core/HistogramMetric.cs/#L69">View Source</a>
               </span>
               <a id="App_Metrics_Core_HistogramMetric_GetValue_" data-uid="App.Metrics.Core.HistogramMetric.GetValue*"></a>
               <h4 id="App_Metrics_Core_HistogramMetric_GetValue_System_Boolean_" data-uid="App.Metrics.Core.HistogramMetric.GetValue(System.Boolean)">GetValue(Boolean)</h4>
@@ -329,7 +344,7 @@
                 <a href="https://github.com/alhardy/AppMetrics/new/1.0.0-beta1/docfx_project/apispec/new?filename=App_Metrics_Core_HistogramMetric_Reset.md&amp;value=---%0Auid%3A%20App.Metrics.Core.HistogramMetric.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Core/HistogramMetric.cs/#L71">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Core/HistogramMetric.cs/#L80">View Source</a>
               </span>
               <a id="App_Metrics_Core_HistogramMetric_Reset_" data-uid="App.Metrics.Core.HistogramMetric.Reset*"></a>
               <h4 id="App_Metrics_Core_HistogramMetric_Reset" data-uid="App.Metrics.Core.HistogramMetric.Reset">Reset()</h4>
@@ -346,7 +361,7 @@
                 <a href="https://github.com/alhardy/AppMetrics/new/1.0.0-beta1/docfx_project/apispec/new?filename=App_Metrics_Core_HistogramMetric_Update_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.HistogramMetric.Update(System.Int64%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Core/HistogramMetric.cs/#L78">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta1/src/App.Metrics/Core/HistogramMetric.cs/#L87">View Source</a>
               </span>
               <a id="App_Metrics_Core_HistogramMetric_Update_" data-uid="App.Metrics.Core.HistogramMetric.Update*"></a>
               <h4 id="App_Metrics_Core_HistogramMetric_Update_System_Int64_System_String_" data-uid="App.Metrics.Core.HistogramMetric.Update(System.Int64,System.String)">Update(Int64, String)</h4>

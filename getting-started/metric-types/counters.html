@@ -68,6 +68,68 @@
             <article class="content wrap" id="_content" data-uid="">
               <h1 id="counters">Counters</h1>
               
+<p>Counters are one of the simpliest metrics types supported and allow us to track how many times something has happened. They are an atomic 64-bit integer which can be incremented or decremented.</p>
+<p>Counters are ideal for counting occurances, events or errors for example. They also provide the ability to track a count and percentage of each item with a set, for example if we were tracking the number of emails our application has sent, we could also track the number of each type of email sent and their percentage of the overall count within the same counter.</p>
+<h2 id="using-counters">Using Counters</h2>
+<pre><code class="lang-csharp" name="Main">var sentEmailsCounter = new CounterOptions
+{
+    Name = &quot;Sent Emails&quot;,
+    MeasurementUnit = Unit.Calls
+};
+
+_metrics.Increment(sentEmailsCounter); // Increment by 1 
+_metrics.Decrement(sentEmailsCounter); // Decrement by 1
+_metrics.Increment(sentEmailsCounter, 10); // Increment by 10
+_metrics.Decrement(sentEmailsCounter, 10); // Decrement by 10
+</code></pre><p>And if we wanted to track the number of emails sent by type for example:</p>
+<pre><code class="lang-csharp" name="Main">var sentEmailsCounter = new CounterOptions
+{
+    Name = &quot;Sent Emails&quot;,
+    MeasurementUnit = Unit.Calls
+};
+
+_metrics.Increment(sentEmailsCounter, &quot;email-a-friend&quot;);
+_metrics.Increment(sentEmailsCounter, &quot;forgot-password&quot;);
+_metrics.Increment(sentEmailsCounter, &quot;account-verification&quot;);
+</code></pre><p>Which for example when using the JSON formatter would result in:</p>
+<pre><code class="lang-json" name="Main">{
+    &quot;context&quot;: &quot;EmailApplication&quot;,
+    &quot;counters&quot;: [
+        {
+            &quot;count&quot;: 100,
+            &quot;items&quot;: [
+                {
+                    &quot;count&quot;: 10,
+                    &quot;item&quot;: &quot;forgot-password&quot;,
+                    &quot;percent&quot;: 10
+                },
+                {
+                    &quot;count&quot;: 20,
+                    &quot;item&quot;: &quot;account-verification&quot;,
+                    &quot;percent&quot;: 20
+                },
+                {
+                    &quot;count&quot;: 70,
+                    &quot;item&quot;: &quot;email-a-friend&quot;,
+                    &quot;percent&quot;: 70
+                }
+            ],
+            &quot;name&quot;: &quot;Sent Emails&quot;,
+            &quot;unit&quot;: &quot;Calls&quot;
+        }
+    ]
+}
+</code></pre><h2 id="reporting-counters">Reporting Counters</h2>
+<p>When reporting counters we should keep in mind that they are a cumulative count, therefore if we want to sum the counters over a given interval we may not see the expected result since this will be a sum of the cumulative count at each reporting interval, also since metrics are recorded in memory a new deployment of the application will of course reset the count.  </p>
+<p>We can solve this by resetting the counter each time we flush our metrics to a data store. For example:</p>
+<pre><code class="lang-csharp" name="Main">_metrics.Advanced.Counter(sentEmailsCounter).Reset();
+</code></pre><div class="NOTE"><h5>Note</h5><p>At the moment the above would have to apply for all counters within the reporter. The next release will provide a specific counter type which will be reset after reporting.</p>
+</div>
+<h2 id="related-docs">Related Docs</h2>
+<ul>
+<li><a href="../intro.html">Getting Started</a></li>
+<li><a href="../fundamentals/configuration.html">Configuration</a></li>
+</ul>
 
             </article>
           </div>

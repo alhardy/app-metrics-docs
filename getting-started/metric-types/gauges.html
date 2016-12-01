@@ -68,6 +68,66 @@
             <article class="content wrap" id="_content" data-uid="">
               <h1 id="gauges">Gauges</h1>
               
+<p>A Gauge is simply an action that returns the instantaneous measure of a value, where the value abitrarily increases and decreases, for example CPU usage.</p>
+<p>Gauges are ideal to use for measured values such as current memory usage, cpu usage, temperatures, disk space etc.</p>
+<h2 id="using-gauges">Using Gauges</h2>
+<pre><code class="lang-csharp" name="Main" highlight-lines="9">var processPhysicalMemoryGauge = new GaugeOptions
+{
+    Name = &quot;Process Physical Memory&quot;,
+    MeasurementUnit = Unit.Bytes
+} 
+
+var process = Process.GetCurrentProcess();
+
+_metrics.Gauge(MetricsRegistry.Gauges.TestGauge, () =&gt; process.WorkingSet64);
+</code></pre><p>Which for example when using the JSON formatter would result in:</p>
+<pre><code class="lang-json" name="Main">{
+    &quot;context&quot;: &quot;Process&quot;,
+    &quot;gauges&quot;: [
+        {
+            &quot;value&quot;: 51683328,
+            &quot;name&quot;: &quot;Process Physical Memory&quot;,           
+            &quot;unit&quot;: &quot;bytes&quot;
+        }
+    ]
+}
+</code></pre><h3 id="derived-gauges">Derived Gauges</h3>
+<p>Derived Gauges allow you to derive a value from another Gauge and using a transformation, calculate the measurement.</p>
+<pre><code class="lang-csharp" name="Main" highlight-lines="12">var process = Process.GetCurrentProcess();
+
+var processPhysicalMemoryGauge = new GaugeOptions
+{
+    Name = &quot;Process Physical Memory (MB)&quot;,
+    MeasurementUnit = Unit.MegaBytes
+};
+
+var physicalMemoryGauge = new FunctionGauge(() =&gt; process.WorkingSet64);
+
+_metrics.Advanced.Gauge(MetricsRegistry.Gauges.DerivedGauge,
+        () =&gt; new DerivedGauge(physicalMemoryGauge, g =&gt; g / 1024.0 / 1024.0));
+</code></pre><h3 id="ratio-gauges">Ratio Gauges</h3>
+<p>Ratio Gauges allow you to measure a Gauge with a measurement which is the ratio between two values.</p>
+<pre><code class="lang-csharp" name="Main" highlight-lines="16">var cacheHits = _metrics.Advanced.Meter(MetricsRegistry.Meters.CacheHits);
+var calls = _metrics.Advanced.Timer(MetricsRegistry.Timers.DatabaseQueryTimer);
+
+var cacheHit = Rnd.Next(0, 2) == 0;
+
+using (calls.NewContext())
+{
+    if (cacheHit)
+    {
+        cacheHits.Mark();
+    }
+
+    Thread.Sleep(cacheHit ? 10 : 100);
+}
+
+_metrics.Advanced.Gauge(MetricsRegistry.Gauges.CacheHitRatioGauge, () =&gt; new HitRatioGauge(cacheHits, calls, m =&gt; m.OneMinuteRate));
+</code></pre><h2 id="related-docs">Related Docs</h2>
+<ul>
+<li><a href="../intro.html">Getting Started</a></li>
+<li><a href="../fundamentals/configuration.html">Configuration</a></li>
+</ul>
 
             </article>
           </div>

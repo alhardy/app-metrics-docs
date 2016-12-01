@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>meters </title>
+    <title>Meters </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="meters ">
+    <meta name="title" content="Meters ">
     <meta name="generator" content="docfx 2.7.3.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -66,8 +66,83 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-              <h1 id="meters">meters</h1>
+              <h1 id="meters">Meters</h1>
               
+<p>A Meter measures the rate at which an event occurs along with a total count of the occurances. Rates that are measured are the <em>mean</em>, <em>one minute</em>, <em>five minute</em> and <em>fifteen minute</em>. The <em>mean</em> rate is an average rate of events for the lifetime of the application which does not provide a sense of recency, x-minute rates use an <a href="https://en.wikipedia.org/wiki/Moving_average#Exponential moving average">Exponential Weighted Moving Average</a> (<strong>EWMA</strong>) for their calculations which do provide a sense of recency.</p>
+<p>Meters provide the ability to track a count and percentage of each item within a set along with the rate of each item, for example if we were measuring the rate of HTTP requests made to an API protected with OAuth2, we could also track the rate at which each client was making these requests along with the number of requests and their percentage of the overall count within the same meter.</p>
+<h2 id="using-meters">Using Meters</h2>
+<pre><code class="lang-csharp" name="Main">var cacheHitsMeter = new MeterOptions
+{
+    Name = &quot;Cache Hits&quot;,
+    MeasurementUnit = Unit.Calls
+};
+
+_metrics.Mark(cacheHitsMeter); 
+_metrics.Mark(cacheHitsMeter, 10);
+</code></pre><p>And if we wanted to track the rate at which each HTTP status was occuring with an API:</p>
+<pre><code class="lang-csharp" name="Main">var httpStatusMeter = new MeterOptions
+{
+    Name = &quot;Http Status&quot;,
+    MeasurementUnit = Unit.Calls
+};
+
+_metrics.Mark(httpStatusMeter, &quot;200&quot;);
+_metrics.Mark(httpStatusMeter, &quot;500&quot;);
+_metrics.Mark(httpStatusMeter, &quot;401&quot;);
+</code></pre><p>Which for example when using the JSON formatter would result in:</p>
+<pre><code class="lang-json" name="Main">{
+    &quot;context&quot;: &quot;Application&quot;,
+    &quot;meters&quot;: [
+        {
+            &quot;count&quot;: 1000,
+            &quot;fifteenMinuteRate&quot;: 0.2,
+            &quot;fiveMinuteRate&quot;: 0.2,
+            &quot;items&quot;: [
+                {
+                    &quot;count&quot;: 100,
+                    &quot;fifteenMinuteRate&quot;: 0.02,
+                    &quot;fiveMinuteRate&quot;: 0.02,
+                    &quot;item&quot;: &quot;500&quot;,
+                    &quot;meanRate&quot;: 0.011,
+                    &quot;oneMinuteRate&quot;: 0.02,
+                    &quot;percent&quot;: 10
+                },
+                {
+                    &quot;count&quot;: 200,
+                    &quot;fifteenMinuteRate&quot;: 0.04,
+                    &quot;fiveMinuteRate&quot;: 0.04,
+                    &quot;item&quot;: &quot;401&quot;,
+                    &quot;meanRate&quot;: 0.023,
+                    &quot;oneMinuteRate&quot;: 0.04,
+                    &quot;percent&quot;: 20
+                },
+                {
+                    &quot;count&quot;: 700,
+                    &quot;fifteenMinuteRate&quot;: 0.14,
+                    &quot;fiveMinuteRate&quot;: 0.14,
+                    &quot;item&quot;: &quot;200&quot;,
+                    &quot;meanRate&quot;: 0.080,
+                    &quot;oneMinuteRate&quot;: 0.14,
+                    &quot;percent&quot;: 70
+                }
+            ],
+            &quot;meanRate&quot;: 0.1155,
+            &quot;oneMinuteRate&quot;: 0.2,
+            &quot;rateUnit&quot;: &quot;ms&quot;,
+            &quot;name&quot;: &quot;Http Status&quot;,
+            &quot;unit&quot;: &quot;Calls&quot;
+        }
+    ]
+}
+</code></pre><div class="NOTE"><h5>Note</h5><p>When reporting counters we should keep in mind that they are a cumulative count, see notes in the <a href="counters.html#reporting-counters">Counters</a> documentation.
+A Meters values can also be reset like a <a href="counters.html">Counter</a> as shown below.</p>
+</div>
+<pre><code class="lang-csharp" name="Main">_metrics.Advanced.Meter(httpStatusMeter).Reset();
+</code></pre><h2 id="related-docs">Related Docs</h2>
+<ul>
+<li><a href="../intro.html">Getting Started</a></li>
+<li><a href="../fundamentals/configuration.html">Configuration</a></li>
+</ul>
 
             </article>
           </div>

@@ -210,6 +210,7 @@
         DurationUnit = TimeUnit.Milliseconds,
         RateUnit = TimeUnit.Milliseconds,            
         SamplingType = SamplingType.ExponentiallyDecaying,
+        ExponentialDecayFactor = 0.015
     };
 }
 </code></pre><p>And to record the above metrics through <code>IMetrics</code></p>
