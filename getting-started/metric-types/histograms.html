@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>histograms </title>
+    <title>Histograms </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="histograms ">
+    <meta name="title" content="Histograms ">
     <meta name="generator" content="docfx 2.7.3.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -66,8 +66,75 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-              <h1 id="histograms">histograms</h1>
+              <h1 id="histograms">Histograms</h1>
               
+<p>Histograms measure the statistical distribution of a set of values including the <em>min</em>, <em>max</em>, <em>mean</em>, <em>median</em>, <em>standard deviation</em> and <a href="https://en.wikipedia.org/wiki/Quantile">quantiles</a> i.e. the <em>75th percentile</em>, <em>90th percentile</em>, <em>95th percentile</em>, <em>99th percentile</em> and <em>99.9th percentile</em> allowing us to sample observations for things like response sizes. </p>
+<p>A use case for a Histogram could be tracking the POST and PUT requests sizes made to a web service or tracking the file sizes uploaded to an endpoint.</p>
+<h2 id="using-histograms">Using Histograms</h2>
+<pre><code class="lang-csharp" name="Main" highlight-lines="15">var postAndPutRequestSize = new HistogramOptions
+{
+    Name = &quot;Web Request Post &amp; Put Size&quot;,
+    MeasurementUnit = Unit.Bytes
+};
+
+public async Task Invoke(HttpContext context)
+{
+    var httpMethod = context.Request.Method.ToUpperInvariant();
+
+    if (httpMethod == &quot;POST&quot; || httpMethod == &quot;PUT&quot;)
+    {
+        if (context.Request.Headers != null &amp;&amp; context.Request.Headers.ContainsKey(&quot;Content-Length&quot;))
+        {            
+            _metrics.Update(long.Parse(context.Request.Headers[&quot;Content-Length&quot;].First())); 
+        }
+    }
+
+    await Next(context);
+}
+</code></pre><p>Histograms also allow us to track the <em>min</em>, <em>max</em> and <em>last value</em> that has been recorded in cases when a &quot;user value&quot; is provided when updating the histogram. For example if we wanted to measure the statistical distribution of files uploaded to a file service and track which applications are uploading the largest files, we could use an applications client id when updating the histgoram:</p>
+<pre><code class="lang-csharp" name="Main">var fileSize = new HistogramOptions
+{
+    Name = &quot;Document File Size&quot;,
+    MeasurementUnit = Unit.Calls
+};
+
+_metrics.Update(httpStatusMeter, CalculateDocumentSize(), &quot;client_1&quot;);
+_metrics.Update(httpStatusMeter, CalculateDocumentSize(), &quot;client_2&quot;);
+</code></pre><p>Which for example when using the JSON formatter would result in:</p>
+<pre><code class="lang-json" name="Main">{
+    &quot;context&quot;: &quot;Application&quot;,
+    &quot;histograms&quot;: [
+        {
+            &quot;lastUserValue&quot;: &quot;client_1&quot;,
+            &quot;lastValue&quot;: 26.5984,
+            &quot;max&quot;: 26.5984,
+            &quot;maxUserValue&quot;: &quot;value2&quot;,
+            &quot;mean&quot;: 23.1988,
+            &quot;median&quot;: 22.2101,
+            &quot;min&quot;: 20.2660,
+            &quot;minUserValue&quot;: &quot;client_2&quot;,
+            &quot;percentile75&quot;: 25.4645,
+            &quot;percentile95&quot;: 26.5987,
+            &quot;percentile98&quot;: 26.5984,
+            &quot;percentile99&quot;: 26.5984,
+            &quot;percentile999&quot;: 26.5987,
+            &quot;sampleSize&quot;: 20,
+            &quot;stdDev&quot;: 2.4749,
+            &quot;name&quot;: &quot;File Sizes&quot;,
+            &quot;unit&quot;: &quot;Mb&quot;
+        }
+    ]
+}
+</code></pre><h2 id="resevoir-sampling">Resevoir Sampling</h2>
+<p>In high performance applications it is not possible to keep the entire data stream of a histogram in memory. To work around this <a href="../sampling/index.html">resevoir sampling</a> algorithms allow us to maintain a small, manageable resevoir which is statistically representative of an entire data stream.</p>
+<div class="NOTE"><h5>Note</h5><h3 id="just-a-placeholder-for-now">Just a Placeholder for now..</h3>
+<p>Implement and document  <a href="https://en.wikipedia.org/wiki/Apdex">Apdex Score</a></p>
+</div>
+<h2 id="related-docs">Related Docs</h2>
+<ul>
+<li><a href="../intro.html">Getting Started</a></li>
+<li><a href="../fundamentals/configuration.html">Configuration</a></li>
+</ul>
 
             </article>
           </div>
