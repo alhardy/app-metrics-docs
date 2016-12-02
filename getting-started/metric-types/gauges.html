@@ -80,7 +80,7 @@
 var process = Process.GetCurrentProcess();
 
 _metrics.Gauge(MetricsRegistry.Gauges.TestGauge, () =&gt; process.WorkingSet64);
-</code></pre><p>Which for example when using the JSON formatter would result in:</p>
+</code></pre><p>Which for example when using the <a href="../intro.html#configuring-a-web-host">JSON formatter</a> would result in something similar to:</p>
 <pre><code class="lang-json" name="Main">{
     &quot;context&quot;: &quot;Process&quot;,
     &quot;gauges&quot;: [
@@ -125,7 +125,7 @@ using (calls.NewContext())
 _metrics.Advanced.Gauge(MetricsRegistry.Gauges.CacheHitRatioGauge, () =&gt; new HitRatioGauge(cacheHits, calls, m =&gt; m.OneMinuteRate));
 </code></pre><h2 id="related-docs">Related Docs</h2>
 <ul>
-<li><a href="../intro.html">Getting Started</a></li>
+<li><a href="../intro.html#measuring-application-metrics">Getting Started</a></li>
 <li><a href="../fundamentals/configuration.html">Configuration</a></li>
 </ul>
 
