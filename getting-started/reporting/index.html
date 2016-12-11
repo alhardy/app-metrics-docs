@@ -68,9 +68,9 @@
             <article class="content wrap" id="_content" data-uid="">
               <h1 id="reporting">Reporting</h1>
               
-<p>The current release of App.Metrics supports Console and Text File Reporters. An InfluxDB Reporter is planned for the next release.</p>
+<p>The current release of App.Metrics supports InfluxDB, Console and Text File Reporters.</p>
 <h2 id="console-reporter">Console Reporter</h2>
-<p><a href="../intro.html#configuring-a-console-application">Configure a Console Application</a> with App Metrics, you can than add the Console Report Provider as below:</p>
+<p><a href="../intro.html#configuring-a-console-application">Configure a Console Application</a> with App Metrics, you can then add the <a href="https://www.nuget.org/packages/App.Metrics.Extensions.Reporting.Console/">Console Report Provider</a> as below:</p>
 <pre><code class="lang-csharp" name="Main" highlight-lines="30,31,32,33,18">public class Host
 { 
     public static void Main()
@@ -115,8 +115,22 @@
         services.AddLogging();            
     }       
 } 
+</code></pre><h2 id="influxdb-reporter">InfluxDB Reporter</h2>
+<p>The <a href="https://www.nuget.org/packages/App.Metrics.Extensions.Reporting.InfluxDB/">InfluxDB Reporter package</a> is currently an alpha release, it has been tested with InfluxDB version 1.1.0.</p>
+<p><a href="../intro.html#configuring-a-console-application">Configure a Console Application</a> with App Metrics, you can then add the InfluxDB Report Provider as below:</p>
+<pre><code class="lang-csharp" name="Main">.AddReporting(factory =&gt;
+{
+    var influxDbSettings = new InfluxDbReporterSettings
+    {
+        BaseAddress = &quot;http://127.0.0.1:8086&quot;,
+        Database = &quot;appmetrics&quot;,
+        ReportInterval = TimeSpan.FromSeconds(10)                        
+    };
+
+    factory.AddInfluxDb(influxDbSettings);    
+});
 </code></pre><h2 id="text-file-reporter">Text File Reporter</h2>
-<p><a href="../intro.html#configuring-a-console-application">Configure a Console Application</a> with App Metrics, similar to the Console Reporter example above a Text Report Provider can be added as below:</p>
+<p><a href="../intro.html#configuring-a-console-application">Configure a Console Application</a> with App Metrics, similar to the Console Reporter example above a <a href="https://www.nuget.org/packages/App.Metrics.Extensions.Reporting.TextFile/">Text Report Provider</a> can be added as below:</p>
 <pre><code class="lang-csharp" name="Main">.AddReporting(factory =&gt;
 {
     var textFileSettings = new TextFileReporterSettings
