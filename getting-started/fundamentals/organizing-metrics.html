@@ -217,6 +217,31 @@
         app.UseMetrics();
     }
 }
+</code></pre><p>App Metrics provides an extension method on the AppMetricsOptions delegate passing some envrionment information that can be used to set global tags such as the machine name, assembly version etc.</p>
+<pre><code class="lang-csharp" name="Main" highlight-lines="7,8,9,10,11,12,13">public class Startup
+{
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddMetrics(options =&gt; {
+                options.DefaultContextLabel = &quot;MyContext&quot;,
+                options.WithGlobalTags((globalTags, envInfo) =&gt;
+                {
+                    globalTags.Add(&quot;host&quot;, envInfo.HostName);
+                    globalTags.Add(&quot;machine_name&quot;, envInfo.MachineName);
+                    globalTags.Add(&quot;app_name&quot;, envInfo.EntryAssemblyName);
+                    globalTags.Add(&quot;app_version&quot;, envInfo.EntryAssemblyVersion);
+                });  	
+            })
+            .AddJsonSerialization()
+            .AddHealthChecks()
+            .AddMetricsMiddleware();
+    }
+
+    public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
+    {	        
+        app.UseMetrics();
+    }
+}
 </code></pre><h3 id="filtering-in-process-by-tag-keys">Filtering in process by Tag Keys</h3>
 <p>The <a href="../../api/App.Metrics.DefaultMetricsFilter.html">DefaultMetricsFilter</a> can be used to filter Metrics by a Tag Keys. This would be useful if we only wanted to report on a particular Metrics Tags.</p>
 <div class="NOTE"><h5>Note</h5><p>See <a href="../filtering/index.html">Metrics Filtering</a> for more details on filtering Metrics.</p>

@@ -138,9 +138,30 @@
         &quot;GlobalTags&quot;: { &quot;env&quot;: &quot;stage&quot; }  
     }
 }
+</code></pre><h2 id="changes-options-via-an-options-delegate-and-configuration-source">Changes options via an options delegate and configuration source</h2>
+<p>In cases where it&#39;s required to have some settings in a configuration file but others in code, it&#39;s possible to provide both an options delegate and configuration source, where options are applied in order they are registered. For example, in the following code snippet any options registered via the configuration section will override those registered in code. The reverse can also be applied by changing the order of the options delegate and configuration source on the <code>AddMetrics</code> method.</p>
+<pre><code class="lang-csharp" name="Main" highlight-lines="5,6,7,8">public class Startup
+{
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddMetrics(options =&gt; {
+                options.DefaultContextLabel = &quot;MyContext&quot;,
+                options.DefaultSamplingType = SamplingType.SlidingWindow;                        	
+            }, Configuration.GetSection(&quot;AppMetrics&quot;))
+            .AddJsonSerialization()
+            .AddHealthChecks()
+            .AddMetricsMiddleware();
+    }
+
+    public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
+    {	        
+        app.UseMetrics();
+    }
+}
 </code></pre><h2 id="next-steps">Next Steps</h2>
 <ul>
 <li><a href="middleware-configuration.html">AspNet Core Middleware Configuration Options</a></li>
+<li><a href="organizing-metrics.html">Organizing Metrics</a></li>
 <li><a href="../../samples/index.html">Sample Applications</a></li>
 </ul>
 

@@ -13,6 +13,28 @@ references:
   commentId: N:App.Metrics.Configuration
   fullName: App.Metrics.Configuration
   nameWithType: App.Metrics.Configuration
+- uid: App.Metrics.Configuration.AppMetricsOptionExtensions
+  name: AppMetricsOptionExtensions
+  href: api/App.Metrics.Configuration.AppMetricsOptionExtensions.html#App_Metrics_Configuration_AppMetricsOptionExtensions
+  commentId: T:App.Metrics.Configuration.AppMetricsOptionExtensions
+  fullName: App.Metrics.Configuration.AppMetricsOptionExtensions
+  nameWithType: AppMetricsOptionExtensions
+- uid: App.Metrics.Configuration.AppMetricsOptionExtensions.WithGlobalTags(App.Metrics.Configuration.AppMetricsOptions,System.Action{System.Collections.Generic.Dictionary{System.String,System.String},App.Metrics.Data.EnvironmentInfo})
+  name: WithGlobalTags(AppMetricsOptions, Action<Dictionary<String, String>, EnvironmentInfo>)
+  href: api/App.Metrics.Configuration.AppMetricsOptionExtensions.html#App_Metrics_Configuration_AppMetricsOptionExtensions_WithGlobalTags_App_Metrics_Configuration_AppMetricsOptions_System_Action_System_Collections_Generic_Dictionary_System_String_System_String__App_Metrics_Data_EnvironmentInfo__
+  commentId: M:App.Metrics.Configuration.AppMetricsOptionExtensions.WithGlobalTags(App.Metrics.Configuration.AppMetricsOptions,System.Action{System.Collections.Generic.Dictionary{System.String,System.String},App.Metrics.Data.EnvironmentInfo})
+  name.vb: WithGlobalTags(AppMetricsOptions, Action(Of Dictionary(Of String, String), EnvironmentInfo))
+  fullName: App.Metrics.Configuration.AppMetricsOptionExtensions.WithGlobalTags(App.Metrics.Configuration.AppMetricsOptions, System.Action<System.Collections.Generic.Dictionary<System.String, System.String>, App.Metrics.Data.EnvironmentInfo>)
+  fullName.vb: App.Metrics.Configuration.AppMetricsOptionExtensions.WithGlobalTags(App.Metrics.Configuration.AppMetricsOptions, System.Action(Of System.Collections.Generic.Dictionary(Of System.String, System.String), App.Metrics.Data.EnvironmentInfo))
+  nameWithType: AppMetricsOptionExtensions.WithGlobalTags(AppMetricsOptions, Action<Dictionary<String, String>, EnvironmentInfo>)
+  nameWithType.vb: WithGlobalTags(AppMetricsOptions, Action(Of Dictionary(Of String, String), EnvironmentInfo))
+- uid: App.Metrics.Configuration.AppMetricsOptionExtensions.WithGlobalTags*
+  href: api/App.Metrics.Configuration.AppMetricsOptionExtensions.html#App_Metrics_Configuration_AppMetricsOptionExtensions_WithGlobalTags_
+  commentId: Overload:App.Metrics.Configuration.AppMetricsOptionExtensions.WithGlobalTags
+  name: WithGlobalTags
+  name.vb: WithGlobalTags
+  fullName: App.Metrics.Configuration.AppMetricsOptionExtensions.WithGlobalTags(App.Metrics.Configuration.AppMetricsOptions, System.Action<System.Collections.Generic.Dictionary<System.String, System.String>, App.Metrics.Data.EnvironmentInfo>)
+  fullName.vb: App.Metrics.Configuration.AppMetricsOptionExtensions.WithGlobalTags
 - uid: App.Metrics.Configuration.AppMetricsOptions
   name: AppMetricsOptions
   href: api/App.Metrics.Configuration.AppMetricsOptions.html#App_Metrics_Configuration_AppMetricsOptions
@@ -917,6 +939,17 @@ references:
   commentId: Overload:App.Metrics.Core.Interfaces.IAdvancedMetrics.GlobalFilter
   name: GlobalFilter
   fullName: App.Metrics.Core.Interfaces.IAdvancedMetrics.GlobalFilter
+- uid: App.Metrics.Core.Interfaces.IAdvancedMetrics.GlobalTags
+  name: GlobalTags
+  href: api/App.Metrics.Core.Interfaces.IAdvancedMetrics.html#App_Metrics_Core_Interfaces_IAdvancedMetrics_GlobalTags
+  commentId: P:App.Metrics.Core.Interfaces.IAdvancedMetrics.GlobalTags
+  fullName: App.Metrics.Core.Interfaces.IAdvancedMetrics.GlobalTags
+  nameWithType: IAdvancedMetrics.GlobalTags
+- uid: App.Metrics.Core.Interfaces.IAdvancedMetrics.GlobalTags*
+  href: api/App.Metrics.Core.Interfaces.IAdvancedMetrics.html#App_Metrics_Core_Interfaces_IAdvancedMetrics_GlobalTags_
+  commentId: Overload:App.Metrics.Core.Interfaces.IAdvancedMetrics.GlobalTags
+  name: GlobalTags
+  fullName: App.Metrics.Core.Interfaces.IAdvancedMetrics.GlobalTags
 - uid: App.Metrics.Core.Interfaces.IAdvancedMetrics.Health
   name: Health
   href: api/App.Metrics.Core.Interfaces.IAdvancedMetrics.html#App_Metrics_Core_Interfaces_IAdvancedMetrics_Health
@@ -4187,21 +4220,21 @@ references:
   commentId: Overload:App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportEnvironment
   name: ReportEnvironment
   fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportEnvironment(App.Metrics.Data.EnvironmentInfo)
-- uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportHealth(System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
-  name: ReportHealth(IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
-  href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporter.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporter_ReportHealth_System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__
-  commentId: M:App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportHealth(System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
-  name.vb: ReportHealth(IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
-  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportHealth(System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
-  fullName.vb: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportHealth(System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result))
-  nameWithType: ConsoleReporter.ReportHealth(IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
-  nameWithType.vb: ReportHealth(IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
+- uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportHealth(App.Metrics.GlobalMetricTags,System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
+  name: ReportHealth(GlobalMetricTags, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
+  href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporter.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporter_ReportHealth_App_Metrics_GlobalMetricTags_System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__
+  commentId: M:App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportHealth(App.Metrics.GlobalMetricTags,System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
+  name.vb: ReportHealth(GlobalMetricTags, IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
+  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportHealth(App.Metrics.GlobalMetricTags, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
+  fullName.vb: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportHealth(App.Metrics.GlobalMetricTags, System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result))
+  nameWithType: ConsoleReporter.ReportHealth(GlobalMetricTags, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
+  nameWithType.vb: ReportHealth(GlobalMetricTags, IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
 - uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportHealth*
   href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporter.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporter_ReportHealth_
   commentId: Overload:App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportHealth
   name: ReportHealth
   name.vb: ReportHealth
-  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportHealth(System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
+  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportHealth(App.Metrics.GlobalMetricTags, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
   fullName.vb: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportHealth
 - uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportInterval
   name: ReportInterval
@@ -4444,21 +4477,21 @@ references:
   commentId: T:App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPoint
   fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPoint
   nameWithType: LineProtocolPoint
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPoint.#ctor(System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object},System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.Nullable{System.DateTime})
-  name: LineProtocolPoint(String, IReadOnlyDictionary<String, Object>, IReadOnlyDictionary<String, String>, Nullable<DateTime>)
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPoint.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolPoint__ctor_System_String_System_Collections_Generic_IReadOnlyDictionary_System_String_System_Object__System_Collections_Generic_IReadOnlyDictionary_System_String_System_String__System_Nullable_System_DateTime__
-  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPoint.#ctor(System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object},System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.Nullable{System.DateTime})
-  name.vb: LineProtocolPoint(String, IReadOnlyDictionary(Of String, Object), IReadOnlyDictionary(Of String, String), Nullable(Of DateTime))
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPoint.LineProtocolPoint(System.String, System.Collections.Generic.IReadOnlyDictionary<System.String, System.Object>, System.Collections.Generic.IReadOnlyDictionary<System.String, System.String>, System.Nullable<System.DateTime>)
-  fullName.vb: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPoint.LineProtocolPoint(System.String, System.Collections.Generic.IReadOnlyDictionary(Of System.String, System.Object), System.Collections.Generic.IReadOnlyDictionary(Of System.String, System.String), System.Nullable(Of System.DateTime))
-  nameWithType: LineProtocolPoint.LineProtocolPoint(String, IReadOnlyDictionary<String, Object>, IReadOnlyDictionary<String, String>, Nullable<DateTime>)
-  nameWithType.vb: LineProtocolPoint(String, IReadOnlyDictionary(Of String, Object), IReadOnlyDictionary(Of String, String), Nullable(Of DateTime))
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPoint.#ctor(System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object},App.Metrics.MetricTags,System.Nullable{System.DateTime})
+  name: LineProtocolPoint(String, IReadOnlyDictionary<String, Object>, MetricTags, Nullable<DateTime>)
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPoint.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolPoint__ctor_System_String_System_Collections_Generic_IReadOnlyDictionary_System_String_System_Object__App_Metrics_MetricTags_System_Nullable_System_DateTime__
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPoint.#ctor(System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object},App.Metrics.MetricTags,System.Nullable{System.DateTime})
+  name.vb: LineProtocolPoint(String, IReadOnlyDictionary(Of String, Object), MetricTags, Nullable(Of DateTime))
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPoint.LineProtocolPoint(System.String, System.Collections.Generic.IReadOnlyDictionary<System.String, System.Object>, App.Metrics.MetricTags, System.Nullable<System.DateTime>)
+  fullName.vb: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPoint.LineProtocolPoint(System.String, System.Collections.Generic.IReadOnlyDictionary(Of System.String, System.Object), App.Metrics.MetricTags, System.Nullable(Of System.DateTime))
+  nameWithType: LineProtocolPoint.LineProtocolPoint(String, IReadOnlyDictionary<String, Object>, MetricTags, Nullable<DateTime>)
+  nameWithType.vb: LineProtocolPoint(String, IReadOnlyDictionary(Of String, Object), MetricTags, Nullable(Of DateTime))
 - uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPoint.#ctor*
   href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPoint.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolPoint__ctor_
   commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPoint.#ctor
   name: LineProtocolPoint
   name.vb: LineProtocolPoint
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPoint.LineProtocolPoint(System.String, System.Collections.Generic.IReadOnlyDictionary<System.String, System.Object>, System.Collections.Generic.IReadOnlyDictionary<System.String, System.String>, System.Nullable<System.DateTime>)
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPoint.LineProtocolPoint(System.String, System.Collections.Generic.IReadOnlyDictionary<System.String, System.Object>, App.Metrics.MetricTags, System.Nullable<System.DateTime>)
   fullName.vb: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPoint.LineProtocolPoint
 - uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPoint.Fields
   name: Fields
@@ -4721,21 +4754,21 @@ references:
   commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.ReportEnvironment
   name: ReportEnvironment
   fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.ReportEnvironment(App.Metrics.Data.EnvironmentInfo)
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.ReportHealth(System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
-  name: ReportHealth(IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter_ReportHealth_System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__
-  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.ReportHealth(System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
-  name.vb: ReportHealth(IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.ReportHealth(System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
-  fullName.vb: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.ReportHealth(System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result))
-  nameWithType: InfluxDbReporter.ReportHealth(IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
-  nameWithType.vb: ReportHealth(IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.ReportHealth(App.Metrics.GlobalMetricTags,System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
+  name: ReportHealth(GlobalMetricTags, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter_ReportHealth_App_Metrics_GlobalMetricTags_System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.ReportHealth(App.Metrics.GlobalMetricTags,System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
+  name.vb: ReportHealth(GlobalMetricTags, IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.ReportHealth(App.Metrics.GlobalMetricTags, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
+  fullName.vb: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.ReportHealth(App.Metrics.GlobalMetricTags, System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result))
+  nameWithType: InfluxDbReporter.ReportHealth(GlobalMetricTags, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
+  nameWithType.vb: ReportHealth(GlobalMetricTags, IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
 - uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.ReportHealth*
   href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter_ReportHealth_
   commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.ReportHealth
   name: ReportHealth
   name.vb: ReportHealth
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.ReportHealth(System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.ReportHealth(App.Metrics.GlobalMetricTags, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
   fullName.vb: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.ReportHealth
 - uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.ReportInterval
   name: ReportInterval
@@ -5037,21 +5070,21 @@ references:
   commentId: Overload:App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportEnvironment
   name: ReportEnvironment
   fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportEnvironment(App.Metrics.Data.EnvironmentInfo)
-- uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportHealth(System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
-  name: ReportHealth(IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
-  href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporter_ReportHealth_System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__
-  commentId: M:App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportHealth(System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
-  name.vb: ReportHealth(IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
-  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportHealth(System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
-  fullName.vb: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportHealth(System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result))
-  nameWithType: TextFileReporter.ReportHealth(IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
-  nameWithType.vb: ReportHealth(IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
+- uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportHealth(App.Metrics.GlobalMetricTags,System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
+  name: ReportHealth(GlobalMetricTags, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
+  href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporter_ReportHealth_App_Metrics_GlobalMetricTags_System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__
+  commentId: M:App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportHealth(App.Metrics.GlobalMetricTags,System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
+  name.vb: ReportHealth(GlobalMetricTags, IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
+  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportHealth(App.Metrics.GlobalMetricTags, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
+  fullName.vb: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportHealth(App.Metrics.GlobalMetricTags, System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result))
+  nameWithType: TextFileReporter.ReportHealth(GlobalMetricTags, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
+  nameWithType.vb: ReportHealth(GlobalMetricTags, IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
 - uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportHealth*
   href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporter_ReportHealth_
   commentId: Overload:App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportHealth
   name: ReportHealth
   name.vb: ReportHealth
-  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportHealth(System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
+  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportHealth(App.Metrics.GlobalMetricTags, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
   fullName.vb: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportHealth
 - uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportInterval
   name: ReportInterval
@@ -6262,6 +6295,34 @@ references:
   commentId: Overload:App.Metrics.Gauge.Value
   name: Value
   fullName: App.Metrics.Gauge.Value
+- uid: App.Metrics.GlobalMetricTags
+  name: GlobalMetricTags
+  href: api/App.Metrics.GlobalMetricTags.html#App_Metrics_GlobalMetricTags
+  commentId: T:App.Metrics.GlobalMetricTags
+  fullName: App.Metrics.GlobalMetricTags
+  nameWithType: GlobalMetricTags
+- uid: App.Metrics.GlobalMetricTags.#ctor
+  name: GlobalMetricTags()
+  href: api/App.Metrics.GlobalMetricTags.html#App_Metrics_GlobalMetricTags__ctor
+  commentId: M:App.Metrics.GlobalMetricTags.#ctor
+  fullName: App.Metrics.GlobalMetricTags.GlobalMetricTags()
+  nameWithType: GlobalMetricTags.GlobalMetricTags()
+- uid: App.Metrics.GlobalMetricTags.#ctor(System.Collections.Generic.Dictionary{System.String,System.String})
+  name: GlobalMetricTags(Dictionary<String, String>)
+  href: api/App.Metrics.GlobalMetricTags.html#App_Metrics_GlobalMetricTags__ctor_System_Collections_Generic_Dictionary_System_String_System_String__
+  commentId: M:App.Metrics.GlobalMetricTags.#ctor(System.Collections.Generic.Dictionary{System.String,System.String})
+  name.vb: GlobalMetricTags(Dictionary(Of String, String))
+  fullName: App.Metrics.GlobalMetricTags.GlobalMetricTags(System.Collections.Generic.Dictionary<System.String, System.String>)
+  fullName.vb: App.Metrics.GlobalMetricTags.GlobalMetricTags(System.Collections.Generic.Dictionary(Of System.String, System.String))
+  nameWithType: GlobalMetricTags.GlobalMetricTags(Dictionary<String, String>)
+  nameWithType.vb: GlobalMetricTags(Dictionary(Of String, String))
+- uid: App.Metrics.GlobalMetricTags.#ctor*
+  href: api/App.Metrics.GlobalMetricTags.html#App_Metrics_GlobalMetricTags__ctor_
+  commentId: Overload:App.Metrics.GlobalMetricTags.#ctor
+  name: GlobalMetricTags
+  name.vb: GlobalMetricTags
+  fullName: App.Metrics.GlobalMetricTags.GlobalMetricTags(System.Collections.Generic.Dictionary<System.String, System.String>)
+  fullName.vb: App.Metrics.GlobalMetricTags.GlobalMetricTags
 - uid: App.Metrics.HealthStatusData
   name: HealthStatusData
   href: api/App.Metrics.HealthStatusData.html#App_Metrics_HealthStatusData
@@ -7043,17 +7104,39 @@ references:
   commentId: Overload:App.Metrics.Infrastructure.EnvironmentInfoExtensions.ToEnvDictionary
   name: ToEnvDictionary
   fullName: App.Metrics.Infrastructure.EnvironmentInfoExtensions.ToEnvDictionary(App.Metrics.Data.EnvironmentInfo)
-- uid: App.Metrics.Infrastructure.EnvironmentInfoExtensions.ToTags(App.Metrics.Data.EnvironmentInfo)
-  name: ToTags(EnvironmentInfo)
-  href: api/App.Metrics.Infrastructure.EnvironmentInfoExtensions.html#App_Metrics_Infrastructure_EnvironmentInfoExtensions_ToTags_App_Metrics_Data_EnvironmentInfo_
-  commentId: M:App.Metrics.Infrastructure.EnvironmentInfoExtensions.ToTags(App.Metrics.Data.EnvironmentInfo)
-  fullName: App.Metrics.Infrastructure.EnvironmentInfoExtensions.ToTags(App.Metrics.Data.EnvironmentInfo)
-  nameWithType: EnvironmentInfoExtensions.ToTags(EnvironmentInfo)
-- uid: App.Metrics.Infrastructure.EnvironmentInfoExtensions.ToTags*
-  href: api/App.Metrics.Infrastructure.EnvironmentInfoExtensions.html#App_Metrics_Infrastructure_EnvironmentInfoExtensions_ToTags_
-  commentId: Overload:App.Metrics.Infrastructure.EnvironmentInfoExtensions.ToTags
-  name: ToTags
-  fullName: App.Metrics.Infrastructure.EnvironmentInfoExtensions.ToTags(App.Metrics.Data.EnvironmentInfo)
+- uid: App.Metrics.Infrastructure.EnvironmentInfoProvider
+  name: EnvironmentInfoProvider
+  href: api/App.Metrics.Infrastructure.EnvironmentInfoProvider.html#App_Metrics_Infrastructure_EnvironmentInfoProvider
+  commentId: T:App.Metrics.Infrastructure.EnvironmentInfoProvider
+  fullName: App.Metrics.Infrastructure.EnvironmentInfoProvider
+  nameWithType: EnvironmentInfoProvider
+- uid: App.Metrics.Infrastructure.EnvironmentInfoProvider.BuildAsync
+  name: BuildAsync()
+  href: api/App.Metrics.Infrastructure.EnvironmentInfoProvider.html#App_Metrics_Infrastructure_EnvironmentInfoProvider_BuildAsync
+  commentId: M:App.Metrics.Infrastructure.EnvironmentInfoProvider.BuildAsync
+  fullName: App.Metrics.Infrastructure.EnvironmentInfoProvider.BuildAsync()
+  nameWithType: EnvironmentInfoProvider.BuildAsync()
+- uid: App.Metrics.Infrastructure.EnvironmentInfoProvider.BuildAsync*
+  href: api/App.Metrics.Infrastructure.EnvironmentInfoProvider.html#App_Metrics_Infrastructure_EnvironmentInfoProvider_BuildAsync_
+  commentId: Overload:App.Metrics.Infrastructure.EnvironmentInfoProvider.BuildAsync
+  name: BuildAsync
+  fullName: App.Metrics.Infrastructure.EnvironmentInfoProvider.BuildAsync()
+- uid: App.Metrics.Infrastructure.EnvironmentInfoProvider.SafeGetString(System.Func{System.String})
+  name: SafeGetString(Func<String>)
+  href: api/App.Metrics.Infrastructure.EnvironmentInfoProvider.html#App_Metrics_Infrastructure_EnvironmentInfoProvider_SafeGetString_System_Func_System_String__
+  commentId: M:App.Metrics.Infrastructure.EnvironmentInfoProvider.SafeGetString(System.Func{System.String})
+  name.vb: SafeGetString(Func(Of String))
+  fullName: App.Metrics.Infrastructure.EnvironmentInfoProvider.SafeGetString(System.Func<System.String>)
+  fullName.vb: App.Metrics.Infrastructure.EnvironmentInfoProvider.SafeGetString(System.Func(Of System.String))
+  nameWithType: EnvironmentInfoProvider.SafeGetString(Func<String>)
+  nameWithType.vb: SafeGetString(Func(Of String))
+- uid: App.Metrics.Infrastructure.EnvironmentInfoProvider.SafeGetString*
+  href: api/App.Metrics.Infrastructure.EnvironmentInfoProvider.html#App_Metrics_Infrastructure_EnvironmentInfoProvider_SafeGetString_
+  commentId: Overload:App.Metrics.Infrastructure.EnvironmentInfoProvider.SafeGetString
+  name: SafeGetString
+  name.vb: SafeGetString
+  fullName: App.Metrics.Infrastructure.EnvironmentInfoProvider.SafeGetString(System.Func<System.String>)
+  fullName.vb: App.Metrics.Infrastructure.EnvironmentInfoProvider.SafeGetString
 - uid: App.Metrics.IResetableMetric
   name: IResetableMetric
   href: api/App.Metrics.IResetableMetric.html#App_Metrics_IResetableMetric
@@ -7673,6 +7756,12 @@ references:
   commentId: T:App.Metrics.MetricTags
   fullName: App.Metrics.MetricTags
   nameWithType: MetricTags
+- uid: App.Metrics.MetricTags.#ctor
+  name: MetricTags()
+  href: api/App.Metrics.MetricTags.html#App_Metrics_MetricTags__ctor
+  commentId: M:App.Metrics.MetricTags.#ctor
+  fullName: App.Metrics.MetricTags.MetricTags()
+  nameWithType: MetricTags.MetricTags()
 - uid: App.Metrics.MetricTags.#ctor(System.Collections.Generic.Dictionary{System.String,System.String})
   name: MetricTags(Dictionary<String, String>)
   href: api/App.Metrics.MetricTags.html#App_Metrics_MetricTags__ctor_System_Collections_Generic_Dictionary_System_String_System_String__
@@ -7689,89 +7778,17 @@ references:
   name.vb: MetricTags
   fullName: App.Metrics.MetricTags.MetricTags(System.Collections.Generic.Dictionary<System.String, System.String>)
   fullName.vb: App.Metrics.MetricTags.MetricTags
-- uid: App.Metrics.MetricTags.Equals(App.Metrics.MetricTags)
-  name: Equals(MetricTags)
-  href: api/App.Metrics.MetricTags.html#App_Metrics_MetricTags_Equals_App_Metrics_MetricTags_
-  commentId: M:App.Metrics.MetricTags.Equals(App.Metrics.MetricTags)
-  fullName: App.Metrics.MetricTags.Equals(App.Metrics.MetricTags)
-  nameWithType: MetricTags.Equals(MetricTags)
-- uid: App.Metrics.MetricTags.Equals(System.Object)
-  name: Equals(Object)
-  href: api/App.Metrics.MetricTags.html#App_Metrics_MetricTags_Equals_System_Object_
-  commentId: M:App.Metrics.MetricTags.Equals(System.Object)
-  fullName: App.Metrics.MetricTags.Equals(System.Object)
-  nameWithType: MetricTags.Equals(Object)
-- uid: App.Metrics.MetricTags.Equals*
-  href: api/App.Metrics.MetricTags.html#App_Metrics_MetricTags_Equals_
-  commentId: Overload:App.Metrics.MetricTags.Equals
-  name: Equals
-  fullName: App.Metrics.MetricTags.Equals(System.Object)
-- uid: App.Metrics.MetricTags.GetHashCode
-  name: GetHashCode()
-  href: api/App.Metrics.MetricTags.html#App_Metrics_MetricTags_GetHashCode
-  commentId: M:App.Metrics.MetricTags.GetHashCode
-  fullName: App.Metrics.MetricTags.GetHashCode()
-  nameWithType: MetricTags.GetHashCode()
-- uid: App.Metrics.MetricTags.GetHashCode*
-  href: api/App.Metrics.MetricTags.html#App_Metrics_MetricTags_GetHashCode_
-  commentId: Overload:App.Metrics.MetricTags.GetHashCode
-  name: GetHashCode
-  fullName: App.Metrics.MetricTags.GetHashCode()
 - uid: App.Metrics.MetricTags.None
   name: None
   href: api/App.Metrics.MetricTags.html#App_Metrics_MetricTags_None
-  commentId: F:App.Metrics.MetricTags.None
+  commentId: P:App.Metrics.MetricTags.None
   fullName: App.Metrics.MetricTags.None
   nameWithType: MetricTags.None
-- uid: App.Metrics.MetricTags.op_Equality(App.Metrics.MetricTags,App.Metrics.MetricTags)
-  name: Equality(MetricTags, MetricTags)
-  href: api/App.Metrics.MetricTags.html#App_Metrics_MetricTags_op_Equality_App_Metrics_MetricTags_App_Metrics_MetricTags_
-  commentId: M:App.Metrics.MetricTags.op_Equality(App.Metrics.MetricTags,App.Metrics.MetricTags)
-  fullName: App.Metrics.MetricTags.Equality(App.Metrics.MetricTags, App.Metrics.MetricTags)
-  nameWithType: MetricTags.Equality(MetricTags, MetricTags)
-- uid: App.Metrics.MetricTags.op_Equality*
-  href: api/App.Metrics.MetricTags.html#App_Metrics_MetricTags_op_Equality_
-  commentId: Overload:App.Metrics.MetricTags.op_Equality
-  name: Equality
-  fullName: App.Metrics.MetricTags.Equality(App.Metrics.MetricTags, App.Metrics.MetricTags)
-- uid: App.Metrics.MetricTags.op_Implicit(System.Collections.Generic.Dictionary{System.String,System.String})~App.Metrics.MetricTags
-  name: Implicit(Dictionary<String, String> to MetricTags)
-  href: api/App.Metrics.MetricTags.html#App_Metrics_MetricTags_op_Implicit_System_Collections_Generic_Dictionary_System_String_System_String___App_Metrics_MetricTags
-  commentId: M:App.Metrics.MetricTags.op_Implicit(System.Collections.Generic.Dictionary{System.String,System.String})~App.Metrics.MetricTags
-  name.vb: Widening(Dictionary(Of String, String) to MetricTags)
-  fullName: App.Metrics.MetricTags.Implicit(System.Collections.Generic.Dictionary<System.String, System.String> to App.Metrics.MetricTags)
-  fullName.vb: App.Metrics.MetricTags.Widening(System.Collections.Generic.Dictionary(Of System.String, System.String) to App.Metrics.MetricTags)
-  nameWithType: MetricTags.Implicit(Dictionary<String, String> to MetricTags)
-  nameWithType.vb: Widening(Dictionary(Of String, String) to MetricTags)
-- uid: App.Metrics.MetricTags.op_Implicit*
-  href: api/App.Metrics.MetricTags.html#App_Metrics_MetricTags_op_Implicit_
-  commentId: Overload:App.Metrics.MetricTags.op_Implicit
-  name: Implicit
-  name.vb: Widening
-  fullName: App.Metrics.MetricTags.Implicit(System.Collections.Generic.Dictionary<System.String, System.String> to App.Metrics.MetricTags)
-  fullName.vb: App.Metrics.MetricTags.Widening
-- uid: App.Metrics.MetricTags.op_Inequality(App.Metrics.MetricTags,App.Metrics.MetricTags)
-  name: Inequality(MetricTags, MetricTags)
-  href: api/App.Metrics.MetricTags.html#App_Metrics_MetricTags_op_Inequality_App_Metrics_MetricTags_App_Metrics_MetricTags_
-  commentId: M:App.Metrics.MetricTags.op_Inequality(App.Metrics.MetricTags,App.Metrics.MetricTags)
-  fullName: App.Metrics.MetricTags.Inequality(App.Metrics.MetricTags, App.Metrics.MetricTags)
-  nameWithType: MetricTags.Inequality(MetricTags, MetricTags)
-- uid: App.Metrics.MetricTags.op_Inequality*
-  href: api/App.Metrics.MetricTags.html#App_Metrics_MetricTags_op_Inequality_
-  commentId: Overload:App.Metrics.MetricTags.op_Inequality
-  name: Inequality
-  fullName: App.Metrics.MetricTags.Inequality(App.Metrics.MetricTags, App.Metrics.MetricTags)
-- uid: App.Metrics.MetricTags.ToDictionary
-  name: ToDictionary()
-  href: api/App.Metrics.MetricTags.html#App_Metrics_MetricTags_ToDictionary
-  commentId: M:App.Metrics.MetricTags.ToDictionary
-  fullName: App.Metrics.MetricTags.ToDictionary()
-  nameWithType: MetricTags.ToDictionary()
-- uid: App.Metrics.MetricTags.ToDictionary*
-  href: api/App.Metrics.MetricTags.html#App_Metrics_MetricTags_ToDictionary_
-  commentId: Overload:App.Metrics.MetricTags.ToDictionary
-  name: ToDictionary
-  fullName: App.Metrics.MetricTags.ToDictionary()
+- uid: App.Metrics.MetricTags.None*
+  href: api/App.Metrics.MetricTags.html#App_Metrics_MetricTags_None_
+  commentId: Overload:App.Metrics.MetricTags.None
+  name: None
+  fullName: App.Metrics.MetricTags.None
 - uid: App.Metrics.MetricTags.With(System.Collections.Generic.Dictionary{System.String,System.String})
   name: With(Dictionary<String, String>)
   href: api/App.Metrics.MetricTags.html#App_Metrics_MetricTags_With_System_Collections_Generic_Dictionary_System_String_System_String__
@@ -7879,21 +7896,21 @@ references:
   commentId: Overload:App.Metrics.Reporting.Interfaces.IMetricReporter.ReportEnvironment
   name: ReportEnvironment
   fullName: App.Metrics.Reporting.Interfaces.IMetricReporter.ReportEnvironment(App.Metrics.Data.EnvironmentInfo)
-- uid: App.Metrics.Reporting.Interfaces.IMetricReporter.ReportHealth(System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
-  name: ReportHealth(IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
-  href: api/App.Metrics.Reporting.Interfaces.IMetricReporter.html#App_Metrics_Reporting_Interfaces_IMetricReporter_ReportHealth_System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__
-  commentId: M:App.Metrics.Reporting.Interfaces.IMetricReporter.ReportHealth(System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
-  name.vb: ReportHealth(IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
-  fullName: App.Metrics.Reporting.Interfaces.IMetricReporter.ReportHealth(System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
-  fullName.vb: App.Metrics.Reporting.Interfaces.IMetricReporter.ReportHealth(System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result))
-  nameWithType: IMetricReporter.ReportHealth(IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
-  nameWithType.vb: ReportHealth(IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
+- uid: App.Metrics.Reporting.Interfaces.IMetricReporter.ReportHealth(App.Metrics.GlobalMetricTags,System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
+  name: ReportHealth(GlobalMetricTags, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
+  href: api/App.Metrics.Reporting.Interfaces.IMetricReporter.html#App_Metrics_Reporting_Interfaces_IMetricReporter_ReportHealth_App_Metrics_GlobalMetricTags_System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__
+  commentId: M:App.Metrics.Reporting.Interfaces.IMetricReporter.ReportHealth(App.Metrics.GlobalMetricTags,System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
+  name.vb: ReportHealth(GlobalMetricTags, IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
+  fullName: App.Metrics.Reporting.Interfaces.IMetricReporter.ReportHealth(App.Metrics.GlobalMetricTags, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
+  fullName.vb: App.Metrics.Reporting.Interfaces.IMetricReporter.ReportHealth(App.Metrics.GlobalMetricTags, System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result))
+  nameWithType: IMetricReporter.ReportHealth(GlobalMetricTags, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
+  nameWithType.vb: ReportHealth(GlobalMetricTags, IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
 - uid: App.Metrics.Reporting.Interfaces.IMetricReporter.ReportHealth*
   href: api/App.Metrics.Reporting.Interfaces.IMetricReporter.html#App_Metrics_Reporting_Interfaces_IMetricReporter_ReportHealth_
   commentId: Overload:App.Metrics.Reporting.Interfaces.IMetricReporter.ReportHealth
   name: ReportHealth
   name.vb: ReportHealth
-  fullName: App.Metrics.Reporting.Interfaces.IMetricReporter.ReportHealth(System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
+  fullName: App.Metrics.Reporting.Interfaces.IMetricReporter.ReportHealth(App.Metrics.GlobalMetricTags, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
   fullName.vb: App.Metrics.Reporting.Interfaces.IMetricReporter.ReportHealth
 - uid: App.Metrics.Reporting.Interfaces.IMetricReporter.ReportInterval
   name: ReportInterval
@@ -8214,21 +8231,21 @@ references:
   commentId: Overload:App.Metrics.Reporting.StringReporter.ReportEnvironment
   name: ReportEnvironment
   fullName: App.Metrics.Reporting.StringReporter.ReportEnvironment(App.Metrics.Data.EnvironmentInfo)
-- uid: App.Metrics.Reporting.StringReporter.ReportHealth(System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
-  name: ReportHealth(IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
-  href: api/App.Metrics.Reporting.StringReporter.html#App_Metrics_Reporting_StringReporter_ReportHealth_System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__
-  commentId: M:App.Metrics.Reporting.StringReporter.ReportHealth(System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
-  name.vb: ReportHealth(IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
-  fullName: App.Metrics.Reporting.StringReporter.ReportHealth(System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
-  fullName.vb: App.Metrics.Reporting.StringReporter.ReportHealth(System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result))
-  nameWithType: StringReporter.ReportHealth(IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
-  nameWithType.vb: ReportHealth(IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
+- uid: App.Metrics.Reporting.StringReporter.ReportHealth(App.Metrics.GlobalMetricTags,System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
+  name: ReportHealth(GlobalMetricTags, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
+  href: api/App.Metrics.Reporting.StringReporter.html#App_Metrics_Reporting_StringReporter_ReportHealth_App_Metrics_GlobalMetricTags_System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__System_Collections_Generic_IEnumerable_App_Metrics_Core_HealthCheck_Result__
+  commentId: M:App.Metrics.Reporting.StringReporter.ReportHealth(App.Metrics.GlobalMetricTags,System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result},System.Collections.Generic.IEnumerable{App.Metrics.Core.HealthCheck.Result})
+  name.vb: ReportHealth(GlobalMetricTags, IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
+  fullName: App.Metrics.Reporting.StringReporter.ReportHealth(App.Metrics.GlobalMetricTags, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
+  fullName.vb: App.Metrics.Reporting.StringReporter.ReportHealth(App.Metrics.GlobalMetricTags, System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result), System.Collections.Generic.IEnumerable(Of App.Metrics.Core.HealthCheck.Result))
+  nameWithType: StringReporter.ReportHealth(GlobalMetricTags, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>, IEnumerable<HealthCheck.Result>)
+  nameWithType.vb: ReportHealth(GlobalMetricTags, IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result), IEnumerable(Of HealthCheck.Result))
 - uid: App.Metrics.Reporting.StringReporter.ReportHealth*
   href: api/App.Metrics.Reporting.StringReporter.html#App_Metrics_Reporting_StringReporter_ReportHealth_
   commentId: Overload:App.Metrics.Reporting.StringReporter.ReportHealth
   name: ReportHealth
   name.vb: ReportHealth
-  fullName: App.Metrics.Reporting.StringReporter.ReportHealth(System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
+  fullName: App.Metrics.Reporting.StringReporter.ReportHealth(App.Metrics.GlobalMetricTags, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>, System.Collections.Generic.IEnumerable<App.Metrics.Core.HealthCheck.Result>)
   fullName.vb: App.Metrics.Reporting.StringReporter.ReportHealth
 - uid: App.Metrics.Reporting.StringReporter.ReportInterval
   name: ReportInterval
@@ -10416,6 +10433,100 @@ references:
   commentId: N:App.Metrics.Utils
   fullName: App.Metrics.Utils
   nameWithType: App.Metrics.Utils
+- uid: App.Metrics.Utils.EWMA
+  name: EWMA
+  href: api/App.Metrics.Utils.EWMA.html#App_Metrics_Utils_EWMA
+  commentId: T:App.Metrics.Utils.EWMA
+  fullName: App.Metrics.Utils.EWMA
+  nameWithType: EWMA
+- uid: App.Metrics.Utils.EWMA.#ctor(System.Double,System.Int64,App.Metrics.TimeUnit)
+  name: EWMA(Double, Int64, TimeUnit)
+  href: api/App.Metrics.Utils.EWMA.html#App_Metrics_Utils_EWMA__ctor_System_Double_System_Int64_App_Metrics_TimeUnit_
+  commentId: M:App.Metrics.Utils.EWMA.#ctor(System.Double,System.Int64,App.Metrics.TimeUnit)
+  fullName: App.Metrics.Utils.EWMA.EWMA(System.Double, System.Int64, App.Metrics.TimeUnit)
+  nameWithType: EWMA.EWMA(Double, Int64, TimeUnit)
+- uid: App.Metrics.Utils.EWMA.#ctor*
+  href: api/App.Metrics.Utils.EWMA.html#App_Metrics_Utils_EWMA__ctor_
+  commentId: Overload:App.Metrics.Utils.EWMA.#ctor
+  name: EWMA
+  fullName: App.Metrics.Utils.EWMA.EWMA(System.Double, System.Int64, App.Metrics.TimeUnit)
+- uid: App.Metrics.Utils.EWMA.FifteenMinuteEWMA
+  name: FifteenMinuteEWMA()
+  href: api/App.Metrics.Utils.EWMA.html#App_Metrics_Utils_EWMA_FifteenMinuteEWMA
+  commentId: M:App.Metrics.Utils.EWMA.FifteenMinuteEWMA
+  fullName: App.Metrics.Utils.EWMA.FifteenMinuteEWMA()
+  nameWithType: EWMA.FifteenMinuteEWMA()
+- uid: App.Metrics.Utils.EWMA.FifteenMinuteEWMA*
+  href: api/App.Metrics.Utils.EWMA.html#App_Metrics_Utils_EWMA_FifteenMinuteEWMA_
+  commentId: Overload:App.Metrics.Utils.EWMA.FifteenMinuteEWMA
+  name: FifteenMinuteEWMA
+  fullName: App.Metrics.Utils.EWMA.FifteenMinuteEWMA()
+- uid: App.Metrics.Utils.EWMA.FiveMinuteEWMA
+  name: FiveMinuteEWMA()
+  href: api/App.Metrics.Utils.EWMA.html#App_Metrics_Utils_EWMA_FiveMinuteEWMA
+  commentId: M:App.Metrics.Utils.EWMA.FiveMinuteEWMA
+  fullName: App.Metrics.Utils.EWMA.FiveMinuteEWMA()
+  nameWithType: EWMA.FiveMinuteEWMA()
+- uid: App.Metrics.Utils.EWMA.FiveMinuteEWMA*
+  href: api/App.Metrics.Utils.EWMA.html#App_Metrics_Utils_EWMA_FiveMinuteEWMA_
+  commentId: Overload:App.Metrics.Utils.EWMA.FiveMinuteEWMA
+  name: FiveMinuteEWMA
+  fullName: App.Metrics.Utils.EWMA.FiveMinuteEWMA()
+- uid: App.Metrics.Utils.EWMA.GetRate(App.Metrics.TimeUnit)
+  name: GetRate(TimeUnit)
+  href: api/App.Metrics.Utils.EWMA.html#App_Metrics_Utils_EWMA_GetRate_App_Metrics_TimeUnit_
+  commentId: M:App.Metrics.Utils.EWMA.GetRate(App.Metrics.TimeUnit)
+  fullName: App.Metrics.Utils.EWMA.GetRate(App.Metrics.TimeUnit)
+  nameWithType: EWMA.GetRate(TimeUnit)
+- uid: App.Metrics.Utils.EWMA.GetRate*
+  href: api/App.Metrics.Utils.EWMA.html#App_Metrics_Utils_EWMA_GetRate_
+  commentId: Overload:App.Metrics.Utils.EWMA.GetRate
+  name: GetRate
+  fullName: App.Metrics.Utils.EWMA.GetRate(App.Metrics.TimeUnit)
+- uid: App.Metrics.Utils.EWMA.OneMinuteEWMA
+  name: OneMinuteEWMA()
+  href: api/App.Metrics.Utils.EWMA.html#App_Metrics_Utils_EWMA_OneMinuteEWMA
+  commentId: M:App.Metrics.Utils.EWMA.OneMinuteEWMA
+  fullName: App.Metrics.Utils.EWMA.OneMinuteEWMA()
+  nameWithType: EWMA.OneMinuteEWMA()
+- uid: App.Metrics.Utils.EWMA.OneMinuteEWMA*
+  href: api/App.Metrics.Utils.EWMA.html#App_Metrics_Utils_EWMA_OneMinuteEWMA_
+  commentId: Overload:App.Metrics.Utils.EWMA.OneMinuteEWMA
+  name: OneMinuteEWMA
+  fullName: App.Metrics.Utils.EWMA.OneMinuteEWMA()
+- uid: App.Metrics.Utils.EWMA.Reset
+  name: Reset()
+  href: api/App.Metrics.Utils.EWMA.html#App_Metrics_Utils_EWMA_Reset
+  commentId: M:App.Metrics.Utils.EWMA.Reset
+  fullName: App.Metrics.Utils.EWMA.Reset()
+  nameWithType: EWMA.Reset()
+- uid: App.Metrics.Utils.EWMA.Reset*
+  href: api/App.Metrics.Utils.EWMA.html#App_Metrics_Utils_EWMA_Reset_
+  commentId: Overload:App.Metrics.Utils.EWMA.Reset
+  name: Reset
+  fullName: App.Metrics.Utils.EWMA.Reset()
+- uid: App.Metrics.Utils.EWMA.Tick(System.Int64)
+  name: Tick(Int64)
+  href: api/App.Metrics.Utils.EWMA.html#App_Metrics_Utils_EWMA_Tick_System_Int64_
+  commentId: M:App.Metrics.Utils.EWMA.Tick(System.Int64)
+  fullName: App.Metrics.Utils.EWMA.Tick(System.Int64)
+  nameWithType: EWMA.Tick(Int64)
+- uid: App.Metrics.Utils.EWMA.Tick*
+  href: api/App.Metrics.Utils.EWMA.html#App_Metrics_Utils_EWMA_Tick_
+  commentId: Overload:App.Metrics.Utils.EWMA.Tick
+  name: Tick
+  fullName: App.Metrics.Utils.EWMA.Tick(System.Int64)
+- uid: App.Metrics.Utils.EWMA.Update(System.Int64)
+  name: Update(Int64)
+  href: api/App.Metrics.Utils.EWMA.html#App_Metrics_Utils_EWMA_Update_System_Int64_
+  commentId: M:App.Metrics.Utils.EWMA.Update(System.Int64)
+  fullName: App.Metrics.Utils.EWMA.Update(System.Int64)
+  nameWithType: EWMA.Update(Int64)
+- uid: App.Metrics.Utils.EWMA.Update*
+  href: api/App.Metrics.Utils.EWMA.html#App_Metrics_Utils_EWMA_Update_
+  commentId: Overload:App.Metrics.Utils.EWMA.Update
+  name: Update
+  fullName: App.Metrics.Utils.EWMA.Update(System.Int64)
 - uid: App.Metrics.Utils.IClock
   name: IClock
   href: api/App.Metrics.Utils.IClock.html#App_Metrics_Utils_IClock
@@ -10952,6 +11063,15 @@ references:
   commentId: M:Microsoft.Extensions.DependencyInjection.MetricsServiceCollectionExtensions.AddMetrics(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
   fullName: Microsoft.Extensions.DependencyInjection.MetricsServiceCollectionExtensions.AddMetrics(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration)
   nameWithType: MetricsServiceCollectionExtensions.AddMetrics(IServiceCollection, IConfiguration)
+- uid: Microsoft.Extensions.DependencyInjection.MetricsServiceCollectionExtensions.AddMetrics(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.Action{App.Metrics.Configuration.AppMetricsOptions})
+  name: AddMetrics(IServiceCollection, IConfiguration, Action<AppMetricsOptions>)
+  href: api/Microsoft.Extensions.DependencyInjection.MetricsServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_MetricsServiceCollectionExtensions_AddMetrics_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_System_Action_App_Metrics_Configuration_AppMetricsOptions__
+  commentId: M:Microsoft.Extensions.DependencyInjection.MetricsServiceCollectionExtensions.AddMetrics(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.Action{App.Metrics.Configuration.AppMetricsOptions})
+  name.vb: AddMetrics(IServiceCollection, IConfiguration, Action(Of AppMetricsOptions))
+  fullName: Microsoft.Extensions.DependencyInjection.MetricsServiceCollectionExtensions.AddMetrics(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, System.Action<App.Metrics.Configuration.AppMetricsOptions>)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.MetricsServiceCollectionExtensions.AddMetrics(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, System.Action(Of App.Metrics.Configuration.AppMetricsOptions))
+  nameWithType: MetricsServiceCollectionExtensions.AddMetrics(IServiceCollection, IConfiguration, Action<AppMetricsOptions>)
+  nameWithType.vb: AddMetrics(IServiceCollection, IConfiguration, Action(Of AppMetricsOptions))
 - uid: Microsoft.Extensions.DependencyInjection.MetricsServiceCollectionExtensions.AddMetrics(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{App.Metrics.Configuration.AppMetricsOptions})
   name: AddMetrics(IServiceCollection, Action<AppMetricsOptions>)
   href: api/Microsoft.Extensions.DependencyInjection.MetricsServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_MetricsServiceCollectionExtensions_AddMetrics_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_App_Metrics_Configuration_AppMetricsOptions__
@@ -10961,6 +11081,15 @@ references:
   fullName.vb: Microsoft.Extensions.DependencyInjection.MetricsServiceCollectionExtensions.AddMetrics(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of App.Metrics.Configuration.AppMetricsOptions))
   nameWithType: MetricsServiceCollectionExtensions.AddMetrics(IServiceCollection, Action<AppMetricsOptions>)
   nameWithType.vb: AddMetrics(IServiceCollection, Action(Of AppMetricsOptions))
+- uid: Microsoft.Extensions.DependencyInjection.MetricsServiceCollectionExtensions.AddMetrics(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{App.Metrics.Configuration.AppMetricsOptions},Microsoft.Extensions.Configuration.IConfiguration)
+  name: AddMetrics(IServiceCollection, Action<AppMetricsOptions>, IConfiguration)
+  href: api/Microsoft.Extensions.DependencyInjection.MetricsServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_MetricsServiceCollectionExtensions_AddMetrics_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_App_Metrics_Configuration_AppMetricsOptions__Microsoft_Extensions_Configuration_IConfiguration_
+  commentId: M:Microsoft.Extensions.DependencyInjection.MetricsServiceCollectionExtensions.AddMetrics(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{App.Metrics.Configuration.AppMetricsOptions},Microsoft.Extensions.Configuration.IConfiguration)
+  name.vb: AddMetrics(IServiceCollection, Action(Of AppMetricsOptions), IConfiguration)
+  fullName: Microsoft.Extensions.DependencyInjection.MetricsServiceCollectionExtensions.AddMetrics(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<App.Metrics.Configuration.AppMetricsOptions>, Microsoft.Extensions.Configuration.IConfiguration)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.MetricsServiceCollectionExtensions.AddMetrics(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of App.Metrics.Configuration.AppMetricsOptions), Microsoft.Extensions.Configuration.IConfiguration)
+  nameWithType: MetricsServiceCollectionExtensions.AddMetrics(IServiceCollection, Action<AppMetricsOptions>, IConfiguration)
+  nameWithType.vb: AddMetrics(IServiceCollection, Action(Of AppMetricsOptions), IConfiguration)
 - uid: Microsoft.Extensions.DependencyInjection.MetricsServiceCollectionExtensions.AddMetrics*
   href: api/Microsoft.Extensions.DependencyInjection.MetricsServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_MetricsServiceCollectionExtensions_AddMetrics_
   commentId: Overload:Microsoft.Extensions.DependencyInjection.MetricsServiceCollectionExtensions.AddMetrics
