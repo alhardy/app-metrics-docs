@@ -1264,6 +1264,50 @@ references:
   commentId: T:App.Metrics.Core.Options.CounterOptions
   fullName: App.Metrics.Core.Options.CounterOptions
   nameWithType: CounterOptions
+- uid: App.Metrics.Core.Options.CounterOptions.#ctor
+  name: CounterOptions()
+  href: api/App.Metrics.Core.Options.CounterOptions.html#App_Metrics_Core_Options_CounterOptions__ctor
+  commentId: M:App.Metrics.Core.Options.CounterOptions.#ctor
+  fullName: App.Metrics.Core.Options.CounterOptions.CounterOptions()
+  nameWithType: CounterOptions.CounterOptions()
+- uid: App.Metrics.Core.Options.CounterOptions.#ctor*
+  href: api/App.Metrics.Core.Options.CounterOptions.html#App_Metrics_Core_Options_CounterOptions__ctor_
+  commentId: Overload:App.Metrics.Core.Options.CounterOptions.#ctor
+  name: CounterOptions
+  fullName: App.Metrics.Core.Options.CounterOptions.CounterOptions()
+- uid: App.Metrics.Core.Options.CounterOptions.ReportItemPercentages
+  name: ReportItemPercentages
+  href: api/App.Metrics.Core.Options.CounterOptions.html#App_Metrics_Core_Options_CounterOptions_ReportItemPercentages
+  commentId: P:App.Metrics.Core.Options.CounterOptions.ReportItemPercentages
+  fullName: App.Metrics.Core.Options.CounterOptions.ReportItemPercentages
+  nameWithType: CounterOptions.ReportItemPercentages
+- uid: App.Metrics.Core.Options.CounterOptions.ReportItemPercentages*
+  href: api/App.Metrics.Core.Options.CounterOptions.html#App_Metrics_Core_Options_CounterOptions_ReportItemPercentages_
+  commentId: Overload:App.Metrics.Core.Options.CounterOptions.ReportItemPercentages
+  name: ReportItemPercentages
+  fullName: App.Metrics.Core.Options.CounterOptions.ReportItemPercentages
+- uid: App.Metrics.Core.Options.CounterOptions.ReportSetItems
+  name: ReportSetItems
+  href: api/App.Metrics.Core.Options.CounterOptions.html#App_Metrics_Core_Options_CounterOptions_ReportSetItems
+  commentId: P:App.Metrics.Core.Options.CounterOptions.ReportSetItems
+  fullName: App.Metrics.Core.Options.CounterOptions.ReportSetItems
+  nameWithType: CounterOptions.ReportSetItems
+- uid: App.Metrics.Core.Options.CounterOptions.ReportSetItems*
+  href: api/App.Metrics.Core.Options.CounterOptions.html#App_Metrics_Core_Options_CounterOptions_ReportSetItems_
+  commentId: Overload:App.Metrics.Core.Options.CounterOptions.ReportSetItems
+  name: ReportSetItems
+  fullName: App.Metrics.Core.Options.CounterOptions.ReportSetItems
+- uid: App.Metrics.Core.Options.CounterOptions.ResetOnReporting
+  name: ResetOnReporting
+  href: api/App.Metrics.Core.Options.CounterOptions.html#App_Metrics_Core_Options_CounterOptions_ResetOnReporting
+  commentId: P:App.Metrics.Core.Options.CounterOptions.ResetOnReporting
+  fullName: App.Metrics.Core.Options.CounterOptions.ResetOnReporting
+  nameWithType: CounterOptions.ResetOnReporting
+- uid: App.Metrics.Core.Options.CounterOptions.ResetOnReporting*
+  href: api/App.Metrics.Core.Options.CounterOptions.html#App_Metrics_Core_Options_CounterOptions_ResetOnReporting_
+  commentId: Overload:App.Metrics.Core.Options.CounterOptions.ResetOnReporting
+  name: ResetOnReporting
+  fullName: App.Metrics.Core.Options.CounterOptions.ResetOnReporting
 - uid: App.Metrics.Core.Options.GaugeOptions
   name: GaugeOptions
   href: api/App.Metrics.Core.Options.GaugeOptions.html#App_Metrics_Core_Options_GaugeOptions
@@ -1990,22 +2034,55 @@ references:
   commentId: T:App.Metrics.Data.CounterValueSource
   fullName: App.Metrics.Data.CounterValueSource
   nameWithType: CounterValueSource
-- uid: App.Metrics.Data.CounterValueSource.#ctor(System.String,App.Metrics.Data.Interfaces.IMetricValueProvider{App.Metrics.Data.CounterValue},App.Metrics.Unit,App.Metrics.MetricTags)
-  name: CounterValueSource(String, IMetricValueProvider<CounterValue>, Unit, MetricTags)
-  href: api/App.Metrics.Data.CounterValueSource.html#App_Metrics_Data_CounterValueSource__ctor_System_String_App_Metrics_Data_Interfaces_IMetricValueProvider_App_Metrics_Data_CounterValue__App_Metrics_Unit_App_Metrics_MetricTags_
-  commentId: M:App.Metrics.Data.CounterValueSource.#ctor(System.String,App.Metrics.Data.Interfaces.IMetricValueProvider{App.Metrics.Data.CounterValue},App.Metrics.Unit,App.Metrics.MetricTags)
-  name.vb: CounterValueSource(String, IMetricValueProvider(Of CounterValue), Unit, MetricTags)
-  fullName: App.Metrics.Data.CounterValueSource.CounterValueSource(System.String, App.Metrics.Data.Interfaces.IMetricValueProvider<App.Metrics.Data.CounterValue>, App.Metrics.Unit, App.Metrics.MetricTags)
-  fullName.vb: App.Metrics.Data.CounterValueSource.CounterValueSource(System.String, App.Metrics.Data.Interfaces.IMetricValueProvider(Of App.Metrics.Data.CounterValue), App.Metrics.Unit, App.Metrics.MetricTags)
-  nameWithType: CounterValueSource.CounterValueSource(String, IMetricValueProvider<CounterValue>, Unit, MetricTags)
-  nameWithType.vb: CounterValueSource(String, IMetricValueProvider(Of CounterValue), Unit, MetricTags)
+- uid: App.Metrics.Data.CounterValueSource.#ctor(System.String,App.Metrics.Data.Interfaces.IMetricValueProvider{App.Metrics.Data.CounterValue},App.Metrics.Unit,App.Metrics.MetricTags,System.Boolean,System.Boolean,System.Boolean)
+  name: CounterValueSource(String, IMetricValueProvider<CounterValue>, Unit, MetricTags, Boolean, Boolean, Boolean)
+  href: api/App.Metrics.Data.CounterValueSource.html#App_Metrics_Data_CounterValueSource__ctor_System_String_App_Metrics_Data_Interfaces_IMetricValueProvider_App_Metrics_Data_CounterValue__App_Metrics_Unit_App_Metrics_MetricTags_System_Boolean_System_Boolean_System_Boolean_
+  commentId: M:App.Metrics.Data.CounterValueSource.#ctor(System.String,App.Metrics.Data.Interfaces.IMetricValueProvider{App.Metrics.Data.CounterValue},App.Metrics.Unit,App.Metrics.MetricTags,System.Boolean,System.Boolean,System.Boolean)
+  name.vb: CounterValueSource(String, IMetricValueProvider(Of CounterValue), Unit, MetricTags, Boolean, Boolean, Boolean)
+  fullName: App.Metrics.Data.CounterValueSource.CounterValueSource(System.String, App.Metrics.Data.Interfaces.IMetricValueProvider<App.Metrics.Data.CounterValue>, App.Metrics.Unit, App.Metrics.MetricTags, System.Boolean, System.Boolean, System.Boolean)
+  fullName.vb: App.Metrics.Data.CounterValueSource.CounterValueSource(System.String, App.Metrics.Data.Interfaces.IMetricValueProvider(Of App.Metrics.Data.CounterValue), App.Metrics.Unit, App.Metrics.MetricTags, System.Boolean, System.Boolean, System.Boolean)
+  nameWithType: CounterValueSource.CounterValueSource(String, IMetricValueProvider<CounterValue>, Unit, MetricTags, Boolean, Boolean, Boolean)
+  nameWithType.vb: CounterValueSource(String, IMetricValueProvider(Of CounterValue), Unit, MetricTags, Boolean, Boolean, Boolean)
 - uid: App.Metrics.Data.CounterValueSource.#ctor*
   href: api/App.Metrics.Data.CounterValueSource.html#App_Metrics_Data_CounterValueSource__ctor_
   commentId: Overload:App.Metrics.Data.CounterValueSource.#ctor
   name: CounterValueSource
   name.vb: CounterValueSource
-  fullName: App.Metrics.Data.CounterValueSource.CounterValueSource(System.String, App.Metrics.Data.Interfaces.IMetricValueProvider<App.Metrics.Data.CounterValue>, App.Metrics.Unit, App.Metrics.MetricTags)
+  fullName: App.Metrics.Data.CounterValueSource.CounterValueSource(System.String, App.Metrics.Data.Interfaces.IMetricValueProvider<App.Metrics.Data.CounterValue>, App.Metrics.Unit, App.Metrics.MetricTags, System.Boolean, System.Boolean, System.Boolean)
   fullName.vb: App.Metrics.Data.CounterValueSource.CounterValueSource
+- uid: App.Metrics.Data.CounterValueSource.ReportItemPercentages
+  name: ReportItemPercentages
+  href: api/App.Metrics.Data.CounterValueSource.html#App_Metrics_Data_CounterValueSource_ReportItemPercentages
+  commentId: P:App.Metrics.Data.CounterValueSource.ReportItemPercentages
+  fullName: App.Metrics.Data.CounterValueSource.ReportItemPercentages
+  nameWithType: CounterValueSource.ReportItemPercentages
+- uid: App.Metrics.Data.CounterValueSource.ReportItemPercentages*
+  href: api/App.Metrics.Data.CounterValueSource.html#App_Metrics_Data_CounterValueSource_ReportItemPercentages_
+  commentId: Overload:App.Metrics.Data.CounterValueSource.ReportItemPercentages
+  name: ReportItemPercentages
+  fullName: App.Metrics.Data.CounterValueSource.ReportItemPercentages
+- uid: App.Metrics.Data.CounterValueSource.ReportSetItems
+  name: ReportSetItems
+  href: api/App.Metrics.Data.CounterValueSource.html#App_Metrics_Data_CounterValueSource_ReportSetItems
+  commentId: P:App.Metrics.Data.CounterValueSource.ReportSetItems
+  fullName: App.Metrics.Data.CounterValueSource.ReportSetItems
+  nameWithType: CounterValueSource.ReportSetItems
+- uid: App.Metrics.Data.CounterValueSource.ReportSetItems*
+  href: api/App.Metrics.Data.CounterValueSource.html#App_Metrics_Data_CounterValueSource_ReportSetItems_
+  commentId: Overload:App.Metrics.Data.CounterValueSource.ReportSetItems
+  name: ReportSetItems
+  fullName: App.Metrics.Data.CounterValueSource.ReportSetItems
+- uid: App.Metrics.Data.CounterValueSource.ResetOnReporting
+  name: ResetOnReporting
+  href: api/App.Metrics.Data.CounterValueSource.html#App_Metrics_Data_CounterValueSource_ResetOnReporting
+  commentId: P:App.Metrics.Data.CounterValueSource.ResetOnReporting
+  fullName: App.Metrics.Data.CounterValueSource.ResetOnReporting
+  nameWithType: CounterValueSource.ResetOnReporting
+- uid: App.Metrics.Data.CounterValueSource.ResetOnReporting*
+  href: api/App.Metrics.Data.CounterValueSource.html#App_Metrics_Data_CounterValueSource_ResetOnReporting_
+  commentId: Overload:App.Metrics.Data.CounterValueSource.ResetOnReporting
+  name: ResetOnReporting
+  fullName: App.Metrics.Data.CounterValueSource.ResetOnReporting
 - uid: App.Metrics.Data.EnvironmentInfo
   name: EnvironmentInfo
   href: api/App.Metrics.Data.EnvironmentInfo.html#App_Metrics_Data_EnvironmentInfo
