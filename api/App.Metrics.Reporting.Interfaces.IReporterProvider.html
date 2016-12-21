@@ -93,7 +93,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Reporting_Interfaces_IReporterProvider_Filter.md&amp;value=---%0Auid%3A%20App.Metrics.Reporting.Interfaces.IReporterProvider.Filter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta2/src/App.Metrics/Reporting/Interfaces/IReporterProvider.cs/#L11">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Reporting/Interfaces/IReporterProvider.cs/#L12">View Source</a>
               </span>
               <a id="App_Metrics_Reporting_Interfaces_IReporterProvider_Filter_" data-uid="App.Metrics.Reporting.Interfaces.IReporterProvider.Filter*"></a>
               <h4 id="App_Metrics_Reporting_Interfaces_IReporterProvider_Filter" data-uid="App.Metrics.Reporting.Interfaces.IReporterProvider.Filter">Filter</h4>
@@ -123,7 +123,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Reporting_Interfaces_IReporterProvider_Settings.md&amp;value=---%0Auid%3A%20App.Metrics.Reporting.Interfaces.IReporterProvider.Settings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta2/src/App.Metrics/Reporting/Interfaces/IReporterProvider.cs/#L13">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Reporting/Interfaces/IReporterProvider.cs/#L14">View Source</a>
               </span>
               <a id="App_Metrics_Reporting_Interfaces_IReporterProvider_Settings_" data-uid="App.Metrics.Reporting.Interfaces.IReporterProvider.Settings*"></a>
               <h4 id="App_Metrics_Reporting_Interfaces_IReporterProvider_Settings" data-uid="App.Metrics.Reporting.Interfaces.IReporterProvider.Settings">Settings</h4>
@@ -152,18 +152,18 @@
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Reporting_Interfaces_IReporterProvider_CreateMetricReporter_System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Reporting.Interfaces.IReporterProvider.CreateMetricReporter(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Reporting_Interfaces_IReporterProvider_CreateMetricReporter_System_String_Microsoft_Extensions_Logging_ILoggerFactory_.md&amp;value=---%0Auid%3A%20App.Metrics.Reporting.Interfaces.IReporterProvider.CreateMetricReporter(System.String%2CMicrosoft.Extensions.Logging.ILoggerFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta2/src/App.Metrics/Reporting/Interfaces/IReporterProvider.cs/#L15">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Reporting/Interfaces/IReporterProvider.cs/#L16">View Source</a>
               </span>
               <a id="App_Metrics_Reporting_Interfaces_IReporterProvider_CreateMetricReporter_" data-uid="App.Metrics.Reporting.Interfaces.IReporterProvider.CreateMetricReporter*"></a>
-              <h4 id="App_Metrics_Reporting_Interfaces_IReporterProvider_CreateMetricReporter_System_String_" data-uid="App.Metrics.Reporting.Interfaces.IReporterProvider.CreateMetricReporter(System.String)">CreateMetricReporter(String)</h4>
+              <h4 id="App_Metrics_Reporting_Interfaces_IReporterProvider_CreateMetricReporter_System_String_Microsoft_Extensions_Logging_ILoggerFactory_" data-uid="App.Metrics.Reporting.Interfaces.IReporterProvider.CreateMetricReporter(System.String,Microsoft.Extensions.Logging.ILoggerFactory)">CreateMetricReporter(String, ILoggerFactory)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">IMetricReporter CreateMetricReporter(string name)</code></pre>
+                <pre><code class="lang-csharp hljs">IMetricReporter CreateMetricReporter(string name, ILoggerFactory loggerFactory)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -178,6 +178,11 @@
                   <tr>
                     <td><span class="xref">System.String</span></td>
                     <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Microsoft.Extensions.Logging.ILoggerFactory</span></td>
+                    <td><em>loggerFactory</em></td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -208,7 +213,7 @@
                     <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Reporting_Interfaces_IReporterProvider.md&amp;value=---%0Auid%3A%20App.Metrics.Reporting.Interfaces.IReporterProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta2/src/App.Metrics/Reporting/Interfaces/IReporterProvider.cs/#L9" class="contribution-link">View Source</a>
+                    <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Reporting/Interfaces/IReporterProvider.cs/#L10" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

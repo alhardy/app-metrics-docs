@@ -76,6 +76,20 @@
               <div class="markdown level0 remarks"></div>
                 <h3 id="classes">Classes
               </h3>
+                  <h4><a class="xref" href="App.Metrics.Core.Options.ApdexOptions.html#App_Metrics_Core_Options_ApdexOptions">ApdexOptions</a></h4>
+                  <section><p><a href="https://en.wikipedia.org/wiki/Apdex">Apdex</a> allows us to measure an apdex score which is a ratio of
+the number of satisfied and tolerating requests to the total requests made. Each satisfied request counts as one
+request, while each tolerating request counts as half a satisfied request.</p>
+<p>
+    Apdex tracks three response counts, counts based on samples measured by the chosen
+<a class="xref" href="App.Metrics.Sampling.Interfaces.IReservoir.html#App_Metrics_Sampling_Interfaces_IReservoir">IReservoir</a>
+<remarks>
+    The <a class="xref" href="App.Metrics.Sampling.Interfaces.IReservoir.html#App_Metrics_Sampling_Interfaces_IReservoir">IReservoir</a>  is determined by the <a class="xref" href="App.Metrics.SamplingType.html#App_Metrics_SamplingType">SamplingType</a>sampling
+    type
+</remarks>
+when the apdex metric instance is instantiated.
+</p>
+</section>
                   <h4><a class="xref" href="App.Metrics.Core.Options.CounterOptions.html#App_Metrics_Core_Options_CounterOptions">CounterOptions</a></h4>
                   <section><p>Configuration of a <a class="xref" href="App.Metrics.ICounter.html#App_Metrics_ICounter">ICounter</a> that will be measured</p>
 </section>

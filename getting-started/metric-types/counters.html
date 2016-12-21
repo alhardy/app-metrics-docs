@@ -126,7 +126,7 @@ _metrics.Increment(sentEmailsCounter, &quot;account-verification&quot;);
 </code></pre><h3 id="counter-reporting-options">Counter Reporting Options</h3>
 <p>The <code>CounterOptions</code> provides some settings to control what is reported and whether or not to reset the counter and it&#39;s set items on reporting. When choosing to reset a counter when reporting, keep in mind that if mulitple reporters are configured the first reporter which flushes metrics will reset the count.</p>
 <ul>
-<li><strong>ResetOnReporting</strong>: Resets the count and the counter&#39;s set items when the first configured reporter flushes metrics. This would then cause set item percentages to also be reset.</li>
+<li><strong>ResetOnReporting</strong>: Resets the count and the counter&#39;s, set items when the first configured reporter flushes metrics. This would then cause set item percentages to also be reset.</li>
 <li><strong>ReportSetItems</strong>: Determines whether or not to report the counter&#39;s set item when flushing metrics via a reporter.</li>
 <li><strong>ReportItemPercentages</strong>: Determines whether or not to report the counter&#39;s set item when flushing metrics via a reporter.</li>
 </ul>

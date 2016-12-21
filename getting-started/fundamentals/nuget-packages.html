@@ -70,22 +70,25 @@
               
 <hr>
 <p>The <code>App.Metrics</code> package provides the core services and application configuration to get you started with instrumenting your code to measure application metrics. This is a .NET Standard Class Library</p>
-<pre><code class="lang-console">nuget install App.Metrics
+<pre><code class="lang-console">nuget install App.Metrics -pre
 </code></pre><hr>
-<p>The <code>App.Metrics.Extensions.Middleware</code> package provides a set of Middleware Components which will measure request rates, errors rates, OAuth Client tracking etc. This is a .NET Standard Class Library</p>
-<pre><code class="lang-console">nuget install App.Metrics.Extensions.Middleware
+<p>The <code>App.Metrics.Extensions.Middleware</code> package provides a set of Middleware Components which will measure request rates, errors rates, OAuth Client tracking etc.</p>
+<pre><code class="lang-console">nuget install App.Metrics.Extensions.Middleware -pre
+</code></pre><hr>
+<p>The <code>App.Metrics.Extensions.Mvc</code> package has a dependancy on <code>App.Metrics.Extensions.Middleware</code> to automatically measure request rates etc but also provides tracking of attribute based routes for example. </p>
+<pre><code class="lang-console">nuget install App.Metrics.Extensions.Mvc -pre
 </code></pre><hr>
 <p>The <code>App.Metrics.Formatters.Json</code> package privates the abliity to json serializer/deserializer metrics recorded by your application. </p>
-<pre><code class="lang-console">nuget install App.Metrics.Formatters.Json
+<pre><code class="lang-console">nuget install App.Metrics.Formatters.Json -pre
 </code></pre><hr>
 <p>The <code>App.Metrics.Extensions.Reporting.Console</code> package is an App Metrics report provider which will output metrics to a console at a specified interval.</p>
-<pre><code class="lang-console">nuget install App.Metrics.Extensions.Reporting.Console
+<pre><code class="lang-console">nuget install App.Metrics.Extensions.Reporting.Console -pre
 </code></pre><hr>
 <p>The <code>App.Metrics.Extensions.Reporting.TextFile</code> package is an App Metrics report provider which will output metrics to a text file at a specified interval.</p>
-<pre><code class="lang-console">nuget install App.Metrics.Extensions.Reporting.TextFile
+<pre><code class="lang-console">nuget install App.Metrics.Extensions.Reporting.TextFile -pre
 </code></pre><hr>
 <p>The <code>App.Metrics.Extensions.Reporting.InfluxDB</code> package is an App Metrics report provider which will flush metrics to a <a href="https://www.influxdata.com/time-series-platform/influxdb/">InfluxDB</a> at a specified interval.</p>
-<pre><code class="lang-console">nuget install App.Metrics.Extensions.Reporting.InfluxDB
+<pre><code class="lang-console">nuget install App.Metrics.Extensions.Reporting.InfluxDB -pre
 </code></pre>
             </article>
           </div>

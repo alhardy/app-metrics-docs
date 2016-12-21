@@ -78,10 +78,12 @@
 <li><strong>ReportingEnabled</strong>: Allows all configured reporters to be disabled.</li>
 </ul>
 <h2 id="changing-options-using-actionappmetricoptions">Changing options using <code>Action&lt;AppMetricOptions&gt;</code></h2>
-<pre><code class="lang-csharp" name="Main" highlight-lines="5">public class Startup
+<pre><code class="lang-csharp" name="Main" highlight-lines="5,7">public class Startup
 {
     public void ConfigureServices(IServiceCollection services)
     {
+        services.AddMvc(options =&gt; options.AddMetricsResourceFilter());
+        
         services.AddMetrics(options =&gt; {
                 options.DefaultContextLabel = &quot;MyContext&quot;,
                 options.DefaultSamplingType = SamplingType.SlidingWindow;
@@ -140,10 +142,12 @@
 }
 </code></pre><h2 id="changes-options-via-an-options-delegate-and-configuration-source">Changes options via an options delegate and configuration source</h2>
 <p>In cases where it&#39;s required to have some settings in a configuration file but others in code, it&#39;s possible to provide both an options delegate and configuration source, where options are applied in order they are registered. For example, in the following code snippet any options registered via the configuration section will override those registered in code. The reverse can also be applied by changing the order of the options delegate and configuration source on the <code>AddMetrics</code> method.</p>
-<pre><code class="lang-csharp" name="Main" highlight-lines="5,6,7,8">public class Startup
+<pre><code class="lang-csharp" name="Main" highlight-lines="7,8,9,10">public class Startup
 {
     public void ConfigureServices(IServiceCollection services)
     {
+        services.AddMvc(options =&gt; options.AddMetricsResourceFilter());
+        
         services.AddMetrics(options =&gt; {
                 options.DefaultContextLabel = &quot;MyContext&quot;,
                 options.DefaultSamplingType = SamplingType.SlidingWindow;                        	
@@ -158,7 +162,10 @@
         app.UseMetrics();
     }
 }
-</code></pre><h2 id="next-steps">Next Steps</h2>
+</code></pre><div class="NOTE"><h5>Note</h5><p>To have routes measured a resource filter is required to extract the route template of each request, add the resource filter when configuring Mvc options i.e.</p>
+<pre><code class="lang-csharp">services.AddMvc(options =&gt; options.AddMetricsResourceFilter());
+</code></pre></div>
+<h2 id="next-steps">Next Steps</h2>
 <ul>
 <li><a href="middleware-configuration.html">AspNet Core Middleware Configuration Options</a></li>
 <li><a href="organizing-metrics.html">Organizing Metrics</a></li>

@@ -84,10 +84,12 @@
 <li><strong>PingEndpointEnabled</strong>: Allows enabling/disabling of the <code>/ping</code> endpoint, when disabled will result in a 404 status code, the default is true.</li>
 </ul>
 <h2 id="changing-options-using-actionaspnetmetricsoptions">Changing options using <code>Action&lt;AspNetMetricsOptions&gt;</code></h2>
-<pre><code class="lang-csharp" name="Main" highlight-lines="8">public class Startup
+<pre><code class="lang-csharp" name="Main" highlight-lines="10">public class Startup
 {
     public void ConfigureServices(IServiceCollection services)
     {
+        services.AddMvc(options =&gt; options.AddMetricsResourceFilter());
+        
         services.AddMetrics()
             .AddJsonSerialization()
             .AddHealthChecks()
@@ -114,7 +116,7 @@
 }
 </code></pre><h2 id="changing-options-using-microsoftextensionsconfigurationiconfiguration">Changing options using <code>Microsoft.Extensions.Configuration.IConfiguration</code></h2>
 <p>Below is an example <code>Startup.cs</code> using <code>appsettings.json</code> as a configuration source:</p>
-<pre><code class="lang-csharp" name="Main" highlight-lines="20">public class Startup
+<pre><code class="lang-csharp" name="Main" highlight-lines="22">public class Startup
 {
     public Startup(IHostingEnvironment env)
     {
@@ -130,6 +132,8 @@
 
     public void ConfigureServices(IServiceCollection services)
     {
+        services.AddMvc(options =&gt; options.AddMetricsResourceFilter());
+        
         services.AddMetrics()
             .AddJsonSerialization()
             .AddHealthChecks()
@@ -156,7 +160,10 @@
         &quot;IgnoredRequestPatterns&quot;: [ &quot;(?i)^api/test/ignore&quot; ]
     }
 }
-</code></pre><h2 id="next-steps">Next Steps</h2>
+</code></pre><div class="NOTE"><h5>Note</h5><p>To have routes measured a resource filter is required to extract the route template of each request, add the resource filter when configuring Mvc options i.e.</p>
+<pre><code class="lang-csharp">services.AddMvc(options =&gt; options.AddMetricsResourceFilter());
+</code></pre></div>
+<h2 id="next-steps">Next Steps</h2>
 <ul>
 <li><a href="configuration.html">App MetricsConfiguration Options</a></li>
 <li><a href="../../samples/index.html">Sample Applications</a></li>
