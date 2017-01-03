@@ -78,8 +78,7 @@
 </ul>
 <p>App Metrics caculates the counts of the three thresholds using a <a href="histograms.html">Histogram</a> to sample data recorded. The value T seconds, histogram sample size and <a href="../sampling/index.html">reservoir sampling</a> type can be configured when creating the <code>ApdexOptions</code>.</p>
 <div class="NOTE"><h5>Note</h5><p>The Apdex score between 0 and 1 is calculated using the following:</p>
-<h2 id="satisfied-requests--tolerating-requests--2">Satisfied requests + (Tolerating requests / 2))</h2>
-<h1 id="total-number-of-requests">Total number of requests</h1>
+<p>(Satisfied requests + (Tolerating requests / 2))) / Total number of requests</p>
 </div>
 <h2 id="using-apdex">Using Apdex</h2>
 <pre><code class="lang-csharp" name="Main">var apdex = new ApdexOptions

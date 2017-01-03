@@ -88,7 +88,7 @@
         var reporterFactory = provider.GetRequiredService&lt;IReportFactory&gt;();
         var reporter = reporterFactory.CreateReporter();
         // Will continue to run for the confgured report internal
-        reporter.RunReportsAsync(metrics, cancellationTokenSource.Token);           
+        reporter.RunReports(metrics, cancellationTokenSource.Token);           
 
         Console.ReadKey();
     }
@@ -141,6 +141,21 @@
 
     factory.AddTextFile(textFileSettings);
 })
+</code></pre><h2 id="run-reporting-in-a-web-host">Run Reporting in a Web Host</h2>
+<p>To run the registered reporters in a web application, the <code>UseMetricsReporting</code> <code>IApplicationBuilder</code> extention method can be used as show below. The extension methods takes the <code>IApplicationLifetime</code> instance which is used to run reporting after the application has successfully started up and uses the <code>lifetime.ApplicationStopping</code> cancellation token to gracefully end reporting on application shutdown.</p>
+<pre><code class="lang-csharp" name="Main" highlight-lines="11">public class Startup
+{
+    public void ConfigureServices(IServiceCollection services)
+    {
+        // Configure...
+    }
+
+    public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory, IApplicationLifetime lifetime)
+    {	        
+        app.UseMetrics();
+        app.UseMetricsReporting(lifetime);
+    }
+}
 </code></pre><div class="NOTE"><h5>Note</h5><h3 id="dont-see-the-reporter-your-looking-for">Don&#39;t see the reporter your looking for?</h3>
 <p>Pull requests or more than welcome, for now see the <a href="https://github.com/alhardy/AppMetrics/tree/master/src/App.Metrics.Extensions.Reporting.Console">Console</a> and <a href="https://github.com/alhardy/AppMetrics/tree/master/src/App.Metrics.Extensions.Reporting.TextFile">Text File</a> reporters for guidance on implementing a new reporter.</p>
 </div>

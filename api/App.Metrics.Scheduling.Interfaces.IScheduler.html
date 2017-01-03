@@ -90,18 +90,20 @@
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Scheduling_Interfaces_IScheduler_Interval_System_TimeSpan_System_Action_.md&amp;value=---%0Auid%3A%20App.Metrics.Scheduling.Interfaces.IScheduler.Interval(System.TimeSpan%2CSystem.Action)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Scheduling_Interfaces_IScheduler_Interval_System_TimeSpan_System_Threading_Tasks_TaskCreationOptions_System_Action_.md&amp;value=---%0Auid%3A%20App.Metrics.Scheduling.Interfaces.IScheduler.Interval(System.TimeSpan%2CSystem.Threading.Tasks.TaskCreationOptions%2CSystem.Action)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Scheduling/Interfaces/IScheduler.cs/#L15">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta3/src/App.Metrics/Scheduling/Interfaces/IScheduler.cs/#L30">View Source</a>
               </span>
               <a id="App_Metrics_Scheduling_Interfaces_IScheduler_Interval_" data-uid="App.Metrics.Scheduling.Interfaces.IScheduler.Interval*"></a>
-              <h4 id="App_Metrics_Scheduling_Interfaces_IScheduler_Interval_System_TimeSpan_System_Action_" data-uid="App.Metrics.Scheduling.Interfaces.IScheduler.Interval(System.TimeSpan,System.Action)">Interval(TimeSpan, Action)</h4>
-              <div class="markdown level1 summary"></div>
+              <h4 id="App_Metrics_Scheduling_Interfaces_IScheduler_Interval_System_TimeSpan_System_Threading_Tasks_TaskCreationOptions_System_Action_" data-uid="App.Metrics.Scheduling.Interfaces.IScheduler.Interval(System.TimeSpan,System.Threading.Tasks.TaskCreationOptions,System.Action)">Interval(TimeSpan, TaskCreationOptions, Action)</h4>
+              <div class="markdown level1 summary"><p>Schedules at Task to run at the specified interval. All Tasks created with this instance share the same
+cancellation token</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">Task Interval(TimeSpan pollInterval, Action action)</code></pre>
+                <pre><code class="lang-csharp hljs">Task Interval(TimeSpan pollInterval, TaskCreationOptions taskCreationOptions, Action action)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -116,12 +118,20 @@
                   <tr>
                     <td><span class="xref">System.TimeSpan</span></td>
                     <td><em>pollInterval</em></td>
-                    <td></td>
+                    <td><p>The poll interval.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.TaskCreationOptions</span></td>
+                    <td><em>taskCreationOptions</em></td>
+                    <td><p>The task creation options.</p>
+</td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.Action</span></td>
                     <td><em>action</em></td>
-                    <td></td>
+                    <td><p>The action to run at the specified interval.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -142,18 +152,19 @@
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Scheduling_Interfaces_IScheduler_Interval_System_TimeSpan_System_Action_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20App.Metrics.Scheduling.Interfaces.IScheduler.Interval(System.TimeSpan%2CSystem.Action%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Scheduling_Interfaces_IScheduler_Interval_System_TimeSpan_System_Threading_Tasks_TaskCreationOptions_System_Action_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20App.Metrics.Scheduling.Interfaces.IScheduler.Interval(System.TimeSpan%2CSystem.Threading.Tasks.TaskCreationOptions%2CSystem.Action%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Scheduling/Interfaces/IScheduler.cs/#L13">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta3/src/App.Metrics/Scheduling/Interfaces/IScheduler.cs/#L20">View Source</a>
               </span>
               <a id="App_Metrics_Scheduling_Interfaces_IScheduler_Interval_" data-uid="App.Metrics.Scheduling.Interfaces.IScheduler.Interval*"></a>
-              <h4 id="App_Metrics_Scheduling_Interfaces_IScheduler_Interval_System_TimeSpan_System_Action_System_Threading_CancellationToken_" data-uid="App.Metrics.Scheduling.Interfaces.IScheduler.Interval(System.TimeSpan,System.Action,System.Threading.CancellationToken)">Interval(TimeSpan, Action, CancellationToken)</h4>
-              <div class="markdown level1 summary"></div>
+              <h4 id="App_Metrics_Scheduling_Interfaces_IScheduler_Interval_System_TimeSpan_System_Threading_Tasks_TaskCreationOptions_System_Action_System_Threading_CancellationToken_" data-uid="App.Metrics.Scheduling.Interfaces.IScheduler.Interval(System.TimeSpan,System.Threading.Tasks.TaskCreationOptions,System.Action,System.Threading.CancellationToken)">Interval(TimeSpan, TaskCreationOptions, Action, CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>Schedules at Task to run at the specified interval.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">Task Interval(TimeSpan pollInterval, Action action, CancellationToken token)</code></pre>
+                <pre><code class="lang-csharp hljs">Task Interval(TimeSpan pollInterval, TaskCreationOptions taskCreationOptions, Action action, CancellationToken token)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -168,17 +179,26 @@
                   <tr>
                     <td><span class="xref">System.TimeSpan</span></td>
                     <td><em>pollInterval</em></td>
-                    <td></td>
+                    <td><p>The poll interval.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.TaskCreationOptions</span></td>
+                    <td><em>taskCreationOptions</em></td>
+                    <td><p>The task creation options.</p>
+</td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.Action</span></td>
                     <td><em>action</em></td>
-                    <td></td>
+                    <td><p>The action to run at the specified interval.</p>
+</td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.Threading.CancellationToken</span></td>
                     <td><em>token</em></td>
-                    <td></td>
+                    <td><p>The Tasks cancellation token, each Tasks tokens are linked to this instance</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -202,11 +222,12 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Scheduling_Interfaces_IScheduler_Stop.md&amp;value=---%0Auid%3A%20App.Metrics.Scheduling.Interfaces.IScheduler.Stop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Scheduling/Interfaces/IScheduler.cs/#L17">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta3/src/App.Metrics/Scheduling/Interfaces/IScheduler.cs/#L35">View Source</a>
               </span>
               <a id="App_Metrics_Scheduling_Interfaces_IScheduler_Stop_" data-uid="App.Metrics.Scheduling.Interfaces.IScheduler.Stop*"></a>
               <h4 id="App_Metrics_Scheduling_Interfaces_IScheduler_Stop" data-uid="App.Metrics.Scheduling.Interfaces.IScheduler.Stop">Stop()</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Stops the Tasks schduled with this instance by cancelling the cancellation token</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -223,7 +244,7 @@
                     <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Scheduling_Interfaces_IScheduler.md&amp;value=---%0Auid%3A%20App.Metrics.Scheduling.Interfaces.IScheduler%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Scheduling/Interfaces/IScheduler.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta3/src/App.Metrics/Scheduling/Interfaces/IScheduler.cs/#L10" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

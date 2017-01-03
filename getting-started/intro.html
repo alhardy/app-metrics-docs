@@ -130,7 +130,7 @@
         var reporterFactory = provider.GetRequiredService&lt;IReportFactory&gt;();
         var reporter = reporterFactory.CreateReporter();
         // Will continue to run for the confgured report internal
-        reporter.RunReportsAsync(metrics, cancellationTokenSource.Token);           
+        reporter.RunReports(metrics, cancellationTokenSource.Token);           
 
         Console.ReadKey();
     }

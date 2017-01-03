@@ -82,6 +82,8 @@
 <li><strong>OAuth2TrackingEnabled</strong>: Allows recording of all OAuth2 Client tracking to be disabled. When enabled middleware is configured to track request rates, an overall percentage of requests per Client / per endpoint, and error rates per Client.</li>
 <li><strong>PingEndpoint</strong>: Allows customization of the ping endpoint which simply returns pong. The default path is <code>/ping</code></li>
 <li><strong>PingEndpointEnabled</strong>: Allows enabling/disabling of the <code>/ping</code> endpoint, when disabled will result in a 404 status code, the default is true.</li>
+<li><strong>ApdexTrackingEnabled</strong>: Allows enabling/disabling of calculating the <a href="../metric-types/apdex.html">Apdex</a> score of a web application, the default is true.</li>
+<li><strong>ApdexTSeconds</strong>: The <a href="../metric-types/apdex.html">Apdex</a> T seconds value used in calculating the score on the samples collected.</li>
 </ul>
 <h2 id="changing-options-using-actionaspnetmetricsoptions">Changing options using <code>Action&lt;AspNetMetricsOptions&gt;</code></h2>
 <pre><code class="lang-csharp" name="Main" highlight-lines="10">public class Startup
@@ -116,36 +118,8 @@
 }
 </code></pre><h2 id="changing-options-using-microsoftextensionsconfigurationiconfiguration">Changing options using <code>Microsoft.Extensions.Configuration.IConfiguration</code></h2>
 <p>Below is an example <code>Startup.cs</code> using <code>appsettings.json</code> as a configuration source:</p>
-<pre><code class="lang-csharp" name="Main" highlight-lines="22">public class Startup
-{
-    public Startup(IHostingEnvironment env)
-    {
-        var builder = new ConfigurationBuilder()
-            .SetBasePath(env.ContentRootPath)
-            .AddJsonFile(&quot;appsettings.json&quot;, optional: true, reloadOnChange: true)
-            .AddJsonFile($&quot;appsettings.{env.EnvironmentName}.json&quot;, optional: true)
-            .AddEnvironmentVariables();
-        Configuration = builder.Build();
-    }
-
-    public IConfigurationRoot Configuration { get; set; }
-
-    public void ConfigureServices(IServiceCollection services)
-    {
-        services.AddMvc(options =&gt; options.AddMetricsResourceFilter());
-        
-        services.AddMetrics()
-            .AddJsonSerialization()
-            .AddHealthChecks()
-            .AddMetricsMiddleware(Configuration.GetSection(&quot;AspNetMetrics&quot;));
-    }
-
-    public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
-    {	        
-        app.UseMetrics();
-    }
-}
-</code></pre><p>And the <code>appsettings.json</code> file</p>
+<p>[!code-csharp<a href="../../src/samples/AppMetrics.Startup.CodeSnippets/StartupWithAspNetIConfiguration.cs?highlight=22">Main</a></p>
+<p>And the <code>appsettings.json</code> file</p>
 <pre><code class="lang-json" name="Main">{
     &quot;AspNetMetrics&quot;: {
         &quot;HealthEndpointEnabled&quot;: false,

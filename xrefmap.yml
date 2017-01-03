@@ -253,6 +253,39 @@ references:
   commentId: Overload:App.Metrics.ApdexContext.Elapsed
   name: Elapsed
   fullName: App.Metrics.ApdexContext.Elapsed
+- uid: App.Metrics.ApdexHealthCheck
+  name: ApdexHealthCheck
+  href: api/App.Metrics.ApdexHealthCheck.html#App_Metrics_ApdexHealthCheck
+  commentId: T:App.Metrics.ApdexHealthCheck
+  fullName: App.Metrics.ApdexHealthCheck
+  nameWithType: ApdexHealthCheck
+- uid: App.Metrics.ApdexHealthCheck.#ctor(System.Lazy{App.Metrics.IMetrics},App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions)
+  name: ApdexHealthCheck(Lazy<IMetrics>, AspNetMetricsOptions)
+  href: api/App.Metrics.ApdexHealthCheck.html#App_Metrics_ApdexHealthCheck__ctor_System_Lazy_App_Metrics_IMetrics__App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions_
+  commentId: M:App.Metrics.ApdexHealthCheck.#ctor(System.Lazy{App.Metrics.IMetrics},App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions)
+  name.vb: ApdexHealthCheck(Lazy(Of IMetrics), AspNetMetricsOptions)
+  fullName: App.Metrics.ApdexHealthCheck.ApdexHealthCheck(System.Lazy<App.Metrics.IMetrics>, App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions)
+  fullName.vb: App.Metrics.ApdexHealthCheck.ApdexHealthCheck(System.Lazy(Of App.Metrics.IMetrics), App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions)
+  nameWithType: ApdexHealthCheck.ApdexHealthCheck(Lazy<IMetrics>, AspNetMetricsOptions)
+  nameWithType.vb: ApdexHealthCheck(Lazy(Of IMetrics), AspNetMetricsOptions)
+- uid: App.Metrics.ApdexHealthCheck.#ctor*
+  href: api/App.Metrics.ApdexHealthCheck.html#App_Metrics_ApdexHealthCheck__ctor_
+  commentId: Overload:App.Metrics.ApdexHealthCheck.#ctor
+  name: ApdexHealthCheck
+  name.vb: ApdexHealthCheck
+  fullName: App.Metrics.ApdexHealthCheck.ApdexHealthCheck(System.Lazy<App.Metrics.IMetrics>, App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions)
+  fullName.vb: App.Metrics.ApdexHealthCheck.ApdexHealthCheck
+- uid: App.Metrics.ApdexHealthCheck.CheckAsync(System.Threading.CancellationToken)
+  name: CheckAsync(CancellationToken)
+  href: api/App.Metrics.ApdexHealthCheck.html#App_Metrics_ApdexHealthCheck_CheckAsync_System_Threading_CancellationToken_
+  commentId: M:App.Metrics.ApdexHealthCheck.CheckAsync(System.Threading.CancellationToken)
+  fullName: App.Metrics.ApdexHealthCheck.CheckAsync(System.Threading.CancellationToken)
+  nameWithType: ApdexHealthCheck.CheckAsync(CancellationToken)
+- uid: App.Metrics.ApdexHealthCheck.CheckAsync*
+  href: api/App.Metrics.ApdexHealthCheck.html#App_Metrics_ApdexHealthCheck_CheckAsync_
+  commentId: Overload:App.Metrics.ApdexHealthCheck.CheckAsync
+  name: CheckAsync
+  fullName: App.Metrics.ApdexHealthCheck.CheckAsync(System.Threading.CancellationToken)
 - uid: App.Metrics.ApdexScore
   name: ApdexScore
   href: api/App.Metrics.ApdexScore.html#App_Metrics_ApdexScore
@@ -516,29 +549,29 @@ references:
   commentId: T:App.Metrics.Core.ApdexMetric
   fullName: App.Metrics.Core.ApdexMetric
   nameWithType: ApdexMetric
-- uid: App.Metrics.Core.ApdexMetric.#ctor(App.Metrics.Apdex.Interfaces.IApdexProvider,App.Metrics.Utils.IClock)
-  name: ApdexMetric(IApdexProvider, IClock)
-  href: api/App.Metrics.Core.ApdexMetric.html#App_Metrics_Core_ApdexMetric__ctor_App_Metrics_Apdex_Interfaces_IApdexProvider_App_Metrics_Utils_IClock_
-  commentId: M:App.Metrics.Core.ApdexMetric.#ctor(App.Metrics.Apdex.Interfaces.IApdexProvider,App.Metrics.Utils.IClock)
-  fullName: App.Metrics.Core.ApdexMetric.ApdexMetric(App.Metrics.Apdex.Interfaces.IApdexProvider, App.Metrics.Utils.IClock)
-  nameWithType: ApdexMetric.ApdexMetric(IApdexProvider, IClock)
-- uid: App.Metrics.Core.ApdexMetric.#ctor(App.Metrics.SamplingType,System.Int32,System.Double,App.Metrics.Utils.IClock)
-  name: ApdexMetric(SamplingType, Int32, Double, IClock)
-  href: api/App.Metrics.Core.ApdexMetric.html#App_Metrics_Core_ApdexMetric__ctor_App_Metrics_SamplingType_System_Int32_System_Double_App_Metrics_Utils_IClock_
-  commentId: M:App.Metrics.Core.ApdexMetric.#ctor(App.Metrics.SamplingType,System.Int32,System.Double,App.Metrics.Utils.IClock)
-  fullName: App.Metrics.Core.ApdexMetric.ApdexMetric(App.Metrics.SamplingType, System.Int32, System.Double, App.Metrics.Utils.IClock)
-  nameWithType: ApdexMetric.ApdexMetric(SamplingType, Int32, Double, IClock)
-- uid: App.Metrics.Core.ApdexMetric.#ctor(App.Metrics.SamplingType,System.Int32,System.Double,App.Metrics.Utils.IClock,System.Double)
-  name: ApdexMetric(SamplingType, Int32, Double, IClock, Double)
-  href: api/App.Metrics.Core.ApdexMetric.html#App_Metrics_Core_ApdexMetric__ctor_App_Metrics_SamplingType_System_Int32_System_Double_App_Metrics_Utils_IClock_System_Double_
-  commentId: M:App.Metrics.Core.ApdexMetric.#ctor(App.Metrics.SamplingType,System.Int32,System.Double,App.Metrics.Utils.IClock,System.Double)
-  fullName: App.Metrics.Core.ApdexMetric.ApdexMetric(App.Metrics.SamplingType, System.Int32, System.Double, App.Metrics.Utils.IClock, System.Double)
-  nameWithType: ApdexMetric.ApdexMetric(SamplingType, Int32, Double, IClock, Double)
+- uid: App.Metrics.Core.ApdexMetric.#ctor(App.Metrics.Apdex.Interfaces.IApdexProvider,App.Metrics.Utils.IClock,System.Boolean)
+  name: ApdexMetric(IApdexProvider, IClock, Boolean)
+  href: api/App.Metrics.Core.ApdexMetric.html#App_Metrics_Core_ApdexMetric__ctor_App_Metrics_Apdex_Interfaces_IApdexProvider_App_Metrics_Utils_IClock_System_Boolean_
+  commentId: M:App.Metrics.Core.ApdexMetric.#ctor(App.Metrics.Apdex.Interfaces.IApdexProvider,App.Metrics.Utils.IClock,System.Boolean)
+  fullName: App.Metrics.Core.ApdexMetric.ApdexMetric(App.Metrics.Apdex.Interfaces.IApdexProvider, App.Metrics.Utils.IClock, System.Boolean)
+  nameWithType: ApdexMetric.ApdexMetric(IApdexProvider, IClock, Boolean)
+- uid: App.Metrics.Core.ApdexMetric.#ctor(App.Metrics.SamplingType,System.Int32,System.Double,App.Metrics.Utils.IClock,System.Boolean)
+  name: ApdexMetric(SamplingType, Int32, Double, IClock, Boolean)
+  href: api/App.Metrics.Core.ApdexMetric.html#App_Metrics_Core_ApdexMetric__ctor_App_Metrics_SamplingType_System_Int32_System_Double_App_Metrics_Utils_IClock_System_Boolean_
+  commentId: M:App.Metrics.Core.ApdexMetric.#ctor(App.Metrics.SamplingType,System.Int32,System.Double,App.Metrics.Utils.IClock,System.Boolean)
+  fullName: App.Metrics.Core.ApdexMetric.ApdexMetric(App.Metrics.SamplingType, System.Int32, System.Double, App.Metrics.Utils.IClock, System.Boolean)
+  nameWithType: ApdexMetric.ApdexMetric(SamplingType, Int32, Double, IClock, Boolean)
+- uid: App.Metrics.Core.ApdexMetric.#ctor(App.Metrics.SamplingType,System.Int32,System.Double,App.Metrics.Utils.IClock,System.Double,System.Boolean)
+  name: ApdexMetric(SamplingType, Int32, Double, IClock, Double, Boolean)
+  href: api/App.Metrics.Core.ApdexMetric.html#App_Metrics_Core_ApdexMetric__ctor_App_Metrics_SamplingType_System_Int32_System_Double_App_Metrics_Utils_IClock_System_Double_System_Boolean_
+  commentId: M:App.Metrics.Core.ApdexMetric.#ctor(App.Metrics.SamplingType,System.Int32,System.Double,App.Metrics.Utils.IClock,System.Double,System.Boolean)
+  fullName: App.Metrics.Core.ApdexMetric.ApdexMetric(App.Metrics.SamplingType, System.Int32, System.Double, App.Metrics.Utils.IClock, System.Double, System.Boolean)
+  nameWithType: ApdexMetric.ApdexMetric(SamplingType, Int32, Double, IClock, Double, Boolean)
 - uid: App.Metrics.Core.ApdexMetric.#ctor*
   href: api/App.Metrics.Core.ApdexMetric.html#App_Metrics_Core_ApdexMetric__ctor_
   commentId: Overload:App.Metrics.Core.ApdexMetric.#ctor
   name: ApdexMetric
-  fullName: App.Metrics.Core.ApdexMetric.ApdexMetric(App.Metrics.SamplingType, System.Int32, System.Double, App.Metrics.Utils.IClock)
+  fullName: App.Metrics.Core.ApdexMetric.ApdexMetric(App.Metrics.SamplingType, System.Int32, System.Double, App.Metrics.Utils.IClock, System.Boolean)
 - uid: App.Metrics.Core.ApdexMetric.CurrentTime
   name: CurrentTime()
   href: api/App.Metrics.Core.ApdexMetric.html#App_Metrics_Core_ApdexMetric_CurrentTime
@@ -916,28 +949,28 @@ references:
   name.vb: HealthCheck
   fullName: App.Metrics.Core.HealthCheck.HealthCheck(System.String, System.Func<System.Threading.Tasks.Task<System.String>>)
   fullName.vb: App.Metrics.Core.HealthCheck.HealthCheck
-- uid: App.Metrics.Core.HealthCheck.CheckAsync
-  name: CheckAsync()
-  href: api/App.Metrics.Core.HealthCheck.html#App_Metrics_Core_HealthCheck_CheckAsync
-  commentId: M:App.Metrics.Core.HealthCheck.CheckAsync
-  fullName: App.Metrics.Core.HealthCheck.CheckAsync()
-  nameWithType: HealthCheck.CheckAsync()
+- uid: App.Metrics.Core.HealthCheck.CheckAsync(System.Threading.CancellationToken)
+  name: CheckAsync(CancellationToken)
+  href: api/App.Metrics.Core.HealthCheck.html#App_Metrics_Core_HealthCheck_CheckAsync_System_Threading_CancellationToken_
+  commentId: M:App.Metrics.Core.HealthCheck.CheckAsync(System.Threading.CancellationToken)
+  fullName: App.Metrics.Core.HealthCheck.CheckAsync(System.Threading.CancellationToken)
+  nameWithType: HealthCheck.CheckAsync(CancellationToken)
 - uid: App.Metrics.Core.HealthCheck.CheckAsync*
   href: api/App.Metrics.Core.HealthCheck.html#App_Metrics_Core_HealthCheck_CheckAsync_
   commentId: Overload:App.Metrics.Core.HealthCheck.CheckAsync
   name: CheckAsync
-  fullName: App.Metrics.Core.HealthCheck.CheckAsync()
-- uid: App.Metrics.Core.HealthCheck.ExecuteAsync
-  name: ExecuteAsync()
-  href: api/App.Metrics.Core.HealthCheck.html#App_Metrics_Core_HealthCheck_ExecuteAsync
-  commentId: M:App.Metrics.Core.HealthCheck.ExecuteAsync
-  fullName: App.Metrics.Core.HealthCheck.ExecuteAsync()
-  nameWithType: HealthCheck.ExecuteAsync()
+  fullName: App.Metrics.Core.HealthCheck.CheckAsync(System.Threading.CancellationToken)
+- uid: App.Metrics.Core.HealthCheck.ExecuteAsync(System.Threading.CancellationToken)
+  name: ExecuteAsync(CancellationToken)
+  href: api/App.Metrics.Core.HealthCheck.html#App_Metrics_Core_HealthCheck_ExecuteAsync_System_Threading_CancellationToken_
+  commentId: M:App.Metrics.Core.HealthCheck.ExecuteAsync(System.Threading.CancellationToken)
+  fullName: App.Metrics.Core.HealthCheck.ExecuteAsync(System.Threading.CancellationToken)
+  nameWithType: HealthCheck.ExecuteAsync(CancellationToken)
 - uid: App.Metrics.Core.HealthCheck.ExecuteAsync*
   href: api/App.Metrics.Core.HealthCheck.html#App_Metrics_Core_HealthCheck_ExecuteAsync_
   commentId: Overload:App.Metrics.Core.HealthCheck.ExecuteAsync
   name: ExecuteAsync
-  fullName: App.Metrics.Core.HealthCheck.ExecuteAsync()
+  fullName: App.Metrics.Core.HealthCheck.ExecuteAsync(System.Threading.CancellationToken)
 - uid: App.Metrics.Core.HealthCheck.Name
   name: Name
   href: api/App.Metrics.Core.HealthCheck.html#App_Metrics_Core_HealthCheck_Name
@@ -1032,6 +1065,17 @@ references:
   commentId: Overload:App.Metrics.Core.HealthCheckResult.Healthy
   name: Healthy
   fullName: App.Metrics.Core.HealthCheckResult.Healthy()
+- uid: App.Metrics.Core.HealthCheckResult.Ignore
+  name: Ignore()
+  href: api/App.Metrics.Core.HealthCheckResult.html#App_Metrics_Core_HealthCheckResult_Ignore
+  commentId: M:App.Metrics.Core.HealthCheckResult.Ignore
+  fullName: App.Metrics.Core.HealthCheckResult.Ignore()
+  nameWithType: HealthCheckResult.Ignore()
+- uid: App.Metrics.Core.HealthCheckResult.Ignore*
+  href: api/App.Metrics.Core.HealthCheckResult.html#App_Metrics_Core_HealthCheckResult_Ignore_
+  commentId: Overload:App.Metrics.Core.HealthCheckResult.Ignore
+  name: Ignore
+  fullName: App.Metrics.Core.HealthCheckResult.Ignore()
 - uid: App.Metrics.Core.HealthCheckResult.Message
   name: Message
   href: api/App.Metrics.Core.HealthCheckResult.html#App_Metrics_Core_HealthCheckResult_Message
@@ -1088,6 +1132,12 @@ references:
   commentId: F:App.Metrics.Core.HealthCheckStatus.Healthy
   fullName: App.Metrics.Core.HealthCheckStatus.Healthy
   nameWithType: HealthCheckStatus.Healthy
+- uid: App.Metrics.Core.HealthCheckStatus.Ignored
+  name: Ignored
+  href: api/App.Metrics.Core.HealthCheckStatus.html#App_Metrics_Core_HealthCheckStatus_Ignored
+  commentId: F:App.Metrics.Core.HealthCheckStatus.Ignored
+  fullName: App.Metrics.Core.HealthCheckStatus.Ignored
+  nameWithType: HealthCheckStatus.Ignored
 - uid: App.Metrics.Core.HealthCheckStatus.Unhealthy
   name: Unhealthy
   href: api/App.Metrics.Core.HealthCheckStatus.html#App_Metrics_Core_HealthCheckStatus_Unhealthy
@@ -1122,6 +1172,17 @@ references:
   commentId: Overload:App.Metrics.Core.HealthCheckStatusExtensions.IsHealthy
   name: IsHealthy
   fullName: App.Metrics.Core.HealthCheckStatusExtensions.IsHealthy(App.Metrics.Core.HealthCheckStatus)
+- uid: App.Metrics.Core.HealthCheckStatusExtensions.IsIgnored(App.Metrics.Core.HealthCheckStatus)
+  name: IsIgnored(HealthCheckStatus)
+  href: api/App.Metrics.Core.HealthCheckStatusExtensions.html#App_Metrics_Core_HealthCheckStatusExtensions_IsIgnored_App_Metrics_Core_HealthCheckStatus_
+  commentId: M:App.Metrics.Core.HealthCheckStatusExtensions.IsIgnored(App.Metrics.Core.HealthCheckStatus)
+  fullName: App.Metrics.Core.HealthCheckStatusExtensions.IsIgnored(App.Metrics.Core.HealthCheckStatus)
+  nameWithType: HealthCheckStatusExtensions.IsIgnored(HealthCheckStatus)
+- uid: App.Metrics.Core.HealthCheckStatusExtensions.IsIgnored*
+  href: api/App.Metrics.Core.HealthCheckStatusExtensions.html#App_Metrics_Core_HealthCheckStatusExtensions_IsIgnored_
+  commentId: Overload:App.Metrics.Core.HealthCheckStatusExtensions.IsIgnored
+  name: IsIgnored
+  fullName: App.Metrics.Core.HealthCheckStatusExtensions.IsIgnored(App.Metrics.Core.HealthCheckStatus)
 - uid: App.Metrics.Core.HealthCheckStatusExtensions.IsUnhealthy(App.Metrics.Core.HealthCheckStatus)
   name: IsUnhealthy(HealthCheckStatus)
   href: api/App.Metrics.Core.HealthCheckStatusExtensions.html#App_Metrics_Core_HealthCheckStatusExtensions_IsUnhealthy_App_Metrics_Core_HealthCheckStatus_
@@ -1273,6 +1334,47 @@ references:
   commentId: Overload:App.Metrics.Core.HistogramMetric.Value
   name: Value
   fullName: App.Metrics.Core.HistogramMetric.Value
+- uid: App.Metrics.Core.HitPercentageGauge
+  name: HitPercentageGauge
+  href: api/App.Metrics.Core.HitPercentageGauge.html#App_Metrics_Core_HitPercentageGauge
+  commentId: T:App.Metrics.Core.HitPercentageGauge
+  fullName: App.Metrics.Core.HitPercentageGauge
+  nameWithType: HitPercentageGauge
+- uid: App.Metrics.Core.HitPercentageGauge.#ctor(App.Metrics.IMeter,App.Metrics.IMeter)
+  name: HitPercentageGauge(IMeter, IMeter)
+  href: api/App.Metrics.Core.HitPercentageGauge.html#App_Metrics_Core_HitPercentageGauge__ctor_App_Metrics_IMeter_App_Metrics_IMeter_
+  commentId: M:App.Metrics.Core.HitPercentageGauge.#ctor(App.Metrics.IMeter,App.Metrics.IMeter)
+  fullName: App.Metrics.Core.HitPercentageGauge.HitPercentageGauge(App.Metrics.IMeter, App.Metrics.IMeter)
+  nameWithType: HitPercentageGauge.HitPercentageGauge(IMeter, IMeter)
+- uid: App.Metrics.Core.HitPercentageGauge.#ctor(App.Metrics.IMeter,App.Metrics.IMeter,System.Func{App.Metrics.Data.MeterValue,System.Double})
+  name: HitPercentageGauge(IMeter, IMeter, Func<MeterValue, Double>)
+  href: api/App.Metrics.Core.HitPercentageGauge.html#App_Metrics_Core_HitPercentageGauge__ctor_App_Metrics_IMeter_App_Metrics_IMeter_System_Func_App_Metrics_Data_MeterValue_System_Double__
+  commentId: M:App.Metrics.Core.HitPercentageGauge.#ctor(App.Metrics.IMeter,App.Metrics.IMeter,System.Func{App.Metrics.Data.MeterValue,System.Double})
+  name.vb: HitPercentageGauge(IMeter, IMeter, Func(Of MeterValue, Double))
+  fullName: App.Metrics.Core.HitPercentageGauge.HitPercentageGauge(App.Metrics.IMeter, App.Metrics.IMeter, System.Func<App.Metrics.Data.MeterValue, System.Double>)
+  fullName.vb: App.Metrics.Core.HitPercentageGauge.HitPercentageGauge(App.Metrics.IMeter, App.Metrics.IMeter, System.Func(Of App.Metrics.Data.MeterValue, System.Double))
+  nameWithType: HitPercentageGauge.HitPercentageGauge(IMeter, IMeter, Func<MeterValue, Double>)
+  nameWithType.vb: HitPercentageGauge(IMeter, IMeter, Func(Of MeterValue, Double))
+- uid: App.Metrics.Core.HitPercentageGauge.#ctor(App.Metrics.IMeter,App.Metrics.ITimer)
+  name: HitPercentageGauge(IMeter, ITimer)
+  href: api/App.Metrics.Core.HitPercentageGauge.html#App_Metrics_Core_HitPercentageGauge__ctor_App_Metrics_IMeter_App_Metrics_ITimer_
+  commentId: M:App.Metrics.Core.HitPercentageGauge.#ctor(App.Metrics.IMeter,App.Metrics.ITimer)
+  fullName: App.Metrics.Core.HitPercentageGauge.HitPercentageGauge(App.Metrics.IMeter, App.Metrics.ITimer)
+  nameWithType: HitPercentageGauge.HitPercentageGauge(IMeter, ITimer)
+- uid: App.Metrics.Core.HitPercentageGauge.#ctor(App.Metrics.IMeter,App.Metrics.ITimer,System.Func{App.Metrics.Data.MeterValue,System.Double})
+  name: HitPercentageGauge(IMeter, ITimer, Func<MeterValue, Double>)
+  href: api/App.Metrics.Core.HitPercentageGauge.html#App_Metrics_Core_HitPercentageGauge__ctor_App_Metrics_IMeter_App_Metrics_ITimer_System_Func_App_Metrics_Data_MeterValue_System_Double__
+  commentId: M:App.Metrics.Core.HitPercentageGauge.#ctor(App.Metrics.IMeter,App.Metrics.ITimer,System.Func{App.Metrics.Data.MeterValue,System.Double})
+  name.vb: HitPercentageGauge(IMeter, ITimer, Func(Of MeterValue, Double))
+  fullName: App.Metrics.Core.HitPercentageGauge.HitPercentageGauge(App.Metrics.IMeter, App.Metrics.ITimer, System.Func<App.Metrics.Data.MeterValue, System.Double>)
+  fullName.vb: App.Metrics.Core.HitPercentageGauge.HitPercentageGauge(App.Metrics.IMeter, App.Metrics.ITimer, System.Func(Of App.Metrics.Data.MeterValue, System.Double))
+  nameWithType: HitPercentageGauge.HitPercentageGauge(IMeter, ITimer, Func<MeterValue, Double>)
+  nameWithType.vb: HitPercentageGauge(IMeter, ITimer, Func(Of MeterValue, Double))
+- uid: App.Metrics.Core.HitPercentageGauge.#ctor*
+  href: api/App.Metrics.Core.HitPercentageGauge.html#App_Metrics_Core_HitPercentageGauge__ctor_
+  commentId: Overload:App.Metrics.Core.HitPercentageGauge.#ctor
+  name: HitPercentageGauge
+  fullName: App.Metrics.Core.HitPercentageGauge.HitPercentageGauge(App.Metrics.IMeter, App.Metrics.IMeter)
 - uid: App.Metrics.Core.HitRatioGauge
   name: HitRatioGauge
   href: api/App.Metrics.Core.HitRatioGauge.html#App_Metrics_Core_HitRatioGauge
@@ -1634,17 +1736,17 @@ references:
   commentId: T:App.Metrics.Core.Interfaces.IHealthStatusProvider
   fullName: App.Metrics.Core.Interfaces.IHealthStatusProvider
   nameWithType: IHealthStatusProvider
-- uid: App.Metrics.Core.Interfaces.IHealthStatusProvider.ReadStatusAsync
-  name: ReadStatusAsync()
-  href: api/App.Metrics.Core.Interfaces.IHealthStatusProvider.html#App_Metrics_Core_Interfaces_IHealthStatusProvider_ReadStatusAsync
-  commentId: M:App.Metrics.Core.Interfaces.IHealthStatusProvider.ReadStatusAsync
-  fullName: App.Metrics.Core.Interfaces.IHealthStatusProvider.ReadStatusAsync()
-  nameWithType: IHealthStatusProvider.ReadStatusAsync()
+- uid: App.Metrics.Core.Interfaces.IHealthStatusProvider.ReadStatusAsync(System.Threading.CancellationToken)
+  name: ReadStatusAsync(CancellationToken)
+  href: api/App.Metrics.Core.Interfaces.IHealthStatusProvider.html#App_Metrics_Core_Interfaces_IHealthStatusProvider_ReadStatusAsync_System_Threading_CancellationToken_
+  commentId: M:App.Metrics.Core.Interfaces.IHealthStatusProvider.ReadStatusAsync(System.Threading.CancellationToken)
+  fullName: App.Metrics.Core.Interfaces.IHealthStatusProvider.ReadStatusAsync(System.Threading.CancellationToken)
+  nameWithType: IHealthStatusProvider.ReadStatusAsync(CancellationToken)
 - uid: App.Metrics.Core.Interfaces.IHealthStatusProvider.ReadStatusAsync*
   href: api/App.Metrics.Core.Interfaces.IHealthStatusProvider.html#App_Metrics_Core_Interfaces_IHealthStatusProvider_ReadStatusAsync_
   commentId: Overload:App.Metrics.Core.Interfaces.IHealthStatusProvider.ReadStatusAsync
   name: ReadStatusAsync
-  fullName: App.Metrics.Core.Interfaces.IHealthStatusProvider.ReadStatusAsync()
+  fullName: App.Metrics.Core.Interfaces.IHealthStatusProvider.ReadStatusAsync(System.Threading.CancellationToken)
 - uid: App.Metrics.Core.Interfaces.IHistogramMetric
   name: IHistogramMetric
   href: api/App.Metrics.Core.Interfaces.IHistogramMetric.html#App_Metrics_Core_Interfaces_IHistogramMetric
@@ -1663,34 +1765,34 @@ references:
   commentId: T:App.Metrics.Core.Interfaces.IMetricsDataProvider
   fullName: App.Metrics.Core.Interfaces.IMetricsDataProvider
   nameWithType: IMetricsDataProvider
-- uid: App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadContextAsync(System.String)
-  name: ReadContextAsync(String)
-  href: api/App.Metrics.Core.Interfaces.IMetricsDataProvider.html#App_Metrics_Core_Interfaces_IMetricsDataProvider_ReadContextAsync_System_String_
-  commentId: M:App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadContextAsync(System.String)
-  fullName: App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadContextAsync(System.String)
-  nameWithType: IMetricsDataProvider.ReadContextAsync(String)
-- uid: App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadContextAsync*
-  href: api/App.Metrics.Core.Interfaces.IMetricsDataProvider.html#App_Metrics_Core_Interfaces_IMetricsDataProvider_ReadContextAsync_
-  commentId: Overload:App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadContextAsync
-  name: ReadContextAsync
-  fullName: App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadContextAsync(System.String)
-- uid: App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadDataAsync
-  name: ReadDataAsync()
-  href: api/App.Metrics.Core.Interfaces.IMetricsDataProvider.html#App_Metrics_Core_Interfaces_IMetricsDataProvider_ReadDataAsync
-  commentId: M:App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadDataAsync
-  fullName: App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadDataAsync()
-  nameWithType: IMetricsDataProvider.ReadDataAsync()
-- uid: App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadDataAsync(App.Metrics.IMetricsFilter)
-  name: ReadDataAsync(IMetricsFilter)
-  href: api/App.Metrics.Core.Interfaces.IMetricsDataProvider.html#App_Metrics_Core_Interfaces_IMetricsDataProvider_ReadDataAsync_App_Metrics_IMetricsFilter_
-  commentId: M:App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadDataAsync(App.Metrics.IMetricsFilter)
-  fullName: App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadDataAsync(App.Metrics.IMetricsFilter)
-  nameWithType: IMetricsDataProvider.ReadDataAsync(IMetricsFilter)
-- uid: App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadDataAsync*
-  href: api/App.Metrics.Core.Interfaces.IMetricsDataProvider.html#App_Metrics_Core_Interfaces_IMetricsDataProvider_ReadDataAsync_
-  commentId: Overload:App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadDataAsync
-  name: ReadDataAsync
-  fullName: App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadDataAsync()
+- uid: App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadContext(System.String)
+  name: ReadContext(String)
+  href: api/App.Metrics.Core.Interfaces.IMetricsDataProvider.html#App_Metrics_Core_Interfaces_IMetricsDataProvider_ReadContext_System_String_
+  commentId: M:App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadContext(System.String)
+  fullName: App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadContext(System.String)
+  nameWithType: IMetricsDataProvider.ReadContext(String)
+- uid: App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadContext*
+  href: api/App.Metrics.Core.Interfaces.IMetricsDataProvider.html#App_Metrics_Core_Interfaces_IMetricsDataProvider_ReadContext_
+  commentId: Overload:App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadContext
+  name: ReadContext
+  fullName: App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadContext(System.String)
+- uid: App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadData
+  name: ReadData()
+  href: api/App.Metrics.Core.Interfaces.IMetricsDataProvider.html#App_Metrics_Core_Interfaces_IMetricsDataProvider_ReadData
+  commentId: M:App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadData
+  fullName: App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadData()
+  nameWithType: IMetricsDataProvider.ReadData()
+- uid: App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadData(App.Metrics.IMetricsFilter)
+  name: ReadData(IMetricsFilter)
+  href: api/App.Metrics.Core.Interfaces.IMetricsDataProvider.html#App_Metrics_Core_Interfaces_IMetricsDataProvider_ReadData_App_Metrics_IMetricsFilter_
+  commentId: M:App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadData(App.Metrics.IMetricsFilter)
+  fullName: App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadData(App.Metrics.IMetricsFilter)
+  nameWithType: IMetricsDataProvider.ReadData(IMetricsFilter)
+- uid: App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadData*
+  href: api/App.Metrics.Core.Interfaces.IMetricsDataProvider.html#App_Metrics_Core_Interfaces_IMetricsDataProvider_ReadData_
+  commentId: Overload:App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadData
+  name: ReadData
+  fullName: App.Metrics.Core.Interfaces.IMetricsDataProvider.ReadData()
 - uid: App.Metrics.Core.Interfaces.IMetricsDataProvider.Reset
   name: Reset()
   href: api/App.Metrics.Core.Interfaces.IMetricsDataProvider.html#App_Metrics_Core_Interfaces_IMetricsDataProvider_Reset
@@ -1861,6 +1963,17 @@ references:
   commentId: Overload:App.Metrics.Core.Options.ApdexOptions.#ctor
   name: ApdexOptions
   fullName: App.Metrics.Core.Options.ApdexOptions.ApdexOptions()
+- uid: App.Metrics.Core.Options.ApdexOptions.AllowWarmup
+  name: AllowWarmup
+  href: api/App.Metrics.Core.Options.ApdexOptions.html#App_Metrics_Core_Options_ApdexOptions_AllowWarmup
+  commentId: P:App.Metrics.Core.Options.ApdexOptions.AllowWarmup
+  fullName: App.Metrics.Core.Options.ApdexOptions.AllowWarmup
+  nameWithType: ApdexOptions.AllowWarmup
+- uid: App.Metrics.Core.Options.ApdexOptions.AllowWarmup*
+  href: api/App.Metrics.Core.Options.ApdexOptions.html#App_Metrics_Core_Options_ApdexOptions_AllowWarmup_
+  commentId: Overload:App.Metrics.Core.Options.ApdexOptions.AllowWarmup
+  name: AllowWarmup
+  fullName: App.Metrics.Core.Options.ApdexOptions.AllowWarmup
 - uid: App.Metrics.Core.Options.ApdexOptions.ApdexTSeconds
   name: ApdexTSeconds
   href: api/App.Metrics.Core.Options.ApdexOptions.html#App_Metrics_Core_Options_ApdexOptions_ApdexTSeconds
@@ -2134,6 +2247,28 @@ references:
   commentId: Overload:App.Metrics.Core.Options.TimerOptions.RateUnit
   name: RateUnit
   fullName: App.Metrics.Core.Options.TimerOptions.RateUnit
+- uid: App.Metrics.Core.PercentageGauge
+  name: PercentageGauge
+  href: api/App.Metrics.Core.PercentageGauge.html#App_Metrics_Core_PercentageGauge
+  commentId: T:App.Metrics.Core.PercentageGauge
+  fullName: App.Metrics.Core.PercentageGauge
+  nameWithType: PercentageGauge
+- uid: App.Metrics.Core.PercentageGauge.#ctor(System.Func{System.Double},System.Func{System.Double})
+  name: PercentageGauge(Func<Double>, Func<Double>)
+  href: api/App.Metrics.Core.PercentageGauge.html#App_Metrics_Core_PercentageGauge__ctor_System_Func_System_Double__System_Func_System_Double__
+  commentId: M:App.Metrics.Core.PercentageGauge.#ctor(System.Func{System.Double},System.Func{System.Double})
+  name.vb: PercentageGauge(Func(Of Double), Func(Of Double))
+  fullName: App.Metrics.Core.PercentageGauge.PercentageGauge(System.Func<System.Double>, System.Func<System.Double>)
+  fullName.vb: App.Metrics.Core.PercentageGauge.PercentageGauge(System.Func(Of System.Double), System.Func(Of System.Double))
+  nameWithType: PercentageGauge.PercentageGauge(Func<Double>, Func<Double>)
+  nameWithType.vb: PercentageGauge(Func(Of Double), Func(Of Double))
+- uid: App.Metrics.Core.PercentageGauge.#ctor*
+  href: api/App.Metrics.Core.PercentageGauge.html#App_Metrics_Core_PercentageGauge__ctor_
+  commentId: Overload:App.Metrics.Core.PercentageGauge.#ctor
+  name: PercentageGauge
+  name.vb: PercentageGauge
+  fullName: App.Metrics.Core.PercentageGauge.PercentageGauge(System.Func<System.Double>, System.Func<System.Double>)
+  fullName.vb: App.Metrics.Core.PercentageGauge.PercentageGauge
 - uid: App.Metrics.Core.RatioGauge
   name: RatioGauge
   href: api/App.Metrics.Core.RatioGauge.html#App_Metrics_Core_RatioGauge
@@ -2462,17 +2597,17 @@ references:
   commentId: T:App.Metrics.Data.ApdexValue
   fullName: App.Metrics.Data.ApdexValue
   nameWithType: ApdexValue
-- uid: App.Metrics.Data.ApdexValue.#ctor(System.Double,System.Int32,System.Int32,System.Int32,System.Int32)
-  name: ApdexValue(Double, Int32, Int32, Int32, Int32)
-  href: api/App.Metrics.Data.ApdexValue.html#App_Metrics_Data_ApdexValue__ctor_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_
-  commentId: M:App.Metrics.Data.ApdexValue.#ctor(System.Double,System.Int32,System.Int32,System.Int32,System.Int32)
-  fullName: App.Metrics.Data.ApdexValue.ApdexValue(System.Double, System.Int32, System.Int32, System.Int32, System.Int32)
-  nameWithType: ApdexValue.ApdexValue(Double, Int32, Int32, Int32, Int32)
+- uid: App.Metrics.Data.ApdexValue.#ctor(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)
+  name: ApdexValue(Double, Int32, Int32, Int32, Int32, Boolean)
+  href: api/App.Metrics.Data.ApdexValue.html#App_Metrics_Data_ApdexValue__ctor_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_
+  commentId: M:App.Metrics.Data.ApdexValue.#ctor(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)
+  fullName: App.Metrics.Data.ApdexValue.ApdexValue(System.Double, System.Int32, System.Int32, System.Int32, System.Int32, System.Boolean)
+  nameWithType: ApdexValue.ApdexValue(Double, Int32, Int32, Int32, Int32, Boolean)
 - uid: App.Metrics.Data.ApdexValue.#ctor*
   href: api/App.Metrics.Data.ApdexValue.html#App_Metrics_Data_ApdexValue__ctor_
   commentId: Overload:App.Metrics.Data.ApdexValue.#ctor
   name: ApdexValue
-  fullName: App.Metrics.Data.ApdexValue.ApdexValue(System.Double, System.Int32, System.Int32, System.Int32, System.Int32)
+  fullName: App.Metrics.Data.ApdexValue.ApdexValue(System.Double, System.Int32, System.Int32, System.Int32, System.Int32, System.Boolean)
 - uid: App.Metrics.Data.ApdexValue.Frustrating
   name: Frustrating
   href: api/App.Metrics.Data.ApdexValue.html#App_Metrics_Data_ApdexValue_Frustrating
@@ -2814,12 +2949,12 @@ references:
   fullName.vb: App.Metrics.Data.EnvironmentInfo.EnvironmentInfo(System.Collections.Generic.IDictionary(Of System.String, System.String))
   nameWithType: EnvironmentInfo.EnvironmentInfo(IDictionary<String, String>)
   nameWithType.vb: EnvironmentInfo(IDictionary(Of String, String))
-- uid: App.Metrics.Data.EnvironmentInfo.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)
-  name: EnvironmentInfo(String, String, String, String, String, String, String, String, String, String)
-  href: api/App.Metrics.Data.EnvironmentInfo.html#App_Metrics_Data_EnvironmentInfo__ctor_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_
-  commentId: M:App.Metrics.Data.EnvironmentInfo.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)
-  fullName: App.Metrics.Data.EnvironmentInfo.EnvironmentInfo(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String)
-  nameWithType: EnvironmentInfo.EnvironmentInfo(String, String, String, String, String, String, String, String, String, String)
+- uid: App.Metrics.Data.EnvironmentInfo.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)
+  name: EnvironmentInfo(String, String, String, String, String, String, String, String, String)
+  href: api/App.Metrics.Data.EnvironmentInfo.html#App_Metrics_Data_EnvironmentInfo__ctor_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_
+  commentId: M:App.Metrics.Data.EnvironmentInfo.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)
+  fullName: App.Metrics.Data.EnvironmentInfo.EnvironmentInfo(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String)
+  nameWithType: EnvironmentInfo.EnvironmentInfo(String, String, String, String, String, String, String, String, String)
 - uid: App.Metrics.Data.EnvironmentInfo.#ctor*
   href: api/App.Metrics.Data.EnvironmentInfo.html#App_Metrics_Data_EnvironmentInfo__ctor_
   commentId: Overload:App.Metrics.Data.EnvironmentInfo.#ctor
@@ -2882,17 +3017,6 @@ references:
   commentId: Overload:App.Metrics.Data.EnvironmentInfo.HostName
   name: HostName
   fullName: App.Metrics.Data.EnvironmentInfo.HostName
-- uid: App.Metrics.Data.EnvironmentInfo.IpAddress
-  name: IpAddress
-  href: api/App.Metrics.Data.EnvironmentInfo.html#App_Metrics_Data_EnvironmentInfo_IpAddress
-  commentId: P:App.Metrics.Data.EnvironmentInfo.IpAddress
-  fullName: App.Metrics.Data.EnvironmentInfo.IpAddress
-  nameWithType: EnvironmentInfo.IpAddress
-- uid: App.Metrics.Data.EnvironmentInfo.IpAddress*
-  href: api/App.Metrics.Data.EnvironmentInfo.html#App_Metrics_Data_EnvironmentInfo_IpAddress_
-  commentId: Overload:App.Metrics.Data.EnvironmentInfo.IpAddress
-  name: IpAddress
-  fullName: App.Metrics.Data.EnvironmentInfo.IpAddress
 - uid: App.Metrics.Data.EnvironmentInfo.LocalTimeString
   name: LocalTimeString
   href: api/App.Metrics.Data.EnvironmentInfo.html#App_Metrics_Data_EnvironmentInfo_LocalTimeString
@@ -3856,6 +3980,12 @@ references:
   commentId: T:App.Metrics.Data.ValueReader
   fullName: App.Metrics.Data.ValueReader
   nameWithType: ValueReader
+- uid: App.Metrics.Data.ValueReader.GetCurrentValue(App.Metrics.Core.Interfaces.IApdex)
+  name: GetCurrentValue(IApdex)
+  href: api/App.Metrics.Data.ValueReader.html#App_Metrics_Data_ValueReader_GetCurrentValue_App_Metrics_Core_Interfaces_IApdex_
+  commentId: M:App.Metrics.Data.ValueReader.GetCurrentValue(App.Metrics.Core.Interfaces.IApdex)
+  fullName: App.Metrics.Data.ValueReader.GetCurrentValue(App.Metrics.Core.Interfaces.IApdex)
+  nameWithType: ValueReader.GetCurrentValue(IApdex)
 - uid: App.Metrics.Data.ValueReader.GetCurrentValue(App.Metrics.ICounter)
   name: GetCurrentValue(ICounter)
   href: api/App.Metrics.Data.ValueReader.html#App_Metrics_Data_ValueReader_GetCurrentValue_App_Metrics_ICounter_
@@ -4568,74 +4698,6 @@ references:
   commentId: Overload:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.PingEndpointEnabled
   name: PingEndpointEnabled
   fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.PingEndpointEnabled
-- uid: App.Metrics.Extensions.Middleware.Infrastructure
-  name: App.Metrics.Extensions.Middleware.Infrastructure
-  href: api/App.Metrics.Extensions.Middleware.Infrastructure.html#App_Metrics_Extensions_Middleware_Infrastructure
-  commentId: N:App.Metrics.Extensions.Middleware.Infrastructure
-  fullName: App.Metrics.Extensions.Middleware.Infrastructure
-  nameWithType: App.Metrics.Extensions.Middleware.Infrastructure
-- uid: App.Metrics.Extensions.Middleware.Infrastructure.DefaultRouteTemplateResolver
-  name: DefaultRouteTemplateResolver
-  href: api/App.Metrics.Extensions.Middleware.Infrastructure.DefaultRouteTemplateResolver.html#App_Metrics_Extensions_Middleware_Infrastructure_DefaultRouteTemplateResolver
-  commentId: T:App.Metrics.Extensions.Middleware.Infrastructure.DefaultRouteTemplateResolver
-  fullName: App.Metrics.Extensions.Middleware.Infrastructure.DefaultRouteTemplateResolver
-  nameWithType: DefaultRouteTemplateResolver
-- uid: App.Metrics.Extensions.Middleware.Infrastructure.DefaultRouteTemplateResolver.ResolveMatchingTemplateRoute(Microsoft.AspNetCore.Routing.RouteData)
-  name: ResolveMatchingTemplateRoute(RouteData)
-  href: api/App.Metrics.Extensions.Middleware.Infrastructure.DefaultRouteTemplateResolver.html#App_Metrics_Extensions_Middleware_Infrastructure_DefaultRouteTemplateResolver_ResolveMatchingTemplateRoute_Microsoft_AspNetCore_Routing_RouteData_
-  commentId: M:App.Metrics.Extensions.Middleware.Infrastructure.DefaultRouteTemplateResolver.ResolveMatchingTemplateRoute(Microsoft.AspNetCore.Routing.RouteData)
-  fullName: App.Metrics.Extensions.Middleware.Infrastructure.DefaultRouteTemplateResolver.ResolveMatchingTemplateRoute(Microsoft.AspNetCore.Routing.RouteData)
-  nameWithType: DefaultRouteTemplateResolver.ResolveMatchingTemplateRoute(RouteData)
-- uid: App.Metrics.Extensions.Middleware.Infrastructure.DefaultRouteTemplateResolver.ResolveMatchingTemplateRoute*
-  href: api/App.Metrics.Extensions.Middleware.Infrastructure.DefaultRouteTemplateResolver.html#App_Metrics_Extensions_Middleware_Infrastructure_DefaultRouteTemplateResolver_ResolveMatchingTemplateRoute_
-  commentId: Overload:App.Metrics.Extensions.Middleware.Infrastructure.DefaultRouteTemplateResolver.ResolveMatchingTemplateRoute
-  name: ResolveMatchingTemplateRoute
-  fullName: App.Metrics.Extensions.Middleware.Infrastructure.DefaultRouteTemplateResolver.ResolveMatchingTemplateRoute(Microsoft.AspNetCore.Routing.RouteData)
-- uid: App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver
-  name: IRouteNameResolver
-  href: api/App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver.html#App_Metrics_Extensions_Middleware_Infrastructure_IRouteNameResolver
-  commentId: T:App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver
-  fullName: App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver
-  nameWithType: IRouteNameResolver
-- uid: App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver.ResolveMatchingTemplateRoute(Microsoft.AspNetCore.Routing.RouteData)
-  name: ResolveMatchingTemplateRoute(RouteData)
-  href: api/App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver.html#App_Metrics_Extensions_Middleware_Infrastructure_IRouteNameResolver_ResolveMatchingTemplateRoute_Microsoft_AspNetCore_Routing_RouteData_
-  commentId: M:App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver.ResolveMatchingTemplateRoute(Microsoft.AspNetCore.Routing.RouteData)
-  fullName: App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver.ResolveMatchingTemplateRoute(Microsoft.AspNetCore.Routing.RouteData)
-  nameWithType: IRouteNameResolver.ResolveMatchingTemplateRoute(RouteData)
-- uid: App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver.ResolveMatchingTemplateRoute*
-  href: api/App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver.html#App_Metrics_Extensions_Middleware_Infrastructure_IRouteNameResolver_ResolveMatchingTemplateRoute_
-  commentId: Overload:App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver.ResolveMatchingTemplateRoute
-  name: ResolveMatchingTemplateRoute
-  fullName: App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver.ResolveMatchingTemplateRoute(Microsoft.AspNetCore.Routing.RouteData)
-- uid: App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter
-  name: MetricsResourceFilter
-  href: api/App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.html#App_Metrics_Extensions_Middleware_Infrastructure_MetricsResourceFilter
-  commentId: T:App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter
-  fullName: App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter
-  nameWithType: MetricsResourceFilter
-- uid: App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.#ctor(App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver)
-  name: MetricsResourceFilter(IRouteNameResolver)
-  href: api/App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.html#App_Metrics_Extensions_Middleware_Infrastructure_MetricsResourceFilter__ctor_App_Metrics_Extensions_Middleware_Infrastructure_IRouteNameResolver_
-  commentId: M:App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.#ctor(App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver)
-  fullName: App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.MetricsResourceFilter(App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver)
-  nameWithType: MetricsResourceFilter.MetricsResourceFilter(IRouteNameResolver)
-- uid: App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.#ctor*
-  href: api/App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.html#App_Metrics_Extensions_Middleware_Infrastructure_MetricsResourceFilter__ctor_
-  commentId: Overload:App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.#ctor
-  name: MetricsResourceFilter
-  fullName: App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.MetricsResourceFilter(App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver)
-- uid: App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.OnResourceExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ResourceExecutingContext,Microsoft.AspNetCore.Mvc.Filters.ResourceExecutionDelegate)
-  name: OnResourceExecutionAsync(ResourceExecutingContext, ResourceExecutionDelegate)
-  href: api/App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.html#App_Metrics_Extensions_Middleware_Infrastructure_MetricsResourceFilter_OnResourceExecutionAsync_Microsoft_AspNetCore_Mvc_Filters_ResourceExecutingContext_Microsoft_AspNetCore_Mvc_Filters_ResourceExecutionDelegate_
-  commentId: M:App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.OnResourceExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ResourceExecutingContext,Microsoft.AspNetCore.Mvc.Filters.ResourceExecutionDelegate)
-  fullName: App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.OnResourceExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ResourceExecutingContext, Microsoft.AspNetCore.Mvc.Filters.ResourceExecutionDelegate)
-  nameWithType: MetricsResourceFilter.OnResourceExecutionAsync(ResourceExecutingContext, ResourceExecutionDelegate)
-- uid: App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.OnResourceExecutionAsync*
-  href: api/App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.html#App_Metrics_Extensions_Middleware_Infrastructure_MetricsResourceFilter_OnResourceExecutionAsync_
-  commentId: Overload:App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.OnResourceExecutionAsync
-  name: OnResourceExecutionAsync
-  fullName: App.Metrics.Extensions.Middleware.Infrastructure.MetricsResourceFilter.OnResourceExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ResourceExecutingContext, Microsoft.AspNetCore.Mvc.Filters.ResourceExecutionDelegate)
 - uid: App.Metrics.Extensions.Middleware.Middleware
   name: App.Metrics.Extensions.Middleware.Middleware
   href: api/App.Metrics.Extensions.Middleware.Middleware.html#App_Metrics_Extensions_Middleware_Middleware
@@ -5090,6 +5152,17 @@ references:
   commentId: Overload:App.Metrics.Extensions.Reporting.Console.ConsoleReporter.Dispose
   name: Dispose
   fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.Dispose()
+- uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.EndAndFlushReportRunAsync(App.Metrics.IMetrics)
+  name: EndAndFlushReportRunAsync(IMetrics)
+  href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporter.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporter_EndAndFlushReportRunAsync_App_Metrics_IMetrics_
+  commentId: M:App.Metrics.Extensions.Reporting.Console.ConsoleReporter.EndAndFlushReportRunAsync(App.Metrics.IMetrics)
+  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.EndAndFlushReportRunAsync(App.Metrics.IMetrics)
+  nameWithType: ConsoleReporter.EndAndFlushReportRunAsync(IMetrics)
+- uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.EndAndFlushReportRunAsync*
+  href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporter.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporter_EndAndFlushReportRunAsync_
+  commentId: Overload:App.Metrics.Extensions.Reporting.Console.ConsoleReporter.EndAndFlushReportRunAsync
+  name: EndAndFlushReportRunAsync
+  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.EndAndFlushReportRunAsync(App.Metrics.IMetrics)
 - uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.EndMetricTypeReport(System.Type)
   name: EndMetricTypeReport(Type)
   href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporter.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporter_EndMetricTypeReport_System_Type_
@@ -5101,17 +5174,6 @@ references:
   commentId: Overload:App.Metrics.Extensions.Reporting.Console.ConsoleReporter.EndMetricTypeReport
   name: EndMetricTypeReport
   fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.EndMetricTypeReport(System.Type)
-- uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.EndReport(App.Metrics.IMetrics)
-  name: EndReport(IMetrics)
-  href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporter.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporter_EndReport_App_Metrics_IMetrics_
-  commentId: M:App.Metrics.Extensions.Reporting.Console.ConsoleReporter.EndReport(App.Metrics.IMetrics)
-  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.EndReport(App.Metrics.IMetrics)
-  nameWithType: ConsoleReporter.EndReport(IMetrics)
-- uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.EndReport*
-  href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporter.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporter_EndReport_
-  commentId: Overload:App.Metrics.Extensions.Reporting.Console.ConsoleReporter.EndReport
-  name: EndReport
-  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.EndReport(App.Metrics.IMetrics)
 - uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.Name
   name: Name
   href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporter.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporter_Name
@@ -5188,17 +5250,17 @@ references:
   commentId: Overload:App.Metrics.Extensions.Reporting.Console.ConsoleReporter.StartMetricTypeReport
   name: StartMetricTypeReport
   fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.StartMetricTypeReport(System.Type)
-- uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.StartReport(App.Metrics.IMetrics)
-  name: StartReport(IMetrics)
-  href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporter.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporter_StartReport_App_Metrics_IMetrics_
-  commentId: M:App.Metrics.Extensions.Reporting.Console.ConsoleReporter.StartReport(App.Metrics.IMetrics)
-  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.StartReport(App.Metrics.IMetrics)
-  nameWithType: ConsoleReporter.StartReport(IMetrics)
-- uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.StartReport*
-  href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporter.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporter_StartReport_
-  commentId: Overload:App.Metrics.Extensions.Reporting.Console.ConsoleReporter.StartReport
-  name: StartReport
-  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.StartReport(App.Metrics.IMetrics)
+- uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.StartReportRun(App.Metrics.IMetrics)
+  name: StartReportRun(IMetrics)
+  href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporter.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporter_StartReportRun_App_Metrics_IMetrics_
+  commentId: M:App.Metrics.Extensions.Reporting.Console.ConsoleReporter.StartReportRun(App.Metrics.IMetrics)
+  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.StartReportRun(App.Metrics.IMetrics)
+  nameWithType: ConsoleReporter.StartReportRun(IMetrics)
+- uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.StartReportRun*
+  href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporter.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporter_StartReportRun_
+  commentId: Overload:App.Metrics.Extensions.Reporting.Console.ConsoleReporter.StartReportRun
+  name: StartReportRun
+  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.StartReportRun(App.Metrics.IMetrics)
 - uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.WriteLine(System.String)
   name: WriteLine(String)
   href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporter.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporter_WriteLine_System_String_
@@ -5261,17 +5323,6 @@ references:
   commentId: Overload:App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.CreateMetricReporter
   name: CreateMetricReporter
   fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.CreateMetricReporter(System.String, Microsoft.Extensions.Logging.ILoggerFactory)
-- uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.Dispose
-  name: Dispose()
-  href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporterProvider_Dispose
-  commentId: M:App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.Dispose
-  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.Dispose()
-  nameWithType: ConsoleReporterProvider.Dispose()
-- uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.Dispose*
-  href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporterProvider_Dispose_
-  commentId: Overload:App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.Dispose
-  name: Dispose
-  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.Dispose()
 - uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.Filter
   name: Filter
   href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporterProvider_Filter
@@ -5335,17 +5386,17 @@ references:
   commentId: T:App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolClient
   fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolClient
   nameWithType: LineProtocolClient
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolClient.#ctor(System.Uri,System.String,Microsoft.Extensions.Logging.ILoggerFactory,System.String,System.String,System.String,System.String,System.String)
-  name: LineProtocolClient(Uri, String, ILoggerFactory, String, String, String, String, String)
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolClient.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolClient__ctor_System_Uri_System_String_Microsoft_Extensions_Logging_ILoggerFactory_System_String_System_String_System_String_System_String_System_String_
-  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolClient.#ctor(System.Uri,System.String,Microsoft.Extensions.Logging.ILoggerFactory,System.String,System.String,System.String,System.String,System.String)
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolClient.LineProtocolClient(System.Uri, System.String, Microsoft.Extensions.Logging.ILoggerFactory, System.String, System.String, System.String, System.String, System.String)
-  nameWithType: LineProtocolClient.LineProtocolClient(Uri, String, ILoggerFactory, String, String, String, String, String)
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolClient.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,System.Uri,System.String,System.String,System.String,System.String,System.String,System.String)
+  name: LineProtocolClient(ILoggerFactory, Uri, String, String, String, String, String, String)
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolClient.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolClient__ctor_Microsoft_Extensions_Logging_ILoggerFactory_System_Uri_System_String_System_String_System_String_System_String_System_String_System_String_
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolClient.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,System.Uri,System.String,System.String,System.String,System.String,System.String,System.String)
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolClient.LineProtocolClient(Microsoft.Extensions.Logging.ILoggerFactory, System.Uri, System.String, System.String, System.String, System.String, System.String, System.String)
+  nameWithType: LineProtocolClient.LineProtocolClient(ILoggerFactory, Uri, String, String, String, String, String, String)
 - uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolClient.#ctor*
   href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolClient.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolClient__ctor_
   commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolClient.#ctor
   name: LineProtocolClient
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolClient.LineProtocolClient(System.Uri, System.String, Microsoft.Extensions.Logging.ILoggerFactory, System.String, System.String, System.String, System.String, System.String)
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolClient.LineProtocolClient(Microsoft.Extensions.Logging.ILoggerFactory, System.Uri, System.String, System.String, System.String, System.String, System.String, System.String)
 - uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolClient.WriteAsync(App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayload,System.Threading.CancellationToken)
   name: WriteAsync(LineProtocolPayload, CancellationToken)
   href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolClient.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolClient_WriteAsync_App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolPayload_System_Threading_CancellationToken_
@@ -5590,23 +5641,23 @@ references:
   commentId: T:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter
   fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter
   nameWithType: InfluxDbReporter
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.#ctor(System.String,System.Uri,System.String,System.String,System.String,System.String,System.TimeSpan,System.String,System.String,Microsoft.Extensions.Logging.ILoggerFactory)
-  name: InfluxDbReporter(String, Uri, String, String, String, String, TimeSpan, String, String, ILoggerFactory)
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter__ctor_System_String_System_Uri_System_String_System_String_System_String_System_String_System_TimeSpan_System_String_System_String_Microsoft_Extensions_Logging_ILoggerFactory_
-  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.#ctor(System.String,System.Uri,System.String,System.String,System.String,System.String,System.TimeSpan,System.String,System.String,Microsoft.Extensions.Logging.ILoggerFactory)
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.InfluxDbReporter(System.String, System.Uri, System.String, System.String, System.String, System.String, System.TimeSpan, System.String, System.String, Microsoft.Extensions.Logging.ILoggerFactory)
-  nameWithType: InfluxDbReporter.InfluxDbReporter(String, Uri, String, String, String, String, TimeSpan, String, String, ILoggerFactory)
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.#ctor(System.Uri,System.String,System.String,System.String,System.String,System.TimeSpan,System.String,System.String,Microsoft.Extensions.Logging.ILoggerFactory)
-  name: InfluxDbReporter(Uri, String, String, String, String, TimeSpan, String, String, ILoggerFactory)
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter__ctor_System_Uri_System_String_System_String_System_String_System_String_System_TimeSpan_System_String_System_String_Microsoft_Extensions_Logging_ILoggerFactory_
-  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.#ctor(System.Uri,System.String,System.String,System.String,System.String,System.TimeSpan,System.String,System.String,Microsoft.Extensions.Logging.ILoggerFactory)
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.InfluxDbReporter(System.Uri, System.String, System.String, System.String, System.String, System.TimeSpan, System.String, System.String, Microsoft.Extensions.Logging.ILoggerFactory)
-  nameWithType: InfluxDbReporter.InfluxDbReporter(Uri, String, String, String, String, TimeSpan, String, String, ILoggerFactory)
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.#ctor(App.Metrics.Extensions.Reporting.InfluxDB.IInfluxDbReporterSettings,Microsoft.Extensions.Logging.ILoggerFactory)
+  name: InfluxDbReporter(IInfluxDbReporterSettings, ILoggerFactory)
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter__ctor_App_Metrics_Extensions_Reporting_InfluxDB_IInfluxDbReporterSettings_Microsoft_Extensions_Logging_ILoggerFactory_
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.#ctor(App.Metrics.Extensions.Reporting.InfluxDB.IInfluxDbReporterSettings,Microsoft.Extensions.Logging.ILoggerFactory)
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.InfluxDbReporter(App.Metrics.Extensions.Reporting.InfluxDB.IInfluxDbReporterSettings, Microsoft.Extensions.Logging.ILoggerFactory)
+  nameWithType: InfluxDbReporter.InfluxDbReporter(IInfluxDbReporterSettings, ILoggerFactory)
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.#ctor(System.String,App.Metrics.Extensions.Reporting.InfluxDB.IInfluxDbReporterSettings,Microsoft.Extensions.Logging.ILoggerFactory)
+  name: InfluxDbReporter(String, IInfluxDbReporterSettings, ILoggerFactory)
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter__ctor_System_String_App_Metrics_Extensions_Reporting_InfluxDB_IInfluxDbReporterSettings_Microsoft_Extensions_Logging_ILoggerFactory_
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.#ctor(System.String,App.Metrics.Extensions.Reporting.InfluxDB.IInfluxDbReporterSettings,Microsoft.Extensions.Logging.ILoggerFactory)
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.InfluxDbReporter(System.String, App.Metrics.Extensions.Reporting.InfluxDB.IInfluxDbReporterSettings, Microsoft.Extensions.Logging.ILoggerFactory)
+  nameWithType: InfluxDbReporter.InfluxDbReporter(String, IInfluxDbReporterSettings, ILoggerFactory)
 - uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.#ctor*
   href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter__ctor_
   commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.#ctor
   name: InfluxDbReporter
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.InfluxDbReporter(System.Uri, System.String, System.String, System.String, System.String, System.TimeSpan, System.String, System.String, Microsoft.Extensions.Logging.ILoggerFactory)
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.InfluxDbReporter(App.Metrics.Extensions.Reporting.InfluxDB.IInfluxDbReporterSettings, Microsoft.Extensions.Logging.ILoggerFactory)
 - uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.Dispose
   name: Dispose()
   href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter_Dispose
@@ -5624,6 +5675,17 @@ references:
   commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.Dispose
   name: Dispose
   fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.Dispose()
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.EndAndFlushReportRunAsync(App.Metrics.IMetrics)
+  name: EndAndFlushReportRunAsync(IMetrics)
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter_EndAndFlushReportRunAsync_App_Metrics_IMetrics_
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.EndAndFlushReportRunAsync(App.Metrics.IMetrics)
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.EndAndFlushReportRunAsync(App.Metrics.IMetrics)
+  nameWithType: InfluxDbReporter.EndAndFlushReportRunAsync(IMetrics)
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.EndAndFlushReportRunAsync*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter_EndAndFlushReportRunAsync_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.EndAndFlushReportRunAsync
+  name: EndAndFlushReportRunAsync
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.EndAndFlushReportRunAsync(App.Metrics.IMetrics)
 - uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.EndMetricTypeReport(System.Type)
   name: EndMetricTypeReport(Type)
   href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter_EndMetricTypeReport_System_Type_
@@ -5635,17 +5697,6 @@ references:
   commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.EndMetricTypeReport
   name: EndMetricTypeReport
   fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.EndMetricTypeReport(System.Type)
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.EndReport(App.Metrics.IMetrics)
-  name: EndReport(IMetrics)
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter_EndReport_App_Metrics_IMetrics_
-  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.EndReport(App.Metrics.IMetrics)
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.EndReport(App.Metrics.IMetrics)
-  nameWithType: InfluxDbReporter.EndReport(IMetrics)
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.EndReport*
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter_EndReport_
-  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.EndReport
-  name: EndReport
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.EndReport(App.Metrics.IMetrics)
 - uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.Name
   name: Name
   href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter_Name
@@ -5722,17 +5773,17 @@ references:
   commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.StartMetricTypeReport
   name: StartMetricTypeReport
   fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.StartMetricTypeReport(System.Type)
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.StartReport(App.Metrics.IMetrics)
-  name: StartReport(IMetrics)
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter_StartReport_App_Metrics_IMetrics_
-  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.StartReport(App.Metrics.IMetrics)
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.StartReport(App.Metrics.IMetrics)
-  nameWithType: InfluxDbReporter.StartReport(IMetrics)
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.StartReport*
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter_StartReport_
-  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.StartReport
-  name: StartReport
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.StartReport(App.Metrics.IMetrics)
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.StartReportRun(App.Metrics.IMetrics)
+  name: StartReportRun(IMetrics)
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter_StartReportRun_App_Metrics_IMetrics_
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.StartReportRun(App.Metrics.IMetrics)
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.StartReportRun(App.Metrics.IMetrics)
+  nameWithType: InfluxDbReporter.StartReportRun(IMetrics)
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.StartReportRun*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter_StartReportRun_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.StartReportRun
+  name: StartReportRun
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.StartReportRun(App.Metrics.IMetrics)
 - uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider
   name: InfluxDbReporterProvider
   href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporterProvider
@@ -5761,17 +5812,6 @@ references:
   commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.CreateMetricReporter
   name: CreateMetricReporter
   fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.CreateMetricReporter(System.String, Microsoft.Extensions.Logging.ILoggerFactory)
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.Dispose
-  name: Dispose()
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporterProvider_Dispose
-  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.Dispose
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.Dispose()
-  nameWithType: InfluxDbReporterProvider.Dispose()
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.Dispose*
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporterProvider_Dispose_
-  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.Dispose
-  name: Dispose
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.Dispose()
 - uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.Filter
   name: Filter
   href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporterProvider_Filter
@@ -5963,6 +6003,17 @@ references:
   commentId: Overload:App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.Dispose
   name: Dispose
   fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.Dispose()
+- uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.EndAndFlushReportRunAsync(App.Metrics.IMetrics)
+  name: EndAndFlushReportRunAsync(IMetrics)
+  href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporter_EndAndFlushReportRunAsync_App_Metrics_IMetrics_
+  commentId: M:App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.EndAndFlushReportRunAsync(App.Metrics.IMetrics)
+  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.EndAndFlushReportRunAsync(App.Metrics.IMetrics)
+  nameWithType: TextFileReporter.EndAndFlushReportRunAsync(IMetrics)
+- uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.EndAndFlushReportRunAsync*
+  href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporter_EndAndFlushReportRunAsync_
+  commentId: Overload:App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.EndAndFlushReportRunAsync
+  name: EndAndFlushReportRunAsync
+  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.EndAndFlushReportRunAsync(App.Metrics.IMetrics)
 - uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.EndMetricTypeReport(System.Type)
   name: EndMetricTypeReport(Type)
   href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporter_EndMetricTypeReport_System_Type_
@@ -5974,17 +6025,17 @@ references:
   commentId: Overload:App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.EndMetricTypeReport
   name: EndMetricTypeReport
   fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.EndMetricTypeReport(System.Type)
-- uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.EndReport(App.Metrics.IMetrics)
-  name: EndReport(IMetrics)
-  href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporter_EndReport_App_Metrics_IMetrics_
-  commentId: M:App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.EndReport(App.Metrics.IMetrics)
-  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.EndReport(App.Metrics.IMetrics)
-  nameWithType: TextFileReporter.EndReport(IMetrics)
-- uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.EndReport*
-  href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporter_EndReport_
-  commentId: Overload:App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.EndReport
-  name: EndReport
-  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.EndReport(App.Metrics.IMetrics)
+- uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.Name
+  name: Name
+  href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporter_Name
+  commentId: P:App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.Name
+  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.Name
+  nameWithType: TextFileReporter.Name
+- uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.Name*
+  href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporter_Name_
+  commentId: Overload:App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.Name
+  name: Name
+  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.Name
 - uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportEnvironment(App.Metrics.Data.EnvironmentInfo)
   name: ReportEnvironment(EnvironmentInfo)
   href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporter_ReportEnvironment_App_Metrics_Data_EnvironmentInfo_
@@ -6050,17 +6101,17 @@ references:
   commentId: Overload:App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.StartMetricTypeReport
   name: StartMetricTypeReport
   fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.StartMetricTypeReport(System.Type)
-- uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.StartReport(App.Metrics.IMetrics)
-  name: StartReport(IMetrics)
-  href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporter_StartReport_App_Metrics_IMetrics_
-  commentId: M:App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.StartReport(App.Metrics.IMetrics)
-  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.StartReport(App.Metrics.IMetrics)
-  nameWithType: TextFileReporter.StartReport(IMetrics)
-- uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.StartReport*
-  href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporter_StartReport_
-  commentId: Overload:App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.StartReport
-  name: StartReport
-  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.StartReport(App.Metrics.IMetrics)
+- uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.StartReportRun(App.Metrics.IMetrics)
+  name: StartReportRun(IMetrics)
+  href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporter_StartReportRun_App_Metrics_IMetrics_
+  commentId: M:App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.StartReportRun(App.Metrics.IMetrics)
+  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.StartReportRun(App.Metrics.IMetrics)
+  nameWithType: TextFileReporter.StartReportRun(IMetrics)
+- uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.StartReportRun*
+  href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporter_StartReportRun_
+  commentId: Overload:App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.StartReportRun
+  name: StartReportRun
+  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.StartReportRun(App.Metrics.IMetrics)
 - uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterExtensions
   name: TextFileReporterExtensions
   href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporterExtensions.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporterExtensions
@@ -6112,17 +6163,6 @@ references:
   commentId: Overload:App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.CreateMetricReporter
   name: CreateMetricReporter
   fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.CreateMetricReporter(System.String, Microsoft.Extensions.Logging.ILoggerFactory)
-- uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.Dispose
-  name: Dispose()
-  href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporterProvider_Dispose
-  commentId: M:App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.Dispose
-  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.Dispose()
-  nameWithType: TextFileReporterProvider.Dispose()
-- uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.Dispose*
-  href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporterProvider_Dispose_
-  commentId: Overload:App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.Dispose
-  name: Dispose
-  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.Dispose()
 - uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.Filter
   name: Filter
   href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporterProvider_Filter
@@ -7316,6 +7356,45 @@ references:
   name.vb: GlobalMetricTags
   fullName: App.Metrics.GlobalMetricTags.GlobalMetricTags(System.Collections.Generic.Dictionary<System.String, System.String>)
   fullName.vb: App.Metrics.GlobalMetricTags.GlobalMetricTags
+- uid: App.Metrics.HealthCheckFactoryExtensions
+  name: HealthCheckFactoryExtensions
+  href: api/App.Metrics.HealthCheckFactoryExtensions.html#App_Metrics_HealthCheckFactoryExtensions
+  commentId: T:App.Metrics.HealthCheckFactoryExtensions
+  fullName: App.Metrics.HealthCheckFactoryExtensions
+  nameWithType: HealthCheckFactoryExtensions
+- uid: App.Metrics.HealthCheckFactoryExtensions.RegisterProcessPhysicalMemoryHealthCheck(App.Metrics.IHealthCheckFactory,System.String,System.Int64)
+  name: RegisterProcessPhysicalMemoryHealthCheck(IHealthCheckFactory, String, Int64)
+  href: api/App.Metrics.HealthCheckFactoryExtensions.html#App_Metrics_HealthCheckFactoryExtensions_RegisterProcessPhysicalMemoryHealthCheck_App_Metrics_IHealthCheckFactory_System_String_System_Int64_
+  commentId: M:App.Metrics.HealthCheckFactoryExtensions.RegisterProcessPhysicalMemoryHealthCheck(App.Metrics.IHealthCheckFactory,System.String,System.Int64)
+  fullName: App.Metrics.HealthCheckFactoryExtensions.RegisterProcessPhysicalMemoryHealthCheck(App.Metrics.IHealthCheckFactory, System.String, System.Int64)
+  nameWithType: HealthCheckFactoryExtensions.RegisterProcessPhysicalMemoryHealthCheck(IHealthCheckFactory, String, Int64)
+- uid: App.Metrics.HealthCheckFactoryExtensions.RegisterProcessPhysicalMemoryHealthCheck*
+  href: api/App.Metrics.HealthCheckFactoryExtensions.html#App_Metrics_HealthCheckFactoryExtensions_RegisterProcessPhysicalMemoryHealthCheck_
+  commentId: Overload:App.Metrics.HealthCheckFactoryExtensions.RegisterProcessPhysicalMemoryHealthCheck
+  name: RegisterProcessPhysicalMemoryHealthCheck
+  fullName: App.Metrics.HealthCheckFactoryExtensions.RegisterProcessPhysicalMemoryHealthCheck(App.Metrics.IHealthCheckFactory, System.String, System.Int64)
+- uid: App.Metrics.HealthCheckFactoryExtensions.RegisterProcessPrivateMemorySizeHealthCheck(App.Metrics.IHealthCheckFactory,System.String,System.Int64)
+  name: RegisterProcessPrivateMemorySizeHealthCheck(IHealthCheckFactory, String, Int64)
+  href: api/App.Metrics.HealthCheckFactoryExtensions.html#App_Metrics_HealthCheckFactoryExtensions_RegisterProcessPrivateMemorySizeHealthCheck_App_Metrics_IHealthCheckFactory_System_String_System_Int64_
+  commentId: M:App.Metrics.HealthCheckFactoryExtensions.RegisterProcessPrivateMemorySizeHealthCheck(App.Metrics.IHealthCheckFactory,System.String,System.Int64)
+  fullName: App.Metrics.HealthCheckFactoryExtensions.RegisterProcessPrivateMemorySizeHealthCheck(App.Metrics.IHealthCheckFactory, System.String, System.Int64)
+  nameWithType: HealthCheckFactoryExtensions.RegisterProcessPrivateMemorySizeHealthCheck(IHealthCheckFactory, String, Int64)
+- uid: App.Metrics.HealthCheckFactoryExtensions.RegisterProcessPrivateMemorySizeHealthCheck*
+  href: api/App.Metrics.HealthCheckFactoryExtensions.html#App_Metrics_HealthCheckFactoryExtensions_RegisterProcessPrivateMemorySizeHealthCheck_
+  commentId: Overload:App.Metrics.HealthCheckFactoryExtensions.RegisterProcessPrivateMemorySizeHealthCheck
+  name: RegisterProcessPrivateMemorySizeHealthCheck
+  fullName: App.Metrics.HealthCheckFactoryExtensions.RegisterProcessPrivateMemorySizeHealthCheck(App.Metrics.IHealthCheckFactory, System.String, System.Int64)
+- uid: App.Metrics.HealthCheckFactoryExtensions.RegisterProcessVirtualMemorySizeHealthCheck(App.Metrics.IHealthCheckFactory,System.String,System.Int64)
+  name: RegisterProcessVirtualMemorySizeHealthCheck(IHealthCheckFactory, String, Int64)
+  href: api/App.Metrics.HealthCheckFactoryExtensions.html#App_Metrics_HealthCheckFactoryExtensions_RegisterProcessVirtualMemorySizeHealthCheck_App_Metrics_IHealthCheckFactory_System_String_System_Int64_
+  commentId: M:App.Metrics.HealthCheckFactoryExtensions.RegisterProcessVirtualMemorySizeHealthCheck(App.Metrics.IHealthCheckFactory,System.String,System.Int64)
+  fullName: App.Metrics.HealthCheckFactoryExtensions.RegisterProcessVirtualMemorySizeHealthCheck(App.Metrics.IHealthCheckFactory, System.String, System.Int64)
+  nameWithType: HealthCheckFactoryExtensions.RegisterProcessVirtualMemorySizeHealthCheck(IHealthCheckFactory, String, Int64)
+- uid: App.Metrics.HealthCheckFactoryExtensions.RegisterProcessVirtualMemorySizeHealthCheck*
+  href: api/App.Metrics.HealthCheckFactoryExtensions.html#App_Metrics_HealthCheckFactoryExtensions_RegisterProcessVirtualMemorySizeHealthCheck_
+  commentId: Overload:App.Metrics.HealthCheckFactoryExtensions.RegisterProcessVirtualMemorySizeHealthCheck
+  name: RegisterProcessVirtualMemorySizeHealthCheck
+  fullName: App.Metrics.HealthCheckFactoryExtensions.RegisterProcessVirtualMemorySizeHealthCheck(App.Metrics.IHealthCheckFactory, System.String, System.Int64)
 - uid: App.Metrics.HealthStatusData
   name: HealthStatusData
   href: api/App.Metrics.HealthStatusData.html#App_Metrics_HealthStatusData
@@ -8126,33 +8205,17 @@ references:
   commentId: T:App.Metrics.Infrastructure.EnvironmentInfoProvider
   fullName: App.Metrics.Infrastructure.EnvironmentInfoProvider
   nameWithType: EnvironmentInfoProvider
-- uid: App.Metrics.Infrastructure.EnvironmentInfoProvider.BuildAsync
-  name: BuildAsync()
-  href: api/App.Metrics.Infrastructure.EnvironmentInfoProvider.html#App_Metrics_Infrastructure_EnvironmentInfoProvider_BuildAsync
-  commentId: M:App.Metrics.Infrastructure.EnvironmentInfoProvider.BuildAsync
-  fullName: App.Metrics.Infrastructure.EnvironmentInfoProvider.BuildAsync()
-  nameWithType: EnvironmentInfoProvider.BuildAsync()
-- uid: App.Metrics.Infrastructure.EnvironmentInfoProvider.BuildAsync*
-  href: api/App.Metrics.Infrastructure.EnvironmentInfoProvider.html#App_Metrics_Infrastructure_EnvironmentInfoProvider_BuildAsync_
-  commentId: Overload:App.Metrics.Infrastructure.EnvironmentInfoProvider.BuildAsync
-  name: BuildAsync
-  fullName: App.Metrics.Infrastructure.EnvironmentInfoProvider.BuildAsync()
-- uid: App.Metrics.Infrastructure.EnvironmentInfoProvider.SafeGetString(System.Func{System.String})
-  name: SafeGetString(Func<String>)
-  href: api/App.Metrics.Infrastructure.EnvironmentInfoProvider.html#App_Metrics_Infrastructure_EnvironmentInfoProvider_SafeGetString_System_Func_System_String__
-  commentId: M:App.Metrics.Infrastructure.EnvironmentInfoProvider.SafeGetString(System.Func{System.String})
-  name.vb: SafeGetString(Func(Of String))
-  fullName: App.Metrics.Infrastructure.EnvironmentInfoProvider.SafeGetString(System.Func<System.String>)
-  fullName.vb: App.Metrics.Infrastructure.EnvironmentInfoProvider.SafeGetString(System.Func(Of System.String))
-  nameWithType: EnvironmentInfoProvider.SafeGetString(Func<String>)
-  nameWithType.vb: SafeGetString(Func(Of String))
-- uid: App.Metrics.Infrastructure.EnvironmentInfoProvider.SafeGetString*
-  href: api/App.Metrics.Infrastructure.EnvironmentInfoProvider.html#App_Metrics_Infrastructure_EnvironmentInfoProvider_SafeGetString_
-  commentId: Overload:App.Metrics.Infrastructure.EnvironmentInfoProvider.SafeGetString
-  name: SafeGetString
-  name.vb: SafeGetString
-  fullName: App.Metrics.Infrastructure.EnvironmentInfoProvider.SafeGetString(System.Func<System.String>)
-  fullName.vb: App.Metrics.Infrastructure.EnvironmentInfoProvider.SafeGetString
+- uid: App.Metrics.Infrastructure.EnvironmentInfoProvider.Build
+  name: Build()
+  href: api/App.Metrics.Infrastructure.EnvironmentInfoProvider.html#App_Metrics_Infrastructure_EnvironmentInfoProvider_Build
+  commentId: M:App.Metrics.Infrastructure.EnvironmentInfoProvider.Build
+  fullName: App.Metrics.Infrastructure.EnvironmentInfoProvider.Build()
+  nameWithType: EnvironmentInfoProvider.Build()
+- uid: App.Metrics.Infrastructure.EnvironmentInfoProvider.Build*
+  href: api/App.Metrics.Infrastructure.EnvironmentInfoProvider.html#App_Metrics_Infrastructure_EnvironmentInfoProvider_Build_
+  commentId: Overload:App.Metrics.Infrastructure.EnvironmentInfoProvider.Build
+  name: Build
+  fullName: App.Metrics.Infrastructure.EnvironmentInfoProvider.Build()
 - uid: App.Metrics.IResetableMetric
   name: IResetableMetric
   href: api/App.Metrics.IResetableMetric.html#App_Metrics_IResetableMetric
@@ -8839,6 +8902,17 @@ references:
   commentId: T:App.Metrics.Reporting.Interfaces.IMetricReporter
   fullName: App.Metrics.Reporting.Interfaces.IMetricReporter
   nameWithType: IMetricReporter
+- uid: App.Metrics.Reporting.Interfaces.IMetricReporter.EndAndFlushReportRunAsync(App.Metrics.IMetrics)
+  name: EndAndFlushReportRunAsync(IMetrics)
+  href: api/App.Metrics.Reporting.Interfaces.IMetricReporter.html#App_Metrics_Reporting_Interfaces_IMetricReporter_EndAndFlushReportRunAsync_App_Metrics_IMetrics_
+  commentId: M:App.Metrics.Reporting.Interfaces.IMetricReporter.EndAndFlushReportRunAsync(App.Metrics.IMetrics)
+  fullName: App.Metrics.Reporting.Interfaces.IMetricReporter.EndAndFlushReportRunAsync(App.Metrics.IMetrics)
+  nameWithType: IMetricReporter.EndAndFlushReportRunAsync(IMetrics)
+- uid: App.Metrics.Reporting.Interfaces.IMetricReporter.EndAndFlushReportRunAsync*
+  href: api/App.Metrics.Reporting.Interfaces.IMetricReporter.html#App_Metrics_Reporting_Interfaces_IMetricReporter_EndAndFlushReportRunAsync_
+  commentId: Overload:App.Metrics.Reporting.Interfaces.IMetricReporter.EndAndFlushReportRunAsync
+  name: EndAndFlushReportRunAsync
+  fullName: App.Metrics.Reporting.Interfaces.IMetricReporter.EndAndFlushReportRunAsync(App.Metrics.IMetrics)
 - uid: App.Metrics.Reporting.Interfaces.IMetricReporter.EndMetricTypeReport(System.Type)
   name: EndMetricTypeReport(Type)
   href: api/App.Metrics.Reporting.Interfaces.IMetricReporter.html#App_Metrics_Reporting_Interfaces_IMetricReporter_EndMetricTypeReport_System_Type_
@@ -8850,17 +8924,17 @@ references:
   commentId: Overload:App.Metrics.Reporting.Interfaces.IMetricReporter.EndMetricTypeReport
   name: EndMetricTypeReport
   fullName: App.Metrics.Reporting.Interfaces.IMetricReporter.EndMetricTypeReport(System.Type)
-- uid: App.Metrics.Reporting.Interfaces.IMetricReporter.EndReport(App.Metrics.IMetrics)
-  name: EndReport(IMetrics)
-  href: api/App.Metrics.Reporting.Interfaces.IMetricReporter.html#App_Metrics_Reporting_Interfaces_IMetricReporter_EndReport_App_Metrics_IMetrics_
-  commentId: M:App.Metrics.Reporting.Interfaces.IMetricReporter.EndReport(App.Metrics.IMetrics)
-  fullName: App.Metrics.Reporting.Interfaces.IMetricReporter.EndReport(App.Metrics.IMetrics)
-  nameWithType: IMetricReporter.EndReport(IMetrics)
-- uid: App.Metrics.Reporting.Interfaces.IMetricReporter.EndReport*
-  href: api/App.Metrics.Reporting.Interfaces.IMetricReporter.html#App_Metrics_Reporting_Interfaces_IMetricReporter_EndReport_
-  commentId: Overload:App.Metrics.Reporting.Interfaces.IMetricReporter.EndReport
-  name: EndReport
-  fullName: App.Metrics.Reporting.Interfaces.IMetricReporter.EndReport(App.Metrics.IMetrics)
+- uid: App.Metrics.Reporting.Interfaces.IMetricReporter.Name
+  name: Name
+  href: api/App.Metrics.Reporting.Interfaces.IMetricReporter.html#App_Metrics_Reporting_Interfaces_IMetricReporter_Name
+  commentId: P:App.Metrics.Reporting.Interfaces.IMetricReporter.Name
+  fullName: App.Metrics.Reporting.Interfaces.IMetricReporter.Name
+  nameWithType: IMetricReporter.Name
+- uid: App.Metrics.Reporting.Interfaces.IMetricReporter.Name*
+  href: api/App.Metrics.Reporting.Interfaces.IMetricReporter.html#App_Metrics_Reporting_Interfaces_IMetricReporter_Name_
+  commentId: Overload:App.Metrics.Reporting.Interfaces.IMetricReporter.Name
+  name: Name
+  fullName: App.Metrics.Reporting.Interfaces.IMetricReporter.Name
 - uid: App.Metrics.Reporting.Interfaces.IMetricReporter.ReportEnvironment(App.Metrics.Data.EnvironmentInfo)
   name: ReportEnvironment(EnvironmentInfo)
   href: api/App.Metrics.Reporting.Interfaces.IMetricReporter.html#App_Metrics_Reporting_Interfaces_IMetricReporter_ReportEnvironment_App_Metrics_Data_EnvironmentInfo_
@@ -8926,17 +9000,17 @@ references:
   commentId: Overload:App.Metrics.Reporting.Interfaces.IMetricReporter.StartMetricTypeReport
   name: StartMetricTypeReport
   fullName: App.Metrics.Reporting.Interfaces.IMetricReporter.StartMetricTypeReport(System.Type)
-- uid: App.Metrics.Reporting.Interfaces.IMetricReporter.StartReport(App.Metrics.IMetrics)
-  name: StartReport(IMetrics)
-  href: api/App.Metrics.Reporting.Interfaces.IMetricReporter.html#App_Metrics_Reporting_Interfaces_IMetricReporter_StartReport_App_Metrics_IMetrics_
-  commentId: M:App.Metrics.Reporting.Interfaces.IMetricReporter.StartReport(App.Metrics.IMetrics)
-  fullName: App.Metrics.Reporting.Interfaces.IMetricReporter.StartReport(App.Metrics.IMetrics)
-  nameWithType: IMetricReporter.StartReport(IMetrics)
-- uid: App.Metrics.Reporting.Interfaces.IMetricReporter.StartReport*
-  href: api/App.Metrics.Reporting.Interfaces.IMetricReporter.html#App_Metrics_Reporting_Interfaces_IMetricReporter_StartReport_
-  commentId: Overload:App.Metrics.Reporting.Interfaces.IMetricReporter.StartReport
-  name: StartReport
-  fullName: App.Metrics.Reporting.Interfaces.IMetricReporter.StartReport(App.Metrics.IMetrics)
+- uid: App.Metrics.Reporting.Interfaces.IMetricReporter.StartReportRun(App.Metrics.IMetrics)
+  name: StartReportRun(IMetrics)
+  href: api/App.Metrics.Reporting.Interfaces.IMetricReporter.html#App_Metrics_Reporting_Interfaces_IMetricReporter_StartReportRun_App_Metrics_IMetrics_
+  commentId: M:App.Metrics.Reporting.Interfaces.IMetricReporter.StartReportRun(App.Metrics.IMetrics)
+  fullName: App.Metrics.Reporting.Interfaces.IMetricReporter.StartReportRun(App.Metrics.IMetrics)
+  nameWithType: IMetricReporter.StartReportRun(IMetrics)
+- uid: App.Metrics.Reporting.Interfaces.IMetricReporter.StartReportRun*
+  href: api/App.Metrics.Reporting.Interfaces.IMetricReporter.html#App_Metrics_Reporting_Interfaces_IMetricReporter_StartReportRun_
+  commentId: Overload:App.Metrics.Reporting.Interfaces.IMetricReporter.StartReportRun
+  name: StartReportRun
+  fullName: App.Metrics.Reporting.Interfaces.IMetricReporter.StartReportRun(App.Metrics.IMetrics)
 - uid: App.Metrics.Reporting.Interfaces.InfluxDbReporterExtensions
   name: InfluxDbReporterExtensions
   href: api/App.Metrics.Reporting.Interfaces.InfluxDbReporterExtensions.html#App_Metrics_Reporting_Interfaces_InfluxDbReporterExtensions
@@ -8966,17 +9040,17 @@ references:
   commentId: T:App.Metrics.Reporting.Interfaces.IReporter
   fullName: App.Metrics.Reporting.Interfaces.IReporter
   nameWithType: IReporter
-- uid: App.Metrics.Reporting.Interfaces.IReporter.RunReportsAsync(App.Metrics.IMetrics,System.Threading.CancellationToken)
-  name: RunReportsAsync(IMetrics, CancellationToken)
-  href: api/App.Metrics.Reporting.Interfaces.IReporter.html#App_Metrics_Reporting_Interfaces_IReporter_RunReportsAsync_App_Metrics_IMetrics_System_Threading_CancellationToken_
-  commentId: M:App.Metrics.Reporting.Interfaces.IReporter.RunReportsAsync(App.Metrics.IMetrics,System.Threading.CancellationToken)
-  fullName: App.Metrics.Reporting.Interfaces.IReporter.RunReportsAsync(App.Metrics.IMetrics, System.Threading.CancellationToken)
-  nameWithType: IReporter.RunReportsAsync(IMetrics, CancellationToken)
-- uid: App.Metrics.Reporting.Interfaces.IReporter.RunReportsAsync*
-  href: api/App.Metrics.Reporting.Interfaces.IReporter.html#App_Metrics_Reporting_Interfaces_IReporter_RunReportsAsync_
-  commentId: Overload:App.Metrics.Reporting.Interfaces.IReporter.RunReportsAsync
-  name: RunReportsAsync
-  fullName: App.Metrics.Reporting.Interfaces.IReporter.RunReportsAsync(App.Metrics.IMetrics, System.Threading.CancellationToken)
+- uid: App.Metrics.Reporting.Interfaces.IReporter.RunReports(App.Metrics.IMetrics,System.Threading.CancellationToken)
+  name: RunReports(IMetrics, CancellationToken)
+  href: api/App.Metrics.Reporting.Interfaces.IReporter.html#App_Metrics_Reporting_Interfaces_IReporter_RunReports_App_Metrics_IMetrics_System_Threading_CancellationToken_
+  commentId: M:App.Metrics.Reporting.Interfaces.IReporter.RunReports(App.Metrics.IMetrics,System.Threading.CancellationToken)
+  fullName: App.Metrics.Reporting.Interfaces.IReporter.RunReports(App.Metrics.IMetrics, System.Threading.CancellationToken)
+  nameWithType: IReporter.RunReports(IMetrics, CancellationToken)
+- uid: App.Metrics.Reporting.Interfaces.IReporter.RunReports*
+  href: api/App.Metrics.Reporting.Interfaces.IReporter.html#App_Metrics_Reporting_Interfaces_IReporter_RunReports_
+  commentId: Overload:App.Metrics.Reporting.Interfaces.IReporter.RunReports
+  name: RunReports
+  fullName: App.Metrics.Reporting.Interfaces.IReporter.RunReports(App.Metrics.IMetrics, System.Threading.CancellationToken)
 - uid: App.Metrics.Reporting.Interfaces.IReporterProvider
   name: IReporterProvider
   href: api/App.Metrics.Reporting.Interfaces.IReporterProvider.html#App_Metrics_Reporting_Interfaces_IReporterProvider
@@ -9073,17 +9147,17 @@ references:
   commentId: T:App.Metrics.Reporting.ReportFactory
   fullName: App.Metrics.Reporting.ReportFactory
   nameWithType: ReportFactory
-- uid: App.Metrics.Reporting.ReportFactory.#ctor(Microsoft.Extensions.Logging.ILoggerFactory)
-  name: ReportFactory(ILoggerFactory)
-  href: api/App.Metrics.Reporting.ReportFactory.html#App_Metrics_Reporting_ReportFactory__ctor_Microsoft_Extensions_Logging_ILoggerFactory_
-  commentId: M:App.Metrics.Reporting.ReportFactory.#ctor(Microsoft.Extensions.Logging.ILoggerFactory)
-  fullName: App.Metrics.Reporting.ReportFactory.ReportFactory(Microsoft.Extensions.Logging.ILoggerFactory)
-  nameWithType: ReportFactory.ReportFactory(ILoggerFactory)
+- uid: App.Metrics.Reporting.ReportFactory.#ctor(App.Metrics.IMetrics,Microsoft.Extensions.Logging.ILoggerFactory)
+  name: ReportFactory(IMetrics, ILoggerFactory)
+  href: api/App.Metrics.Reporting.ReportFactory.html#App_Metrics_Reporting_ReportFactory__ctor_App_Metrics_IMetrics_Microsoft_Extensions_Logging_ILoggerFactory_
+  commentId: M:App.Metrics.Reporting.ReportFactory.#ctor(App.Metrics.IMetrics,Microsoft.Extensions.Logging.ILoggerFactory)
+  fullName: App.Metrics.Reporting.ReportFactory.ReportFactory(App.Metrics.IMetrics, Microsoft.Extensions.Logging.ILoggerFactory)
+  nameWithType: ReportFactory.ReportFactory(IMetrics, ILoggerFactory)
 - uid: App.Metrics.Reporting.ReportFactory.#ctor*
   href: api/App.Metrics.Reporting.ReportFactory.html#App_Metrics_Reporting_ReportFactory__ctor_
   commentId: Overload:App.Metrics.Reporting.ReportFactory.#ctor
   name: ReportFactory
-  fullName: App.Metrics.Reporting.ReportFactory.ReportFactory(Microsoft.Extensions.Logging.ILoggerFactory)
+  fullName: App.Metrics.Reporting.ReportFactory.ReportFactory(App.Metrics.IMetrics, Microsoft.Extensions.Logging.ILoggerFactory)
 - uid: App.Metrics.Reporting.ReportFactory.AddProvider(App.Metrics.Reporting.Interfaces.IReporterProvider)
   name: AddProvider(IReporterProvider)
   href: api/App.Metrics.Reporting.ReportFactory.html#App_Metrics_Reporting_ReportFactory_AddProvider_App_Metrics_Reporting_Interfaces_IReporterProvider_
@@ -9112,17 +9186,6 @@ references:
   commentId: Overload:App.Metrics.Reporting.ReportFactory.CreateReporter
   name: CreateReporter
   fullName: App.Metrics.Reporting.ReportFactory.CreateReporter(App.Metrics.Scheduling.Interfaces.IScheduler)
-- uid: App.Metrics.Reporting.ReportFactory.Dispose
-  name: Dispose()
-  href: api/App.Metrics.Reporting.ReportFactory.html#App_Metrics_Reporting_ReportFactory_Dispose
-  commentId: M:App.Metrics.Reporting.ReportFactory.Dispose
-  fullName: App.Metrics.Reporting.ReportFactory.Dispose()
-  nameWithType: ReportFactory.Dispose()
-- uid: App.Metrics.Reporting.ReportFactory.Dispose*
-  href: api/App.Metrics.Reporting.ReportFactory.html#App_Metrics_Reporting_ReportFactory_Dispose_
-  commentId: Overload:App.Metrics.Reporting.ReportFactory.Dispose
-  name: Dispose
-  fullName: App.Metrics.Reporting.ReportFactory.Dispose()
 - uid: App.Metrics.Reporting.StringReporter
   name: StringReporter
   href: api/App.Metrics.Reporting.StringReporter.html#App_Metrics_Reporting_StringReporter
@@ -9163,6 +9226,17 @@ references:
   commentId: Overload:App.Metrics.Reporting.StringReporter.Dispose
   name: Dispose
   fullName: App.Metrics.Reporting.StringReporter.Dispose()
+- uid: App.Metrics.Reporting.StringReporter.EndAndFlushReportRunAsync(App.Metrics.IMetrics)
+  name: EndAndFlushReportRunAsync(IMetrics)
+  href: api/App.Metrics.Reporting.StringReporter.html#App_Metrics_Reporting_StringReporter_EndAndFlushReportRunAsync_App_Metrics_IMetrics_
+  commentId: M:App.Metrics.Reporting.StringReporter.EndAndFlushReportRunAsync(App.Metrics.IMetrics)
+  fullName: App.Metrics.Reporting.StringReporter.EndAndFlushReportRunAsync(App.Metrics.IMetrics)
+  nameWithType: StringReporter.EndAndFlushReportRunAsync(IMetrics)
+- uid: App.Metrics.Reporting.StringReporter.EndAndFlushReportRunAsync*
+  href: api/App.Metrics.Reporting.StringReporter.html#App_Metrics_Reporting_StringReporter_EndAndFlushReportRunAsync_
+  commentId: Overload:App.Metrics.Reporting.StringReporter.EndAndFlushReportRunAsync
+  name: EndAndFlushReportRunAsync
+  fullName: App.Metrics.Reporting.StringReporter.EndAndFlushReportRunAsync(App.Metrics.IMetrics)
 - uid: App.Metrics.Reporting.StringReporter.EndMetricTypeReport(System.Type)
   name: EndMetricTypeReport(Type)
   href: api/App.Metrics.Reporting.StringReporter.html#App_Metrics_Reporting_StringReporter_EndMetricTypeReport_System_Type_
@@ -9174,17 +9248,6 @@ references:
   commentId: Overload:App.Metrics.Reporting.StringReporter.EndMetricTypeReport
   name: EndMetricTypeReport
   fullName: App.Metrics.Reporting.StringReporter.EndMetricTypeReport(System.Type)
-- uid: App.Metrics.Reporting.StringReporter.EndReport(App.Metrics.IMetrics)
-  name: EndReport(IMetrics)
-  href: api/App.Metrics.Reporting.StringReporter.html#App_Metrics_Reporting_StringReporter_EndReport_App_Metrics_IMetrics_
-  commentId: M:App.Metrics.Reporting.StringReporter.EndReport(App.Metrics.IMetrics)
-  fullName: App.Metrics.Reporting.StringReporter.EndReport(App.Metrics.IMetrics)
-  nameWithType: StringReporter.EndReport(IMetrics)
-- uid: App.Metrics.Reporting.StringReporter.EndReport*
-  href: api/App.Metrics.Reporting.StringReporter.html#App_Metrics_Reporting_StringReporter_EndReport_
-  commentId: Overload:App.Metrics.Reporting.StringReporter.EndReport
-  name: EndReport
-  fullName: App.Metrics.Reporting.StringReporter.EndReport(App.Metrics.IMetrics)
 - uid: App.Metrics.Reporting.StringReporter.Name
   name: Name
   href: api/App.Metrics.Reporting.StringReporter.html#App_Metrics_Reporting_StringReporter_Name
@@ -9272,17 +9335,17 @@ references:
   commentId: Overload:App.Metrics.Reporting.StringReporter.StartMetricTypeReport
   name: StartMetricTypeReport
   fullName: App.Metrics.Reporting.StringReporter.StartMetricTypeReport(System.Type)
-- uid: App.Metrics.Reporting.StringReporter.StartReport(App.Metrics.IMetrics)
-  name: StartReport(IMetrics)
-  href: api/App.Metrics.Reporting.StringReporter.html#App_Metrics_Reporting_StringReporter_StartReport_App_Metrics_IMetrics_
-  commentId: M:App.Metrics.Reporting.StringReporter.StartReport(App.Metrics.IMetrics)
-  fullName: App.Metrics.Reporting.StringReporter.StartReport(App.Metrics.IMetrics)
-  nameWithType: StringReporter.StartReport(IMetrics)
-- uid: App.Metrics.Reporting.StringReporter.StartReport*
-  href: api/App.Metrics.Reporting.StringReporter.html#App_Metrics_Reporting_StringReporter_StartReport_
-  commentId: Overload:App.Metrics.Reporting.StringReporter.StartReport
-  name: StartReport
-  fullName: App.Metrics.Reporting.StringReporter.StartReport(App.Metrics.IMetrics)
+- uid: App.Metrics.Reporting.StringReporter.StartReportRun(App.Metrics.IMetrics)
+  name: StartReportRun(IMetrics)
+  href: api/App.Metrics.Reporting.StringReporter.html#App_Metrics_Reporting_StringReporter_StartReportRun_App_Metrics_IMetrics_
+  commentId: M:App.Metrics.Reporting.StringReporter.StartReportRun(App.Metrics.IMetrics)
+  fullName: App.Metrics.Reporting.StringReporter.StartReportRun(App.Metrics.IMetrics)
+  nameWithType: StringReporter.StartReportRun(IMetrics)
+- uid: App.Metrics.Reporting.StringReporter.StartReportRun*
+  href: api/App.Metrics.Reporting.StringReporter.html#App_Metrics_Reporting_StringReporter_StartReportRun_
+  commentId: Overload:App.Metrics.Reporting.StringReporter.StartReportRun
+  name: StartReportRun
+  fullName: App.Metrics.Reporting.StringReporter.StartReportRun(App.Metrics.IMetrics)
 - uid: App.Metrics.Sampling
   name: App.Metrics.Sampling
   href: api/App.Metrics.Sampling.html#App_Metrics_Sampling
@@ -10426,23 +10489,23 @@ references:
   commentId: Overload:App.Metrics.Scheduling.DefaultTaskScheduler.Dispose
   name: Dispose
   fullName: App.Metrics.Scheduling.DefaultTaskScheduler.Dispose()
-- uid: App.Metrics.Scheduling.DefaultTaskScheduler.Interval(System.TimeSpan,System.Action)
-  name: Interval(TimeSpan, Action)
-  href: api/App.Metrics.Scheduling.DefaultTaskScheduler.html#App_Metrics_Scheduling_DefaultTaskScheduler_Interval_System_TimeSpan_System_Action_
-  commentId: M:App.Metrics.Scheduling.DefaultTaskScheduler.Interval(System.TimeSpan,System.Action)
-  fullName: App.Metrics.Scheduling.DefaultTaskScheduler.Interval(System.TimeSpan, System.Action)
-  nameWithType: DefaultTaskScheduler.Interval(TimeSpan, Action)
-- uid: App.Metrics.Scheduling.DefaultTaskScheduler.Interval(System.TimeSpan,System.Action,System.Threading.CancellationToken)
-  name: Interval(TimeSpan, Action, CancellationToken)
-  href: api/App.Metrics.Scheduling.DefaultTaskScheduler.html#App_Metrics_Scheduling_DefaultTaskScheduler_Interval_System_TimeSpan_System_Action_System_Threading_CancellationToken_
-  commentId: M:App.Metrics.Scheduling.DefaultTaskScheduler.Interval(System.TimeSpan,System.Action,System.Threading.CancellationToken)
-  fullName: App.Metrics.Scheduling.DefaultTaskScheduler.Interval(System.TimeSpan, System.Action, System.Threading.CancellationToken)
-  nameWithType: DefaultTaskScheduler.Interval(TimeSpan, Action, CancellationToken)
+- uid: App.Metrics.Scheduling.DefaultTaskScheduler.Interval(System.TimeSpan,System.Threading.Tasks.TaskCreationOptions,System.Action)
+  name: Interval(TimeSpan, TaskCreationOptions, Action)
+  href: api/App.Metrics.Scheduling.DefaultTaskScheduler.html#App_Metrics_Scheduling_DefaultTaskScheduler_Interval_System_TimeSpan_System_Threading_Tasks_TaskCreationOptions_System_Action_
+  commentId: M:App.Metrics.Scheduling.DefaultTaskScheduler.Interval(System.TimeSpan,System.Threading.Tasks.TaskCreationOptions,System.Action)
+  fullName: App.Metrics.Scheduling.DefaultTaskScheduler.Interval(System.TimeSpan, System.Threading.Tasks.TaskCreationOptions, System.Action)
+  nameWithType: DefaultTaskScheduler.Interval(TimeSpan, TaskCreationOptions, Action)
+- uid: App.Metrics.Scheduling.DefaultTaskScheduler.Interval(System.TimeSpan,System.Threading.Tasks.TaskCreationOptions,System.Action,System.Threading.CancellationToken)
+  name: Interval(TimeSpan, TaskCreationOptions, Action, CancellationToken)
+  href: api/App.Metrics.Scheduling.DefaultTaskScheduler.html#App_Metrics_Scheduling_DefaultTaskScheduler_Interval_System_TimeSpan_System_Threading_Tasks_TaskCreationOptions_System_Action_System_Threading_CancellationToken_
+  commentId: M:App.Metrics.Scheduling.DefaultTaskScheduler.Interval(System.TimeSpan,System.Threading.Tasks.TaskCreationOptions,System.Action,System.Threading.CancellationToken)
+  fullName: App.Metrics.Scheduling.DefaultTaskScheduler.Interval(System.TimeSpan, System.Threading.Tasks.TaskCreationOptions, System.Action, System.Threading.CancellationToken)
+  nameWithType: DefaultTaskScheduler.Interval(TimeSpan, TaskCreationOptions, Action, CancellationToken)
 - uid: App.Metrics.Scheduling.DefaultTaskScheduler.Interval*
   href: api/App.Metrics.Scheduling.DefaultTaskScheduler.html#App_Metrics_Scheduling_DefaultTaskScheduler_Interval_
   commentId: Overload:App.Metrics.Scheduling.DefaultTaskScheduler.Interval
   name: Interval
-  fullName: App.Metrics.Scheduling.DefaultTaskScheduler.Interval(System.TimeSpan, System.Action)
+  fullName: App.Metrics.Scheduling.DefaultTaskScheduler.Interval(System.TimeSpan, System.Threading.Tasks.TaskCreationOptions, System.Action)
 - uid: App.Metrics.Scheduling.DefaultTaskScheduler.Stop
   name: Stop()
   href: api/App.Metrics.Scheduling.DefaultTaskScheduler.html#App_Metrics_Scheduling_DefaultTaskScheduler_Stop
@@ -10466,23 +10529,23 @@ references:
   commentId: T:App.Metrics.Scheduling.Interfaces.IScheduler
   fullName: App.Metrics.Scheduling.Interfaces.IScheduler
   nameWithType: IScheduler
-- uid: App.Metrics.Scheduling.Interfaces.IScheduler.Interval(System.TimeSpan,System.Action)
-  name: Interval(TimeSpan, Action)
-  href: api/App.Metrics.Scheduling.Interfaces.IScheduler.html#App_Metrics_Scheduling_Interfaces_IScheduler_Interval_System_TimeSpan_System_Action_
-  commentId: M:App.Metrics.Scheduling.Interfaces.IScheduler.Interval(System.TimeSpan,System.Action)
-  fullName: App.Metrics.Scheduling.Interfaces.IScheduler.Interval(System.TimeSpan, System.Action)
-  nameWithType: IScheduler.Interval(TimeSpan, Action)
-- uid: App.Metrics.Scheduling.Interfaces.IScheduler.Interval(System.TimeSpan,System.Action,System.Threading.CancellationToken)
-  name: Interval(TimeSpan, Action, CancellationToken)
-  href: api/App.Metrics.Scheduling.Interfaces.IScheduler.html#App_Metrics_Scheduling_Interfaces_IScheduler_Interval_System_TimeSpan_System_Action_System_Threading_CancellationToken_
-  commentId: M:App.Metrics.Scheduling.Interfaces.IScheduler.Interval(System.TimeSpan,System.Action,System.Threading.CancellationToken)
-  fullName: App.Metrics.Scheduling.Interfaces.IScheduler.Interval(System.TimeSpan, System.Action, System.Threading.CancellationToken)
-  nameWithType: IScheduler.Interval(TimeSpan, Action, CancellationToken)
+- uid: App.Metrics.Scheduling.Interfaces.IScheduler.Interval(System.TimeSpan,System.Threading.Tasks.TaskCreationOptions,System.Action)
+  name: Interval(TimeSpan, TaskCreationOptions, Action)
+  href: api/App.Metrics.Scheduling.Interfaces.IScheduler.html#App_Metrics_Scheduling_Interfaces_IScheduler_Interval_System_TimeSpan_System_Threading_Tasks_TaskCreationOptions_System_Action_
+  commentId: M:App.Metrics.Scheduling.Interfaces.IScheduler.Interval(System.TimeSpan,System.Threading.Tasks.TaskCreationOptions,System.Action)
+  fullName: App.Metrics.Scheduling.Interfaces.IScheduler.Interval(System.TimeSpan, System.Threading.Tasks.TaskCreationOptions, System.Action)
+  nameWithType: IScheduler.Interval(TimeSpan, TaskCreationOptions, Action)
+- uid: App.Metrics.Scheduling.Interfaces.IScheduler.Interval(System.TimeSpan,System.Threading.Tasks.TaskCreationOptions,System.Action,System.Threading.CancellationToken)
+  name: Interval(TimeSpan, TaskCreationOptions, Action, CancellationToken)
+  href: api/App.Metrics.Scheduling.Interfaces.IScheduler.html#App_Metrics_Scheduling_Interfaces_IScheduler_Interval_System_TimeSpan_System_Threading_Tasks_TaskCreationOptions_System_Action_System_Threading_CancellationToken_
+  commentId: M:App.Metrics.Scheduling.Interfaces.IScheduler.Interval(System.TimeSpan,System.Threading.Tasks.TaskCreationOptions,System.Action,System.Threading.CancellationToken)
+  fullName: App.Metrics.Scheduling.Interfaces.IScheduler.Interval(System.TimeSpan, System.Threading.Tasks.TaskCreationOptions, System.Action, System.Threading.CancellationToken)
+  nameWithType: IScheduler.Interval(TimeSpan, TaskCreationOptions, Action, CancellationToken)
 - uid: App.Metrics.Scheduling.Interfaces.IScheduler.Interval*
   href: api/App.Metrics.Scheduling.Interfaces.IScheduler.html#App_Metrics_Scheduling_Interfaces_IScheduler_Interval_
   commentId: Overload:App.Metrics.Scheduling.Interfaces.IScheduler.Interval
   name: Interval
-  fullName: App.Metrics.Scheduling.Interfaces.IScheduler.Interval(System.TimeSpan, System.Action, System.Threading.CancellationToken)
+  fullName: App.Metrics.Scheduling.Interfaces.IScheduler.Interval(System.TimeSpan, System.Threading.Tasks.TaskCreationOptions, System.Action, System.Threading.CancellationToken)
 - uid: App.Metrics.Scheduling.Interfaces.IScheduler.Stop
   name: Stop()
   href: api/App.Metrics.Scheduling.Interfaces.IScheduler.html#App_Metrics_Scheduling_Interfaces_IScheduler_Stop
@@ -11723,35 +11786,17 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Builder.AspNetMetricsAppBuilderExtensions.UseMetrics
   name: UseMetrics
   fullName: Microsoft.AspNetCore.Builder.AspNetMetricsAppBuilderExtensions.UseMetrics(Microsoft.AspNetCore.Builder.IApplicationBuilder)
-- uid: Microsoft.AspNetCore.Mvc
-  name: Microsoft.AspNetCore.Mvc
-  href: api/Microsoft.AspNetCore.Mvc.html#Microsoft_AspNetCore_Mvc
-  commentId: N:Microsoft.AspNetCore.Mvc
-  fullName: Microsoft.AspNetCore.Mvc
-  nameWithType: Microsoft.AspNetCore.Mvc
-- uid: Microsoft.AspNetCore.Mvc.MvcOptionsExtensions
-  name: MvcOptionsExtensions
-  href: api/Microsoft.AspNetCore.Mvc.MvcOptionsExtensions.html#Microsoft_AspNetCore_Mvc_MvcOptionsExtensions
-  commentId: T:Microsoft.AspNetCore.Mvc.MvcOptionsExtensions
-  fullName: Microsoft.AspNetCore.Mvc.MvcOptionsExtensions
-  nameWithType: MvcOptionsExtensions
-- uid: Microsoft.AspNetCore.Mvc.MvcOptionsExtensions.AddMetricsResourceFilter(Microsoft.AspNetCore.Mvc.MvcOptions)
-  name: AddMetricsResourceFilter(MvcOptions)
-  href: api/Microsoft.AspNetCore.Mvc.MvcOptionsExtensions.html#Microsoft_AspNetCore_Mvc_MvcOptionsExtensions_AddMetricsResourceFilter_Microsoft_AspNetCore_Mvc_MvcOptions_
-  commentId: M:Microsoft.AspNetCore.Mvc.MvcOptionsExtensions.AddMetricsResourceFilter(Microsoft.AspNetCore.Mvc.MvcOptions)
-  fullName: Microsoft.AspNetCore.Mvc.MvcOptionsExtensions.AddMetricsResourceFilter(Microsoft.AspNetCore.Mvc.MvcOptions)
-  nameWithType: MvcOptionsExtensions.AddMetricsResourceFilter(MvcOptions)
-- uid: Microsoft.AspNetCore.Mvc.MvcOptionsExtensions.AddMetricsResourceFilter(Microsoft.AspNetCore.Mvc.MvcOptions,App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver)
-  name: AddMetricsResourceFilter(MvcOptions, IRouteNameResolver)
-  href: api/Microsoft.AspNetCore.Mvc.MvcOptionsExtensions.html#Microsoft_AspNetCore_Mvc_MvcOptionsExtensions_AddMetricsResourceFilter_Microsoft_AspNetCore_Mvc_MvcOptions_App_Metrics_Extensions_Middleware_Infrastructure_IRouteNameResolver_
-  commentId: M:Microsoft.AspNetCore.Mvc.MvcOptionsExtensions.AddMetricsResourceFilter(Microsoft.AspNetCore.Mvc.MvcOptions,App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver)
-  fullName: Microsoft.AspNetCore.Mvc.MvcOptionsExtensions.AddMetricsResourceFilter(Microsoft.AspNetCore.Mvc.MvcOptions, App.Metrics.Extensions.Middleware.Infrastructure.IRouteNameResolver)
-  nameWithType: MvcOptionsExtensions.AddMetricsResourceFilter(MvcOptions, IRouteNameResolver)
-- uid: Microsoft.AspNetCore.Mvc.MvcOptionsExtensions.AddMetricsResourceFilter*
-  href: api/Microsoft.AspNetCore.Mvc.MvcOptionsExtensions.html#Microsoft_AspNetCore_Mvc_MvcOptionsExtensions_AddMetricsResourceFilter_
-  commentId: Overload:Microsoft.AspNetCore.Mvc.MvcOptionsExtensions.AddMetricsResourceFilter
-  name: AddMetricsResourceFilter
-  fullName: Microsoft.AspNetCore.Mvc.MvcOptionsExtensions.AddMetricsResourceFilter(Microsoft.AspNetCore.Mvc.MvcOptions)
+- uid: Microsoft.AspNetCore.Builder.AspNetMetricsAppBuilderExtensions.UseMetricsReporting(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IApplicationLifetime)
+  name: UseMetricsReporting(IApplicationBuilder, IApplicationLifetime)
+  href: api/Microsoft.AspNetCore.Builder.AspNetMetricsAppBuilderExtensions.html#Microsoft_AspNetCore_Builder_AspNetMetricsAppBuilderExtensions_UseMetricsReporting_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_AspNetCore_Hosting_IApplicationLifetime_
+  commentId: M:Microsoft.AspNetCore.Builder.AspNetMetricsAppBuilderExtensions.UseMetricsReporting(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IApplicationLifetime)
+  fullName: Microsoft.AspNetCore.Builder.AspNetMetricsAppBuilderExtensions.UseMetricsReporting(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Hosting.IApplicationLifetime)
+  nameWithType: AspNetMetricsAppBuilderExtensions.UseMetricsReporting(IApplicationBuilder, IApplicationLifetime)
+- uid: Microsoft.AspNetCore.Builder.AspNetMetricsAppBuilderExtensions.UseMetricsReporting*
+  href: api/Microsoft.AspNetCore.Builder.AspNetMetricsAppBuilderExtensions.html#Microsoft_AspNetCore_Builder_AspNetMetricsAppBuilderExtensions_UseMetricsReporting_
+  commentId: Overload:Microsoft.AspNetCore.Builder.AspNetMetricsAppBuilderExtensions.UseMetricsReporting
+  name: UseMetricsReporting
+  fullName: Microsoft.AspNetCore.Builder.AspNetMetricsAppBuilderExtensions.UseMetricsReporting(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Hosting.IApplicationLifetime)
 - uid: Microsoft.AspNetCore.Routing
   name: Microsoft.AspNetCore.Routing
   href: api/Microsoft.AspNetCore.Routing.html#Microsoft_AspNetCore_Routing

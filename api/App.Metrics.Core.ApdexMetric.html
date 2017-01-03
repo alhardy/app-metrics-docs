@@ -110,25 +110,25 @@ as one request, while each tolerating request counts as half a satisfied request
               <h6><strong>Assembly</strong>:App.Metrics.dll</h6>
               <h5 id="App_Metrics_Core_ApdexMetric_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public sealed class ApdexMetric : IApdexMetric, IApdex, IResetableMetric, IMetricValueProvider&lt;ApdexValue&gt;, IHideObjectMembers, IDisposable</code></pre>
+                <pre><code class="lang-csharp hljs">public sealed class ApdexMetric : IApdexMetric, IApdex, IResetableMetric, IMetricValueProvider&lt;ApdexValue&gt;, IDisposable</code></pre>
               </div>
               <h3 id="constructors">Constructors
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_ApdexMetric__ctor_App_Metrics_Apdex_Interfaces_IApdexProvider_App_Metrics_Utils_IClock_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.ApdexMetric.%23ctor(App.Metrics.Apdex.Interfaces.IApdexProvider%2CApp.Metrics.Utils.IClock)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_ApdexMetric__ctor_App_Metrics_Apdex_Interfaces_IApdexProvider_App_Metrics_Utils_IClock_System_Boolean_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.ApdexMetric.%23ctor(App.Metrics.Apdex.Interfaces.IApdexProvider%2CApp.Metrics.Utils.IClock%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Core/ApdexMetric.cs/#L64">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta3/src/App.Metrics/Core/ApdexMetric.cs/#L77">View Source</a>
               </span>
               <a id="App_Metrics_Core_ApdexMetric__ctor_" data-uid="App.Metrics.Core.ApdexMetric.#ctor*"></a>
-              <h4 id="App_Metrics_Core_ApdexMetric__ctor_App_Metrics_Apdex_Interfaces_IApdexProvider_App_Metrics_Utils_IClock_" data-uid="App.Metrics.Core.ApdexMetric.#ctor(App.Metrics.Apdex.Interfaces.IApdexProvider,App.Metrics.Utils.IClock)">ApdexMetric(IApdexProvider, IClock)</h4>
+              <h4 id="App_Metrics_Core_ApdexMetric__ctor_App_Metrics_Apdex_Interfaces_IApdexProvider_App_Metrics_Utils_IClock_System_Boolean_" data-uid="App.Metrics.Core.ApdexMetric.#ctor(App.Metrics.Apdex.Interfaces.IApdexProvider,App.Metrics.Utils.IClock,System.Boolean)">ApdexMetric(IApdexProvider, IClock, Boolean)</h4>
               <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="App.Metrics.Core.TimerMetric.html#App_Metrics_Core_TimerMetric">TimerMetric</a> class.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public ApdexMetric(IApdexProvider apdexProvider, IClock clock)</code></pre>
+                <pre><code class="lang-csharp hljs">public ApdexMetric(IApdexProvider apdexProvider, IClock clock, bool allowWarmup)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -152,6 +152,13 @@ as one request, while each tolerating request counts as half a satisfied request
                     <td><p>The clock to use to measure processing duration.</p>
 </td>
                   </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>allowWarmup</em></td>
+                    <td><p>if set to <code>true</code> allows the service to warmup before starting to calculate the apdex,
+the score will intitially be 1 until enough samples have been recorded.</p>
+</td>
+                  </tr>
                 </tbody>
               </table>
               <h5 class="exceptions">Exceptions</h5>
@@ -172,19 +179,19 @@ as one request, while each tolerating request counts as half a satisfied request
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_ApdexMetric__ctor_App_Metrics_SamplingType_System_Int32_System_Double_App_Metrics_Utils_IClock_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.ApdexMetric.%23ctor(App.Metrics.SamplingType%2CSystem.Int32%2CSystem.Double%2CApp.Metrics.Utils.IClock)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_ApdexMetric__ctor_App_Metrics_SamplingType_System_Int32_System_Double_App_Metrics_Utils_IClock_System_Boolean_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.ApdexMetric.%23ctor(App.Metrics.SamplingType%2CSystem.Int32%2CSystem.Double%2CApp.Metrics.Utils.IClock%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Core/ApdexMetric.cs/#L35">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta3/src/App.Metrics/Core/ApdexMetric.cs/#L40">View Source</a>
               </span>
               <a id="App_Metrics_Core_ApdexMetric__ctor_" data-uid="App.Metrics.Core.ApdexMetric.#ctor*"></a>
-              <h4 id="App_Metrics_Core_ApdexMetric__ctor_App_Metrics_SamplingType_System_Int32_System_Double_App_Metrics_Utils_IClock_" data-uid="App.Metrics.Core.ApdexMetric.#ctor(App.Metrics.SamplingType,System.Int32,System.Double,App.Metrics.Utils.IClock)">ApdexMetric(SamplingType, Int32, Double, IClock)</h4>
+              <h4 id="App_Metrics_Core_ApdexMetric__ctor_App_Metrics_SamplingType_System_Int32_System_Double_App_Metrics_Utils_IClock_System_Boolean_" data-uid="App.Metrics.Core.ApdexMetric.#ctor(App.Metrics.SamplingType,System.Int32,System.Double,App.Metrics.Utils.IClock,System.Boolean)">ApdexMetric(SamplingType, Int32, Double, IClock, Boolean)</h4>
               <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="App.Metrics.Core.ApdexMetric.html#App_Metrics_Core_ApdexMetric">ApdexMetric</a> class.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public ApdexMetric(SamplingType samplingType, int sampleSize, double alpha, IClock clock)</code></pre>
+                <pre><code class="lang-csharp hljs">public ApdexMetric(SamplingType samplingType, int sampleSize, double alpha, IClock clock, bool allowWarmup)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -221,23 +228,30 @@ value the more biased the reservoir will be towards newer values.</p>
                     <td><p>The clock to use to measure processing duration.</p>
 </td>
                   </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>allowWarmup</em></td>
+                    <td><p>if set to <code>true</code> allows the service to warmup before starting to calculate the apdex,
+the score will intitially be 1 until enough samples have been recorded.</p>
+</td>
+                  </tr>
                 </tbody>
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_ApdexMetric__ctor_App_Metrics_SamplingType_System_Int32_System_Double_App_Metrics_Utils_IClock_System_Double_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.ApdexMetric.%23ctor(App.Metrics.SamplingType%2CSystem.Int32%2CSystem.Double%2CApp.Metrics.Utils.IClock%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_ApdexMetric__ctor_App_Metrics_SamplingType_System_Int32_System_Double_App_Metrics_Utils_IClock_System_Double_System_Boolean_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.ApdexMetric.%23ctor(App.Metrics.SamplingType%2CSystem.Int32%2CSystem.Double%2CApp.Metrics.Utils.IClock%2CSystem.Double%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Core/ApdexMetric.cs/#L51">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta3/src/App.Metrics/Core/ApdexMetric.cs/#L60">View Source</a>
               </span>
               <a id="App_Metrics_Core_ApdexMetric__ctor_" data-uid="App.Metrics.Core.ApdexMetric.#ctor*"></a>
-              <h4 id="App_Metrics_Core_ApdexMetric__ctor_App_Metrics_SamplingType_System_Int32_System_Double_App_Metrics_Utils_IClock_System_Double_" data-uid="App.Metrics.Core.ApdexMetric.#ctor(App.Metrics.SamplingType,System.Int32,System.Double,App.Metrics.Utils.IClock,System.Double)">ApdexMetric(SamplingType, Int32, Double, IClock, Double)</h4>
+              <h4 id="App_Metrics_Core_ApdexMetric__ctor_App_Metrics_SamplingType_System_Int32_System_Double_App_Metrics_Utils_IClock_System_Double_System_Boolean_" data-uid="App.Metrics.Core.ApdexMetric.#ctor(App.Metrics.SamplingType,System.Int32,System.Double,App.Metrics.Utils.IClock,System.Double,System.Boolean)">ApdexMetric(SamplingType, Int32, Double, IClock, Double, Boolean)</h4>
               <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="App.Metrics.Core.ApdexMetric.html#App_Metrics_Core_ApdexMetric">ApdexMetric</a> class.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public ApdexMetric(SamplingType samplingType, int sampleSize, double alpha, IClock clock, double apdexTSeconds)</code></pre>
+                <pre><code class="lang-csharp hljs">public ApdexMetric(SamplingType samplingType, int sampleSize, double alpha, IClock clock, double apdexTSeconds, bool allowWarmup)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -280,6 +294,13 @@ value the more biased the reservoir will be towards newer values.</p>
                     <td><p>The apdex t seconds used to calculate satisfied, tolerating and frustrating counts.</p>
 </td>
                   </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>allowWarmup</em></td>
+                    <td><p>if set to <code>true</code> allows the service to warmup before starting to calculate the apdex,
+the score will intitially be 1 until enough samples have been recorded.</p>
+</td>
+                  </tr>
                 </tbody>
               </table>
               <h3 id="properties">Properties
@@ -289,7 +310,7 @@ value the more biased the reservoir will be towards newer values.</p>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_ApdexMetric_Value.md&amp;value=---%0Auid%3A%20App.Metrics.Core.ApdexMetric.Value%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Core/ApdexMetric.cs/#L86">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta3/src/App.Metrics/Core/ApdexMetric.cs/#L100">View Source</a>
               </span>
               <a id="App_Metrics_Core_ApdexMetric_Value_" data-uid="App.Metrics.Core.ApdexMetric.Value*"></a>
               <h4 id="App_Metrics_Core_ApdexMetric_Value" data-uid="App.Metrics.Core.ApdexMetric.Value">Value</h4>
@@ -323,7 +344,7 @@ value the more biased the reservoir will be towards newer values.</p>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_ApdexMetric_CurrentTime.md&amp;value=---%0Auid%3A%20App.Metrics.Core.ApdexMetric.CurrentTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Core/ApdexMetric.cs/#L89">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta3/src/App.Metrics/Core/ApdexMetric.cs/#L103">View Source</a>
               </span>
               <a id="App_Metrics_Core_ApdexMetric_CurrentTime_" data-uid="App.Metrics.Core.ApdexMetric.CurrentTime*"></a>
               <h4 id="App_Metrics_Core_ApdexMetric_CurrentTime" data-uid="App.Metrics.Core.ApdexMetric.CurrentTime">CurrentTime()</h4>
@@ -355,7 +376,7 @@ value the more biased the reservoir will be towards newer values.</p>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_ApdexMetric_Dispose.md&amp;value=---%0Auid%3A%20App.Metrics.Core.ApdexMetric.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Core/ApdexMetric.cs/#L94">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta3/src/App.Metrics/Core/ApdexMetric.cs/#L108">View Source</a>
               </span>
               <a id="App_Metrics_Core_ApdexMetric_Dispose_" data-uid="App.Metrics.Core.ApdexMetric.Dispose*"></a>
               <h4 id="App_Metrics_Core_ApdexMetric_Dispose" data-uid="App.Metrics.Core.ApdexMetric.Dispose">Dispose()</h4>
@@ -372,7 +393,7 @@ value the more biased the reservoir will be towards newer values.</p>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_ApdexMetric_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.ApdexMetric.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Core/ApdexMetric.cs/#L100">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta3/src/App.Metrics/Core/ApdexMetric.cs/#L114">View Source</a>
               </span>
               <a id="App_Metrics_Core_ApdexMetric_Dispose_" data-uid="App.Metrics.Core.ApdexMetric.Dispose*"></a>
               <h4 id="App_Metrics_Core_ApdexMetric_Dispose_System_Boolean_" data-uid="App.Metrics.Core.ApdexMetric.Dispose(System.Boolean)">Dispose(Boolean)</h4>
@@ -404,7 +425,7 @@ value the more biased the reservoir will be towards newer values.</p>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_ApdexMetric_EndRecording.md&amp;value=---%0Auid%3A%20App.Metrics.Core.ApdexMetric.EndRecording%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Core/ApdexMetric.cs/#L114">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta3/src/App.Metrics/Core/ApdexMetric.cs/#L128">View Source</a>
               </span>
               <a id="App_Metrics_Core_ApdexMetric_EndRecording_" data-uid="App.Metrics.Core.ApdexMetric.EndRecording*"></a>
               <h4 id="App_Metrics_Core_ApdexMetric_EndRecording" data-uid="App.Metrics.Core.ApdexMetric.EndRecording">EndRecording()</h4>
@@ -436,7 +457,7 @@ value the more biased the reservoir will be towards newer values.</p>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_ApdexMetric_Finalize.md&amp;value=---%0Auid%3A%20App.Metrics.Core.ApdexMetric.Finalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Core/ApdexMetric.cs/#L80">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta3/src/App.Metrics/Core/ApdexMetric.cs/#L94">View Source</a>
               </span>
               <a id="App_Metrics_Core_ApdexMetric_Finalize_" data-uid="App.Metrics.Core.ApdexMetric.Finalize*"></a>
               <h4 id="App_Metrics_Core_ApdexMetric_Finalize" data-uid="App.Metrics.Core.ApdexMetric.Finalize">Finalize()</h4>
@@ -451,7 +472,7 @@ value the more biased the reservoir will be towards newer values.</p>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_ApdexMetric_GetValue_System_Boolean_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.ApdexMetric.GetValue(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Core/ApdexMetric.cs/#L120">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta3/src/App.Metrics/Core/ApdexMetric.cs/#L134">View Source</a>
               </span>
               <a id="App_Metrics_Core_ApdexMetric_GetValue_" data-uid="App.Metrics.Core.ApdexMetric.GetValue*"></a>
               <h4 id="App_Metrics_Core_ApdexMetric_GetValue_System_Boolean_" data-uid="App.Metrics.Core.ApdexMetric.GetValue(System.Boolean)">GetValue(Boolean)</h4>
@@ -500,7 +521,7 @@ value the more biased the reservoir will be towards newer values.</p>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_ApdexMetric_NewContext.md&amp;value=---%0Auid%3A%20App.Metrics.Core.ApdexMetric.NewContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Core/ApdexMetric.cs/#L137">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta3/src/App.Metrics/Core/ApdexMetric.cs/#L151">View Source</a>
               </span>
               <a id="App_Metrics_Core_ApdexMetric_NewContext_" data-uid="App.Metrics.Core.ApdexMetric.NewContext*"></a>
               <h4 id="App_Metrics_Core_ApdexMetric_NewContext" data-uid="App.Metrics.Core.ApdexMetric.NewContext">NewContext()</h4>
@@ -532,7 +553,7 @@ value the more biased the reservoir will be towards newer values.</p>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_ApdexMetric_Reset.md&amp;value=---%0Auid%3A%20App.Metrics.Core.ApdexMetric.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Core/ApdexMetric.cs/#L143">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta3/src/App.Metrics/Core/ApdexMetric.cs/#L157">View Source</a>
               </span>
               <a id="App_Metrics_Core_ApdexMetric_Reset_" data-uid="App.Metrics.Core.ApdexMetric.Reset*"></a>
               <h4 id="App_Metrics_Core_ApdexMetric_Reset" data-uid="App.Metrics.Core.ApdexMetric.Reset">Reset()</h4>
@@ -549,7 +570,7 @@ value the more biased the reservoir will be towards newer values.</p>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_ApdexMetric_StartRecording.md&amp;value=---%0Auid%3A%20App.Metrics.Core.ApdexMetric.StartRecording%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Core/ApdexMetric.cs/#L149">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta3/src/App.Metrics/Core/ApdexMetric.cs/#L163">View Source</a>
               </span>
               <a id="App_Metrics_Core_ApdexMetric_StartRecording_" data-uid="App.Metrics.Core.ApdexMetric.StartRecording*"></a>
               <h4 id="App_Metrics_Core_ApdexMetric_StartRecording" data-uid="App.Metrics.Core.ApdexMetric.StartRecording">StartRecording()</h4>
@@ -581,7 +602,7 @@ value the more biased the reservoir will be towards newer values.</p>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_ApdexMetric_Track_System_Action_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.ApdexMetric.Track(System.Action)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Core/ApdexMetric.cs/#L166">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta3/src/App.Metrics/Core/ApdexMetric.cs/#L180">View Source</a>
               </span>
               <a id="App_Metrics_Core_ApdexMetric_Track_" data-uid="App.Metrics.Core.ApdexMetric.Track*"></a>
               <h4 id="App_Metrics_Core_ApdexMetric_Track_System_Action_" data-uid="App.Metrics.Core.ApdexMetric.Track(System.Action)">Track(Action)</h4>
@@ -615,7 +636,7 @@ value the more biased the reservoir will be towards newer values.</p>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_ApdexMetric_Track_System_Int64_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.ApdexMetric.Track(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Core/ApdexMetric.cs/#L155">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta3/src/App.Metrics/Core/ApdexMetric.cs/#L169">View Source</a>
               </span>
               <a id="App_Metrics_Core_ApdexMetric_Track_" data-uid="App.Metrics.Core.ApdexMetric.Track*"></a>
               <h4 id="App_Metrics_Core_ApdexMetric_Track_System_Int64_" data-uid="App.Metrics.Core.ApdexMetric.Track(System.Int64)">Track(Int64)</h4>
@@ -649,7 +670,7 @@ value the more biased the reservoir will be towards newer values.</p>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_ApdexMetric_Track__1_System_Func___0__.md&amp;value=---%0Auid%3A%20App.Metrics.Core.ApdexMetric.Track%60%601(System.Func%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Core/ApdexMetric.cs/#L180">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta3/src/App.Metrics/Core/ApdexMetric.cs/#L194">View Source</a>
               </span>
               <a id="App_Metrics_Core_ApdexMetric_Track_" data-uid="App.Metrics.Core.ApdexMetric.Track*"></a>
               <h4 id="App_Metrics_Core_ApdexMetric_Track__1_System_Func___0__" data-uid="App.Metrics.Core.ApdexMetric.Track``1(System.Func{``0})">Track&lt;T&gt;(Func&lt;T&gt;)</h4>
@@ -719,7 +740,7 @@ value the more biased the reservoir will be towards newer values.</p>
                     <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_ApdexMetric.md&amp;value=---%0Auid%3A%20App.Metrics.Core.ApdexMetric%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics/Core/ApdexMetric.cs/#L19" class="contribution-link">View Source</a>
+                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta3/src/App.Metrics/Core/ApdexMetric.cs/#L19" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

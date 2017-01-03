@@ -113,18 +113,18 @@
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolClient__ctor_System_Uri_System_String_Microsoft_Extensions_Logging_ILoggerFactory_System_String_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolClient.%23ctor(System.Uri%2CSystem.String%2CMicrosoft.Extensions.Logging.ILoggerFactory%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolClient__ctor_Microsoft_Extensions_Logging_ILoggerFactory_System_Uri_System_String_System_String_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolClient.%23ctor(Microsoft.Extensions.Logging.ILoggerFactory%2CSystem.Uri%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics.Extensions.Reporting.InfluxDB/Client/LineProtocolClient.cs/#L28">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta3/src/App.Metrics.Extensions.Reporting.InfluxDB/Client/LineProtocolClient.cs/#L28">View Source</a>
               </span>
               <a id="App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolClient__ctor_" data-uid="App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolClient.#ctor*"></a>
-              <h4 id="App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolClient__ctor_System_Uri_System_String_Microsoft_Extensions_Logging_ILoggerFactory_System_String_System_String_System_String_System_String_System_String_" data-uid="App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolClient.#ctor(System.Uri,System.String,Microsoft.Extensions.Logging.ILoggerFactory,System.String,System.String,System.String,System.String,System.String)">LineProtocolClient(Uri, String, ILoggerFactory, String, String, String, String, String)</h4>
+              <h4 id="App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolClient__ctor_Microsoft_Extensions_Logging_ILoggerFactory_System_Uri_System_String_System_String_System_String_System_String_System_String_System_String_" data-uid="App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolClient.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,System.Uri,System.String,System.String,System.String,System.String,System.String,System.String)">LineProtocolClient(ILoggerFactory, Uri, String, String, String, String, String, String)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public LineProtocolClient(Uri serverBaseAddress, string database, ILoggerFactory loggerFactory, string username = null, string password = null, string retentionPolicy = null, string consistenency = null, string breakerRate = &quot;3 / 00:00:30&quot;)</code></pre>
+                <pre><code class="lang-csharp hljs">public LineProtocolClient(ILoggerFactory loggerFactory, Uri serverBaseAddress, string database, string username = null, string password = null, string retentionPolicy = null, string consistenency = null, string breakerRate = &quot;3 / 00:00:30&quot;)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -137,6 +137,11 @@
                 </thead>
                 <tbody>
                   <tr>
+                    <td><span class="xref">Microsoft.Extensions.Logging.ILoggerFactory</span></td>
+                    <td><em>loggerFactory</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
                     <td><span class="xref">System.Uri</span></td>
                     <td><em>serverBaseAddress</em></td>
                     <td></td>
@@ -144,11 +149,6 @@
                   <tr>
                     <td><span class="xref">System.String</span></td>
                     <td><em>database</em></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td><span class="xref">Microsoft.Extensions.Logging.ILoggerFactory</span></td>
-                    <td><em>loggerFactory</em></td>
                     <td></td>
                   </tr>
                   <tr>
@@ -185,7 +185,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolClient_WriteAsync_App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolPayload_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolClient.WriteAsync(App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayload%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics.Extensions.Reporting.InfluxDB/Client/LineProtocolClient.cs/#L72">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta3/src/App.Metrics.Extensions.Reporting.InfluxDB/Client/LineProtocolClient.cs/#L74">View Source</a>
               </span>
               <a id="App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolClient_WriteAsync_" data-uid="App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolClient.WriteAsync*"></a>
               <h4 id="App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolClient_WriteAsync_App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolPayload_System_Threading_CancellationToken_" data-uid="App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolClient.WriteAsync(App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayload,System.Threading.CancellationToken)">WriteAsync(LineProtocolPayload, CancellationToken)</h4>
@@ -243,7 +243,7 @@
                     <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolClient.md&amp;value=---%0Auid%3A%20App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics/blob/master/src/App.Metrics.Extensions.Reporting.InfluxDB/Client/LineProtocolClient.cs/#L17" class="contribution-link">View Source</a>
+                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta3/src/App.Metrics.Extensions.Reporting.InfluxDB/Client/LineProtocolClient.cs/#L17" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
