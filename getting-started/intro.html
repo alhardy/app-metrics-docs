@@ -103,7 +103,7 @@
 </ol>
 </li>
 </ul>
-<div class="NOTE"><h5>Note</h5><p>Try either the <a href="https://github.com/alhardy/AppMetrics/tree/master/samples/Api.Sample">AspNet Core Api</a> or <a href="https://github.com/alhardy/AppMetrics/tree/master/samples/Mvc.Sample">AspNet Core MVC</a> Sample</p>
+<div class="NOTE"><h5>Note</h5><p>Try either the <a href="https://github.com/alhardy/AppMetrics.Samples/tree/master/src/Api.Sample">AspNet Core Api</a> or <a href="https://github.com/alhardy/AppMetrics.Samples/tree/master/src/Mvc.Sample">AspNet Core MVC</a> Sample</p>
 </div>
 <h2 id="configuring-a-console-application">Configuring a Console Application</h2>
 <ol>
@@ -162,7 +162,7 @@
 <li><code>AddHealthChecks</code> registers the Health Checking sytem, it will scan for classes within the project and any other project which has a reference to App Metrics and register any class which inherits <code>HealthCheck</code>. Alternatively, this method also provides access to the <code>IHealthCheckFactory</code> where you can register health checks inline.</li>
 <li><code>AddReporting</code> provides access to the <code>IReportFactory</code> allowing multiple metric report providers to be configured that will execute on each report run at the specified interval</li>
 </ul>
-<div class="NOTE"><h5>Note</h5><p>Try the <a href="https://github.com/alhardy/AppMetrics/tree/master/samples/App.Sample">.NET Core Console Application</a> Sample.</p>
+<div class="NOTE"><h5>Note</h5><p>Try the <a href="https://github.com/alhardy/AppMetrics.Samples/tree/master/src/App.Sample">.NET Core Console Application</a> Sample.</p>
 </div>
 <h2 id="measuring-application-metrics">Measuring Application Metrics</h2>
 <p>App Metrics provides access to an <code>IMetrics</code> interface which is registered as a Single Instance. This can be injected where required to start mesuring different types of metrics.</p>

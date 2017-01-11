@@ -5239,17 +5239,6 @@ references:
   fullName.vb: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.ReportMetric(Of T)(System.String, App.Metrics.Data.MetricValueSource(Of T))
   nameWithType: ConsoleReporter.ReportMetric<T>(String, MetricValueSource<T>)
   nameWithType.vb: ReportMetric(Of T)(String, MetricValueSource(Of T))
-- uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.StartMetricTypeReport(System.Type)
-  name: StartMetricTypeReport(Type)
-  href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporter.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporter_StartMetricTypeReport_System_Type_
-  commentId: M:App.Metrics.Extensions.Reporting.Console.ConsoleReporter.StartMetricTypeReport(System.Type)
-  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.StartMetricTypeReport(System.Type)
-  nameWithType: ConsoleReporter.StartMetricTypeReport(Type)
-- uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.StartMetricTypeReport*
-  href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporter.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporter_StartMetricTypeReport_
-  commentId: Overload:App.Metrics.Extensions.Reporting.Console.ConsoleReporter.StartMetricTypeReport
-  name: StartMetricTypeReport
-  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.StartMetricTypeReport(System.Type)
 - uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporter.StartReportRun(App.Metrics.IMetrics)
   name: StartReportRun(IMetrics)
   href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporter.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporter_StartReportRun_App_Metrics_IMetrics_
@@ -5278,12 +5267,12 @@ references:
   commentId: T:App.Metrics.Extensions.Reporting.Console.ConsoleReporterExtensions
   fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporterExtensions
   nameWithType: ConsoleReporterExtensions
-- uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporterExtensions.AddConsole(App.Metrics.Reporting.Interfaces.IReportFactory,App.Metrics.Extensions.Reporting.Console.IConsoleReporterSettings,App.Metrics.IMetricsFilter)
-  name: AddConsole(IReportFactory, IConsoleReporterSettings, IMetricsFilter)
-  href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporterExtensions.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporterExtensions_AddConsole_App_Metrics_Reporting_Interfaces_IReportFactory_App_Metrics_Extensions_Reporting_Console_IConsoleReporterSettings_App_Metrics_IMetricsFilter_
-  commentId: M:App.Metrics.Extensions.Reporting.Console.ConsoleReporterExtensions.AddConsole(App.Metrics.Reporting.Interfaces.IReportFactory,App.Metrics.Extensions.Reporting.Console.IConsoleReporterSettings,App.Metrics.IMetricsFilter)
-  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporterExtensions.AddConsole(App.Metrics.Reporting.Interfaces.IReportFactory, App.Metrics.Extensions.Reporting.Console.IConsoleReporterSettings, App.Metrics.IMetricsFilter)
-  nameWithType: ConsoleReporterExtensions.AddConsole(IReportFactory, IConsoleReporterSettings, IMetricsFilter)
+- uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporterExtensions.AddConsole(App.Metrics.Reporting.Interfaces.IReportFactory,App.Metrics.Extensions.Reporting.Console.ConsoleReporterSettings,App.Metrics.IMetricsFilter)
+  name: AddConsole(IReportFactory, ConsoleReporterSettings, IMetricsFilter)
+  href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporterExtensions.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporterExtensions_AddConsole_App_Metrics_Reporting_Interfaces_IReportFactory_App_Metrics_Extensions_Reporting_Console_ConsoleReporterSettings_App_Metrics_IMetricsFilter_
+  commentId: M:App.Metrics.Extensions.Reporting.Console.ConsoleReporterExtensions.AddConsole(App.Metrics.Reporting.Interfaces.IReportFactory,App.Metrics.Extensions.Reporting.Console.ConsoleReporterSettings,App.Metrics.IMetricsFilter)
+  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporterExtensions.AddConsole(App.Metrics.Reporting.Interfaces.IReportFactory, App.Metrics.Extensions.Reporting.Console.ConsoleReporterSettings, App.Metrics.IMetricsFilter)
+  nameWithType: ConsoleReporterExtensions.AddConsole(IReportFactory, ConsoleReporterSettings, IMetricsFilter)
 - uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporterExtensions.AddConsole(App.Metrics.Reporting.Interfaces.IReportFactory,App.Metrics.IMetricsFilter)
   name: AddConsole(IReportFactory, IMetricsFilter)
   href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporterExtensions.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporterExtensions_AddConsole_App_Metrics_Reporting_Interfaces_IReportFactory_App_Metrics_IMetricsFilter_
@@ -5294,24 +5283,24 @@ references:
   href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporterExtensions.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporterExtensions_AddConsole_
   commentId: Overload:App.Metrics.Extensions.Reporting.Console.ConsoleReporterExtensions.AddConsole
   name: AddConsole
-  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporterExtensions.AddConsole(App.Metrics.Reporting.Interfaces.IReportFactory, App.Metrics.Extensions.Reporting.Console.IConsoleReporterSettings, App.Metrics.IMetricsFilter)
+  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporterExtensions.AddConsole(App.Metrics.Reporting.Interfaces.IReportFactory, App.Metrics.Extensions.Reporting.Console.ConsoleReporterSettings, App.Metrics.IMetricsFilter)
 - uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider
   name: ConsoleReporterProvider
   href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporterProvider
   commentId: T:App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider
   fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider
   nameWithType: ConsoleReporterProvider
-- uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.#ctor(App.Metrics.Extensions.Reporting.Console.IConsoleReporterSettings,App.Metrics.IMetricsFilter)
-  name: ConsoleReporterProvider(IConsoleReporterSettings, IMetricsFilter)
-  href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporterProvider__ctor_App_Metrics_Extensions_Reporting_Console_IConsoleReporterSettings_App_Metrics_IMetricsFilter_
-  commentId: M:App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.#ctor(App.Metrics.Extensions.Reporting.Console.IConsoleReporterSettings,App.Metrics.IMetricsFilter)
-  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.ConsoleReporterProvider(App.Metrics.Extensions.Reporting.Console.IConsoleReporterSettings, App.Metrics.IMetricsFilter)
-  nameWithType: ConsoleReporterProvider.ConsoleReporterProvider(IConsoleReporterSettings, IMetricsFilter)
+- uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.#ctor(App.Metrics.Extensions.Reporting.Console.ConsoleReporterSettings,App.Metrics.IMetricsFilter)
+  name: ConsoleReporterProvider(ConsoleReporterSettings, IMetricsFilter)
+  href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporterProvider__ctor_App_Metrics_Extensions_Reporting_Console_ConsoleReporterSettings_App_Metrics_IMetricsFilter_
+  commentId: M:App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.#ctor(App.Metrics.Extensions.Reporting.Console.ConsoleReporterSettings,App.Metrics.IMetricsFilter)
+  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.ConsoleReporterProvider(App.Metrics.Extensions.Reporting.Console.ConsoleReporterSettings, App.Metrics.IMetricsFilter)
+  nameWithType: ConsoleReporterProvider.ConsoleReporterProvider(ConsoleReporterSettings, IMetricsFilter)
 - uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.#ctor*
   href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporterProvider__ctor_
   commentId: Overload:App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.#ctor
   name: ConsoleReporterProvider
-  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.ConsoleReporterProvider(App.Metrics.Extensions.Reporting.Console.IConsoleReporterSettings, App.Metrics.IMetricsFilter)
+  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.ConsoleReporterProvider(App.Metrics.Extensions.Reporting.Console.ConsoleReporterSettings, App.Metrics.IMetricsFilter)
 - uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.CreateMetricReporter(System.String,Microsoft.Extensions.Logging.ILoggerFactory)
   name: CreateMetricReporter(String, ILoggerFactory)
   href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporterProvider_CreateMetricReporter_System_String_Microsoft_Extensions_Logging_ILoggerFactory_
@@ -5334,17 +5323,6 @@ references:
   commentId: Overload:App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.Filter
   name: Filter
   fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.Filter
-- uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.Settings
-  name: Settings
-  href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporterProvider_Settings
-  commentId: P:App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.Settings
-  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.Settings
-  nameWithType: ConsoleReporterProvider.Settings
-- uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.Settings*
-  href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporterProvider_Settings_
-  commentId: Overload:App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.Settings
-  name: Settings
-  fullName: App.Metrics.Extensions.Reporting.Console.ConsoleReporterProvider.Settings
 - uid: App.Metrics.Extensions.Reporting.Console.ConsoleReporterSettings
   name: ConsoleReporterSettings
   href: api/App.Metrics.Extensions.Reporting.Console.ConsoleReporterSettings.html#App_Metrics_Extensions_Reporting_Console_ConsoleReporterSettings
@@ -5380,6 +5358,221 @@ references:
   commentId: N:App.Metrics.Extensions.Reporting.InfluxDB.Client
   fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client
   nameWithType: App.Metrics.Extensions.Reporting.InfluxDB.Client
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.DefaultLineProtocolClient
+  name: DefaultLineProtocolClient
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.DefaultLineProtocolClient.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_DefaultLineProtocolClient
+  commentId: T:App.Metrics.Extensions.Reporting.InfluxDB.Client.DefaultLineProtocolClient
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.DefaultLineProtocolClient
+  nameWithType: DefaultLineProtocolClient
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.DefaultLineProtocolClient.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings)
+  name: DefaultLineProtocolClient(ILoggerFactory, InfluxDBSettings)
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.DefaultLineProtocolClient.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_DefaultLineProtocolClient__ctor_Microsoft_Extensions_Logging_ILoggerFactory_App_Metrics_Extensions_Reporting_InfluxDB_Client_InfluxDBSettings_
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.Client.DefaultLineProtocolClient.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings)
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.DefaultLineProtocolClient.DefaultLineProtocolClient(Microsoft.Extensions.Logging.ILoggerFactory, App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings)
+  nameWithType: DefaultLineProtocolClient.DefaultLineProtocolClient(ILoggerFactory, InfluxDBSettings)
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.DefaultLineProtocolClient.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings,App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy,System.Net.Http.HttpMessageHandler)
+  name: DefaultLineProtocolClient(ILoggerFactory, InfluxDBSettings, HttpPolicy, HttpMessageHandler)
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.DefaultLineProtocolClient.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_DefaultLineProtocolClient__ctor_Microsoft_Extensions_Logging_ILoggerFactory_App_Metrics_Extensions_Reporting_InfluxDB_Client_InfluxDBSettings_App_Metrics_Extensions_Reporting_InfluxDB_HttpPolicy_System_Net_Http_HttpMessageHandler_
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.Client.DefaultLineProtocolClient.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings,App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy,System.Net.Http.HttpMessageHandler)
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.DefaultLineProtocolClient.DefaultLineProtocolClient(Microsoft.Extensions.Logging.ILoggerFactory, App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings, App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy, System.Net.Http.HttpMessageHandler)
+  nameWithType: DefaultLineProtocolClient.DefaultLineProtocolClient(ILoggerFactory, InfluxDBSettings, HttpPolicy, HttpMessageHandler)
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.DefaultLineProtocolClient.#ctor*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.DefaultLineProtocolClient.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_DefaultLineProtocolClient__ctor_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.Client.DefaultLineProtocolClient.#ctor
+  name: DefaultLineProtocolClient
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.DefaultLineProtocolClient.DefaultLineProtocolClient(Microsoft.Extensions.Logging.ILoggerFactory, App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings)
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.DefaultLineProtocolClient.WriteAsync(App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayload,System.Threading.CancellationToken)
+  name: WriteAsync(LineProtocolPayload, CancellationToken)
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.DefaultLineProtocolClient.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_DefaultLineProtocolClient_WriteAsync_App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolPayload_System_Threading_CancellationToken_
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.Client.DefaultLineProtocolClient.WriteAsync(App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayload,System.Threading.CancellationToken)
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.DefaultLineProtocolClient.WriteAsync(App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayload, System.Threading.CancellationToken)
+  nameWithType: DefaultLineProtocolClient.WriteAsync(LineProtocolPayload, CancellationToken)
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.DefaultLineProtocolClient.WriteAsync*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.DefaultLineProtocolClient.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_DefaultLineProtocolClient_WriteAsync_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.Client.DefaultLineProtocolClient.WriteAsync
+  name: WriteAsync
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.DefaultLineProtocolClient.WriteAsync(App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayload, System.Threading.CancellationToken)
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolClient
+  name: ILineProtocolClient
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolClient.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_ILineProtocolClient
+  commentId: T:App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolClient
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolClient
+  nameWithType: ILineProtocolClient
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolClient.WriteAsync(App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayload,System.Threading.CancellationToken)
+  name: WriteAsync(LineProtocolPayload, CancellationToken)
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolClient.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_ILineProtocolClient_WriteAsync_App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolPayload_System_Threading_CancellationToken_
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolClient.WriteAsync(App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayload,System.Threading.CancellationToken)
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolClient.WriteAsync(App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayload, System.Threading.CancellationToken)
+  nameWithType: ILineProtocolClient.WriteAsync(LineProtocolPayload, CancellationToken)
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolClient.WriteAsync*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolClient.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_ILineProtocolClient_WriteAsync_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolClient.WriteAsync
+  name: WriteAsync
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolClient.WriteAsync(App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayload, System.Threading.CancellationToken)
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder
+  name: ILineProtocolPayloadBuilder
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_ILineProtocolPayloadBuilder
+  commentId: T:App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder
+  nameWithType: ILineProtocolPayloadBuilder
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.Clear
+  name: Clear()
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_ILineProtocolPayloadBuilder_Clear
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.Clear
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.Clear()
+  nameWithType: ILineProtocolPayloadBuilder.Clear()
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.Clear*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_ILineProtocolPayloadBuilder_Clear_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.Clear
+  name: Clear
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.Clear()
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.Init
+  name: Init()
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_ILineProtocolPayloadBuilder_Init
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.Init
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.Init()
+  nameWithType: ILineProtocolPayloadBuilder.Init()
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.Init*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_ILineProtocolPayloadBuilder_Init_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.Init
+  name: Init
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.Init()
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.Pack(System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.Object},App.Metrics.MetricTags)
+  name: Pack(String, IEnumerable<String>, IEnumerable<Object>, MetricTags)
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_ILineProtocolPayloadBuilder_Pack_System_String_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_Object__App_Metrics_MetricTags_
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.Pack(System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.Object},App.Metrics.MetricTags)
+  name.vb: Pack(String, IEnumerable(Of String), IEnumerable(Of Object), MetricTags)
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.Pack(System.String, System.Collections.Generic.IEnumerable<System.String>, System.Collections.Generic.IEnumerable<System.Object>, App.Metrics.MetricTags)
+  fullName.vb: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.Pack(System.String, System.Collections.Generic.IEnumerable(Of System.String), System.Collections.Generic.IEnumerable(Of System.Object), App.Metrics.MetricTags)
+  nameWithType: ILineProtocolPayloadBuilder.Pack(String, IEnumerable<String>, IEnumerable<Object>, MetricTags)
+  nameWithType.vb: Pack(String, IEnumerable(Of String), IEnumerable(Of Object), MetricTags)
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.Pack(System.String,System.Object,App.Metrics.MetricTags)
+  name: Pack(String, Object, MetricTags)
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_ILineProtocolPayloadBuilder_Pack_System_String_System_Object_App_Metrics_MetricTags_
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.Pack(System.String,System.Object,App.Metrics.MetricTags)
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.Pack(System.String, System.Object, App.Metrics.MetricTags)
+  nameWithType: ILineProtocolPayloadBuilder.Pack(String, Object, MetricTags)
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.Pack*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_ILineProtocolPayloadBuilder_Pack_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.Pack
+  name: Pack
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.Pack(System.String, System.Object, App.Metrics.MetricTags)
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.Payload
+  name: Payload()
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_ILineProtocolPayloadBuilder_Payload
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.Payload
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.Payload()
+  nameWithType: ILineProtocolPayloadBuilder.Payload()
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.Payload*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_ILineProtocolPayloadBuilder_Payload_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.Payload
+  name: Payload
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.Payload()
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.PayloadFormatted
+  name: PayloadFormatted()
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_ILineProtocolPayloadBuilder_PayloadFormatted
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.PayloadFormatted
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.PayloadFormatted()
+  nameWithType: ILineProtocolPayloadBuilder.PayloadFormatted()
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.PayloadFormatted*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_ILineProtocolPayloadBuilder_PayloadFormatted_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.PayloadFormatted
+  name: PayloadFormatted
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder.PayloadFormatted()
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings
+  name: InfluxDBSettings
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_InfluxDBSettings
+  commentId: T:App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings
+  nameWithType: InfluxDBSettings
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.#ctor(System.String,System.Uri)
+  name: InfluxDBSettings(String, Uri)
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_InfluxDBSettings__ctor_System_String_System_Uri_
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.#ctor(System.String,System.Uri)
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.InfluxDBSettings(System.String, System.Uri)
+  nameWithType: InfluxDBSettings.InfluxDBSettings(String, Uri)
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.#ctor*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_InfluxDBSettings__ctor_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.#ctor
+  name: InfluxDBSettings
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.InfluxDBSettings(System.String, System.Uri)
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.BaseAddress
+  name: BaseAddress
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_InfluxDBSettings_BaseAddress
+  commentId: P:App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.BaseAddress
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.BaseAddress
+  nameWithType: InfluxDBSettings.BaseAddress
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.BaseAddress*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_InfluxDBSettings_BaseAddress_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.BaseAddress
+  name: BaseAddress
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.BaseAddress
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.Consistenency
+  name: Consistenency
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_InfluxDBSettings_Consistenency
+  commentId: P:App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.Consistenency
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.Consistenency
+  nameWithType: InfluxDBSettings.Consistenency
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.Consistenency*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_InfluxDBSettings_Consistenency_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.Consistenency
+  name: Consistenency
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.Consistenency
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.Database
+  name: Database
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_InfluxDBSettings_Database
+  commentId: P:App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.Database
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.Database
+  nameWithType: InfluxDBSettings.Database
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.Database*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_InfluxDBSettings_Database_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.Database
+  name: Database
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.Database
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.Endpoint
+  name: Endpoint
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_InfluxDBSettings_Endpoint
+  commentId: P:App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.Endpoint
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.Endpoint
+  nameWithType: InfluxDBSettings.Endpoint
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.Endpoint*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_InfluxDBSettings_Endpoint_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.Endpoint
+  name: Endpoint
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.Endpoint
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.Password
+  name: Password
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_InfluxDBSettings_Password
+  commentId: P:App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.Password
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.Password
+  nameWithType: InfluxDBSettings.Password
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.Password*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_InfluxDBSettings_Password_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.Password
+  name: Password
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.Password
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.RetensionPolicy
+  name: RetensionPolicy
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_InfluxDBSettings_RetensionPolicy
+  commentId: P:App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.RetensionPolicy
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.RetensionPolicy
+  nameWithType: InfluxDBSettings.RetensionPolicy
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.RetensionPolicy*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_InfluxDBSettings_RetensionPolicy_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.RetensionPolicy
+  name: RetensionPolicy
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.RetensionPolicy
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.UserName
+  name: UserName
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_InfluxDBSettings_UserName
+  commentId: P:App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.UserName
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.UserName
+  nameWithType: InfluxDBSettings.UserName
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.UserName*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_InfluxDBSettings_UserName_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.UserName
+  name: UserName
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.InfluxDBSettings.UserName
 - uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolClient
   name: LineProtocolClient
   href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolClient.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolClient
@@ -5436,6 +5629,76 @@ references:
   commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayload.Format
   name: Format
   fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayload.Format(System.IO.TextWriter)
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder
+  name: LineProtocolPayloadBuilder
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolPayloadBuilder
+  commentId: T:App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder
+  nameWithType: LineProtocolPayloadBuilder
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.Clear
+  name: Clear()
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolPayloadBuilder_Clear
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.Clear
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.Clear()
+  nameWithType: LineProtocolPayloadBuilder.Clear()
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.Clear*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolPayloadBuilder_Clear_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.Clear
+  name: Clear
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.Clear()
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.Init
+  name: Init()
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolPayloadBuilder_Init
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.Init
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.Init()
+  nameWithType: LineProtocolPayloadBuilder.Init()
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.Init*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolPayloadBuilder_Init_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.Init
+  name: Init
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.Init()
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.Pack(System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.Object},App.Metrics.MetricTags)
+  name: Pack(String, IEnumerable<String>, IEnumerable<Object>, MetricTags)
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolPayloadBuilder_Pack_System_String_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_Object__App_Metrics_MetricTags_
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.Pack(System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.Object},App.Metrics.MetricTags)
+  name.vb: Pack(String, IEnumerable(Of String), IEnumerable(Of Object), MetricTags)
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.Pack(System.String, System.Collections.Generic.IEnumerable<System.String>, System.Collections.Generic.IEnumerable<System.Object>, App.Metrics.MetricTags)
+  fullName.vb: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.Pack(System.String, System.Collections.Generic.IEnumerable(Of System.String), System.Collections.Generic.IEnumerable(Of System.Object), App.Metrics.MetricTags)
+  nameWithType: LineProtocolPayloadBuilder.Pack(String, IEnumerable<String>, IEnumerable<Object>, MetricTags)
+  nameWithType.vb: Pack(String, IEnumerable(Of String), IEnumerable(Of Object), MetricTags)
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.Pack(System.String,System.Object,App.Metrics.MetricTags)
+  name: Pack(String, Object, MetricTags)
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolPayloadBuilder_Pack_System_String_System_Object_App_Metrics_MetricTags_
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.Pack(System.String,System.Object,App.Metrics.MetricTags)
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.Pack(System.String, System.Object, App.Metrics.MetricTags)
+  nameWithType: LineProtocolPayloadBuilder.Pack(String, Object, MetricTags)
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.Pack*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolPayloadBuilder_Pack_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.Pack
+  name: Pack
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.Pack(System.String, System.Object, App.Metrics.MetricTags)
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.Payload
+  name: Payload()
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolPayloadBuilder_Payload
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.Payload
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.Payload()
+  nameWithType: LineProtocolPayloadBuilder.Payload()
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.Payload*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolPayloadBuilder_Payload_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.Payload
+  name: Payload
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.Payload()
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.PayloadFormatted
+  name: PayloadFormatted()
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolPayloadBuilder_PayloadFormatted
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.PayloadFormatted
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.PayloadFormatted()
+  nameWithType: LineProtocolPayloadBuilder.PayloadFormatted()
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.PayloadFormatted*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolPayloadBuilder_PayloadFormatted_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.PayloadFormatted
+  name: PayloadFormatted
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPayloadBuilder.PayloadFormatted()
 - uid: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPoint
   name: LineProtocolPoint
   href: api/App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolPoint.html#App_Metrics_Extensions_Reporting_InfluxDB_Client_LineProtocolPoint
@@ -5552,6 +5815,67 @@ references:
   commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolWriteResult.Success
   name: Success
   fullName: App.Metrics.Extensions.Reporting.InfluxDB.Client.LineProtocolWriteResult.Success
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy
+  name: HttpPolicy
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.html#App_Metrics_Extensions_Reporting_InfluxDB_HttpPolicy
+  commentId: T:App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy
+  nameWithType: HttpPolicy
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.#ctor
+  name: HttpPolicy()
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.html#App_Metrics_Extensions_Reporting_InfluxDB_HttpPolicy__ctor
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.#ctor
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.HttpPolicy()
+  nameWithType: HttpPolicy.HttpPolicy()
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.#ctor*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.html#App_Metrics_Extensions_Reporting_InfluxDB_HttpPolicy__ctor_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.#ctor
+  name: HttpPolicy
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.HttpPolicy()
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.AsPolicy
+  name: AsPolicy()
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.html#App_Metrics_Extensions_Reporting_InfluxDB_HttpPolicy_AsPolicy
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.AsPolicy
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.AsPolicy()
+  nameWithType: HttpPolicy.AsPolicy()
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.AsPolicy*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.html#App_Metrics_Extensions_Reporting_InfluxDB_HttpPolicy_AsPolicy_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.AsPolicy
+  name: AsPolicy
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.AsPolicy()
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.BackoffPeriod
+  name: BackoffPeriod
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.html#App_Metrics_Extensions_Reporting_InfluxDB_HttpPolicy_BackoffPeriod
+  commentId: P:App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.BackoffPeriod
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.BackoffPeriod
+  nameWithType: HttpPolicy.BackoffPeriod
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.BackoffPeriod*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.html#App_Metrics_Extensions_Reporting_InfluxDB_HttpPolicy_BackoffPeriod_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.BackoffPeriod
+  name: BackoffPeriod
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.BackoffPeriod
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.FailuresBeforeBackoff
+  name: FailuresBeforeBackoff
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.html#App_Metrics_Extensions_Reporting_InfluxDB_HttpPolicy_FailuresBeforeBackoff
+  commentId: P:App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.FailuresBeforeBackoff
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.FailuresBeforeBackoff
+  nameWithType: HttpPolicy.FailuresBeforeBackoff
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.FailuresBeforeBackoff*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.html#App_Metrics_Extensions_Reporting_InfluxDB_HttpPolicy_FailuresBeforeBackoff_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.FailuresBeforeBackoff
+  name: FailuresBeforeBackoff
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.FailuresBeforeBackoff
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.Timeout
+  name: Timeout
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.html#App_Metrics_Extensions_Reporting_InfluxDB_HttpPolicy_Timeout
+  commentId: P:App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.Timeout
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.Timeout
+  nameWithType: HttpPolicy.Timeout
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.Timeout*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.html#App_Metrics_Extensions_Reporting_InfluxDB_HttpPolicy_Timeout_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.Timeout
+  name: Timeout
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.HttpPolicy.Timeout
 - uid: App.Metrics.Extensions.Reporting.InfluxDB.IInfluxDbReporterSettings
   name: IInfluxDbReporterSettings
   href: api/App.Metrics.Extensions.Reporting.InfluxDB.IInfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_IInfluxDbReporterSettings
@@ -5641,23 +5965,31 @@ references:
   commentId: T:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter
   fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter
   nameWithType: InfluxDbReporter
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.#ctor(App.Metrics.Extensions.Reporting.InfluxDB.IInfluxDbReporterSettings,Microsoft.Extensions.Logging.ILoggerFactory)
-  name: InfluxDbReporter(IInfluxDbReporterSettings, ILoggerFactory)
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter__ctor_App_Metrics_Extensions_Reporting_InfluxDB_IInfluxDbReporterSettings_Microsoft_Extensions_Logging_ILoggerFactory_
-  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.#ctor(App.Metrics.Extensions.Reporting.InfluxDB.IInfluxDbReporterSettings,Microsoft.Extensions.Logging.ILoggerFactory)
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.InfluxDbReporter(App.Metrics.Extensions.Reporting.InfluxDB.IInfluxDbReporterSettings, Microsoft.Extensions.Logging.ILoggerFactory)
-  nameWithType: InfluxDbReporter.InfluxDbReporter(IInfluxDbReporterSettings, ILoggerFactory)
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.#ctor(System.String,App.Metrics.Extensions.Reporting.InfluxDB.IInfluxDbReporterSettings,Microsoft.Extensions.Logging.ILoggerFactory)
-  name: InfluxDbReporter(String, IInfluxDbReporterSettings, ILoggerFactory)
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter__ctor_System_String_App_Metrics_Extensions_Reporting_InfluxDB_IInfluxDbReporterSettings_Microsoft_Extensions_Logging_ILoggerFactory_
-  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.#ctor(System.String,App.Metrics.Extensions.Reporting.InfluxDB.IInfluxDbReporterSettings,Microsoft.Extensions.Logging.ILoggerFactory)
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.InfluxDbReporter(System.String, App.Metrics.Extensions.Reporting.InfluxDB.IInfluxDbReporterSettings, Microsoft.Extensions.Logging.ILoggerFactory)
-  nameWithType: InfluxDbReporter.InfluxDbReporter(String, IInfluxDbReporterSettings, ILoggerFactory)
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.#ctor(App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolClient,App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder,System.TimeSpan,Microsoft.Extensions.Logging.ILoggerFactory,System.Func{System.String,System.String,System.String})
+  name: InfluxDbReporter(ILineProtocolClient, ILineProtocolPayloadBuilder, TimeSpan, ILoggerFactory, Func<String, String, String>)
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter__ctor_App_Metrics_Extensions_Reporting_InfluxDB_Client_ILineProtocolClient_App_Metrics_Extensions_Reporting_InfluxDB_Client_ILineProtocolPayloadBuilder_System_TimeSpan_Microsoft_Extensions_Logging_ILoggerFactory_System_Func_System_String_System_String_System_String__
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.#ctor(App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolClient,App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder,System.TimeSpan,Microsoft.Extensions.Logging.ILoggerFactory,System.Func{System.String,System.String,System.String})
+  name.vb: InfluxDbReporter(ILineProtocolClient, ILineProtocolPayloadBuilder, TimeSpan, ILoggerFactory, Func(Of String, String, String))
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.InfluxDbReporter(App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolClient, App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder, System.TimeSpan, Microsoft.Extensions.Logging.ILoggerFactory, System.Func<System.String, System.String, System.String>)
+  fullName.vb: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.InfluxDbReporter(App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolClient, App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder, System.TimeSpan, Microsoft.Extensions.Logging.ILoggerFactory, System.Func(Of System.String, System.String, System.String))
+  nameWithType: InfluxDbReporter.InfluxDbReporter(ILineProtocolClient, ILineProtocolPayloadBuilder, TimeSpan, ILoggerFactory, Func<String, String, String>)
+  nameWithType.vb: InfluxDbReporter(ILineProtocolClient, ILineProtocolPayloadBuilder, TimeSpan, ILoggerFactory, Func(Of String, String, String))
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.#ctor(App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolClient,App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder,System.TimeSpan,System.String,Microsoft.Extensions.Logging.ILoggerFactory,System.Func{System.String,System.String,System.String})
+  name: InfluxDbReporter(ILineProtocolClient, ILineProtocolPayloadBuilder, TimeSpan, String, ILoggerFactory, Func<String, String, String>)
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter__ctor_App_Metrics_Extensions_Reporting_InfluxDB_Client_ILineProtocolClient_App_Metrics_Extensions_Reporting_InfluxDB_Client_ILineProtocolPayloadBuilder_System_TimeSpan_System_String_Microsoft_Extensions_Logging_ILoggerFactory_System_Func_System_String_System_String_System_String__
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.#ctor(App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolClient,App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder,System.TimeSpan,System.String,Microsoft.Extensions.Logging.ILoggerFactory,System.Func{System.String,System.String,System.String})
+  name.vb: InfluxDbReporter(ILineProtocolClient, ILineProtocolPayloadBuilder, TimeSpan, String, ILoggerFactory, Func(Of String, String, String))
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.InfluxDbReporter(App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolClient, App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder, System.TimeSpan, System.String, Microsoft.Extensions.Logging.ILoggerFactory, System.Func<System.String, System.String, System.String>)
+  fullName.vb: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.InfluxDbReporter(App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolClient, App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder, System.TimeSpan, System.String, Microsoft.Extensions.Logging.ILoggerFactory, System.Func(Of System.String, System.String, System.String))
+  nameWithType: InfluxDbReporter.InfluxDbReporter(ILineProtocolClient, ILineProtocolPayloadBuilder, TimeSpan, String, ILoggerFactory, Func<String, String, String>)
+  nameWithType.vb: InfluxDbReporter(ILineProtocolClient, ILineProtocolPayloadBuilder, TimeSpan, String, ILoggerFactory, Func(Of String, String, String))
 - uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.#ctor*
   href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter__ctor_
   commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.#ctor
   name: InfluxDbReporter
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.InfluxDbReporter(App.Metrics.Extensions.Reporting.InfluxDB.IInfluxDbReporterSettings, Microsoft.Extensions.Logging.ILoggerFactory)
+  name.vb: InfluxDbReporter
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.InfluxDbReporter(App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolClient, App.Metrics.Extensions.Reporting.InfluxDB.Client.ILineProtocolPayloadBuilder, System.TimeSpan, Microsoft.Extensions.Logging.ILoggerFactory, System.Func<System.String, System.String, System.String>)
+  fullName.vb: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.InfluxDbReporter
 - uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.Dispose
   name: Dispose()
   href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter_Dispose
@@ -5686,17 +6018,6 @@ references:
   commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.EndAndFlushReportRunAsync
   name: EndAndFlushReportRunAsync
   fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.EndAndFlushReportRunAsync(App.Metrics.IMetrics)
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.EndMetricTypeReport(System.Type)
-  name: EndMetricTypeReport(Type)
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter_EndMetricTypeReport_System_Type_
-  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.EndMetricTypeReport(System.Type)
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.EndMetricTypeReport(System.Type)
-  nameWithType: InfluxDbReporter.EndMetricTypeReport(Type)
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.EndMetricTypeReport*
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter_EndMetricTypeReport_
-  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.EndMetricTypeReport
-  name: EndMetricTypeReport
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.EndMetricTypeReport(System.Type)
 - uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.Name
   name: Name
   href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter_Name
@@ -5762,17 +6083,6 @@ references:
   fullName.vb: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.ReportMetric(Of T)(System.String, App.Metrics.Data.MetricValueSource(Of T))
   nameWithType: InfluxDbReporter.ReportMetric<T>(String, MetricValueSource<T>)
   nameWithType.vb: ReportMetric(Of T)(String, MetricValueSource(Of T))
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.StartMetricTypeReport(System.Type)
-  name: StartMetricTypeReport(Type)
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter_StartMetricTypeReport_System_Type_
-  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.StartMetricTypeReport(System.Type)
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.StartMetricTypeReport(System.Type)
-  nameWithType: InfluxDbReporter.StartMetricTypeReport(Type)
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.StartMetricTypeReport*
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter_StartMetricTypeReport_
-  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.StartMetricTypeReport
-  name: StartMetricTypeReport
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.StartMetricTypeReport(System.Type)
 - uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.StartReportRun(App.Metrics.IMetrics)
   name: StartReportRun(IMetrics)
   href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporter.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporter_StartReportRun_App_Metrics_IMetrics_
@@ -5790,17 +6100,23 @@ references:
   commentId: T:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider
   fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider
   nameWithType: InfluxDbReporterProvider
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.#ctor(App.Metrics.Extensions.Reporting.InfluxDB.IInfluxDbReporterSettings,App.Metrics.IMetricsFilter)
-  name: InfluxDbReporterProvider(IInfluxDbReporterSettings, IMetricsFilter)
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporterProvider__ctor_App_Metrics_Extensions_Reporting_InfluxDB_IInfluxDbReporterSettings_App_Metrics_IMetricsFilter_
-  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.#ctor(App.Metrics.Extensions.Reporting.InfluxDB.IInfluxDbReporterSettings,App.Metrics.IMetricsFilter)
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.InfluxDbReporterProvider(App.Metrics.Extensions.Reporting.InfluxDB.IInfluxDbReporterSettings, App.Metrics.IMetricsFilter)
-  nameWithType: InfluxDbReporterProvider.InfluxDbReporterProvider(IInfluxDbReporterSettings, IMetricsFilter)
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.#ctor(App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings)
+  name: InfluxDbReporterProvider(InfluxDBReporterSettings)
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporterProvider__ctor_App_Metrics_Extensions_Reporting_InfluxDB_InfluxDBReporterSettings_
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.#ctor(App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings)
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.InfluxDbReporterProvider(App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings)
+  nameWithType: InfluxDbReporterProvider.InfluxDbReporterProvider(InfluxDBReporterSettings)
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.#ctor(App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings,App.Metrics.IMetricsFilter)
+  name: InfluxDbReporterProvider(InfluxDBReporterSettings, IMetricsFilter)
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporterProvider__ctor_App_Metrics_Extensions_Reporting_InfluxDB_InfluxDBReporterSettings_App_Metrics_IMetricsFilter_
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.#ctor(App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings,App.Metrics.IMetricsFilter)
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.InfluxDbReporterProvider(App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings, App.Metrics.IMetricsFilter)
+  nameWithType: InfluxDbReporterProvider.InfluxDbReporterProvider(InfluxDBReporterSettings, IMetricsFilter)
 - uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.#ctor*
   href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporterProvider__ctor_
   commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.#ctor
   name: InfluxDbReporterProvider
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.InfluxDbReporterProvider(App.Metrics.Extensions.Reporting.InfluxDB.IInfluxDbReporterSettings, App.Metrics.IMetricsFilter)
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.InfluxDbReporterProvider(App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings)
 - uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.CreateMetricReporter(System.String,Microsoft.Extensions.Logging.ILoggerFactory)
   name: CreateMetricReporter(String, ILoggerFactory)
   href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporterProvider_CreateMetricReporter_System_String_Microsoft_Extensions_Logging_ILoggerFactory_
@@ -5823,111 +6139,67 @@ references:
   commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.Filter
   name: Filter
   fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.Filter
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.Settings
-  name: Settings
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporterProvider_Settings
-  commentId: P:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.Settings
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.Settings
-  nameWithType: InfluxDbReporterProvider.Settings
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.Settings*
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporterProvider_Settings_
-  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.Settings
-  name: Settings
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterProvider.Settings
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings
-  name: InfluxDbReporterSettings
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporterSettings
-  commentId: T:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings
-  nameWithType: InfluxDbReporterSettings
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.BaseAddress
-  name: BaseAddress
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporterSettings_BaseAddress
-  commentId: P:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.BaseAddress
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.BaseAddress
-  nameWithType: InfluxDbReporterSettings.BaseAddress
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.BaseAddress*
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporterSettings_BaseAddress_
-  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.BaseAddress
-  name: BaseAddress
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.BaseAddress
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.BreakerRate
-  name: BreakerRate
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporterSettings_BreakerRate
-  commentId: P:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.BreakerRate
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.BreakerRate
-  nameWithType: InfluxDbReporterSettings.BreakerRate
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.BreakerRate*
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporterSettings_BreakerRate_
-  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.BreakerRate
-  name: BreakerRate
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.BreakerRate
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.Consistency
-  name: Consistency
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporterSettings_Consistency
-  commentId: P:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.Consistency
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.Consistency
-  nameWithType: InfluxDbReporterSettings.Consistency
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.Consistency*
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporterSettings_Consistency_
-  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.Consistency
-  name: Consistency
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.Consistency
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.Database
-  name: Database
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporterSettings_Database
-  commentId: P:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.Database
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.Database
-  nameWithType: InfluxDbReporterSettings.Database
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.Database*
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporterSettings_Database_
-  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.Database
-  name: Database
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.Database
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.Password
-  name: Password
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporterSettings_Password
-  commentId: P:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.Password
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.Password
-  nameWithType: InfluxDbReporterSettings.Password
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.Password*
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporterSettings_Password_
-  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.Password
-  name: Password
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.Password
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.ReportInterval
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings
+  name: InfluxDBReporterSettings
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDBReporterSettings
+  commentId: T:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings
+  nameWithType: InfluxDBReporterSettings
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.#ctor
+  name: InfluxDBReporterSettings()
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDBReporterSettings__ctor
+  commentId: M:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.#ctor
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.InfluxDBReporterSettings()
+  nameWithType: InfluxDBReporterSettings.InfluxDBReporterSettings()
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.#ctor*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDBReporterSettings__ctor_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.#ctor
+  name: InfluxDBReporterSettings
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.InfluxDBReporterSettings()
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.HttpPolicy
+  name: HttpPolicy
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDBReporterSettings_HttpPolicy
+  commentId: P:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.HttpPolicy
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.HttpPolicy
+  nameWithType: InfluxDBReporterSettings.HttpPolicy
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.HttpPolicy*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDBReporterSettings_HttpPolicy_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.HttpPolicy
+  name: HttpPolicy
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.HttpPolicy
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.InfluxDbSettings
+  name: InfluxDbSettings
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDBReporterSettings_InfluxDbSettings
+  commentId: P:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.InfluxDbSettings
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.InfluxDbSettings
+  nameWithType: InfluxDBReporterSettings.InfluxDbSettings
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.InfluxDbSettings*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDBReporterSettings_InfluxDbSettings_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.InfluxDbSettings
+  name: InfluxDbSettings
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.InfluxDbSettings
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.MetricNameFormatter
+  name: MetricNameFormatter
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDBReporterSettings_MetricNameFormatter
+  commentId: P:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.MetricNameFormatter
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.MetricNameFormatter
+  nameWithType: InfluxDBReporterSettings.MetricNameFormatter
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.MetricNameFormatter*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDBReporterSettings_MetricNameFormatter_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.MetricNameFormatter
+  name: MetricNameFormatter
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.MetricNameFormatter
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.ReportInterval
   name: ReportInterval
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporterSettings_ReportInterval
-  commentId: P:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.ReportInterval
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.ReportInterval
-  nameWithType: InfluxDbReporterSettings.ReportInterval
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.ReportInterval*
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporterSettings_ReportInterval_
-  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.ReportInterval
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDBReporterSettings_ReportInterval
+  commentId: P:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.ReportInterval
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.ReportInterval
+  nameWithType: InfluxDBReporterSettings.ReportInterval
+- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.ReportInterval*
+  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDBReporterSettings_ReportInterval_
+  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.ReportInterval
   name: ReportInterval
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.ReportInterval
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.RetentionPolicy
-  name: RetentionPolicy
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporterSettings_RetentionPolicy
-  commentId: P:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.RetentionPolicy
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.RetentionPolicy
-  nameWithType: InfluxDbReporterSettings.RetentionPolicy
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.RetentionPolicy*
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporterSettings_RetentionPolicy_
-  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.RetentionPolicy
-  name: RetentionPolicy
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.RetentionPolicy
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.Username
-  name: Username
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporterSettings_Username
-  commentId: P:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.Username
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.Username
-  nameWithType: InfluxDbReporterSettings.Username
-- uid: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.Username*
-  href: api/App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.html#App_Metrics_Extensions_Reporting_InfluxDB_InfluxDbReporterSettings_Username_
-  commentId: Overload:App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.Username
-  name: Username
-  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDbReporterSettings.Username
+  fullName: App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings.ReportInterval
 - uid: App.Metrics.Extensions.Reporting.InfluxDB.LoggingEvents
   name: LoggingEvents
   href: api/App.Metrics.Extensions.Reporting.InfluxDB.LoggingEvents.html#App_Metrics_Extensions_Reporting_InfluxDB_LoggingEvents
@@ -6014,17 +6286,6 @@ references:
   commentId: Overload:App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.EndAndFlushReportRunAsync
   name: EndAndFlushReportRunAsync
   fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.EndAndFlushReportRunAsync(App.Metrics.IMetrics)
-- uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.EndMetricTypeReport(System.Type)
-  name: EndMetricTypeReport(Type)
-  href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporter_EndMetricTypeReport_System_Type_
-  commentId: M:App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.EndMetricTypeReport(System.Type)
-  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.EndMetricTypeReport(System.Type)
-  nameWithType: TextFileReporter.EndMetricTypeReport(Type)
-- uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.EndMetricTypeReport*
-  href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporter_EndMetricTypeReport_
-  commentId: Overload:App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.EndMetricTypeReport
-  name: EndMetricTypeReport
-  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.EndMetricTypeReport(System.Type)
 - uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.Name
   name: Name
   href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporter_Name
@@ -6090,17 +6351,6 @@ references:
   fullName.vb: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.ReportMetric(Of T)(System.String, App.Metrics.Data.MetricValueSource(Of T))
   nameWithType: TextFileReporter.ReportMetric<T>(String, MetricValueSource<T>)
   nameWithType.vb: ReportMetric(Of T)(String, MetricValueSource(Of T))
-- uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.StartMetricTypeReport(System.Type)
-  name: StartMetricTypeReport(Type)
-  href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporter_StartMetricTypeReport_System_Type_
-  commentId: M:App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.StartMetricTypeReport(System.Type)
-  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.StartMetricTypeReport(System.Type)
-  nameWithType: TextFileReporter.StartMetricTypeReport(Type)
-- uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.StartMetricTypeReport*
-  href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporter_StartMetricTypeReport_
-  commentId: Overload:App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.StartMetricTypeReport
-  name: StartMetricTypeReport
-  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.StartMetricTypeReport(System.Type)
 - uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.StartReportRun(App.Metrics.IMetrics)
   name: StartReportRun(IMetrics)
   href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporter.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporter_StartReportRun_App_Metrics_IMetrics_
@@ -6118,12 +6368,12 @@ references:
   commentId: T:App.Metrics.Extensions.Reporting.TextFile.TextFileReporterExtensions
   fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterExtensions
   nameWithType: TextFileReporterExtensions
-- uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterExtensions.AddTextFile(App.Metrics.Reporting.Interfaces.IReportFactory,App.Metrics.Extensions.Reporting.TextFile.ITextFileReporterSettings,App.Metrics.IMetricsFilter)
-  name: AddTextFile(IReportFactory, ITextFileReporterSettings, IMetricsFilter)
-  href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporterExtensions.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporterExtensions_AddTextFile_App_Metrics_Reporting_Interfaces_IReportFactory_App_Metrics_Extensions_Reporting_TextFile_ITextFileReporterSettings_App_Metrics_IMetricsFilter_
-  commentId: M:App.Metrics.Extensions.Reporting.TextFile.TextFileReporterExtensions.AddTextFile(App.Metrics.Reporting.Interfaces.IReportFactory,App.Metrics.Extensions.Reporting.TextFile.ITextFileReporterSettings,App.Metrics.IMetricsFilter)
-  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterExtensions.AddTextFile(App.Metrics.Reporting.Interfaces.IReportFactory, App.Metrics.Extensions.Reporting.TextFile.ITextFileReporterSettings, App.Metrics.IMetricsFilter)
-  nameWithType: TextFileReporterExtensions.AddTextFile(IReportFactory, ITextFileReporterSettings, IMetricsFilter)
+- uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterExtensions.AddTextFile(App.Metrics.Reporting.Interfaces.IReportFactory,App.Metrics.Extensions.Reporting.TextFile.TextFileReporterSettings,App.Metrics.IMetricsFilter)
+  name: AddTextFile(IReportFactory, TextFileReporterSettings, IMetricsFilter)
+  href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporterExtensions.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporterExtensions_AddTextFile_App_Metrics_Reporting_Interfaces_IReportFactory_App_Metrics_Extensions_Reporting_TextFile_TextFileReporterSettings_App_Metrics_IMetricsFilter_
+  commentId: M:App.Metrics.Extensions.Reporting.TextFile.TextFileReporterExtensions.AddTextFile(App.Metrics.Reporting.Interfaces.IReportFactory,App.Metrics.Extensions.Reporting.TextFile.TextFileReporterSettings,App.Metrics.IMetricsFilter)
+  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterExtensions.AddTextFile(App.Metrics.Reporting.Interfaces.IReportFactory, App.Metrics.Extensions.Reporting.TextFile.TextFileReporterSettings, App.Metrics.IMetricsFilter)
+  nameWithType: TextFileReporterExtensions.AddTextFile(IReportFactory, TextFileReporterSettings, IMetricsFilter)
 - uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterExtensions.AddTextFile(App.Metrics.Reporting.Interfaces.IReportFactory,App.Metrics.IMetricsFilter)
   name: AddTextFile(IReportFactory, IMetricsFilter)
   href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporterExtensions.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporterExtensions_AddTextFile_App_Metrics_Reporting_Interfaces_IReportFactory_App_Metrics_IMetricsFilter_
@@ -6134,24 +6384,24 @@ references:
   href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporterExtensions.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporterExtensions_AddTextFile_
   commentId: Overload:App.Metrics.Extensions.Reporting.TextFile.TextFileReporterExtensions.AddTextFile
   name: AddTextFile
-  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterExtensions.AddTextFile(App.Metrics.Reporting.Interfaces.IReportFactory, App.Metrics.Extensions.Reporting.TextFile.ITextFileReporterSettings, App.Metrics.IMetricsFilter)
+  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterExtensions.AddTextFile(App.Metrics.Reporting.Interfaces.IReportFactory, App.Metrics.Extensions.Reporting.TextFile.TextFileReporterSettings, App.Metrics.IMetricsFilter)
 - uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider
   name: TextFileReporterProvider
   href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporterProvider
   commentId: T:App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider
   fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider
   nameWithType: TextFileReporterProvider
-- uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.#ctor(App.Metrics.Extensions.Reporting.TextFile.ITextFileReporterSettings,App.Metrics.IMetricsFilter)
-  name: TextFileReporterProvider(ITextFileReporterSettings, IMetricsFilter)
-  href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporterProvider__ctor_App_Metrics_Extensions_Reporting_TextFile_ITextFileReporterSettings_App_Metrics_IMetricsFilter_
-  commentId: M:App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.#ctor(App.Metrics.Extensions.Reporting.TextFile.ITextFileReporterSettings,App.Metrics.IMetricsFilter)
-  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.TextFileReporterProvider(App.Metrics.Extensions.Reporting.TextFile.ITextFileReporterSettings, App.Metrics.IMetricsFilter)
-  nameWithType: TextFileReporterProvider.TextFileReporterProvider(ITextFileReporterSettings, IMetricsFilter)
+- uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.#ctor(App.Metrics.Extensions.Reporting.TextFile.TextFileReporterSettings,App.Metrics.IMetricsFilter)
+  name: TextFileReporterProvider(TextFileReporterSettings, IMetricsFilter)
+  href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporterProvider__ctor_App_Metrics_Extensions_Reporting_TextFile_TextFileReporterSettings_App_Metrics_IMetricsFilter_
+  commentId: M:App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.#ctor(App.Metrics.Extensions.Reporting.TextFile.TextFileReporterSettings,App.Metrics.IMetricsFilter)
+  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.TextFileReporterProvider(App.Metrics.Extensions.Reporting.TextFile.TextFileReporterSettings, App.Metrics.IMetricsFilter)
+  nameWithType: TextFileReporterProvider.TextFileReporterProvider(TextFileReporterSettings, IMetricsFilter)
 - uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.#ctor*
   href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporterProvider__ctor_
   commentId: Overload:App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.#ctor
   name: TextFileReporterProvider
-  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.TextFileReporterProvider(App.Metrics.Extensions.Reporting.TextFile.ITextFileReporterSettings, App.Metrics.IMetricsFilter)
+  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.TextFileReporterProvider(App.Metrics.Extensions.Reporting.TextFile.TextFileReporterSettings, App.Metrics.IMetricsFilter)
 - uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.CreateMetricReporter(System.String,Microsoft.Extensions.Logging.ILoggerFactory)
   name: CreateMetricReporter(String, ILoggerFactory)
   href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporterProvider_CreateMetricReporter_System_String_Microsoft_Extensions_Logging_ILoggerFactory_
@@ -6174,17 +6424,6 @@ references:
   commentId: Overload:App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.Filter
   name: Filter
   fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.Filter
-- uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.Settings
-  name: Settings
-  href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporterProvider_Settings
-  commentId: P:App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.Settings
-  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.Settings
-  nameWithType: TextFileReporterProvider.Settings
-- uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.Settings*
-  href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporterProvider_Settings_
-  commentId: Overload:App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.Settings
-  name: Settings
-  fullName: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterProvider.Settings
 - uid: App.Metrics.Extensions.Reporting.TextFile.TextFileReporterSettings
   name: TextFileReporterSettings
   href: api/App.Metrics.Extensions.Reporting.TextFile.TextFileReporterSettings.html#App_Metrics_Extensions_Reporting_TextFile_TextFileReporterSettings
@@ -6306,6 +6545,374 @@ references:
   commentId: Overload:App.Metrics.Formatters.Json.ApdexConverter.WriteJson
   name: WriteJson
   fullName: App.Metrics.Formatters.Json.ApdexConverter.WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters
+  name: App.Metrics.Formatters.Json.Converters
+  href: api/App.Metrics.Formatters.Json.Converters.html#App_Metrics_Formatters_Json_Converters
+  commentId: N:App.Metrics.Formatters.Json.Converters
+  fullName: App.Metrics.Formatters.Json.Converters
+  nameWithType: App.Metrics.Formatters.Json.Converters
+- uid: App.Metrics.Formatters.Json.Converters.ApdexConverter
+  name: ApdexConverter
+  href: api/App.Metrics.Formatters.Json.Converters.ApdexConverter.html#App_Metrics_Formatters_Json_Converters_ApdexConverter
+  commentId: T:App.Metrics.Formatters.Json.Converters.ApdexConverter
+  fullName: App.Metrics.Formatters.Json.Converters.ApdexConverter
+  nameWithType: ApdexConverter
+- uid: App.Metrics.Formatters.Json.Converters.ApdexConverter.CanConvert(System.Type)
+  name: CanConvert(Type)
+  href: api/App.Metrics.Formatters.Json.Converters.ApdexConverter.html#App_Metrics_Formatters_Json_Converters_ApdexConverter_CanConvert_System_Type_
+  commentId: M:App.Metrics.Formatters.Json.Converters.ApdexConverter.CanConvert(System.Type)
+  fullName: App.Metrics.Formatters.Json.Converters.ApdexConverter.CanConvert(System.Type)
+  nameWithType: ApdexConverter.CanConvert(Type)
+- uid: App.Metrics.Formatters.Json.Converters.ApdexConverter.CanConvert*
+  href: api/App.Metrics.Formatters.Json.Converters.ApdexConverter.html#App_Metrics_Formatters_Json_Converters_ApdexConverter_CanConvert_
+  commentId: Overload:App.Metrics.Formatters.Json.Converters.ApdexConverter.CanConvert
+  name: CanConvert
+  fullName: App.Metrics.Formatters.Json.Converters.ApdexConverter.CanConvert(System.Type)
+- uid: App.Metrics.Formatters.Json.Converters.ApdexConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  name: ReadJson(JsonReader, Type, Object, JsonSerializer)
+  href: api/App.Metrics.Formatters.Json.Converters.ApdexConverter.html#App_Metrics_Formatters_Json_Converters_ApdexConverter_ReadJson_Newtonsoft_Json_JsonReader_System_Type_System_Object_Newtonsoft_Json_JsonSerializer_
+  commentId: M:App.Metrics.Formatters.Json.Converters.ApdexConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  fullName: App.Metrics.Formatters.Json.Converters.ApdexConverter.ReadJson(Newtonsoft.Json.JsonReader, System.Type, System.Object, Newtonsoft.Json.JsonSerializer)
+  nameWithType: ApdexConverter.ReadJson(JsonReader, Type, Object, JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.ApdexConverter.ReadJson*
+  href: api/App.Metrics.Formatters.Json.Converters.ApdexConverter.html#App_Metrics_Formatters_Json_Converters_ApdexConverter_ReadJson_
+  commentId: Overload:App.Metrics.Formatters.Json.Converters.ApdexConverter.ReadJson
+  name: ReadJson
+  fullName: App.Metrics.Formatters.Json.Converters.ApdexConverter.ReadJson(Newtonsoft.Json.JsonReader, System.Type, System.Object, Newtonsoft.Json.JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.ApdexConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  name: WriteJson(JsonWriter, Object, JsonSerializer)
+  href: api/App.Metrics.Formatters.Json.Converters.ApdexConverter.html#App_Metrics_Formatters_Json_Converters_ApdexConverter_WriteJson_Newtonsoft_Json_JsonWriter_System_Object_Newtonsoft_Json_JsonSerializer_
+  commentId: M:App.Metrics.Formatters.Json.Converters.ApdexConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  fullName: App.Metrics.Formatters.Json.Converters.ApdexConverter.WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
+  nameWithType: ApdexConverter.WriteJson(JsonWriter, Object, JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.ApdexConverter.WriteJson*
+  href: api/App.Metrics.Formatters.Json.Converters.ApdexConverter.html#App_Metrics_Formatters_Json_Converters_ApdexConverter_WriteJson_
+  commentId: Overload:App.Metrics.Formatters.Json.Converters.ApdexConverter.WriteJson
+  name: WriteJson
+  fullName: App.Metrics.Formatters.Json.Converters.ApdexConverter.WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.CounterConverter
+  name: CounterConverter
+  href: api/App.Metrics.Formatters.Json.Converters.CounterConverter.html#App_Metrics_Formatters_Json_Converters_CounterConverter
+  commentId: T:App.Metrics.Formatters.Json.Converters.CounterConverter
+  fullName: App.Metrics.Formatters.Json.Converters.CounterConverter
+  nameWithType: CounterConverter
+- uid: App.Metrics.Formatters.Json.Converters.CounterConverter.CanConvert(System.Type)
+  name: CanConvert(Type)
+  href: api/App.Metrics.Formatters.Json.Converters.CounterConverter.html#App_Metrics_Formatters_Json_Converters_CounterConverter_CanConvert_System_Type_
+  commentId: M:App.Metrics.Formatters.Json.Converters.CounterConverter.CanConvert(System.Type)
+  fullName: App.Metrics.Formatters.Json.Converters.CounterConverter.CanConvert(System.Type)
+  nameWithType: CounterConverter.CanConvert(Type)
+- uid: App.Metrics.Formatters.Json.Converters.CounterConverter.CanConvert*
+  href: api/App.Metrics.Formatters.Json.Converters.CounterConverter.html#App_Metrics_Formatters_Json_Converters_CounterConverter_CanConvert_
+  commentId: Overload:App.Metrics.Formatters.Json.Converters.CounterConverter.CanConvert
+  name: CanConvert
+  fullName: App.Metrics.Formatters.Json.Converters.CounterConverter.CanConvert(System.Type)
+- uid: App.Metrics.Formatters.Json.Converters.CounterConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  name: ReadJson(JsonReader, Type, Object, JsonSerializer)
+  href: api/App.Metrics.Formatters.Json.Converters.CounterConverter.html#App_Metrics_Formatters_Json_Converters_CounterConverter_ReadJson_Newtonsoft_Json_JsonReader_System_Type_System_Object_Newtonsoft_Json_JsonSerializer_
+  commentId: M:App.Metrics.Formatters.Json.Converters.CounterConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  fullName: App.Metrics.Formatters.Json.Converters.CounterConverter.ReadJson(Newtonsoft.Json.JsonReader, System.Type, System.Object, Newtonsoft.Json.JsonSerializer)
+  nameWithType: CounterConverter.ReadJson(JsonReader, Type, Object, JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.CounterConverter.ReadJson*
+  href: api/App.Metrics.Formatters.Json.Converters.CounterConverter.html#App_Metrics_Formatters_Json_Converters_CounterConverter_ReadJson_
+  commentId: Overload:App.Metrics.Formatters.Json.Converters.CounterConverter.ReadJson
+  name: ReadJson
+  fullName: App.Metrics.Formatters.Json.Converters.CounterConverter.ReadJson(Newtonsoft.Json.JsonReader, System.Type, System.Object, Newtonsoft.Json.JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.CounterConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  name: WriteJson(JsonWriter, Object, JsonSerializer)
+  href: api/App.Metrics.Formatters.Json.Converters.CounterConverter.html#App_Metrics_Formatters_Json_Converters_CounterConverter_WriteJson_Newtonsoft_Json_JsonWriter_System_Object_Newtonsoft_Json_JsonSerializer_
+  commentId: M:App.Metrics.Formatters.Json.Converters.CounterConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  fullName: App.Metrics.Formatters.Json.Converters.CounterConverter.WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
+  nameWithType: CounterConverter.WriteJson(JsonWriter, Object, JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.CounterConverter.WriteJson*
+  href: api/App.Metrics.Formatters.Json.Converters.CounterConverter.html#App_Metrics_Formatters_Json_Converters_CounterConverter_WriteJson_
+  commentId: Overload:App.Metrics.Formatters.Json.Converters.CounterConverter.WriteJson
+  name: WriteJson
+  fullName: App.Metrics.Formatters.Json.Converters.CounterConverter.WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.EnvironmentInfoConverter
+  name: EnvironmentInfoConverter
+  href: api/App.Metrics.Formatters.Json.Converters.EnvironmentInfoConverter.html#App_Metrics_Formatters_Json_Converters_EnvironmentInfoConverter
+  commentId: T:App.Metrics.Formatters.Json.Converters.EnvironmentInfoConverter
+  fullName: App.Metrics.Formatters.Json.Converters.EnvironmentInfoConverter
+  nameWithType: EnvironmentInfoConverter
+- uid: App.Metrics.Formatters.Json.Converters.EnvironmentInfoConverter.CanConvert(System.Type)
+  name: CanConvert(Type)
+  href: api/App.Metrics.Formatters.Json.Converters.EnvironmentInfoConverter.html#App_Metrics_Formatters_Json_Converters_EnvironmentInfoConverter_CanConvert_System_Type_
+  commentId: M:App.Metrics.Formatters.Json.Converters.EnvironmentInfoConverter.CanConvert(System.Type)
+  fullName: App.Metrics.Formatters.Json.Converters.EnvironmentInfoConverter.CanConvert(System.Type)
+  nameWithType: EnvironmentInfoConverter.CanConvert(Type)
+- uid: App.Metrics.Formatters.Json.Converters.EnvironmentInfoConverter.CanConvert*
+  href: api/App.Metrics.Formatters.Json.Converters.EnvironmentInfoConverter.html#App_Metrics_Formatters_Json_Converters_EnvironmentInfoConverter_CanConvert_
+  commentId: Overload:App.Metrics.Formatters.Json.Converters.EnvironmentInfoConverter.CanConvert
+  name: CanConvert
+  fullName: App.Metrics.Formatters.Json.Converters.EnvironmentInfoConverter.CanConvert(System.Type)
+- uid: App.Metrics.Formatters.Json.Converters.EnvironmentInfoConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  name: ReadJson(JsonReader, Type, Object, JsonSerializer)
+  href: api/App.Metrics.Formatters.Json.Converters.EnvironmentInfoConverter.html#App_Metrics_Formatters_Json_Converters_EnvironmentInfoConverter_ReadJson_Newtonsoft_Json_JsonReader_System_Type_System_Object_Newtonsoft_Json_JsonSerializer_
+  commentId: M:App.Metrics.Formatters.Json.Converters.EnvironmentInfoConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  fullName: App.Metrics.Formatters.Json.Converters.EnvironmentInfoConverter.ReadJson(Newtonsoft.Json.JsonReader, System.Type, System.Object, Newtonsoft.Json.JsonSerializer)
+  nameWithType: EnvironmentInfoConverter.ReadJson(JsonReader, Type, Object, JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.EnvironmentInfoConverter.ReadJson*
+  href: api/App.Metrics.Formatters.Json.Converters.EnvironmentInfoConverter.html#App_Metrics_Formatters_Json_Converters_EnvironmentInfoConverter_ReadJson_
+  commentId: Overload:App.Metrics.Formatters.Json.Converters.EnvironmentInfoConverter.ReadJson
+  name: ReadJson
+  fullName: App.Metrics.Formatters.Json.Converters.EnvironmentInfoConverter.ReadJson(Newtonsoft.Json.JsonReader, System.Type, System.Object, Newtonsoft.Json.JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.EnvironmentInfoConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  name: WriteJson(JsonWriter, Object, JsonSerializer)
+  href: api/App.Metrics.Formatters.Json.Converters.EnvironmentInfoConverter.html#App_Metrics_Formatters_Json_Converters_EnvironmentInfoConverter_WriteJson_Newtonsoft_Json_JsonWriter_System_Object_Newtonsoft_Json_JsonSerializer_
+  commentId: M:App.Metrics.Formatters.Json.Converters.EnvironmentInfoConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  fullName: App.Metrics.Formatters.Json.Converters.EnvironmentInfoConverter.WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
+  nameWithType: EnvironmentInfoConverter.WriteJson(JsonWriter, Object, JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.EnvironmentInfoConverter.WriteJson*
+  href: api/App.Metrics.Formatters.Json.Converters.EnvironmentInfoConverter.html#App_Metrics_Formatters_Json_Converters_EnvironmentInfoConverter_WriteJson_
+  commentId: Overload:App.Metrics.Formatters.Json.Converters.EnvironmentInfoConverter.WriteJson
+  name: WriteJson
+  fullName: App.Metrics.Formatters.Json.Converters.EnvironmentInfoConverter.WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.GaugeConverter
+  name: GaugeConverter
+  href: api/App.Metrics.Formatters.Json.Converters.GaugeConverter.html#App_Metrics_Formatters_Json_Converters_GaugeConverter
+  commentId: T:App.Metrics.Formatters.Json.Converters.GaugeConverter
+  fullName: App.Metrics.Formatters.Json.Converters.GaugeConverter
+  nameWithType: GaugeConverter
+- uid: App.Metrics.Formatters.Json.Converters.GaugeConverter.CanConvert(System.Type)
+  name: CanConvert(Type)
+  href: api/App.Metrics.Formatters.Json.Converters.GaugeConverter.html#App_Metrics_Formatters_Json_Converters_GaugeConverter_CanConvert_System_Type_
+  commentId: M:App.Metrics.Formatters.Json.Converters.GaugeConverter.CanConvert(System.Type)
+  fullName: App.Metrics.Formatters.Json.Converters.GaugeConverter.CanConvert(System.Type)
+  nameWithType: GaugeConverter.CanConvert(Type)
+- uid: App.Metrics.Formatters.Json.Converters.GaugeConverter.CanConvert*
+  href: api/App.Metrics.Formatters.Json.Converters.GaugeConverter.html#App_Metrics_Formatters_Json_Converters_GaugeConverter_CanConvert_
+  commentId: Overload:App.Metrics.Formatters.Json.Converters.GaugeConverter.CanConvert
+  name: CanConvert
+  fullName: App.Metrics.Formatters.Json.Converters.GaugeConverter.CanConvert(System.Type)
+- uid: App.Metrics.Formatters.Json.Converters.GaugeConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  name: ReadJson(JsonReader, Type, Object, JsonSerializer)
+  href: api/App.Metrics.Formatters.Json.Converters.GaugeConverter.html#App_Metrics_Formatters_Json_Converters_GaugeConverter_ReadJson_Newtonsoft_Json_JsonReader_System_Type_System_Object_Newtonsoft_Json_JsonSerializer_
+  commentId: M:App.Metrics.Formatters.Json.Converters.GaugeConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  fullName: App.Metrics.Formatters.Json.Converters.GaugeConverter.ReadJson(Newtonsoft.Json.JsonReader, System.Type, System.Object, Newtonsoft.Json.JsonSerializer)
+  nameWithType: GaugeConverter.ReadJson(JsonReader, Type, Object, JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.GaugeConverter.ReadJson*
+  href: api/App.Metrics.Formatters.Json.Converters.GaugeConverter.html#App_Metrics_Formatters_Json_Converters_GaugeConverter_ReadJson_
+  commentId: Overload:App.Metrics.Formatters.Json.Converters.GaugeConverter.ReadJson
+  name: ReadJson
+  fullName: App.Metrics.Formatters.Json.Converters.GaugeConverter.ReadJson(Newtonsoft.Json.JsonReader, System.Type, System.Object, Newtonsoft.Json.JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.GaugeConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  name: WriteJson(JsonWriter, Object, JsonSerializer)
+  href: api/App.Metrics.Formatters.Json.Converters.GaugeConverter.html#App_Metrics_Formatters_Json_Converters_GaugeConverter_WriteJson_Newtonsoft_Json_JsonWriter_System_Object_Newtonsoft_Json_JsonSerializer_
+  commentId: M:App.Metrics.Formatters.Json.Converters.GaugeConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  fullName: App.Metrics.Formatters.Json.Converters.GaugeConverter.WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
+  nameWithType: GaugeConverter.WriteJson(JsonWriter, Object, JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.GaugeConverter.WriteJson*
+  href: api/App.Metrics.Formatters.Json.Converters.GaugeConverter.html#App_Metrics_Formatters_Json_Converters_GaugeConverter_WriteJson_
+  commentId: Overload:App.Metrics.Formatters.Json.Converters.GaugeConverter.WriteJson
+  name: WriteJson
+  fullName: App.Metrics.Formatters.Json.Converters.GaugeConverter.WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.HealthStatusConverter
+  name: HealthStatusConverter
+  href: api/App.Metrics.Formatters.Json.Converters.HealthStatusConverter.html#App_Metrics_Formatters_Json_Converters_HealthStatusConverter
+  commentId: T:App.Metrics.Formatters.Json.Converters.HealthStatusConverter
+  fullName: App.Metrics.Formatters.Json.Converters.HealthStatusConverter
+  nameWithType: HealthStatusConverter
+- uid: App.Metrics.Formatters.Json.Converters.HealthStatusConverter.#ctor(App.Metrics.Utils.IClock)
+  name: HealthStatusConverter(IClock)
+  href: api/App.Metrics.Formatters.Json.Converters.HealthStatusConverter.html#App_Metrics_Formatters_Json_Converters_HealthStatusConverter__ctor_App_Metrics_Utils_IClock_
+  commentId: M:App.Metrics.Formatters.Json.Converters.HealthStatusConverter.#ctor(App.Metrics.Utils.IClock)
+  fullName: App.Metrics.Formatters.Json.Converters.HealthStatusConverter.HealthStatusConverter(App.Metrics.Utils.IClock)
+  nameWithType: HealthStatusConverter.HealthStatusConverter(IClock)
+- uid: App.Metrics.Formatters.Json.Converters.HealthStatusConverter.#ctor*
+  href: api/App.Metrics.Formatters.Json.Converters.HealthStatusConverter.html#App_Metrics_Formatters_Json_Converters_HealthStatusConverter__ctor_
+  commentId: Overload:App.Metrics.Formatters.Json.Converters.HealthStatusConverter.#ctor
+  name: HealthStatusConverter
+  fullName: App.Metrics.Formatters.Json.Converters.HealthStatusConverter.HealthStatusConverter(App.Metrics.Utils.IClock)
+- uid: App.Metrics.Formatters.Json.Converters.HealthStatusConverter.CanConvert(System.Type)
+  name: CanConvert(Type)
+  href: api/App.Metrics.Formatters.Json.Converters.HealthStatusConverter.html#App_Metrics_Formatters_Json_Converters_HealthStatusConverter_CanConvert_System_Type_
+  commentId: M:App.Metrics.Formatters.Json.Converters.HealthStatusConverter.CanConvert(System.Type)
+  fullName: App.Metrics.Formatters.Json.Converters.HealthStatusConverter.CanConvert(System.Type)
+  nameWithType: HealthStatusConverter.CanConvert(Type)
+- uid: App.Metrics.Formatters.Json.Converters.HealthStatusConverter.CanConvert*
+  href: api/App.Metrics.Formatters.Json.Converters.HealthStatusConverter.html#App_Metrics_Formatters_Json_Converters_HealthStatusConverter_CanConvert_
+  commentId: Overload:App.Metrics.Formatters.Json.Converters.HealthStatusConverter.CanConvert
+  name: CanConvert
+  fullName: App.Metrics.Formatters.Json.Converters.HealthStatusConverter.CanConvert(System.Type)
+- uid: App.Metrics.Formatters.Json.Converters.HealthStatusConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  name: ReadJson(JsonReader, Type, Object, JsonSerializer)
+  href: api/App.Metrics.Formatters.Json.Converters.HealthStatusConverter.html#App_Metrics_Formatters_Json_Converters_HealthStatusConverter_ReadJson_Newtonsoft_Json_JsonReader_System_Type_System_Object_Newtonsoft_Json_JsonSerializer_
+  commentId: M:App.Metrics.Formatters.Json.Converters.HealthStatusConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  fullName: App.Metrics.Formatters.Json.Converters.HealthStatusConverter.ReadJson(Newtonsoft.Json.JsonReader, System.Type, System.Object, Newtonsoft.Json.JsonSerializer)
+  nameWithType: HealthStatusConverter.ReadJson(JsonReader, Type, Object, JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.HealthStatusConverter.ReadJson*
+  href: api/App.Metrics.Formatters.Json.Converters.HealthStatusConverter.html#App_Metrics_Formatters_Json_Converters_HealthStatusConverter_ReadJson_
+  commentId: Overload:App.Metrics.Formatters.Json.Converters.HealthStatusConverter.ReadJson
+  name: ReadJson
+  fullName: App.Metrics.Formatters.Json.Converters.HealthStatusConverter.ReadJson(Newtonsoft.Json.JsonReader, System.Type, System.Object, Newtonsoft.Json.JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.HealthStatusConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  name: WriteJson(JsonWriter, Object, JsonSerializer)
+  href: api/App.Metrics.Formatters.Json.Converters.HealthStatusConverter.html#App_Metrics_Formatters_Json_Converters_HealthStatusConverter_WriteJson_Newtonsoft_Json_JsonWriter_System_Object_Newtonsoft_Json_JsonSerializer_
+  commentId: M:App.Metrics.Formatters.Json.Converters.HealthStatusConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  fullName: App.Metrics.Formatters.Json.Converters.HealthStatusConverter.WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
+  nameWithType: HealthStatusConverter.WriteJson(JsonWriter, Object, JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.HealthStatusConverter.WriteJson*
+  href: api/App.Metrics.Formatters.Json.Converters.HealthStatusConverter.html#App_Metrics_Formatters_Json_Converters_HealthStatusConverter_WriteJson_
+  commentId: Overload:App.Metrics.Formatters.Json.Converters.HealthStatusConverter.WriteJson
+  name: WriteJson
+  fullName: App.Metrics.Formatters.Json.Converters.HealthStatusConverter.WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.HistogramConverter
+  name: HistogramConverter
+  href: api/App.Metrics.Formatters.Json.Converters.HistogramConverter.html#App_Metrics_Formatters_Json_Converters_HistogramConverter
+  commentId: T:App.Metrics.Formatters.Json.Converters.HistogramConverter
+  fullName: App.Metrics.Formatters.Json.Converters.HistogramConverter
+  nameWithType: HistogramConverter
+- uid: App.Metrics.Formatters.Json.Converters.HistogramConverter.CanConvert(System.Type)
+  name: CanConvert(Type)
+  href: api/App.Metrics.Formatters.Json.Converters.HistogramConverter.html#App_Metrics_Formatters_Json_Converters_HistogramConverter_CanConvert_System_Type_
+  commentId: M:App.Metrics.Formatters.Json.Converters.HistogramConverter.CanConvert(System.Type)
+  fullName: App.Metrics.Formatters.Json.Converters.HistogramConverter.CanConvert(System.Type)
+  nameWithType: HistogramConverter.CanConvert(Type)
+- uid: App.Metrics.Formatters.Json.Converters.HistogramConverter.CanConvert*
+  href: api/App.Metrics.Formatters.Json.Converters.HistogramConverter.html#App_Metrics_Formatters_Json_Converters_HistogramConverter_CanConvert_
+  commentId: Overload:App.Metrics.Formatters.Json.Converters.HistogramConverter.CanConvert
+  name: CanConvert
+  fullName: App.Metrics.Formatters.Json.Converters.HistogramConverter.CanConvert(System.Type)
+- uid: App.Metrics.Formatters.Json.Converters.HistogramConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  name: ReadJson(JsonReader, Type, Object, JsonSerializer)
+  href: api/App.Metrics.Formatters.Json.Converters.HistogramConverter.html#App_Metrics_Formatters_Json_Converters_HistogramConverter_ReadJson_Newtonsoft_Json_JsonReader_System_Type_System_Object_Newtonsoft_Json_JsonSerializer_
+  commentId: M:App.Metrics.Formatters.Json.Converters.HistogramConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  fullName: App.Metrics.Formatters.Json.Converters.HistogramConverter.ReadJson(Newtonsoft.Json.JsonReader, System.Type, System.Object, Newtonsoft.Json.JsonSerializer)
+  nameWithType: HistogramConverter.ReadJson(JsonReader, Type, Object, JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.HistogramConverter.ReadJson*
+  href: api/App.Metrics.Formatters.Json.Converters.HistogramConverter.html#App_Metrics_Formatters_Json_Converters_HistogramConverter_ReadJson_
+  commentId: Overload:App.Metrics.Formatters.Json.Converters.HistogramConverter.ReadJson
+  name: ReadJson
+  fullName: App.Metrics.Formatters.Json.Converters.HistogramConverter.ReadJson(Newtonsoft.Json.JsonReader, System.Type, System.Object, Newtonsoft.Json.JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.HistogramConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  name: WriteJson(JsonWriter, Object, JsonSerializer)
+  href: api/App.Metrics.Formatters.Json.Converters.HistogramConverter.html#App_Metrics_Formatters_Json_Converters_HistogramConverter_WriteJson_Newtonsoft_Json_JsonWriter_System_Object_Newtonsoft_Json_JsonSerializer_
+  commentId: M:App.Metrics.Formatters.Json.Converters.HistogramConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  fullName: App.Metrics.Formatters.Json.Converters.HistogramConverter.WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
+  nameWithType: HistogramConverter.WriteJson(JsonWriter, Object, JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.HistogramConverter.WriteJson*
+  href: api/App.Metrics.Formatters.Json.Converters.HistogramConverter.html#App_Metrics_Formatters_Json_Converters_HistogramConverter_WriteJson_
+  commentId: Overload:App.Metrics.Formatters.Json.Converters.HistogramConverter.WriteJson
+  name: WriteJson
+  fullName: App.Metrics.Formatters.Json.Converters.HistogramConverter.WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.MeterConverter
+  name: MeterConverter
+  href: api/App.Metrics.Formatters.Json.Converters.MeterConverter.html#App_Metrics_Formatters_Json_Converters_MeterConverter
+  commentId: T:App.Metrics.Formatters.Json.Converters.MeterConverter
+  fullName: App.Metrics.Formatters.Json.Converters.MeterConverter
+  nameWithType: MeterConverter
+- uid: App.Metrics.Formatters.Json.Converters.MeterConverter.CanConvert(System.Type)
+  name: CanConvert(Type)
+  href: api/App.Metrics.Formatters.Json.Converters.MeterConverter.html#App_Metrics_Formatters_Json_Converters_MeterConverter_CanConvert_System_Type_
+  commentId: M:App.Metrics.Formatters.Json.Converters.MeterConverter.CanConvert(System.Type)
+  fullName: App.Metrics.Formatters.Json.Converters.MeterConverter.CanConvert(System.Type)
+  nameWithType: MeterConverter.CanConvert(Type)
+- uid: App.Metrics.Formatters.Json.Converters.MeterConverter.CanConvert*
+  href: api/App.Metrics.Formatters.Json.Converters.MeterConverter.html#App_Metrics_Formatters_Json_Converters_MeterConverter_CanConvert_
+  commentId: Overload:App.Metrics.Formatters.Json.Converters.MeterConverter.CanConvert
+  name: CanConvert
+  fullName: App.Metrics.Formatters.Json.Converters.MeterConverter.CanConvert(System.Type)
+- uid: App.Metrics.Formatters.Json.Converters.MeterConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  name: ReadJson(JsonReader, Type, Object, JsonSerializer)
+  href: api/App.Metrics.Formatters.Json.Converters.MeterConverter.html#App_Metrics_Formatters_Json_Converters_MeterConverter_ReadJson_Newtonsoft_Json_JsonReader_System_Type_System_Object_Newtonsoft_Json_JsonSerializer_
+  commentId: M:App.Metrics.Formatters.Json.Converters.MeterConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  fullName: App.Metrics.Formatters.Json.Converters.MeterConverter.ReadJson(Newtonsoft.Json.JsonReader, System.Type, System.Object, Newtonsoft.Json.JsonSerializer)
+  nameWithType: MeterConverter.ReadJson(JsonReader, Type, Object, JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.MeterConverter.ReadJson*
+  href: api/App.Metrics.Formatters.Json.Converters.MeterConverter.html#App_Metrics_Formatters_Json_Converters_MeterConverter_ReadJson_
+  commentId: Overload:App.Metrics.Formatters.Json.Converters.MeterConverter.ReadJson
+  name: ReadJson
+  fullName: App.Metrics.Formatters.Json.Converters.MeterConverter.ReadJson(Newtonsoft.Json.JsonReader, System.Type, System.Object, Newtonsoft.Json.JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.MeterConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  name: WriteJson(JsonWriter, Object, JsonSerializer)
+  href: api/App.Metrics.Formatters.Json.Converters.MeterConverter.html#App_Metrics_Formatters_Json_Converters_MeterConverter_WriteJson_Newtonsoft_Json_JsonWriter_System_Object_Newtonsoft_Json_JsonSerializer_
+  commentId: M:App.Metrics.Formatters.Json.Converters.MeterConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  fullName: App.Metrics.Formatters.Json.Converters.MeterConverter.WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
+  nameWithType: MeterConverter.WriteJson(JsonWriter, Object, JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.MeterConverter.WriteJson*
+  href: api/App.Metrics.Formatters.Json.Converters.MeterConverter.html#App_Metrics_Formatters_Json_Converters_MeterConverter_WriteJson_
+  commentId: Overload:App.Metrics.Formatters.Json.Converters.MeterConverter.WriteJson
+  name: WriteJson
+  fullName: App.Metrics.Formatters.Json.Converters.MeterConverter.WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.MetricDataConverter
+  name: MetricDataConverter
+  href: api/App.Metrics.Formatters.Json.Converters.MetricDataConverter.html#App_Metrics_Formatters_Json_Converters_MetricDataConverter
+  commentId: T:App.Metrics.Formatters.Json.Converters.MetricDataConverter
+  fullName: App.Metrics.Formatters.Json.Converters.MetricDataConverter
+  nameWithType: MetricDataConverter
+- uid: App.Metrics.Formatters.Json.Converters.MetricDataConverter.CanConvert(System.Type)
+  name: CanConvert(Type)
+  href: api/App.Metrics.Formatters.Json.Converters.MetricDataConverter.html#App_Metrics_Formatters_Json_Converters_MetricDataConverter_CanConvert_System_Type_
+  commentId: M:App.Metrics.Formatters.Json.Converters.MetricDataConverter.CanConvert(System.Type)
+  fullName: App.Metrics.Formatters.Json.Converters.MetricDataConverter.CanConvert(System.Type)
+  nameWithType: MetricDataConverter.CanConvert(Type)
+- uid: App.Metrics.Formatters.Json.Converters.MetricDataConverter.CanConvert*
+  href: api/App.Metrics.Formatters.Json.Converters.MetricDataConverter.html#App_Metrics_Formatters_Json_Converters_MetricDataConverter_CanConvert_
+  commentId: Overload:App.Metrics.Formatters.Json.Converters.MetricDataConverter.CanConvert
+  name: CanConvert
+  fullName: App.Metrics.Formatters.Json.Converters.MetricDataConverter.CanConvert(System.Type)
+- uid: App.Metrics.Formatters.Json.Converters.MetricDataConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  name: ReadJson(JsonReader, Type, Object, JsonSerializer)
+  href: api/App.Metrics.Formatters.Json.Converters.MetricDataConverter.html#App_Metrics_Formatters_Json_Converters_MetricDataConverter_ReadJson_Newtonsoft_Json_JsonReader_System_Type_System_Object_Newtonsoft_Json_JsonSerializer_
+  commentId: M:App.Metrics.Formatters.Json.Converters.MetricDataConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  fullName: App.Metrics.Formatters.Json.Converters.MetricDataConverter.ReadJson(Newtonsoft.Json.JsonReader, System.Type, System.Object, Newtonsoft.Json.JsonSerializer)
+  nameWithType: MetricDataConverter.ReadJson(JsonReader, Type, Object, JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.MetricDataConverter.ReadJson*
+  href: api/App.Metrics.Formatters.Json.Converters.MetricDataConverter.html#App_Metrics_Formatters_Json_Converters_MetricDataConverter_ReadJson_
+  commentId: Overload:App.Metrics.Formatters.Json.Converters.MetricDataConverter.ReadJson
+  name: ReadJson
+  fullName: App.Metrics.Formatters.Json.Converters.MetricDataConverter.ReadJson(Newtonsoft.Json.JsonReader, System.Type, System.Object, Newtonsoft.Json.JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.MetricDataConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  name: WriteJson(JsonWriter, Object, JsonSerializer)
+  href: api/App.Metrics.Formatters.Json.Converters.MetricDataConverter.html#App_Metrics_Formatters_Json_Converters_MetricDataConverter_WriteJson_Newtonsoft_Json_JsonWriter_System_Object_Newtonsoft_Json_JsonSerializer_
+  commentId: M:App.Metrics.Formatters.Json.Converters.MetricDataConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  fullName: App.Metrics.Formatters.Json.Converters.MetricDataConverter.WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
+  nameWithType: MetricDataConverter.WriteJson(JsonWriter, Object, JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.MetricDataConverter.WriteJson*
+  href: api/App.Metrics.Formatters.Json.Converters.MetricDataConverter.html#App_Metrics_Formatters_Json_Converters_MetricDataConverter_WriteJson_
+  commentId: Overload:App.Metrics.Formatters.Json.Converters.MetricDataConverter.WriteJson
+  name: WriteJson
+  fullName: App.Metrics.Formatters.Json.Converters.MetricDataConverter.WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.TimerConverter
+  name: TimerConverter
+  href: api/App.Metrics.Formatters.Json.Converters.TimerConverter.html#App_Metrics_Formatters_Json_Converters_TimerConverter
+  commentId: T:App.Metrics.Formatters.Json.Converters.TimerConverter
+  fullName: App.Metrics.Formatters.Json.Converters.TimerConverter
+  nameWithType: TimerConverter
+- uid: App.Metrics.Formatters.Json.Converters.TimerConverter.CanConvert(System.Type)
+  name: CanConvert(Type)
+  href: api/App.Metrics.Formatters.Json.Converters.TimerConverter.html#App_Metrics_Formatters_Json_Converters_TimerConverter_CanConvert_System_Type_
+  commentId: M:App.Metrics.Formatters.Json.Converters.TimerConverter.CanConvert(System.Type)
+  fullName: App.Metrics.Formatters.Json.Converters.TimerConverter.CanConvert(System.Type)
+  nameWithType: TimerConverter.CanConvert(Type)
+- uid: App.Metrics.Formatters.Json.Converters.TimerConverter.CanConvert*
+  href: api/App.Metrics.Formatters.Json.Converters.TimerConverter.html#App_Metrics_Formatters_Json_Converters_TimerConverter_CanConvert_
+  commentId: Overload:App.Metrics.Formatters.Json.Converters.TimerConverter.CanConvert
+  name: CanConvert
+  fullName: App.Metrics.Formatters.Json.Converters.TimerConverter.CanConvert(System.Type)
+- uid: App.Metrics.Formatters.Json.Converters.TimerConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  name: ReadJson(JsonReader, Type, Object, JsonSerializer)
+  href: api/App.Metrics.Formatters.Json.Converters.TimerConverter.html#App_Metrics_Formatters_Json_Converters_TimerConverter_ReadJson_Newtonsoft_Json_JsonReader_System_Type_System_Object_Newtonsoft_Json_JsonSerializer_
+  commentId: M:App.Metrics.Formatters.Json.Converters.TimerConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  fullName: App.Metrics.Formatters.Json.Converters.TimerConverter.ReadJson(Newtonsoft.Json.JsonReader, System.Type, System.Object, Newtonsoft.Json.JsonSerializer)
+  nameWithType: TimerConverter.ReadJson(JsonReader, Type, Object, JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.TimerConverter.ReadJson*
+  href: api/App.Metrics.Formatters.Json.Converters.TimerConverter.html#App_Metrics_Formatters_Json_Converters_TimerConverter_ReadJson_
+  commentId: Overload:App.Metrics.Formatters.Json.Converters.TimerConverter.ReadJson
+  name: ReadJson
+  fullName: App.Metrics.Formatters.Json.Converters.TimerConverter.ReadJson(Newtonsoft.Json.JsonReader, System.Type, System.Object, Newtonsoft.Json.JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.TimerConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  name: WriteJson(JsonWriter, Object, JsonSerializer)
+  href: api/App.Metrics.Formatters.Json.Converters.TimerConverter.html#App_Metrics_Formatters_Json_Converters_TimerConverter_WriteJson_Newtonsoft_Json_JsonWriter_System_Object_Newtonsoft_Json_JsonSerializer_
+  commentId: M:App.Metrics.Formatters.Json.Converters.TimerConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  fullName: App.Metrics.Formatters.Json.Converters.TimerConverter.WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
+  nameWithType: TimerConverter.WriteJson(JsonWriter, Object, JsonSerializer)
+- uid: App.Metrics.Formatters.Json.Converters.TimerConverter.WriteJson*
+  href: api/App.Metrics.Formatters.Json.Converters.TimerConverter.html#App_Metrics_Formatters_Json_Converters_TimerConverter_WriteJson_
+  commentId: Overload:App.Metrics.Formatters.Json.Converters.TimerConverter.WriteJson
+  name: WriteJson
+  fullName: App.Metrics.Formatters.Json.Converters.TimerConverter.WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
 - uid: App.Metrics.Formatters.Json.CounterConverter
   name: CounterConverter
   href: api/App.Metrics.Formatters.Json.CounterConverter.html#App_Metrics_Formatters_Json_CounterConverter
@@ -6783,6 +7390,205 @@ references:
   fullName.vb: App.Metrics.Formatters.Json.MetricDataSerializer.Serialize(Of T)(T)
   nameWithType: MetricDataSerializer.Serialize<T>(T)
   nameWithType.vb: Serialize(Of T)(T)
+- uid: App.Metrics.Formatters.Json.Serialization
+  name: App.Metrics.Formatters.Json.Serialization
+  href: api/App.Metrics.Formatters.Json.Serialization.html#App_Metrics_Formatters_Json_Serialization
+  commentId: N:App.Metrics.Formatters.Json.Serialization
+  fullName: App.Metrics.Formatters.Json.Serialization
+  nameWithType: App.Metrics.Formatters.Json.Serialization
+- uid: App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer
+  name: EnvironmentInfoSerializer
+  href: api/App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.html#App_Metrics_Formatters_Json_Serialization_EnvironmentInfoSerializer
+  commentId: T:App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer
+  fullName: App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer
+  nameWithType: EnvironmentInfoSerializer
+- uid: App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.#ctor
+  name: EnvironmentInfoSerializer()
+  href: api/App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.html#App_Metrics_Formatters_Json_Serialization_EnvironmentInfoSerializer__ctor
+  commentId: M:App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.#ctor
+  fullName: App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.EnvironmentInfoSerializer()
+  nameWithType: EnvironmentInfoSerializer.EnvironmentInfoSerializer()
+- uid: App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.#ctor*
+  href: api/App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.html#App_Metrics_Formatters_Json_Serialization_EnvironmentInfoSerializer__ctor_
+  commentId: Overload:App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.#ctor
+  name: EnvironmentInfoSerializer
+  fullName: App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.EnvironmentInfoSerializer()
+- uid: App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.Deserialize*
+  href: api/App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.html#App_Metrics_Formatters_Json_Serialization_EnvironmentInfoSerializer_Deserialize_
+  commentId: Overload:App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.Deserialize
+  name: Deserialize<T>
+  name.vb: Deserialize
+  fullName: App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.Deserialize<T>(System.String)
+  fullName.vb: App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.Deserialize
+- uid: App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.Deserialize``1(System.String)
+  name: Deserialize<T>(String)
+  href: api/App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.html#App_Metrics_Formatters_Json_Serialization_EnvironmentInfoSerializer_Deserialize__1_System_String_
+  commentId: M:App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.Deserialize``1(System.String)
+  name.vb: Deserialize(Of T)(String)
+  fullName: App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.Deserialize<T>(System.String)
+  fullName.vb: App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.Deserialize(Of T)(System.String)
+  nameWithType: EnvironmentInfoSerializer.Deserialize<T>(String)
+  nameWithType.vb: Deserialize(Of T)(String)
+- uid: App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.Serialize*
+  href: api/App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.html#App_Metrics_Formatters_Json_Serialization_EnvironmentInfoSerializer_Serialize_
+  commentId: Overload:App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.Serialize
+  name: Serialize<T>
+  name.vb: Serialize
+  fullName: App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.Serialize<T>(T)
+  fullName.vb: App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.Serialize
+- uid: App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.Serialize``1(``0)
+  name: Serialize<T>(T)
+  href: api/App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.html#App_Metrics_Formatters_Json_Serialization_EnvironmentInfoSerializer_Serialize__1___0_
+  commentId: M:App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.Serialize``1(``0)
+  name.vb: Serialize(Of T)(T)
+  fullName: App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.Serialize<T>(T)
+  fullName.vb: App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.Serialize(Of T)(T)
+  nameWithType: EnvironmentInfoSerializer.Serialize<T>(T)
+  nameWithType.vb: Serialize(Of T)(T)
+- uid: App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer
+  name: HealthStatusSerializer
+  href: api/App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.html#App_Metrics_Formatters_Json_Serialization_HealthStatusSerializer
+  commentId: T:App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer
+  fullName: App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer
+  nameWithType: HealthStatusSerializer
+- uid: App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.#ctor(App.Metrics.Utils.IClock)
+  name: HealthStatusSerializer(IClock)
+  href: api/App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.html#App_Metrics_Formatters_Json_Serialization_HealthStatusSerializer__ctor_App_Metrics_Utils_IClock_
+  commentId: M:App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.#ctor(App.Metrics.Utils.IClock)
+  fullName: App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.HealthStatusSerializer(App.Metrics.Utils.IClock)
+  nameWithType: HealthStatusSerializer.HealthStatusSerializer(IClock)
+- uid: App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.#ctor(Newtonsoft.Json.JsonSerializerSettings)
+  name: HealthStatusSerializer(JsonSerializerSettings)
+  href: api/App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.html#App_Metrics_Formatters_Json_Serialization_HealthStatusSerializer__ctor_Newtonsoft_Json_JsonSerializerSettings_
+  commentId: M:App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.#ctor(Newtonsoft.Json.JsonSerializerSettings)
+  fullName: App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.HealthStatusSerializer(Newtonsoft.Json.JsonSerializerSettings)
+  nameWithType: HealthStatusSerializer.HealthStatusSerializer(JsonSerializerSettings)
+- uid: App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.#ctor*
+  href: api/App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.html#App_Metrics_Formatters_Json_Serialization_HealthStatusSerializer__ctor_
+  commentId: Overload:App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.#ctor
+  name: HealthStatusSerializer
+  fullName: App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.HealthStatusSerializer(App.Metrics.Utils.IClock)
+- uid: App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.Deserialize*
+  href: api/App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.html#App_Metrics_Formatters_Json_Serialization_HealthStatusSerializer_Deserialize_
+  commentId: Overload:App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.Deserialize
+  name: Deserialize<T>
+  name.vb: Deserialize
+  fullName: App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.Deserialize<T>(System.String)
+  fullName.vb: App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.Deserialize
+- uid: App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.Deserialize``1(System.String)
+  name: Deserialize<T>(String)
+  href: api/App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.html#App_Metrics_Formatters_Json_Serialization_HealthStatusSerializer_Deserialize__1_System_String_
+  commentId: M:App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.Deserialize``1(System.String)
+  name.vb: Deserialize(Of T)(String)
+  fullName: App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.Deserialize<T>(System.String)
+  fullName.vb: App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.Deserialize(Of T)(System.String)
+  nameWithType: HealthStatusSerializer.Deserialize<T>(String)
+  nameWithType.vb: Deserialize(Of T)(String)
+- uid: App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.Serialize*
+  href: api/App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.html#App_Metrics_Formatters_Json_Serialization_HealthStatusSerializer_Serialize_
+  commentId: Overload:App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.Serialize
+  name: Serialize<T>
+  name.vb: Serialize
+  fullName: App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.Serialize<T>(T)
+  fullName.vb: App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.Serialize
+- uid: App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.Serialize``1(``0)
+  name: Serialize<T>(T)
+  href: api/App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.html#App_Metrics_Formatters_Json_Serialization_HealthStatusSerializer_Serialize__1___0_
+  commentId: M:App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.Serialize``1(``0)
+  name.vb: Serialize(Of T)(T)
+  fullName: App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.Serialize<T>(T)
+  fullName.vb: App.Metrics.Formatters.Json.Serialization.HealthStatusSerializer.Serialize(Of T)(T)
+  nameWithType: HealthStatusSerializer.Serialize<T>(T)
+  nameWithType.vb: Serialize(Of T)(T)
+- uid: App.Metrics.Formatters.Json.Serialization.MetricContractResolver
+  name: MetricContractResolver
+  href: api/App.Metrics.Formatters.Json.Serialization.MetricContractResolver.html#App_Metrics_Formatters_Json_Serialization_MetricContractResolver
+  commentId: T:App.Metrics.Formatters.Json.Serialization.MetricContractResolver
+  fullName: App.Metrics.Formatters.Json.Serialization.MetricContractResolver
+  nameWithType: MetricContractResolver
+- uid: App.Metrics.Formatters.Json.Serialization.MetricContractResolver.CreateContract(System.Type)
+  name: CreateContract(Type)
+  href: api/App.Metrics.Formatters.Json.Serialization.MetricContractResolver.html#App_Metrics_Formatters_Json_Serialization_MetricContractResolver_CreateContract_System_Type_
+  commentId: M:App.Metrics.Formatters.Json.Serialization.MetricContractResolver.CreateContract(System.Type)
+  fullName: App.Metrics.Formatters.Json.Serialization.MetricContractResolver.CreateContract(System.Type)
+  nameWithType: MetricContractResolver.CreateContract(Type)
+- uid: App.Metrics.Formatters.Json.Serialization.MetricContractResolver.CreateContract*
+  href: api/App.Metrics.Formatters.Json.Serialization.MetricContractResolver.html#App_Metrics_Formatters_Json_Serialization_MetricContractResolver_CreateContract_
+  commentId: Overload:App.Metrics.Formatters.Json.Serialization.MetricContractResolver.CreateContract
+  name: CreateContract
+  fullName: App.Metrics.Formatters.Json.Serialization.MetricContractResolver.CreateContract(System.Type)
+- uid: App.Metrics.Formatters.Json.Serialization.MetricContractResolver.CreateProperties(System.Type,Newtonsoft.Json.MemberSerialization)
+  name: CreateProperties(Type, MemberSerialization)
+  href: api/App.Metrics.Formatters.Json.Serialization.MetricContractResolver.html#App_Metrics_Formatters_Json_Serialization_MetricContractResolver_CreateProperties_System_Type_Newtonsoft_Json_MemberSerialization_
+  commentId: M:App.Metrics.Formatters.Json.Serialization.MetricContractResolver.CreateProperties(System.Type,Newtonsoft.Json.MemberSerialization)
+  fullName: App.Metrics.Formatters.Json.Serialization.MetricContractResolver.CreateProperties(System.Type, Newtonsoft.Json.MemberSerialization)
+  nameWithType: MetricContractResolver.CreateProperties(Type, MemberSerialization)
+- uid: App.Metrics.Formatters.Json.Serialization.MetricContractResolver.CreateProperties*
+  href: api/App.Metrics.Formatters.Json.Serialization.MetricContractResolver.html#App_Metrics_Formatters_Json_Serialization_MetricContractResolver_CreateProperties_
+  commentId: Overload:App.Metrics.Formatters.Json.Serialization.MetricContractResolver.CreateProperties
+  name: CreateProperties
+  fullName: App.Metrics.Formatters.Json.Serialization.MetricContractResolver.CreateProperties(System.Type, Newtonsoft.Json.MemberSerialization)
+- uid: App.Metrics.Formatters.Json.Serialization.MetricContractResolver.Instance
+  name: Instance
+  href: api/App.Metrics.Formatters.Json.Serialization.MetricContractResolver.html#App_Metrics_Formatters_Json_Serialization_MetricContractResolver_Instance
+  commentId: F:App.Metrics.Formatters.Json.Serialization.MetricContractResolver.Instance
+  fullName: App.Metrics.Formatters.Json.Serialization.MetricContractResolver.Instance
+  nameWithType: MetricContractResolver.Instance
+- uid: App.Metrics.Formatters.Json.Serialization.MetricDataSerializer
+  name: MetricDataSerializer
+  href: api/App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.html#App_Metrics_Formatters_Json_Serialization_MetricDataSerializer
+  commentId: T:App.Metrics.Formatters.Json.Serialization.MetricDataSerializer
+  fullName: App.Metrics.Formatters.Json.Serialization.MetricDataSerializer
+  nameWithType: MetricDataSerializer
+- uid: App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.#ctor
+  name: MetricDataSerializer()
+  href: api/App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.html#App_Metrics_Formatters_Json_Serialization_MetricDataSerializer__ctor
+  commentId: M:App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.#ctor
+  fullName: App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.MetricDataSerializer()
+  nameWithType: MetricDataSerializer.MetricDataSerializer()
+- uid: App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.#ctor(Newtonsoft.Json.JsonSerializerSettings)
+  name: MetricDataSerializer(JsonSerializerSettings)
+  href: api/App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.html#App_Metrics_Formatters_Json_Serialization_MetricDataSerializer__ctor_Newtonsoft_Json_JsonSerializerSettings_
+  commentId: M:App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.#ctor(Newtonsoft.Json.JsonSerializerSettings)
+  fullName: App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.MetricDataSerializer(Newtonsoft.Json.JsonSerializerSettings)
+  nameWithType: MetricDataSerializer.MetricDataSerializer(JsonSerializerSettings)
+- uid: App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.#ctor*
+  href: api/App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.html#App_Metrics_Formatters_Json_Serialization_MetricDataSerializer__ctor_
+  commentId: Overload:App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.#ctor
+  name: MetricDataSerializer
+  fullName: App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.MetricDataSerializer()
+- uid: App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.Deserialize*
+  href: api/App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.html#App_Metrics_Formatters_Json_Serialization_MetricDataSerializer_Deserialize_
+  commentId: Overload:App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.Deserialize
+  name: Deserialize<T>
+  name.vb: Deserialize
+  fullName: App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.Deserialize<T>(System.String)
+  fullName.vb: App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.Deserialize
+- uid: App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.Deserialize``1(System.String)
+  name: Deserialize<T>(String)
+  href: api/App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.html#App_Metrics_Formatters_Json_Serialization_MetricDataSerializer_Deserialize__1_System_String_
+  commentId: M:App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.Deserialize``1(System.String)
+  name.vb: Deserialize(Of T)(String)
+  fullName: App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.Deserialize<T>(System.String)
+  fullName.vb: App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.Deserialize(Of T)(System.String)
+  nameWithType: MetricDataSerializer.Deserialize<T>(String)
+  nameWithType.vb: Deserialize(Of T)(String)
+- uid: App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.Serialize*
+  href: api/App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.html#App_Metrics_Formatters_Json_Serialization_MetricDataSerializer_Serialize_
+  commentId: Overload:App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.Serialize
+  name: Serialize<T>
+  name.vb: Serialize
+  fullName: App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.Serialize<T>(T)
+  fullName.vb: App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.Serialize
+- uid: App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.Serialize``1(``0)
+  name: Serialize<T>(T)
+  href: api/App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.html#App_Metrics_Formatters_Json_Serialization_MetricDataSerializer_Serialize__1___0_
+  commentId: M:App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.Serialize``1(``0)
+  name.vb: Serialize(Of T)(T)
+  fullName: App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.Serialize<T>(T)
+  fullName.vb: App.Metrics.Formatters.Json.Serialization.MetricDataSerializer.Serialize(Of T)(T)
+  nameWithType: MetricDataSerializer.Serialize<T>(T)
+  nameWithType.vb: Serialize(Of T)(T)
 - uid: App.Metrics.Formatters.Json.TimerConverter
   name: TimerConverter
   href: api/App.Metrics.Formatters.Json.TimerConverter.html#App_Metrics_Formatters_Json_TimerConverter
@@ -7075,17 +7881,17 @@ references:
   commentId: Overload:App.Metrics.Formatting.Humanize.HumanizingMetricsExtensions.HumanzeEndMetricType
   name: HumanzeEndMetricType
   fullName: App.Metrics.Formatting.Humanize.HumanizingMetricsExtensions.HumanzeEndMetricType(System.Type)
-- uid: App.Metrics.Formatting.Humanize.HumanizingMetricsExtensions.HumanzeStartMetricType(System.Type)
-  name: HumanzeStartMetricType(Type)
-  href: api/App.Metrics.Formatting.Humanize.HumanizingMetricsExtensions.html#App_Metrics_Formatting_Humanize_HumanizingMetricsExtensions_HumanzeStartMetricType_System_Type_
-  commentId: M:App.Metrics.Formatting.Humanize.HumanizingMetricsExtensions.HumanzeStartMetricType(System.Type)
-  fullName: App.Metrics.Formatting.Humanize.HumanizingMetricsExtensions.HumanzeStartMetricType(System.Type)
-  nameWithType: HumanizingMetricsExtensions.HumanzeStartMetricType(Type)
+- uid: App.Metrics.Formatting.Humanize.HumanizingMetricsExtensions.HumanzeStartMetricType(System.Type,System.String)
+  name: HumanzeStartMetricType(Type, String)
+  href: api/App.Metrics.Formatting.Humanize.HumanizingMetricsExtensions.html#App_Metrics_Formatting_Humanize_HumanizingMetricsExtensions_HumanzeStartMetricType_System_Type_System_String_
+  commentId: M:App.Metrics.Formatting.Humanize.HumanizingMetricsExtensions.HumanzeStartMetricType(System.Type,System.String)
+  fullName: App.Metrics.Formatting.Humanize.HumanizingMetricsExtensions.HumanzeStartMetricType(System.Type, System.String)
+  nameWithType: HumanizingMetricsExtensions.HumanzeStartMetricType(Type, String)
 - uid: App.Metrics.Formatting.Humanize.HumanizingMetricsExtensions.HumanzeStartMetricType*
   href: api/App.Metrics.Formatting.Humanize.HumanizingMetricsExtensions.html#App_Metrics_Formatting_Humanize_HumanizingMetricsExtensions_HumanzeStartMetricType_
   commentId: Overload:App.Metrics.Formatting.Humanize.HumanizingMetricsExtensions.HumanzeStartMetricType
   name: HumanzeStartMetricType
-  fullName: App.Metrics.Formatting.Humanize.HumanizingMetricsExtensions.HumanzeStartMetricType(System.Type)
+  fullName: App.Metrics.Formatting.Humanize.HumanizingMetricsExtensions.HumanzeStartMetricType(System.Type, System.String)
 - uid: App.Metrics.Formatting.Humanize.HumanizingMetricsExtensions.HumanzizeName*
   href: api/App.Metrics.Formatting.Humanize.HumanizingMetricsExtensions.html#App_Metrics_Formatting_Humanize_HumanizingMetricsExtensions_HumanzizeName_
   commentId: Overload:App.Metrics.Formatting.Humanize.HumanizingMetricsExtensions.HumanzizeName
@@ -7147,17 +7953,6 @@ references:
   commentId: Overload:App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteDegradedHealthChecksHeader
   name: WriteDegradedHealthChecksHeader
   fullName: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteDegradedHealthChecksHeader(System.Text.StringBuilder)
-- uid: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteEndMetricType(System.Text.StringBuilder,System.Type)
-  name: WriteEndMetricType(StringBuilder, Type)
-  href: api/App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.html#App_Metrics_Formatting_Humanize_HumanizingMetricsStringBuilderExtensions_WriteEndMetricType_System_Text_StringBuilder_System_Type_
-  commentId: M:App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteEndMetricType(System.Text.StringBuilder,System.Type)
-  fullName: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteEndMetricType(System.Text.StringBuilder, System.Type)
-  nameWithType: HumanizingMetricsStringBuilderExtensions.WriteEndMetricType(StringBuilder, Type)
-- uid: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteEndMetricType*
-  href: api/App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.html#App_Metrics_Formatting_Humanize_HumanizingMetricsStringBuilderExtensions_WriteEndMetricType_
-  commentId: Overload:App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteEndMetricType
-  name: WriteEndMetricType
-  fullName: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteEndMetricType(System.Text.StringBuilder, System.Type)
 - uid: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteEnvironmentInfo(System.Text.StringBuilder,App.Metrics.Data.EnvironmentInfo)
   name: WriteEnvironmentInfo(StringBuilder, EnvironmentInfo)
   href: api/App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.html#App_Metrics_Formatting_Humanize_HumanizingMetricsStringBuilderExtensions_WriteEnvironmentInfo_System_Text_StringBuilder_App_Metrics_Data_EnvironmentInfo_
@@ -7218,17 +8013,17 @@ references:
   commentId: Overload:App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteMetricName
   name: WriteMetricName<T>
   name.vb: WriteMetricName
-  fullName: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteMetricName<T>(System.Text.StringBuilder, System.String, App.Metrics.Data.MetricValueSource<T>)
+  fullName: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteMetricName<T>(System.Text.StringBuilder, App.Metrics.Data.MetricValueSource<T>, System.String)
   fullName.vb: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteMetricName
-- uid: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteMetricName``1(System.Text.StringBuilder,System.String,App.Metrics.Data.MetricValueSource{``0})
-  name: WriteMetricName<T>(StringBuilder, String, MetricValueSource<T>)
-  href: api/App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.html#App_Metrics_Formatting_Humanize_HumanizingMetricsStringBuilderExtensions_WriteMetricName__1_System_Text_StringBuilder_System_String_App_Metrics_Data_MetricValueSource___0__
-  commentId: M:App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteMetricName``1(System.Text.StringBuilder,System.String,App.Metrics.Data.MetricValueSource{``0})
-  name.vb: WriteMetricName(Of T)(StringBuilder, String, MetricValueSource(Of T))
-  fullName: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteMetricName<T>(System.Text.StringBuilder, System.String, App.Metrics.Data.MetricValueSource<T>)
-  fullName.vb: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteMetricName(Of T)(System.Text.StringBuilder, System.String, App.Metrics.Data.MetricValueSource(Of T))
-  nameWithType: HumanizingMetricsStringBuilderExtensions.WriteMetricName<T>(StringBuilder, String, MetricValueSource<T>)
-  nameWithType.vb: WriteMetricName(Of T)(StringBuilder, String, MetricValueSource(Of T))
+- uid: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteMetricName``1(System.Text.StringBuilder,App.Metrics.Data.MetricValueSource{``0},System.String)
+  name: WriteMetricName<T>(StringBuilder, MetricValueSource<T>, String)
+  href: api/App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.html#App_Metrics_Formatting_Humanize_HumanizingMetricsStringBuilderExtensions_WriteMetricName__1_System_Text_StringBuilder_App_Metrics_Data_MetricValueSource___0__System_String_
+  commentId: M:App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteMetricName``1(System.Text.StringBuilder,App.Metrics.Data.MetricValueSource{``0},System.String)
+  name.vb: WriteMetricName(Of T)(StringBuilder, MetricValueSource(Of T), String)
+  fullName: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteMetricName<T>(System.Text.StringBuilder, App.Metrics.Data.MetricValueSource<T>, System.String)
+  fullName.vb: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteMetricName(Of T)(System.Text.StringBuilder, App.Metrics.Data.MetricValueSource(Of T), System.String)
+  nameWithType: HumanizingMetricsStringBuilderExtensions.WriteMetricName<T>(StringBuilder, MetricValueSource<T>, String)
+  nameWithType.vb: WriteMetricName(Of T)(StringBuilder, MetricValueSource(Of T), String)
 - uid: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteMetricStartReport(System.Text.StringBuilder,System.String,System.String)
   name: WriteMetricStartReport(StringBuilder, String, String)
   href: api/App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.html#App_Metrics_Formatting_Humanize_HumanizingMetricsStringBuilderExtensions_WriteMetricStartReport_System_Text_StringBuilder_System_String_System_String_
@@ -7267,17 +8062,17 @@ references:
   commentId: Overload:App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WritePassedHealthChecksHeader
   name: WritePassedHealthChecksHeader
   fullName: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WritePassedHealthChecksHeader(System.Text.StringBuilder)
-- uid: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteStartMetricType(System.Text.StringBuilder,System.Type)
-  name: WriteStartMetricType(StringBuilder, Type)
-  href: api/App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.html#App_Metrics_Formatting_Humanize_HumanizingMetricsStringBuilderExtensions_WriteStartMetricType_System_Text_StringBuilder_System_Type_
-  commentId: M:App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteStartMetricType(System.Text.StringBuilder,System.Type)
-  fullName: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteStartMetricType(System.Text.StringBuilder, System.Type)
-  nameWithType: HumanizingMetricsStringBuilderExtensions.WriteStartMetricType(StringBuilder, Type)
+- uid: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteStartMetricType(System.Text.StringBuilder,System.Type,System.String)
+  name: WriteStartMetricType(StringBuilder, Type, String)
+  href: api/App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.html#App_Metrics_Formatting_Humanize_HumanizingMetricsStringBuilderExtensions_WriteStartMetricType_System_Text_StringBuilder_System_Type_System_String_
+  commentId: M:App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteStartMetricType(System.Text.StringBuilder,System.Type,System.String)
+  fullName: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteStartMetricType(System.Text.StringBuilder, System.Type, System.String)
+  nameWithType: HumanizingMetricsStringBuilderExtensions.WriteStartMetricType(StringBuilder, Type, String)
 - uid: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteStartMetricType*
   href: api/App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.html#App_Metrics_Formatting_Humanize_HumanizingMetricsStringBuilderExtensions_WriteStartMetricType_
   commentId: Overload:App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteStartMetricType
   name: WriteStartMetricType
-  fullName: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteStartMetricType(System.Text.StringBuilder, System.Type)
+  fullName: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteStartMetricType(System.Text.StringBuilder, System.Type, System.String)
 - uid: App.Metrics.Formatting.Humanize.MetricValueStringExtensions
   name: MetricValueStringExtensions
   href: api/App.Metrics.Formatting.Humanize.MetricValueStringExtensions.html#App_Metrics_Formatting_Humanize_MetricValueStringExtensions
@@ -8216,6 +9011,42 @@ references:
   commentId: Overload:App.Metrics.Infrastructure.EnvironmentInfoProvider.Build
   name: Build
   fullName: App.Metrics.Infrastructure.EnvironmentInfoProvider.Build()
+- uid: App.Metrics.Internal
+  name: App.Metrics.Internal
+  href: api/App.Metrics.Internal.html#App_Metrics_Internal
+  commentId: N:App.Metrics.Internal
+  fullName: App.Metrics.Internal
+  nameWithType: App.Metrics.Internal
+- uid: App.Metrics.Internal.ApplicationHealthMetricRegistry
+  name: ApplicationHealthMetricRegistry
+  href: api/App.Metrics.Internal.ApplicationHealthMetricRegistry.html#App_Metrics_Internal_ApplicationHealthMetricRegistry
+  commentId: T:App.Metrics.Internal.ApplicationHealthMetricRegistry
+  fullName: App.Metrics.Internal.ApplicationHealthMetricRegistry
+  nameWithType: ApplicationHealthMetricRegistry
+- uid: App.Metrics.Internal.ApplicationHealthMetricRegistry.Context
+  name: Context
+  href: api/App.Metrics.Internal.ApplicationHealthMetricRegistry.html#App_Metrics_Internal_ApplicationHealthMetricRegistry_Context
+  commentId: F:App.Metrics.Internal.ApplicationHealthMetricRegistry.Context
+  fullName: App.Metrics.Internal.ApplicationHealthMetricRegistry.Context
+  nameWithType: ApplicationHealthMetricRegistry.Context
+- uid: App.Metrics.Internal.ApplicationHealthMetricRegistry.DegradedCheckCounter
+  name: DegradedCheckCounter
+  href: api/App.Metrics.Internal.ApplicationHealthMetricRegistry.html#App_Metrics_Internal_ApplicationHealthMetricRegistry_DegradedCheckCounter
+  commentId: F:App.Metrics.Internal.ApplicationHealthMetricRegistry.DegradedCheckCounter
+  fullName: App.Metrics.Internal.ApplicationHealthMetricRegistry.DegradedCheckCounter
+  nameWithType: ApplicationHealthMetricRegistry.DegradedCheckCounter
+- uid: App.Metrics.Internal.ApplicationHealthMetricRegistry.HealthyCheckCounter
+  name: HealthyCheckCounter
+  href: api/App.Metrics.Internal.ApplicationHealthMetricRegistry.html#App_Metrics_Internal_ApplicationHealthMetricRegistry_HealthyCheckCounter
+  commentId: F:App.Metrics.Internal.ApplicationHealthMetricRegistry.HealthyCheckCounter
+  fullName: App.Metrics.Internal.ApplicationHealthMetricRegistry.HealthyCheckCounter
+  nameWithType: ApplicationHealthMetricRegistry.HealthyCheckCounter
+- uid: App.Metrics.Internal.ApplicationHealthMetricRegistry.UnhealthyCheckCounter
+  name: UnhealthyCheckCounter
+  href: api/App.Metrics.Internal.ApplicationHealthMetricRegistry.html#App_Metrics_Internal_ApplicationHealthMetricRegistry_UnhealthyCheckCounter
+  commentId: F:App.Metrics.Internal.ApplicationHealthMetricRegistry.UnhealthyCheckCounter
+  fullName: App.Metrics.Internal.ApplicationHealthMetricRegistry.UnhealthyCheckCounter
+  nameWithType: ApplicationHealthMetricRegistry.UnhealthyCheckCounter
 - uid: App.Metrics.IResetableMetric
   name: IResetableMetric
   href: api/App.Metrics.IResetableMetric.html#App_Metrics_IResetableMetric
@@ -8558,45 +9389,12 @@ references:
   commentId: Overload:App.Metrics.MetricData.Timestamp
   name: Timestamp
   fullName: App.Metrics.MetricData.Timestamp
-- uid: App.Metrics.MetricData.Version
-  name: Version
-  href: api/App.Metrics.MetricData.html#App_Metrics_MetricData_Version
-  commentId: P:App.Metrics.MetricData.Version
-  fullName: App.Metrics.MetricData.Version
-  nameWithType: MetricData.Version
-- uid: App.Metrics.MetricData.Version*
-  href: api/App.Metrics.MetricData.html#App_Metrics_MetricData_Version_
-  commentId: Overload:App.Metrics.MetricData.Version
-  name: Version
-  fullName: App.Metrics.MetricData.Version
 - uid: App.Metrics.MetricItem
   name: MetricItem
   href: api/App.Metrics.MetricItem.html#App_Metrics_MetricItem
   commentId: T:App.Metrics.MetricItem
   fullName: App.Metrics.MetricItem
   nameWithType: MetricItem
-- uid: App.Metrics.MetricItem.#ctor
-  name: MetricItem()
-  href: api/App.Metrics.MetricItem.html#App_Metrics_MetricItem__ctor
-  commentId: M:App.Metrics.MetricItem.#ctor
-  fullName: App.Metrics.MetricItem.MetricItem()
-  nameWithType: MetricItem.MetricItem()
-- uid: App.Metrics.MetricItem.#ctor(System.Collections.Generic.Dictionary{System.String,System.String})
-  name: MetricItem(Dictionary<String, String>)
-  href: api/App.Metrics.MetricItem.html#App_Metrics_MetricItem__ctor_System_Collections_Generic_Dictionary_System_String_System_String__
-  commentId: M:App.Metrics.MetricItem.#ctor(System.Collections.Generic.Dictionary{System.String,System.String})
-  name.vb: MetricItem(Dictionary(Of String, String))
-  fullName: App.Metrics.MetricItem.MetricItem(System.Collections.Generic.Dictionary<System.String, System.String>)
-  fullName.vb: App.Metrics.MetricItem.MetricItem(System.Collections.Generic.Dictionary(Of System.String, System.String))
-  nameWithType: MetricItem.MetricItem(Dictionary<String, String>)
-  nameWithType.vb: MetricItem(Dictionary(Of String, String))
-- uid: App.Metrics.MetricItem.#ctor*
-  href: api/App.Metrics.MetricItem.html#App_Metrics_MetricItem__ctor_
-  commentId: Overload:App.Metrics.MetricItem.#ctor
-  name: MetricItem
-  name.vb: MetricItem
-  fullName: App.Metrics.MetricItem.MetricItem(System.Collections.Generic.Dictionary<System.String, System.String>)
-  fullName.vb: App.Metrics.MetricItem.MetricItem
 - uid: App.Metrics.MetricItem.ToString
   name: ToString()
   href: api/App.Metrics.MetricItem.html#App_Metrics_MetricItem_ToString
@@ -8763,6 +9561,94 @@ references:
   commentId: Overload:App.Metrics.MetricsContext.Timers
   name: Timers
   fullName: App.Metrics.MetricsContext.Timers
+- uid: App.Metrics.MetricsContextValueSourceExtensions
+  name: MetricsContextValueSourceExtensions
+  href: api/App.Metrics.MetricsContextValueSourceExtensions.html#App_Metrics_MetricsContextValueSourceExtensions
+  commentId: T:App.Metrics.MetricsContextValueSourceExtensions
+  fullName: App.Metrics.MetricsContextValueSourceExtensions
+  nameWithType: MetricsContextValueSourceExtensions
+- uid: App.Metrics.MetricsContextValueSourceExtensions.ApdexValueFor(App.Metrics.Data.MetricsContextValueSource,System.String)
+  name: ApdexValueFor(MetricsContextValueSource, String)
+  href: api/App.Metrics.MetricsContextValueSourceExtensions.html#App_Metrics_MetricsContextValueSourceExtensions_ApdexValueFor_App_Metrics_Data_MetricsContextValueSource_System_String_
+  commentId: M:App.Metrics.MetricsContextValueSourceExtensions.ApdexValueFor(App.Metrics.Data.MetricsContextValueSource,System.String)
+  fullName: App.Metrics.MetricsContextValueSourceExtensions.ApdexValueFor(App.Metrics.Data.MetricsContextValueSource, System.String)
+  nameWithType: MetricsContextValueSourceExtensions.ApdexValueFor(MetricsContextValueSource, String)
+- uid: App.Metrics.MetricsContextValueSourceExtensions.ApdexValueFor*
+  href: api/App.Metrics.MetricsContextValueSourceExtensions.html#App_Metrics_MetricsContextValueSourceExtensions_ApdexValueFor_
+  commentId: Overload:App.Metrics.MetricsContextValueSourceExtensions.ApdexValueFor
+  name: ApdexValueFor
+  fullName: App.Metrics.MetricsContextValueSourceExtensions.ApdexValueFor(App.Metrics.Data.MetricsContextValueSource, System.String)
+- uid: App.Metrics.MetricsContextValueSourceExtensions.CounterValueFor(App.Metrics.Data.MetricsContextValueSource,System.String)
+  name: CounterValueFor(MetricsContextValueSource, String)
+  href: api/App.Metrics.MetricsContextValueSourceExtensions.html#App_Metrics_MetricsContextValueSourceExtensions_CounterValueFor_App_Metrics_Data_MetricsContextValueSource_System_String_
+  commentId: M:App.Metrics.MetricsContextValueSourceExtensions.CounterValueFor(App.Metrics.Data.MetricsContextValueSource,System.String)
+  fullName: App.Metrics.MetricsContextValueSourceExtensions.CounterValueFor(App.Metrics.Data.MetricsContextValueSource, System.String)
+  nameWithType: MetricsContextValueSourceExtensions.CounterValueFor(MetricsContextValueSource, String)
+- uid: App.Metrics.MetricsContextValueSourceExtensions.CounterValueFor*
+  href: api/App.Metrics.MetricsContextValueSourceExtensions.html#App_Metrics_MetricsContextValueSourceExtensions_CounterValueFor_
+  commentId: Overload:App.Metrics.MetricsContextValueSourceExtensions.CounterValueFor
+  name: CounterValueFor
+  fullName: App.Metrics.MetricsContextValueSourceExtensions.CounterValueFor(App.Metrics.Data.MetricsContextValueSource, System.String)
+- uid: App.Metrics.MetricsContextValueSourceExtensions.GaugeValueFor(App.Metrics.Data.MetricsContextValueSource,System.String)
+  name: GaugeValueFor(MetricsContextValueSource, String)
+  href: api/App.Metrics.MetricsContextValueSourceExtensions.html#App_Metrics_MetricsContextValueSourceExtensions_GaugeValueFor_App_Metrics_Data_MetricsContextValueSource_System_String_
+  commentId: M:App.Metrics.MetricsContextValueSourceExtensions.GaugeValueFor(App.Metrics.Data.MetricsContextValueSource,System.String)
+  fullName: App.Metrics.MetricsContextValueSourceExtensions.GaugeValueFor(App.Metrics.Data.MetricsContextValueSource, System.String)
+  nameWithType: MetricsContextValueSourceExtensions.GaugeValueFor(MetricsContextValueSource, String)
+- uid: App.Metrics.MetricsContextValueSourceExtensions.GaugeValueFor*
+  href: api/App.Metrics.MetricsContextValueSourceExtensions.html#App_Metrics_MetricsContextValueSourceExtensions_GaugeValueFor_
+  commentId: Overload:App.Metrics.MetricsContextValueSourceExtensions.GaugeValueFor
+  name: GaugeValueFor
+  fullName: App.Metrics.MetricsContextValueSourceExtensions.GaugeValueFor(App.Metrics.Data.MetricsContextValueSource, System.String)
+- uid: App.Metrics.MetricsContextValueSourceExtensions.HistogramValueFor(App.Metrics.Data.MetricsContextValueSource,System.String)
+  name: HistogramValueFor(MetricsContextValueSource, String)
+  href: api/App.Metrics.MetricsContextValueSourceExtensions.html#App_Metrics_MetricsContextValueSourceExtensions_HistogramValueFor_App_Metrics_Data_MetricsContextValueSource_System_String_
+  commentId: M:App.Metrics.MetricsContextValueSourceExtensions.HistogramValueFor(App.Metrics.Data.MetricsContextValueSource,System.String)
+  fullName: App.Metrics.MetricsContextValueSourceExtensions.HistogramValueFor(App.Metrics.Data.MetricsContextValueSource, System.String)
+  nameWithType: MetricsContextValueSourceExtensions.HistogramValueFor(MetricsContextValueSource, String)
+- uid: App.Metrics.MetricsContextValueSourceExtensions.HistogramValueFor*
+  href: api/App.Metrics.MetricsContextValueSourceExtensions.html#App_Metrics_MetricsContextValueSourceExtensions_HistogramValueFor_
+  commentId: Overload:App.Metrics.MetricsContextValueSourceExtensions.HistogramValueFor
+  name: HistogramValueFor
+  fullName: App.Metrics.MetricsContextValueSourceExtensions.HistogramValueFor(App.Metrics.Data.MetricsContextValueSource, System.String)
+- uid: App.Metrics.MetricsContextValueSourceExtensions.MeterValueFor(App.Metrics.Data.MetricsContextValueSource,System.String)
+  name: MeterValueFor(MetricsContextValueSource, String)
+  href: api/App.Metrics.MetricsContextValueSourceExtensions.html#App_Metrics_MetricsContextValueSourceExtensions_MeterValueFor_App_Metrics_Data_MetricsContextValueSource_System_String_
+  commentId: M:App.Metrics.MetricsContextValueSourceExtensions.MeterValueFor(App.Metrics.Data.MetricsContextValueSource,System.String)
+  fullName: App.Metrics.MetricsContextValueSourceExtensions.MeterValueFor(App.Metrics.Data.MetricsContextValueSource, System.String)
+  nameWithType: MetricsContextValueSourceExtensions.MeterValueFor(MetricsContextValueSource, String)
+- uid: App.Metrics.MetricsContextValueSourceExtensions.MeterValueFor*
+  href: api/App.Metrics.MetricsContextValueSourceExtensions.html#App_Metrics_MetricsContextValueSourceExtensions_MeterValueFor_
+  commentId: Overload:App.Metrics.MetricsContextValueSourceExtensions.MeterValueFor
+  name: MeterValueFor
+  fullName: App.Metrics.MetricsContextValueSourceExtensions.MeterValueFor(App.Metrics.Data.MetricsContextValueSource, System.String)
+- uid: App.Metrics.MetricsContextValueSourceExtensions.TimerValueFor(App.Metrics.Data.MetricsContextValueSource,System.String)
+  name: TimerValueFor(MetricsContextValueSource, String)
+  href: api/App.Metrics.MetricsContextValueSourceExtensions.html#App_Metrics_MetricsContextValueSourceExtensions_TimerValueFor_App_Metrics_Data_MetricsContextValueSource_System_String_
+  commentId: M:App.Metrics.MetricsContextValueSourceExtensions.TimerValueFor(App.Metrics.Data.MetricsContextValueSource,System.String)
+  fullName: App.Metrics.MetricsContextValueSourceExtensions.TimerValueFor(App.Metrics.Data.MetricsContextValueSource, System.String)
+  nameWithType: MetricsContextValueSourceExtensions.TimerValueFor(MetricsContextValueSource, String)
+- uid: App.Metrics.MetricsContextValueSourceExtensions.TimerValueFor*
+  href: api/App.Metrics.MetricsContextValueSourceExtensions.html#App_Metrics_MetricsContextValueSourceExtensions_TimerValueFor_
+  commentId: Overload:App.Metrics.MetricsContextValueSourceExtensions.TimerValueFor
+  name: TimerValueFor
+  fullName: App.Metrics.MetricsContextValueSourceExtensions.TimerValueFor(App.Metrics.Data.MetricsContextValueSource, System.String)
+- uid: App.Metrics.MetricsContextValueSourceExtensions.ValueFor*
+  href: api/App.Metrics.MetricsContextValueSourceExtensions.html#App_Metrics_MetricsContextValueSourceExtensions_ValueFor_
+  commentId: Overload:App.Metrics.MetricsContextValueSourceExtensions.ValueFor
+  name: ValueFor<T>
+  name.vb: ValueFor
+  fullName: App.Metrics.MetricsContextValueSourceExtensions.ValueFor<T>(System.Collections.Generic.IEnumerable<App.Metrics.Data.MetricValueSource<T>>, System.String, System.String)
+  fullName.vb: App.Metrics.MetricsContextValueSourceExtensions.ValueFor
+- uid: App.Metrics.MetricsContextValueSourceExtensions.ValueFor``1(System.Collections.Generic.IEnumerable{App.Metrics.Data.MetricValueSource{``0}},System.String,System.String)
+  name: ValueFor<T>(IEnumerable<MetricValueSource<T>>, String, String)
+  href: api/App.Metrics.MetricsContextValueSourceExtensions.html#App_Metrics_MetricsContextValueSourceExtensions_ValueFor__1_System_Collections_Generic_IEnumerable_App_Metrics_Data_MetricValueSource___0___System_String_System_String_
+  commentId: M:App.Metrics.MetricsContextValueSourceExtensions.ValueFor``1(System.Collections.Generic.IEnumerable{App.Metrics.Data.MetricValueSource{``0}},System.String,System.String)
+  name.vb: ValueFor(Of T)(IEnumerable(Of MetricValueSource(Of T)), String, String)
+  fullName: App.Metrics.MetricsContextValueSourceExtensions.ValueFor<T>(System.Collections.Generic.IEnumerable<App.Metrics.Data.MetricValueSource<T>>, System.String, System.String)
+  fullName.vb: App.Metrics.MetricsContextValueSourceExtensions.ValueFor(Of T)(System.Collections.Generic.IEnumerable(Of App.Metrics.Data.MetricValueSource(Of T)), System.String, System.String)
+  nameWithType: MetricsContextValueSourceExtensions.ValueFor<T>(IEnumerable<MetricValueSource<T>>, String, String)
+  nameWithType.vb: ValueFor(Of T)(IEnumerable(Of MetricValueSource(Of T)), String, String)
 - uid: App.Metrics.MetricTags
   name: MetricTags
   href: api/App.Metrics.MetricTags.html#App_Metrics_MetricTags
@@ -8775,15 +9661,6 @@ references:
   commentId: M:App.Metrics.MetricTags.#ctor
   fullName: App.Metrics.MetricTags.MetricTags()
   nameWithType: MetricTags.MetricTags()
-- uid: App.Metrics.MetricTags.#ctor(System.Collections.Concurrent.ConcurrentDictionary{System.String,System.String})
-  name: MetricTags(ConcurrentDictionary<String, String>)
-  href: api/App.Metrics.MetricTags.html#App_Metrics_MetricTags__ctor_System_Collections_Concurrent_ConcurrentDictionary_System_String_System_String__
-  commentId: M:App.Metrics.MetricTags.#ctor(System.Collections.Concurrent.ConcurrentDictionary{System.String,System.String})
-  name.vb: MetricTags(ConcurrentDictionary(Of String, String))
-  fullName: App.Metrics.MetricTags.MetricTags(System.Collections.Concurrent.ConcurrentDictionary<System.String, System.String>)
-  fullName.vb: App.Metrics.MetricTags.MetricTags(System.Collections.Concurrent.ConcurrentDictionary(Of System.String, System.String))
-  nameWithType: MetricTags.MetricTags(ConcurrentDictionary<String, String>)
-  nameWithType.vb: MetricTags(ConcurrentDictionary(Of String, String))
 - uid: App.Metrics.MetricTags.#ctor(System.Collections.Generic.Dictionary{System.String,System.String})
   name: MetricTags(Dictionary<String, String>)
   href: api/App.Metrics.MetricTags.html#App_Metrics_MetricTags__ctor_System_Collections_Generic_Dictionary_System_String_System_String__
@@ -8798,7 +9675,7 @@ references:
   commentId: Overload:App.Metrics.MetricTags.#ctor
   name: MetricTags
   name.vb: MetricTags
-  fullName: App.Metrics.MetricTags.MetricTags(System.Collections.Concurrent.ConcurrentDictionary<System.String, System.String>)
+  fullName: App.Metrics.MetricTags.MetricTags(System.Collections.Generic.Dictionary<System.String, System.String>)
   fullName.vb: App.Metrics.MetricTags.MetricTags
 - uid: App.Metrics.MetricTags.FromSetItemString(System.String)
   name: FromSetItemString(String)
@@ -8822,15 +9699,6 @@ references:
   commentId: Overload:App.Metrics.MetricTags.None
   name: None
   fullName: App.Metrics.MetricTags.None
-- uid: App.Metrics.MetricTags.With(System.Collections.Concurrent.ConcurrentDictionary{System.String,System.String})
-  name: With(ConcurrentDictionary<String, String>)
-  href: api/App.Metrics.MetricTags.html#App_Metrics_MetricTags_With_System_Collections_Concurrent_ConcurrentDictionary_System_String_System_String__
-  commentId: M:App.Metrics.MetricTags.With(System.Collections.Concurrent.ConcurrentDictionary{System.String,System.String})
-  name.vb: With(ConcurrentDictionary(Of String, String))
-  fullName: App.Metrics.MetricTags.With(System.Collections.Concurrent.ConcurrentDictionary<System.String, System.String>)
-  fullName.vb: App.Metrics.MetricTags.With(System.Collections.Concurrent.ConcurrentDictionary(Of System.String, System.String))
-  nameWithType: MetricTags.With(ConcurrentDictionary<String, String>)
-  nameWithType.vb: With(ConcurrentDictionary(Of String, String))
 - uid: App.Metrics.MetricTags.With(System.String,System.String)
   name: With(String, String)
   href: api/App.Metrics.MetricTags.html#App_Metrics_MetricTags_With_System_String_System_String_
@@ -8913,17 +9781,6 @@ references:
   commentId: Overload:App.Metrics.Reporting.Interfaces.IMetricReporter.EndAndFlushReportRunAsync
   name: EndAndFlushReportRunAsync
   fullName: App.Metrics.Reporting.Interfaces.IMetricReporter.EndAndFlushReportRunAsync(App.Metrics.IMetrics)
-- uid: App.Metrics.Reporting.Interfaces.IMetricReporter.EndMetricTypeReport(System.Type)
-  name: EndMetricTypeReport(Type)
-  href: api/App.Metrics.Reporting.Interfaces.IMetricReporter.html#App_Metrics_Reporting_Interfaces_IMetricReporter_EndMetricTypeReport_System_Type_
-  commentId: M:App.Metrics.Reporting.Interfaces.IMetricReporter.EndMetricTypeReport(System.Type)
-  fullName: App.Metrics.Reporting.Interfaces.IMetricReporter.EndMetricTypeReport(System.Type)
-  nameWithType: IMetricReporter.EndMetricTypeReport(Type)
-- uid: App.Metrics.Reporting.Interfaces.IMetricReporter.EndMetricTypeReport*
-  href: api/App.Metrics.Reporting.Interfaces.IMetricReporter.html#App_Metrics_Reporting_Interfaces_IMetricReporter_EndMetricTypeReport_
-  commentId: Overload:App.Metrics.Reporting.Interfaces.IMetricReporter.EndMetricTypeReport
-  name: EndMetricTypeReport
-  fullName: App.Metrics.Reporting.Interfaces.IMetricReporter.EndMetricTypeReport(System.Type)
 - uid: App.Metrics.Reporting.Interfaces.IMetricReporter.Name
   name: Name
   href: api/App.Metrics.Reporting.Interfaces.IMetricReporter.html#App_Metrics_Reporting_Interfaces_IMetricReporter_Name
@@ -8989,17 +9846,6 @@ references:
   fullName.vb: App.Metrics.Reporting.Interfaces.IMetricReporter.ReportMetric(Of T)(System.String, App.Metrics.Data.MetricValueSource(Of T))
   nameWithType: IMetricReporter.ReportMetric<T>(String, MetricValueSource<T>)
   nameWithType.vb: ReportMetric(Of T)(String, MetricValueSource(Of T))
-- uid: App.Metrics.Reporting.Interfaces.IMetricReporter.StartMetricTypeReport(System.Type)
-  name: StartMetricTypeReport(Type)
-  href: api/App.Metrics.Reporting.Interfaces.IMetricReporter.html#App_Metrics_Reporting_Interfaces_IMetricReporter_StartMetricTypeReport_System_Type_
-  commentId: M:App.Metrics.Reporting.Interfaces.IMetricReporter.StartMetricTypeReport(System.Type)
-  fullName: App.Metrics.Reporting.Interfaces.IMetricReporter.StartMetricTypeReport(System.Type)
-  nameWithType: IMetricReporter.StartMetricTypeReport(Type)
-- uid: App.Metrics.Reporting.Interfaces.IMetricReporter.StartMetricTypeReport*
-  href: api/App.Metrics.Reporting.Interfaces.IMetricReporter.html#App_Metrics_Reporting_Interfaces_IMetricReporter_StartMetricTypeReport_
-  commentId: Overload:App.Metrics.Reporting.Interfaces.IMetricReporter.StartMetricTypeReport
-  name: StartMetricTypeReport
-  fullName: App.Metrics.Reporting.Interfaces.IMetricReporter.StartMetricTypeReport(System.Type)
 - uid: App.Metrics.Reporting.Interfaces.IMetricReporter.StartReportRun(App.Metrics.IMetrics)
   name: StartReportRun(IMetrics)
   href: api/App.Metrics.Reporting.Interfaces.IMetricReporter.html#App_Metrics_Reporting_Interfaces_IMetricReporter_StartReportRun_App_Metrics_IMetrics_
@@ -9017,23 +9863,23 @@ references:
   commentId: T:App.Metrics.Reporting.Interfaces.InfluxDbReporterExtensions
   fullName: App.Metrics.Reporting.Interfaces.InfluxDbReporterExtensions
   nameWithType: InfluxDbReporterExtensions
-- uid: App.Metrics.Reporting.Interfaces.InfluxDbReporterExtensions.AddInfluxDb(App.Metrics.Reporting.Interfaces.IReportFactory,App.Metrics.Extensions.Reporting.InfluxDB.IInfluxDbReporterSettings,App.Metrics.IMetricsFilter)
-  name: AddInfluxDb(IReportFactory, IInfluxDbReporterSettings, IMetricsFilter)
-  href: api/App.Metrics.Reporting.Interfaces.InfluxDbReporterExtensions.html#App_Metrics_Reporting_Interfaces_InfluxDbReporterExtensions_AddInfluxDb_App_Metrics_Reporting_Interfaces_IReportFactory_App_Metrics_Extensions_Reporting_InfluxDB_IInfluxDbReporterSettings_App_Metrics_IMetricsFilter_
-  commentId: M:App.Metrics.Reporting.Interfaces.InfluxDbReporterExtensions.AddInfluxDb(App.Metrics.Reporting.Interfaces.IReportFactory,App.Metrics.Extensions.Reporting.InfluxDB.IInfluxDbReporterSettings,App.Metrics.IMetricsFilter)
-  fullName: App.Metrics.Reporting.Interfaces.InfluxDbReporterExtensions.AddInfluxDb(App.Metrics.Reporting.Interfaces.IReportFactory, App.Metrics.Extensions.Reporting.InfluxDB.IInfluxDbReporterSettings, App.Metrics.IMetricsFilter)
-  nameWithType: InfluxDbReporterExtensions.AddInfluxDb(IReportFactory, IInfluxDbReporterSettings, IMetricsFilter)
-- uid: App.Metrics.Reporting.Interfaces.InfluxDbReporterExtensions.AddInfluxDb(App.Metrics.Reporting.Interfaces.IReportFactory,App.Metrics.IMetricsFilter)
-  name: AddInfluxDb(IReportFactory, IMetricsFilter)
-  href: api/App.Metrics.Reporting.Interfaces.InfluxDbReporterExtensions.html#App_Metrics_Reporting_Interfaces_InfluxDbReporterExtensions_AddInfluxDb_App_Metrics_Reporting_Interfaces_IReportFactory_App_Metrics_IMetricsFilter_
-  commentId: M:App.Metrics.Reporting.Interfaces.InfluxDbReporterExtensions.AddInfluxDb(App.Metrics.Reporting.Interfaces.IReportFactory,App.Metrics.IMetricsFilter)
-  fullName: App.Metrics.Reporting.Interfaces.InfluxDbReporterExtensions.AddInfluxDb(App.Metrics.Reporting.Interfaces.IReportFactory, App.Metrics.IMetricsFilter)
-  nameWithType: InfluxDbReporterExtensions.AddInfluxDb(IReportFactory, IMetricsFilter)
+- uid: App.Metrics.Reporting.Interfaces.InfluxDbReporterExtensions.AddInfluxDb(App.Metrics.Reporting.Interfaces.IReportFactory,App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings,App.Metrics.IMetricsFilter)
+  name: AddInfluxDb(IReportFactory, InfluxDBReporterSettings, IMetricsFilter)
+  href: api/App.Metrics.Reporting.Interfaces.InfluxDbReporterExtensions.html#App_Metrics_Reporting_Interfaces_InfluxDbReporterExtensions_AddInfluxDb_App_Metrics_Reporting_Interfaces_IReportFactory_App_Metrics_Extensions_Reporting_InfluxDB_InfluxDBReporterSettings_App_Metrics_IMetricsFilter_
+  commentId: M:App.Metrics.Reporting.Interfaces.InfluxDbReporterExtensions.AddInfluxDb(App.Metrics.Reporting.Interfaces.IReportFactory,App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings,App.Metrics.IMetricsFilter)
+  fullName: App.Metrics.Reporting.Interfaces.InfluxDbReporterExtensions.AddInfluxDb(App.Metrics.Reporting.Interfaces.IReportFactory, App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings, App.Metrics.IMetricsFilter)
+  nameWithType: InfluxDbReporterExtensions.AddInfluxDb(IReportFactory, InfluxDBReporterSettings, IMetricsFilter)
+- uid: App.Metrics.Reporting.Interfaces.InfluxDbReporterExtensions.AddInfluxDb(App.Metrics.Reporting.Interfaces.IReportFactory,System.String,System.Uri,App.Metrics.IMetricsFilter)
+  name: AddInfluxDb(IReportFactory, String, Uri, IMetricsFilter)
+  href: api/App.Metrics.Reporting.Interfaces.InfluxDbReporterExtensions.html#App_Metrics_Reporting_Interfaces_InfluxDbReporterExtensions_AddInfluxDb_App_Metrics_Reporting_Interfaces_IReportFactory_System_String_System_Uri_App_Metrics_IMetricsFilter_
+  commentId: M:App.Metrics.Reporting.Interfaces.InfluxDbReporterExtensions.AddInfluxDb(App.Metrics.Reporting.Interfaces.IReportFactory,System.String,System.Uri,App.Metrics.IMetricsFilter)
+  fullName: App.Metrics.Reporting.Interfaces.InfluxDbReporterExtensions.AddInfluxDb(App.Metrics.Reporting.Interfaces.IReportFactory, System.String, System.Uri, App.Metrics.IMetricsFilter)
+  nameWithType: InfluxDbReporterExtensions.AddInfluxDb(IReportFactory, String, Uri, IMetricsFilter)
 - uid: App.Metrics.Reporting.Interfaces.InfluxDbReporterExtensions.AddInfluxDb*
   href: api/App.Metrics.Reporting.Interfaces.InfluxDbReporterExtensions.html#App_Metrics_Reporting_Interfaces_InfluxDbReporterExtensions_AddInfluxDb_
   commentId: Overload:App.Metrics.Reporting.Interfaces.InfluxDbReporterExtensions.AddInfluxDb
   name: AddInfluxDb
-  fullName: App.Metrics.Reporting.Interfaces.InfluxDbReporterExtensions.AddInfluxDb(App.Metrics.Reporting.Interfaces.IReportFactory, App.Metrics.Extensions.Reporting.InfluxDB.IInfluxDbReporterSettings, App.Metrics.IMetricsFilter)
+  fullName: App.Metrics.Reporting.Interfaces.InfluxDbReporterExtensions.AddInfluxDb(App.Metrics.Reporting.Interfaces.IReportFactory, App.Metrics.Extensions.Reporting.InfluxDB.InfluxDBReporterSettings, App.Metrics.IMetricsFilter)
 - uid: App.Metrics.Reporting.Interfaces.IReporter
   name: IReporter
   href: api/App.Metrics.Reporting.Interfaces.IReporter.html#App_Metrics_Reporting_Interfaces_IReporter
@@ -9079,17 +9925,6 @@ references:
   commentId: Overload:App.Metrics.Reporting.Interfaces.IReporterProvider.Filter
   name: Filter
   fullName: App.Metrics.Reporting.Interfaces.IReporterProvider.Filter
-- uid: App.Metrics.Reporting.Interfaces.IReporterProvider.Settings
-  name: Settings
-  href: api/App.Metrics.Reporting.Interfaces.IReporterProvider.html#App_Metrics_Reporting_Interfaces_IReporterProvider_Settings
-  commentId: P:App.Metrics.Reporting.Interfaces.IReporterProvider.Settings
-  fullName: App.Metrics.Reporting.Interfaces.IReporterProvider.Settings
-  nameWithType: IReporterProvider.Settings
-- uid: App.Metrics.Reporting.Interfaces.IReporterProvider.Settings*
-  href: api/App.Metrics.Reporting.Interfaces.IReporterProvider.html#App_Metrics_Reporting_Interfaces_IReporterProvider_Settings_
-  commentId: Overload:App.Metrics.Reporting.Interfaces.IReporterProvider.Settings
-  name: Settings
-  fullName: App.Metrics.Reporting.Interfaces.IReporterProvider.Settings
 - uid: App.Metrics.Reporting.Interfaces.IReporterSettings
   name: IReporterSettings
   href: api/App.Metrics.Reporting.Interfaces.IReporterSettings.html#App_Metrics_Reporting_Interfaces_IReporterSettings
@@ -9141,6 +9976,46 @@ references:
   commentId: Overload:App.Metrics.Reporting.Interfaces.IReportFactory.CreateReporter
   name: CreateReporter
   fullName: App.Metrics.Reporting.Interfaces.IReportFactory.CreateReporter(App.Metrics.Scheduling.Interfaces.IScheduler)
+- uid: App.Metrics.Reporting.Internal
+  name: App.Metrics.Reporting.Internal
+  href: api/App.Metrics.Reporting.Internal.html#App_Metrics_Reporting_Internal
+  commentId: N:App.Metrics.Reporting.Internal
+  fullName: App.Metrics.Reporting.Internal
+  nameWithType: App.Metrics.Reporting.Internal
+- uid: App.Metrics.Reporting.Internal.DefaultReportGenerator
+  name: DefaultReportGenerator
+  href: api/App.Metrics.Reporting.Internal.DefaultReportGenerator.html#App_Metrics_Reporting_Internal_DefaultReportGenerator
+  commentId: T:App.Metrics.Reporting.Internal.DefaultReportGenerator
+  fullName: App.Metrics.Reporting.Internal.DefaultReportGenerator
+  nameWithType: DefaultReportGenerator
+- uid: App.Metrics.Reporting.Internal.DefaultReportGenerator.#ctor(Microsoft.Extensions.Logging.ILoggerFactory)
+  name: DefaultReportGenerator(ILoggerFactory)
+  href: api/App.Metrics.Reporting.Internal.DefaultReportGenerator.html#App_Metrics_Reporting_Internal_DefaultReportGenerator__ctor_Microsoft_Extensions_Logging_ILoggerFactory_
+  commentId: M:App.Metrics.Reporting.Internal.DefaultReportGenerator.#ctor(Microsoft.Extensions.Logging.ILoggerFactory)
+  fullName: App.Metrics.Reporting.Internal.DefaultReportGenerator.DefaultReportGenerator(Microsoft.Extensions.Logging.ILoggerFactory)
+  nameWithType: DefaultReportGenerator.DefaultReportGenerator(ILoggerFactory)
+- uid: App.Metrics.Reporting.Internal.DefaultReportGenerator.#ctor*
+  href: api/App.Metrics.Reporting.Internal.DefaultReportGenerator.html#App_Metrics_Reporting_Internal_DefaultReportGenerator__ctor_
+  commentId: Overload:App.Metrics.Reporting.Internal.DefaultReportGenerator.#ctor
+  name: DefaultReportGenerator
+  fullName: App.Metrics.Reporting.Internal.DefaultReportGenerator.DefaultReportGenerator(Microsoft.Extensions.Logging.ILoggerFactory)
+- uid: App.Metrics.Reporting.Internal.DefaultReportGenerator.GenerateAsync(App.Metrics.Reporting.Interfaces.IMetricReporter,App.Metrics.IMetrics,App.Metrics.IMetricsFilter,System.Threading.CancellationToken)
+  name: GenerateAsync(IMetricReporter, IMetrics, IMetricsFilter, CancellationToken)
+  href: api/App.Metrics.Reporting.Internal.DefaultReportGenerator.html#App_Metrics_Reporting_Internal_DefaultReportGenerator_GenerateAsync_App_Metrics_Reporting_Interfaces_IMetricReporter_App_Metrics_IMetrics_App_Metrics_IMetricsFilter_System_Threading_CancellationToken_
+  commentId: M:App.Metrics.Reporting.Internal.DefaultReportGenerator.GenerateAsync(App.Metrics.Reporting.Interfaces.IMetricReporter,App.Metrics.IMetrics,App.Metrics.IMetricsFilter,System.Threading.CancellationToken)
+  fullName: App.Metrics.Reporting.Internal.DefaultReportGenerator.GenerateAsync(App.Metrics.Reporting.Interfaces.IMetricReporter, App.Metrics.IMetrics, App.Metrics.IMetricsFilter, System.Threading.CancellationToken)
+  nameWithType: DefaultReportGenerator.GenerateAsync(IMetricReporter, IMetrics, IMetricsFilter, CancellationToken)
+- uid: App.Metrics.Reporting.Internal.DefaultReportGenerator.GenerateAsync(App.Metrics.Reporting.Interfaces.IMetricReporter,App.Metrics.IMetrics,System.Threading.CancellationToken)
+  name: GenerateAsync(IMetricReporter, IMetrics, CancellationToken)
+  href: api/App.Metrics.Reporting.Internal.DefaultReportGenerator.html#App_Metrics_Reporting_Internal_DefaultReportGenerator_GenerateAsync_App_Metrics_Reporting_Interfaces_IMetricReporter_App_Metrics_IMetrics_System_Threading_CancellationToken_
+  commentId: M:App.Metrics.Reporting.Internal.DefaultReportGenerator.GenerateAsync(App.Metrics.Reporting.Interfaces.IMetricReporter,App.Metrics.IMetrics,System.Threading.CancellationToken)
+  fullName: App.Metrics.Reporting.Internal.DefaultReportGenerator.GenerateAsync(App.Metrics.Reporting.Interfaces.IMetricReporter, App.Metrics.IMetrics, System.Threading.CancellationToken)
+  nameWithType: DefaultReportGenerator.GenerateAsync(IMetricReporter, IMetrics, CancellationToken)
+- uid: App.Metrics.Reporting.Internal.DefaultReportGenerator.GenerateAsync*
+  href: api/App.Metrics.Reporting.Internal.DefaultReportGenerator.html#App_Metrics_Reporting_Internal_DefaultReportGenerator_GenerateAsync_
+  commentId: Overload:App.Metrics.Reporting.Internal.DefaultReportGenerator.GenerateAsync
+  name: GenerateAsync
+  fullName: App.Metrics.Reporting.Internal.DefaultReportGenerator.GenerateAsync(App.Metrics.Reporting.Interfaces.IMetricReporter, App.Metrics.IMetrics, System.Threading.CancellationToken)
 - uid: App.Metrics.Reporting.ReportFactory
   name: ReportFactory
   href: api/App.Metrics.Reporting.ReportFactory.html#App_Metrics_Reporting_ReportFactory
@@ -9237,17 +10112,6 @@ references:
   commentId: Overload:App.Metrics.Reporting.StringReporter.EndAndFlushReportRunAsync
   name: EndAndFlushReportRunAsync
   fullName: App.Metrics.Reporting.StringReporter.EndAndFlushReportRunAsync(App.Metrics.IMetrics)
-- uid: App.Metrics.Reporting.StringReporter.EndMetricTypeReport(System.Type)
-  name: EndMetricTypeReport(Type)
-  href: api/App.Metrics.Reporting.StringReporter.html#App_Metrics_Reporting_StringReporter_EndMetricTypeReport_System_Type_
-  commentId: M:App.Metrics.Reporting.StringReporter.EndMetricTypeReport(System.Type)
-  fullName: App.Metrics.Reporting.StringReporter.EndMetricTypeReport(System.Type)
-  nameWithType: StringReporter.EndMetricTypeReport(Type)
-- uid: App.Metrics.Reporting.StringReporter.EndMetricTypeReport*
-  href: api/App.Metrics.Reporting.StringReporter.html#App_Metrics_Reporting_StringReporter_EndMetricTypeReport_
-  commentId: Overload:App.Metrics.Reporting.StringReporter.EndMetricTypeReport
-  name: EndMetricTypeReport
-  fullName: App.Metrics.Reporting.StringReporter.EndMetricTypeReport(System.Type)
 - uid: App.Metrics.Reporting.StringReporter.Name
   name: Name
   href: api/App.Metrics.Reporting.StringReporter.html#App_Metrics_Reporting_StringReporter_Name
@@ -9324,17 +10188,6 @@ references:
   commentId: Overload:App.Metrics.Reporting.StringReporter.Result
   name: Result
   fullName: App.Metrics.Reporting.StringReporter.Result
-- uid: App.Metrics.Reporting.StringReporter.StartMetricTypeReport(System.Type)
-  name: StartMetricTypeReport(Type)
-  href: api/App.Metrics.Reporting.StringReporter.html#App_Metrics_Reporting_StringReporter_StartMetricTypeReport_System_Type_
-  commentId: M:App.Metrics.Reporting.StringReporter.StartMetricTypeReport(System.Type)
-  fullName: App.Metrics.Reporting.StringReporter.StartMetricTypeReport(System.Type)
-  nameWithType: StringReporter.StartMetricTypeReport(Type)
-- uid: App.Metrics.Reporting.StringReporter.StartMetricTypeReport*
-  href: api/App.Metrics.Reporting.StringReporter.html#App_Metrics_Reporting_StringReporter_StartMetricTypeReport_
-  commentId: Overload:App.Metrics.Reporting.StringReporter.StartMetricTypeReport
-  name: StartMetricTypeReport
-  fullName: App.Metrics.Reporting.StringReporter.StartMetricTypeReport(System.Type)
 - uid: App.Metrics.Reporting.StringReporter.StartReportRun(App.Metrics.IMetrics)
   name: StartReportRun(IMetrics)
   href: api/App.Metrics.Reporting.StringReporter.html#App_Metrics_Reporting_StringReporter_StartReportRun_App_Metrics_IMetrics_
@@ -10472,6 +11325,17 @@ references:
   commentId: T:App.Metrics.Scheduling.DefaultTaskScheduler
   fullName: App.Metrics.Scheduling.DefaultTaskScheduler
   nameWithType: DefaultTaskScheduler
+- uid: App.Metrics.Scheduling.DefaultTaskScheduler.#ctor(System.Boolean)
+  name: DefaultTaskScheduler(Boolean)
+  href: api/App.Metrics.Scheduling.DefaultTaskScheduler.html#App_Metrics_Scheduling_DefaultTaskScheduler__ctor_System_Boolean_
+  commentId: M:App.Metrics.Scheduling.DefaultTaskScheduler.#ctor(System.Boolean)
+  fullName: App.Metrics.Scheduling.DefaultTaskScheduler.DefaultTaskScheduler(System.Boolean)
+  nameWithType: DefaultTaskScheduler.DefaultTaskScheduler(Boolean)
+- uid: App.Metrics.Scheduling.DefaultTaskScheduler.#ctor*
+  href: api/App.Metrics.Scheduling.DefaultTaskScheduler.html#App_Metrics_Scheduling_DefaultTaskScheduler__ctor_
+  commentId: Overload:App.Metrics.Scheduling.DefaultTaskScheduler.#ctor
+  name: DefaultTaskScheduler
+  fullName: App.Metrics.Scheduling.DefaultTaskScheduler.DefaultTaskScheduler(System.Boolean)
 - uid: App.Metrics.Scheduling.DefaultTaskScheduler.Dispose
   name: Dispose()
   href: api/App.Metrics.Scheduling.DefaultTaskScheduler.html#App_Metrics_Scheduling_DefaultTaskScheduler_Dispose
@@ -11861,6 +12725,15 @@ references:
   commentId: M:Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions.AddMetricsMiddleware(Microsoft.Extensions.DependencyInjection.IMetricsHostBuilder,Microsoft.Extensions.Configuration.IConfiguration)
   fullName: Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions.AddMetricsMiddleware(Microsoft.Extensions.DependencyInjection.IMetricsHostBuilder, Microsoft.Extensions.Configuration.IConfiguration)
   nameWithType: AspNetMetricsCoreBuilderExtensions.AddMetricsMiddleware(IMetricsHostBuilder, IConfiguration)
+- uid: Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions.AddMetricsMiddleware(Microsoft.Extensions.DependencyInjection.IMetricsHostBuilder,Microsoft.Extensions.Configuration.IConfiguration,System.Action{App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions})
+  name: AddMetricsMiddleware(IMetricsHostBuilder, IConfiguration, Action<AspNetMetricsOptions>)
+  href: api/Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions.html#Microsoft_Extensions_DependencyInjection_AspNetMetricsCoreBuilderExtensions_AddMetricsMiddleware_Microsoft_Extensions_DependencyInjection_IMetricsHostBuilder_Microsoft_Extensions_Configuration_IConfiguration_System_Action_App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions__
+  commentId: M:Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions.AddMetricsMiddleware(Microsoft.Extensions.DependencyInjection.IMetricsHostBuilder,Microsoft.Extensions.Configuration.IConfiguration,System.Action{App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions})
+  name.vb: AddMetricsMiddleware(IMetricsHostBuilder, IConfiguration, Action(Of AspNetMetricsOptions))
+  fullName: Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions.AddMetricsMiddleware(Microsoft.Extensions.DependencyInjection.IMetricsHostBuilder, Microsoft.Extensions.Configuration.IConfiguration, System.Action<App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions>)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions.AddMetricsMiddleware(Microsoft.Extensions.DependencyInjection.IMetricsHostBuilder, Microsoft.Extensions.Configuration.IConfiguration, System.Action(Of App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions))
+  nameWithType: AspNetMetricsCoreBuilderExtensions.AddMetricsMiddleware(IMetricsHostBuilder, IConfiguration, Action<AspNetMetricsOptions>)
+  nameWithType.vb: AddMetricsMiddleware(IMetricsHostBuilder, IConfiguration, Action(Of AspNetMetricsOptions))
 - uid: Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions.AddMetricsMiddleware(Microsoft.Extensions.DependencyInjection.IMetricsHostBuilder,System.Action{App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions})
   name: AddMetricsMiddleware(IMetricsHostBuilder, Action<AspNetMetricsOptions>)
   href: api/Microsoft.Extensions.DependencyInjection.AspNetMetricsCoreBuilderExtensions.html#Microsoft_Extensions_DependencyInjection_AspNetMetricsCoreBuilderExtensions_AddMetricsMiddleware_Microsoft_Extensions_DependencyInjection_IMetricsHostBuilder_System_Action_App_Metrics_Extensions_Middleware_DependencyInjection_Options_AspNetMetricsOptions__
