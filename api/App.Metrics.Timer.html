@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class Timer
+    <title>Namespace App.Metrics.Timer
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class Timer
+    <meta name="title" content="Namespace App.Metrics.Timer
    ">
     <meta name="generator" content="docfx 2.7.3.0">
     
@@ -69,287 +69,59 @@
           <div class="col-md-10">
             <article class="content wrap" id="_content">
               
-              
-              <h1 id="App_Metrics_Timer" data-uid="App.Metrics.Timer">Class Timer
+              <h1 id="App_Metrics_Timer" data-uid="App.Metrics.Timer">Namespace App.Metrics.Timer
               </h1>
-              <div class="markdown level0 summary"><p>
-    Timer metric types are essentially a special case of <a class="xref" href="App.Metrics.Timer.html#App_Metrics_Timer_Histogram">Histogram</a>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="markdown level0 remarks"></div>
+                <h3 id="classes">Classes
+              </h3>
+                  <h4><a class="xref" href="App.Metrics.Timer.DefaultTimerBuilder.html#App_Metrics_Timer_DefaultTimerBuilder">DefaultTimerBuilder</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="App.Metrics.Timer.DefaultTimerMetric.html#App_Metrics_Timer_DefaultTimerMetric">DefaultTimerMetric</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="App.Metrics.Timer.DefaultTimerMetricProvider.html#App_Metrics_Timer_DefaultTimerMetricProvider">DefaultTimerMetricProvider</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="App.Metrics.Timer.TimerExtensions.html#App_Metrics_Timer_TimerExtensions">TimerExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="App.Metrics.Timer.TimerMetric.html#App_Metrics_Timer_TimerMetric">TimerMetric</a></h4>
+                  <section><p>
+    Timer metric types are essentially a special case of <a class="xref" href="App.Metrics.Timer.TimerMetric.html#App_Metrics_Timer_TimerMetric_Histogram">Histogram</a>
 </p>
 <p>
-    As well as providing a <a class="xref" href="App.Metrics.Timer.html#App_Metrics_Timer_Histogram">Histogram</a> of the duration of a type of event, timers also provide a
-<a class="xref" href="App.Metrics.Meter.html#App_Metrics_Meter">Meter</a> of the rate of the events occurrence.
+    As well as providing a <a class="xref" href="App.Metrics.Timer.TimerMetric.html#App_Metrics_Timer_TimerMetric_Histogram">Histogram</a> of the duration of a type of event, timers also provide a
+<a class="xref" href="App.Metrics.Meter.MeterMetric.html#App_Metrics_Meter_MeterMetric">MeterMetric</a> of the rate of the events occurrence.
 </p>
 <p>
-    Like <a class="xref" href="App.Metrics.Timer.html#App_Metrics_Timer_Histogram">Histogram</a>s, timers also allow us to track user values, where for all user values provided
+    Like <a class="xref" href="App.Metrics.Timer.TimerMetric.html#App_Metrics_Timer_TimerMetric_Histogram">Histogram</a>s, timers also allow us to track user values, where for all user values provided
     the min, max and last user value values is recorded.
 </p>
-</div>
-              <div class="markdown level0 conceptual"></div>
-              <div class="inheritance">
-                <h5>Inheritance</h5>
-                  <div class="level0"><span class="xref">System.Object</span></div>
-                  <div class="level1"><a class="xref" href="App.Metrics.Metric.html#App_Metrics_Metric">Metric</a></div>
-                  <div class="level2"><span class="xref">Timer</span></div>
-              </div>
-              <div class="inheritedMembers">
-                <h5>Inherited Members</h5>
-                <div>
-                  <a class="xref" href="App.Metrics.Metric.html#App_Metrics_Metric_Name">Metric.Name</a>
-                </div>
-                <div>
-                  <a class="xref" href="App.Metrics.Metric.html#App_Metrics_Metric_Tags">Metric.Tags</a>
-                </div>
-                <div>
-                  <a class="xref" href="App.Metrics.Metric.html#App_Metrics_Metric_Unit">Metric.Unit</a>
-                </div>
-                <div>
-                  <span class="xref">System.Object.Equals(System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.GetHashCode()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.GetType()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.MemberwiseClone()</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-                </div>
-                <div>
-                  <span class="xref">System.Object.ToString()</span>
-                </div>
-              </div>
-              <h6><strong>Namespace</strong>:App.Metrics</h6>
-              <h6><strong>Assembly</strong>:App.Metrics.dll</h6>
-              <h5 id="App_Metrics_Timer_syntax">Syntax</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public sealed class Timer : Metric</code></pre>
-              </div>
-              <h3 id="properties">Properties
+</section>
+                  <h4><a class="xref" href="App.Metrics.Timer.TimerMetric.HistogramData.html#App_Metrics_Timer_TimerMetric_HistogramData">TimerMetric.HistogramData</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="App.Metrics.Timer.TimerMetric.RateData.html#App_Metrics_Timer_TimerMetric_RateData">TimerMetric.RateData</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="App.Metrics.Timer.TimerValue.html#App_Metrics_Timer_TimerValue">TimerValue</a></h4>
+                  <section><p>The value reported by a Timer Metric</p>
+</section>
+                  <h4><a class="xref" href="App.Metrics.Timer.TimerValueSource.html#App_Metrics_Timer_TimerValueSource">TimerValueSource</a></h4>
+                  <section><p>Combines the value of the timer with the defined unit and the time units for rate and duration.</p>
+</section>
+                <h3 id="structs">Structs
               </h3>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Timer_ActiveSessions.md&amp;value=---%0Auid%3A%20App.Metrics.Timer.ActiveSessions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta5/src/App.Metrics/Timer.cs/#L23">View Source</a>
-              </span>
-              <a id="App_Metrics_Timer_ActiveSessions_" data-uid="App.Metrics.Timer.ActiveSessions*"></a>
-              <h4 id="App_Metrics_Timer_ActiveSessions" data-uid="App.Metrics.Timer.ActiveSessions">ActiveSessions</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public long ActiveSessions { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="xref">System.Int64</span></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Timer_Count.md&amp;value=---%0Auid%3A%20App.Metrics.Timer.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta5/src/App.Metrics/Timer.cs/#L25">View Source</a>
-              </span>
-              <a id="App_Metrics_Timer_Count_" data-uid="App.Metrics.Timer.Count*"></a>
-              <h4 id="App_Metrics_Timer_Count" data-uid="App.Metrics.Timer.Count">Count</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public long Count { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="xref">System.Int64</span></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Timer_DurationUnit.md&amp;value=---%0Auid%3A%20App.Metrics.Timer.DurationUnit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta5/src/App.Metrics/Timer.cs/#L27">View Source</a>
-              </span>
-              <a id="App_Metrics_Timer_DurationUnit_" data-uid="App.Metrics.Timer.DurationUnit*"></a>
-              <h4 id="App_Metrics_Timer_DurationUnit" data-uid="App.Metrics.Timer.DurationUnit">DurationUnit</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public string DurationUnit { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="xref">System.String</span></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Timer_Histogram.md&amp;value=---%0Auid%3A%20App.Metrics.Timer.Histogram%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta5/src/App.Metrics/Timer.cs/#L29">View Source</a>
-              </span>
-              <a id="App_Metrics_Timer_Histogram_" data-uid="App.Metrics.Timer.Histogram*"></a>
-              <h4 id="App_Metrics_Timer_Histogram" data-uid="App.Metrics.Timer.Histogram">Histogram</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public Timer.HistogramData Histogram { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="App.Metrics.Timer.HistogramData.html#App_Metrics_Timer_HistogramData">Timer.HistogramData</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Timer_Rate.md&amp;value=---%0Auid%3A%20App.Metrics.Timer.Rate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta5/src/App.Metrics/Timer.cs/#L31">View Source</a>
-              </span>
-              <a id="App_Metrics_Timer_Rate_" data-uid="App.Metrics.Timer.Rate*"></a>
-              <h4 id="App_Metrics_Timer_Rate" data-uid="App.Metrics.Timer.Rate">Rate</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public Timer.RateData Rate { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="App.Metrics.Timer.RateData.html#App_Metrics_Timer_RateData">Timer.RateData</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Timer_RateUnit.md&amp;value=---%0Auid%3A%20App.Metrics.Timer.RateUnit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta5/src/App.Metrics/Timer.cs/#L33">View Source</a>
-              </span>
-              <a id="App_Metrics_Timer_RateUnit_" data-uid="App.Metrics.Timer.RateUnit*"></a>
-              <h4 id="App_Metrics_Timer_RateUnit" data-uid="App.Metrics.Timer.RateUnit">RateUnit</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public string RateUnit { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="xref">System.String</span></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Timer_TotalTime.md&amp;value=---%0Auid%3A%20App.Metrics.Timer.TotalTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta5/src/App.Metrics/Timer.cs/#L35">View Source</a>
-              </span>
-              <a id="App_Metrics_Timer_TotalTime_" data-uid="App.Metrics.Timer.TotalTime*"></a>
-              <h4 id="App_Metrics_Timer_TotalTime" data-uid="App.Metrics.Timer.TotalTime">TotalTime</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public long TotalTime { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="xref">System.Int64</span></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h3 id="extensionmethods">Extension Methods</h3>
-              <div>
-                  <a class="xref" href="App.Metrics.Extensions.TimerExtensions.html#App_Metrics_Extensions_TimerExtensions_ToMetricValueSource_App_Metrics_Timer_">TimerExtensions.ToMetricValueSource(Timer)</a>
-              </div>
-              <h3 id="seealso">See Also</h3>
-              <div class="seealso">
-                  <div><a class="xref" href="App.Metrics.Metric.html#App_Metrics_Metric">Metric</a></div>
-              </div>
+                  <h4><a class="xref" href="App.Metrics.Timer.TimerContext.html#App_Metrics_Timer_TimerContext">TimerContext</a></h4>
+                  <section><p>This struct is meant to be returned by the timer.NewContext() method and is intended to be used inside a using
+statement:</p>
+<p><pre><code>using(timer.NewContext())
+{
+ExecuteMethodThatNeedsMonitoring();
+}</code></pre></p>
+<remarks>
+    Double disposing the instance, or a copy of the instance (since it is a struct) will cause the timer to record
+    wrong values.
+    Stick to directly passing it to the using() statement.
+</remarks>
+</section>
             </article>
           </div>
           
@@ -359,9 +131,6 @@
                 <ul class="nav">
                   <li>
                     <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Timer.md&amp;value=---%0Auid%3A%20App.Metrics.Timer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta5/src/App.Metrics/Timer.cs/#L21" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -82,31 +82,26 @@ the number of satisfied and tolerating requests to the total requests made. Each
 request, while each tolerating request counts as half a satisfied request.</p>
 <p>
     Apdex tracks three response counts, counts based on samples measured by the chosen
-<a class="xref" href="App.Metrics.Sampling.Interfaces.IReservoir.html#App_Metrics_Sampling_Interfaces_IReservoir">IReservoir</a>
-<remarks>
-    The <a class="xref" href="App.Metrics.Sampling.Interfaces.IReservoir.html#App_Metrics_Sampling_Interfaces_IReservoir">IReservoir</a>  is determined by the <a class="xref" href="App.Metrics.SamplingType.html#App_Metrics_SamplingType">SamplingType</a>sampling
-    type
-</remarks>
-when the apdex metric instance is instantiated.
+<a class="xref" href="App.Metrics.Abstractions.ReservoirSampling.IReservoir.html#App_Metrics_Abstractions_ReservoirSampling_IReservoir">IReservoir</a>, defaults to a <a class="xref" href="App.Metrics.ReservoirSampling.ExponentialDecay.DefaultForwardDecayingReservoir.html#App_Metrics_ReservoirSampling_ExponentialDecay_DefaultForwardDecayingReservoir">DefaultForwardDecayingReservoir</a>.
 </p>
 </section>
                   <h4><a class="xref" href="App.Metrics.Core.Options.CounterOptions.html#App_Metrics_Core_Options_CounterOptions">CounterOptions</a></h4>
-                  <section><p>Configuration of a <a class="xref" href="App.Metrics.ICounter.html#App_Metrics_ICounter">ICounter</a> that will be measured</p>
+                  <section><p>Configuration of a <a class="xref" href="App.Metrics.Counter.Abstractions.ICounter.html#App_Metrics_Counter_Abstractions_ICounter">ICounter</a> that will be measured</p>
 </section>
                   <h4><a class="xref" href="App.Metrics.Core.Options.GaugeOptions.html#App_Metrics_Core_Options_GaugeOptions">GaugeOptions</a></h4>
-                  <section><p>Configuration of an <a class="xref" href="App.Metrics.Core.Interfaces.IGaugeMetric.html#App_Metrics_Core_Interfaces_IGaugeMetric">IGaugeMetric</a> that will be measured</p>
+                  <section><p>Configuration of an <a class="xref" href="App.Metrics.Abstractions.MetricTypes.IGaugeMetric.html#App_Metrics_Abstractions_MetricTypes_IGaugeMetric">IGaugeMetric</a> that will be measured</p>
 </section>
                   <h4><a class="xref" href="App.Metrics.Core.Options.HistogramOptions.html#App_Metrics_Core_Options_HistogramOptions">HistogramOptions</a></h4>
-                  <section><p>Configuration of an <a class="xref" href="App.Metrics.Core.Interfaces.IHistogramMetric.html#App_Metrics_Core_Interfaces_IHistogramMetric">IHistogramMetric</a> that will be measured</p>
+                  <section><p>Configuration of an <a class="xref" href="App.Metrics.Abstractions.MetricTypes.IHistogramMetric.html#App_Metrics_Abstractions_MetricTypes_IHistogramMetric">IHistogramMetric</a> that will be measured</p>
 </section>
                   <h4><a class="xref" href="App.Metrics.Core.Options.MeterOptions.html#App_Metrics_Core_Options_MeterOptions">MeterOptions</a></h4>
-                  <section><p>Configuration of an <a class="xref" href="App.Metrics.Core.Interfaces.IMeterMetric.html#App_Metrics_Core_Interfaces_IMeterMetric">IMeterMetric</a> that will be measured</p>
+                  <section><p>Configuration of an <a class="xref" href="App.Metrics.Abstractions.MetricTypes.IMeterMetric.html#App_Metrics_Abstractions_MetricTypes_IMeterMetric">IMeterMetric</a> that will be measured</p>
 </section>
-                  <h4><a class="xref" href="App.Metrics.Core.Options.MetricValueOptions.html#App_Metrics_Core_Options_MetricValueOptions">MetricValueOptions</a></h4>
+                  <h4><a class="xref" href="App.Metrics.Core.Options.MetricValueOptionsBase.html#App_Metrics_Core_Options_MetricValueOptionsBase">MetricValueOptionsBase</a></h4>
                   <section><p>Configuration of a Metric that will be measured</p>
 </section>
                   <h4><a class="xref" href="App.Metrics.Core.Options.MetricValueWithSamplingOption.html#App_Metrics_Core_Options_MetricValueWithSamplingOption">MetricValueWithSamplingOption</a></h4>
-                  <section><p>Configuration of a Metric that will be measured using a specified <a class="xref" href="App.Metrics.Core.Options.MetricValueWithSamplingOption.html#App_Metrics_Core_Options_MetricValueWithSamplingOption_SamplingType">SamplingType</a></p>
+                  <section><p>Configuration of a Metric that will be measured using a reservoir sampling type</p>
 </section>
                   <h4><a class="xref" href="App.Metrics.Core.Options.TimerOptions.html#App_Metrics_Core_Options_TimerOptions">TimerOptions</a></h4>
                   <section></section>

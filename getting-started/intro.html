@@ -188,12 +188,12 @@
     {
         Name = &quot;Sample Counter&quot;,
         MeasurementUnit = Unit.Calls,
-    }
+    };
 
     public static HistogramOptions SampleHistogram { get; } = new HistogramOptions
     {
         Name = &quot;Sample Histogram&quot;,
-        SamplingType = SamplingType.HighDynamicRange,
+        Reservoir = new Lazy&lt;IReservoir&gt;(() =&gt; new DefaultAlgorithmRReservoir()),
         MeasurementUnit = Unit.MegaBytes            
     };
 
@@ -209,21 +209,20 @@
         MeasurementUnit = Unit.Items,
         DurationUnit = TimeUnit.Milliseconds,
         RateUnit = TimeUnit.Milliseconds,            
-        SamplingType = SamplingType.ExponentiallyDecaying,
-        ExponentialDecayFactor = 0.015
+        Reservoir = new Lazy&lt;IReservoir&gt;(() =&gt; new DefaultForwardDecayingReservoir(sampleSize:1028, alpha:0.015))
     };
 }
 </code></pre><p>And to record the above metrics through <code>IMetrics</code></p>
-<pre><code class="lang-csharp" name="Main">_metrics.Increment(AppMetricsRegistery.SampleCounter);
-_metrics.Decrement(AppMetricsRegistery.SampleCounter);
+<pre><code class="lang-csharp" name="Main">_metrics.Measure.Counter.Increment(AppMetricsRegistery.SampleCounter);
+_metrics.Measure.Counter.Decrement(AppMetricsRegistery.SampleCounter);
 
-_metrics.Gauge(AppMetricsRegistery.Errors, () =&gt; 1);
+_metrics.Measure.Gauge.SetValue(AppMetricsRegistery.Errors, () =&gt; 1);
 
-_metrics.Update(AppMetricsRegistery.SampleHistogram, 1);
+_metrics.Provider.Histogram.Update(AppMetricsRegistery.SampleHistogram, 1);
 
-_metrics.Mark(AppMetricsRegistery.SampleMeter, 1);
+_metrics.Provider.Meter.Mark(AppMetricsRegistery.SampleMeter, 1);
 
-using(_metrics.Time(AppMetricsRegistery.SampleTimer))
+using(_metrics.Measure.Timer.Time(AppMetricsRegistery.SampleTimer))
 {
     // Do something
 }

@@ -78,192 +78,29 @@
               </h3>
                   <h4><a class="xref" href="App.Metrics.ApdexHealthCheck.html#App_Metrics_ApdexHealthCheck">ApdexHealthCheck</a></h4>
                   <section></section>
-                  <h4><a class="xref" href="App.Metrics.ApdexScore.html#App_Metrics_ApdexScore">ApdexScore</a></h4>
-                  <section></section>
-                  <h4><a class="xref" href="App.Metrics.Counter.html#App_Metrics_Counter">Counter</a></h4>
-                  <section><p>
-    Counter metric types track how many times something happens, they can incremented or decremented.
-</p>
-<p>
-    Counters represent a 64-bit integer value.
-</p>
-<p>
-    Counters provide the ability to track a counter for each item in a finite set, as well as tracking a per item
-    count the overall percentage is also recorded. This is useful for example if we needed to track the total
-    number of emails sent but also the count of each type of emails sent.
-</p>
-</section>
-                  <h4><a class="xref" href="App.Metrics.Counter.SetItem.html#App_Metrics_Counter_SetItem">Counter.SetItem</a></h4>
-                  <section></section>
-                  <h4><a class="xref" href="App.Metrics.DefaultMetricsFilter.html#App_Metrics_DefaultMetricsFilter">DefaultMetricsFilter</a></h4>
-                  <section><p>Provides the ability to filter metrics by Context, Type, Name etc.</p>
-</section>
-                  <h4><a class="xref" href="App.Metrics.Gauge.html#App_Metrics_Gauge">Gauge</a></h4>
-                  <section><p>
-    Gauge metric types measure the value of a particular thing at a particular time, it represents an instantaneous
-    value.
-</p>
-<p>
-    Gauges represent a double value.
-</p>
-</section>
-                  <h4><a class="xref" href="App.Metrics.GlobalMetricTags.html#App_Metrics_GlobalMetricTags">GlobalMetricTags</a></h4>
-                  <section></section>
                   <h4><a class="xref" href="App.Metrics.HealthCheckFactoryExtensions.html#App_Metrics_HealthCheckFactoryExtensions">HealthCheckFactoryExtensions</a></h4>
-                  <section></section>
-                  <h4><a class="xref" href="App.Metrics.HealthStatusData.html#App_Metrics_HealthStatusData">HealthStatusData</a></h4>
-                  <section></section>
-                  <h4><a class="xref" href="App.Metrics.Histogram.html#App_Metrics_Histogram">Histogram</a></h4>
-                  <section><p>
-    Histogram metric types track the statistical distribution of a set of values. They allow you to measure the
-    min, mean, max, standard deviation of values and also quantiles such as the median, 95th percentile, 98th
-    percentile etc.
-</p>
-<p>
-    To avoid unbound memory usage, the histogram values are genreated from a <a class="xref" href="App.Metrics.Sampling.Interfaces.IReservoir.html#App_Metrics_Sampling_Interfaces_IReservoir">IReservoir</a> of values.
-    This is done by sampling the data as it goes through by maintaining a small manageable  reservoir which is
-    statistically representative of the data stream as a whole, allowing us to quickly calculate the quantiles
-    which are valid approximations of the actual quantiles. <a href="https://en.wikipedia.org/wiki/Reservoir_sampling">https://en.wikipedia.org/wiki/Reservoir_sampling</a>
-</p>
-<p>
-    Histograms also allow us to track user values, where for all user values provided the min, max and last user
-    value values is recorded.
-</p>
-</section>
-                  <h4><a class="xref" href="App.Metrics.Meter.html#App_Metrics_Meter">Meter</a></h4>
-                  <section><p>
-    Meter metric types are increment-only counters that also measure the rate of events over time.
-</p>
-<p>
-    The mean rate is recorded, but is only generally used for trivia as it represents the total rate for the
-    lifetime of your application, not offering a sense of recency.
-</p>
-<p>
-    Other than the mean rate, meters also are recorded using three different exponentially-weighted moving average
-    rates, 1 min, 5 min and 15 min moving averages which do provide a sense of recency.
-</p>
-<p>
-    Meters also provide the ability to track the rate for each item in a finite set, as well as tracking a per item
-    rate the overall percentage is also recorded. This is useful for example if we needed to track the total
-    number of emails sent but also the rate at which each type of email is sent.
-</p>
-</section>
-                  <h4><a class="xref" href="App.Metrics.Meter.SetItem.html#App_Metrics_Meter_SetItem">Meter.SetItem</a></h4>
-                  <section></section>
-                  <h4><a class="xref" href="App.Metrics.Metric.html#App_Metrics_Metric">Metric</a></h4>
-                  <section></section>
-                  <h4><a class="xref" href="App.Metrics.MetricData.html#App_Metrics_MetricData">MetricData</a></h4>
-                  <section></section>
-                  <h4><a class="xref" href="App.Metrics.MetricItem.html#App_Metrics_MetricItem">MetricItem</a></h4>
-                  <section><p>
-    Metric items can be used with <a class="xref" href="App.Metrics.Counter.html#App_Metrics_Counter">Counter</a> or <a class="xref" href="App.Metrics.Meter.html#App_Metrics_Meter">Meter</a> <a class="xref" href="App.Metrics.MetricType.html#App_Metrics_MetricType">MetricType</a>s
-</p>
-<p>
-    They provide the ability to track either a count or rate for each item in a counters or meters finite set
-    respectively. They also track the overall percentage of each item in the set.
-</p>
-<p>
-    This is useful for example if we needed to track the total number of emails sent but also the count of each
-    type of emails sent or The total rate of emails sent but also the rate at which type of email was sent.
-</p>
-</section>
-                  <h4><a class="xref" href="App.Metrics.MetricsAppEnvironment.html#App_Metrics_MetricsAppEnvironment">MetricsAppEnvironment</a></h4>
-                  <section></section>
-                  <h4><a class="xref" href="App.Metrics.MetricsContext.html#App_Metrics_MetricsContext">MetricsContext</a></h4>
-                  <section><p>MetricsContext&#39;s are a way of grouping metrics withing a context, for example we can record all database related
-metrics in a &quot;Application.Database&quot; Context. Metric names can be duplicated across contexts</p>
-</section>
-                  <h4><a class="xref" href="App.Metrics.MetricsContextValueSourceExtensions.html#App_Metrics_MetricsContextValueSourceExtensions">MetricsContextValueSourceExtensions</a></h4>
-                  <section></section>
-                  <h4><a class="xref" href="App.Metrics.MetricTags.html#App_Metrics_MetricTags">MetricTags</a></h4>
-                  <section><p>Collection of tags that can be attached to a metric.</p>
-</section>
-                  <h4><a class="xref" href="App.Metrics.TagKeyValueFilter.html#App_Metrics_TagKeyValueFilter">TagKeyValueFilter</a></h4>
-                  <section></section>
-                  <h4><a class="xref" href="App.Metrics.Timer.html#App_Metrics_Timer">Timer</a></h4>
-                  <section><p>
-    Timer metric types are essentially a special case of <a class="xref" href="App.Metrics.Timer.html#App_Metrics_Timer_Histogram">Histogram</a>
-</p>
-<p>
-    As well as providing a <a class="xref" href="App.Metrics.Timer.html#App_Metrics_Timer_Histogram">Histogram</a> of the duration of a type of event, timers also provide a
-<a class="xref" href="App.Metrics.Meter.html#App_Metrics_Meter">Meter</a> of the rate of the events occurrence.
-</p>
-<p>
-    Like <a class="xref" href="App.Metrics.Timer.html#App_Metrics_Timer_Histogram">Histogram</a>s, timers also allow us to track user values, where for all user values provided
-    the min, max and last user value values is recorded.
-</p>
-</section>
-                  <h4><a class="xref" href="App.Metrics.Timer.HistogramData.html#App_Metrics_Timer_HistogramData">Timer.HistogramData</a></h4>
-                  <section></section>
-                  <h4><a class="xref" href="App.Metrics.Timer.RateData.html#App_Metrics_Timer_RateData">Timer.RateData</a></h4>
                   <section></section>
                   <h4><a class="xref" href="App.Metrics.TimeUnitExtensions.html#App_Metrics_TimeUnitExtensions">TimeUnitExtensions</a></h4>
                   <section></section>
                 <h3 id="structs">Structs
               </h3>
-                  <h4><a class="xref" href="App.Metrics.ApdexContext.html#App_Metrics_ApdexContext">ApdexContext</a></h4>
-                  <section></section>
-                  <h4><a class="xref" href="App.Metrics.TimerContext.html#App_Metrics_TimerContext">TimerContext</a></h4>
-                  <section><p>This struct is meant to be returned by the timer.NewContext() method and is intended to be used inside a using
-statement:</p>
-<p><pre><code>using(timer.NewContext())
-{
-ExecuteMethodThatNeedsMonitoring();
-}</code></pre></p>
-<remarks>
-    Double disposing the instance, or a copy of the instance (since it is a struct) will cause the timer to record
-    wrong values.
-    Stick to directly passing it to the using() statement.
-</remarks>
-</section>
                   <h4><a class="xref" href="App.Metrics.Unit.html#App_Metrics_Unit">Unit</a></h4>
                   <section></section>
                 <h3 id="interfaces">Interfaces
               </h3>
-                  <h4><a class="xref" href="App.Metrics.ICounter.html#App_Metrics_ICounter">ICounter</a></h4>
-                  <section><p>A counter is a simple incrementing and decrementing 64-bit integer.
-Each operation can also be applied to a item from a set and the counter will store individual count for each set
-item.</p>
-</section>
-                  <h4><a class="xref" href="App.Metrics.IHealthCheckFactory.html#App_Metrics_IHealthCheckFactory">IHealthCheckFactory</a></h4>
+                  <h4><a class="xref" href="App.Metrics.IClock.html#App_Metrics_IClock">IClock</a></h4>
                   <section></section>
-                  <h4><a class="xref" href="App.Metrics.IHistogram.html#App_Metrics_IHistogram">IHistogram</a></h4>
-                  <section><p>A Histogram measures the distribution of values in a stream of data: e.g., the number of results returned by a
-search.</p>
-</section>
-                  <h4><a class="xref" href="App.Metrics.IMeter.html#App_Metrics_IMeter">IMeter</a></h4>
-                  <section><p>A meter measures the rate at which a set of events occur, in a few different ways.
-The mean rate is the average rate of events. It’s generally useful for trivia,
-but as it represents the total rate for your application’s entire lifetime (e.g., the total number of requests
-handled,
-divided by the number of seconds the process has been running), it doesn’t offer a sense of recency.
-Luckily, meters also record three different exponentially-weighted moving average rates: the 1-, 5-, and 15-minute
-moving averages.</p>
-</section>
                   <h4><a class="xref" href="App.Metrics.IMetrics.html#App_Metrics_IMetrics">IMetrics</a></h4>
-                  <section><p>Provides access to record application metrics.</p>
-</section>
-                  <h4><a class="xref" href="App.Metrics.IMetricsEnvironment.html#App_Metrics_IMetricsEnvironment">IMetricsEnvironment</a></h4>
-                  <section></section>
-                  <h4><a class="xref" href="App.Metrics.IMetricsFilter.html#App_Metrics_IMetricsFilter">IMetricsFilter</a></h4>
-                  <section></section>
-                  <h4><a class="xref" href="App.Metrics.IResetableMetric.html#App_Metrics_IResetableMetric">IResetableMetric</a></h4>
-                  <section><p>Indicates a metric&#39;s ability to be reset. Reseting a metric clear all currently collected data.</p>
-</section>
-                  <h4><a class="xref" href="App.Metrics.ITimer.html#App_Metrics_ITimer">ITimer</a></h4>
-                  <section><p>A timer is basically a histogram of the duration of a type of event and a meter of the rate of its occurrence.</p>
-<a class="xref" href="App.Metrics.IHistogram.html#App_Metrics_IHistogram">IHistogram</a> and <a class="xref" href="App.Metrics.IMeter.html#App_Metrics_IMeter">IMeter</a>
+                  <section><p>Gets the record application metrics.</p>
 </section>
                 <h3 id="enums">Enums
               </h3>
                   <h4><a class="xref" href="App.Metrics.MetricType.html#App_Metrics_MetricType">MetricType</a></h4>
-                  <section></section>
-                  <h4><a class="xref" href="App.Metrics.SamplingType.html#App_Metrics_SamplingType">SamplingType</a></h4>
-                  <section><p>Sampling avoids unbound memory usage, sampling is used to generate <a class="xref" href="App.Metrics.Histogram.html#App_Metrics_Histogram">Histogram</a>&#39;s from a reservoir of
-values</p>
+                  <section><p>Available metric types</p>
 </section>
                   <h4><a class="xref" href="App.Metrics.TimeUnit.html#App_Metrics_TimeUnit">TimeUnit</a></h4>
-                  <section></section>
+                  <section><p>The time unit used for a measurement</p>
+</section>
             </article>
           </div>
           

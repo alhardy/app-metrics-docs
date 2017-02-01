@@ -77,47 +77,33 @@ the number of satisfied and tolerating requests to the total requests made. Each
 request, while each tolerating request counts as half a satisfied request.</p>
 <p>
     Apdex tracks three response counts, counts based on samples measured by the chosen
-<a class="xref" href="App.Metrics.Sampling.Interfaces.IReservoir.html#App_Metrics_Sampling_Interfaces_IReservoir">IReservoir</a>
-<remarks>
-    The <a class="xref" href="App.Metrics.Sampling.Interfaces.IReservoir.html#App_Metrics_Sampling_Interfaces_IReservoir">IReservoir</a>  is determined by the <a class="xref" href="App.Metrics.SamplingType.html#App_Metrics_SamplingType">SamplingType</a>sampling
-    type
-</remarks>
-when the apdex metric instance is instantiated.
+<a class="xref" href="App.Metrics.Abstractions.ReservoirSampling.IReservoir.html#App_Metrics_Abstractions_ReservoirSampling_IReservoir">IReservoir</a>, defaults to a <a class="xref" href="App.Metrics.ReservoirSampling.ExponentialDecay.DefaultForwardDecayingReservoir.html#App_Metrics_ReservoirSampling_ExponentialDecay_DefaultForwardDecayingReservoir">DefaultForwardDecayingReservoir</a>.
 </p>
 </div>
               <div class="markdown level0 conceptual"></div>
               <div class="inheritance">
                 <h5>Inheritance</h5>
                   <div class="level0"><span class="xref">System.Object</span></div>
-                  <div class="level1"><a class="xref" href="App.Metrics.Core.Options.MetricValueOptions.html#App_Metrics_Core_Options_MetricValueOptions">MetricValueOptions</a></div>
+                  <div class="level1"><a class="xref" href="App.Metrics.Core.Options.MetricValueOptionsBase.html#App_Metrics_Core_Options_MetricValueOptionsBase">MetricValueOptionsBase</a></div>
                   <div class="level2"><a class="xref" href="App.Metrics.Core.Options.MetricValueWithSamplingOption.html#App_Metrics_Core_Options_MetricValueWithSamplingOption">MetricValueWithSamplingOption</a></div>
                   <div class="level3"><span class="xref">ApdexOptions</span></div>
               </div>
               <div class="inheritedMembers">
                 <h5>Inherited Members</h5>
                 <div>
-                  <a class="xref" href="App.Metrics.Core.Options.MetricValueWithSamplingOption.html#App_Metrics_Core_Options_MetricValueWithSamplingOption_ExponentialDecayFactor">MetricValueWithSamplingOption.ExponentialDecayFactor</a>
+                  <a class="xref" href="App.Metrics.Core.Options.MetricValueWithSamplingOption.html#App_Metrics_Core_Options_MetricValueWithSamplingOption_Reservoir">MetricValueWithSamplingOption.Reservoir</a>
                 </div>
                 <div>
-                  <a class="xref" href="App.Metrics.Core.Options.MetricValueWithSamplingOption.html#App_Metrics_Core_Options_MetricValueWithSamplingOption_SampleSize">MetricValueWithSamplingOption.SampleSize</a>
+                  <a class="xref" href="App.Metrics.Core.Options.MetricValueOptionsBase.html#App_Metrics_Core_Options_MetricValueOptionsBase_Context">MetricValueOptionsBase.Context</a>
                 </div>
                 <div>
-                  <a class="xref" href="App.Metrics.Core.Options.MetricValueWithSamplingOption.html#App_Metrics_Core_Options_MetricValueWithSamplingOption_SamplingType">MetricValueWithSamplingOption.SamplingType</a>
+                  <a class="xref" href="App.Metrics.Core.Options.MetricValueOptionsBase.html#App_Metrics_Core_Options_MetricValueOptionsBase_MeasurementUnit">MetricValueOptionsBase.MeasurementUnit</a>
                 </div>
                 <div>
-                  <a class="xref" href="App.Metrics.Core.Options.MetricValueWithSamplingOption.html#App_Metrics_Core_Options_MetricValueWithSamplingOption_WithReservoir">MetricValueWithSamplingOption.WithReservoir</a>
+                  <a class="xref" href="App.Metrics.Core.Options.MetricValueOptionsBase.html#App_Metrics_Core_Options_MetricValueOptionsBase_Name">MetricValueOptionsBase.Name</a>
                 </div>
                 <div>
-                  <a class="xref" href="App.Metrics.Core.Options.MetricValueOptions.html#App_Metrics_Core_Options_MetricValueOptions_Context">MetricValueOptions.Context</a>
-                </div>
-                <div>
-                  <a class="xref" href="App.Metrics.Core.Options.MetricValueOptions.html#App_Metrics_Core_Options_MetricValueOptions_MeasurementUnit">MetricValueOptions.MeasurementUnit</a>
-                </div>
-                <div>
-                  <a class="xref" href="App.Metrics.Core.Options.MetricValueOptions.html#App_Metrics_Core_Options_MetricValueOptions_Name">MetricValueOptions.Name</a>
-                </div>
-                <div>
-                  <a class="xref" href="App.Metrics.Core.Options.MetricValueOptions.html#App_Metrics_Core_Options_MetricValueOptions_Tags">MetricValueOptions.Tags</a>
+                  <a class="xref" href="App.Metrics.Core.Options.MetricValueOptionsBase.html#App_Metrics_Core_Options_MetricValueOptionsBase_Tags">MetricValueOptionsBase.Tags</a>
                 </div>
                 <div>
                   <span class="xref">System.Object.Equals(System.Object)</span>
@@ -154,7 +140,7 @@ when the apdex metric instance is instantiated.
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_Options_ApdexOptions__ctor.md&amp;value=---%0Auid%3A%20App.Metrics.Core.Options.ApdexOptions.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta5/src/App.Metrics/Core/Options/ApdexOptions.cs/#L27">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Core/Options/ApdexOptions.cs/#L22">View Source</a>
               </span>
               <a id="App_Metrics_Core_Options_ApdexOptions__ctor_" data-uid="App.Metrics.Core.Options.ApdexOptions.#ctor*"></a>
               <h4 id="App_Metrics_Core_Options_ApdexOptions__ctor" data-uid="App.Metrics.Core.Options.ApdexOptions.#ctor">ApdexOptions()</h4>
@@ -171,11 +157,12 @@ when the apdex metric instance is instantiated.
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_Options_ApdexOptions_AllowWarmup.md&amp;value=---%0Auid%3A%20App.Metrics.Core.Options.ApdexOptions.AllowWarmup%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta5/src/App.Metrics/Core/Options/ApdexOptions.cs/#L79">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Core/Options/ApdexOptions.cs/#L36">View Source</a>
               </span>
               <a id="App_Metrics_Core_Options_ApdexOptions_AllowWarmup_" data-uid="App.Metrics.Core.Options.ApdexOptions.AllowWarmup*"></a>
               <h4 id="App_Metrics_Core_Options_ApdexOptions_AllowWarmup" data-uid="App.Metrics.Core.Options.ApdexOptions.AllowWarmup">AllowWarmup</h4>
-              <div class="markdown level1 summary"><p>If set to <code>true</code> allows the service to warmup before starting to calculate the apdex,
+              <div class="markdown level1 summary"><p>Gets or sets a value indicating whether to allow the app to warmup before calcaulting.
+If set to <code>true</code> allows the service to warmup before starting to calculate the apdex,
 the score will intitially be 1 until enough samples have been recorded.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
@@ -194,7 +181,8 @@ the score will intitially be 1 until enough samples have been recorded.</p>
                 <tbody>
                   <tr>
                     <td><span class="xref">System.Boolean</span></td>
-                    <td></td>
+                    <td><p><code>true</code> if [allow warmup]; otherwise, <code>false</code>.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -203,7 +191,7 @@ the score will intitially be 1 until enough samples have been recorded.</p>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_Options_ApdexOptions_ApdexTSeconds.md&amp;value=---%0Auid%3A%20App.Metrics.Core.Options.ApdexOptions.ApdexTSeconds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta5/src/App.Metrics/Core/Options/ApdexOptions.cs/#L63">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Core/Options/ApdexOptions.cs/#L64">View Source</a>
               </span>
               <a id="App_Metrics_Core_Options_ApdexOptions_ApdexTSeconds_" data-uid="App.Metrics.Core.Options.ApdexOptions.ApdexTSeconds*"></a>
               <h4 id="App_Metrics_Core_Options_ApdexOptions_ApdexTSeconds" data-uid="App.Metrics.Core.Options.ApdexOptions.ApdexTSeconds">ApdexTSeconds</h4>
@@ -216,7 +204,7 @@ the score will intitially be 1 until enough samples have been recorded.</p>
 </li><li>
     Tolerated: Greater than T or less than 4T
 </li><li>
-Frustrated: Greater than 4 T
+    Frustrated: Greater than 4 T
 </li></ul>
 </div>
               <div class="markdown level1 conceptual"></div>
@@ -245,7 +233,7 @@ Frustrated: Greater than 4 T
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_Options_ApdexOptions_ResetOnReporting.md&amp;value=---%0Auid%3A%20App.Metrics.Core.Options.ApdexOptions.ResetOnReporting%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta5/src/App.Metrics/Core/Options/ApdexOptions.cs/#L73">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Core/Options/ApdexOptions.cs/#L74">View Source</a>
               </span>
               <a id="App_Metrics_Core_Options_ApdexOptions_ResetOnReporting_" data-uid="App.Metrics.Core.Options.ApdexOptions.ResetOnReporting*"></a>
               <h4 id="App_Metrics_Core_Options_ApdexOptions_ResetOnReporting" data-uid="App.Metrics.Core.Options.ApdexOptions.ResetOnReporting">ResetOnReporting</h4>
@@ -289,7 +277,7 @@ the value. Defaults to <code>false</code>.</p>
                     <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_Options_ApdexOptions.md&amp;value=---%0Auid%3A%20App.Metrics.Core.Options.ApdexOptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta5/src/App.Metrics/Core/Options/ApdexOptions.cs/#L25" class="contribution-link">View Source</a>
+                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Core/Options/ApdexOptions.cs/#L20" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -83,7 +83,7 @@
 		{
 			var filter = new DefaultMetricsFilter()
 				.WhereType(MetricType.Counter)
-				.WhereMetricTaggedWith(&quot;filter-tag1&quot;, &quot;filter-tag2&quot;)
+				.WhereMetricTaggedWithKey(&quot;filter-tag1&quot;, &quot;filter-tag2&quot;)
 				.WithHealthChecks(true)
 				.WithEnvironmentInfo(true);
 
@@ -126,10 +126,10 @@
         _metrics = metrics;
     }
 
-    public Task&lt;MetricsDataValueSource&gt; DoSomething()
+    public MetricsDataValueSource DoSomething()
     {
-        var filter = new DefaultMetricsFitler().WhereMetricNameStartsWith(&quot;test_&quot;);
-        return _metrics.Advanced.Data.ReadDataAsync(filter);
+        var filter = new DefaultMetricsFilter().WhereMetricNameStartsWith(&quot;test_&quot;);
+        return _metrics.Snapshot.Get(filter);
     }
 }
 </code></pre><h2 id="supported-filtering">Supported Filtering</h2>

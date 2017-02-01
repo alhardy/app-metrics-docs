@@ -82,29 +82,29 @@
 {
     public static class ProcessMetrics
     {
-        private static readonly MetricTags Tags = new MetricTags().With(&quot;tag-key&quot;, &quot;tag-value&quot;);
-        private static readonly string Context = &quot;Process&quot;;
+        private static readonly MetricTags CustomTags = new MetricTags().With(&quot;tag-key&quot;, &quot;tag-value&quot;);
+        private static readonly string ContextName = &quot;Process&quot;;
 
         public static GaugeOptions SystemNonPagedMemoryGauge = new GaugeOptions
         {
-            Context = Context,
+            Context = ContextName,
             Name = &quot;System Non-Paged Memory&quot;,
             MeasurementUnit = Unit.Bytes,
-            Tag = Tags
+            Tags = CustomTags
         };            
 
         public static GaugeOptions ProcessVirtualMemorySizeGauge = new GaugeOptions
         {
-            Context = Context,
+            Context = ContextName,
             Name = &quot;Process Virtual Memory Size&quot;,
             MeasurementUnit = Unit.Bytes,
-            Tag = Tags
+            Tags = CustomTags
         };
     }
 
     public static class DatabaseMetrics
     {
-        private static readonly string Context = &quot;Database&quot;;
+        private static readonly string ContextName = &quot;Database&quot;;
 
         public static TimerOptions SearchUsersSqlTimer = new TimerOptions
         {
@@ -163,29 +163,29 @@
 {
     public static class ProcessMetrics
     {
-        private static readonly MetricTags Tags = new MetricTags().With(&quot;tag-key&quot;, &quot;tag-value&quot;);
-        private static readonly string Context = &quot;Process&quot;;
+        private static readonly MetricTags CustomTags = new MetricTags().With(&quot;tag-key&quot;, &quot;tag-value&quot;);
+        private static readonly string ContextName = &quot;Process&quot;;
 
         public static GaugeOptions SystemNonPagedMemoryGauge = new GaugeOptions
         {
-            Context = Context,
+            Context = ContextName,
             Name = &quot;System Non-Paged Memory&quot;,
             MeasurementUnit = Unit.Bytes,
-            Tag = Tags
+            Tags = CustomTags
         };            
 
         public static GaugeOptions ProcessVirtualMemorySizeGauge = new GaugeOptions
         {
-            Context = Context,
+            Context = ContextName,
             Name = &quot;Process Virtual Memory Size&quot;,
             MeasurementUnit = Unit.Bytes,
-            Tag = Tags
+            Tags = CustomTags
         };
     }
 
     public static class DatabaseMetrics
     {
-        private static readonly string Context = &quot;Database&quot;;
+        private static readonly string ContextName = &quot;Database&quot;;
 
         public static TimerOptions SearchUsersSqlTimer = new TimerOptions
         {
@@ -203,12 +203,12 @@
         services.AddMvc(options =&gt; options.AddMetricsResourceFilter());
         
         services.AddMetrics(options =&gt; {
-                options.DefaultContextLabel = &quot;MyContext&quot;,
-                options.DefaultSamplingType = SamplingType.SlidingWindow;
+                options.DefaultContextLabel = &quot;MyContext&quot;,                
                 options.GlobalTags.Add(&quot;env&quot;, &quot;stage&quot;);
                 options.MetricsEnabled = true;
                 options.ReportingEnabled = true;     	
             })
+            .AddDefaultReservoir(() =&gt; new Lazy&lt;IReservoir&gt;(() =&gt; new DefaultSlidingWindowReservoir()))
             .AddJsonSerialization()
             .AddHealthChecks()
             .AddMetricsMiddleware();
@@ -225,7 +225,7 @@
     public void ConfigureServices(IServiceCollection services)
     {
         services.AddMetrics(options =&gt; {
-                options.DefaultContextLabel = &quot;MyContext&quot;,
+                options.DefaultContextLabel = &quot;MyContext&quot;;
                 options.WithGlobalTags((globalTags, envInfo) =&gt;
                 {
                     globalTags.Add(&quot;host&quot;, envInfo.HostName);

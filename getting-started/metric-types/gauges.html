@@ -75,11 +75,11 @@
 {
     Name = &quot;Process Physical Memory&quot;,
     MeasurementUnit = Unit.Bytes
-} 
+}
 
 var process = Process.GetCurrentProcess();
 
-_metrics.Gauge(MetricsRegistry.Gauges.TestGauge, () =&gt; process.WorkingSet64);
+_metrics.Measure.Gauge.SetValue(MetricsRegistry.Gauges.TestGauge, () =&gt; process.WorkingSet64);
 </code></pre><p>Which for example when using the <a href="../intro.html#configuring-a-web-host">JSON formatter</a> would result in something similar to:</p>
 <pre><code class="lang-json" name="Main">{
     &quot;context&quot;: &quot;Process&quot;,
@@ -103,12 +103,12 @@ var processPhysicalMemoryGauge = new GaugeOptions
 
 var physicalMemoryGauge = new FunctionGauge(() =&gt; process.WorkingSet64);
 
-_metrics.Advanced.Gauge(MetricsRegistry.Gauges.DerivedGauge,
+_metrics.Measure.Gauge.SetValue(MetricsRegistry.Gauges.DerivedGauge,
         () =&gt; new DerivedGauge(physicalMemoryGauge, g =&gt; g / 1024.0 / 1024.0));
 </code></pre><h3 id="ratio-gauges">Ratio Gauges</h3>
 <p>Ratio Gauges allow you to measure a Gauge with a measurement which is the ratio between two values.</p>
-<pre><code class="lang-csharp" name="Main" highlight-lines="16">var cacheHits = _metrics.Advanced.Meter(MetricsRegistry.Meters.CacheHits);
-var calls = _metrics.Advanced.Timer(MetricsRegistry.Timers.DatabaseQueryTimer);
+<pre><code class="lang-csharp" name="Main" highlight-lines="16">var cacheHits = _metrics.Provider.Meter.Instance(MetricsRegistry.Meters.CacheHits);
+var calls = _metrics.Provider.Timer.Instance(MetricsRegistry.Timers.DatabaseQueryTimer);
 
 var cacheHit = Rnd.Next(0, 2) == 0;
 
@@ -122,7 +122,7 @@ using (calls.NewContext())
     Thread.Sleep(cacheHit ? 10 : 100);
 }
 
-_metrics.Advanced.Gauge(MetricsRegistry.Gauges.CacheHitRatioGauge, () =&gt; new HitRatioGauge(cacheHits, calls, m =&gt; m.OneMinuteRate));
+_metrics.Measure.Gauge.SetValue(MetricsRegistry.Gauges.CacheHitRatioGauge, () =&gt; new HitRatioGauge(cacheHits, calls, m =&gt; m.OneMinuteRate));
 </code></pre><h2 id="related-docs">Related Docs</h2>
 <ul>
 <li><a href="../intro.html#measuring-application-metrics">Getting Started</a></li>

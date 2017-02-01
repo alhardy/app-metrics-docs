@@ -79,16 +79,16 @@
     RateUnit = TimeUnit.Milliseconds
 };
 
-_metrics.Time(requestTimer, () =&gt; PerformRequest());
+_metrics.Measure.Timer.Time(requestTimer, () =&gt; PerformRequest());
 
 // OR
 
-using(_metrics.Time(requestTimer))
+using(_metrics.Measure.Timer.Time(requestTimer))
 {
     PerformRequest();
 }
 </code></pre><p>Timers, like <a href="histograms.html">Histogram</a> also allow us to track the <em>min</em>, <em>max</em> and <em>last value</em> that has been recorded in cases when a &quot;user value&quot; is provided when recording the timer. For example, when timing requests where the endpoint has couple of features flags implemented, we could track which feature flag as producing the min and max response times. </p>
-<pre><code class="lang-csharp" name="Main">using(_metrics.Time(requestTimer, &quot;feature-1&quot;))
+<pre><code class="lang-csharp" name="Main">using(_metrics.Measure.Timer.Time(requestTimer, &quot;feature-1&quot;))
 {
     PerformRequest();
 }
@@ -133,7 +133,7 @@ using(_metrics.Time(requestTimer))
 </code></pre><div class="NOTE"><h5>Note</h5><p>When reporting metrics with counts we should keep in mind that they are a cumulative count, see notes in the <a href="counters.html#reporting-counters">Counters</a> documentation.
 A Timers values can also be reset like a <a href="counters.html">Counter</a> as shown below.</p>
 </div>
-<pre><code class="lang-csharp" name="Main">_metrics.Advanced.Timer(httpStatusMeter).Reset();
+<pre><code class="lang-csharp" name="Main">_metrics.Provider.Timer.Instance(httpStatusMeter).Reset();
 </code></pre><h2 id="related-docs">Related Docs</h2>
 <ul>
 <li><a href="../intro.html#measuring-application-metrics">Getting Started</a></li>

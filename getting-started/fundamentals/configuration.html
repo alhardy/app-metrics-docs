@@ -85,12 +85,12 @@
         services.AddMvc(options =&gt; options.AddMetricsResourceFilter());
         
         services.AddMetrics(options =&gt; {
-                options.DefaultContextLabel = &quot;MyContext&quot;,
-                options.DefaultSamplingType = SamplingType.SlidingWindow;
+                options.DefaultContextLabel = &quot;MyContext&quot;,                
                 options.GlobalTags.Add(&quot;env&quot;, &quot;stage&quot;);
                 options.MetricsEnabled = true;
                 options.ReportingEnabled = true;     	
             })
+            .AddDefaultReservoir(() =&gt; new Lazy&lt;IReservoir&gt;(() =&gt; new DefaultSlidingWindowReservoir()))
             .AddJsonSerialization()
             .AddHealthChecks()
             .AddMetricsMiddleware();
@@ -149,9 +149,9 @@
         services.AddMvc(options =&gt; options.AddMetricsResourceFilter());
         
         services.AddMetrics(options =&gt; {
-                options.DefaultContextLabel = &quot;MyContext&quot;,
-                options.DefaultSamplingType = SamplingType.SlidingWindow;                        	
+                options.DefaultContextLabel = &quot;MyContext&quot;                                	
             }, Configuration.GetSection(&quot;AppMetrics&quot;))
+            .AddDefaultReservoir(() =&gt; new Lazy&lt;IReservoir&gt;(() =&gt; new DefaultSlidingWindowReservoir()))
             .AddJsonSerialization()
             .AddHealthChecks()
             .AddMetricsMiddleware();

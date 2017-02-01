@@ -72,28 +72,28 @@
               
               <h1 id="App_Metrics_Core_Options_MetricValueWithSamplingOption" data-uid="App.Metrics.Core.Options.MetricValueWithSamplingOption">Class MetricValueWithSamplingOption
               </h1>
-              <div class="markdown level0 summary"><p>Configuration of a Metric that will be measured using a specified <a class="xref" href="App.Metrics.Core.Options.MetricValueWithSamplingOption.html#App_Metrics_Core_Options_MetricValueWithSamplingOption_SamplingType">SamplingType</a></p>
+              <div class="markdown level0 summary"><p>Configuration of a Metric that will be measured using a reservoir sampling type</p>
 </div>
               <div class="markdown level0 conceptual"></div>
               <div class="inheritance">
                 <h5>Inheritance</h5>
                   <div class="level0"><span class="xref">System.Object</span></div>
-                  <div class="level1"><a class="xref" href="App.Metrics.Core.Options.MetricValueOptions.html#App_Metrics_Core_Options_MetricValueOptions">MetricValueOptions</a></div>
+                  <div class="level1"><a class="xref" href="App.Metrics.Core.Options.MetricValueOptionsBase.html#App_Metrics_Core_Options_MetricValueOptionsBase">MetricValueOptionsBase</a></div>
                   <div class="level2"><span class="xref">MetricValueWithSamplingOption</span></div>
               </div>
               <div class="inheritedMembers">
                 <h5>Inherited Members</h5>
                 <div>
-                  <a class="xref" href="App.Metrics.Core.Options.MetricValueOptions.html#App_Metrics_Core_Options_MetricValueOptions_Context">MetricValueOptions.Context</a>
+                  <a class="xref" href="App.Metrics.Core.Options.MetricValueOptionsBase.html#App_Metrics_Core_Options_MetricValueOptionsBase_Context">MetricValueOptionsBase.Context</a>
                 </div>
                 <div>
-                  <a class="xref" href="App.Metrics.Core.Options.MetricValueOptions.html#App_Metrics_Core_Options_MetricValueOptions_MeasurementUnit">MetricValueOptions.MeasurementUnit</a>
+                  <a class="xref" href="App.Metrics.Core.Options.MetricValueOptionsBase.html#App_Metrics_Core_Options_MetricValueOptionsBase_MeasurementUnit">MetricValueOptionsBase.MeasurementUnit</a>
                 </div>
                 <div>
-                  <a class="xref" href="App.Metrics.Core.Options.MetricValueOptions.html#App_Metrics_Core_Options_MetricValueOptions_Name">MetricValueOptions.Name</a>
+                  <a class="xref" href="App.Metrics.Core.Options.MetricValueOptionsBase.html#App_Metrics_Core_Options_MetricValueOptionsBase_Name">MetricValueOptionsBase.Name</a>
                 </div>
                 <div>
-                  <a class="xref" href="App.Metrics.Core.Options.MetricValueOptions.html#App_Metrics_Core_Options_MetricValueOptions_Tags">MetricValueOptions.Tags</a>
+                  <a class="xref" href="App.Metrics.Core.Options.MetricValueOptionsBase.html#App_Metrics_Core_Options_MetricValueOptionsBase_Tags">MetricValueOptionsBase.Tags</a>
                 </div>
                 <div>
                   <span class="xref">System.Object.Equals(System.Object)</span>
@@ -121,27 +121,25 @@
               <h6><strong>Assembly</strong>:App.Metrics.dll</h6>
               <h5 id="App_Metrics_Core_Options_MetricValueWithSamplingOption_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public abstract class MetricValueWithSamplingOption : MetricValueOptions</code></pre>
+                <pre><code class="lang-csharp hljs">public abstract class MetricValueWithSamplingOption : MetricValueOptionsBase</code></pre>
               </div>
               <h3 id="properties">Properties
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_Options_MetricValueWithSamplingOption_ExponentialDecayFactor.md&amp;value=---%0Auid%3A%20App.Metrics.Core.Options.MetricValueWithSamplingOption.ExponentialDecayFactor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_Options_MetricValueWithSamplingOption_Reservoir.md&amp;value=---%0Auid%3A%20App.Metrics.Core.Options.MetricValueWithSamplingOption.Reservoir%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta5/src/App.Metrics/Core/Options/MetricValueWithSamplingOption.cs/#L23">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Core/Options/MetricValueWithSamplingOption.cs/#L23">View Source</a>
               </span>
-              <a id="App_Metrics_Core_Options_MetricValueWithSamplingOption_ExponentialDecayFactor_" data-uid="App.Metrics.Core.Options.MetricValueWithSamplingOption.ExponentialDecayFactor*"></a>
-              <h4 id="App_Metrics_Core_Options_MetricValueWithSamplingOption_ExponentialDecayFactor" data-uid="App.Metrics.Core.Options.MetricValueWithSamplingOption.ExponentialDecayFactor">ExponentialDecayFactor</h4>
-              <div class="markdown level1 summary"><p>Gets or sets the exponential decay factor; the higher this is, the more biased the reservoir will be towards newer
-values.
-This only applys when an <a class="xref" href="App.Metrics.Core.Options.MetricValueWithSamplingOption.html#App_Metrics_Core_Options_MetricValueWithSamplingOption_SamplingType">SamplingType</a> of ExponentiallyDecaying.</p>
+              <a id="App_Metrics_Core_Options_MetricValueWithSamplingOption_Reservoir_" data-uid="App.Metrics.Core.Options.MetricValueWithSamplingOption.Reservoir*"></a>
+              <h4 id="App_Metrics_Core_Options_MetricValueWithSamplingOption_Reservoir" data-uid="App.Metrics.Core.Options.MetricValueWithSamplingOption.Reservoir">Reservoir</h4>
+              <div class="markdown level1 summary"><p>Gets or sets an <a class="xref" href="App.Metrics.Abstractions.ReservoirSampling.IReservoir.html#App_Metrics_Abstractions_ReservoirSampling_IReservoir">IReservoir</a> implementation for sampling.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public double ExponentialDecayFactor { get; set; }</code></pre>
+                <pre><code class="lang-csharp hljs">public Lazy&lt;IReservoir&gt; Reservoir { get; set; }</code></pre>
               </div>
               <h5 class="propertyValue">Property Value</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -153,109 +151,15 @@ This only applys when an <a class="xref" href="App.Metrics.Core.Options.MetricVa
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Double</span></td>
-                    <td><p>The exponential decay factor.</p>
+                    <td><span class="xref">System.Lazy&lt;T&gt;</span>&lt;<a class="xref" href="App.Metrics.Abstractions.ReservoirSampling.IReservoir.html#App_Metrics_Abstractions_ReservoirSampling_IReservoir">IReservoir</a>&gt;</td>
+                    <td><p>The reservoir instance to use for sampling.</p>
 </td>
                   </tr>
                 </tbody>
               </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_Options_MetricValueWithSamplingOption_SampleSize.md&amp;value=---%0Auid%3A%20App.Metrics.Core.Options.MetricValueWithSamplingOption.SampleSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta5/src/App.Metrics/Core/Options/MetricValueWithSamplingOption.cs/#L28">View Source</a>
-              </span>
-              <a id="App_Metrics_Core_Options_MetricValueWithSamplingOption_SampleSize_" data-uid="App.Metrics.Core.Options.MetricValueWithSamplingOption.SampleSize*"></a>
-              <h4 id="App_Metrics_Core_Options_MetricValueWithSamplingOption_SampleSize" data-uid="App.Metrics.Core.Options.MetricValueWithSamplingOption.SampleSize">SampleSize</h4>
-              <div class="markdown level1 summary"><p>Gets or sets the number of samples to keep in the sampling reservoir</p>
+              <h5 id="App_Metrics_Core_Options_MetricValueWithSamplingOption_Reservoir_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Reservoir sampling avoids unbound memory usage, allows metrics to be generated from a reservoir of values.</p>
 </div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public int SampleSize { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="xref">System.Int32</span></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_Options_MetricValueWithSamplingOption_SamplingType.md&amp;value=---%0Auid%3A%20App.Metrics.Core.Options.MetricValueWithSamplingOption.SamplingType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta5/src/App.Metrics/Core/Options/MetricValueWithSamplingOption.cs/#L36">View Source</a>
-              </span>
-              <a id="App_Metrics_Core_Options_MetricValueWithSamplingOption_SamplingType_" data-uid="App.Metrics.Core.Options.MetricValueWithSamplingOption.SamplingType*"></a>
-              <h4 id="App_Metrics_Core_Options_MetricValueWithSamplingOption_SamplingType" data-uid="App.Metrics.Core.Options.MetricValueWithSamplingOption.SamplingType">SamplingType</h4>
-              <div class="markdown level1 summary"><p>Gets or sets the <a class="xref" href="App.Metrics.Core.Options.MetricValueWithSamplingOption.html#App_Metrics_Core_Options_MetricValueWithSamplingOption_SamplingType">SamplingType</a> to use for the metric being measured.</p>
-</div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public SamplingType SamplingType { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="App.Metrics.SamplingType.html#App_Metrics_SamplingType">SamplingType</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 id="App_Metrics_Core_Options_MetricValueWithSamplingOption_SamplingType_remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>Sampling avoid unbound memory usage, allows metrics to be generated from a reservoir of values.</p>
-</div>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_Options_MetricValueWithSamplingOption_WithReservoir.md&amp;value=---%0Auid%3A%20App.Metrics.Core.Options.MetricValueWithSamplingOption.WithReservoir%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta5/src/App.Metrics/Core/Options/MetricValueWithSamplingOption.cs/#L42">View Source</a>
-              </span>
-              <a id="App_Metrics_Core_Options_MetricValueWithSamplingOption_WithReservoir_" data-uid="App.Metrics.Core.Options.MetricValueWithSamplingOption.WithReservoir*"></a>
-              <h4 id="App_Metrics_Core_Options_MetricValueWithSamplingOption_WithReservoir" data-uid="App.Metrics.Core.Options.MetricValueWithSamplingOption.WithReservoir">WithReservoir</h4>
-              <div class="markdown level1 summary"><p>Gets or sets an <a class="xref" href="App.Metrics.Sampling.Interfaces.IReservoir.html#App_Metrics_Sampling_Interfaces_IReservoir">IReservoir</a> implementation to be used instead of the <a class="xref" href="App.Metrics.Core.Options.MetricValueWithSamplingOption.html#App_Metrics_Core_Options_MetricValueWithSamplingOption_SamplingType">SamplingType</a>
-specified</p>
-</div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public Func&lt;IReservoir&gt; WithReservoir { get; set; }</code></pre>
-              </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="xref">System.Func&lt;TResult&gt;</span>&lt;<a class="xref" href="App.Metrics.Sampling.Interfaces.IReservoir.html#App_Metrics_Sampling_Interfaces_IReservoir">IReservoir</a>&gt;</td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
             </article>
           </div>
           
@@ -267,7 +171,7 @@ specified</p>
                     <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_Options_MetricValueWithSamplingOption.md&amp;value=---%0Auid%3A%20App.Metrics.Core.Options.MetricValueWithSamplingOption%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-beta5/src/App.Metrics/Core/Options/MetricValueWithSamplingOption.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Core/Options/MetricValueWithSamplingOption.cs/#L12" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
