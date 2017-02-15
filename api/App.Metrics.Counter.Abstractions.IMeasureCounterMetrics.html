@@ -88,7 +88,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_App_Metrics_Core_Options_CounterOptions_.md&amp;value=---%0Auid%3A%20App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/Abstractions/IMeasureCounterMetrics.cs/#L20">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/Abstractions/IMeasureCounterMetrics.cs/#L19">View Source</a>
               </span>
               <a id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_" data-uid="App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement*"></a>
               <h4 id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_App_Metrics_Core_Options_CounterOptions_" data-uid="App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions)">Decrement(CounterOptions)</h4>
@@ -119,19 +119,19 @@
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_App_Metrics_Core_Options_CounterOptions_System_Action_App_Metrics_Tagging_MetricItem__.md&amp;value=---%0Auid%3A%20App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions%2CSystem.Action%7BApp.Metrics.Tagging.MetricItem%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_App_Metrics_Core_Options_CounterOptions_App_Metrics_Tagging_MetricSetItem_.md&amp;value=---%0Auid%3A%20App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions%2CApp.Metrics.Tagging.MetricSetItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/Abstractions/IMeasureCounterMetrics.cs/#L53">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/Abstractions/IMeasureCounterMetrics.cs/#L52">View Source</a>
               </span>
               <a id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_" data-uid="App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement*"></a>
-              <h4 id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_App_Metrics_Core_Options_CounterOptions_System_Action_App_Metrics_Tagging_MetricItem__" data-uid="App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions,System.Action{App.Metrics.Tagging.MetricItem})">Decrement(CounterOptions, Action&lt;MetricItem&gt;)</h4>
+              <h4 id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_App_Metrics_Core_Options_CounterOptions_App_Metrics_Tagging_MetricSetItem_" data-uid="App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricSetItem)">Decrement(CounterOptions, MetricSetItem)</h4>
               <div class="markdown level1 summary"><p>Decrements a <a class="xref" href="App.Metrics.Abstractions.MetricTypes.ICounterMetric.html#App_Metrics_Abstractions_MetricTypes_ICounterMetric">ICounterMetric</a> as well as the specified item within the counter&#39;s set</p>
 </div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">void Decrement(CounterOptions options, Action&lt;MetricItem&gt; item)</code></pre>
+                <pre><code class="lang-csharp hljs">void Decrement(CounterOptions options, MetricSetItem item)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -150,23 +150,23 @@
 </td>
                   </tr>
                   <tr>
-                    <td><span class="xref">System.Action&lt;T&gt;</span>&lt;<a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Tagging_MetricItem">MetricItem</a>&gt;</td>
+                    <td><a class="xref" href="App.Metrics.Tagging.MetricSetItem.html#App_Metrics_Tagging_MetricSetItem">MetricSetItem</a></td>
                     <td><em>item</em></td>
                     <td><p>The item within the set to decrement.</p>
 </td>
                   </tr>
                 </tbody>
               </table>
-              <h5 id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_App_Metrics_Core_Options_CounterOptions_System_Action_App_Metrics_Tagging_MetricItem___remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>The counter value is decremented as is the specified <a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Tagging_MetricItem">MetricItem</a>&#39;s counter within the set.
-The <a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Tagging_MetricItem">MetricItem</a> within the set will also keep track of it&#39;s percentage from the total sets count.</p>
+              <h5 id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_App_Metrics_Core_Options_CounterOptions_App_Metrics_Tagging_MetricSetItem__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The counter value is decremented as is the specified <a class="xref" href="App.Metrics.Tagging.MetricSetItem.html#App_Metrics_Tagging_MetricSetItem">MetricSetItem</a>&#39;s counter within the set.
+The <a class="xref" href="App.Metrics.Tagging.MetricSetItem.html#App_Metrics_Tagging_MetricSetItem">MetricSetItem</a> within the set will also keep track of it&#39;s percentage from the total sets count.</p>
 </div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_App_Metrics_Core_Options_CounterOptions_System_Int64_.md&amp;value=---%0Auid%3A%20App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/Abstractions/IMeasureCounterMetrics.cs/#L27">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/Abstractions/IMeasureCounterMetrics.cs/#L26">View Source</a>
               </span>
               <a id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_" data-uid="App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement*"></a>
               <h4 id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_App_Metrics_Core_Options_CounterOptions_System_Int64_" data-uid="App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions,System.Int64)">Decrement(CounterOptions, Int64)</h4>
@@ -203,20 +203,20 @@ The <a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Taggin
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_App_Metrics_Core_Options_CounterOptions_System_Int64_System_Action_App_Metrics_Tagging_MetricItem__.md&amp;value=---%0Auid%3A%20App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions%2CSystem.Int64%2CSystem.Action%7BApp.Metrics.Tagging.MetricItem%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_App_Metrics_Core_Options_CounterOptions_System_Int64_App_Metrics_Tagging_MetricSetItem_.md&amp;value=---%0Auid%3A%20App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions%2CSystem.Int64%2CApp.Metrics.Tagging.MetricSetItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/Abstractions/IMeasureCounterMetrics.cs/#L66">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/Abstractions/IMeasureCounterMetrics.cs/#L65">View Source</a>
               </span>
               <a id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_" data-uid="App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement*"></a>
-              <h4 id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_App_Metrics_Core_Options_CounterOptions_System_Int64_System_Action_App_Metrics_Tagging_MetricItem__" data-uid="App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions,System.Int64,System.Action{App.Metrics.Tagging.MetricItem})">Decrement(CounterOptions, Int64, Action&lt;MetricItem&gt;)</h4>
+              <h4 id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_App_Metrics_Core_Options_CounterOptions_System_Int64_App_Metrics_Tagging_MetricSetItem_" data-uid="App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions,System.Int64,App.Metrics.Tagging.MetricSetItem)">Decrement(CounterOptions, Int64, MetricSetItem)</h4>
               <div class="markdown level1 summary"><p>Decrements a <a class="xref" href="App.Metrics.Abstractions.MetricTypes.ICounterMetric.html#App_Metrics_Abstractions_MetricTypes_ICounterMetric">ICounterMetric</a> by the specified amount as well as the specified item within the
 counter&#39;s set</p>
 </div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">void Decrement(CounterOptions options, long amount, Action&lt;MetricItem&gt; item)</code></pre>
+                <pre><code class="lang-csharp hljs">void Decrement(CounterOptions options, long amount, MetricSetItem item)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -241,23 +241,23 @@ counter&#39;s set</p>
 </td>
                   </tr>
                   <tr>
-                    <td><span class="xref">System.Action&lt;T&gt;</span>&lt;<a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Tagging_MetricItem">MetricItem</a>&gt;</td>
+                    <td><a class="xref" href="App.Metrics.Tagging.MetricSetItem.html#App_Metrics_Tagging_MetricSetItem">MetricSetItem</a></td>
                     <td><em>item</em></td>
                     <td><p>The item within the set to decrement.</p>
 </td>
                   </tr>
                 </tbody>
               </table>
-              <h5 id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_App_Metrics_Core_Options_CounterOptions_System_Int64_System_Action_App_Metrics_Tagging_MetricItem___remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>The counter value is decremented as is the specified <a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Tagging_MetricItem">MetricItem</a>&#39;s counter within the set.
-The <a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Tagging_MetricItem">MetricItem</a> within the set will also keep track of it&#39;s percentage from the total sets count.</p>
+              <h5 id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_App_Metrics_Core_Options_CounterOptions_System_Int64_App_Metrics_Tagging_MetricSetItem__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The counter value is decremented as is the specified <a class="xref" href="App.Metrics.Tagging.MetricSetItem.html#App_Metrics_Tagging_MetricSetItem">MetricSetItem</a>&#39;s counter within the set.
+The <a class="xref" href="App.Metrics.Tagging.MetricSetItem.html#App_Metrics_Tagging_MetricSetItem">MetricSetItem</a> within the set will also keep track of it&#39;s percentage from the total sets count.</p>
 </div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_App_Metrics_Core_Options_CounterOptions_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions%2CSystem.Int64%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/Abstractions/IMeasureCounterMetrics.cs/#L42">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/Abstractions/IMeasureCounterMetrics.cs/#L41">View Source</a>
               </span>
               <a id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_" data-uid="App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement*"></a>
               <h4 id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_App_Metrics_Core_Options_CounterOptions_System_Int64_System_String_" data-uid="App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions,System.Int64,System.String)">Decrement(CounterOptions, Int64, String)</h4>
@@ -303,7 +303,7 @@ The <a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Taggin
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_App_Metrics_Core_Options_CounterOptions_System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/Abstractions/IMeasureCounterMetrics.cs/#L34">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/Abstractions/IMeasureCounterMetrics.cs/#L33">View Source</a>
               </span>
               <a id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_" data-uid="App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement*"></a>
               <h4 id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_App_Metrics_Core_Options_CounterOptions_System_String_" data-uid="App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions,System.String)">Decrement(CounterOptions, String)</h4>
@@ -343,7 +343,7 @@ The <a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Taggin
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_App_Metrics_Core_Options_CounterOptions_.md&amp;value=---%0Auid%3A%20App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/Abstractions/IMeasureCounterMetrics.cs/#L72">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/Abstractions/IMeasureCounterMetrics.cs/#L71">View Source</a>
               </span>
               <a id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_" data-uid="App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment*"></a>
               <h4 id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_App_Metrics_Core_Options_CounterOptions_" data-uid="App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions)">Increment(CounterOptions)</h4>
@@ -374,19 +374,19 @@ The <a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Taggin
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_App_Metrics_Core_Options_CounterOptions_System_Action_App_Metrics_Tagging_MetricItem__.md&amp;value=---%0Auid%3A%20App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions%2CSystem.Action%7BApp.Metrics.Tagging.MetricItem%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_App_Metrics_Core_Options_CounterOptions_App_Metrics_Tagging_MetricSetItem_.md&amp;value=---%0Auid%3A%20App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions%2CApp.Metrics.Tagging.MetricSetItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/Abstractions/IMeasureCounterMetrics.cs/#L113">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/Abstractions/IMeasureCounterMetrics.cs/#L112">View Source</a>
               </span>
               <a id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_" data-uid="App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment*"></a>
-              <h4 id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_App_Metrics_Core_Options_CounterOptions_System_Action_App_Metrics_Tagging_MetricItem__" data-uid="App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions,System.Action{App.Metrics.Tagging.MetricItem})">Increment(CounterOptions, Action&lt;MetricItem&gt;)</h4>
+              <h4 id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_App_Metrics_Core_Options_CounterOptions_App_Metrics_Tagging_MetricSetItem_" data-uid="App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricSetItem)">Increment(CounterOptions, MetricSetItem)</h4>
               <div class="markdown level1 summary"><p>Increment a <a class="xref" href="App.Metrics.Abstractions.MetricTypes.ICounterMetric.html#App_Metrics_Abstractions_MetricTypes_ICounterMetric">ICounterMetric</a> as well as the specified item within the counter&#39;s set</p>
 </div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">void Increment(CounterOptions options, Action&lt;MetricItem&gt; item)</code></pre>
+                <pre><code class="lang-csharp hljs">void Increment(CounterOptions options, MetricSetItem setItem)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -405,23 +405,23 @@ The <a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Taggin
 </td>
                   </tr>
                   <tr>
-                    <td><span class="xref">System.Action&lt;T&gt;</span>&lt;<a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Tagging_MetricItem">MetricItem</a>&gt;</td>
-                    <td><em>item</em></td>
+                    <td><a class="xref" href="App.Metrics.Tagging.MetricSetItem.html#App_Metrics_Tagging_MetricSetItem">MetricSetItem</a></td>
+                    <td><em>setItem</em></td>
                     <td><p>The item within the set to increment.</p>
 </td>
                   </tr>
                 </tbody>
               </table>
-              <h5 id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_App_Metrics_Core_Options_CounterOptions_System_Action_App_Metrics_Tagging_MetricItem___remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>The counter value is incremented as is the specified <a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Tagging_MetricItem">MetricItem</a>&#39;s counter within the set.
-The <a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Tagging_MetricItem">MetricItem</a> within the set will also keep track of it&#39;s percentage from the total sets count.</p>
+              <h5 id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_App_Metrics_Core_Options_CounterOptions_App_Metrics_Tagging_MetricSetItem__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The counter value is incremented as is the specified <a class="xref" href="App.Metrics.Tagging.MetricSetItem.html#App_Metrics_Tagging_MetricSetItem">MetricSetItem</a>&#39;s counter within the set.
+The <a class="xref" href="App.Metrics.Tagging.MetricSetItem.html#App_Metrics_Tagging_MetricSetItem">MetricSetItem</a> within the set will also keep track of it&#39;s percentage from the total sets count.</p>
 </div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_App_Metrics_Core_Options_CounterOptions_System_Int64_.md&amp;value=---%0Auid%3A%20App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/Abstractions/IMeasureCounterMetrics.cs/#L79">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/Abstractions/IMeasureCounterMetrics.cs/#L78">View Source</a>
               </span>
               <a id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_" data-uid="App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment*"></a>
               <h4 id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_App_Metrics_Core_Options_CounterOptions_System_Int64_" data-uid="App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions,System.Int64)">Increment(CounterOptions, Int64)</h4>
@@ -458,20 +458,20 @@ The <a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Taggin
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_App_Metrics_Core_Options_CounterOptions_System_Int64_System_Action_App_Metrics_Tagging_MetricItem__.md&amp;value=---%0Auid%3A%20App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions%2CSystem.Int64%2CSystem.Action%7BApp.Metrics.Tagging.MetricItem%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_App_Metrics_Core_Options_CounterOptions_System_Int64_App_Metrics_Tagging_MetricSetItem_.md&amp;value=---%0Auid%3A%20App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions%2CSystem.Int64%2CApp.Metrics.Tagging.MetricSetItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/Abstractions/IMeasureCounterMetrics.cs/#L126">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/Abstractions/IMeasureCounterMetrics.cs/#L125">View Source</a>
               </span>
               <a id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_" data-uid="App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment*"></a>
-              <h4 id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_App_Metrics_Core_Options_CounterOptions_System_Int64_System_Action_App_Metrics_Tagging_MetricItem__" data-uid="App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions,System.Int64,System.Action{App.Metrics.Tagging.MetricItem})">Increment(CounterOptions, Int64, Action&lt;MetricItem&gt;)</h4>
+              <h4 id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_App_Metrics_Core_Options_CounterOptions_System_Int64_App_Metrics_Tagging_MetricSetItem_" data-uid="App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions,System.Int64,App.Metrics.Tagging.MetricSetItem)">Increment(CounterOptions, Int64, MetricSetItem)</h4>
               <div class="markdown level1 summary"><p>Increment a <a class="xref" href="App.Metrics.Abstractions.MetricTypes.ICounterMetric.html#App_Metrics_Abstractions_MetricTypes_ICounterMetric">ICounterMetric</a> by the specified amount as well as the specified item within the
 counter&#39;s set</p>
 </div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">void Increment(CounterOptions options, long amount, Action&lt;MetricItem&gt; item)</code></pre>
+                <pre><code class="lang-csharp hljs">void Increment(CounterOptions options, long amount, MetricSetItem setItem)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -496,23 +496,23 @@ counter&#39;s set</p>
 </td>
                   </tr>
                   <tr>
-                    <td><span class="xref">System.Action&lt;T&gt;</span>&lt;<a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Tagging_MetricItem">MetricItem</a>&gt;</td>
-                    <td><em>item</em></td>
+                    <td><a class="xref" href="App.Metrics.Tagging.MetricSetItem.html#App_Metrics_Tagging_MetricSetItem">MetricSetItem</a></td>
+                    <td><em>setItem</em></td>
                     <td><p>The item within the set to increment.</p>
 </td>
                   </tr>
                 </tbody>
               </table>
-              <h5 id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_App_Metrics_Core_Options_CounterOptions_System_Int64_System_Action_App_Metrics_Tagging_MetricItem___remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>The counter value is incremented as is the specified <a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Tagging_MetricItem">MetricItem</a>&#39;s counter within the set.
-The <a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Tagging_MetricItem">MetricItem</a> within the set will also keep track of it&#39;s percentage from the total sets count.</p>
+              <h5 id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_App_Metrics_Core_Options_CounterOptions_System_Int64_App_Metrics_Tagging_MetricSetItem__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The counter value is incremented as is the specified <a class="xref" href="App.Metrics.Tagging.MetricSetItem.html#App_Metrics_Tagging_MetricSetItem">MetricSetItem</a>&#39;s counter within the set.
+The <a class="xref" href="App.Metrics.Tagging.MetricSetItem.html#App_Metrics_Tagging_MetricSetItem">MetricSetItem</a> within the set will also keep track of it&#39;s percentage from the total sets count.</p>
 </div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_App_Metrics_Core_Options_CounterOptions_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions%2CSystem.Int64%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/Abstractions/IMeasureCounterMetrics.cs/#L102">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/Abstractions/IMeasureCounterMetrics.cs/#L101">View Source</a>
               </span>
               <a id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_" data-uid="App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment*"></a>
               <h4 id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_App_Metrics_Core_Options_CounterOptions_System_Int64_System_String_" data-uid="App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions,System.Int64,System.String)">Increment(CounterOptions, Int64, String)</h4>
@@ -554,15 +554,15 @@ The <a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Taggin
                 </tbody>
               </table>
               <h5 id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_App_Metrics_Core_Options_CounterOptions_System_Int64_System_String__remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>The counter value is incremented as is the specified <a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Tagging_MetricItem">MetricItem</a>&#39;s counter within the set.
-The <a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Tagging_MetricItem">MetricItem</a> within the set will also keep track of it&#39;s percentage from the total sets count.</p>
+              <div class="markdown level1 remarks"><p>The counter value is incremented as is the specified <a class="xref" href="App.Metrics.Tagging.MetricTags.html#App_Metrics_Tagging_MetricTags">MetricTags</a>&#39;s counter within the set.
+The <a class="xref" href="App.Metrics.Tagging.MetricTags.html#App_Metrics_Tagging_MetricTags">MetricTags</a> within the set will also keep track of it&#39;s percentage from the total sets count.</p>
 </div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_App_Metrics_Core_Options_CounterOptions_System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/Abstractions/IMeasureCounterMetrics.cs/#L90">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/Abstractions/IMeasureCounterMetrics.cs/#L89">View Source</a>
               </span>
               <a id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_" data-uid="App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment*"></a>
               <h4 id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_App_Metrics_Core_Options_CounterOptions_System_String_" data-uid="App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions,System.String)">Increment(CounterOptions, String)</h4>
@@ -598,8 +598,8 @@ The <a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Taggin
                 </tbody>
               </table>
               <h5 id="App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_App_Metrics_Core_Options_CounterOptions_System_String__remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>The counter value is incremented as is the specified <a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Tagging_MetricItem">MetricItem</a>&#39;s counter within the set.
-The <a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Tagging_MetricItem">MetricItem</a> within the set will also keep track of it&#39;s percentage from the total sets count.</p>
+              <div class="markdown level1 remarks"><p>The counter value is incremented as is the specified <a class="xref" href="App.Metrics.Tagging.MetricTags.html#App_Metrics_Tagging_MetricTags">MetricTags</a>&#39;s counter within the set.
+The <a class="xref" href="App.Metrics.Tagging.MetricTags.html#App_Metrics_Tagging_MetricTags">MetricTags</a> within the set will also keep track of it&#39;s percentage from the total sets count.</p>
 </div>
             </article>
           </div>
@@ -612,7 +612,7 @@ The <a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Taggin
                     <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Counter_Abstractions_IMeasureCounterMetrics.md&amp;value=---%0Auid%3A%20App.Metrics.Counter.Abstractions.IMeasureCounterMetrics%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/Abstractions/IMeasureCounterMetrics.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/Abstractions/IMeasureCounterMetrics.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

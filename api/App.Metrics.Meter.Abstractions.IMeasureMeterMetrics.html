@@ -88,7 +88,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_App_Metrics_Core_Options_MeterOptions_.md&amp;value=---%0Auid%3A%20App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Meter/Abstractions/IMeasureMeterMetrics.cs/#L29">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Meter/Abstractions/IMeasureMeterMetrics.cs/#L28">View Source</a>
               </span>
               <a id="App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_" data-uid="App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark*"></a>
               <h4 id="App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_App_Metrics_Core_Options_MeterOptions_" data-uid="App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions)">Mark(MeterOptions)</h4>
@@ -120,20 +120,20 @@ overtime, will mark as 1.</p>
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_App_Metrics_Core_Options_MeterOptions_System_Action_App_Metrics_Tagging_MetricItem__.md&amp;value=---%0Auid%3A%20App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions%2CSystem.Action%7BApp.Metrics.Tagging.MetricItem%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_App_Metrics_Core_Options_MeterOptions_App_Metrics_Tagging_MetricSetItem_.md&amp;value=---%0Auid%3A%20App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions%2CApp.Metrics.Tagging.MetricSetItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Meter/Abstractions/IMeasureMeterMetrics.cs/#L45">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Meter/Abstractions/IMeasureMeterMetrics.cs/#L44">View Source</a>
               </span>
               <a id="App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_" data-uid="App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark*"></a>
-              <h4 id="App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_App_Metrics_Core_Options_MeterOptions_System_Action_App_Metrics_Tagging_MetricItem__" data-uid="App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions,System.Action{App.Metrics.Tagging.MetricItem})">Mark(MeterOptions, Action&lt;MetricItem&gt;)</h4>
+              <h4 id="App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_App_Metrics_Core_Options_MeterOptions_App_Metrics_Tagging_MetricSetItem_" data-uid="App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricSetItem)">Mark(MeterOptions, MetricSetItem)</h4>
               <div class="markdown level1 summary"><p>Marks a <a class="xref" href="App.Metrics.Abstractions.MetricTypes.IMeterMetric.html#App_Metrics_Abstractions_MetricTypes_IMeterMetric">IMeterMetric</a> which increments an increment-only counter and measures the rate of events over
 time</p>
 </div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">void Mark(MeterOptions options, Action&lt;MetricItem&gt; item)</code></pre>
+                <pre><code class="lang-csharp hljs">void Mark(MeterOptions options, MetricSetItem setItem)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -152,9 +152,9 @@ time</p>
 </td>
                   </tr>
                   <tr>
-                    <td><span class="xref">System.Action&lt;T&gt;</span>&lt;<a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Tagging_MetricItem">MetricItem</a>&gt;</td>
-                    <td><em>item</em></td>
-                    <td><p>The <a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Tagging_MetricItem">MetricItem</a>  within the set to mark.</p>
+                    <td><a class="xref" href="App.Metrics.Tagging.MetricSetItem.html#App_Metrics_Tagging_MetricSetItem">MetricSetItem</a></td>
+                    <td><em>setItem</em></td>
+                    <td><p>The <a class="xref" href="App.Metrics.Tagging.MetricSetItem.html#App_Metrics_Tagging_MetricSetItem">MetricSetItem</a>  within the set to mark.</p>
 </td>
                   </tr>
                 </tbody>
@@ -164,7 +164,7 @@ time</p>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_App_Metrics_Core_Options_MeterOptions_System_Int64_.md&amp;value=---%0Auid%3A%20App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Meter/Abstractions/IMeasureMeterMetrics.cs/#L22">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Meter/Abstractions/IMeasureMeterMetrics.cs/#L21">View Source</a>
               </span>
               <a id="App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_" data-uid="App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark*"></a>
               <h4 id="App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_App_Metrics_Core_Options_MeterOptions_System_Int64_" data-uid="App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions,System.Int64)">Mark(MeterOptions, Int64)</h4>
@@ -202,20 +202,20 @@ time</p>
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_App_Metrics_Core_Options_MeterOptions_System_Int64_System_Action_App_Metrics_Tagging_MetricItem__.md&amp;value=---%0Auid%3A%20App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions%2CSystem.Int64%2CSystem.Action%7BApp.Metrics.Tagging.MetricItem%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_App_Metrics_Core_Options_MeterOptions_System_Int64_App_Metrics_Tagging_MetricSetItem_.md&amp;value=---%0Auid%3A%20App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions%2CSystem.Int64%2CApp.Metrics.Tagging.MetricSetItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Meter/Abstractions/IMeasureMeterMetrics.cs/#L63">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Meter/Abstractions/IMeasureMeterMetrics.cs/#L62">View Source</a>
               </span>
               <a id="App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_" data-uid="App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark*"></a>
-              <h4 id="App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_App_Metrics_Core_Options_MeterOptions_System_Int64_System_Action_App_Metrics_Tagging_MetricItem__" data-uid="App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions,System.Int64,System.Action{App.Metrics.Tagging.MetricItem})">Mark(MeterOptions, Int64, Action&lt;MetricItem&gt;)</h4>
+              <h4 id="App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_App_Metrics_Core_Options_MeterOptions_System_Int64_App_Metrics_Tagging_MetricSetItem_" data-uid="App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions,System.Int64,App.Metrics.Tagging.MetricSetItem)">Mark(MeterOptions, Int64, MetricSetItem)</h4>
               <div class="markdown level1 summary"><p>Marks a <a class="xref" href="App.Metrics.Abstractions.MetricTypes.IMeterMetric.html#App_Metrics_Abstractions_MetricTypes_IMeterMetric">IMeterMetric</a> which increments an increment-only counter and measures the rate of events over
 time</p>
 </div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">void Mark(MeterOptions options, long amount, Action&lt;MetricItem&gt; item)</code></pre>
+                <pre><code class="lang-csharp hljs">void Mark(MeterOptions options, long amount, MetricSetItem setItem)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -240,9 +240,9 @@ time</p>
 </td>
                   </tr>
                   <tr>
-                    <td><span class="xref">System.Action&lt;T&gt;</span>&lt;<a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Tagging_MetricItem">MetricItem</a>&gt;</td>
-                    <td><em>item</em></td>
-                    <td><p>The <a class="xref" href="App.Metrics.Tagging.MetricItem.html#App_Metrics_Tagging_MetricItem">MetricItem</a> within the set to mark.</p>
+                    <td><a class="xref" href="App.Metrics.Tagging.MetricSetItem.html#App_Metrics_Tagging_MetricSetItem">MetricSetItem</a></td>
+                    <td><em>setItem</em></td>
+                    <td><p>The <a class="xref" href="App.Metrics.Tagging.MetricSetItem.html#App_Metrics_Tagging_MetricSetItem">MetricSetItem</a> within the set to mark.</p>
 </td>
                   </tr>
                 </tbody>
@@ -252,7 +252,7 @@ time</p>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_App_Metrics_Core_Options_MeterOptions_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions%2CSystem.Int64%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Meter/Abstractions/IMeasureMeterMetrics.cs/#L54">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Meter/Abstractions/IMeasureMeterMetrics.cs/#L53">View Source</a>
               </span>
               <a id="App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_" data-uid="App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark*"></a>
               <h4 id="App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_App_Metrics_Core_Options_MeterOptions_System_Int64_System_String_" data-uid="App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions,System.Int64,System.String)">Mark(MeterOptions, Int64, String)</h4>
@@ -299,7 +299,7 @@ time</p>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_App_Metrics_Core_Options_MeterOptions_System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Meter/Abstractions/IMeasureMeterMetrics.cs/#L37">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Meter/Abstractions/IMeasureMeterMetrics.cs/#L36">View Source</a>
               </span>
               <a id="App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_" data-uid="App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark*"></a>
               <h4 id="App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_App_Metrics_Core_Options_MeterOptions_System_String_" data-uid="App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions,System.String)">Mark(MeterOptions, String)</h4>
@@ -346,7 +346,7 @@ time</p>
                     <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Meter_Abstractions_IMeasureMeterMetrics.md&amp;value=---%0Auid%3A%20App.Metrics.Meter.Abstractions.IMeasureMeterMetrics%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Meter/Abstractions/IMeasureMeterMetrics.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Meter/Abstractions/IMeasureMeterMetrics.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

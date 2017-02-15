@@ -76,31 +76,95 @@
               <div class="markdown level0 remarks"></div>
                 <h3 id="classes">Classes
               </h3>
-                  <h4><a class="xref" href="App.Metrics.Formatters.Json.ApdexConverter.html#App_Metrics_Formatters_Json_ApdexConverter">ApdexConverter</a></h4>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.ApdexMetric.html#App_Metrics_Formatters_Json_ApdexMetric">ApdexMetric</a></h4>
                   <section></section>
-                  <h4><a class="xref" href="App.Metrics.Formatters.Json.CounterConverter.html#App_Metrics_Formatters_Json_CounterConverter">CounterConverter</a></h4>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.CounterMetric.html#App_Metrics_Formatters_Json_CounterMetric">CounterMetric</a></h4>
+                  <section><p>
+    Counter metric types track how many times something happens, they can incremented or decremented.
+</p>
+<p>
+    Counters represent a 64-bit integer value.
+</p>
+<p>
+    Counters provide the ability to track a counter for each item in a finite set, as well as tracking a per item
+    count the overall percentage is also recorded. This is useful for example if we needed to track the total
+    number of emails sent but also the count of each type of emails sent.
+</p>
+</section>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.CounterMetric.SetItem.html#App_Metrics_Formatters_Json_CounterMetric_SetItem">CounterMetric.SetItem</a></h4>
                   <section></section>
-                  <h4><a class="xref" href="App.Metrics.Formatters.Json.EnvironmentInfoConverter.html#App_Metrics_Formatters_Json_EnvironmentInfoConverter">EnvironmentInfoConverter</a></h4>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.GaugeMetric.html#App_Metrics_Formatters_Json_GaugeMetric">GaugeMetric</a></h4>
+                  <section><p>
+    Gauge metric types measure the value of a particular thing at a particular time, it represents an instantaneous
+    value.
+</p>
+<p>
+    Gauges represent a double value.
+</p>
+</section>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.HistogramMetric.html#App_Metrics_Formatters_Json_HistogramMetric">HistogramMetric</a></h4>
+                  <section><p>
+    Histogram metric types track the statistical distribution of a set of values. They allow you to measure the
+    min, mean, max, standard deviation of values and also quantiles such as the median, 95th percentile, 98th
+    percentile etc.
+</p>
+<p>
+    To avoid unbound memory usage, the histogram values are genreated from a <a class="xref" href="App.Metrics.Abstractions.ReservoirSampling.IReservoir.html#App_Metrics_Abstractions_ReservoirSampling_IReservoir">IReservoir</a> of values.
+    This is done by sampling the data as it goes through by maintaining a small manageable  reservoir which is
+    statistically representative of the data stream as a whole, allowing us to quickly calculate the quantiles
+    which are valid approximations of the actual quantiles. <a href="https://en.wikipedia.org/wiki/Reservoir_sampling">https://en.wikipedia.org/wiki/Reservoir_sampling</a>
+</p>
+<p>
+    Histograms also allow us to track user values, where for all user values provided the min, max and last user
+    value values is recorded.
+</p>
+</section>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.MeterMetric.html#App_Metrics_Formatters_Json_MeterMetric">MeterMetric</a></h4>
+                  <section><p>
+    Meter metric types are increment-only counters that also measure the rate of events over time.
+</p>
+<p>
+    The mean rate is recorded, but is only generally used for trivia as it represents the total rate for the
+    lifetime of your application, not offering a sense of recency.
+</p>
+<p>
+    Other than the mean rate, meters also are recorded using three different exponentially-weighted moving average
+    rates, 1 min, 5 min and 15 min moving averages which do provide a sense of recency.
+</p>
+<p>
+    Meters also provide the ability to track the rate for each item in a finite set, as well as tracking a per item
+    rate the overall percentage is also recorded. This is useful for example if we needed to track the total
+    number of emails sent but also the rate at which each type of email is sent.
+</p>
+</section>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.MeterMetric.SetItem.html#App_Metrics_Formatters_Json_MeterMetric_SetItem">MeterMetric.SetItem</a></h4>
                   <section></section>
-                  <h4><a class="xref" href="App.Metrics.Formatters.Json.EnvironmentInfoSerializer.html#App_Metrics_Formatters_Json_EnvironmentInfoSerializer">EnvironmentInfoSerializer</a></h4>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.MetricBase.html#App_Metrics_Formatters_Json_MetricBase">MetricBase</a></h4>
                   <section></section>
-                  <h4><a class="xref" href="App.Metrics.Formatters.Json.GaugeConverter.html#App_Metrics_Formatters_Json_GaugeConverter">GaugeConverter</a></h4>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.MetricContextSerializationExtensions.html#App_Metrics_Formatters_Json_MetricContextSerializationExtensions">MetricContextSerializationExtensions</a></h4>
                   <section></section>
-                  <h4><a class="xref" href="App.Metrics.Formatters.Json.HealthStatusConverter.html#App_Metrics_Formatters_Json_HealthStatusConverter">HealthStatusConverter</a></h4>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.MetricData.html#App_Metrics_Formatters_Json_MetricData">MetricData</a></h4>
                   <section></section>
-                  <h4><a class="xref" href="App.Metrics.Formatters.Json.HealthStatusSerializer.html#App_Metrics_Formatters_Json_HealthStatusSerializer">HealthStatusSerializer</a></h4>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.MetricsContext.html#App_Metrics_Formatters_Json_MetricsContext">MetricsContext</a></h4>
+                  <section><p>MetricsContext&#39;s are a way of grouping metrics withing a context, for example we can record all database related
+metrics in a &quot;Application.Database&quot; Context. Metric names can be duplicated across contexts</p>
+</section>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.TimerMetric.html#App_Metrics_Formatters_Json_TimerMetric">TimerMetric</a></h4>
+                  <section><p>
+    Timer metric types are essentially a special case of <a class="xref" href="App.Metrics.Formatters.Json.TimerMetric.html#App_Metrics_Formatters_Json_TimerMetric_Histogram">Histogram</a>
+</p>
+<p>
+    As well as providing a <a class="xref" href="App.Metrics.Formatters.Json.TimerMetric.html#App_Metrics_Formatters_Json_TimerMetric_Histogram">Histogram</a> of the duration of a type of event, timers also provide a
+<a class="xref" href="App.Metrics.Formatters.Json.MeterMetric.html#App_Metrics_Formatters_Json_MeterMetric">MeterMetric</a> of the rate of the events occurrence.
+</p>
+<p>
+    Like <a class="xref" href="App.Metrics.Formatters.Json.TimerMetric.html#App_Metrics_Formatters_Json_TimerMetric_Histogram">Histogram</a>s, timers also allow us to track user values, where for all user values provided
+    the min, max and last user value values is recorded.
+</p>
+</section>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.TimerMetric.HistogramData.html#App_Metrics_Formatters_Json_TimerMetric_HistogramData">TimerMetric.HistogramData</a></h4>
                   <section></section>
-                  <h4><a class="xref" href="App.Metrics.Formatters.Json.HistogramConverter.html#App_Metrics_Formatters_Json_HistogramConverter">HistogramConverter</a></h4>
-                  <section></section>
-                  <h4><a class="xref" href="App.Metrics.Formatters.Json.MeterConverter.html#App_Metrics_Formatters_Json_MeterConverter">MeterConverter</a></h4>
-                  <section></section>
-                  <h4><a class="xref" href="App.Metrics.Formatters.Json.MetricContractResolver.html#App_Metrics_Formatters_Json_MetricContractResolver">MetricContractResolver</a></h4>
-                  <section></section>
-                  <h4><a class="xref" href="App.Metrics.Formatters.Json.MetricDataConverter.html#App_Metrics_Formatters_Json_MetricDataConverter">MetricDataConverter</a></h4>
-                  <section></section>
-                  <h4><a class="xref" href="App.Metrics.Formatters.Json.MetricDataSerializer.html#App_Metrics_Formatters_Json_MetricDataSerializer">MetricDataSerializer</a></h4>
-                  <section></section>
-                  <h4><a class="xref" href="App.Metrics.Formatters.Json.TimerConverter.html#App_Metrics_Formatters_Json_TimerConverter">TimerConverter</a></h4>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.TimerMetric.RateData.html#App_Metrics_Formatters_Json_TimerMetric_RateData">TimerMetric.RateData</a></h4>
                   <section></section>
             </article>
           </div>

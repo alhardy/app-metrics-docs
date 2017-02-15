@@ -175,14 +175,98 @@ This is the class that metric consumers should use.</p>
                   </tr>
                 </tbody>
               </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_Abstractions_MetricValueSourceBase_1__ctor_System_String_System_String_App_Metrics_Core_Abstractions_IMetricValueProvider__0__App_Metrics_Unit_App_Metrics_Tagging_MetricTags_.md&amp;value=---%0Auid%3A%20App.Metrics.Core.Abstractions.MetricValueSourceBase%601.%23ctor(System.String%2CSystem.String%2CApp.Metrics.Core.Abstractions.IMetricValueProvider%7B%600%7D%2CApp.Metrics.Unit%2CApp.Metrics.Tagging.MetricTags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Core/Abstractions/MetricValueSourceBase`1.cs/#L23">View Source</a>
+              </span>
+              <a id="App_Metrics_Core_Abstractions_MetricValueSourceBase_1__ctor_" data-uid="App.Metrics.Core.Abstractions.MetricValueSourceBase`1.#ctor*"></a>
+              <h4 id="App_Metrics_Core_Abstractions_MetricValueSourceBase_1__ctor_System_String_System_String_App_Metrics_Core_Abstractions_IMetricValueProvider__0__App_Metrics_Unit_App_Metrics_Tagging_MetricTags_" data-uid="App.Metrics.Core.Abstractions.MetricValueSourceBase`1.#ctor(System.String,System.String,App.Metrics.Core.Abstractions.IMetricValueProvider{`0},App.Metrics.Unit,App.Metrics.Tagging.MetricTags)">MetricValueSourceBase(String, String, IMetricValueProvider&lt;T&gt;, Unit, MetricTags)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected MetricValueSourceBase(string name, string group, IMetricValueProvider&lt;T&gt; valueProvider, Unit unit, MetricTags tags)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>group</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Core.Abstractions.IMetricValueProvider-1.html#App_Metrics_Core_Abstractions_IMetricValueProvider_1">IMetricValueProvider&lt;T&gt;</a>&lt;T&gt;</td>
+                    <td><em>valueProvider</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Unit.html#App_Metrics_Unit">Unit</a></td>
+                    <td><em>unit</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Tagging.MetricTags.html#App_Metrics_Tagging_MetricTags">MetricTags</a></td>
+                    <td><em>tags</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
               <h3 id="properties">Properties
               </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_Abstractions_MetricValueSourceBase_1_Group.md&amp;value=---%0Auid%3A%20App.Metrics.Core.Abstractions.MetricValueSourceBase%601.Group%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Core/Abstractions/MetricValueSourceBase`1.cs/#L38">View Source</a>
+              </span>
+              <a id="App_Metrics_Core_Abstractions_MetricValueSourceBase_1_Group_" data-uid="App.Metrics.Core.Abstractions.MetricValueSourceBase`1.Group*"></a>
+              <h4 id="App_Metrics_Core_Abstractions_MetricValueSourceBase_1_Group" data-uid="App.Metrics.Core.Abstractions.MetricValueSourceBase`1.Group">Group</h4>
+              <div class="markdown level1 summary"><p>Gets the Group of the metric within a context.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string Group { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>The group.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_Abstractions_MetricValueSourceBase_1_Name.md&amp;value=---%0Auid%3A%20App.Metrics.Core.Abstractions.MetricValueSourceBase%601.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Core/Abstractions/MetricValueSourceBase`1.cs/#L29">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Core/Abstractions/MetricValueSourceBase`1.cs/#L46">View Source</a>
               </span>
               <a id="App_Metrics_Core_Abstractions_MetricValueSourceBase_1_Name_" data-uid="App.Metrics.Core.Abstractions.MetricValueSourceBase`1.Name*"></a>
               <h4 id="App_Metrics_Core_Abstractions_MetricValueSourceBase_1_Name" data-uid="App.Metrics.Core.Abstractions.MetricValueSourceBase`1.Name">Name</h4>
@@ -214,7 +298,7 @@ This is the class that metric consumers should use.</p>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_Abstractions_MetricValueSourceBase_1_Tags.md&amp;value=---%0Auid%3A%20App.Metrics.Core.Abstractions.MetricValueSourceBase%601.Tags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Core/Abstractions/MetricValueSourceBase`1.cs/#L37">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Core/Abstractions/MetricValueSourceBase`1.cs/#L54">View Source</a>
               </span>
               <a id="App_Metrics_Core_Abstractions_MetricValueSourceBase_1_Tags_" data-uid="App.Metrics.Core.Abstractions.MetricValueSourceBase`1.Tags*"></a>
               <h4 id="App_Metrics_Core_Abstractions_MetricValueSourceBase_1_Tags" data-uid="App.Metrics.Core.Abstractions.MetricValueSourceBase`1.Tags">Tags</h4>
@@ -246,7 +330,7 @@ This is the class that metric consumers should use.</p>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_Abstractions_MetricValueSourceBase_1_Unit.md&amp;value=---%0Auid%3A%20App.Metrics.Core.Abstractions.MetricValueSourceBase%601.Unit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Core/Abstractions/MetricValueSourceBase`1.cs/#L45">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Core/Abstractions/MetricValueSourceBase`1.cs/#L62">View Source</a>
               </span>
               <a id="App_Metrics_Core_Abstractions_MetricValueSourceBase_1_Unit_" data-uid="App.Metrics.Core.Abstractions.MetricValueSourceBase`1.Unit*"></a>
               <h4 id="App_Metrics_Core_Abstractions_MetricValueSourceBase_1_Unit" data-uid="App.Metrics.Core.Abstractions.MetricValueSourceBase`1.Unit">Unit</h4>
@@ -278,7 +362,7 @@ This is the class that metric consumers should use.</p>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_Abstractions_MetricValueSourceBase_1_Value.md&amp;value=---%0Auid%3A%20App.Metrics.Core.Abstractions.MetricValueSourceBase%601.Value%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Core/Abstractions/MetricValueSourceBase`1.cs/#L53">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Core/Abstractions/MetricValueSourceBase`1.cs/#L70">View Source</a>
               </span>
               <a id="App_Metrics_Core_Abstractions_MetricValueSourceBase_1_Value_" data-uid="App.Metrics.Core.Abstractions.MetricValueSourceBase`1.Value*"></a>
               <h4 id="App_Metrics_Core_Abstractions_MetricValueSourceBase_1_Value" data-uid="App.Metrics.Core.Abstractions.MetricValueSourceBase`1.Value">Value</h4>
@@ -310,7 +394,7 @@ This is the class that metric consumers should use.</p>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Core_Abstractions_MetricValueSourceBase_1_ValueProvider.md&amp;value=---%0Auid%3A%20App.Metrics.Core.Abstractions.MetricValueSourceBase%601.ValueProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Core/Abstractions/MetricValueSourceBase`1.cs/#L61">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Core/Abstractions/MetricValueSourceBase`1.cs/#L78">View Source</a>
               </span>
               <a id="App_Metrics_Core_Abstractions_MetricValueSourceBase_1_ValueProvider_" data-uid="App.Metrics.Core.Abstractions.MetricValueSourceBase`1.ValueProvider*"></a>
               <h4 id="App_Metrics_Core_Abstractions_MetricValueSourceBase_1_ValueProvider" data-uid="App.Metrics.Core.Abstractions.MetricValueSourceBase`1.ValueProvider">ValueProvider</h4>

@@ -82,7 +82,7 @@
 {
     public static class ProcessMetrics
     {
-        private static readonly MetricTags CustomTags = new MetricTags().With(&quot;tag-key&quot;, &quot;tag-value&quot;);
+        private static readonly MetricTags CustomTags = new MetricTags(&quot;tag-key&quot;, &quot;tag-value&quot;);
         private static readonly string ContextName = &quot;Process&quot;;
 
         public static GaugeOptions SystemNonPagedMemoryGauge = new GaugeOptions
@@ -163,7 +163,7 @@
 {
     public static class ProcessMetrics
     {
-        private static readonly MetricTags CustomTags = new MetricTags().With(&quot;tag-key&quot;, &quot;tag-value&quot;);
+        private static readonly MetricTags CustomTags = new MetricTags(&quot;tag-key&quot;, &quot;tag-value&quot;);
         private static readonly string ContextName = &quot;Process&quot;;
 
         public static GaugeOptions SystemNonPagedMemoryGauge = new GaugeOptions
@@ -244,7 +244,11 @@
         app.UseMetrics();
     }
 }
-</code></pre><h3 id="filtering-in-process-by-tag-keys">Filtering in process by Tag Keys</h3>
+</code></pre><h2 id="metric-grouping">Metric Grouping</h2>
+<p>Metrics can be assigned a group label when they are defined which applies to the context they are belong to. This allows the group to be reported as the same metric but tagged by the metric name. </p>
+<p>An example use case for grouping is recording an APIs response time per endpoint where a timer is recorded per endpoint but then reported as the same metric name tagged with by the endpoint. This allows us to more easily have a dynamic list of endpoints and their response times when visualising with Grafana for example.</p>
+<p>Metric Group names can be applied on all Metric Option types, although it is up to the reporter to apply the appropriate tagging as implemented in the <a href="../reporting/index.html#influxdb-reporter">InfluxDB Reporter</a></p>
+<h3 id="filtering-in-process-by-tag-keys">Filtering in process by Tag Keys</h3>
 <p>The <a href="../../api/App.Metrics.DefaultMetricsFilter.html">DefaultMetricsFilter</a> can be used to filter Metrics by a Tag Keys. This would be useful if we only wanted to report on a particular Metrics Tags.</p>
 <div class="NOTE"><h5>Note</h5><p>See <a href="../filtering/index.html">Metrics Filtering</a> for more details on filtering Metrics.</p>
 </div>
