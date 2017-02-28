@@ -652,6 +652,17 @@ references:
   commentId: Overload:App.Metrics.Abstractions.ReservoirSampling.IReservoirSnapshot.StdDev
   name: StdDev
   fullName: App.Metrics.Abstractions.ReservoirSampling.IReservoirSnapshot.StdDev
+- uid: App.Metrics.Abstractions.ReservoirSampling.IReservoirSnapshot.Sum
+  name: Sum
+  href: api/App.Metrics.Abstractions.ReservoirSampling.IReservoirSnapshot.html#App_Metrics_Abstractions_ReservoirSampling_IReservoirSnapshot_Sum
+  commentId: P:App.Metrics.Abstractions.ReservoirSampling.IReservoirSnapshot.Sum
+  fullName: App.Metrics.Abstractions.ReservoirSampling.IReservoirSnapshot.Sum
+  nameWithType: IReservoirSnapshot.Sum
+- uid: App.Metrics.Abstractions.ReservoirSampling.IReservoirSnapshot.Sum*
+  href: api/App.Metrics.Abstractions.ReservoirSampling.IReservoirSnapshot.html#App_Metrics_Abstractions_ReservoirSampling_IReservoirSnapshot_Sum_
+  commentId: Overload:App.Metrics.Abstractions.ReservoirSampling.IReservoirSnapshot.Sum
+  name: Sum
+  fullName: App.Metrics.Abstractions.ReservoirSampling.IReservoirSnapshot.Sum
 - uid: App.Metrics.Abstractions.ReservoirSampling.IReservoirSnapshot.Values
   name: Values
   href: api/App.Metrics.Abstractions.ReservoirSampling.IReservoirSnapshot.html#App_Metrics_Abstractions_ReservoirSampling_IReservoirSnapshot_Values
@@ -910,6 +921,18 @@ references:
   commentId: M:App.Metrics.Apdex.Abstractions.IMeasureApdexMetrics.Track(App.Metrics.Core.Options.ApdexOptions)
   fullName: App.Metrics.Apdex.Abstractions.IMeasureApdexMetrics.Track(App.Metrics.Core.Options.ApdexOptions)
   nameWithType: IMeasureApdexMetrics.Track(ApdexOptions)
+- uid: App.Metrics.Apdex.Abstractions.IMeasureApdexMetrics.Track(App.Metrics.Core.Options.ApdexOptions,App.Metrics.Tagging.MetricTags)
+  name: Track(ApdexOptions, MetricTags)
+  href: api/App.Metrics.Apdex.Abstractions.IMeasureApdexMetrics.html#App_Metrics_Apdex_Abstractions_IMeasureApdexMetrics_Track_App_Metrics_Core_Options_ApdexOptions_App_Metrics_Tagging_MetricTags_
+  commentId: M:App.Metrics.Apdex.Abstractions.IMeasureApdexMetrics.Track(App.Metrics.Core.Options.ApdexOptions,App.Metrics.Tagging.MetricTags)
+  fullName: App.Metrics.Apdex.Abstractions.IMeasureApdexMetrics.Track(App.Metrics.Core.Options.ApdexOptions, App.Metrics.Tagging.MetricTags)
+  nameWithType: IMeasureApdexMetrics.Track(ApdexOptions, MetricTags)
+- uid: App.Metrics.Apdex.Abstractions.IMeasureApdexMetrics.Track(App.Metrics.Core.Options.ApdexOptions,App.Metrics.Tagging.MetricTags,System.Action)
+  name: Track(ApdexOptions, MetricTags, Action)
+  href: api/App.Metrics.Apdex.Abstractions.IMeasureApdexMetrics.html#App_Metrics_Apdex_Abstractions_IMeasureApdexMetrics_Track_App_Metrics_Core_Options_ApdexOptions_App_Metrics_Tagging_MetricTags_System_Action_
+  commentId: M:App.Metrics.Apdex.Abstractions.IMeasureApdexMetrics.Track(App.Metrics.Core.Options.ApdexOptions,App.Metrics.Tagging.MetricTags,System.Action)
+  fullName: App.Metrics.Apdex.Abstractions.IMeasureApdexMetrics.Track(App.Metrics.Core.Options.ApdexOptions, App.Metrics.Tagging.MetricTags, System.Action)
+  nameWithType: IMeasureApdexMetrics.Track(ApdexOptions, MetricTags, Action)
 - uid: App.Metrics.Apdex.Abstractions.IMeasureApdexMetrics.Track(App.Metrics.Core.Options.ApdexOptions,System.Action)
   name: Track(ApdexOptions, Action)
   href: api/App.Metrics.Apdex.Abstractions.IMeasureApdexMetrics.html#App_Metrics_Apdex_Abstractions_IMeasureApdexMetrics_Track_App_Metrics_Core_Options_ApdexOptions_System_Action_
@@ -933,11 +956,26 @@ references:
   commentId: M:App.Metrics.Apdex.Abstractions.IProvideApdexMetrics.Instance(App.Metrics.Core.Options.ApdexOptions)
   fullName: App.Metrics.Apdex.Abstractions.IProvideApdexMetrics.Instance(App.Metrics.Core.Options.ApdexOptions)
   nameWithType: IProvideApdexMetrics.Instance(ApdexOptions)
+- uid: App.Metrics.Apdex.Abstractions.IProvideApdexMetrics.Instance(App.Metrics.Core.Options.ApdexOptions,App.Metrics.Tagging.MetricTags)
+  name: Instance(ApdexOptions, MetricTags)
+  href: api/App.Metrics.Apdex.Abstractions.IProvideApdexMetrics.html#App_Metrics_Apdex_Abstractions_IProvideApdexMetrics_Instance_App_Metrics_Core_Options_ApdexOptions_App_Metrics_Tagging_MetricTags_
+  commentId: M:App.Metrics.Apdex.Abstractions.IProvideApdexMetrics.Instance(App.Metrics.Core.Options.ApdexOptions,App.Metrics.Tagging.MetricTags)
+  fullName: App.Metrics.Apdex.Abstractions.IProvideApdexMetrics.Instance(App.Metrics.Core.Options.ApdexOptions, App.Metrics.Tagging.MetricTags)
+  nameWithType: IProvideApdexMetrics.Instance(ApdexOptions, MetricTags)
 - uid: App.Metrics.Apdex.Abstractions.IProvideApdexMetrics.Instance*
   href: api/App.Metrics.Apdex.Abstractions.IProvideApdexMetrics.html#App_Metrics_Apdex_Abstractions_IProvideApdexMetrics_Instance_
   commentId: Overload:App.Metrics.Apdex.Abstractions.IProvideApdexMetrics.Instance
   name: Instance
   fullName: App.Metrics.Apdex.Abstractions.IProvideApdexMetrics.Instance(App.Metrics.Core.Options.ApdexOptions)
+- uid: App.Metrics.Apdex.Abstractions.IProvideApdexMetrics.Instance``1(App.Metrics.Core.Options.ApdexOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name: Instance<T>(ApdexOptions, MetricTags, Func<T>)
+  href: api/App.Metrics.Apdex.Abstractions.IProvideApdexMetrics.html#App_Metrics_Apdex_Abstractions_IProvideApdexMetrics_Instance__1_App_Metrics_Core_Options_ApdexOptions_App_Metrics_Tagging_MetricTags_System_Func___0__
+  commentId: M:App.Metrics.Apdex.Abstractions.IProvideApdexMetrics.Instance``1(App.Metrics.Core.Options.ApdexOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name.vb: Instance(Of T)(ApdexOptions, MetricTags, Func(Of T))
+  fullName: App.Metrics.Apdex.Abstractions.IProvideApdexMetrics.Instance<T>(App.Metrics.Core.Options.ApdexOptions, App.Metrics.Tagging.MetricTags, System.Func<T>)
+  fullName.vb: App.Metrics.Apdex.Abstractions.IProvideApdexMetrics.Instance(Of T)(App.Metrics.Core.Options.ApdexOptions, App.Metrics.Tagging.MetricTags, System.Func(Of T))
+  nameWithType: IProvideApdexMetrics.Instance<T>(ApdexOptions, MetricTags, Func<T>)
+  nameWithType.vb: Instance(Of T)(ApdexOptions, MetricTags, Func(Of T))
 - uid: App.Metrics.Apdex.Abstractions.IProvideApdexMetrics.Instance``1(App.Metrics.Core.Options.ApdexOptions,System.Func{``0})
   name: Instance<T>(ApdexOptions, Func<T>)
   href: api/App.Metrics.Apdex.Abstractions.IProvideApdexMetrics.html#App_Metrics_Apdex_Abstractions_IProvideApdexMetrics_Instance__1_App_Metrics_Core_Options_ApdexOptions_System_Func___0__
@@ -1337,15 +1375,6 @@ references:
   fullName.vb: App.Metrics.Apdex.ApdexValueSource.ApdexValueSource(System.String, App.Metrics.Core.Abstractions.IMetricValueProvider(Of App.Metrics.Apdex.ApdexValue), App.Metrics.Tagging.MetricTags, System.Boolean)
   nameWithType: ApdexValueSource.ApdexValueSource(String, IMetricValueProvider<ApdexValue>, MetricTags, Boolean)
   nameWithType.vb: ApdexValueSource(String, IMetricValueProvider(Of ApdexValue), MetricTags, Boolean)
-- uid: App.Metrics.Apdex.ApdexValueSource.#ctor(System.String,System.String,App.Metrics.Core.Abstractions.IMetricValueProvider{App.Metrics.Apdex.ApdexValue},App.Metrics.Tagging.MetricTags,System.Boolean)
-  name: ApdexValueSource(String, String, IMetricValueProvider<ApdexValue>, MetricTags, Boolean)
-  href: api/App.Metrics.Apdex.ApdexValueSource.html#App_Metrics_Apdex_ApdexValueSource__ctor_System_String_System_String_App_Metrics_Core_Abstractions_IMetricValueProvider_App_Metrics_Apdex_ApdexValue__App_Metrics_Tagging_MetricTags_System_Boolean_
-  commentId: M:App.Metrics.Apdex.ApdexValueSource.#ctor(System.String,System.String,App.Metrics.Core.Abstractions.IMetricValueProvider{App.Metrics.Apdex.ApdexValue},App.Metrics.Tagging.MetricTags,System.Boolean)
-  name.vb: ApdexValueSource(String, String, IMetricValueProvider(Of ApdexValue), MetricTags, Boolean)
-  fullName: App.Metrics.Apdex.ApdexValueSource.ApdexValueSource(System.String, System.String, App.Metrics.Core.Abstractions.IMetricValueProvider<App.Metrics.Apdex.ApdexValue>, App.Metrics.Tagging.MetricTags, System.Boolean)
-  fullName.vb: App.Metrics.Apdex.ApdexValueSource.ApdexValueSource(System.String, System.String, App.Metrics.Core.Abstractions.IMetricValueProvider(Of App.Metrics.Apdex.ApdexValue), App.Metrics.Tagging.MetricTags, System.Boolean)
-  nameWithType: ApdexValueSource.ApdexValueSource(String, String, IMetricValueProvider<ApdexValue>, MetricTags, Boolean)
-  nameWithType.vb: ApdexValueSource(String, String, IMetricValueProvider(Of ApdexValue), MetricTags, Boolean)
 - uid: App.Metrics.Apdex.ApdexValueSource.#ctor*
   href: api/App.Metrics.Apdex.ApdexValueSource.html#App_Metrics_Apdex_ApdexValueSource__ctor_
   commentId: Overload:App.Metrics.Apdex.ApdexValueSource.#ctor
@@ -1657,11 +1686,26 @@ references:
   commentId: M:App.Metrics.Apdex.DefaultApdexMetricProvider.Instance(App.Metrics.Core.Options.ApdexOptions)
   fullName: App.Metrics.Apdex.DefaultApdexMetricProvider.Instance(App.Metrics.Core.Options.ApdexOptions)
   nameWithType: DefaultApdexMetricProvider.Instance(ApdexOptions)
+- uid: App.Metrics.Apdex.DefaultApdexMetricProvider.Instance(App.Metrics.Core.Options.ApdexOptions,App.Metrics.Tagging.MetricTags)
+  name: Instance(ApdexOptions, MetricTags)
+  href: api/App.Metrics.Apdex.DefaultApdexMetricProvider.html#App_Metrics_Apdex_DefaultApdexMetricProvider_Instance_App_Metrics_Core_Options_ApdexOptions_App_Metrics_Tagging_MetricTags_
+  commentId: M:App.Metrics.Apdex.DefaultApdexMetricProvider.Instance(App.Metrics.Core.Options.ApdexOptions,App.Metrics.Tagging.MetricTags)
+  fullName: App.Metrics.Apdex.DefaultApdexMetricProvider.Instance(App.Metrics.Core.Options.ApdexOptions, App.Metrics.Tagging.MetricTags)
+  nameWithType: DefaultApdexMetricProvider.Instance(ApdexOptions, MetricTags)
 - uid: App.Metrics.Apdex.DefaultApdexMetricProvider.Instance*
   href: api/App.Metrics.Apdex.DefaultApdexMetricProvider.html#App_Metrics_Apdex_DefaultApdexMetricProvider_Instance_
   commentId: Overload:App.Metrics.Apdex.DefaultApdexMetricProvider.Instance
   name: Instance
   fullName: App.Metrics.Apdex.DefaultApdexMetricProvider.Instance(App.Metrics.Core.Options.ApdexOptions)
+- uid: App.Metrics.Apdex.DefaultApdexMetricProvider.Instance``1(App.Metrics.Core.Options.ApdexOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name: Instance<T>(ApdexOptions, MetricTags, Func<T>)
+  href: api/App.Metrics.Apdex.DefaultApdexMetricProvider.html#App_Metrics_Apdex_DefaultApdexMetricProvider_Instance__1_App_Metrics_Core_Options_ApdexOptions_App_Metrics_Tagging_MetricTags_System_Func___0__
+  commentId: M:App.Metrics.Apdex.DefaultApdexMetricProvider.Instance``1(App.Metrics.Core.Options.ApdexOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name.vb: Instance(Of T)(ApdexOptions, MetricTags, Func(Of T))
+  fullName: App.Metrics.Apdex.DefaultApdexMetricProvider.Instance<T>(App.Metrics.Core.Options.ApdexOptions, App.Metrics.Tagging.MetricTags, System.Func<T>)
+  fullName.vb: App.Metrics.Apdex.DefaultApdexMetricProvider.Instance(Of T)(App.Metrics.Core.Options.ApdexOptions, App.Metrics.Tagging.MetricTags, System.Func(Of T))
+  nameWithType: DefaultApdexMetricProvider.Instance<T>(ApdexOptions, MetricTags, Func<T>)
+  nameWithType.vb: Instance(Of T)(ApdexOptions, MetricTags, Func(Of T))
 - uid: App.Metrics.Apdex.DefaultApdexMetricProvider.Instance``1(App.Metrics.Core.Options.ApdexOptions,System.Func{``0})
   name: Instance<T>(ApdexOptions, Func<T>)
   href: api/App.Metrics.Apdex.DefaultApdexMetricProvider.html#App_Metrics_Apdex_DefaultApdexMetricProvider_Instance__1_App_Metrics_Core_Options_ApdexOptions_System_Func___0__
@@ -2265,15 +2309,6 @@ references:
   fullName.vb: App.Metrics.Core.Abstractions.MetricValueSourceBase(Of T).MetricValueSourceBase(System.String, App.Metrics.Core.Abstractions.IMetricValueProvider(Of T), App.Metrics.Unit, App.Metrics.Tagging.MetricTags)
   nameWithType: MetricValueSourceBase<T>.MetricValueSourceBase(String, IMetricValueProvider<T>, Unit, MetricTags)
   nameWithType.vb: MetricValueSourceBase(String, IMetricValueProvider(Of T), Unit, MetricTags)
-- uid: App.Metrics.Core.Abstractions.MetricValueSourceBase`1.#ctor(System.String,System.String,App.Metrics.Core.Abstractions.IMetricValueProvider{`0},App.Metrics.Unit,App.Metrics.Tagging.MetricTags)
-  name: MetricValueSourceBase(String, String, IMetricValueProvider<T>, Unit, MetricTags)
-  href: api/App.Metrics.Core.Abstractions.MetricValueSourceBase-1.html#App_Metrics_Core_Abstractions_MetricValueSourceBase_1__ctor_System_String_System_String_App_Metrics_Core_Abstractions_IMetricValueProvider__0__App_Metrics_Unit_App_Metrics_Tagging_MetricTags_
-  commentId: M:App.Metrics.Core.Abstractions.MetricValueSourceBase`1.#ctor(System.String,System.String,App.Metrics.Core.Abstractions.IMetricValueProvider{`0},App.Metrics.Unit,App.Metrics.Tagging.MetricTags)
-  name.vb: MetricValueSourceBase(String, String, IMetricValueProvider(Of T), Unit, MetricTags)
-  fullName: App.Metrics.Core.Abstractions.MetricValueSourceBase<T>.MetricValueSourceBase(System.String, System.String, App.Metrics.Core.Abstractions.IMetricValueProvider<T>, App.Metrics.Unit, App.Metrics.Tagging.MetricTags)
-  fullName.vb: App.Metrics.Core.Abstractions.MetricValueSourceBase(Of T).MetricValueSourceBase(System.String, System.String, App.Metrics.Core.Abstractions.IMetricValueProvider(Of T), App.Metrics.Unit, App.Metrics.Tagging.MetricTags)
-  nameWithType: MetricValueSourceBase<T>.MetricValueSourceBase(String, String, IMetricValueProvider<T>, Unit, MetricTags)
-  nameWithType.vb: MetricValueSourceBase(String, String, IMetricValueProvider(Of T), Unit, MetricTags)
 - uid: App.Metrics.Core.Abstractions.MetricValueSourceBase`1.#ctor*
   href: api/App.Metrics.Core.Abstractions.MetricValueSourceBase-1.html#App_Metrics_Core_Abstractions_MetricValueSourceBase_1__ctor_
   commentId: Overload:App.Metrics.Core.Abstractions.MetricValueSourceBase`1.#ctor
@@ -2281,18 +2316,31 @@ references:
   name.vb: MetricValueSourceBase
   fullName: App.Metrics.Core.Abstractions.MetricValueSourceBase<T>.MetricValueSourceBase(System.String, App.Metrics.Core.Abstractions.IMetricValueProvider<T>, App.Metrics.Unit, App.Metrics.Tagging.MetricTags)
   fullName.vb: App.Metrics.Core.Abstractions.MetricValueSourceBase
-- uid: App.Metrics.Core.Abstractions.MetricValueSourceBase`1.Group
-  name: Group
-  href: api/App.Metrics.Core.Abstractions.MetricValueSourceBase-1.html#App_Metrics_Core_Abstractions_MetricValueSourceBase_1_Group
-  commentId: P:App.Metrics.Core.Abstractions.MetricValueSourceBase`1.Group
-  fullName: App.Metrics.Core.Abstractions.MetricValueSourceBase<T>.Group
-  fullName.vb: App.Metrics.Core.Abstractions.MetricValueSourceBase(Of T).Group
-  nameWithType: MetricValueSourceBase<T>.Group
-- uid: App.Metrics.Core.Abstractions.MetricValueSourceBase`1.Group*
-  href: api/App.Metrics.Core.Abstractions.MetricValueSourceBase-1.html#App_Metrics_Core_Abstractions_MetricValueSourceBase_1_Group_
-  commentId: Overload:App.Metrics.Core.Abstractions.MetricValueSourceBase`1.Group
-  name: Group
-  fullName: App.Metrics.Core.Abstractions.MetricValueSourceBase<T>.Group
+- uid: App.Metrics.Core.Abstractions.MetricValueSourceBase`1.IsMultidimensional
+  name: IsMultidimensional
+  href: api/App.Metrics.Core.Abstractions.MetricValueSourceBase-1.html#App_Metrics_Core_Abstractions_MetricValueSourceBase_1_IsMultidimensional
+  commentId: P:App.Metrics.Core.Abstractions.MetricValueSourceBase`1.IsMultidimensional
+  fullName: App.Metrics.Core.Abstractions.MetricValueSourceBase<T>.IsMultidimensional
+  fullName.vb: App.Metrics.Core.Abstractions.MetricValueSourceBase(Of T).IsMultidimensional
+  nameWithType: MetricValueSourceBase<T>.IsMultidimensional
+- uid: App.Metrics.Core.Abstractions.MetricValueSourceBase`1.IsMultidimensional*
+  href: api/App.Metrics.Core.Abstractions.MetricValueSourceBase-1.html#App_Metrics_Core_Abstractions_MetricValueSourceBase_1_IsMultidimensional_
+  commentId: Overload:App.Metrics.Core.Abstractions.MetricValueSourceBase`1.IsMultidimensional
+  name: IsMultidimensional
+  fullName: App.Metrics.Core.Abstractions.MetricValueSourceBase<T>.IsMultidimensional
+  fullName.vb: App.Metrics.Core.Abstractions.MetricValueSourceBase
+- uid: App.Metrics.Core.Abstractions.MetricValueSourceBase`1.MultidimensionalName
+  name: MultidimensionalName
+  href: api/App.Metrics.Core.Abstractions.MetricValueSourceBase-1.html#App_Metrics_Core_Abstractions_MetricValueSourceBase_1_MultidimensionalName
+  commentId: P:App.Metrics.Core.Abstractions.MetricValueSourceBase`1.MultidimensionalName
+  fullName: App.Metrics.Core.Abstractions.MetricValueSourceBase<T>.MultidimensionalName
+  fullName.vb: App.Metrics.Core.Abstractions.MetricValueSourceBase(Of T).MultidimensionalName
+  nameWithType: MetricValueSourceBase<T>.MultidimensionalName
+- uid: App.Metrics.Core.Abstractions.MetricValueSourceBase`1.MultidimensionalName*
+  href: api/App.Metrics.Core.Abstractions.MetricValueSourceBase-1.html#App_Metrics_Core_Abstractions_MetricValueSourceBase_1_MultidimensionalName_
+  commentId: Overload:App.Metrics.Core.Abstractions.MetricValueSourceBase`1.MultidimensionalName
+  name: MultidimensionalName
+  fullName: App.Metrics.Core.Abstractions.MetricValueSourceBase<T>.MultidimensionalName
   fullName.vb: App.Metrics.Core.Abstractions.MetricValueSourceBase
 - uid: App.Metrics.Core.Abstractions.MetricValueSourceBase`1.Name
   name: Name
@@ -4535,17 +4583,6 @@ references:
   commentId: Overload:App.Metrics.Core.Options.MetricValueOptionsBase.Context
   name: Context
   fullName: App.Metrics.Core.Options.MetricValueOptionsBase.Context
-- uid: App.Metrics.Core.Options.MetricValueOptionsBase.Group
-  name: Group
-  href: api/App.Metrics.Core.Options.MetricValueOptionsBase.html#App_Metrics_Core_Options_MetricValueOptionsBase_Group
-  commentId: P:App.Metrics.Core.Options.MetricValueOptionsBase.Group
-  fullName: App.Metrics.Core.Options.MetricValueOptionsBase.Group
-  nameWithType: MetricValueOptionsBase.Group
-- uid: App.Metrics.Core.Options.MetricValueOptionsBase.Group*
-  href: api/App.Metrics.Core.Options.MetricValueOptionsBase.html#App_Metrics_Core_Options_MetricValueOptionsBase_Group_
-  commentId: Overload:App.Metrics.Core.Options.MetricValueOptionsBase.Group
-  name: Group
-  fullName: App.Metrics.Core.Options.MetricValueOptionsBase.Group
 - uid: App.Metrics.Core.Options.MetricValueOptionsBase.MeasurementUnit
   name: MeasurementUnit
   href: api/App.Metrics.Core.Options.MetricValueOptionsBase.html#App_Metrics_Core_Options_MetricValueOptionsBase_MeasurementUnit
@@ -5215,6 +5252,30 @@ references:
   commentId: M:App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricSetItem)
   fullName: App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions, App.Metrics.Tagging.MetricSetItem)
   nameWithType: IMeasureCounterMetrics.Decrement(CounterOptions, MetricSetItem)
+- uid: App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricTags)
+  name: Decrement(CounterOptions, MetricTags)
+  href: api/App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.html#App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_App_Metrics_Core_Options_CounterOptions_App_Metrics_Tagging_MetricTags_
+  commentId: M:App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricTags)
+  fullName: App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions, App.Metrics.Tagging.MetricTags)
+  nameWithType: IMeasureCounterMetrics.Decrement(CounterOptions, MetricTags)
+- uid: App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricTags,System.Int64)
+  name: Decrement(CounterOptions, MetricTags, Int64)
+  href: api/App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.html#App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_App_Metrics_Core_Options_CounterOptions_App_Metrics_Tagging_MetricTags_System_Int64_
+  commentId: M:App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricTags,System.Int64)
+  fullName: App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions, App.Metrics.Tagging.MetricTags, System.Int64)
+  nameWithType: IMeasureCounterMetrics.Decrement(CounterOptions, MetricTags, Int64)
+- uid: App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricTags,System.Int64,System.String)
+  name: Decrement(CounterOptions, MetricTags, Int64, String)
+  href: api/App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.html#App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_App_Metrics_Core_Options_CounterOptions_App_Metrics_Tagging_MetricTags_System_Int64_System_String_
+  commentId: M:App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricTags,System.Int64,System.String)
+  fullName: App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions, App.Metrics.Tagging.MetricTags, System.Int64, System.String)
+  nameWithType: IMeasureCounterMetrics.Decrement(CounterOptions, MetricTags, Int64, String)
+- uid: App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricTags,System.String)
+  name: Decrement(CounterOptions, MetricTags, String)
+  href: api/App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.html#App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_App_Metrics_Core_Options_CounterOptions_App_Metrics_Tagging_MetricTags_System_String_
+  commentId: M:App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricTags,System.String)
+  fullName: App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions, App.Metrics.Tagging.MetricTags, System.String)
+  nameWithType: IMeasureCounterMetrics.Decrement(CounterOptions, MetricTags, String)
 - uid: App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Decrement(App.Metrics.Core.Options.CounterOptions,System.Int64)
   name: Decrement(CounterOptions, Int64)
   href: api/App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.html#App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Decrement_App_Metrics_Core_Options_CounterOptions_System_Int64_
@@ -5256,6 +5317,30 @@ references:
   commentId: M:App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricSetItem)
   fullName: App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions, App.Metrics.Tagging.MetricSetItem)
   nameWithType: IMeasureCounterMetrics.Increment(CounterOptions, MetricSetItem)
+- uid: App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricTags)
+  name: Increment(CounterOptions, MetricTags)
+  href: api/App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.html#App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_App_Metrics_Core_Options_CounterOptions_App_Metrics_Tagging_MetricTags_
+  commentId: M:App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricTags)
+  fullName: App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions, App.Metrics.Tagging.MetricTags)
+  nameWithType: IMeasureCounterMetrics.Increment(CounterOptions, MetricTags)
+- uid: App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricTags,System.Int64)
+  name: Increment(CounterOptions, MetricTags, Int64)
+  href: api/App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.html#App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_App_Metrics_Core_Options_CounterOptions_App_Metrics_Tagging_MetricTags_System_Int64_
+  commentId: M:App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricTags,System.Int64)
+  fullName: App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions, App.Metrics.Tagging.MetricTags, System.Int64)
+  nameWithType: IMeasureCounterMetrics.Increment(CounterOptions, MetricTags, Int64)
+- uid: App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricTags,System.Int64,System.String)
+  name: Increment(CounterOptions, MetricTags, Int64, String)
+  href: api/App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.html#App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_App_Metrics_Core_Options_CounterOptions_App_Metrics_Tagging_MetricTags_System_Int64_System_String_
+  commentId: M:App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricTags,System.Int64,System.String)
+  fullName: App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions, App.Metrics.Tagging.MetricTags, System.Int64, System.String)
+  nameWithType: IMeasureCounterMetrics.Increment(CounterOptions, MetricTags, Int64, String)
+- uid: App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricTags,System.String)
+  name: Increment(CounterOptions, MetricTags, String)
+  href: api/App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.html#App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_App_Metrics_Core_Options_CounterOptions_App_Metrics_Tagging_MetricTags_System_String_
+  commentId: M:App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricTags,System.String)
+  fullName: App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions, App.Metrics.Tagging.MetricTags, System.String)
+  nameWithType: IMeasureCounterMetrics.Increment(CounterOptions, MetricTags, String)
 - uid: App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.Increment(App.Metrics.Core.Options.CounterOptions,System.Int64)
   name: Increment(CounterOptions, Int64)
   href: api/App.Metrics.Counter.Abstractions.IMeasureCounterMetrics.html#App_Metrics_Counter_Abstractions_IMeasureCounterMetrics_Increment_App_Metrics_Core_Options_CounterOptions_System_Int64_
@@ -5297,11 +5382,26 @@ references:
   commentId: M:App.Metrics.Counter.Abstractions.IProvideCounterMetrics.Instance(App.Metrics.Core.Options.CounterOptions)
   fullName: App.Metrics.Counter.Abstractions.IProvideCounterMetrics.Instance(App.Metrics.Core.Options.CounterOptions)
   nameWithType: IProvideCounterMetrics.Instance(CounterOptions)
+- uid: App.Metrics.Counter.Abstractions.IProvideCounterMetrics.Instance(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricTags)
+  name: Instance(CounterOptions, MetricTags)
+  href: api/App.Metrics.Counter.Abstractions.IProvideCounterMetrics.html#App_Metrics_Counter_Abstractions_IProvideCounterMetrics_Instance_App_Metrics_Core_Options_CounterOptions_App_Metrics_Tagging_MetricTags_
+  commentId: M:App.Metrics.Counter.Abstractions.IProvideCounterMetrics.Instance(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricTags)
+  fullName: App.Metrics.Counter.Abstractions.IProvideCounterMetrics.Instance(App.Metrics.Core.Options.CounterOptions, App.Metrics.Tagging.MetricTags)
+  nameWithType: IProvideCounterMetrics.Instance(CounterOptions, MetricTags)
 - uid: App.Metrics.Counter.Abstractions.IProvideCounterMetrics.Instance*
   href: api/App.Metrics.Counter.Abstractions.IProvideCounterMetrics.html#App_Metrics_Counter_Abstractions_IProvideCounterMetrics_Instance_
   commentId: Overload:App.Metrics.Counter.Abstractions.IProvideCounterMetrics.Instance
   name: Instance
   fullName: App.Metrics.Counter.Abstractions.IProvideCounterMetrics.Instance(App.Metrics.Core.Options.CounterOptions)
+- uid: App.Metrics.Counter.Abstractions.IProvideCounterMetrics.Instance``1(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name: Instance<T>(CounterOptions, MetricTags, Func<T>)
+  href: api/App.Metrics.Counter.Abstractions.IProvideCounterMetrics.html#App_Metrics_Counter_Abstractions_IProvideCounterMetrics_Instance__1_App_Metrics_Core_Options_CounterOptions_App_Metrics_Tagging_MetricTags_System_Func___0__
+  commentId: M:App.Metrics.Counter.Abstractions.IProvideCounterMetrics.Instance``1(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name.vb: Instance(Of T)(CounterOptions, MetricTags, Func(Of T))
+  fullName: App.Metrics.Counter.Abstractions.IProvideCounterMetrics.Instance<T>(App.Metrics.Core.Options.CounterOptions, App.Metrics.Tagging.MetricTags, System.Func<T>)
+  fullName.vb: App.Metrics.Counter.Abstractions.IProvideCounterMetrics.Instance(Of T)(App.Metrics.Core.Options.CounterOptions, App.Metrics.Tagging.MetricTags, System.Func(Of T))
+  nameWithType: IProvideCounterMetrics.Instance<T>(CounterOptions, MetricTags, Func<T>)
+  nameWithType.vb: Instance(Of T)(CounterOptions, MetricTags, Func(Of T))
 - uid: App.Metrics.Counter.Abstractions.IProvideCounterMetrics.Instance``1(App.Metrics.Core.Options.CounterOptions,System.Func{``0})
   name: Instance<T>(CounterOptions, Func<T>)
   href: api/App.Metrics.Counter.Abstractions.IProvideCounterMetrics.html#App_Metrics_Counter_Abstractions_IProvideCounterMetrics_Instance__1_App_Metrics_Core_Options_CounterOptions_System_Func___0__
@@ -5632,15 +5732,6 @@ references:
   fullName.vb: App.Metrics.Counter.CounterValueSource.CounterValueSource(System.String, App.Metrics.Core.Abstractions.IMetricValueProvider(Of App.Metrics.Counter.CounterValue), App.Metrics.Unit, App.Metrics.Tagging.MetricTags, System.Boolean, System.Boolean, System.Boolean)
   nameWithType: CounterValueSource.CounterValueSource(String, IMetricValueProvider<CounterValue>, Unit, MetricTags, Boolean, Boolean, Boolean)
   nameWithType.vb: CounterValueSource(String, IMetricValueProvider(Of CounterValue), Unit, MetricTags, Boolean, Boolean, Boolean)
-- uid: App.Metrics.Counter.CounterValueSource.#ctor(System.String,System.String,App.Metrics.Core.Abstractions.IMetricValueProvider{App.Metrics.Counter.CounterValue},App.Metrics.Unit,App.Metrics.Tagging.MetricTags,System.Boolean,System.Boolean,System.Boolean)
-  name: CounterValueSource(String, String, IMetricValueProvider<CounterValue>, Unit, MetricTags, Boolean, Boolean, Boolean)
-  href: api/App.Metrics.Counter.CounterValueSource.html#App_Metrics_Counter_CounterValueSource__ctor_System_String_System_String_App_Metrics_Core_Abstractions_IMetricValueProvider_App_Metrics_Counter_CounterValue__App_Metrics_Unit_App_Metrics_Tagging_MetricTags_System_Boolean_System_Boolean_System_Boolean_
-  commentId: M:App.Metrics.Counter.CounterValueSource.#ctor(System.String,System.String,App.Metrics.Core.Abstractions.IMetricValueProvider{App.Metrics.Counter.CounterValue},App.Metrics.Unit,App.Metrics.Tagging.MetricTags,System.Boolean,System.Boolean,System.Boolean)
-  name.vb: CounterValueSource(String, String, IMetricValueProvider(Of CounterValue), Unit, MetricTags, Boolean, Boolean, Boolean)
-  fullName: App.Metrics.Counter.CounterValueSource.CounterValueSource(System.String, System.String, App.Metrics.Core.Abstractions.IMetricValueProvider<App.Metrics.Counter.CounterValue>, App.Metrics.Unit, App.Metrics.Tagging.MetricTags, System.Boolean, System.Boolean, System.Boolean)
-  fullName.vb: App.Metrics.Counter.CounterValueSource.CounterValueSource(System.String, System.String, App.Metrics.Core.Abstractions.IMetricValueProvider(Of App.Metrics.Counter.CounterValue), App.Metrics.Unit, App.Metrics.Tagging.MetricTags, System.Boolean, System.Boolean, System.Boolean)
-  nameWithType: CounterValueSource.CounterValueSource(String, String, IMetricValueProvider<CounterValue>, Unit, MetricTags, Boolean, Boolean, Boolean)
-  nameWithType.vb: CounterValueSource(String, String, IMetricValueProvider(Of CounterValue), Unit, MetricTags, Boolean, Boolean, Boolean)
 - uid: App.Metrics.Counter.CounterValueSource.#ctor*
   href: api/App.Metrics.Counter.CounterValueSource.html#App_Metrics_Counter_CounterValueSource__ctor_
   commentId: Overload:App.Metrics.Counter.CounterValueSource.#ctor
@@ -5899,6 +5990,12 @@ references:
   commentId: M:App.Metrics.Counter.DefaultCounterMetricProvider.Instance(App.Metrics.Core.Options.CounterOptions)
   fullName: App.Metrics.Counter.DefaultCounterMetricProvider.Instance(App.Metrics.Core.Options.CounterOptions)
   nameWithType: DefaultCounterMetricProvider.Instance(CounterOptions)
+- uid: App.Metrics.Counter.DefaultCounterMetricProvider.Instance(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricTags)
+  name: Instance(CounterOptions, MetricTags)
+  href: api/App.Metrics.Counter.DefaultCounterMetricProvider.html#App_Metrics_Counter_DefaultCounterMetricProvider_Instance_App_Metrics_Core_Options_CounterOptions_App_Metrics_Tagging_MetricTags_
+  commentId: M:App.Metrics.Counter.DefaultCounterMetricProvider.Instance(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricTags)
+  fullName: App.Metrics.Counter.DefaultCounterMetricProvider.Instance(App.Metrics.Core.Options.CounterOptions, App.Metrics.Tagging.MetricTags)
+  nameWithType: DefaultCounterMetricProvider.Instance(CounterOptions, MetricTags)
 - uid: App.Metrics.Counter.DefaultCounterMetricProvider.Instance*
   href: api/App.Metrics.Counter.DefaultCounterMetricProvider.html#App_Metrics_Counter_DefaultCounterMetricProvider_Instance_
   commentId: Overload:App.Metrics.Counter.DefaultCounterMetricProvider.Instance
@@ -5906,6 +6003,15 @@ references:
   name.vb: Instance
   fullName: App.Metrics.Counter.DefaultCounterMetricProvider.Instance<T>(App.Metrics.Core.Options.CounterOptions, System.Func<T>)
   fullName.vb: App.Metrics.Counter.DefaultCounterMetricProvider.Instance
+- uid: App.Metrics.Counter.DefaultCounterMetricProvider.Instance``1(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name: Instance<T>(CounterOptions, MetricTags, Func<T>)
+  href: api/App.Metrics.Counter.DefaultCounterMetricProvider.html#App_Metrics_Counter_DefaultCounterMetricProvider_Instance__1_App_Metrics_Core_Options_CounterOptions_App_Metrics_Tagging_MetricTags_System_Func___0__
+  commentId: M:App.Metrics.Counter.DefaultCounterMetricProvider.Instance``1(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name.vb: Instance(Of T)(CounterOptions, MetricTags, Func(Of T))
+  fullName: App.Metrics.Counter.DefaultCounterMetricProvider.Instance<T>(App.Metrics.Core.Options.CounterOptions, App.Metrics.Tagging.MetricTags, System.Func<T>)
+  fullName.vb: App.Metrics.Counter.DefaultCounterMetricProvider.Instance(Of T)(App.Metrics.Core.Options.CounterOptions, App.Metrics.Tagging.MetricTags, System.Func(Of T))
+  nameWithType: DefaultCounterMetricProvider.Instance<T>(CounterOptions, MetricTags, Func<T>)
+  nameWithType.vb: Instance(Of T)(CounterOptions, MetricTags, Func(Of T))
 - uid: App.Metrics.Counter.DefaultCounterMetricProvider.Instance``1(App.Metrics.Core.Options.CounterOptions,System.Func{``0})
   name: Instance<T>(CounterOptions, Func<T>)
   href: api/App.Metrics.Counter.DefaultCounterMetricProvider.html#App_Metrics_Counter_DefaultCounterMetricProvider_Instance__1_App_Metrics_Core_Options_CounterOptions_System_Func___0__
@@ -11625,6 +11731,17 @@ references:
   commentId: Overload:App.Metrics.Formatters.Json.HistogramMetric.StdDev
   name: StdDev
   fullName: App.Metrics.Formatters.Json.HistogramMetric.StdDev
+- uid: App.Metrics.Formatters.Json.HistogramMetric.Sum
+  name: Sum
+  href: api/App.Metrics.Formatters.Json.HistogramMetric.html#App_Metrics_Formatters_Json_HistogramMetric_Sum
+  commentId: P:App.Metrics.Formatters.Json.HistogramMetric.Sum
+  fullName: App.Metrics.Formatters.Json.HistogramMetric.Sum
+  nameWithType: HistogramMetric.Sum
+- uid: App.Metrics.Formatters.Json.HistogramMetric.Sum*
+  href: api/App.Metrics.Formatters.Json.HistogramMetric.html#App_Metrics_Formatters_Json_HistogramMetric_Sum_
+  commentId: Overload:App.Metrics.Formatters.Json.HistogramMetric.Sum
+  name: Sum
+  fullName: App.Metrics.Formatters.Json.HistogramMetric.Sum
 - uid: App.Metrics.Formatters.Json.MeterConverter
   name: MeterConverter
   href: api/App.Metrics.Formatters.Json.MeterConverter.html#App_Metrics_Formatters_Json_MeterConverter
@@ -11836,17 +11953,6 @@ references:
   commentId: T:App.Metrics.Formatters.Json.MetricBase
   fullName: App.Metrics.Formatters.Json.MetricBase
   nameWithType: MetricBase
-- uid: App.Metrics.Formatters.Json.MetricBase.Group
-  name: Group
-  href: api/App.Metrics.Formatters.Json.MetricBase.html#App_Metrics_Formatters_Json_MetricBase_Group
-  commentId: P:App.Metrics.Formatters.Json.MetricBase.Group
-  fullName: App.Metrics.Formatters.Json.MetricBase.Group
-  nameWithType: MetricBase.Group
-- uid: App.Metrics.Formatters.Json.MetricBase.Group*
-  href: api/App.Metrics.Formatters.Json.MetricBase.html#App_Metrics_Formatters_Json_MetricBase_Group_
-  commentId: Overload:App.Metrics.Formatters.Json.MetricBase.Group
-  name: Group
-  fullName: App.Metrics.Formatters.Json.MetricBase.Group
 - uid: App.Metrics.Formatters.Json.MetricBase.Name
   name: Name
   href: api/App.Metrics.Formatters.Json.MetricBase.html#App_Metrics_Formatters_Json_MetricBase_Name
@@ -12637,6 +12743,17 @@ references:
   commentId: Overload:App.Metrics.Formatters.Json.TimerMetric.HistogramData.StdDev
   name: StdDev
   fullName: App.Metrics.Formatters.Json.TimerMetric.HistogramData.StdDev
+- uid: App.Metrics.Formatters.Json.TimerMetric.HistogramData.Sum
+  name: Sum
+  href: api/App.Metrics.Formatters.Json.TimerMetric.HistogramData.html#App_Metrics_Formatters_Json_TimerMetric_HistogramData_Sum
+  commentId: P:App.Metrics.Formatters.Json.TimerMetric.HistogramData.Sum
+  fullName: App.Metrics.Formatters.Json.TimerMetric.HistogramData.Sum
+  nameWithType: TimerMetric.HistogramData.Sum
+- uid: App.Metrics.Formatters.Json.TimerMetric.HistogramData.Sum*
+  href: api/App.Metrics.Formatters.Json.TimerMetric.HistogramData.html#App_Metrics_Formatters_Json_TimerMetric_HistogramData_Sum_
+  commentId: Overload:App.Metrics.Formatters.Json.TimerMetric.HistogramData.Sum
+  name: Sum
+  fullName: App.Metrics.Formatters.Json.TimerMetric.HistogramData.Sum
 - uid: App.Metrics.Formatters.Json.TimerMetric.Rate
   name: Rate
   href: api/App.Metrics.Formatters.Json.TimerMetric.html#App_Metrics_Formatters_Json_TimerMetric_Rate
@@ -12709,17 +12826,6 @@ references:
   commentId: Overload:App.Metrics.Formatters.Json.TimerMetric.RateUnit
   name: RateUnit
   fullName: App.Metrics.Formatters.Json.TimerMetric.RateUnit
-- uid: App.Metrics.Formatters.Json.TimerMetric.TotalTime
-  name: TotalTime
-  href: api/App.Metrics.Formatters.Json.TimerMetric.html#App_Metrics_Formatters_Json_TimerMetric_TotalTime
-  commentId: P:App.Metrics.Formatters.Json.TimerMetric.TotalTime
-  fullName: App.Metrics.Formatters.Json.TimerMetric.TotalTime
-  nameWithType: TimerMetric.TotalTime
-- uid: App.Metrics.Formatters.Json.TimerMetric.TotalTime*
-  href: api/App.Metrics.Formatters.Json.TimerMetric.html#App_Metrics_Formatters_Json_TimerMetric_TotalTime_
-  commentId: Overload:App.Metrics.Formatters.Json.TimerMetric.TotalTime
-  name: TotalTime
-  fullName: App.Metrics.Formatters.Json.TimerMetric.TotalTime
 - uid: App.Metrics.Formatting.Humanize
   name: App.Metrics.Formatting.Humanize
   href: api/App.Metrics.Formatting.Humanize.html#App_Metrics_Formatting_Humanize
@@ -13200,6 +13306,21 @@ references:
   commentId: T:App.Metrics.Gauge.Abstractions.IBuildGaugeMetrics
   fullName: App.Metrics.Gauge.Abstractions.IBuildGaugeMetrics
   nameWithType: IBuildGaugeMetrics
+- uid: App.Metrics.Gauge.Abstractions.IBuildGaugeMetrics.Build
+  name: Build()
+  href: api/App.Metrics.Gauge.Abstractions.IBuildGaugeMetrics.html#App_Metrics_Gauge_Abstractions_IBuildGaugeMetrics_Build
+  commentId: M:App.Metrics.Gauge.Abstractions.IBuildGaugeMetrics.Build
+  fullName: App.Metrics.Gauge.Abstractions.IBuildGaugeMetrics.Build()
+  nameWithType: IBuildGaugeMetrics.Build()
+- uid: App.Metrics.Gauge.Abstractions.IBuildGaugeMetrics.Build(System.Func{App.Metrics.Core.Abstractions.IMetricValueProvider{System.Double}})
+  name: Build(Func<IMetricValueProvider<Double>>)
+  href: api/App.Metrics.Gauge.Abstractions.IBuildGaugeMetrics.html#App_Metrics_Gauge_Abstractions_IBuildGaugeMetrics_Build_System_Func_App_Metrics_Core_Abstractions_IMetricValueProvider_System_Double___
+  commentId: M:App.Metrics.Gauge.Abstractions.IBuildGaugeMetrics.Build(System.Func{App.Metrics.Core.Abstractions.IMetricValueProvider{System.Double}})
+  name.vb: Build(Func(Of IMetricValueProvider(Of Double)))
+  fullName: App.Metrics.Gauge.Abstractions.IBuildGaugeMetrics.Build(System.Func<App.Metrics.Core.Abstractions.IMetricValueProvider<System.Double>>)
+  fullName.vb: App.Metrics.Gauge.Abstractions.IBuildGaugeMetrics.Build(System.Func(Of App.Metrics.Core.Abstractions.IMetricValueProvider(Of System.Double)))
+  nameWithType: IBuildGaugeMetrics.Build(Func<IMetricValueProvider<Double>>)
+  nameWithType.vb: Build(Func(Of IMetricValueProvider(Of Double)))
 - uid: App.Metrics.Gauge.Abstractions.IBuildGaugeMetrics.Build(System.Func{System.Double})
   name: Build(Func<Double>)
   href: api/App.Metrics.Gauge.Abstractions.IBuildGaugeMetrics.html#App_Metrics_Gauge_Abstractions_IBuildGaugeMetrics_Build_System_Func_System_Double__
@@ -13216,12 +13337,51 @@ references:
   name.vb: Build
   fullName: App.Metrics.Gauge.Abstractions.IBuildGaugeMetrics.Build(System.Func<System.Double>)
   fullName.vb: App.Metrics.Gauge.Abstractions.IBuildGaugeMetrics.Build
+- uid: App.Metrics.Gauge.Abstractions.IBuildGaugeMetrics.Build``1(System.Func{``0})
+  name: Build<T>(Func<T>)
+  href: api/App.Metrics.Gauge.Abstractions.IBuildGaugeMetrics.html#App_Metrics_Gauge_Abstractions_IBuildGaugeMetrics_Build__1_System_Func___0__
+  commentId: M:App.Metrics.Gauge.Abstractions.IBuildGaugeMetrics.Build``1(System.Func{``0})
+  name.vb: Build(Of T)(Func(Of T))
+  fullName: App.Metrics.Gauge.Abstractions.IBuildGaugeMetrics.Build<T>(System.Func<T>)
+  fullName.vb: App.Metrics.Gauge.Abstractions.IBuildGaugeMetrics.Build(Of T)(System.Func(Of T))
+  nameWithType: IBuildGaugeMetrics.Build<T>(Func<T>)
+  nameWithType.vb: Build(Of T)(Func(Of T))
 - uid: App.Metrics.Gauge.Abstractions.IMeasureGaugeMetrics
   name: IMeasureGaugeMetrics
   href: api/App.Metrics.Gauge.Abstractions.IMeasureGaugeMetrics.html#App_Metrics_Gauge_Abstractions_IMeasureGaugeMetrics
   commentId: T:App.Metrics.Gauge.Abstractions.IMeasureGaugeMetrics
   fullName: App.Metrics.Gauge.Abstractions.IMeasureGaugeMetrics
   nameWithType: IMeasureGaugeMetrics
+- uid: App.Metrics.Gauge.Abstractions.IMeasureGaugeMetrics.SetValue(App.Metrics.Core.Options.GaugeOptions,App.Metrics.Tagging.MetricTags,System.Double)
+  name: SetValue(GaugeOptions, MetricTags, Double)
+  href: api/App.Metrics.Gauge.Abstractions.IMeasureGaugeMetrics.html#App_Metrics_Gauge_Abstractions_IMeasureGaugeMetrics_SetValue_App_Metrics_Core_Options_GaugeOptions_App_Metrics_Tagging_MetricTags_System_Double_
+  commentId: M:App.Metrics.Gauge.Abstractions.IMeasureGaugeMetrics.SetValue(App.Metrics.Core.Options.GaugeOptions,App.Metrics.Tagging.MetricTags,System.Double)
+  fullName: App.Metrics.Gauge.Abstractions.IMeasureGaugeMetrics.SetValue(App.Metrics.Core.Options.GaugeOptions, App.Metrics.Tagging.MetricTags, System.Double)
+  nameWithType: IMeasureGaugeMetrics.SetValue(GaugeOptions, MetricTags, Double)
+- uid: App.Metrics.Gauge.Abstractions.IMeasureGaugeMetrics.SetValue(App.Metrics.Core.Options.GaugeOptions,App.Metrics.Tagging.MetricTags,System.Func{App.Metrics.Core.Abstractions.IMetricValueProvider{System.Double}})
+  name: SetValue(GaugeOptions, MetricTags, Func<IMetricValueProvider<Double>>)
+  href: api/App.Metrics.Gauge.Abstractions.IMeasureGaugeMetrics.html#App_Metrics_Gauge_Abstractions_IMeasureGaugeMetrics_SetValue_App_Metrics_Core_Options_GaugeOptions_App_Metrics_Tagging_MetricTags_System_Func_App_Metrics_Core_Abstractions_IMetricValueProvider_System_Double___
+  commentId: M:App.Metrics.Gauge.Abstractions.IMeasureGaugeMetrics.SetValue(App.Metrics.Core.Options.GaugeOptions,App.Metrics.Tagging.MetricTags,System.Func{App.Metrics.Core.Abstractions.IMetricValueProvider{System.Double}})
+  name.vb: SetValue(GaugeOptions, MetricTags, Func(Of IMetricValueProvider(Of Double)))
+  fullName: App.Metrics.Gauge.Abstractions.IMeasureGaugeMetrics.SetValue(App.Metrics.Core.Options.GaugeOptions, App.Metrics.Tagging.MetricTags, System.Func<App.Metrics.Core.Abstractions.IMetricValueProvider<System.Double>>)
+  fullName.vb: App.Metrics.Gauge.Abstractions.IMeasureGaugeMetrics.SetValue(App.Metrics.Core.Options.GaugeOptions, App.Metrics.Tagging.MetricTags, System.Func(Of App.Metrics.Core.Abstractions.IMetricValueProvider(Of System.Double)))
+  nameWithType: IMeasureGaugeMetrics.SetValue(GaugeOptions, MetricTags, Func<IMetricValueProvider<Double>>)
+  nameWithType.vb: SetValue(GaugeOptions, MetricTags, Func(Of IMetricValueProvider(Of Double)))
+- uid: App.Metrics.Gauge.Abstractions.IMeasureGaugeMetrics.SetValue(App.Metrics.Core.Options.GaugeOptions,App.Metrics.Tagging.MetricTags,System.Func{System.Double})
+  name: SetValue(GaugeOptions, MetricTags, Func<Double>)
+  href: api/App.Metrics.Gauge.Abstractions.IMeasureGaugeMetrics.html#App_Metrics_Gauge_Abstractions_IMeasureGaugeMetrics_SetValue_App_Metrics_Core_Options_GaugeOptions_App_Metrics_Tagging_MetricTags_System_Func_System_Double__
+  commentId: M:App.Metrics.Gauge.Abstractions.IMeasureGaugeMetrics.SetValue(App.Metrics.Core.Options.GaugeOptions,App.Metrics.Tagging.MetricTags,System.Func{System.Double})
+  name.vb: SetValue(GaugeOptions, MetricTags, Func(Of Double))
+  fullName: App.Metrics.Gauge.Abstractions.IMeasureGaugeMetrics.SetValue(App.Metrics.Core.Options.GaugeOptions, App.Metrics.Tagging.MetricTags, System.Func<System.Double>)
+  fullName.vb: App.Metrics.Gauge.Abstractions.IMeasureGaugeMetrics.SetValue(App.Metrics.Core.Options.GaugeOptions, App.Metrics.Tagging.MetricTags, System.Func(Of System.Double))
+  nameWithType: IMeasureGaugeMetrics.SetValue(GaugeOptions, MetricTags, Func<Double>)
+  nameWithType.vb: SetValue(GaugeOptions, MetricTags, Func(Of Double))
+- uid: App.Metrics.Gauge.Abstractions.IMeasureGaugeMetrics.SetValue(App.Metrics.Core.Options.GaugeOptions,System.Double)
+  name: SetValue(GaugeOptions, Double)
+  href: api/App.Metrics.Gauge.Abstractions.IMeasureGaugeMetrics.html#App_Metrics_Gauge_Abstractions_IMeasureGaugeMetrics_SetValue_App_Metrics_Core_Options_GaugeOptions_System_Double_
+  commentId: M:App.Metrics.Gauge.Abstractions.IMeasureGaugeMetrics.SetValue(App.Metrics.Core.Options.GaugeOptions,System.Double)
+  fullName: App.Metrics.Gauge.Abstractions.IMeasureGaugeMetrics.SetValue(App.Metrics.Core.Options.GaugeOptions, System.Double)
+  nameWithType: IMeasureGaugeMetrics.SetValue(GaugeOptions, Double)
 - uid: App.Metrics.Gauge.Abstractions.IMeasureGaugeMetrics.SetValue(App.Metrics.Core.Options.GaugeOptions,System.Func{App.Metrics.Core.Abstractions.IMetricValueProvider{System.Double}})
   name: SetValue(GaugeOptions, Func<IMetricValueProvider<Double>>)
   href: api/App.Metrics.Gauge.Abstractions.IMeasureGaugeMetrics.html#App_Metrics_Gauge_Abstractions_IMeasureGaugeMetrics_SetValue_App_Metrics_Core_Options_GaugeOptions_System_Func_App_Metrics_Core_Abstractions_IMetricValueProvider_System_Double___
@@ -13245,7 +13405,7 @@ references:
   commentId: Overload:App.Metrics.Gauge.Abstractions.IMeasureGaugeMetrics.SetValue
   name: SetValue
   name.vb: SetValue
-  fullName: App.Metrics.Gauge.Abstractions.IMeasureGaugeMetrics.SetValue(App.Metrics.Core.Options.GaugeOptions, System.Func<App.Metrics.Core.Abstractions.IMetricValueProvider<System.Double>>)
+  fullName: App.Metrics.Gauge.Abstractions.IMeasureGaugeMetrics.SetValue(App.Metrics.Core.Options.GaugeOptions, System.Func<System.Double>)
   fullName.vb: App.Metrics.Gauge.Abstractions.IMeasureGaugeMetrics.SetValue
 - uid: App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics
   name: IProvideGaugeMetrics
@@ -13253,28 +13413,62 @@ references:
   commentId: T:App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics
   fullName: App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics
   nameWithType: IProvideGaugeMetrics
-- uid: App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.Instance(App.Metrics.Core.Options.GaugeOptions,System.Func{App.Metrics.Core.Abstractions.IMetricValueProvider{System.Double}})
-  name: Instance(GaugeOptions, Func<IMetricValueProvider<Double>>)
-  href: api/App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.html#App_Metrics_Gauge_Abstractions_IProvideGaugeMetrics_Instance_App_Metrics_Core_Options_GaugeOptions_System_Func_App_Metrics_Core_Abstractions_IMetricValueProvider_System_Double___
-  commentId: M:App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.Instance(App.Metrics.Core.Options.GaugeOptions,System.Func{App.Metrics.Core.Abstractions.IMetricValueProvider{System.Double}})
-  name.vb: Instance(GaugeOptions, Func(Of IMetricValueProvider(Of Double)))
-  fullName: App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.Instance(App.Metrics.Core.Options.GaugeOptions, System.Func<App.Metrics.Core.Abstractions.IMetricValueProvider<System.Double>>)
-  fullName.vb: App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.Instance(App.Metrics.Core.Options.GaugeOptions, System.Func(Of App.Metrics.Core.Abstractions.IMetricValueProvider(Of System.Double)))
-  nameWithType: IProvideGaugeMetrics.Instance(GaugeOptions, Func<IMetricValueProvider<Double>>)
-  nameWithType.vb: Instance(GaugeOptions, Func(Of IMetricValueProvider(Of Double)))
+- uid: App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.Instance(App.Metrics.Core.Options.GaugeOptions)
+  name: Instance(GaugeOptions)
+  href: api/App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.html#App_Metrics_Gauge_Abstractions_IProvideGaugeMetrics_Instance_App_Metrics_Core_Options_GaugeOptions_
+  commentId: M:App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.Instance(App.Metrics.Core.Options.GaugeOptions)
+  fullName: App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.Instance(App.Metrics.Core.Options.GaugeOptions)
+  nameWithType: IProvideGaugeMetrics.Instance(GaugeOptions)
+- uid: App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.Instance(App.Metrics.Core.Options.GaugeOptions,App.Metrics.Tagging.MetricTags)
+  name: Instance(GaugeOptions, MetricTags)
+  href: api/App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.html#App_Metrics_Gauge_Abstractions_IProvideGaugeMetrics_Instance_App_Metrics_Core_Options_GaugeOptions_App_Metrics_Tagging_MetricTags_
+  commentId: M:App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.Instance(App.Metrics.Core.Options.GaugeOptions,App.Metrics.Tagging.MetricTags)
+  fullName: App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.Instance(App.Metrics.Core.Options.GaugeOptions, App.Metrics.Tagging.MetricTags)
+  nameWithType: IProvideGaugeMetrics.Instance(GaugeOptions, MetricTags)
 - uid: App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.Instance*
   href: api/App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.html#App_Metrics_Gauge_Abstractions_IProvideGaugeMetrics_Instance_
   commentId: Overload:App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.Instance
   name: Instance
-  name.vb: Instance
-  fullName: App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.Instance(App.Metrics.Core.Options.GaugeOptions, System.Func<App.Metrics.Core.Abstractions.IMetricValueProvider<System.Double>>)
-  fullName.vb: App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.Instance
+  fullName: App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.Instance(App.Metrics.Core.Options.GaugeOptions)
+- uid: App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.Instance``1(App.Metrics.Core.Options.GaugeOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name: Instance<T>(GaugeOptions, MetricTags, Func<T>)
+  href: api/App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.html#App_Metrics_Gauge_Abstractions_IProvideGaugeMetrics_Instance__1_App_Metrics_Core_Options_GaugeOptions_App_Metrics_Tagging_MetricTags_System_Func___0__
+  commentId: M:App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.Instance``1(App.Metrics.Core.Options.GaugeOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name.vb: Instance(Of T)(GaugeOptions, MetricTags, Func(Of T))
+  fullName: App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.Instance<T>(App.Metrics.Core.Options.GaugeOptions, App.Metrics.Tagging.MetricTags, System.Func<T>)
+  fullName.vb: App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.Instance(Of T)(App.Metrics.Core.Options.GaugeOptions, App.Metrics.Tagging.MetricTags, System.Func(Of T))
+  nameWithType: IProvideGaugeMetrics.Instance<T>(GaugeOptions, MetricTags, Func<T>)
+  nameWithType.vb: Instance(Of T)(GaugeOptions, MetricTags, Func(Of T))
+- uid: App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.Instance``1(App.Metrics.Core.Options.GaugeOptions,System.Func{``0})
+  name: Instance<T>(GaugeOptions, Func<T>)
+  href: api/App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.html#App_Metrics_Gauge_Abstractions_IProvideGaugeMetrics_Instance__1_App_Metrics_Core_Options_GaugeOptions_System_Func___0__
+  commentId: M:App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.Instance``1(App.Metrics.Core.Options.GaugeOptions,System.Func{``0})
+  name.vb: Instance(Of T)(GaugeOptions, Func(Of T))
+  fullName: App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.Instance<T>(App.Metrics.Core.Options.GaugeOptions, System.Func<T>)
+  fullName.vb: App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.Instance(Of T)(App.Metrics.Core.Options.GaugeOptions, System.Func(Of T))
+  nameWithType: IProvideGaugeMetrics.Instance<T>(GaugeOptions, Func<T>)
+  nameWithType.vb: Instance(Of T)(GaugeOptions, Func(Of T))
 - uid: App.Metrics.Gauge.DefaultGaugeBuilder
   name: DefaultGaugeBuilder
   href: api/App.Metrics.Gauge.DefaultGaugeBuilder.html#App_Metrics_Gauge_DefaultGaugeBuilder
   commentId: T:App.Metrics.Gauge.DefaultGaugeBuilder
   fullName: App.Metrics.Gauge.DefaultGaugeBuilder
   nameWithType: DefaultGaugeBuilder
+- uid: App.Metrics.Gauge.DefaultGaugeBuilder.Build
+  name: Build()
+  href: api/App.Metrics.Gauge.DefaultGaugeBuilder.html#App_Metrics_Gauge_DefaultGaugeBuilder_Build
+  commentId: M:App.Metrics.Gauge.DefaultGaugeBuilder.Build
+  fullName: App.Metrics.Gauge.DefaultGaugeBuilder.Build()
+  nameWithType: DefaultGaugeBuilder.Build()
+- uid: App.Metrics.Gauge.DefaultGaugeBuilder.Build(System.Func{App.Metrics.Core.Abstractions.IMetricValueProvider{System.Double}})
+  name: Build(Func<IMetricValueProvider<Double>>)
+  href: api/App.Metrics.Gauge.DefaultGaugeBuilder.html#App_Metrics_Gauge_DefaultGaugeBuilder_Build_System_Func_App_Metrics_Core_Abstractions_IMetricValueProvider_System_Double___
+  commentId: M:App.Metrics.Gauge.DefaultGaugeBuilder.Build(System.Func{App.Metrics.Core.Abstractions.IMetricValueProvider{System.Double}})
+  name.vb: Build(Func(Of IMetricValueProvider(Of Double)))
+  fullName: App.Metrics.Gauge.DefaultGaugeBuilder.Build(System.Func<App.Metrics.Core.Abstractions.IMetricValueProvider<System.Double>>)
+  fullName.vb: App.Metrics.Gauge.DefaultGaugeBuilder.Build(System.Func(Of App.Metrics.Core.Abstractions.IMetricValueProvider(Of System.Double)))
+  nameWithType: DefaultGaugeBuilder.Build(Func<IMetricValueProvider<Double>>)
+  nameWithType.vb: Build(Func(Of IMetricValueProvider(Of Double)))
 - uid: App.Metrics.Gauge.DefaultGaugeBuilder.Build(System.Func{System.Double})
   name: Build(Func<Double>)
   href: api/App.Metrics.Gauge.DefaultGaugeBuilder.html#App_Metrics_Gauge_DefaultGaugeBuilder_Build_System_Func_System_Double__
@@ -13291,39 +13485,67 @@ references:
   name.vb: Build
   fullName: App.Metrics.Gauge.DefaultGaugeBuilder.Build(System.Func<System.Double>)
   fullName.vb: App.Metrics.Gauge.DefaultGaugeBuilder.Build
+- uid: App.Metrics.Gauge.DefaultGaugeBuilder.Build``1(System.Func{``0})
+  name: Build<T>(Func<T>)
+  href: api/App.Metrics.Gauge.DefaultGaugeBuilder.html#App_Metrics_Gauge_DefaultGaugeBuilder_Build__1_System_Func___0__
+  commentId: M:App.Metrics.Gauge.DefaultGaugeBuilder.Build``1(System.Func{``0})
+  name.vb: Build(Of T)(Func(Of T))
+  fullName: App.Metrics.Gauge.DefaultGaugeBuilder.Build<T>(System.Func<T>)
+  fullName.vb: App.Metrics.Gauge.DefaultGaugeBuilder.Build(Of T)(System.Func(Of T))
+  nameWithType: DefaultGaugeBuilder.Build<T>(Func<T>)
+  nameWithType.vb: Build(Of T)(Func(Of T))
 - uid: App.Metrics.Gauge.DefaultGaugeMetricProvider
   name: DefaultGaugeMetricProvider
   href: api/App.Metrics.Gauge.DefaultGaugeMetricProvider.html#App_Metrics_Gauge_DefaultGaugeMetricProvider
   commentId: T:App.Metrics.Gauge.DefaultGaugeMetricProvider
   fullName: App.Metrics.Gauge.DefaultGaugeMetricProvider
   nameWithType: DefaultGaugeMetricProvider
-- uid: App.Metrics.Gauge.DefaultGaugeMetricProvider.#ctor(App.Metrics.Registry.Abstractions.IMetricsRegistry)
-  name: DefaultGaugeMetricProvider(IMetricsRegistry)
-  href: api/App.Metrics.Gauge.DefaultGaugeMetricProvider.html#App_Metrics_Gauge_DefaultGaugeMetricProvider__ctor_App_Metrics_Registry_Abstractions_IMetricsRegistry_
-  commentId: M:App.Metrics.Gauge.DefaultGaugeMetricProvider.#ctor(App.Metrics.Registry.Abstractions.IMetricsRegistry)
-  fullName: App.Metrics.Gauge.DefaultGaugeMetricProvider.DefaultGaugeMetricProvider(App.Metrics.Registry.Abstractions.IMetricsRegistry)
-  nameWithType: DefaultGaugeMetricProvider.DefaultGaugeMetricProvider(IMetricsRegistry)
+- uid: App.Metrics.Gauge.DefaultGaugeMetricProvider.#ctor(App.Metrics.Gauge.Abstractions.IBuildGaugeMetrics,App.Metrics.Registry.Abstractions.IMetricsRegistry)
+  name: DefaultGaugeMetricProvider(IBuildGaugeMetrics, IMetricsRegistry)
+  href: api/App.Metrics.Gauge.DefaultGaugeMetricProvider.html#App_Metrics_Gauge_DefaultGaugeMetricProvider__ctor_App_Metrics_Gauge_Abstractions_IBuildGaugeMetrics_App_Metrics_Registry_Abstractions_IMetricsRegistry_
+  commentId: M:App.Metrics.Gauge.DefaultGaugeMetricProvider.#ctor(App.Metrics.Gauge.Abstractions.IBuildGaugeMetrics,App.Metrics.Registry.Abstractions.IMetricsRegistry)
+  fullName: App.Metrics.Gauge.DefaultGaugeMetricProvider.DefaultGaugeMetricProvider(App.Metrics.Gauge.Abstractions.IBuildGaugeMetrics, App.Metrics.Registry.Abstractions.IMetricsRegistry)
+  nameWithType: DefaultGaugeMetricProvider.DefaultGaugeMetricProvider(IBuildGaugeMetrics, IMetricsRegistry)
 - uid: App.Metrics.Gauge.DefaultGaugeMetricProvider.#ctor*
   href: api/App.Metrics.Gauge.DefaultGaugeMetricProvider.html#App_Metrics_Gauge_DefaultGaugeMetricProvider__ctor_
   commentId: Overload:App.Metrics.Gauge.DefaultGaugeMetricProvider.#ctor
   name: DefaultGaugeMetricProvider
-  fullName: App.Metrics.Gauge.DefaultGaugeMetricProvider.DefaultGaugeMetricProvider(App.Metrics.Registry.Abstractions.IMetricsRegistry)
-- uid: App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance(App.Metrics.Core.Options.GaugeOptions,System.Func{App.Metrics.Core.Abstractions.IMetricValueProvider{System.Double}})
-  name: Instance(GaugeOptions, Func<IMetricValueProvider<Double>>)
-  href: api/App.Metrics.Gauge.DefaultGaugeMetricProvider.html#App_Metrics_Gauge_DefaultGaugeMetricProvider_Instance_App_Metrics_Core_Options_GaugeOptions_System_Func_App_Metrics_Core_Abstractions_IMetricValueProvider_System_Double___
-  commentId: M:App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance(App.Metrics.Core.Options.GaugeOptions,System.Func{App.Metrics.Core.Abstractions.IMetricValueProvider{System.Double}})
-  name.vb: Instance(GaugeOptions, Func(Of IMetricValueProvider(Of Double)))
-  fullName: App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance(App.Metrics.Core.Options.GaugeOptions, System.Func<App.Metrics.Core.Abstractions.IMetricValueProvider<System.Double>>)
-  fullName.vb: App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance(App.Metrics.Core.Options.GaugeOptions, System.Func(Of App.Metrics.Core.Abstractions.IMetricValueProvider(Of System.Double)))
-  nameWithType: DefaultGaugeMetricProvider.Instance(GaugeOptions, Func<IMetricValueProvider<Double>>)
-  nameWithType.vb: Instance(GaugeOptions, Func(Of IMetricValueProvider(Of Double)))
+  fullName: App.Metrics.Gauge.DefaultGaugeMetricProvider.DefaultGaugeMetricProvider(App.Metrics.Gauge.Abstractions.IBuildGaugeMetrics, App.Metrics.Registry.Abstractions.IMetricsRegistry)
+- uid: App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance(App.Metrics.Core.Options.GaugeOptions)
+  name: Instance(GaugeOptions)
+  href: api/App.Metrics.Gauge.DefaultGaugeMetricProvider.html#App_Metrics_Gauge_DefaultGaugeMetricProvider_Instance_App_Metrics_Core_Options_GaugeOptions_
+  commentId: M:App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance(App.Metrics.Core.Options.GaugeOptions)
+  fullName: App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance(App.Metrics.Core.Options.GaugeOptions)
+  nameWithType: DefaultGaugeMetricProvider.Instance(GaugeOptions)
+- uid: App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance(App.Metrics.Core.Options.GaugeOptions,App.Metrics.Tagging.MetricTags)
+  name: Instance(GaugeOptions, MetricTags)
+  href: api/App.Metrics.Gauge.DefaultGaugeMetricProvider.html#App_Metrics_Gauge_DefaultGaugeMetricProvider_Instance_App_Metrics_Core_Options_GaugeOptions_App_Metrics_Tagging_MetricTags_
+  commentId: M:App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance(App.Metrics.Core.Options.GaugeOptions,App.Metrics.Tagging.MetricTags)
+  fullName: App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance(App.Metrics.Core.Options.GaugeOptions, App.Metrics.Tagging.MetricTags)
+  nameWithType: DefaultGaugeMetricProvider.Instance(GaugeOptions, MetricTags)
 - uid: App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance*
   href: api/App.Metrics.Gauge.DefaultGaugeMetricProvider.html#App_Metrics_Gauge_DefaultGaugeMetricProvider_Instance_
   commentId: Overload:App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance
   name: Instance
-  name.vb: Instance
-  fullName: App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance(App.Metrics.Core.Options.GaugeOptions, System.Func<App.Metrics.Core.Abstractions.IMetricValueProvider<System.Double>>)
-  fullName.vb: App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance
+  fullName: App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance(App.Metrics.Core.Options.GaugeOptions)
+- uid: App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance``1(App.Metrics.Core.Options.GaugeOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name: Instance<T>(GaugeOptions, MetricTags, Func<T>)
+  href: api/App.Metrics.Gauge.DefaultGaugeMetricProvider.html#App_Metrics_Gauge_DefaultGaugeMetricProvider_Instance__1_App_Metrics_Core_Options_GaugeOptions_App_Metrics_Tagging_MetricTags_System_Func___0__
+  commentId: M:App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance``1(App.Metrics.Core.Options.GaugeOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name.vb: Instance(Of T)(GaugeOptions, MetricTags, Func(Of T))
+  fullName: App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance<T>(App.Metrics.Core.Options.GaugeOptions, App.Metrics.Tagging.MetricTags, System.Func<T>)
+  fullName.vb: App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance(Of T)(App.Metrics.Core.Options.GaugeOptions, App.Metrics.Tagging.MetricTags, System.Func(Of T))
+  nameWithType: DefaultGaugeMetricProvider.Instance<T>(GaugeOptions, MetricTags, Func<T>)
+  nameWithType.vb: Instance(Of T)(GaugeOptions, MetricTags, Func(Of T))
+- uid: App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance``1(App.Metrics.Core.Options.GaugeOptions,System.Func{``0})
+  name: Instance<T>(GaugeOptions, Func<T>)
+  href: api/App.Metrics.Gauge.DefaultGaugeMetricProvider.html#App_Metrics_Gauge_DefaultGaugeMetricProvider_Instance__1_App_Metrics_Core_Options_GaugeOptions_System_Func___0__
+  commentId: M:App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance``1(App.Metrics.Core.Options.GaugeOptions,System.Func{``0})
+  name.vb: Instance(Of T)(GaugeOptions, Func(Of T))
+  fullName: App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance<T>(App.Metrics.Core.Options.GaugeOptions, System.Func<T>)
+  fullName.vb: App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance(Of T)(App.Metrics.Core.Options.GaugeOptions, System.Func(Of T))
+  nameWithType: DefaultGaugeMetricProvider.Instance<T>(GaugeOptions, Func<T>)
+  nameWithType.vb: Instance(Of T)(GaugeOptions, Func(Of T))
 - uid: App.Metrics.Gauge.DerivedGauge
   name: DerivedGauge
   href: api/App.Metrics.Gauge.DerivedGauge.html#App_Metrics_Gauge_DerivedGauge
@@ -13357,6 +13579,28 @@ references:
   commentId: Overload:App.Metrics.Gauge.DerivedGauge.GetValue
   name: GetValue
   fullName: App.Metrics.Gauge.DerivedGauge.GetValue(System.Boolean)
+- uid: App.Metrics.Gauge.DerivedGauge.Reset
+  name: Reset()
+  href: api/App.Metrics.Gauge.DerivedGauge.html#App_Metrics_Gauge_DerivedGauge_Reset
+  commentId: M:App.Metrics.Gauge.DerivedGauge.Reset
+  fullName: App.Metrics.Gauge.DerivedGauge.Reset()
+  nameWithType: DerivedGauge.Reset()
+- uid: App.Metrics.Gauge.DerivedGauge.Reset*
+  href: api/App.Metrics.Gauge.DerivedGauge.html#App_Metrics_Gauge_DerivedGauge_Reset_
+  commentId: Overload:App.Metrics.Gauge.DerivedGauge.Reset
+  name: Reset
+  fullName: App.Metrics.Gauge.DerivedGauge.Reset()
+- uid: App.Metrics.Gauge.DerivedGauge.SetValue(System.Double)
+  name: SetValue(Double)
+  href: api/App.Metrics.Gauge.DerivedGauge.html#App_Metrics_Gauge_DerivedGauge_SetValue_System_Double_
+  commentId: M:App.Metrics.Gauge.DerivedGauge.SetValue(System.Double)
+  fullName: App.Metrics.Gauge.DerivedGauge.SetValue(System.Double)
+  nameWithType: DerivedGauge.SetValue(Double)
+- uid: App.Metrics.Gauge.DerivedGauge.SetValue*
+  href: api/App.Metrics.Gauge.DerivedGauge.html#App_Metrics_Gauge_DerivedGauge_SetValue_
+  commentId: Overload:App.Metrics.Gauge.DerivedGauge.SetValue
+  name: SetValue
+  fullName: App.Metrics.Gauge.DerivedGauge.SetValue(System.Double)
 - uid: App.Metrics.Gauge.DerivedGauge.Value
   name: Value
   href: api/App.Metrics.Gauge.DerivedGauge.html#App_Metrics_Gauge_DerivedGauge_Value
@@ -13401,6 +13645,28 @@ references:
   commentId: Overload:App.Metrics.Gauge.FunctionGauge.GetValue
   name: GetValue
   fullName: App.Metrics.Gauge.FunctionGauge.GetValue(System.Boolean)
+- uid: App.Metrics.Gauge.FunctionGauge.Reset
+  name: Reset()
+  href: api/App.Metrics.Gauge.FunctionGauge.html#App_Metrics_Gauge_FunctionGauge_Reset
+  commentId: M:App.Metrics.Gauge.FunctionGauge.Reset
+  fullName: App.Metrics.Gauge.FunctionGauge.Reset()
+  nameWithType: FunctionGauge.Reset()
+- uid: App.Metrics.Gauge.FunctionGauge.Reset*
+  href: api/App.Metrics.Gauge.FunctionGauge.html#App_Metrics_Gauge_FunctionGauge_Reset_
+  commentId: Overload:App.Metrics.Gauge.FunctionGauge.Reset
+  name: Reset
+  fullName: App.Metrics.Gauge.FunctionGauge.Reset()
+- uid: App.Metrics.Gauge.FunctionGauge.SetValue(System.Double)
+  name: SetValue(Double)
+  href: api/App.Metrics.Gauge.FunctionGauge.html#App_Metrics_Gauge_FunctionGauge_SetValue_System_Double_
+  commentId: M:App.Metrics.Gauge.FunctionGauge.SetValue(System.Double)
+  fullName: App.Metrics.Gauge.FunctionGauge.SetValue(System.Double)
+  nameWithType: FunctionGauge.SetValue(Double)
+- uid: App.Metrics.Gauge.FunctionGauge.SetValue*
+  href: api/App.Metrics.Gauge.FunctionGauge.html#App_Metrics_Gauge_FunctionGauge_SetValue_
+  commentId: Overload:App.Metrics.Gauge.FunctionGauge.SetValue
+  name: SetValue
+  fullName: App.Metrics.Gauge.FunctionGauge.SetValue(System.Double)
 - uid: App.Metrics.Gauge.FunctionGauge.Value
   name: Value
   href: api/App.Metrics.Gauge.FunctionGauge.html#App_Metrics_Gauge_FunctionGauge_Value
@@ -13477,21 +13743,12 @@ references:
   fullName.vb: App.Metrics.Gauge.GaugeValueSource.GaugeValueSource(System.String, App.Metrics.Core.Abstractions.IMetricValueProvider(Of System.Double), App.Metrics.Unit, App.Metrics.Tagging.MetricTags)
   nameWithType: GaugeValueSource.GaugeValueSource(String, IMetricValueProvider<Double>, Unit, MetricTags)
   nameWithType.vb: GaugeValueSource(String, IMetricValueProvider(Of Double), Unit, MetricTags)
-- uid: App.Metrics.Gauge.GaugeValueSource.#ctor(System.String,System.String,App.Metrics.Core.Abstractions.IMetricValueProvider{System.Double},App.Metrics.Unit,App.Metrics.Tagging.MetricTags)
-  name: GaugeValueSource(String, String, IMetricValueProvider<Double>, Unit, MetricTags)
-  href: api/App.Metrics.Gauge.GaugeValueSource.html#App_Metrics_Gauge_GaugeValueSource__ctor_System_String_System_String_App_Metrics_Core_Abstractions_IMetricValueProvider_System_Double__App_Metrics_Unit_App_Metrics_Tagging_MetricTags_
-  commentId: M:App.Metrics.Gauge.GaugeValueSource.#ctor(System.String,System.String,App.Metrics.Core.Abstractions.IMetricValueProvider{System.Double},App.Metrics.Unit,App.Metrics.Tagging.MetricTags)
-  name.vb: GaugeValueSource(String, String, IMetricValueProvider(Of Double), Unit, MetricTags)
-  fullName: App.Metrics.Gauge.GaugeValueSource.GaugeValueSource(System.String, System.String, App.Metrics.Core.Abstractions.IMetricValueProvider<System.Double>, App.Metrics.Unit, App.Metrics.Tagging.MetricTags)
-  fullName.vb: App.Metrics.Gauge.GaugeValueSource.GaugeValueSource(System.String, System.String, App.Metrics.Core.Abstractions.IMetricValueProvider(Of System.Double), App.Metrics.Unit, App.Metrics.Tagging.MetricTags)
-  nameWithType: GaugeValueSource.GaugeValueSource(String, String, IMetricValueProvider<Double>, Unit, MetricTags)
-  nameWithType.vb: GaugeValueSource(String, String, IMetricValueProvider(Of Double), Unit, MetricTags)
 - uid: App.Metrics.Gauge.GaugeValueSource.#ctor*
   href: api/App.Metrics.Gauge.GaugeValueSource.html#App_Metrics_Gauge_GaugeValueSource__ctor_
   commentId: Overload:App.Metrics.Gauge.GaugeValueSource.#ctor
   name: GaugeValueSource
   name.vb: GaugeValueSource
-  fullName: App.Metrics.Gauge.GaugeValueSource.GaugeValueSource(System.String, System.String, App.Metrics.Core.Abstractions.IMetricValueProvider<System.Double>, App.Metrics.Unit, App.Metrics.Tagging.MetricTags)
+  fullName: App.Metrics.Gauge.GaugeValueSource.GaugeValueSource(System.String, App.Metrics.Core.Abstractions.IMetricValueProvider<System.Double>, App.Metrics.Unit, App.Metrics.Tagging.MetricTags)
   fullName.vb: App.Metrics.Gauge.GaugeValueSource.GaugeValueSource
 - uid: App.Metrics.Gauge.GaugeValueSourceSerializationExtensions
   name: GaugeValueSourceSerializationExtensions
@@ -13623,6 +13880,23 @@ references:
   commentId: Overload:App.Metrics.Gauge.HitRatioGauge.#ctor
   name: HitRatioGauge
   fullName: App.Metrics.Gauge.HitRatioGauge.HitRatioGauge(App.Metrics.Meter.Abstractions.IMeter, App.Metrics.Meter.Abstractions.IMeter)
+- uid: App.Metrics.Gauge.IGauge
+  name: IGauge
+  href: api/App.Metrics.Gauge.IGauge.html#App_Metrics_Gauge_IGauge
+  commentId: T:App.Metrics.Gauge.IGauge
+  fullName: App.Metrics.Gauge.IGauge
+  nameWithType: IGauge
+- uid: App.Metrics.Gauge.IGauge.SetValue(System.Double)
+  name: SetValue(Double)
+  href: api/App.Metrics.Gauge.IGauge.html#App_Metrics_Gauge_IGauge_SetValue_System_Double_
+  commentId: M:App.Metrics.Gauge.IGauge.SetValue(System.Double)
+  fullName: App.Metrics.Gauge.IGauge.SetValue(System.Double)
+  nameWithType: IGauge.SetValue(Double)
+- uid: App.Metrics.Gauge.IGauge.SetValue*
+  href: api/App.Metrics.Gauge.IGauge.html#App_Metrics_Gauge_IGauge_SetValue_
+  commentId: Overload:App.Metrics.Gauge.IGauge.SetValue
+  name: SetValue
+  fullName: App.Metrics.Gauge.IGauge.SetValue(System.Double)
 - uid: App.Metrics.Gauge.PercentageGauge
   name: PercentageGauge
   href: api/App.Metrics.Gauge.PercentageGauge.html#App_Metrics_Gauge_PercentageGauge
@@ -13667,6 +13941,56 @@ references:
   name.vb: RatioGauge
   fullName: App.Metrics.Gauge.RatioGauge.RatioGauge(System.Func<System.Double>, System.Func<System.Double>)
   fullName.vb: App.Metrics.Gauge.RatioGauge.RatioGauge
+- uid: App.Metrics.Gauge.ValueGauge
+  name: ValueGauge
+  href: api/App.Metrics.Gauge.ValueGauge.html#App_Metrics_Gauge_ValueGauge
+  commentId: T:App.Metrics.Gauge.ValueGauge
+  fullName: App.Metrics.Gauge.ValueGauge
+  nameWithType: ValueGauge
+- uid: App.Metrics.Gauge.ValueGauge.GetValue(System.Boolean)
+  name: GetValue(Boolean)
+  href: api/App.Metrics.Gauge.ValueGauge.html#App_Metrics_Gauge_ValueGauge_GetValue_System_Boolean_
+  commentId: M:App.Metrics.Gauge.ValueGauge.GetValue(System.Boolean)
+  fullName: App.Metrics.Gauge.ValueGauge.GetValue(System.Boolean)
+  nameWithType: ValueGauge.GetValue(Boolean)
+- uid: App.Metrics.Gauge.ValueGauge.GetValue*
+  href: api/App.Metrics.Gauge.ValueGauge.html#App_Metrics_Gauge_ValueGauge_GetValue_
+  commentId: Overload:App.Metrics.Gauge.ValueGauge.GetValue
+  name: GetValue
+  fullName: App.Metrics.Gauge.ValueGauge.GetValue(System.Boolean)
+- uid: App.Metrics.Gauge.ValueGauge.Reset
+  name: Reset()
+  href: api/App.Metrics.Gauge.ValueGauge.html#App_Metrics_Gauge_ValueGauge_Reset
+  commentId: M:App.Metrics.Gauge.ValueGauge.Reset
+  fullName: App.Metrics.Gauge.ValueGauge.Reset()
+  nameWithType: ValueGauge.Reset()
+- uid: App.Metrics.Gauge.ValueGauge.Reset*
+  href: api/App.Metrics.Gauge.ValueGauge.html#App_Metrics_Gauge_ValueGauge_Reset_
+  commentId: Overload:App.Metrics.Gauge.ValueGauge.Reset
+  name: Reset
+  fullName: App.Metrics.Gauge.ValueGauge.Reset()
+- uid: App.Metrics.Gauge.ValueGauge.SetValue(System.Double)
+  name: SetValue(Double)
+  href: api/App.Metrics.Gauge.ValueGauge.html#App_Metrics_Gauge_ValueGauge_SetValue_System_Double_
+  commentId: M:App.Metrics.Gauge.ValueGauge.SetValue(System.Double)
+  fullName: App.Metrics.Gauge.ValueGauge.SetValue(System.Double)
+  nameWithType: ValueGauge.SetValue(Double)
+- uid: App.Metrics.Gauge.ValueGauge.SetValue*
+  href: api/App.Metrics.Gauge.ValueGauge.html#App_Metrics_Gauge_ValueGauge_SetValue_
+  commentId: Overload:App.Metrics.Gauge.ValueGauge.SetValue
+  name: SetValue
+  fullName: App.Metrics.Gauge.ValueGauge.SetValue(System.Double)
+- uid: App.Metrics.Gauge.ValueGauge.Value
+  name: Value
+  href: api/App.Metrics.Gauge.ValueGauge.html#App_Metrics_Gauge_ValueGauge_Value
+  commentId: P:App.Metrics.Gauge.ValueGauge.Value
+  fullName: App.Metrics.Gauge.ValueGauge.Value
+  nameWithType: ValueGauge.Value
+- uid: App.Metrics.Gauge.ValueGauge.Value*
+  href: api/App.Metrics.Gauge.ValueGauge.html#App_Metrics_Gauge_ValueGauge_Value_
+  commentId: Overload:App.Metrics.Gauge.ValueGauge.Value
+  name: Value
+  fullName: App.Metrics.Gauge.ValueGauge.Value
 - uid: App.Metrics.GlobalMetricTags
   name: GlobalMetricTags
   href: api/App.Metrics.GlobalMetricTags.html#App_Metrics_GlobalMetricTags
@@ -14220,6 +14544,28 @@ references:
   commentId: T:App.Metrics.HealthCheckFactoryExtensions
   fullName: App.Metrics.HealthCheckFactoryExtensions
   nameWithType: HealthCheckFactoryExtensions
+- uid: App.Metrics.HealthCheckFactoryExtensions.RegisterHttpGetHealthCheck(App.Metrics.Health.Abstractions.IHealthCheckFactory,System.String,System.Uri,System.TimeSpan,System.Threading.CancellationToken)
+  name: RegisterHttpGetHealthCheck(IHealthCheckFactory, String, Uri, TimeSpan, CancellationToken)
+  href: api/App.Metrics.HealthCheckFactoryExtensions.html#App_Metrics_HealthCheckFactoryExtensions_RegisterHttpGetHealthCheck_App_Metrics_Health_Abstractions_IHealthCheckFactory_System_String_System_Uri_System_TimeSpan_System_Threading_CancellationToken_
+  commentId: M:App.Metrics.HealthCheckFactoryExtensions.RegisterHttpGetHealthCheck(App.Metrics.Health.Abstractions.IHealthCheckFactory,System.String,System.Uri,System.TimeSpan,System.Threading.CancellationToken)
+  fullName: App.Metrics.HealthCheckFactoryExtensions.RegisterHttpGetHealthCheck(App.Metrics.Health.Abstractions.IHealthCheckFactory, System.String, System.Uri, System.TimeSpan, System.Threading.CancellationToken)
+  nameWithType: HealthCheckFactoryExtensions.RegisterHttpGetHealthCheck(IHealthCheckFactory, String, Uri, TimeSpan, CancellationToken)
+- uid: App.Metrics.HealthCheckFactoryExtensions.RegisterHttpGetHealthCheck*
+  href: api/App.Metrics.HealthCheckFactoryExtensions.html#App_Metrics_HealthCheckFactoryExtensions_RegisterHttpGetHealthCheck_
+  commentId: Overload:App.Metrics.HealthCheckFactoryExtensions.RegisterHttpGetHealthCheck
+  name: RegisterHttpGetHealthCheck
+  fullName: App.Metrics.HealthCheckFactoryExtensions.RegisterHttpGetHealthCheck(App.Metrics.Health.Abstractions.IHealthCheckFactory, System.String, System.Uri, System.TimeSpan, System.Threading.CancellationToken)
+- uid: App.Metrics.HealthCheckFactoryExtensions.RegisterPingHealthCheck(App.Metrics.Health.Abstractions.IHealthCheckFactory,System.String,System.String,System.TimeSpan)
+  name: RegisterPingHealthCheck(IHealthCheckFactory, String, String, TimeSpan)
+  href: api/App.Metrics.HealthCheckFactoryExtensions.html#App_Metrics_HealthCheckFactoryExtensions_RegisterPingHealthCheck_App_Metrics_Health_Abstractions_IHealthCheckFactory_System_String_System_String_System_TimeSpan_
+  commentId: M:App.Metrics.HealthCheckFactoryExtensions.RegisterPingHealthCheck(App.Metrics.Health.Abstractions.IHealthCheckFactory,System.String,System.String,System.TimeSpan)
+  fullName: App.Metrics.HealthCheckFactoryExtensions.RegisterPingHealthCheck(App.Metrics.Health.Abstractions.IHealthCheckFactory, System.String, System.String, System.TimeSpan)
+  nameWithType: HealthCheckFactoryExtensions.RegisterPingHealthCheck(IHealthCheckFactory, String, String, TimeSpan)
+- uid: App.Metrics.HealthCheckFactoryExtensions.RegisterPingHealthCheck*
+  href: api/App.Metrics.HealthCheckFactoryExtensions.html#App_Metrics_HealthCheckFactoryExtensions_RegisterPingHealthCheck_
+  commentId: Overload:App.Metrics.HealthCheckFactoryExtensions.RegisterPingHealthCheck
+  name: RegisterPingHealthCheck
+  fullName: App.Metrics.HealthCheckFactoryExtensions.RegisterPingHealthCheck(App.Metrics.Health.Abstractions.IHealthCheckFactory, System.String, System.String, System.TimeSpan)
 - uid: App.Metrics.HealthCheckFactoryExtensions.RegisterProcessPhysicalMemoryHealthCheck(App.Metrics.Health.Abstractions.IHealthCheckFactory,System.String,System.Int64)
   name: RegisterProcessPhysicalMemoryHealthCheck(IHealthCheckFactory, String, Int64)
   href: api/App.Metrics.HealthCheckFactoryExtensions.html#App_Metrics_HealthCheckFactoryExtensions_RegisterProcessPhysicalMemoryHealthCheck_App_Metrics_Health_Abstractions_IHealthCheckFactory_System_String_System_Int64_
@@ -14377,6 +14723,18 @@ references:
   commentId: T:App.Metrics.Histogram.Abstractions.IMeasureHistogramMetrics
   fullName: App.Metrics.Histogram.Abstractions.IMeasureHistogramMetrics
   nameWithType: IMeasureHistogramMetrics
+- uid: App.Metrics.Histogram.Abstractions.IMeasureHistogramMetrics.Update(App.Metrics.Core.Options.HistogramOptions,App.Metrics.Tagging.MetricTags,System.Int64)
+  name: Update(HistogramOptions, MetricTags, Int64)
+  href: api/App.Metrics.Histogram.Abstractions.IMeasureHistogramMetrics.html#App_Metrics_Histogram_Abstractions_IMeasureHistogramMetrics_Update_App_Metrics_Core_Options_HistogramOptions_App_Metrics_Tagging_MetricTags_System_Int64_
+  commentId: M:App.Metrics.Histogram.Abstractions.IMeasureHistogramMetrics.Update(App.Metrics.Core.Options.HistogramOptions,App.Metrics.Tagging.MetricTags,System.Int64)
+  fullName: App.Metrics.Histogram.Abstractions.IMeasureHistogramMetrics.Update(App.Metrics.Core.Options.HistogramOptions, App.Metrics.Tagging.MetricTags, System.Int64)
+  nameWithType: IMeasureHistogramMetrics.Update(HistogramOptions, MetricTags, Int64)
+- uid: App.Metrics.Histogram.Abstractions.IMeasureHistogramMetrics.Update(App.Metrics.Core.Options.HistogramOptions,App.Metrics.Tagging.MetricTags,System.Int64,System.String)
+  name: Update(HistogramOptions, MetricTags, Int64, String)
+  href: api/App.Metrics.Histogram.Abstractions.IMeasureHistogramMetrics.html#App_Metrics_Histogram_Abstractions_IMeasureHistogramMetrics_Update_App_Metrics_Core_Options_HistogramOptions_App_Metrics_Tagging_MetricTags_System_Int64_System_String_
+  commentId: M:App.Metrics.Histogram.Abstractions.IMeasureHistogramMetrics.Update(App.Metrics.Core.Options.HistogramOptions,App.Metrics.Tagging.MetricTags,System.Int64,System.String)
+  fullName: App.Metrics.Histogram.Abstractions.IMeasureHistogramMetrics.Update(App.Metrics.Core.Options.HistogramOptions, App.Metrics.Tagging.MetricTags, System.Int64, System.String)
+  nameWithType: IMeasureHistogramMetrics.Update(HistogramOptions, MetricTags, Int64, String)
 - uid: App.Metrics.Histogram.Abstractions.IMeasureHistogramMetrics.Update(App.Metrics.Core.Options.HistogramOptions,System.Int64)
   name: Update(HistogramOptions, Int64)
   href: api/App.Metrics.Histogram.Abstractions.IMeasureHistogramMetrics.html#App_Metrics_Histogram_Abstractions_IMeasureHistogramMetrics_Update_App_Metrics_Core_Options_HistogramOptions_System_Int64_
@@ -14406,11 +14764,26 @@ references:
   commentId: M:App.Metrics.Histogram.Abstractions.IProvideHistogramMetrics.Instance(App.Metrics.Core.Options.HistogramOptions)
   fullName: App.Metrics.Histogram.Abstractions.IProvideHistogramMetrics.Instance(App.Metrics.Core.Options.HistogramOptions)
   nameWithType: IProvideHistogramMetrics.Instance(HistogramOptions)
+- uid: App.Metrics.Histogram.Abstractions.IProvideHistogramMetrics.Instance(App.Metrics.Core.Options.HistogramOptions,App.Metrics.Tagging.MetricTags)
+  name: Instance(HistogramOptions, MetricTags)
+  href: api/App.Metrics.Histogram.Abstractions.IProvideHistogramMetrics.html#App_Metrics_Histogram_Abstractions_IProvideHistogramMetrics_Instance_App_Metrics_Core_Options_HistogramOptions_App_Metrics_Tagging_MetricTags_
+  commentId: M:App.Metrics.Histogram.Abstractions.IProvideHistogramMetrics.Instance(App.Metrics.Core.Options.HistogramOptions,App.Metrics.Tagging.MetricTags)
+  fullName: App.Metrics.Histogram.Abstractions.IProvideHistogramMetrics.Instance(App.Metrics.Core.Options.HistogramOptions, App.Metrics.Tagging.MetricTags)
+  nameWithType: IProvideHistogramMetrics.Instance(HistogramOptions, MetricTags)
 - uid: App.Metrics.Histogram.Abstractions.IProvideHistogramMetrics.Instance*
   href: api/App.Metrics.Histogram.Abstractions.IProvideHistogramMetrics.html#App_Metrics_Histogram_Abstractions_IProvideHistogramMetrics_Instance_
   commentId: Overload:App.Metrics.Histogram.Abstractions.IProvideHistogramMetrics.Instance
   name: Instance
   fullName: App.Metrics.Histogram.Abstractions.IProvideHistogramMetrics.Instance(App.Metrics.Core.Options.HistogramOptions)
+- uid: App.Metrics.Histogram.Abstractions.IProvideHistogramMetrics.Instance``1(App.Metrics.Core.Options.HistogramOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name: Instance<T>(HistogramOptions, MetricTags, Func<T>)
+  href: api/App.Metrics.Histogram.Abstractions.IProvideHistogramMetrics.html#App_Metrics_Histogram_Abstractions_IProvideHistogramMetrics_Instance__1_App_Metrics_Core_Options_HistogramOptions_App_Metrics_Tagging_MetricTags_System_Func___0__
+  commentId: M:App.Metrics.Histogram.Abstractions.IProvideHistogramMetrics.Instance``1(App.Metrics.Core.Options.HistogramOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name.vb: Instance(Of T)(HistogramOptions, MetricTags, Func(Of T))
+  fullName: App.Metrics.Histogram.Abstractions.IProvideHistogramMetrics.Instance<T>(App.Metrics.Core.Options.HistogramOptions, App.Metrics.Tagging.MetricTags, System.Func<T>)
+  fullName.vb: App.Metrics.Histogram.Abstractions.IProvideHistogramMetrics.Instance(Of T)(App.Metrics.Core.Options.HistogramOptions, App.Metrics.Tagging.MetricTags, System.Func(Of T))
+  nameWithType: IProvideHistogramMetrics.Instance<T>(HistogramOptions, MetricTags, Func<T>)
+  nameWithType.vb: Instance(Of T)(HistogramOptions, MetricTags, Func(Of T))
 - uid: App.Metrics.Histogram.Abstractions.IProvideHistogramMetrics.Instance``1(App.Metrics.Core.Options.HistogramOptions,System.Func{``0})
   name: Instance<T>(HistogramOptions, Func<T>)
   href: api/App.Metrics.Histogram.Abstractions.IProvideHistogramMetrics.html#App_Metrics_Histogram_Abstractions_IProvideHistogramMetrics_Instance__1_App_Metrics_Core_Options_HistogramOptions_System_Func___0__
@@ -14565,11 +14938,26 @@ references:
   commentId: M:App.Metrics.Histogram.DefaultHistogramMetricProvider.Instance(App.Metrics.Core.Options.HistogramOptions)
   fullName: App.Metrics.Histogram.DefaultHistogramMetricProvider.Instance(App.Metrics.Core.Options.HistogramOptions)
   nameWithType: DefaultHistogramMetricProvider.Instance(HistogramOptions)
+- uid: App.Metrics.Histogram.DefaultHistogramMetricProvider.Instance(App.Metrics.Core.Options.HistogramOptions,App.Metrics.Tagging.MetricTags)
+  name: Instance(HistogramOptions, MetricTags)
+  href: api/App.Metrics.Histogram.DefaultHistogramMetricProvider.html#App_Metrics_Histogram_DefaultHistogramMetricProvider_Instance_App_Metrics_Core_Options_HistogramOptions_App_Metrics_Tagging_MetricTags_
+  commentId: M:App.Metrics.Histogram.DefaultHistogramMetricProvider.Instance(App.Metrics.Core.Options.HistogramOptions,App.Metrics.Tagging.MetricTags)
+  fullName: App.Metrics.Histogram.DefaultHistogramMetricProvider.Instance(App.Metrics.Core.Options.HistogramOptions, App.Metrics.Tagging.MetricTags)
+  nameWithType: DefaultHistogramMetricProvider.Instance(HistogramOptions, MetricTags)
 - uid: App.Metrics.Histogram.DefaultHistogramMetricProvider.Instance*
   href: api/App.Metrics.Histogram.DefaultHistogramMetricProvider.html#App_Metrics_Histogram_DefaultHistogramMetricProvider_Instance_
   commentId: Overload:App.Metrics.Histogram.DefaultHistogramMetricProvider.Instance
   name: Instance
   fullName: App.Metrics.Histogram.DefaultHistogramMetricProvider.Instance(App.Metrics.Core.Options.HistogramOptions)
+- uid: App.Metrics.Histogram.DefaultHistogramMetricProvider.Instance``1(App.Metrics.Core.Options.HistogramOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name: Instance<T>(HistogramOptions, MetricTags, Func<T>)
+  href: api/App.Metrics.Histogram.DefaultHistogramMetricProvider.html#App_Metrics_Histogram_DefaultHistogramMetricProvider_Instance__1_App_Metrics_Core_Options_HistogramOptions_App_Metrics_Tagging_MetricTags_System_Func___0__
+  commentId: M:App.Metrics.Histogram.DefaultHistogramMetricProvider.Instance``1(App.Metrics.Core.Options.HistogramOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name.vb: Instance(Of T)(HistogramOptions, MetricTags, Func(Of T))
+  fullName: App.Metrics.Histogram.DefaultHistogramMetricProvider.Instance<T>(App.Metrics.Core.Options.HistogramOptions, App.Metrics.Tagging.MetricTags, System.Func<T>)
+  fullName.vb: App.Metrics.Histogram.DefaultHistogramMetricProvider.Instance(Of T)(App.Metrics.Core.Options.HistogramOptions, App.Metrics.Tagging.MetricTags, System.Func(Of T))
+  nameWithType: DefaultHistogramMetricProvider.Instance<T>(HistogramOptions, MetricTags, Func<T>)
+  nameWithType.vb: Instance(Of T)(HistogramOptions, MetricTags, Func(Of T))
 - uid: App.Metrics.Histogram.DefaultHistogramMetricProvider.Instance``1(App.Metrics.Core.Options.HistogramOptions,System.Func{``0})
   name: Instance<T>(HistogramOptions, Func<T>)
   href: api/App.Metrics.Histogram.DefaultHistogramMetricProvider.html#App_Metrics_Histogram_DefaultHistogramMetricProvider_Instance__1_App_Metrics_Core_Options_HistogramOptions_System_Func___0__
@@ -14801,12 +15189,12 @@ references:
   commentId: M:App.Metrics.Histogram.HistogramValue.#ctor(System.Double,System.String,App.Metrics.Abstractions.ReservoirSampling.IReservoirSnapshot)
   fullName: App.Metrics.Histogram.HistogramValue.HistogramValue(System.Double, System.String, App.Metrics.Abstractions.ReservoirSampling.IReservoirSnapshot)
   nameWithType: HistogramValue.HistogramValue(Double, String, IReservoirSnapshot)
-- uid: App.Metrics.Histogram.HistogramValue.#ctor(System.Int64,System.Double,System.String,System.Double,System.String,System.Double,System.Double,System.String,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Int32)
-  name: HistogramValue(Int64, Double, String, Double, String, Double, Double, String, Double, Double, Double, Double, Double, Double, Double, Int32)
-  href: api/App.Metrics.Histogram.HistogramValue.html#App_Metrics_Histogram_HistogramValue__ctor_System_Int64_System_Double_System_String_System_Double_System_String_System_Double_System_Double_System_String_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Int32_
-  commentId: M:App.Metrics.Histogram.HistogramValue.#ctor(System.Int64,System.Double,System.String,System.Double,System.String,System.Double,System.Double,System.String,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Int32)
-  fullName: App.Metrics.Histogram.HistogramValue.HistogramValue(System.Int64, System.Double, System.String, System.Double, System.String, System.Double, System.Double, System.String, System.Double, System.Double, System.Double, System.Double, System.Double, System.Double, System.Double, System.Int32)
-  nameWithType: HistogramValue.HistogramValue(Int64, Double, String, Double, String, Double, Double, String, Double, Double, Double, Double, Double, Double, Double, Int32)
+- uid: App.Metrics.Histogram.HistogramValue.#ctor(System.Int64,System.Double,System.Double,System.String,System.Double,System.String,System.Double,System.Double,System.String,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Int32)
+  name: HistogramValue(Int64, Double, Double, String, Double, String, Double, Double, String, Double, Double, Double, Double, Double, Double, Double, Int32)
+  href: api/App.Metrics.Histogram.HistogramValue.html#App_Metrics_Histogram_HistogramValue__ctor_System_Int64_System_Double_System_Double_System_String_System_Double_System_String_System_Double_System_Double_System_String_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Int32_
+  commentId: M:App.Metrics.Histogram.HistogramValue.#ctor(System.Int64,System.Double,System.Double,System.String,System.Double,System.String,System.Double,System.Double,System.String,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Int32)
+  fullName: App.Metrics.Histogram.HistogramValue.HistogramValue(System.Int64, System.Double, System.Double, System.String, System.Double, System.String, System.Double, System.Double, System.String, System.Double, System.Double, System.Double, System.Double, System.Double, System.Double, System.Double, System.Int32)
+  nameWithType: HistogramValue.HistogramValue(Int64, Double, Double, String, Double, String, Double, Double, String, Double, Double, Double, Double, Double, Double, Double, Int32)
 - uid: App.Metrics.Histogram.HistogramValue.#ctor*
   href: api/App.Metrics.Histogram.HistogramValue.html#App_Metrics_Histogram_HistogramValue__ctor_
   commentId: Overload:App.Metrics.Histogram.HistogramValue.#ctor
@@ -14999,6 +15387,17 @@ references:
   commentId: Overload:App.Metrics.Histogram.HistogramValue.StdDev
   name: StdDev
   fullName: App.Metrics.Histogram.HistogramValue.StdDev
+- uid: App.Metrics.Histogram.HistogramValue.Sum
+  name: Sum
+  href: api/App.Metrics.Histogram.HistogramValue.html#App_Metrics_Histogram_HistogramValue_Sum
+  commentId: P:App.Metrics.Histogram.HistogramValue.Sum
+  fullName: App.Metrics.Histogram.HistogramValue.Sum
+  nameWithType: HistogramValue.Sum
+- uid: App.Metrics.Histogram.HistogramValue.Sum*
+  href: api/App.Metrics.Histogram.HistogramValue.html#App_Metrics_Histogram_HistogramValue_Sum_
+  commentId: Overload:App.Metrics.Histogram.HistogramValue.Sum
+  name: Sum
+  fullName: App.Metrics.Histogram.HistogramValue.Sum
 - uid: App.Metrics.Histogram.HistogramValueSource
   name: HistogramValueSource
   href: api/App.Metrics.Histogram.HistogramValueSource.html#App_Metrics_Histogram_HistogramValueSource
@@ -15014,15 +15413,6 @@ references:
   fullName.vb: App.Metrics.Histogram.HistogramValueSource.HistogramValueSource(System.String, App.Metrics.Core.Abstractions.IMetricValueProvider(Of App.Metrics.Histogram.HistogramValue), App.Metrics.Unit, App.Metrics.Tagging.MetricTags)
   nameWithType: HistogramValueSource.HistogramValueSource(String, IMetricValueProvider<HistogramValue>, Unit, MetricTags)
   nameWithType.vb: HistogramValueSource(String, IMetricValueProvider(Of HistogramValue), Unit, MetricTags)
-- uid: App.Metrics.Histogram.HistogramValueSource.#ctor(System.String,System.String,App.Metrics.Core.Abstractions.IMetricValueProvider{App.Metrics.Histogram.HistogramValue},App.Metrics.Unit,App.Metrics.Tagging.MetricTags)
-  name: HistogramValueSource(String, String, IMetricValueProvider<HistogramValue>, Unit, MetricTags)
-  href: api/App.Metrics.Histogram.HistogramValueSource.html#App_Metrics_Histogram_HistogramValueSource__ctor_System_String_System_String_App_Metrics_Core_Abstractions_IMetricValueProvider_App_Metrics_Histogram_HistogramValue__App_Metrics_Unit_App_Metrics_Tagging_MetricTags_
-  commentId: M:App.Metrics.Histogram.HistogramValueSource.#ctor(System.String,System.String,App.Metrics.Core.Abstractions.IMetricValueProvider{App.Metrics.Histogram.HistogramValue},App.Metrics.Unit,App.Metrics.Tagging.MetricTags)
-  name.vb: HistogramValueSource(String, String, IMetricValueProvider(Of HistogramValue), Unit, MetricTags)
-  fullName: App.Metrics.Histogram.HistogramValueSource.HistogramValueSource(System.String, System.String, App.Metrics.Core.Abstractions.IMetricValueProvider<App.Metrics.Histogram.HistogramValue>, App.Metrics.Unit, App.Metrics.Tagging.MetricTags)
-  fullName.vb: App.Metrics.Histogram.HistogramValueSource.HistogramValueSource(System.String, System.String, App.Metrics.Core.Abstractions.IMetricValueProvider(Of App.Metrics.Histogram.HistogramValue), App.Metrics.Unit, App.Metrics.Tagging.MetricTags)
-  nameWithType: HistogramValueSource.HistogramValueSource(String, String, IMetricValueProvider<HistogramValue>, Unit, MetricTags)
-  nameWithType.vb: HistogramValueSource(String, String, IMetricValueProvider(Of HistogramValue), Unit, MetricTags)
 - uid: App.Metrics.Histogram.HistogramValueSource.#ctor*
   href: api/App.Metrics.Histogram.HistogramValueSource.html#App_Metrics_Histogram_HistogramValueSource__ctor_
   commentId: Overload:App.Metrics.Histogram.HistogramValueSource.#ctor
@@ -16374,6 +16764,42 @@ references:
   commentId: M:App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricSetItem)
   fullName: App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions, App.Metrics.Tagging.MetricSetItem)
   nameWithType: IMeasureMeterMetrics.Mark(MeterOptions, MetricSetItem)
+- uid: App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricTags)
+  name: Mark(MeterOptions, MetricTags)
+  href: api/App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.html#App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_App_Metrics_Core_Options_MeterOptions_App_Metrics_Tagging_MetricTags_
+  commentId: M:App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricTags)
+  fullName: App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions, App.Metrics.Tagging.MetricTags)
+  nameWithType: IMeasureMeterMetrics.Mark(MeterOptions, MetricTags)
+- uid: App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricTags,App.Metrics.Tagging.MetricSetItem)
+  name: Mark(MeterOptions, MetricTags, MetricSetItem)
+  href: api/App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.html#App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_App_Metrics_Core_Options_MeterOptions_App_Metrics_Tagging_MetricTags_App_Metrics_Tagging_MetricSetItem_
+  commentId: M:App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricTags,App.Metrics.Tagging.MetricSetItem)
+  fullName: App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions, App.Metrics.Tagging.MetricTags, App.Metrics.Tagging.MetricSetItem)
+  nameWithType: IMeasureMeterMetrics.Mark(MeterOptions, MetricTags, MetricSetItem)
+- uid: App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricTags,System.Int64)
+  name: Mark(MeterOptions, MetricTags, Int64)
+  href: api/App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.html#App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_App_Metrics_Core_Options_MeterOptions_App_Metrics_Tagging_MetricTags_System_Int64_
+  commentId: M:App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricTags,System.Int64)
+  fullName: App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions, App.Metrics.Tagging.MetricTags, System.Int64)
+  nameWithType: IMeasureMeterMetrics.Mark(MeterOptions, MetricTags, Int64)
+- uid: App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricTags,System.Int64,App.Metrics.Tagging.MetricSetItem)
+  name: Mark(MeterOptions, MetricTags, Int64, MetricSetItem)
+  href: api/App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.html#App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_App_Metrics_Core_Options_MeterOptions_App_Metrics_Tagging_MetricTags_System_Int64_App_Metrics_Tagging_MetricSetItem_
+  commentId: M:App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricTags,System.Int64,App.Metrics.Tagging.MetricSetItem)
+  fullName: App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions, App.Metrics.Tagging.MetricTags, System.Int64, App.Metrics.Tagging.MetricSetItem)
+  nameWithType: IMeasureMeterMetrics.Mark(MeterOptions, MetricTags, Int64, MetricSetItem)
+- uid: App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricTags,System.Int64,System.String)
+  name: Mark(MeterOptions, MetricTags, Int64, String)
+  href: api/App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.html#App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_App_Metrics_Core_Options_MeterOptions_App_Metrics_Tagging_MetricTags_System_Int64_System_String_
+  commentId: M:App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricTags,System.Int64,System.String)
+  fullName: App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions, App.Metrics.Tagging.MetricTags, System.Int64, System.String)
+  nameWithType: IMeasureMeterMetrics.Mark(MeterOptions, MetricTags, Int64, String)
+- uid: App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricTags,System.String)
+  name: Mark(MeterOptions, MetricTags, String)
+  href: api/App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.html#App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_App_Metrics_Core_Options_MeterOptions_App_Metrics_Tagging_MetricTags_System_String_
+  commentId: M:App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricTags,System.String)
+  fullName: App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions, App.Metrics.Tagging.MetricTags, System.String)
+  nameWithType: IMeasureMeterMetrics.Mark(MeterOptions, MetricTags, String)
 - uid: App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions,System.Int64)
   name: Mark(MeterOptions, Int64)
   href: api/App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.html#App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_App_Metrics_Core_Options_MeterOptions_System_Int64_
@@ -16402,7 +16828,7 @@ references:
   href: api/App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.html#App_Metrics_Meter_Abstractions_IMeasureMeterMetrics_Mark_
   commentId: Overload:App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark
   name: Mark
-  fullName: App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions, System.Int64)
+  fullName: App.Metrics.Meter.Abstractions.IMeasureMeterMetrics.Mark(App.Metrics.Core.Options.MeterOptions)
 - uid: App.Metrics.Meter.Abstractions.IMeter
   name: IMeter
   href: api/App.Metrics.Meter.Abstractions.IMeter.html#App_Metrics_Meter_Abstractions_IMeter
@@ -16462,11 +16888,26 @@ references:
   commentId: M:App.Metrics.Meter.Abstractions.IProvideMeterMetrics.Instance(App.Metrics.Core.Options.MeterOptions)
   fullName: App.Metrics.Meter.Abstractions.IProvideMeterMetrics.Instance(App.Metrics.Core.Options.MeterOptions)
   nameWithType: IProvideMeterMetrics.Instance(MeterOptions)
+- uid: App.Metrics.Meter.Abstractions.IProvideMeterMetrics.Instance(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricTags)
+  name: Instance(MeterOptions, MetricTags)
+  href: api/App.Metrics.Meter.Abstractions.IProvideMeterMetrics.html#App_Metrics_Meter_Abstractions_IProvideMeterMetrics_Instance_App_Metrics_Core_Options_MeterOptions_App_Metrics_Tagging_MetricTags_
+  commentId: M:App.Metrics.Meter.Abstractions.IProvideMeterMetrics.Instance(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricTags)
+  fullName: App.Metrics.Meter.Abstractions.IProvideMeterMetrics.Instance(App.Metrics.Core.Options.MeterOptions, App.Metrics.Tagging.MetricTags)
+  nameWithType: IProvideMeterMetrics.Instance(MeterOptions, MetricTags)
 - uid: App.Metrics.Meter.Abstractions.IProvideMeterMetrics.Instance*
   href: api/App.Metrics.Meter.Abstractions.IProvideMeterMetrics.html#App_Metrics_Meter_Abstractions_IProvideMeterMetrics_Instance_
   commentId: Overload:App.Metrics.Meter.Abstractions.IProvideMeterMetrics.Instance
   name: Instance
   fullName: App.Metrics.Meter.Abstractions.IProvideMeterMetrics.Instance(App.Metrics.Core.Options.MeterOptions)
+- uid: App.Metrics.Meter.Abstractions.IProvideMeterMetrics.Instance``1(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name: Instance<T>(MeterOptions, MetricTags, Func<T>)
+  href: api/App.Metrics.Meter.Abstractions.IProvideMeterMetrics.html#App_Metrics_Meter_Abstractions_IProvideMeterMetrics_Instance__1_App_Metrics_Core_Options_MeterOptions_App_Metrics_Tagging_MetricTags_System_Func___0__
+  commentId: M:App.Metrics.Meter.Abstractions.IProvideMeterMetrics.Instance``1(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name.vb: Instance(Of T)(MeterOptions, MetricTags, Func(Of T))
+  fullName: App.Metrics.Meter.Abstractions.IProvideMeterMetrics.Instance<T>(App.Metrics.Core.Options.MeterOptions, App.Metrics.Tagging.MetricTags, System.Func<T>)
+  fullName.vb: App.Metrics.Meter.Abstractions.IProvideMeterMetrics.Instance(Of T)(App.Metrics.Core.Options.MeterOptions, App.Metrics.Tagging.MetricTags, System.Func(Of T))
+  nameWithType: IProvideMeterMetrics.Instance<T>(MeterOptions, MetricTags, Func<T>)
+  nameWithType.vb: Instance(Of T)(MeterOptions, MetricTags, Func(Of T))
 - uid: App.Metrics.Meter.Abstractions.IProvideMeterMetrics.Instance``1(App.Metrics.Core.Options.MeterOptions,System.Func{``0})
   name: Instance<T>(MeterOptions, Func<T>)
   href: api/App.Metrics.Meter.Abstractions.IProvideMeterMetrics.html#App_Metrics_Meter_Abstractions_IProvideMeterMetrics_Instance__1_App_Metrics_Core_Options_MeterOptions_System_Func___0__
@@ -16624,11 +17065,26 @@ references:
   commentId: M:App.Metrics.Meter.DefaultMeterMetricProvider.Instance(App.Metrics.Core.Options.MeterOptions)
   fullName: App.Metrics.Meter.DefaultMeterMetricProvider.Instance(App.Metrics.Core.Options.MeterOptions)
   nameWithType: DefaultMeterMetricProvider.Instance(MeterOptions)
+- uid: App.Metrics.Meter.DefaultMeterMetricProvider.Instance(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricTags)
+  name: Instance(MeterOptions, MetricTags)
+  href: api/App.Metrics.Meter.DefaultMeterMetricProvider.html#App_Metrics_Meter_DefaultMeterMetricProvider_Instance_App_Metrics_Core_Options_MeterOptions_App_Metrics_Tagging_MetricTags_
+  commentId: M:App.Metrics.Meter.DefaultMeterMetricProvider.Instance(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricTags)
+  fullName: App.Metrics.Meter.DefaultMeterMetricProvider.Instance(App.Metrics.Core.Options.MeterOptions, App.Metrics.Tagging.MetricTags)
+  nameWithType: DefaultMeterMetricProvider.Instance(MeterOptions, MetricTags)
 - uid: App.Metrics.Meter.DefaultMeterMetricProvider.Instance*
   href: api/App.Metrics.Meter.DefaultMeterMetricProvider.html#App_Metrics_Meter_DefaultMeterMetricProvider_Instance_
   commentId: Overload:App.Metrics.Meter.DefaultMeterMetricProvider.Instance
   name: Instance
   fullName: App.Metrics.Meter.DefaultMeterMetricProvider.Instance(App.Metrics.Core.Options.MeterOptions)
+- uid: App.Metrics.Meter.DefaultMeterMetricProvider.Instance``1(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name: Instance<T>(MeterOptions, MetricTags, Func<T>)
+  href: api/App.Metrics.Meter.DefaultMeterMetricProvider.html#App_Metrics_Meter_DefaultMeterMetricProvider_Instance__1_App_Metrics_Core_Options_MeterOptions_App_Metrics_Tagging_MetricTags_System_Func___0__
+  commentId: M:App.Metrics.Meter.DefaultMeterMetricProvider.Instance``1(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name.vb: Instance(Of T)(MeterOptions, MetricTags, Func(Of T))
+  fullName: App.Metrics.Meter.DefaultMeterMetricProvider.Instance<T>(App.Metrics.Core.Options.MeterOptions, App.Metrics.Tagging.MetricTags, System.Func<T>)
+  fullName.vb: App.Metrics.Meter.DefaultMeterMetricProvider.Instance(Of T)(App.Metrics.Core.Options.MeterOptions, App.Metrics.Tagging.MetricTags, System.Func(Of T))
+  nameWithType: DefaultMeterMetricProvider.Instance<T>(MeterOptions, MetricTags, Func<T>)
+  nameWithType.vb: Instance(Of T)(MeterOptions, MetricTags, Func(Of T))
 - uid: App.Metrics.Meter.DefaultMeterMetricProvider.Instance``1(App.Metrics.Core.Options.MeterOptions,System.Func{``0})
   name: Instance<T>(MeterOptions, Func<T>)
   href: api/App.Metrics.Meter.DefaultMeterMetricProvider.html#App_Metrics_Meter_DefaultMeterMetricProvider_Instance__1_App_Metrics_Core_Options_MeterOptions_System_Func___0__
@@ -17080,15 +17536,6 @@ references:
   fullName.vb: App.Metrics.Meter.MeterValueSource.MeterValueSource(System.String, App.Metrics.Core.Abstractions.IMetricValueProvider(Of App.Metrics.Meter.MeterValue), App.Metrics.Unit, App.Metrics.TimeUnit, App.Metrics.Tagging.MetricTags)
   nameWithType: MeterValueSource.MeterValueSource(String, IMetricValueProvider<MeterValue>, Unit, TimeUnit, MetricTags)
   nameWithType.vb: MeterValueSource(String, IMetricValueProvider(Of MeterValue), Unit, TimeUnit, MetricTags)
-- uid: App.Metrics.Meter.MeterValueSource.#ctor(System.String,System.String,App.Metrics.Core.Abstractions.IMetricValueProvider{App.Metrics.Meter.MeterValue},App.Metrics.Unit,App.Metrics.TimeUnit,App.Metrics.Tagging.MetricTags)
-  name: MeterValueSource(String, String, IMetricValueProvider<MeterValue>, Unit, TimeUnit, MetricTags)
-  href: api/App.Metrics.Meter.MeterValueSource.html#App_Metrics_Meter_MeterValueSource__ctor_System_String_System_String_App_Metrics_Core_Abstractions_IMetricValueProvider_App_Metrics_Meter_MeterValue__App_Metrics_Unit_App_Metrics_TimeUnit_App_Metrics_Tagging_MetricTags_
-  commentId: M:App.Metrics.Meter.MeterValueSource.#ctor(System.String,System.String,App.Metrics.Core.Abstractions.IMetricValueProvider{App.Metrics.Meter.MeterValue},App.Metrics.Unit,App.Metrics.TimeUnit,App.Metrics.Tagging.MetricTags)
-  name.vb: MeterValueSource(String, String, IMetricValueProvider(Of MeterValue), Unit, TimeUnit, MetricTags)
-  fullName: App.Metrics.Meter.MeterValueSource.MeterValueSource(System.String, System.String, App.Metrics.Core.Abstractions.IMetricValueProvider<App.Metrics.Meter.MeterValue>, App.Metrics.Unit, App.Metrics.TimeUnit, App.Metrics.Tagging.MetricTags)
-  fullName.vb: App.Metrics.Meter.MeterValueSource.MeterValueSource(System.String, System.String, App.Metrics.Core.Abstractions.IMetricValueProvider(Of App.Metrics.Meter.MeterValue), App.Metrics.Unit, App.Metrics.TimeUnit, App.Metrics.Tagging.MetricTags)
-  nameWithType: MeterValueSource.MeterValueSource(String, String, IMetricValueProvider<MeterValue>, Unit, TimeUnit, MetricTags)
-  nameWithType.vb: MeterValueSource(String, String, IMetricValueProvider(Of MeterValue), Unit, TimeUnit, MetricTags)
 - uid: App.Metrics.Meter.MeterValueSource.#ctor*
   href: api/App.Metrics.Meter.MeterValueSource.html#App_Metrics_Meter_MeterValueSource__ctor_
   commentId: Overload:App.Metrics.Meter.MeterValueSource.#ctor
@@ -17748,6 +18195,15 @@ references:
   name.vb: Apdex
   fullName: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Apdex<T>(App.Metrics.Core.Options.ApdexOptions, System.Func<T>)
   fullName.vb: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Apdex
+- uid: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Apdex``1(App.Metrics.Core.Options.ApdexOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name: Apdex<T>(ApdexOptions, MetricTags, Func<T>)
+  href: api/App.Metrics.Registry.Abstractions.IMetricContextRegistry.html#App_Metrics_Registry_Abstractions_IMetricContextRegistry_Apdex__1_App_Metrics_Core_Options_ApdexOptions_App_Metrics_Tagging_MetricTags_System_Func___0__
+  commentId: M:App.Metrics.Registry.Abstractions.IMetricContextRegistry.Apdex``1(App.Metrics.Core.Options.ApdexOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name.vb: Apdex(Of T)(ApdexOptions, MetricTags, Func(Of T))
+  fullName: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Apdex<T>(App.Metrics.Core.Options.ApdexOptions, App.Metrics.Tagging.MetricTags, System.Func<T>)
+  fullName.vb: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Apdex(Of T)(App.Metrics.Core.Options.ApdexOptions, App.Metrics.Tagging.MetricTags, System.Func(Of T))
+  nameWithType: IMetricContextRegistry.Apdex<T>(ApdexOptions, MetricTags, Func<T>)
+  nameWithType.vb: Apdex(Of T)(ApdexOptions, MetricTags, Func(Of T))
 - uid: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Apdex``1(App.Metrics.Core.Options.ApdexOptions,System.Func{``0})
   name: Apdex<T>(ApdexOptions, Func<T>)
   href: api/App.Metrics.Registry.Abstractions.IMetricContextRegistry.html#App_Metrics_Registry_Abstractions_IMetricContextRegistry_Apdex__1_App_Metrics_Core_Options_ApdexOptions_System_Func___0__
@@ -17786,6 +18242,15 @@ references:
   name.vb: Counter
   fullName: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Counter<T>(App.Metrics.Core.Options.CounterOptions, System.Func<T>)
   fullName.vb: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Counter
+- uid: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Counter``1(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name: Counter<T>(CounterOptions, MetricTags, Func<T>)
+  href: api/App.Metrics.Registry.Abstractions.IMetricContextRegistry.html#App_Metrics_Registry_Abstractions_IMetricContextRegistry_Counter__1_App_Metrics_Core_Options_CounterOptions_App_Metrics_Tagging_MetricTags_System_Func___0__
+  commentId: M:App.Metrics.Registry.Abstractions.IMetricContextRegistry.Counter``1(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name.vb: Counter(Of T)(CounterOptions, MetricTags, Func(Of T))
+  fullName: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Counter<T>(App.Metrics.Core.Options.CounterOptions, App.Metrics.Tagging.MetricTags, System.Func<T>)
+  fullName.vb: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Counter(Of T)(App.Metrics.Core.Options.CounterOptions, App.Metrics.Tagging.MetricTags, System.Func(Of T))
+  nameWithType: IMetricContextRegistry.Counter<T>(CounterOptions, MetricTags, Func<T>)
+  nameWithType.vb: Counter(Of T)(CounterOptions, MetricTags, Func(Of T))
 - uid: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Counter``1(App.Metrics.Core.Options.CounterOptions,System.Func{``0})
   name: Counter<T>(CounterOptions, Func<T>)
   href: api/App.Metrics.Registry.Abstractions.IMetricContextRegistry.html#App_Metrics_Registry_Abstractions_IMetricContextRegistry_Counter__1_App_Metrics_Core_Options_CounterOptions_System_Func___0__
@@ -17806,22 +18271,31 @@ references:
   commentId: Overload:App.Metrics.Registry.Abstractions.IMetricContextRegistry.DataProvider
   name: DataProvider
   fullName: App.Metrics.Registry.Abstractions.IMetricContextRegistry.DataProvider
-- uid: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Gauge(App.Metrics.Core.Options.GaugeOptions,System.Func{App.Metrics.Core.Abstractions.IMetricValueProvider{System.Double}})
-  name: Gauge(GaugeOptions, Func<IMetricValueProvider<Double>>)
-  href: api/App.Metrics.Registry.Abstractions.IMetricContextRegistry.html#App_Metrics_Registry_Abstractions_IMetricContextRegistry_Gauge_App_Metrics_Core_Options_GaugeOptions_System_Func_App_Metrics_Core_Abstractions_IMetricValueProvider_System_Double___
-  commentId: M:App.Metrics.Registry.Abstractions.IMetricContextRegistry.Gauge(App.Metrics.Core.Options.GaugeOptions,System.Func{App.Metrics.Core.Abstractions.IMetricValueProvider{System.Double}})
-  name.vb: Gauge(GaugeOptions, Func(Of IMetricValueProvider(Of Double)))
-  fullName: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Gauge(App.Metrics.Core.Options.GaugeOptions, System.Func<App.Metrics.Core.Abstractions.IMetricValueProvider<System.Double>>)
-  fullName.vb: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Gauge(App.Metrics.Core.Options.GaugeOptions, System.Func(Of App.Metrics.Core.Abstractions.IMetricValueProvider(Of System.Double)))
-  nameWithType: IMetricContextRegistry.Gauge(GaugeOptions, Func<IMetricValueProvider<Double>>)
-  nameWithType.vb: Gauge(GaugeOptions, Func(Of IMetricValueProvider(Of Double)))
 - uid: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Gauge*
   href: api/App.Metrics.Registry.Abstractions.IMetricContextRegistry.html#App_Metrics_Registry_Abstractions_IMetricContextRegistry_Gauge_
   commentId: Overload:App.Metrics.Registry.Abstractions.IMetricContextRegistry.Gauge
-  name: Gauge
+  name: Gauge<T>
   name.vb: Gauge
-  fullName: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Gauge(App.Metrics.Core.Options.GaugeOptions, System.Func<App.Metrics.Core.Abstractions.IMetricValueProvider<System.Double>>)
+  fullName: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Gauge<T>(App.Metrics.Core.Options.GaugeOptions, System.Func<T>)
   fullName.vb: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Gauge
+- uid: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Gauge``1(App.Metrics.Core.Options.GaugeOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name: Gauge<T>(GaugeOptions, MetricTags, Func<T>)
+  href: api/App.Metrics.Registry.Abstractions.IMetricContextRegistry.html#App_Metrics_Registry_Abstractions_IMetricContextRegistry_Gauge__1_App_Metrics_Core_Options_GaugeOptions_App_Metrics_Tagging_MetricTags_System_Func___0__
+  commentId: M:App.Metrics.Registry.Abstractions.IMetricContextRegistry.Gauge``1(App.Metrics.Core.Options.GaugeOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name.vb: Gauge(Of T)(GaugeOptions, MetricTags, Func(Of T))
+  fullName: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Gauge<T>(App.Metrics.Core.Options.GaugeOptions, App.Metrics.Tagging.MetricTags, System.Func<T>)
+  fullName.vb: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Gauge(Of T)(App.Metrics.Core.Options.GaugeOptions, App.Metrics.Tagging.MetricTags, System.Func(Of T))
+  nameWithType: IMetricContextRegistry.Gauge<T>(GaugeOptions, MetricTags, Func<T>)
+  nameWithType.vb: Gauge(Of T)(GaugeOptions, MetricTags, Func(Of T))
+- uid: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Gauge``1(App.Metrics.Core.Options.GaugeOptions,System.Func{``0})
+  name: Gauge<T>(GaugeOptions, Func<T>)
+  href: api/App.Metrics.Registry.Abstractions.IMetricContextRegistry.html#App_Metrics_Registry_Abstractions_IMetricContextRegistry_Gauge__1_App_Metrics_Core_Options_GaugeOptions_System_Func___0__
+  commentId: M:App.Metrics.Registry.Abstractions.IMetricContextRegistry.Gauge``1(App.Metrics.Core.Options.GaugeOptions,System.Func{``0})
+  name.vb: Gauge(Of T)(GaugeOptions, Func(Of T))
+  fullName: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Gauge<T>(App.Metrics.Core.Options.GaugeOptions, System.Func<T>)
+  fullName.vb: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Gauge(Of T)(App.Metrics.Core.Options.GaugeOptions, System.Func(Of T))
+  nameWithType: IMetricContextRegistry.Gauge<T>(GaugeOptions, Func<T>)
+  nameWithType.vb: Gauge(Of T)(GaugeOptions, Func(Of T))
 - uid: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Histogram*
   href: api/App.Metrics.Registry.Abstractions.IMetricContextRegistry.html#App_Metrics_Registry_Abstractions_IMetricContextRegistry_Histogram_
   commentId: Overload:App.Metrics.Registry.Abstractions.IMetricContextRegistry.Histogram
@@ -17829,6 +18303,15 @@ references:
   name.vb: Histogram
   fullName: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Histogram<T>(App.Metrics.Core.Options.HistogramOptions, System.Func<T>)
   fullName.vb: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Histogram
+- uid: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Histogram``1(App.Metrics.Core.Options.HistogramOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name: Histogram<T>(HistogramOptions, MetricTags, Func<T>)
+  href: api/App.Metrics.Registry.Abstractions.IMetricContextRegistry.html#App_Metrics_Registry_Abstractions_IMetricContextRegistry_Histogram__1_App_Metrics_Core_Options_HistogramOptions_App_Metrics_Tagging_MetricTags_System_Func___0__
+  commentId: M:App.Metrics.Registry.Abstractions.IMetricContextRegistry.Histogram``1(App.Metrics.Core.Options.HistogramOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name.vb: Histogram(Of T)(HistogramOptions, MetricTags, Func(Of T))
+  fullName: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Histogram<T>(App.Metrics.Core.Options.HistogramOptions, App.Metrics.Tagging.MetricTags, System.Func<T>)
+  fullName.vb: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Histogram(Of T)(App.Metrics.Core.Options.HistogramOptions, App.Metrics.Tagging.MetricTags, System.Func(Of T))
+  nameWithType: IMetricContextRegistry.Histogram<T>(HistogramOptions, MetricTags, Func<T>)
+  nameWithType.vb: Histogram(Of T)(HistogramOptions, MetricTags, Func(Of T))
 - uid: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Histogram``1(App.Metrics.Core.Options.HistogramOptions,System.Func{``0})
   name: Histogram<T>(HistogramOptions, Func<T>)
   href: api/App.Metrics.Registry.Abstractions.IMetricContextRegistry.html#App_Metrics_Registry_Abstractions_IMetricContextRegistry_Histogram__1_App_Metrics_Core_Options_HistogramOptions_System_Func___0__
@@ -17845,6 +18328,15 @@ references:
   name.vb: Meter
   fullName: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Meter<T>(App.Metrics.Core.Options.MeterOptions, System.Func<T>)
   fullName.vb: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Meter
+- uid: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Meter``1(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name: Meter<T>(MeterOptions, MetricTags, Func<T>)
+  href: api/App.Metrics.Registry.Abstractions.IMetricContextRegistry.html#App_Metrics_Registry_Abstractions_IMetricContextRegistry_Meter__1_App_Metrics_Core_Options_MeterOptions_App_Metrics_Tagging_MetricTags_System_Func___0__
+  commentId: M:App.Metrics.Registry.Abstractions.IMetricContextRegistry.Meter``1(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name.vb: Meter(Of T)(MeterOptions, MetricTags, Func(Of T))
+  fullName: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Meter<T>(App.Metrics.Core.Options.MeterOptions, App.Metrics.Tagging.MetricTags, System.Func<T>)
+  fullName.vb: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Meter(Of T)(App.Metrics.Core.Options.MeterOptions, App.Metrics.Tagging.MetricTags, System.Func(Of T))
+  nameWithType: IMetricContextRegistry.Meter<T>(MeterOptions, MetricTags, Func<T>)
+  nameWithType.vb: Meter(Of T)(MeterOptions, MetricTags, Func(Of T))
 - uid: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Meter``1(App.Metrics.Core.Options.MeterOptions,System.Func{``0})
   name: Meter<T>(MeterOptions, Func<T>)
   href: api/App.Metrics.Registry.Abstractions.IMetricContextRegistry.html#App_Metrics_Registry_Abstractions_IMetricContextRegistry_Meter__1_App_Metrics_Core_Options_MeterOptions_System_Func___0__
@@ -17861,6 +18353,15 @@ references:
   name.vb: Timer
   fullName: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Timer<T>(App.Metrics.Core.Options.TimerOptions, System.Func<T>)
   fullName.vb: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Timer
+- uid: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Timer``1(App.Metrics.Core.Options.TimerOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name: Timer<T>(TimerOptions, MetricTags, Func<T>)
+  href: api/App.Metrics.Registry.Abstractions.IMetricContextRegistry.html#App_Metrics_Registry_Abstractions_IMetricContextRegistry_Timer__1_App_Metrics_Core_Options_TimerOptions_App_Metrics_Tagging_MetricTags_System_Func___0__
+  commentId: M:App.Metrics.Registry.Abstractions.IMetricContextRegistry.Timer``1(App.Metrics.Core.Options.TimerOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name.vb: Timer(Of T)(TimerOptions, MetricTags, Func(Of T))
+  fullName: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Timer<T>(App.Metrics.Core.Options.TimerOptions, App.Metrics.Tagging.MetricTags, System.Func<T>)
+  fullName.vb: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Timer(Of T)(App.Metrics.Core.Options.TimerOptions, App.Metrics.Tagging.MetricTags, System.Func(Of T))
+  nameWithType: IMetricContextRegistry.Timer<T>(TimerOptions, MetricTags, Func<T>)
+  nameWithType.vb: Timer(Of T)(TimerOptions, MetricTags, Func(Of T))
 - uid: App.Metrics.Registry.Abstractions.IMetricContextRegistry.Timer``1(App.Metrics.Core.Options.TimerOptions,System.Func{``0})
   name: Timer<T>(TimerOptions, Func<T>)
   href: api/App.Metrics.Registry.Abstractions.IMetricContextRegistry.html#App_Metrics_Registry_Abstractions_IMetricContextRegistry_Timer__1_App_Metrics_Core_Options_TimerOptions_System_Func___0__
@@ -17955,6 +18456,15 @@ references:
   name.vb: Apdex
   fullName: App.Metrics.Registry.Abstractions.IMetricsRegistry.Apdex<T>(App.Metrics.Core.Options.ApdexOptions, System.Func<T>)
   fullName.vb: App.Metrics.Registry.Abstractions.IMetricsRegistry.Apdex
+- uid: App.Metrics.Registry.Abstractions.IMetricsRegistry.Apdex``1(App.Metrics.Core.Options.ApdexOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name: Apdex<T>(ApdexOptions, MetricTags, Func<T>)
+  href: api/App.Metrics.Registry.Abstractions.IMetricsRegistry.html#App_Metrics_Registry_Abstractions_IMetricsRegistry_Apdex__1_App_Metrics_Core_Options_ApdexOptions_App_Metrics_Tagging_MetricTags_System_Func___0__
+  commentId: M:App.Metrics.Registry.Abstractions.IMetricsRegistry.Apdex``1(App.Metrics.Core.Options.ApdexOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name.vb: Apdex(Of T)(ApdexOptions, MetricTags, Func(Of T))
+  fullName: App.Metrics.Registry.Abstractions.IMetricsRegistry.Apdex<T>(App.Metrics.Core.Options.ApdexOptions, App.Metrics.Tagging.MetricTags, System.Func<T>)
+  fullName.vb: App.Metrics.Registry.Abstractions.IMetricsRegistry.Apdex(Of T)(App.Metrics.Core.Options.ApdexOptions, App.Metrics.Tagging.MetricTags, System.Func(Of T))
+  nameWithType: IMetricsRegistry.Apdex<T>(ApdexOptions, MetricTags, Func<T>)
+  nameWithType.vb: Apdex(Of T)(ApdexOptions, MetricTags, Func(Of T))
 - uid: App.Metrics.Registry.Abstractions.IMetricsRegistry.Apdex``1(App.Metrics.Core.Options.ApdexOptions,System.Func{``0})
   name: Apdex<T>(ApdexOptions, Func<T>)
   href: api/App.Metrics.Registry.Abstractions.IMetricsRegistry.html#App_Metrics_Registry_Abstractions_IMetricsRegistry_Apdex__1_App_Metrics_Core_Options_ApdexOptions_System_Func___0__
@@ -17982,6 +18492,15 @@ references:
   name.vb: Counter
   fullName: App.Metrics.Registry.Abstractions.IMetricsRegistry.Counter<T>(App.Metrics.Core.Options.CounterOptions, System.Func<T>)
   fullName.vb: App.Metrics.Registry.Abstractions.IMetricsRegistry.Counter
+- uid: App.Metrics.Registry.Abstractions.IMetricsRegistry.Counter``1(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name: Counter<T>(CounterOptions, MetricTags, Func<T>)
+  href: api/App.Metrics.Registry.Abstractions.IMetricsRegistry.html#App_Metrics_Registry_Abstractions_IMetricsRegistry_Counter__1_App_Metrics_Core_Options_CounterOptions_App_Metrics_Tagging_MetricTags_System_Func___0__
+  commentId: M:App.Metrics.Registry.Abstractions.IMetricsRegistry.Counter``1(App.Metrics.Core.Options.CounterOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name.vb: Counter(Of T)(CounterOptions, MetricTags, Func(Of T))
+  fullName: App.Metrics.Registry.Abstractions.IMetricsRegistry.Counter<T>(App.Metrics.Core.Options.CounterOptions, App.Metrics.Tagging.MetricTags, System.Func<T>)
+  fullName.vb: App.Metrics.Registry.Abstractions.IMetricsRegistry.Counter(Of T)(App.Metrics.Core.Options.CounterOptions, App.Metrics.Tagging.MetricTags, System.Func(Of T))
+  nameWithType: IMetricsRegistry.Counter<T>(CounterOptions, MetricTags, Func<T>)
+  nameWithType.vb: Counter(Of T)(CounterOptions, MetricTags, Func(Of T))
 - uid: App.Metrics.Registry.Abstractions.IMetricsRegistry.Counter``1(App.Metrics.Core.Options.CounterOptions,System.Func{``0})
   name: Counter<T>(CounterOptions, Func<T>)
   href: api/App.Metrics.Registry.Abstractions.IMetricsRegistry.html#App_Metrics_Registry_Abstractions_IMetricsRegistry_Counter__1_App_Metrics_Core_Options_CounterOptions_System_Func___0__
@@ -18002,22 +18521,31 @@ references:
   commentId: Overload:App.Metrics.Registry.Abstractions.IMetricsRegistry.Disable
   name: Disable
   fullName: App.Metrics.Registry.Abstractions.IMetricsRegistry.Disable()
-- uid: App.Metrics.Registry.Abstractions.IMetricsRegistry.Gauge(App.Metrics.Core.Options.GaugeOptions,System.Func{App.Metrics.Core.Abstractions.IMetricValueProvider{System.Double}})
-  name: Gauge(GaugeOptions, Func<IMetricValueProvider<Double>>)
-  href: api/App.Metrics.Registry.Abstractions.IMetricsRegistry.html#App_Metrics_Registry_Abstractions_IMetricsRegistry_Gauge_App_Metrics_Core_Options_GaugeOptions_System_Func_App_Metrics_Core_Abstractions_IMetricValueProvider_System_Double___
-  commentId: M:App.Metrics.Registry.Abstractions.IMetricsRegistry.Gauge(App.Metrics.Core.Options.GaugeOptions,System.Func{App.Metrics.Core.Abstractions.IMetricValueProvider{System.Double}})
-  name.vb: Gauge(GaugeOptions, Func(Of IMetricValueProvider(Of Double)))
-  fullName: App.Metrics.Registry.Abstractions.IMetricsRegistry.Gauge(App.Metrics.Core.Options.GaugeOptions, System.Func<App.Metrics.Core.Abstractions.IMetricValueProvider<System.Double>>)
-  fullName.vb: App.Metrics.Registry.Abstractions.IMetricsRegistry.Gauge(App.Metrics.Core.Options.GaugeOptions, System.Func(Of App.Metrics.Core.Abstractions.IMetricValueProvider(Of System.Double)))
-  nameWithType: IMetricsRegistry.Gauge(GaugeOptions, Func<IMetricValueProvider<Double>>)
-  nameWithType.vb: Gauge(GaugeOptions, Func(Of IMetricValueProvider(Of Double)))
 - uid: App.Metrics.Registry.Abstractions.IMetricsRegistry.Gauge*
   href: api/App.Metrics.Registry.Abstractions.IMetricsRegistry.html#App_Metrics_Registry_Abstractions_IMetricsRegistry_Gauge_
   commentId: Overload:App.Metrics.Registry.Abstractions.IMetricsRegistry.Gauge
-  name: Gauge
+  name: Gauge<T>
   name.vb: Gauge
-  fullName: App.Metrics.Registry.Abstractions.IMetricsRegistry.Gauge(App.Metrics.Core.Options.GaugeOptions, System.Func<App.Metrics.Core.Abstractions.IMetricValueProvider<System.Double>>)
+  fullName: App.Metrics.Registry.Abstractions.IMetricsRegistry.Gauge<T>(App.Metrics.Core.Options.GaugeOptions, System.Func<T>)
   fullName.vb: App.Metrics.Registry.Abstractions.IMetricsRegistry.Gauge
+- uid: App.Metrics.Registry.Abstractions.IMetricsRegistry.Gauge``1(App.Metrics.Core.Options.GaugeOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name: Gauge<T>(GaugeOptions, MetricTags, Func<T>)
+  href: api/App.Metrics.Registry.Abstractions.IMetricsRegistry.html#App_Metrics_Registry_Abstractions_IMetricsRegistry_Gauge__1_App_Metrics_Core_Options_GaugeOptions_App_Metrics_Tagging_MetricTags_System_Func___0__
+  commentId: M:App.Metrics.Registry.Abstractions.IMetricsRegistry.Gauge``1(App.Metrics.Core.Options.GaugeOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name.vb: Gauge(Of T)(GaugeOptions, MetricTags, Func(Of T))
+  fullName: App.Metrics.Registry.Abstractions.IMetricsRegistry.Gauge<T>(App.Metrics.Core.Options.GaugeOptions, App.Metrics.Tagging.MetricTags, System.Func<T>)
+  fullName.vb: App.Metrics.Registry.Abstractions.IMetricsRegistry.Gauge(Of T)(App.Metrics.Core.Options.GaugeOptions, App.Metrics.Tagging.MetricTags, System.Func(Of T))
+  nameWithType: IMetricsRegistry.Gauge<T>(GaugeOptions, MetricTags, Func<T>)
+  nameWithType.vb: Gauge(Of T)(GaugeOptions, MetricTags, Func(Of T))
+- uid: App.Metrics.Registry.Abstractions.IMetricsRegistry.Gauge``1(App.Metrics.Core.Options.GaugeOptions,System.Func{``0})
+  name: Gauge<T>(GaugeOptions, Func<T>)
+  href: api/App.Metrics.Registry.Abstractions.IMetricsRegistry.html#App_Metrics_Registry_Abstractions_IMetricsRegistry_Gauge__1_App_Metrics_Core_Options_GaugeOptions_System_Func___0__
+  commentId: M:App.Metrics.Registry.Abstractions.IMetricsRegistry.Gauge``1(App.Metrics.Core.Options.GaugeOptions,System.Func{``0})
+  name.vb: Gauge(Of T)(GaugeOptions, Func(Of T))
+  fullName: App.Metrics.Registry.Abstractions.IMetricsRegistry.Gauge<T>(App.Metrics.Core.Options.GaugeOptions, System.Func<T>)
+  fullName.vb: App.Metrics.Registry.Abstractions.IMetricsRegistry.Gauge(Of T)(App.Metrics.Core.Options.GaugeOptions, System.Func(Of T))
+  nameWithType: IMetricsRegistry.Gauge<T>(GaugeOptions, Func<T>)
+  nameWithType.vb: Gauge(Of T)(GaugeOptions, Func(Of T))
 - uid: App.Metrics.Registry.Abstractions.IMetricsRegistry.GetData(App.Metrics.Abstractions.Filtering.IFilterMetrics)
   name: GetData(IFilterMetrics)
   href: api/App.Metrics.Registry.Abstractions.IMetricsRegistry.html#App_Metrics_Registry_Abstractions_IMetricsRegistry_GetData_App_Metrics_Abstractions_Filtering_IFilterMetrics_
@@ -18036,6 +18564,15 @@ references:
   name.vb: Histogram
   fullName: App.Metrics.Registry.Abstractions.IMetricsRegistry.Histogram<T>(App.Metrics.Core.Options.HistogramOptions, System.Func<T>)
   fullName.vb: App.Metrics.Registry.Abstractions.IMetricsRegistry.Histogram
+- uid: App.Metrics.Registry.Abstractions.IMetricsRegistry.Histogram``1(App.Metrics.Core.Options.HistogramOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name: Histogram<T>(HistogramOptions, MetricTags, Func<T>)
+  href: api/App.Metrics.Registry.Abstractions.IMetricsRegistry.html#App_Metrics_Registry_Abstractions_IMetricsRegistry_Histogram__1_App_Metrics_Core_Options_HistogramOptions_App_Metrics_Tagging_MetricTags_System_Func___0__
+  commentId: M:App.Metrics.Registry.Abstractions.IMetricsRegistry.Histogram``1(App.Metrics.Core.Options.HistogramOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name.vb: Histogram(Of T)(HistogramOptions, MetricTags, Func(Of T))
+  fullName: App.Metrics.Registry.Abstractions.IMetricsRegistry.Histogram<T>(App.Metrics.Core.Options.HistogramOptions, App.Metrics.Tagging.MetricTags, System.Func<T>)
+  fullName.vb: App.Metrics.Registry.Abstractions.IMetricsRegistry.Histogram(Of T)(App.Metrics.Core.Options.HistogramOptions, App.Metrics.Tagging.MetricTags, System.Func(Of T))
+  nameWithType: IMetricsRegistry.Histogram<T>(HistogramOptions, MetricTags, Func<T>)
+  nameWithType.vb: Histogram(Of T)(HistogramOptions, MetricTags, Func(Of T))
 - uid: App.Metrics.Registry.Abstractions.IMetricsRegistry.Histogram``1(App.Metrics.Core.Options.HistogramOptions,System.Func{``0})
   name: Histogram<T>(HistogramOptions, Func<T>)
   href: api/App.Metrics.Registry.Abstractions.IMetricsRegistry.html#App_Metrics_Registry_Abstractions_IMetricsRegistry_Histogram__1_App_Metrics_Core_Options_HistogramOptions_System_Func___0__
@@ -18052,6 +18589,15 @@ references:
   name.vb: Meter
   fullName: App.Metrics.Registry.Abstractions.IMetricsRegistry.Meter<T>(App.Metrics.Core.Options.MeterOptions, System.Func<T>)
   fullName.vb: App.Metrics.Registry.Abstractions.IMetricsRegistry.Meter
+- uid: App.Metrics.Registry.Abstractions.IMetricsRegistry.Meter``1(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name: Meter<T>(MeterOptions, MetricTags, Func<T>)
+  href: api/App.Metrics.Registry.Abstractions.IMetricsRegistry.html#App_Metrics_Registry_Abstractions_IMetricsRegistry_Meter__1_App_Metrics_Core_Options_MeterOptions_App_Metrics_Tagging_MetricTags_System_Func___0__
+  commentId: M:App.Metrics.Registry.Abstractions.IMetricsRegistry.Meter``1(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name.vb: Meter(Of T)(MeterOptions, MetricTags, Func(Of T))
+  fullName: App.Metrics.Registry.Abstractions.IMetricsRegistry.Meter<T>(App.Metrics.Core.Options.MeterOptions, App.Metrics.Tagging.MetricTags, System.Func<T>)
+  fullName.vb: App.Metrics.Registry.Abstractions.IMetricsRegistry.Meter(Of T)(App.Metrics.Core.Options.MeterOptions, App.Metrics.Tagging.MetricTags, System.Func(Of T))
+  nameWithType: IMetricsRegistry.Meter<T>(MeterOptions, MetricTags, Func<T>)
+  nameWithType.vb: Meter(Of T)(MeterOptions, MetricTags, Func(Of T))
 - uid: App.Metrics.Registry.Abstractions.IMetricsRegistry.Meter``1(App.Metrics.Core.Options.MeterOptions,System.Func{``0})
   name: Meter<T>(MeterOptions, Func<T>)
   href: api/App.Metrics.Registry.Abstractions.IMetricsRegistry.html#App_Metrics_Registry_Abstractions_IMetricsRegistry_Meter__1_App_Metrics_Core_Options_MeterOptions_System_Func___0__
@@ -18079,6 +18625,15 @@ references:
   name.vb: Timer
   fullName: App.Metrics.Registry.Abstractions.IMetricsRegistry.Timer<T>(App.Metrics.Core.Options.TimerOptions, System.Func<T>)
   fullName.vb: App.Metrics.Registry.Abstractions.IMetricsRegistry.Timer
+- uid: App.Metrics.Registry.Abstractions.IMetricsRegistry.Timer``1(App.Metrics.Core.Options.TimerOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name: Timer<T>(TimerOptions, MetricTags, Func<T>)
+  href: api/App.Metrics.Registry.Abstractions.IMetricsRegistry.html#App_Metrics_Registry_Abstractions_IMetricsRegistry_Timer__1_App_Metrics_Core_Options_TimerOptions_App_Metrics_Tagging_MetricTags_System_Func___0__
+  commentId: M:App.Metrics.Registry.Abstractions.IMetricsRegistry.Timer``1(App.Metrics.Core.Options.TimerOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name.vb: Timer(Of T)(TimerOptions, MetricTags, Func(Of T))
+  fullName: App.Metrics.Registry.Abstractions.IMetricsRegistry.Timer<T>(App.Metrics.Core.Options.TimerOptions, App.Metrics.Tagging.MetricTags, System.Func<T>)
+  fullName.vb: App.Metrics.Registry.Abstractions.IMetricsRegistry.Timer(Of T)(App.Metrics.Core.Options.TimerOptions, App.Metrics.Tagging.MetricTags, System.Func(Of T))
+  nameWithType: IMetricsRegistry.Timer<T>(TimerOptions, MetricTags, Func<T>)
+  nameWithType.vb: Timer(Of T)(TimerOptions, MetricTags, Func(Of T))
 - uid: App.Metrics.Registry.Abstractions.IMetricsRegistry.Timer``1(App.Metrics.Core.Options.TimerOptions,System.Func{``0})
   name: Timer<T>(TimerOptions, Func<T>)
   href: api/App.Metrics.Registry.Abstractions.IMetricsRegistry.html#App_Metrics_Registry_Abstractions_IMetricsRegistry_Timer__1_App_Metrics_Core_Options_TimerOptions_System_Func___0__
@@ -18834,21 +19389,21 @@ references:
   commentId: T:App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot
   fullName: App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot
   nameWithType: WeightedSnapshot
-- uid: App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.#ctor(System.Int64,System.Collections.Generic.IEnumerable{App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSample})
-  name: WeightedSnapshot(Int64, IEnumerable<WeightedSample>)
-  href: api/App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.html#App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot__ctor_System_Int64_System_Collections_Generic_IEnumerable_App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSample__
-  commentId: M:App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.#ctor(System.Int64,System.Collections.Generic.IEnumerable{App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSample})
-  name.vb: WeightedSnapshot(Int64, IEnumerable(Of WeightedSample))
-  fullName: App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.WeightedSnapshot(System.Int64, System.Collections.Generic.IEnumerable<App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSample>)
-  fullName.vb: App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.WeightedSnapshot(System.Int64, System.Collections.Generic.IEnumerable(Of App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSample))
-  nameWithType: WeightedSnapshot.WeightedSnapshot(Int64, IEnumerable<WeightedSample>)
-  nameWithType.vb: WeightedSnapshot(Int64, IEnumerable(Of WeightedSample))
+- uid: App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.#ctor(System.Int64,System.Double,System.Collections.Generic.IEnumerable{App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSample})
+  name: WeightedSnapshot(Int64, Double, IEnumerable<WeightedSample>)
+  href: api/App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.html#App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot__ctor_System_Int64_System_Double_System_Collections_Generic_IEnumerable_App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSample__
+  commentId: M:App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.#ctor(System.Int64,System.Double,System.Collections.Generic.IEnumerable{App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSample})
+  name.vb: WeightedSnapshot(Int64, Double, IEnumerable(Of WeightedSample))
+  fullName: App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.WeightedSnapshot(System.Int64, System.Double, System.Collections.Generic.IEnumerable<App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSample>)
+  fullName.vb: App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.WeightedSnapshot(System.Int64, System.Double, System.Collections.Generic.IEnumerable(Of App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSample))
+  nameWithType: WeightedSnapshot.WeightedSnapshot(Int64, Double, IEnumerable<WeightedSample>)
+  nameWithType.vb: WeightedSnapshot(Int64, Double, IEnumerable(Of WeightedSample))
 - uid: App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.#ctor*
   href: api/App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.html#App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot__ctor_
   commentId: Overload:App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.#ctor
   name: WeightedSnapshot
   name.vb: WeightedSnapshot
-  fullName: App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.WeightedSnapshot(System.Int64, System.Collections.Generic.IEnumerable<App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSample>)
+  fullName: App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.WeightedSnapshot(System.Int64, System.Double, System.Collections.Generic.IEnumerable<App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSample>)
   fullName.vb: App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.WeightedSnapshot
 - uid: App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Count
   name: Count
@@ -19015,6 +19570,17 @@ references:
   commentId: Overload:App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.StdDev
   name: StdDev
   fullName: App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.StdDev
+- uid: App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Sum
+  name: Sum
+  href: api/App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.html#App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Sum
+  commentId: P:App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Sum
+  fullName: App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Sum
+  nameWithType: WeightedSnapshot.Sum
+- uid: App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Sum*
+  href: api/App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.html#App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Sum_
+  commentId: Overload:App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Sum
+  name: Sum
+  fullName: App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Sum
 - uid: App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Values
   name: Values
   href: api/App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.html#App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Values
@@ -19191,21 +19757,21 @@ references:
   commentId: T:App.Metrics.ReservoirSampling.Uniform.UniformSnapshot
   fullName: App.Metrics.ReservoirSampling.Uniform.UniformSnapshot
   nameWithType: UniformSnapshot
-- uid: App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.#ctor(System.Int64,System.Collections.Generic.IEnumerable{System.Int64},System.Boolean,System.String,System.String)
-  name: UniformSnapshot(Int64, IEnumerable<Int64>, Boolean, String, String)
-  href: api/App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.html#App_Metrics_ReservoirSampling_Uniform_UniformSnapshot__ctor_System_Int64_System_Collections_Generic_IEnumerable_System_Int64__System_Boolean_System_String_System_String_
-  commentId: M:App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.#ctor(System.Int64,System.Collections.Generic.IEnumerable{System.Int64},System.Boolean,System.String,System.String)
-  name.vb: UniformSnapshot(Int64, IEnumerable(Of Int64), Boolean, String, String)
-  fullName: App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.UniformSnapshot(System.Int64, System.Collections.Generic.IEnumerable<System.Int64>, System.Boolean, System.String, System.String)
-  fullName.vb: App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.UniformSnapshot(System.Int64, System.Collections.Generic.IEnumerable(Of System.Int64), System.Boolean, System.String, System.String)
-  nameWithType: UniformSnapshot.UniformSnapshot(Int64, IEnumerable<Int64>, Boolean, String, String)
-  nameWithType.vb: UniformSnapshot(Int64, IEnumerable(Of Int64), Boolean, String, String)
+- uid: App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.#ctor(System.Int64,System.Double,System.Collections.Generic.IEnumerable{System.Int64},System.Boolean,System.String,System.String)
+  name: UniformSnapshot(Int64, Double, IEnumerable<Int64>, Boolean, String, String)
+  href: api/App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.html#App_Metrics_ReservoirSampling_Uniform_UniformSnapshot__ctor_System_Int64_System_Double_System_Collections_Generic_IEnumerable_System_Int64__System_Boolean_System_String_System_String_
+  commentId: M:App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.#ctor(System.Int64,System.Double,System.Collections.Generic.IEnumerable{System.Int64},System.Boolean,System.String,System.String)
+  name.vb: UniformSnapshot(Int64, Double, IEnumerable(Of Int64), Boolean, String, String)
+  fullName: App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.UniformSnapshot(System.Int64, System.Double, System.Collections.Generic.IEnumerable<System.Int64>, System.Boolean, System.String, System.String)
+  fullName.vb: App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.UniformSnapshot(System.Int64, System.Double, System.Collections.Generic.IEnumerable(Of System.Int64), System.Boolean, System.String, System.String)
+  nameWithType: UniformSnapshot.UniformSnapshot(Int64, Double, IEnumerable<Int64>, Boolean, String, String)
+  nameWithType.vb: UniformSnapshot(Int64, Double, IEnumerable(Of Int64), Boolean, String, String)
 - uid: App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.#ctor*
   href: api/App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.html#App_Metrics_ReservoirSampling_Uniform_UniformSnapshot__ctor_
   commentId: Overload:App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.#ctor
   name: UniformSnapshot
   name.vb: UniformSnapshot
-  fullName: App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.UniformSnapshot(System.Int64, System.Collections.Generic.IEnumerable<System.Int64>, System.Boolean, System.String, System.String)
+  fullName: App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.UniformSnapshot(System.Int64, System.Double, System.Collections.Generic.IEnumerable<System.Int64>, System.Boolean, System.String, System.String)
   fullName.vb: App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.UniformSnapshot
 - uid: App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Count
   name: Count
@@ -19372,6 +19938,17 @@ references:
   commentId: Overload:App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.StdDev
   name: StdDev
   fullName: App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.StdDev
+- uid: App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Sum
+  name: Sum
+  href: api/App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.html#App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Sum
+  commentId: P:App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Sum
+  fullName: App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Sum
+  nameWithType: UniformSnapshot.Sum
+- uid: App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Sum*
+  href: api/App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.html#App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Sum_
+  commentId: Overload:App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Sum
+  name: Sum
+  fullName: App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Sum
 - uid: App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Values
   name: Values
   href: api/App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.html#App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Values
@@ -21040,6 +21617,17 @@ references:
   commentId: Overload:App.Metrics.Tagging.MetricTags.#ctor
   name: MetricTags
   fullName: App.Metrics.Tagging.MetricTags.MetricTags(System.String, System.String)
+- uid: App.Metrics.Tagging.MetricTags.AsMetricName(System.String)
+  name: AsMetricName(String)
+  href: api/App.Metrics.Tagging.MetricTags.html#App_Metrics_Tagging_MetricTags_AsMetricName_System_String_
+  commentId: M:App.Metrics.Tagging.MetricTags.AsMetricName(System.String)
+  fullName: App.Metrics.Tagging.MetricTags.AsMetricName(System.String)
+  nameWithType: MetricTags.AsMetricName(String)
+- uid: App.Metrics.Tagging.MetricTags.AsMetricName*
+  href: api/App.Metrics.Tagging.MetricTags.html#App_Metrics_Tagging_MetricTags_AsMetricName_
+  commentId: Overload:App.Metrics.Tagging.MetricTags.AsMetricName
+  name: AsMetricName
+  fullName: App.Metrics.Tagging.MetricTags.AsMetricName(System.String)
 - uid: App.Metrics.Tagging.MetricTags.Concat(App.Metrics.Tagging.MetricTags,App.Metrics.Tagging.MetricTags)
   name: Concat(MetricTags, MetricTags)
   href: api/App.Metrics.Tagging.MetricTags.html#App_Metrics_Tagging_MetricTags_Concat_App_Metrics_Tagging_MetricTags_App_Metrics_Tagging_MetricTags_
@@ -21222,6 +21810,30 @@ references:
   commentId: M:App.Metrics.Timer.Abstractions.IMeasureTimerMetrics.Time(App.Metrics.Core.Options.TimerOptions)
   fullName: App.Metrics.Timer.Abstractions.IMeasureTimerMetrics.Time(App.Metrics.Core.Options.TimerOptions)
   nameWithType: IMeasureTimerMetrics.Time(TimerOptions)
+- uid: App.Metrics.Timer.Abstractions.IMeasureTimerMetrics.Time(App.Metrics.Core.Options.TimerOptions,App.Metrics.Tagging.MetricTags)
+  name: Time(TimerOptions, MetricTags)
+  href: api/App.Metrics.Timer.Abstractions.IMeasureTimerMetrics.html#App_Metrics_Timer_Abstractions_IMeasureTimerMetrics_Time_App_Metrics_Core_Options_TimerOptions_App_Metrics_Tagging_MetricTags_
+  commentId: M:App.Metrics.Timer.Abstractions.IMeasureTimerMetrics.Time(App.Metrics.Core.Options.TimerOptions,App.Metrics.Tagging.MetricTags)
+  fullName: App.Metrics.Timer.Abstractions.IMeasureTimerMetrics.Time(App.Metrics.Core.Options.TimerOptions, App.Metrics.Tagging.MetricTags)
+  nameWithType: IMeasureTimerMetrics.Time(TimerOptions, MetricTags)
+- uid: App.Metrics.Timer.Abstractions.IMeasureTimerMetrics.Time(App.Metrics.Core.Options.TimerOptions,App.Metrics.Tagging.MetricTags,System.Action)
+  name: Time(TimerOptions, MetricTags, Action)
+  href: api/App.Metrics.Timer.Abstractions.IMeasureTimerMetrics.html#App_Metrics_Timer_Abstractions_IMeasureTimerMetrics_Time_App_Metrics_Core_Options_TimerOptions_App_Metrics_Tagging_MetricTags_System_Action_
+  commentId: M:App.Metrics.Timer.Abstractions.IMeasureTimerMetrics.Time(App.Metrics.Core.Options.TimerOptions,App.Metrics.Tagging.MetricTags,System.Action)
+  fullName: App.Metrics.Timer.Abstractions.IMeasureTimerMetrics.Time(App.Metrics.Core.Options.TimerOptions, App.Metrics.Tagging.MetricTags, System.Action)
+  nameWithType: IMeasureTimerMetrics.Time(TimerOptions, MetricTags, Action)
+- uid: App.Metrics.Timer.Abstractions.IMeasureTimerMetrics.Time(App.Metrics.Core.Options.TimerOptions,App.Metrics.Tagging.MetricTags,System.Action,System.String)
+  name: Time(TimerOptions, MetricTags, Action, String)
+  href: api/App.Metrics.Timer.Abstractions.IMeasureTimerMetrics.html#App_Metrics_Timer_Abstractions_IMeasureTimerMetrics_Time_App_Metrics_Core_Options_TimerOptions_App_Metrics_Tagging_MetricTags_System_Action_System_String_
+  commentId: M:App.Metrics.Timer.Abstractions.IMeasureTimerMetrics.Time(App.Metrics.Core.Options.TimerOptions,App.Metrics.Tagging.MetricTags,System.Action,System.String)
+  fullName: App.Metrics.Timer.Abstractions.IMeasureTimerMetrics.Time(App.Metrics.Core.Options.TimerOptions, App.Metrics.Tagging.MetricTags, System.Action, System.String)
+  nameWithType: IMeasureTimerMetrics.Time(TimerOptions, MetricTags, Action, String)
+- uid: App.Metrics.Timer.Abstractions.IMeasureTimerMetrics.Time(App.Metrics.Core.Options.TimerOptions,App.Metrics.Tagging.MetricTags,System.String)
+  name: Time(TimerOptions, MetricTags, String)
+  href: api/App.Metrics.Timer.Abstractions.IMeasureTimerMetrics.html#App_Metrics_Timer_Abstractions_IMeasureTimerMetrics_Time_App_Metrics_Core_Options_TimerOptions_App_Metrics_Tagging_MetricTags_System_String_
+  commentId: M:App.Metrics.Timer.Abstractions.IMeasureTimerMetrics.Time(App.Metrics.Core.Options.TimerOptions,App.Metrics.Tagging.MetricTags,System.String)
+  fullName: App.Metrics.Timer.Abstractions.IMeasureTimerMetrics.Time(App.Metrics.Core.Options.TimerOptions, App.Metrics.Tagging.MetricTags, System.String)
+  nameWithType: IMeasureTimerMetrics.Time(TimerOptions, MetricTags, String)
 - uid: App.Metrics.Timer.Abstractions.IMeasureTimerMetrics.Time(App.Metrics.Core.Options.TimerOptions,System.Action)
   name: Time(TimerOptions, Action)
   href: api/App.Metrics.Timer.Abstractions.IMeasureTimerMetrics.html#App_Metrics_Timer_Abstractions_IMeasureTimerMetrics_Time_App_Metrics_Core_Options_TimerOptions_System_Action_
@@ -21257,11 +21869,26 @@ references:
   commentId: M:App.Metrics.Timer.Abstractions.IProvideTimerMetrics.Instance(App.Metrics.Core.Options.TimerOptions)
   fullName: App.Metrics.Timer.Abstractions.IProvideTimerMetrics.Instance(App.Metrics.Core.Options.TimerOptions)
   nameWithType: IProvideTimerMetrics.Instance(TimerOptions)
+- uid: App.Metrics.Timer.Abstractions.IProvideTimerMetrics.Instance(App.Metrics.Core.Options.TimerOptions,App.Metrics.Tagging.MetricTags)
+  name: Instance(TimerOptions, MetricTags)
+  href: api/App.Metrics.Timer.Abstractions.IProvideTimerMetrics.html#App_Metrics_Timer_Abstractions_IProvideTimerMetrics_Instance_App_Metrics_Core_Options_TimerOptions_App_Metrics_Tagging_MetricTags_
+  commentId: M:App.Metrics.Timer.Abstractions.IProvideTimerMetrics.Instance(App.Metrics.Core.Options.TimerOptions,App.Metrics.Tagging.MetricTags)
+  fullName: App.Metrics.Timer.Abstractions.IProvideTimerMetrics.Instance(App.Metrics.Core.Options.TimerOptions, App.Metrics.Tagging.MetricTags)
+  nameWithType: IProvideTimerMetrics.Instance(TimerOptions, MetricTags)
 - uid: App.Metrics.Timer.Abstractions.IProvideTimerMetrics.Instance*
   href: api/App.Metrics.Timer.Abstractions.IProvideTimerMetrics.html#App_Metrics_Timer_Abstractions_IProvideTimerMetrics_Instance_
   commentId: Overload:App.Metrics.Timer.Abstractions.IProvideTimerMetrics.Instance
   name: Instance
   fullName: App.Metrics.Timer.Abstractions.IProvideTimerMetrics.Instance(App.Metrics.Core.Options.TimerOptions)
+- uid: App.Metrics.Timer.Abstractions.IProvideTimerMetrics.Instance``1(App.Metrics.Core.Options.TimerOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name: Instance<T>(TimerOptions, MetricTags, Func<T>)
+  href: api/App.Metrics.Timer.Abstractions.IProvideTimerMetrics.html#App_Metrics_Timer_Abstractions_IProvideTimerMetrics_Instance__1_App_Metrics_Core_Options_TimerOptions_App_Metrics_Tagging_MetricTags_System_Func___0__
+  commentId: M:App.Metrics.Timer.Abstractions.IProvideTimerMetrics.Instance``1(App.Metrics.Core.Options.TimerOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name.vb: Instance(Of T)(TimerOptions, MetricTags, Func(Of T))
+  fullName: App.Metrics.Timer.Abstractions.IProvideTimerMetrics.Instance<T>(App.Metrics.Core.Options.TimerOptions, App.Metrics.Tagging.MetricTags, System.Func<T>)
+  fullName.vb: App.Metrics.Timer.Abstractions.IProvideTimerMetrics.Instance(Of T)(App.Metrics.Core.Options.TimerOptions, App.Metrics.Tagging.MetricTags, System.Func(Of T))
+  nameWithType: IProvideTimerMetrics.Instance<T>(TimerOptions, MetricTags, Func<T>)
+  nameWithType.vb: Instance(Of T)(TimerOptions, MetricTags, Func(Of T))
 - uid: App.Metrics.Timer.Abstractions.IProvideTimerMetrics.Instance``1(App.Metrics.Core.Options.TimerOptions,System.Func{``0})
   name: Instance<T>(TimerOptions, Func<T>)
   href: api/App.Metrics.Timer.Abstractions.IProvideTimerMetrics.html#App_Metrics_Timer_Abstractions_IProvideTimerMetrics_Instance__1_App_Metrics_Core_Options_TimerOptions_System_Func___0__
@@ -21278,6 +21905,15 @@ references:
   name.vb: WithHistogram
   fullName: App.Metrics.Timer.Abstractions.IProvideTimerMetrics.WithHistogram<T>(App.Metrics.Core.Options.TimerOptions, System.Func<T>)
   fullName.vb: App.Metrics.Timer.Abstractions.IProvideTimerMetrics.WithHistogram
+- uid: App.Metrics.Timer.Abstractions.IProvideTimerMetrics.WithHistogram``1(App.Metrics.Core.Options.TimerOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name: WithHistogram<T>(TimerOptions, MetricTags, Func<T>)
+  href: api/App.Metrics.Timer.Abstractions.IProvideTimerMetrics.html#App_Metrics_Timer_Abstractions_IProvideTimerMetrics_WithHistogram__1_App_Metrics_Core_Options_TimerOptions_App_Metrics_Tagging_MetricTags_System_Func___0__
+  commentId: M:App.Metrics.Timer.Abstractions.IProvideTimerMetrics.WithHistogram``1(App.Metrics.Core.Options.TimerOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name.vb: WithHistogram(Of T)(TimerOptions, MetricTags, Func(Of T))
+  fullName: App.Metrics.Timer.Abstractions.IProvideTimerMetrics.WithHistogram<T>(App.Metrics.Core.Options.TimerOptions, App.Metrics.Tagging.MetricTags, System.Func<T>)
+  fullName.vb: App.Metrics.Timer.Abstractions.IProvideTimerMetrics.WithHistogram(Of T)(App.Metrics.Core.Options.TimerOptions, App.Metrics.Tagging.MetricTags, System.Func(Of T))
+  nameWithType: IProvideTimerMetrics.WithHistogram<T>(TimerOptions, MetricTags, Func<T>)
+  nameWithType.vb: WithHistogram(Of T)(TimerOptions, MetricTags, Func(Of T))
 - uid: App.Metrics.Timer.Abstractions.IProvideTimerMetrics.WithHistogram``1(App.Metrics.Core.Options.TimerOptions,System.Func{``0})
   name: WithHistogram<T>(TimerOptions, Func<T>)
   href: api/App.Metrics.Timer.Abstractions.IProvideTimerMetrics.html#App_Metrics_Timer_Abstractions_IProvideTimerMetrics_WithHistogram__1_App_Metrics_Core_Options_TimerOptions_System_Func___0__
@@ -21648,11 +22284,26 @@ references:
   commentId: M:App.Metrics.Timer.DefaultTimerMetricProvider.Instance(App.Metrics.Core.Options.TimerOptions)
   fullName: App.Metrics.Timer.DefaultTimerMetricProvider.Instance(App.Metrics.Core.Options.TimerOptions)
   nameWithType: DefaultTimerMetricProvider.Instance(TimerOptions)
+- uid: App.Metrics.Timer.DefaultTimerMetricProvider.Instance(App.Metrics.Core.Options.TimerOptions,App.Metrics.Tagging.MetricTags)
+  name: Instance(TimerOptions, MetricTags)
+  href: api/App.Metrics.Timer.DefaultTimerMetricProvider.html#App_Metrics_Timer_DefaultTimerMetricProvider_Instance_App_Metrics_Core_Options_TimerOptions_App_Metrics_Tagging_MetricTags_
+  commentId: M:App.Metrics.Timer.DefaultTimerMetricProvider.Instance(App.Metrics.Core.Options.TimerOptions,App.Metrics.Tagging.MetricTags)
+  fullName: App.Metrics.Timer.DefaultTimerMetricProvider.Instance(App.Metrics.Core.Options.TimerOptions, App.Metrics.Tagging.MetricTags)
+  nameWithType: DefaultTimerMetricProvider.Instance(TimerOptions, MetricTags)
 - uid: App.Metrics.Timer.DefaultTimerMetricProvider.Instance*
   href: api/App.Metrics.Timer.DefaultTimerMetricProvider.html#App_Metrics_Timer_DefaultTimerMetricProvider_Instance_
   commentId: Overload:App.Metrics.Timer.DefaultTimerMetricProvider.Instance
   name: Instance
   fullName: App.Metrics.Timer.DefaultTimerMetricProvider.Instance(App.Metrics.Core.Options.TimerOptions)
+- uid: App.Metrics.Timer.DefaultTimerMetricProvider.Instance``1(App.Metrics.Core.Options.TimerOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name: Instance<T>(TimerOptions, MetricTags, Func<T>)
+  href: api/App.Metrics.Timer.DefaultTimerMetricProvider.html#App_Metrics_Timer_DefaultTimerMetricProvider_Instance__1_App_Metrics_Core_Options_TimerOptions_App_Metrics_Tagging_MetricTags_System_Func___0__
+  commentId: M:App.Metrics.Timer.DefaultTimerMetricProvider.Instance``1(App.Metrics.Core.Options.TimerOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name.vb: Instance(Of T)(TimerOptions, MetricTags, Func(Of T))
+  fullName: App.Metrics.Timer.DefaultTimerMetricProvider.Instance<T>(App.Metrics.Core.Options.TimerOptions, App.Metrics.Tagging.MetricTags, System.Func<T>)
+  fullName.vb: App.Metrics.Timer.DefaultTimerMetricProvider.Instance(Of T)(App.Metrics.Core.Options.TimerOptions, App.Metrics.Tagging.MetricTags, System.Func(Of T))
+  nameWithType: DefaultTimerMetricProvider.Instance<T>(TimerOptions, MetricTags, Func<T>)
+  nameWithType.vb: Instance(Of T)(TimerOptions, MetricTags, Func(Of T))
 - uid: App.Metrics.Timer.DefaultTimerMetricProvider.Instance``1(App.Metrics.Core.Options.TimerOptions,System.Func{``0})
   name: Instance<T>(TimerOptions, Func<T>)
   href: api/App.Metrics.Timer.DefaultTimerMetricProvider.html#App_Metrics_Timer_DefaultTimerMetricProvider_Instance__1_App_Metrics_Core_Options_TimerOptions_System_Func___0__
@@ -21669,6 +22320,15 @@ references:
   name.vb: WithHistogram
   fullName: App.Metrics.Timer.DefaultTimerMetricProvider.WithHistogram<T>(App.Metrics.Core.Options.TimerOptions, System.Func<T>)
   fullName.vb: App.Metrics.Timer.DefaultTimerMetricProvider.WithHistogram
+- uid: App.Metrics.Timer.DefaultTimerMetricProvider.WithHistogram``1(App.Metrics.Core.Options.TimerOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name: WithHistogram<T>(TimerOptions, MetricTags, Func<T>)
+  href: api/App.Metrics.Timer.DefaultTimerMetricProvider.html#App_Metrics_Timer_DefaultTimerMetricProvider_WithHistogram__1_App_Metrics_Core_Options_TimerOptions_App_Metrics_Tagging_MetricTags_System_Func___0__
+  commentId: M:App.Metrics.Timer.DefaultTimerMetricProvider.WithHistogram``1(App.Metrics.Core.Options.TimerOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})
+  name.vb: WithHistogram(Of T)(TimerOptions, MetricTags, Func(Of T))
+  fullName: App.Metrics.Timer.DefaultTimerMetricProvider.WithHistogram<T>(App.Metrics.Core.Options.TimerOptions, App.Metrics.Tagging.MetricTags, System.Func<T>)
+  fullName.vb: App.Metrics.Timer.DefaultTimerMetricProvider.WithHistogram(Of T)(App.Metrics.Core.Options.TimerOptions, App.Metrics.Tagging.MetricTags, System.Func(Of T))
+  nameWithType: DefaultTimerMetricProvider.WithHistogram<T>(TimerOptions, MetricTags, Func<T>)
+  nameWithType.vb: WithHistogram(Of T)(TimerOptions, MetricTags, Func(Of T))
 - uid: App.Metrics.Timer.DefaultTimerMetricProvider.WithHistogram``1(App.Metrics.Core.Options.TimerOptions,System.Func{``0})
   name: WithHistogram<T>(TimerOptions, Func<T>)
   href: api/App.Metrics.Timer.DefaultTimerMetricProvider.html#App_Metrics_Timer_DefaultTimerMetricProvider_WithHistogram__1_App_Metrics_Core_Options_TimerOptions_System_Func___0__
@@ -22287,17 +22947,17 @@ references:
   commentId: T:App.Metrics.Timer.TimerValue
   fullName: App.Metrics.Timer.TimerValue
   nameWithType: TimerValue
-- uid: App.Metrics.Timer.TimerValue.#ctor(App.Metrics.Meter.MeterValue,App.Metrics.Histogram.HistogramValue,System.Int64,System.Int64,App.Metrics.TimeUnit)
-  name: TimerValue(MeterValue, HistogramValue, Int64, Int64, TimeUnit)
-  href: api/App.Metrics.Timer.TimerValue.html#App_Metrics_Timer_TimerValue__ctor_App_Metrics_Meter_MeterValue_App_Metrics_Histogram_HistogramValue_System_Int64_System_Int64_App_Metrics_TimeUnit_
-  commentId: M:App.Metrics.Timer.TimerValue.#ctor(App.Metrics.Meter.MeterValue,App.Metrics.Histogram.HistogramValue,System.Int64,System.Int64,App.Metrics.TimeUnit)
-  fullName: App.Metrics.Timer.TimerValue.TimerValue(App.Metrics.Meter.MeterValue, App.Metrics.Histogram.HistogramValue, System.Int64, System.Int64, App.Metrics.TimeUnit)
-  nameWithType: TimerValue.TimerValue(MeterValue, HistogramValue, Int64, Int64, TimeUnit)
+- uid: App.Metrics.Timer.TimerValue.#ctor(App.Metrics.Meter.MeterValue,App.Metrics.Histogram.HistogramValue,System.Int64,App.Metrics.TimeUnit)
+  name: TimerValue(MeterValue, HistogramValue, Int64, TimeUnit)
+  href: api/App.Metrics.Timer.TimerValue.html#App_Metrics_Timer_TimerValue__ctor_App_Metrics_Meter_MeterValue_App_Metrics_Histogram_HistogramValue_System_Int64_App_Metrics_TimeUnit_
+  commentId: M:App.Metrics.Timer.TimerValue.#ctor(App.Metrics.Meter.MeterValue,App.Metrics.Histogram.HistogramValue,System.Int64,App.Metrics.TimeUnit)
+  fullName: App.Metrics.Timer.TimerValue.TimerValue(App.Metrics.Meter.MeterValue, App.Metrics.Histogram.HistogramValue, System.Int64, App.Metrics.TimeUnit)
+  nameWithType: TimerValue.TimerValue(MeterValue, HistogramValue, Int64, TimeUnit)
 - uid: App.Metrics.Timer.TimerValue.#ctor*
   href: api/App.Metrics.Timer.TimerValue.html#App_Metrics_Timer_TimerValue__ctor_
   commentId: Overload:App.Metrics.Timer.TimerValue.#ctor
   name: TimerValue
-  fullName: App.Metrics.Timer.TimerValue.TimerValue(App.Metrics.Meter.MeterValue, App.Metrics.Histogram.HistogramValue, System.Int64, System.Int64, App.Metrics.TimeUnit)
+  fullName: App.Metrics.Timer.TimerValue.TimerValue(App.Metrics.Meter.MeterValue, App.Metrics.Histogram.HistogramValue, System.Int64, App.Metrics.TimeUnit)
 - uid: App.Metrics.Timer.TimerValue.ActiveSessions
   name: ActiveSessions
   href: api/App.Metrics.Timer.TimerValue.html#App_Metrics_Timer_TimerValue_ActiveSessions
@@ -22342,17 +23002,6 @@ references:
   commentId: Overload:App.Metrics.Timer.TimerValue.Scale
   name: Scale
   fullName: App.Metrics.Timer.TimerValue.Scale(App.Metrics.TimeUnit, App.Metrics.TimeUnit)
-- uid: App.Metrics.Timer.TimerValue.TotalTime
-  name: TotalTime
-  href: api/App.Metrics.Timer.TimerValue.html#App_Metrics_Timer_TimerValue_TotalTime
-  commentId: P:App.Metrics.Timer.TimerValue.TotalTime
-  fullName: App.Metrics.Timer.TimerValue.TotalTime
-  nameWithType: TimerValue.TotalTime
-- uid: App.Metrics.Timer.TimerValue.TotalTime*
-  href: api/App.Metrics.Timer.TimerValue.html#App_Metrics_Timer_TimerValue_TotalTime_
-  commentId: Overload:App.Metrics.Timer.TimerValue.TotalTime
-  name: TotalTime
-  fullName: App.Metrics.Timer.TimerValue.TotalTime
 - uid: App.Metrics.Timer.TimerValueSource
   name: TimerValueSource
   href: api/App.Metrics.Timer.TimerValueSource.html#App_Metrics_Timer_TimerValueSource
@@ -22368,15 +23017,6 @@ references:
   fullName.vb: App.Metrics.Timer.TimerValueSource.TimerValueSource(System.String, App.Metrics.Core.Abstractions.IMetricValueProvider(Of App.Metrics.Timer.TimerValue), App.Metrics.Unit, App.Metrics.TimeUnit, App.Metrics.TimeUnit, App.Metrics.Tagging.MetricTags)
   nameWithType: TimerValueSource.TimerValueSource(String, IMetricValueProvider<TimerValue>, Unit, TimeUnit, TimeUnit, MetricTags)
   nameWithType.vb: TimerValueSource(String, IMetricValueProvider(Of TimerValue), Unit, TimeUnit, TimeUnit, MetricTags)
-- uid: App.Metrics.Timer.TimerValueSource.#ctor(System.String,System.String,App.Metrics.Core.Abstractions.IMetricValueProvider{App.Metrics.Timer.TimerValue},App.Metrics.Unit,App.Metrics.TimeUnit,App.Metrics.TimeUnit,App.Metrics.Tagging.MetricTags)
-  name: TimerValueSource(String, String, IMetricValueProvider<TimerValue>, Unit, TimeUnit, TimeUnit, MetricTags)
-  href: api/App.Metrics.Timer.TimerValueSource.html#App_Metrics_Timer_TimerValueSource__ctor_System_String_System_String_App_Metrics_Core_Abstractions_IMetricValueProvider_App_Metrics_Timer_TimerValue__App_Metrics_Unit_App_Metrics_TimeUnit_App_Metrics_TimeUnit_App_Metrics_Tagging_MetricTags_
-  commentId: M:App.Metrics.Timer.TimerValueSource.#ctor(System.String,System.String,App.Metrics.Core.Abstractions.IMetricValueProvider{App.Metrics.Timer.TimerValue},App.Metrics.Unit,App.Metrics.TimeUnit,App.Metrics.TimeUnit,App.Metrics.Tagging.MetricTags)
-  name.vb: TimerValueSource(String, String, IMetricValueProvider(Of TimerValue), Unit, TimeUnit, TimeUnit, MetricTags)
-  fullName: App.Metrics.Timer.TimerValueSource.TimerValueSource(System.String, System.String, App.Metrics.Core.Abstractions.IMetricValueProvider<App.Metrics.Timer.TimerValue>, App.Metrics.Unit, App.Metrics.TimeUnit, App.Metrics.TimeUnit, App.Metrics.Tagging.MetricTags)
-  fullName.vb: App.Metrics.Timer.TimerValueSource.TimerValueSource(System.String, System.String, App.Metrics.Core.Abstractions.IMetricValueProvider(Of App.Metrics.Timer.TimerValue), App.Metrics.Unit, App.Metrics.TimeUnit, App.Metrics.TimeUnit, App.Metrics.Tagging.MetricTags)
-  nameWithType: TimerValueSource.TimerValueSource(String, String, IMetricValueProvider<TimerValue>, Unit, TimeUnit, TimeUnit, MetricTags)
-  nameWithType.vb: TimerValueSource(String, String, IMetricValueProvider(Of TimerValue), Unit, TimeUnit, TimeUnit, MetricTags)
 - uid: App.Metrics.Timer.TimerValueSource.#ctor*
   href: api/App.Metrics.Timer.TimerValueSource.html#App_Metrics_Timer_TimerValueSource__ctor_
   commentId: Overload:App.Metrics.Timer.TimerValueSource.#ctor

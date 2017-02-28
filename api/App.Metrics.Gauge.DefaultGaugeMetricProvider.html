@@ -113,19 +113,18 @@
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Gauge_DefaultGaugeMetricProvider__ctor_App_Metrics_Registry_Abstractions_IMetricsRegistry_.md&amp;value=---%0Auid%3A%20App.Metrics.Gauge.DefaultGaugeMetricProvider.%23ctor(App.Metrics.Registry.Abstractions.IMetricsRegistry)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Gauge_DefaultGaugeMetricProvider__ctor_App_Metrics_Gauge_Abstractions_IBuildGaugeMetrics_App_Metrics_Registry_Abstractions_IMetricsRegistry_.md&amp;value=---%0Auid%3A%20App.Metrics.Gauge.DefaultGaugeMetricProvider.%23ctor(App.Metrics.Gauge.Abstractions.IBuildGaugeMetrics%2CApp.Metrics.Registry.Abstractions.IMetricsRegistry)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Gauge/DefaultGaugeMetricProvider.cs/#L20">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Gauge/DefaultGaugeMetricProvider.cs/#L18">View Source</a>
               </span>
               <a id="App_Metrics_Gauge_DefaultGaugeMetricProvider__ctor_" data-uid="App.Metrics.Gauge.DefaultGaugeMetricProvider.#ctor*"></a>
-              <h4 id="App_Metrics_Gauge_DefaultGaugeMetricProvider__ctor_App_Metrics_Registry_Abstractions_IMetricsRegistry_" data-uid="App.Metrics.Gauge.DefaultGaugeMetricProvider.#ctor(App.Metrics.Registry.Abstractions.IMetricsRegistry)">DefaultGaugeMetricProvider(IMetricsRegistry)</h4>
-              <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="App.Metrics.Gauge.DefaultGaugeMetricProvider.html#App_Metrics_Gauge_DefaultGaugeMetricProvider">DefaultGaugeMetricProvider</a> class.</p>
-</div>
+              <h4 id="App_Metrics_Gauge_DefaultGaugeMetricProvider__ctor_App_Metrics_Gauge_Abstractions_IBuildGaugeMetrics_App_Metrics_Registry_Abstractions_IMetricsRegistry_" data-uid="App.Metrics.Gauge.DefaultGaugeMetricProvider.#ctor(App.Metrics.Gauge.Abstractions.IBuildGaugeMetrics,App.Metrics.Registry.Abstractions.IMetricsRegistry)">DefaultGaugeMetricProvider(IBuildGaugeMetrics, IMetricsRegistry)</h4>
+              <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public DefaultGaugeMetricProvider(IMetricsRegistry registry)</code></pre>
+                <pre><code class="lang-csharp hljs">public DefaultGaugeMetricProvider(IBuildGaugeMetrics gaugeBuilder, IMetricsRegistry registry)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -138,10 +137,14 @@
                 </thead>
                 <tbody>
                   <tr>
+                    <td><a class="xref" href="App.Metrics.Gauge.Abstractions.IBuildGaugeMetrics.html#App_Metrics_Gauge_Abstractions_IBuildGaugeMetrics">IBuildGaugeMetrics</a></td>
+                    <td><em>gaugeBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
                     <td><a class="xref" href="App.Metrics.Registry.Abstractions.IMetricsRegistry.html#App_Metrics_Registry_Abstractions_IMetricsRegistry">IMetricsRegistry</a></td>
                     <td><em>registry</em></td>
-                    <td><p>The registry.</p>
-</td>
+                    <td></td>
                   </tr>
                 </tbody>
               </table>
@@ -149,18 +152,67 @@
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Gauge_DefaultGaugeMetricProvider_Instance_App_Metrics_Core_Options_GaugeOptions_System_Func_App_Metrics_Core_Abstractions_IMetricValueProvider_System_Double___.md&amp;value=---%0Auid%3A%20App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance(App.Metrics.Core.Options.GaugeOptions%2CSystem.Func%7BApp.Metrics.Core.Abstractions.IMetricValueProvider%7BSystem.Double%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Gauge_DefaultGaugeMetricProvider_Instance_App_Metrics_Core_Options_GaugeOptions_.md&amp;value=---%0Auid%3A%20App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance(App.Metrics.Core.Options.GaugeOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Gauge/DefaultGaugeMetricProvider.cs/#L23">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Gauge/DefaultGaugeMetricProvider.cs/#L25">View Source</a>
               </span>
               <a id="App_Metrics_Gauge_DefaultGaugeMetricProvider_Instance_" data-uid="App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance*"></a>
-              <h4 id="App_Metrics_Gauge_DefaultGaugeMetricProvider_Instance_App_Metrics_Core_Options_GaugeOptions_System_Func_App_Metrics_Core_Abstractions_IMetricValueProvider_System_Double___" data-uid="App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance(App.Metrics.Core.Options.GaugeOptions,System.Func{App.Metrics.Core.Abstractions.IMetricValueProvider{System.Double}})">Instance(GaugeOptions, Func&lt;IMetricValueProvider&lt;Double&gt;&gt;)</h4>
+              <h4 id="App_Metrics_Gauge_DefaultGaugeMetricProvider_Instance_App_Metrics_Core_Options_GaugeOptions_" data-uid="App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance(App.Metrics.Core.Options.GaugeOptions)">Instance(GaugeOptions)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void Instance(GaugeOptions options, Func&lt;IMetricValueProvider&lt;double&gt;&gt; valueProvider)</code></pre>
+                <pre><code class="lang-csharp hljs">public IGauge Instance(GaugeOptions options)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Core.Options.GaugeOptions.html#App_Metrics_Core_Options_GaugeOptions">GaugeOptions</a></td>
+                    <td><em>options</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Gauge.IGauge.html#App_Metrics_Gauge_IGauge">IGauge</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.html#App_Metrics_Gauge_Abstractions_IProvideGaugeMetrics_Instance_App_Metrics_Core_Options_GaugeOptions_">IProvideGaugeMetrics.Instance(GaugeOptions)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Gauge_DefaultGaugeMetricProvider_Instance_App_Metrics_Core_Options_GaugeOptions_App_Metrics_Tagging_MetricTags_.md&amp;value=---%0Auid%3A%20App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance(App.Metrics.Core.Options.GaugeOptions%2CApp.Metrics.Tagging.MetricTags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Gauge/DefaultGaugeMetricProvider.cs/#L31">View Source</a>
+              </span>
+              <a id="App_Metrics_Gauge_DefaultGaugeMetricProvider_Instance_" data-uid="App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance*"></a>
+              <h4 id="App_Metrics_Gauge_DefaultGaugeMetricProvider_Instance_App_Metrics_Core_Options_GaugeOptions_App_Metrics_Tagging_MetricTags_" data-uid="App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance(App.Metrics.Core.Options.GaugeOptions,App.Metrics.Tagging.MetricTags)">Instance(GaugeOptions, MetricTags)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IGauge Instance(GaugeOptions options, MetricTags tags)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -178,14 +230,172 @@
                     <td></td>
                   </tr>
                   <tr>
-                    <td><span class="xref">System.Func&lt;TResult&gt;</span>&lt;<a class="xref" href="App.Metrics.Core.Abstractions.IMetricValueProvider-1.html#App_Metrics_Core_Abstractions_IMetricValueProvider_1">IMetricValueProvider&lt;T&gt;</a>&lt;<span class="xref">System.Double</span>&gt;&gt;</td>
-                    <td><em>valueProvider</em></td>
+                    <td><a class="xref" href="App.Metrics.Tagging.MetricTags.html#App_Metrics_Tagging_MetricTags">MetricTags</a></td>
+                    <td><em>tags</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Gauge.IGauge.html#App_Metrics_Gauge_IGauge">IGauge</a></td>
                     <td></td>
                   </tr>
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.html#App_Metrics_Gauge_Abstractions_IProvideGaugeMetrics_Instance_App_Metrics_Core_Options_GaugeOptions_System_Func_App_Metrics_Core_Abstractions_IMetricValueProvider_System_Double___">IProvideGaugeMetrics.Instance(GaugeOptions, Func&lt;IMetricValueProvider&lt;Double&gt;&gt;)</a></div>
+                  <div><a class="xref" href="App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.html#App_Metrics_Gauge_Abstractions_IProvideGaugeMetrics_Instance_App_Metrics_Core_Options_GaugeOptions_App_Metrics_Tagging_MetricTags_">IProvideGaugeMetrics.Instance(GaugeOptions, MetricTags)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Gauge_DefaultGaugeMetricProvider_Instance__1_App_Metrics_Core_Options_GaugeOptions_App_Metrics_Tagging_MetricTags_System_Func___0__.md&amp;value=---%0Auid%3A%20App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance%60%601(App.Metrics.Core.Options.GaugeOptions%2CApp.Metrics.Tagging.MetricTags%2CSystem.Func%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Gauge/DefaultGaugeMetricProvider.cs/#L44">View Source</a>
+              </span>
+              <a id="App_Metrics_Gauge_DefaultGaugeMetricProvider_Instance_" data-uid="App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance*"></a>
+              <h4 id="App_Metrics_Gauge_DefaultGaugeMetricProvider_Instance__1_App_Metrics_Core_Options_GaugeOptions_App_Metrics_Tagging_MetricTags_System_Func___0__" data-uid="App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance``1(App.Metrics.Core.Options.GaugeOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})">Instance&lt;T&gt;(GaugeOptions, MetricTags, Func&lt;T&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IGauge Instance&lt;T&gt;(GaugeOptions options, MetricTags tags, Func&lt;T&gt; builder)where T : IGaugeMetric</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Core.Options.GaugeOptions.html#App_Metrics_Core_Options_GaugeOptions">GaugeOptions</a></td>
+                    <td><em>options</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Tagging.MetricTags.html#App_Metrics_Tagging_MetricTags">MetricTags</a></td>
+                    <td><em>tags</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Func&lt;TResult&gt;</span>&lt;T&gt;</td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Gauge.IGauge.html#App_Metrics_Gauge_IGauge">IGauge</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>T</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.html#App_Metrics_Gauge_Abstractions_IProvideGaugeMetrics_Instance__1_App_Metrics_Core_Options_GaugeOptions_App_Metrics_Tagging_MetricTags_System_Func___0__">IProvideGaugeMetrics.Instance&lt;T&gt;(GaugeOptions, MetricTags, Func&lt;T&gt;)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Gauge_DefaultGaugeMetricProvider_Instance__1_App_Metrics_Core_Options_GaugeOptions_System_Func___0__.md&amp;value=---%0Auid%3A%20App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance%60%601(App.Metrics.Core.Options.GaugeOptions%2CSystem.Func%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Gauge/DefaultGaugeMetricProvider.cs/#L37">View Source</a>
+              </span>
+              <a id="App_Metrics_Gauge_DefaultGaugeMetricProvider_Instance_" data-uid="App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance*"></a>
+              <h4 id="App_Metrics_Gauge_DefaultGaugeMetricProvider_Instance__1_App_Metrics_Core_Options_GaugeOptions_System_Func___0__" data-uid="App.Metrics.Gauge.DefaultGaugeMetricProvider.Instance``1(App.Metrics.Core.Options.GaugeOptions,System.Func{``0})">Instance&lt;T&gt;(GaugeOptions, Func&lt;T&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IGauge Instance&lt;T&gt;(GaugeOptions options, Func&lt;T&gt; builder)where T : IGaugeMetric</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Core.Options.GaugeOptions.html#App_Metrics_Core_Options_GaugeOptions">GaugeOptions</a></td>
+                    <td><em>options</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Func&lt;TResult&gt;</span>&lt;T&gt;</td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Gauge.IGauge.html#App_Metrics_Gauge_IGauge">IGauge</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>T</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="App.Metrics.Gauge.Abstractions.IProvideGaugeMetrics.html#App_Metrics_Gauge_Abstractions_IProvideGaugeMetrics_Instance__1_App_Metrics_Core_Options_GaugeOptions_System_Func___0__">IProvideGaugeMetrics.Instance&lt;T&gt;(GaugeOptions, Func&lt;T&gt;)</a></div>
             </article>
           </div>
           
@@ -197,7 +407,7 @@
                     <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Gauge_DefaultGaugeMetricProvider.md&amp;value=---%0Auid%3A%20App.Metrics.Gauge.DefaultGaugeMetricProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Gauge/DefaultGaugeMetricProvider.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Gauge/DefaultGaugeMetricProvider.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

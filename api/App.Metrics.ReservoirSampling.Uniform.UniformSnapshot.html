@@ -116,19 +116,19 @@ This is the snapshot used a histogram with a <a class="xref" href="App.Metrics.R
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_Uniform_UniformSnapshot__ctor_System_Int64_System_Collections_Generic_IEnumerable_System_Int64__System_Boolean_System_String_System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.%23ctor(System.Int64%2CSystem.Collections.Generic.IEnumerable%7BSystem.Int64%7D%2CSystem.Boolean%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_Uniform_UniformSnapshot__ctor_System_Int64_System_Double_System_Collections_Generic_IEnumerable_System_Int64__System_Boolean_System_String_System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.%23ctor(System.Int64%2CSystem.Double%2CSystem.Collections.Generic.IEnumerable%7BSystem.Int64%7D%2CSystem.Boolean%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L31">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L32">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot__ctor_" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.#ctor*"></a>
-              <h4 id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot__ctor_System_Int64_System_Collections_Generic_IEnumerable_System_Int64__System_Boolean_System_String_System_String_" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.#ctor(System.Int64,System.Collections.Generic.IEnumerable{System.Int64},System.Boolean,System.String,System.String)">UniformSnapshot(Int64, IEnumerable&lt;Int64&gt;, Boolean, String, String)</h4>
+              <h4 id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot__ctor_System_Int64_System_Double_System_Collections_Generic_IEnumerable_System_Int64__System_Boolean_System_String_System_String_" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.#ctor(System.Int64,System.Double,System.Collections.Generic.IEnumerable{System.Int64},System.Boolean,System.String,System.String)">UniformSnapshot(Int64, Double, IEnumerable&lt;Int64&gt;, Boolean, String, String)</h4>
               <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.html#App_Metrics_ReservoirSampling_Uniform_UniformSnapshot">UniformSnapshot</a> class.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public UniformSnapshot(long count, IEnumerable&lt;long&gt; values, bool valuesAreSorted = false, string minUserValue = null, string maxUserValue = null)</code></pre>
+                <pre><code class="lang-csharp hljs">public UniformSnapshot(long count, double sum, IEnumerable&lt;long&gt; values, bool valuesAreSorted = false, string minUserValue = null, string maxUserValue = null)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -143,7 +143,13 @@ This is the snapshot used a histogram with a <a class="xref" href="App.Metrics.R
                   <tr>
                     <td><span class="xref">System.Int64</span></td>
                     <td><em>count</em></td>
-                    <td><p>The count of the sample set.</p>
+                    <td><p>The count of all observed values.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><em>sum</em></td>
+                    <td><p>The sum of all observed values.</p>
 </td>
                   </tr>
                   <tr>
@@ -179,7 +185,7 @@ This is the snapshot used a histogram with a <a class="xref" href="App.Metrics.R
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Count.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L51">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L54">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Count_" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Count*"></a>
               <h4 id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Count" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Count">Count</h4>
@@ -211,7 +217,7 @@ This is the snapshot used a histogram with a <a class="xref" href="App.Metrics.R
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Max.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Max%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L54">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L57">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Max_" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Max*"></a>
               <h4 id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Max" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Max">Max</h4>
@@ -243,7 +249,7 @@ This is the snapshot used a histogram with a <a class="xref" href="App.Metrics.R
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_MaxUserValue.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.MaxUserValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L57">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L60">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_MaxUserValue_" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.MaxUserValue*"></a>
               <h4 id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_MaxUserValue" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.MaxUserValue">MaxUserValue</h4>
@@ -275,7 +281,7 @@ This is the snapshot used a histogram with a <a class="xref" href="App.Metrics.R
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Mean.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Mean%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L60">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L63">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Mean_" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Mean*"></a>
               <h4 id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Mean" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Mean">Mean</h4>
@@ -307,7 +313,7 @@ This is the snapshot used a histogram with a <a class="xref" href="App.Metrics.R
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Median.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Median%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L63">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L66">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Median_" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Median*"></a>
               <h4 id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Median" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Median">Median</h4>
@@ -339,7 +345,7 @@ This is the snapshot used a histogram with a <a class="xref" href="App.Metrics.R
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Min.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Min%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L66">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L69">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Min_" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Min*"></a>
               <h4 id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Min" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Min">Min</h4>
@@ -371,7 +377,7 @@ This is the snapshot used a histogram with a <a class="xref" href="App.Metrics.R
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_MinUserValue.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.MinUserValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L69">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L72">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_MinUserValue_" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.MinUserValue*"></a>
               <h4 id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_MinUserValue" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.MinUserValue">MinUserValue</h4>
@@ -403,7 +409,7 @@ This is the snapshot used a histogram with a <a class="xref" href="App.Metrics.R
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Percentile75.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Percentile75%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L72">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L75">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Percentile75_" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Percentile75*"></a>
               <h4 id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Percentile75" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Percentile75">Percentile75</h4>
@@ -435,7 +441,7 @@ This is the snapshot used a histogram with a <a class="xref" href="App.Metrics.R
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Percentile95.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Percentile95%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L75">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L78">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Percentile95_" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Percentile95*"></a>
               <h4 id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Percentile95" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Percentile95">Percentile95</h4>
@@ -467,7 +473,7 @@ This is the snapshot used a histogram with a <a class="xref" href="App.Metrics.R
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Percentile98.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Percentile98%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L78">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L81">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Percentile98_" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Percentile98*"></a>
               <h4 id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Percentile98" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Percentile98">Percentile98</h4>
@@ -499,7 +505,7 @@ This is the snapshot used a histogram with a <a class="xref" href="App.Metrics.R
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Percentile99.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Percentile99%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L81">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L84">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Percentile99_" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Percentile99*"></a>
               <h4 id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Percentile99" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Percentile99">Percentile99</h4>
@@ -531,7 +537,7 @@ This is the snapshot used a histogram with a <a class="xref" href="App.Metrics.R
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Percentile999.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Percentile999%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L84">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L87">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Percentile999_" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Percentile999*"></a>
               <h4 id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Percentile999" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Percentile999">Percentile999</h4>
@@ -563,7 +569,7 @@ This is the snapshot used a histogram with a <a class="xref" href="App.Metrics.R
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Size.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Size%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L87">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L90">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Size_" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Size*"></a>
               <h4 id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Size" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Size">Size</h4>
@@ -595,7 +601,7 @@ This is the snapshot used a histogram with a <a class="xref" href="App.Metrics.R
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_StdDev.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.StdDev%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L90">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L93">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_StdDev_" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.StdDev*"></a>
               <h4 id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_StdDev" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.StdDev">StdDev</h4>
@@ -624,10 +630,42 @@ This is the snapshot used a histogram with a <a class="xref" href="App.Metrics.R
                   <div><a class="xref" href="App.Metrics.Abstractions.ReservoirSampling.IReservoirSnapshot.html#App_Metrics_Abstractions_ReservoirSampling_IReservoirSnapshot_StdDev">IReservoirSnapshot.StdDev</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Sum.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Sum%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L109">View Source</a>
+              </span>
+              <a id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Sum_" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Sum*"></a>
+              <h4 id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Sum" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Sum">Sum</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double Sum { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="App.Metrics.Abstractions.ReservoirSampling.IReservoirSnapshot.html#App_Metrics_Abstractions_ReservoirSampling_IReservoirSnapshot_Sum">IReservoirSnapshot.Sum</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Values.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Values%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L107">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L112">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Values_" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Values*"></a>
               <h4 id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_Values" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.Values">Values</h4>
@@ -661,7 +699,7 @@ This is the snapshot used a histogram with a <a class="xref" href="App.Metrics.R
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_GetValue_System_Double_.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.GetValue(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L110">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L115">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_GetValue_" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.GetValue*"></a>
               <h4 id="App_Metrics_ReservoirSampling_Uniform_UniformSnapshot_GetValue_System_Double_" data-uid="App.Metrics.ReservoirSampling.Uniform.UniformSnapshot.GetValue(System.Double)">GetValue(Double)</h4>
@@ -720,7 +758,7 @@ This is the snapshot used a histogram with a <a class="xref" href="App.Metrics.R
                     <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_Uniform_UniformSnapshot.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.Uniform.UniformSnapshot%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L19" class="contribution-link">View Source</a>
+                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/Uniform/UniformSnapshot.cs/#L19" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -84,7 +84,10 @@
               <div class="inheritedMembers">
                 <h5>Inherited Members</h5>
                 <div>
-                  <a class="xref" href="App.Metrics.Core.Abstractions.MetricValueSourceBase-1.html#App_Metrics_Core_Abstractions_MetricValueSourceBase_1_Group">MetricValueSourceBase&lt;T&gt;.Group</a>
+                  <a class="xref" href="App.Metrics.Core.Abstractions.MetricValueSourceBase-1.html#App_Metrics_Core_Abstractions_MetricValueSourceBase_1_IsMultidimensional">MetricValueSourceBase&lt;T&gt;.IsMultidimensional</a>
+                </div>
+                <div>
+                  <a class="xref" href="App.Metrics.Core.Abstractions.MetricValueSourceBase-1.html#App_Metrics_Core_Abstractions_MetricValueSourceBase_1_MultidimensionalName">MetricValueSourceBase&lt;T&gt;.MultidimensionalName</a>
                 </div>
                 <div>
                   <a class="xref" href="App.Metrics.Core.Abstractions.MetricValueSourceBase-1.html#App_Metrics_Core_Abstractions_MetricValueSourceBase_1_Name">MetricValueSourceBase&lt;T&gt;.Name</a>
@@ -136,7 +139,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Counter_CounterValueSource__ctor_System_String_App_Metrics_Core_Abstractions_IMetricValueProvider_App_Metrics_Counter_CounterValue__App_Metrics_Unit_App_Metrics_Tagging_MetricTags_System_Boolean_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20App.Metrics.Counter.CounterValueSource.%23ctor(System.String%2CApp.Metrics.Core.Abstractions.IMetricValueProvider%7BApp.Metrics.Counter.CounterValue%7D%2CApp.Metrics.Unit%2CApp.Metrics.Tagging.MetricTags%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/CounterValueSource.cs/#L24">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Counter/CounterValueSource.cs/#L24">View Source</a>
               </span>
               <a id="App_Metrics_Counter_CounterValueSource__ctor_" data-uid="App.Metrics.Counter.CounterValueSource.#ctor*"></a>
               <h4 id="App_Metrics_Counter_CounterValueSource__ctor_System_String_App_Metrics_Core_Abstractions_IMetricValueProvider_App_Metrics_Counter_CounterValue__App_Metrics_Unit_App_Metrics_Tagging_MetricTags_System_Boolean_System_Boolean_System_Boolean_" data-uid="App.Metrics.Counter.CounterValueSource.#ctor(System.String,App.Metrics.Core.Abstractions.IMetricValueProvider{App.Metrics.Counter.CounterValue},App.Metrics.Unit,App.Metrics.Tagging.MetricTags,System.Boolean,System.Boolean,System.Boolean)">CounterValueSource(String, IMetricValueProvider&lt;CounterValue&gt;, Unit, MetricTags, Boolean, Boolean, Boolean)</h4>
@@ -201,82 +204,6 @@
                   </tr>
                 </tbody>
               </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Counter_CounterValueSource__ctor_System_String_System_String_App_Metrics_Core_Abstractions_IMetricValueProvider_App_Metrics_Counter_CounterValue__App_Metrics_Unit_App_Metrics_Tagging_MetricTags_System_Boolean_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20App.Metrics.Counter.CounterValueSource.%23ctor(System.String%2CSystem.String%2CApp.Metrics.Core.Abstractions.IMetricValueProvider%7BApp.Metrics.Counter.CounterValue%7D%2CApp.Metrics.Unit%2CApp.Metrics.Tagging.MetricTags%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/CounterValueSource.cs/#L50">View Source</a>
-              </span>
-              <a id="App_Metrics_Counter_CounterValueSource__ctor_" data-uid="App.Metrics.Counter.CounterValueSource.#ctor*"></a>
-              <h4 id="App_Metrics_Counter_CounterValueSource__ctor_System_String_System_String_App_Metrics_Core_Abstractions_IMetricValueProvider_App_Metrics_Counter_CounterValue__App_Metrics_Unit_App_Metrics_Tagging_MetricTags_System_Boolean_System_Boolean_System_Boolean_" data-uid="App.Metrics.Counter.CounterValueSource.#ctor(System.String,System.String,App.Metrics.Core.Abstractions.IMetricValueProvider{App.Metrics.Counter.CounterValue},App.Metrics.Unit,App.Metrics.Tagging.MetricTags,System.Boolean,System.Boolean,System.Boolean)">CounterValueSource(String, String, IMetricValueProvider&lt;CounterValue&gt;, Unit, MetricTags, Boolean, Boolean, Boolean)</h4>
-              <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="App.Metrics.Counter.CounterValueSource.html#App_Metrics_Counter_CounterValueSource">CounterValueSource</a> class.</p>
-</div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public CounterValueSource(string name, string group, IMetricValueProvider&lt;CounterValue&gt; value, Unit unit, MetricTags tags, bool resetOnReporting = false, bool reportItemPercentages = true, bool reportSetItems = true)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="xref">System.String</span></td>
-                    <td><em>name</em></td>
-                    <td><p>The name.</p>
-</td>
-                  </tr>
-                  <tr>
-                    <td><span class="xref">System.String</span></td>
-                    <td><em>group</em></td>
-                    <td><p>The group.</p>
-</td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="App.Metrics.Core.Abstractions.IMetricValueProvider-1.html#App_Metrics_Core_Abstractions_IMetricValueProvider_1">IMetricValueProvider&lt;T&gt;</a>&lt;<a class="xref" href="App.Metrics.Counter.CounterValue.html#App_Metrics_Counter_CounterValue">CounterValue</a>&gt;</td>
-                    <td><em>value</em></td>
-                    <td><p>The value.</p>
-</td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="App.Metrics.Unit.html#App_Metrics_Unit">Unit</a></td>
-                    <td><em>unit</em></td>
-                    <td><p>The unit.</p>
-</td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="App.Metrics.Tagging.MetricTags.html#App_Metrics_Tagging_MetricTags">MetricTags</a></td>
-                    <td><em>tags</em></td>
-                    <td><p>The tags.</p>
-</td>
-                  </tr>
-                  <tr>
-                    <td><span class="xref">System.Boolean</span></td>
-                    <td><em>resetOnReporting</em></td>
-                    <td><p>if set to <code>true</code> [reset on reporting]. Defaults to <code>false</code>.</p>
-</td>
-                  </tr>
-                  <tr>
-                    <td><span class="xref">System.Boolean</span></td>
-                    <td><em>reportItemPercentages</em></td>
-                    <td><p>if set to <code>true</code> [report item percentages]. Defaults to <code>true</code></p>
-</td>
-                  </tr>
-                  <tr>
-                    <td><span class="xref">System.Boolean</span></td>
-                    <td><em>reportSetItems</em></td>
-                    <td><p>if set to <code>true</code> [report set items]. Defaults to <code>true</code></p>
-</td>
-                  </tr>
-                </tbody>
-              </table>
               <h3 id="properties">Properties
               </h3>
               <span class="small pull-right mobile-hide">
@@ -284,7 +211,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Counter_CounterValueSource_ReportItemPercentages.md&amp;value=---%0Auid%3A%20App.Metrics.Counter.CounterValueSource.ReportItemPercentages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/CounterValueSource.cs/#L66">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Counter/CounterValueSource.cs/#L39">View Source</a>
               </span>
               <a id="App_Metrics_Counter_CounterValueSource_ReportItemPercentages_" data-uid="App.Metrics.Counter.CounterValueSource.ReportItemPercentages*"></a>
               <h4 id="App_Metrics_Counter_CounterValueSource_ReportItemPercentages" data-uid="App.Metrics.Counter.CounterValueSource.ReportItemPercentages">ReportItemPercentages</h4>
@@ -314,7 +241,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Counter_CounterValueSource_ReportSetItems.md&amp;value=---%0Auid%3A%20App.Metrics.Counter.CounterValueSource.ReportSetItems%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/CounterValueSource.cs/#L68">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Counter/CounterValueSource.cs/#L41">View Source</a>
               </span>
               <a id="App_Metrics_Counter_CounterValueSource_ReportSetItems_" data-uid="App.Metrics.Counter.CounterValueSource.ReportSetItems*"></a>
               <h4 id="App_Metrics_Counter_CounterValueSource_ReportSetItems" data-uid="App.Metrics.Counter.CounterValueSource.ReportSetItems">ReportSetItems</h4>
@@ -344,7 +271,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Counter_CounterValueSource_ResetOnReporting.md&amp;value=---%0Auid%3A%20App.Metrics.Counter.CounterValueSource.ResetOnReporting%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/CounterValueSource.cs/#L70">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Counter/CounterValueSource.cs/#L43">View Source</a>
               </span>
               <a id="App_Metrics_Counter_CounterValueSource_ResetOnReporting_" data-uid="App.Metrics.Counter.CounterValueSource.ResetOnReporting*"></a>
               <h4 id="App_Metrics_Counter_CounterValueSource_ResetOnReporting" data-uid="App.Metrics.Counter.CounterValueSource.ResetOnReporting">ResetOnReporting</h4>
@@ -390,7 +317,7 @@
                     <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Counter_CounterValueSource.md&amp;value=---%0Auid%3A%20App.Metrics.Counter.CounterValueSource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Counter/CounterValueSource.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Counter/CounterValueSource.cs/#L12" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

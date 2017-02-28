@@ -85,10 +85,114 @@
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Histogram_Abstractions_IMeasureHistogramMetrics_Update_App_Metrics_Core_Options_HistogramOptions_App_Metrics_Tagging_MetricTags_System_Int64_.md&amp;value=---%0Auid%3A%20App.Metrics.Histogram.Abstractions.IMeasureHistogramMetrics.Update(App.Metrics.Core.Options.HistogramOptions%2CApp.Metrics.Tagging.MetricTags%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Histogram/Abstractions/IMeasureHistogramMetrics.cs/#L36">View Source</a>
+              </span>
+              <a id="App_Metrics_Histogram_Abstractions_IMeasureHistogramMetrics_Update_" data-uid="App.Metrics.Histogram.Abstractions.IMeasureHistogramMetrics.Update*"></a>
+              <h4 id="App_Metrics_Histogram_Abstractions_IMeasureHistogramMetrics_Update_App_Metrics_Core_Options_HistogramOptions_App_Metrics_Tagging_MetricTags_System_Int64_" data-uid="App.Metrics.Histogram.Abstractions.IMeasureHistogramMetrics.Update(App.Metrics.Core.Options.HistogramOptions,App.Metrics.Tagging.MetricTags,System.Int64)">Update(HistogramOptions, MetricTags, Int64)</h4>
+              <div class="markdown level1 summary"><p>Updates a <a class="xref" href="App.Metrics.Abstractions.MetricTypes.IHistogramMetric.html#App_Metrics_Abstractions_MetricTypes_IHistogramMetric">IHistogramMetric</a> which measures the distribution of values in a stream of data. Records
+the min, mean,
+max and standard deviation of values and also quantiles such as the medium, 95th percentile, 98th percentile, 99th
+percentile and 99.9th percentile</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void Update(HistogramOptions options, MetricTags tags, long value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Core.Options.HistogramOptions.html#App_Metrics_Core_Options_HistogramOptions">HistogramOptions</a></td>
+                    <td><em>options</em></td>
+                    <td><p>The details of the histogram that is being measured</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Tagging.MetricTags.html#App_Metrics_Tagging_MetricTags">MetricTags</a></td>
+                    <td><em>tags</em></td>
+                    <td><p>The runtime tags to set in addition to those defined on the options, this will create a separate metric per unique <a class="xref" href="App.Metrics.Tagging.MetricTags.html#App_Metrics_Tagging_MetricTags">MetricTags</a></p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>value</em></td>
+                    <td><p>The value to be added to the histogram.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Histogram_Abstractions_IMeasureHistogramMetrics_Update_App_Metrics_Core_Options_HistogramOptions_App_Metrics_Tagging_MetricTags_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Histogram.Abstractions.IMeasureHistogramMetrics.Update(App.Metrics.Core.Options.HistogramOptions%2CApp.Metrics.Tagging.MetricTags%2CSystem.Int64%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Histogram/Abstractions/IMeasureHistogramMetrics.cs/#L61">View Source</a>
+              </span>
+              <a id="App_Metrics_Histogram_Abstractions_IMeasureHistogramMetrics_Update_" data-uid="App.Metrics.Histogram.Abstractions.IMeasureHistogramMetrics.Update*"></a>
+              <h4 id="App_Metrics_Histogram_Abstractions_IMeasureHistogramMetrics_Update_App_Metrics_Core_Options_HistogramOptions_App_Metrics_Tagging_MetricTags_System_Int64_System_String_" data-uid="App.Metrics.Histogram.Abstractions.IMeasureHistogramMetrics.Update(App.Metrics.Core.Options.HistogramOptions,App.Metrics.Tagging.MetricTags,System.Int64,System.String)">Update(HistogramOptions, MetricTags, Int64, String)</h4>
+              <div class="markdown level1 summary"><p>Updates a <a class="xref" href="App.Metrics.Abstractions.MetricTypes.IHistogramMetric.html#App_Metrics_Abstractions_MetricTypes_IHistogramMetric">IHistogramMetric</a> which measures the distribution of values in a stream of data. Records
+the min, mean,
+max and standard deviation of values and also quantiles such as the medium, 95th percentile, 98th percentile, 99th
+percentile and 99.9th percentile</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void Update(HistogramOptions options, MetricTags tags, long value, string userValue)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Core.Options.HistogramOptions.html#App_Metrics_Core_Options_HistogramOptions">HistogramOptions</a></td>
+                    <td><em>options</em></td>
+                    <td><p>The details of the histogram that is being measured</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Tagging.MetricTags.html#App_Metrics_Tagging_MetricTags">MetricTags</a></td>
+                    <td><em>tags</em></td>
+                    <td><p>The runtime tags to set in addition to those defined on the options, this will create a separate metric per unique <a class="xref" href="App.Metrics.Tagging.MetricTags.html#App_Metrics_Tagging_MetricTags">MetricTags</a></p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>value</em></td>
+                    <td><p>The value to be added to the histogram.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>userValue</em></td>
+                    <td><p>The user value to track where a Min, Max and Last duration is recorded.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Histogram_Abstractions_IMeasureHistogramMetrics_Update_App_Metrics_Core_Options_HistogramOptions_System_Int64_.md&amp;value=---%0Auid%3A%20App.Metrics.Histogram.Abstractions.IMeasureHistogramMetrics.Update(App.Metrics.Core.Options.HistogramOptions%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Histogram/Abstractions/IMeasureHistogramMetrics.cs/#L22">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Histogram/Abstractions/IMeasureHistogramMetrics.cs/#L23">View Source</a>
               </span>
               <a id="App_Metrics_Histogram_Abstractions_IMeasureHistogramMetrics_Update_" data-uid="App.Metrics.Histogram.Abstractions.IMeasureHistogramMetrics.Update*"></a>
               <h4 id="App_Metrics_Histogram_Abstractions_IMeasureHistogramMetrics_Update_App_Metrics_Core_Options_HistogramOptions_System_Int64_" data-uid="App.Metrics.Histogram.Abstractions.IMeasureHistogramMetrics.Update(App.Metrics.Core.Options.HistogramOptions,System.Int64)">Update(HistogramOptions, Int64)</h4>
@@ -131,7 +235,7 @@ percentile and 99.9th percentile</p>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Histogram_Abstractions_IMeasureHistogramMetrics_Update_App_Metrics_Core_Options_HistogramOptions_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20App.Metrics.Histogram.Abstractions.IMeasureHistogramMetrics.Update(App.Metrics.Core.Options.HistogramOptions%2CSystem.Int64%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Histogram/Abstractions/IMeasureHistogramMetrics.cs/#L33">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Histogram/Abstractions/IMeasureHistogramMetrics.cs/#L47">View Source</a>
               </span>
               <a id="App_Metrics_Histogram_Abstractions_IMeasureHistogramMetrics_Update_" data-uid="App.Metrics.Histogram.Abstractions.IMeasureHistogramMetrics.Update*"></a>
               <h4 id="App_Metrics_Histogram_Abstractions_IMeasureHistogramMetrics_Update_App_Metrics_Core_Options_HistogramOptions_System_Int64_System_String_" data-uid="App.Metrics.Histogram.Abstractions.IMeasureHistogramMetrics.Update(App.Metrics.Core.Options.HistogramOptions,System.Int64,System.String)">Update(HistogramOptions, Int64, String)</h4>
@@ -186,7 +290,7 @@ percentile and 99.9th percentile</p>
                     <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Histogram_Abstractions_IMeasureHistogramMetrics.md&amp;value=---%0Auid%3A%20App.Metrics.Histogram.Abstractions.IMeasureHistogramMetrics%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Histogram/Abstractions/IMeasureHistogramMetrics.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Histogram/Abstractions/IMeasureHistogramMetrics.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

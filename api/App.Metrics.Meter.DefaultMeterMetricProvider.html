@@ -116,7 +116,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Meter_DefaultMeterMetricProvider__ctor_App_Metrics_Meter_Abstractions_IBuildMeterMetrics_App_Metrics_Registry_Abstractions_IMetricsRegistry_App_Metrics_IClock_.md&amp;value=---%0Auid%3A%20App.Metrics.Meter.DefaultMeterMetricProvider.%23ctor(App.Metrics.Meter.Abstractions.IBuildMeterMetrics%2CApp.Metrics.Registry.Abstractions.IMetricsRegistry%2CApp.Metrics.IClock)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Meter/DefaultMeterMetricProvider.cs/#L24">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Meter/DefaultMeterMetricProvider.cs/#L25">View Source</a>
               </span>
               <a id="App_Metrics_Meter_DefaultMeterMetricProvider__ctor_" data-uid="App.Metrics.Meter.DefaultMeterMetricProvider.#ctor*"></a>
               <h4 id="App_Metrics_Meter_DefaultMeterMetricProvider__ctor_App_Metrics_Meter_Abstractions_IBuildMeterMetrics_App_Metrics_Registry_Abstractions_IMetricsRegistry_App_Metrics_IClock_" data-uid="App.Metrics.Meter.DefaultMeterMetricProvider.#ctor(App.Metrics.Meter.Abstractions.IBuildMeterMetrics,App.Metrics.Registry.Abstractions.IMetricsRegistry,App.Metrics.IClock)">DefaultMeterMetricProvider(IBuildMeterMetrics, IMetricsRegistry, IClock)</h4>
@@ -164,7 +164,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Meter_DefaultMeterMetricProvider_Instance_App_Metrics_Core_Options_MeterOptions_.md&amp;value=---%0Auid%3A%20App.Metrics.Meter.DefaultMeterMetricProvider.Instance(App.Metrics.Core.Options.MeterOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Meter/DefaultMeterMetricProvider.cs/#L32">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Meter/DefaultMeterMetricProvider.cs/#L33">View Source</a>
               </span>
               <a id="App_Metrics_Meter_DefaultMeterMetricProvider_Instance_" data-uid="App.Metrics.Meter.DefaultMeterMetricProvider.Instance*"></a>
               <h4 id="App_Metrics_Meter_DefaultMeterMetricProvider_Instance_App_Metrics_Core_Options_MeterOptions_" data-uid="App.Metrics.Meter.DefaultMeterMetricProvider.Instance(App.Metrics.Core.Options.MeterOptions)">Instance(MeterOptions)</h4>
@@ -210,10 +210,138 @@
                   <div><a class="xref" href="App.Metrics.Meter.Abstractions.IProvideMeterMetrics.html#App_Metrics_Meter_Abstractions_IProvideMeterMetrics_Instance_App_Metrics_Core_Options_MeterOptions_">IProvideMeterMetrics.Instance(MeterOptions)</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Meter_DefaultMeterMetricProvider_Instance_App_Metrics_Core_Options_MeterOptions_App_Metrics_Tagging_MetricTags_.md&amp;value=---%0Auid%3A%20App.Metrics.Meter.DefaultMeterMetricProvider.Instance(App.Metrics.Core.Options.MeterOptions%2CApp.Metrics.Tagging.MetricTags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Meter/DefaultMeterMetricProvider.cs/#L46">View Source</a>
+              </span>
+              <a id="App_Metrics_Meter_DefaultMeterMetricProvider_Instance_" data-uid="App.Metrics.Meter.DefaultMeterMetricProvider.Instance*"></a>
+              <h4 id="App_Metrics_Meter_DefaultMeterMetricProvider_Instance_App_Metrics_Core_Options_MeterOptions_App_Metrics_Tagging_MetricTags_" data-uid="App.Metrics.Meter.DefaultMeterMetricProvider.Instance(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricTags)">Instance(MeterOptions, MetricTags)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IMeter Instance(MeterOptions options, MetricTags tags)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Core.Options.MeterOptions.html#App_Metrics_Core_Options_MeterOptions">MeterOptions</a></td>
+                    <td><em>options</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Tagging.MetricTags.html#App_Metrics_Tagging_MetricTags">MetricTags</a></td>
+                    <td><em>tags</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Meter.Abstractions.IMeter.html#App_Metrics_Meter_Abstractions_IMeter">IMeter</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="App.Metrics.Meter.Abstractions.IProvideMeterMetrics.html#App_Metrics_Meter_Abstractions_IProvideMeterMetrics_Instance_App_Metrics_Core_Options_MeterOptions_App_Metrics_Tagging_MetricTags_">IProvideMeterMetrics.Instance(MeterOptions, MetricTags)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Meter_DefaultMeterMetricProvider_Instance__1_App_Metrics_Core_Options_MeterOptions_App_Metrics_Tagging_MetricTags_System_Func___0__.md&amp;value=---%0Auid%3A%20App.Metrics.Meter.DefaultMeterMetricProvider.Instance%60%601(App.Metrics.Core.Options.MeterOptions%2CApp.Metrics.Tagging.MetricTags%2CSystem.Func%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Meter/DefaultMeterMetricProvider.cs/#L52">View Source</a>
+              </span>
+              <a id="App_Metrics_Meter_DefaultMeterMetricProvider_Instance_" data-uid="App.Metrics.Meter.DefaultMeterMetricProvider.Instance*"></a>
+              <h4 id="App_Metrics_Meter_DefaultMeterMetricProvider_Instance__1_App_Metrics_Core_Options_MeterOptions_App_Metrics_Tagging_MetricTags_System_Func___0__" data-uid="App.Metrics.Meter.DefaultMeterMetricProvider.Instance``1(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})">Instance&lt;T&gt;(MeterOptions, MetricTags, Func&lt;T&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IMeter Instance&lt;T&gt;(MeterOptions options, MetricTags tags, Func&lt;T&gt; builder)where T : IMeterMetric</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Core.Options.MeterOptions.html#App_Metrics_Core_Options_MeterOptions">MeterOptions</a></td>
+                    <td><em>options</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Tagging.MetricTags.html#App_Metrics_Tagging_MetricTags">MetricTags</a></td>
+                    <td><em>tags</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Func&lt;TResult&gt;</span>&lt;T&gt;</td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Meter.Abstractions.IMeter.html#App_Metrics_Meter_Abstractions_IMeter">IMeter</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>T</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="App.Metrics.Meter.Abstractions.IProvideMeterMetrics.html#App_Metrics_Meter_Abstractions_IProvideMeterMetrics_Instance__1_App_Metrics_Core_Options_MeterOptions_App_Metrics_Tagging_MetricTags_System_Func___0__">IProvideMeterMetrics.Instance&lt;T&gt;(MeterOptions, MetricTags, Func&lt;T&gt;)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Meter_DefaultMeterMetricProvider_Instance__1_App_Metrics_Core_Options_MeterOptions_System_Func___0__.md&amp;value=---%0Auid%3A%20App.Metrics.Meter.DefaultMeterMetricProvider.Instance%60%601(App.Metrics.Core.Options.MeterOptions%2CSystem.Func%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Meter/DefaultMeterMetricProvider.cs/#L35">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Meter/DefaultMeterMetricProvider.cs/#L39">View Source</a>
               </span>
               <a id="App_Metrics_Meter_DefaultMeterMetricProvider_Instance_" data-uid="App.Metrics.Meter.DefaultMeterMetricProvider.Instance*"></a>
               <h4 id="App_Metrics_Meter_DefaultMeterMetricProvider_Instance__1_App_Metrics_Core_Options_MeterOptions_System_Func___0__" data-uid="App.Metrics.Meter.DefaultMeterMetricProvider.Instance``1(App.Metrics.Core.Options.MeterOptions,System.Func{``0})">Instance&lt;T&gt;(MeterOptions, Func&lt;T&gt;)</h4>
@@ -288,7 +416,7 @@
                     <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Meter_DefaultMeterMetricProvider.md&amp;value=---%0Auid%3A%20App.Metrics.Meter.DefaultMeterMetricProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Meter/DefaultMeterMetricProvider.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Meter/DefaultMeterMetricProvider.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

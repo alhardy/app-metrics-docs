@@ -108,7 +108,7 @@
               <h6><strong>Assembly</strong>:App.Metrics.dll</h6>
               <h5 id="App_Metrics_Gauge_FunctionGauge_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public class FunctionGauge : IGaugeMetric, IMetricValueProvider&lt;double&gt;</code></pre>
+                <pre><code class="lang-csharp hljs">public class FunctionGauge : IGaugeMetric, IGauge, IResetableMetric, IMetricValueProvider&lt;double&gt;</code></pre>
               </div>
               <h3 id="constructors">Constructors
               </h3>
@@ -117,7 +117,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Gauge_FunctionGauge__ctor_System_Func_System_Double__.md&amp;value=---%0Auid%3A%20App.Metrics.Gauge.FunctionGauge.%23ctor(System.Func%7BSystem.Double%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Gauge/FunctionGauge.cs/#L17">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Gauge/FunctionGauge.cs/#L17">View Source</a>
               </span>
               <a id="App_Metrics_Gauge_FunctionGauge__ctor_" data-uid="App.Metrics.Gauge.FunctionGauge.#ctor*"></a>
               <h4 id="App_Metrics_Gauge_FunctionGauge__ctor_System_Func_System_Double__" data-uid="App.Metrics.Gauge.FunctionGauge.#ctor(System.Func{System.Double})">FunctionGauge(Func&lt;Double&gt;)</h4>
@@ -151,7 +151,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Gauge_FunctionGauge_Value.md&amp;value=---%0Auid%3A%20App.Metrics.Gauge.FunctionGauge.Value%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Gauge/FunctionGauge.cs/#L20">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Gauge/FunctionGauge.cs/#L20">View Source</a>
               </span>
               <a id="App_Metrics_Gauge_FunctionGauge_Value_" data-uid="App.Metrics.Gauge.FunctionGauge.Value*"></a>
               <h4 id="App_Metrics_Gauge_FunctionGauge_Value" data-uid="App.Metrics.Gauge.FunctionGauge.Value">Value</h4>
@@ -185,7 +185,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Gauge_FunctionGauge_GetValue_System_Boolean_.md&amp;value=---%0Auid%3A%20App.Metrics.Gauge.FunctionGauge.GetValue(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Gauge/FunctionGauge.cs/#L36">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Gauge/FunctionGauge.cs/#L36">View Source</a>
               </span>
               <a id="App_Metrics_Gauge_FunctionGauge_GetValue_" data-uid="App.Metrics.Gauge.FunctionGauge.GetValue*"></a>
               <h4 id="App_Metrics_Gauge_FunctionGauge_GetValue_System_Boolean_" data-uid="App.Metrics.Gauge.FunctionGauge.GetValue(System.Boolean)">GetValue(Boolean)</h4>
@@ -229,6 +229,57 @@
               </table>
               <h5 class="implements">Implements</h5>
                   <div><a class="xref" href="App.Metrics.Core.Abstractions.IMetricValueProvider-1.html#App_Metrics_Core_Abstractions_IMetricValueProvider_1_GetValue_System_Boolean_">IMetricValueProvider&lt;T&gt;.GetValue(Boolean)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Gauge_FunctionGauge_Reset.md&amp;value=---%0Auid%3A%20App.Metrics.Gauge.FunctionGauge.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Gauge/FunctionGauge.cs/#L42">View Source</a>
+              </span>
+              <a id="App_Metrics_Gauge_FunctionGauge_Reset_" data-uid="App.Metrics.Gauge.FunctionGauge.Reset*"></a>
+              <h4 id="App_Metrics_Gauge_FunctionGauge_Reset" data-uid="App.Metrics.Gauge.FunctionGauge.Reset">Reset()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+              </div>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="App.Metrics.Core.Abstractions.IResetableMetric.html#App_Metrics_Core_Abstractions_IResetableMetric_Reset">IResetableMetric.Reset()</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Gauge_FunctionGauge_SetValue_System_Double_.md&amp;value=---%0Auid%3A%20App.Metrics.Gauge.FunctionGauge.SetValue(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Gauge/FunctionGauge.cs/#L48">View Source</a>
+              </span>
+              <a id="App_Metrics_Gauge_FunctionGauge_SetValue_" data-uid="App.Metrics.Gauge.FunctionGauge.SetValue*"></a>
+              <h4 id="App_Metrics_Gauge_FunctionGauge_SetValue_System_Double_" data-uid="App.Metrics.Gauge.FunctionGauge.SetValue(System.Double)">SetValue(Double)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetValue(double value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><em>value</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="App.Metrics.Gauge.IGauge.html#App_Metrics_Gauge_IGauge_SetValue_System_Double_">IGauge.SetValue(Double)</a></div>
               <h3 id="seealso">See Also</h3>
               <div class="seealso">
                   <div><a class="xref" href="App.Metrics.Abstractions.MetricTypes.IGaugeMetric.html#App_Metrics_Abstractions_MetricTypes_IGaugeMetric">IGaugeMetric</a></div>
@@ -244,7 +295,7 @@
                     <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Gauge_FunctionGauge.md&amp;value=---%0Auid%3A%20App.Metrics.Gauge.FunctionGauge%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Gauge/FunctionGauge.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Gauge/FunctionGauge.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

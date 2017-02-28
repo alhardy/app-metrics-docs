@@ -116,7 +116,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Timer_DefaultTimerMetricProvider__ctor_App_Metrics_Timer_Abstractions_IBuildTimerMetrics_App_Metrics_Registry_Abstractions_IMetricsRegistry_App_Metrics_IClock_.md&amp;value=---%0Auid%3A%20App.Metrics.Timer.DefaultTimerMetricProvider.%23ctor(App.Metrics.Timer.Abstractions.IBuildTimerMetrics%2CApp.Metrics.Registry.Abstractions.IMetricsRegistry%2CApp.Metrics.IClock)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Timer/DefaultTimerMetricProvider.cs/#L24">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Timer/DefaultTimerMetricProvider.cs/#L25">View Source</a>
               </span>
               <a id="App_Metrics_Timer_DefaultTimerMetricProvider__ctor_" data-uid="App.Metrics.Timer.DefaultTimerMetricProvider.#ctor*"></a>
               <h4 id="App_Metrics_Timer_DefaultTimerMetricProvider__ctor_App_Metrics_Timer_Abstractions_IBuildTimerMetrics_App_Metrics_Registry_Abstractions_IMetricsRegistry_App_Metrics_IClock_" data-uid="App.Metrics.Timer.DefaultTimerMetricProvider.#ctor(App.Metrics.Timer.Abstractions.IBuildTimerMetrics,App.Metrics.Registry.Abstractions.IMetricsRegistry,App.Metrics.IClock)">DefaultTimerMetricProvider(IBuildTimerMetrics, IMetricsRegistry, IClock)</h4>
@@ -164,7 +164,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Timer_DefaultTimerMetricProvider_Instance_App_Metrics_Core_Options_TimerOptions_.md&amp;value=---%0Auid%3A%20App.Metrics.Timer.DefaultTimerMetricProvider.Instance(App.Metrics.Core.Options.TimerOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Timer/DefaultTimerMetricProvider.cs/#L32">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Timer/DefaultTimerMetricProvider.cs/#L33">View Source</a>
               </span>
               <a id="App_Metrics_Timer_DefaultTimerMetricProvider_Instance_" data-uid="App.Metrics.Timer.DefaultTimerMetricProvider.Instance*"></a>
               <h4 id="App_Metrics_Timer_DefaultTimerMetricProvider_Instance_App_Metrics_Core_Options_TimerOptions_" data-uid="App.Metrics.Timer.DefaultTimerMetricProvider.Instance(App.Metrics.Core.Options.TimerOptions)">Instance(TimerOptions)</h4>
@@ -210,10 +210,138 @@
                   <div><a class="xref" href="App.Metrics.Timer.Abstractions.IProvideTimerMetrics.html#App_Metrics_Timer_Abstractions_IProvideTimerMetrics_Instance_App_Metrics_Core_Options_TimerOptions_">IProvideTimerMetrics.Instance(TimerOptions)</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Timer_DefaultTimerMetricProvider_Instance_App_Metrics_Core_Options_TimerOptions_App_Metrics_Tagging_MetricTags_.md&amp;value=---%0Auid%3A%20App.Metrics.Timer.DefaultTimerMetricProvider.Instance(App.Metrics.Core.Options.TimerOptions%2CApp.Metrics.Tagging.MetricTags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Timer/DefaultTimerMetricProvider.cs/#L41">View Source</a>
+              </span>
+              <a id="App_Metrics_Timer_DefaultTimerMetricProvider_Instance_" data-uid="App.Metrics.Timer.DefaultTimerMetricProvider.Instance*"></a>
+              <h4 id="App_Metrics_Timer_DefaultTimerMetricProvider_Instance_App_Metrics_Core_Options_TimerOptions_App_Metrics_Tagging_MetricTags_" data-uid="App.Metrics.Timer.DefaultTimerMetricProvider.Instance(App.Metrics.Core.Options.TimerOptions,App.Metrics.Tagging.MetricTags)">Instance(TimerOptions, MetricTags)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ITimer Instance(TimerOptions options, MetricTags tags)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Core.Options.TimerOptions.html#App_Metrics_Core_Options_TimerOptions">TimerOptions</a></td>
+                    <td><em>options</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Tagging.MetricTags.html#App_Metrics_Tagging_MetricTags">MetricTags</a></td>
+                    <td><em>tags</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Timer.Abstractions.ITimer.html#App_Metrics_Timer_Abstractions_ITimer">ITimer</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="App.Metrics.Timer.Abstractions.IProvideTimerMetrics.html#App_Metrics_Timer_Abstractions_IProvideTimerMetrics_Instance_App_Metrics_Core_Options_TimerOptions_App_Metrics_Tagging_MetricTags_">IProvideTimerMetrics.Instance(TimerOptions, MetricTags)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Timer_DefaultTimerMetricProvider_Instance__1_App_Metrics_Core_Options_TimerOptions_App_Metrics_Tagging_MetricTags_System_Func___0__.md&amp;value=---%0Auid%3A%20App.Metrics.Timer.DefaultTimerMetricProvider.Instance%60%601(App.Metrics.Core.Options.TimerOptions%2CApp.Metrics.Tagging.MetricTags%2CSystem.Func%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Timer/DefaultTimerMetricProvider.cs/#L56">View Source</a>
+              </span>
+              <a id="App_Metrics_Timer_DefaultTimerMetricProvider_Instance_" data-uid="App.Metrics.Timer.DefaultTimerMetricProvider.Instance*"></a>
+              <h4 id="App_Metrics_Timer_DefaultTimerMetricProvider_Instance__1_App_Metrics_Core_Options_TimerOptions_App_Metrics_Tagging_MetricTags_System_Func___0__" data-uid="App.Metrics.Timer.DefaultTimerMetricProvider.Instance``1(App.Metrics.Core.Options.TimerOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})">Instance&lt;T&gt;(TimerOptions, MetricTags, Func&lt;T&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ITimer Instance&lt;T&gt;(TimerOptions options, MetricTags tags, Func&lt;T&gt; builder)where T : ITimerMetric</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Core.Options.TimerOptions.html#App_Metrics_Core_Options_TimerOptions">TimerOptions</a></td>
+                    <td><em>options</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Tagging.MetricTags.html#App_Metrics_Tagging_MetricTags">MetricTags</a></td>
+                    <td><em>tags</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Func&lt;TResult&gt;</span>&lt;T&gt;</td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Timer.Abstractions.ITimer.html#App_Metrics_Timer_Abstractions_ITimer">ITimer</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>T</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="App.Metrics.Timer.Abstractions.IProvideTimerMetrics.html#App_Metrics_Timer_Abstractions_IProvideTimerMetrics_Instance__1_App_Metrics_Core_Options_TimerOptions_App_Metrics_Tagging_MetricTags_System_Func___0__">IProvideTimerMetrics.Instance&lt;T&gt;(TimerOptions, MetricTags, Func&lt;T&gt;)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Timer_DefaultTimerMetricProvider_Instance__1_App_Metrics_Core_Options_TimerOptions_System_Func___0__.md&amp;value=---%0Auid%3A%20App.Metrics.Timer.DefaultTimerMetricProvider.Instance%60%601(App.Metrics.Core.Options.TimerOptions%2CSystem.Func%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Timer/DefaultTimerMetricProvider.cs/#L40">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Timer/DefaultTimerMetricProvider.cs/#L50">View Source</a>
               </span>
               <a id="App_Metrics_Timer_DefaultTimerMetricProvider_Instance_" data-uid="App.Metrics.Timer.DefaultTimerMetricProvider.Instance*"></a>
               <h4 id="App_Metrics_Timer_DefaultTimerMetricProvider_Instance__1_App_Metrics_Core_Options_TimerOptions_System_Func___0__" data-uid="App.Metrics.Timer.DefaultTimerMetricProvider.Instance``1(App.Metrics.Core.Options.TimerOptions,System.Func{``0})">Instance&lt;T&gt;(TimerOptions, Func&lt;T&gt;)</h4>
@@ -279,10 +407,84 @@
                   <div><a class="xref" href="App.Metrics.Timer.Abstractions.IProvideTimerMetrics.html#App_Metrics_Timer_Abstractions_IProvideTimerMetrics_Instance__1_App_Metrics_Core_Options_TimerOptions_System_Func___0__">IProvideTimerMetrics.Instance&lt;T&gt;(TimerOptions, Func&lt;T&gt;)</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Timer_DefaultTimerMetricProvider_WithHistogram__1_App_Metrics_Core_Options_TimerOptions_App_Metrics_Tagging_MetricTags_System_Func___0__.md&amp;value=---%0Auid%3A%20App.Metrics.Timer.DefaultTimerMetricProvider.WithHistogram%60%601(App.Metrics.Core.Options.TimerOptions%2CApp.Metrics.Tagging.MetricTags%2CSystem.Func%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Timer/DefaultTimerMetricProvider.cs/#L72">View Source</a>
+              </span>
+              <a id="App_Metrics_Timer_DefaultTimerMetricProvider_WithHistogram_" data-uid="App.Metrics.Timer.DefaultTimerMetricProvider.WithHistogram*"></a>
+              <h4 id="App_Metrics_Timer_DefaultTimerMetricProvider_WithHistogram__1_App_Metrics_Core_Options_TimerOptions_App_Metrics_Tagging_MetricTags_System_Func___0__" data-uid="App.Metrics.Timer.DefaultTimerMetricProvider.WithHistogram``1(App.Metrics.Core.Options.TimerOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})">WithHistogram&lt;T&gt;(TimerOptions, MetricTags, Func&lt;T&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ITimer WithHistogram&lt;T&gt;(TimerOptions options, MetricTags tags, Func&lt;T&gt; histogramMetricBuilder)where T : IHistogramMetric</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Core.Options.TimerOptions.html#App_Metrics_Core_Options_TimerOptions">TimerOptions</a></td>
+                    <td><em>options</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Tagging.MetricTags.html#App_Metrics_Tagging_MetricTags">MetricTags</a></td>
+                    <td><em>tags</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Func&lt;TResult&gt;</span>&lt;T&gt;</td>
+                    <td><em>histogramMetricBuilder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Timer.Abstractions.ITimer.html#App_Metrics_Timer_Abstractions_ITimer">ITimer</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>T</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="App.Metrics.Timer.Abstractions.IProvideTimerMetrics.html#App_Metrics_Timer_Abstractions_IProvideTimerMetrics_WithHistogram__1_App_Metrics_Core_Options_TimerOptions_App_Metrics_Tagging_MetricTags_System_Func___0__">IProvideTimerMetrics.WithHistogram&lt;T&gt;(TimerOptions, MetricTags, Func&lt;T&gt;)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Timer_DefaultTimerMetricProvider_WithHistogram__1_App_Metrics_Core_Options_TimerOptions_System_Func___0__.md&amp;value=---%0Auid%3A%20App.Metrics.Timer.DefaultTimerMetricProvider.WithHistogram%60%601(App.Metrics.Core.Options.TimerOptions%2CSystem.Func%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Timer/DefaultTimerMetricProvider.cs/#L44">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Timer/DefaultTimerMetricProvider.cs/#L63">View Source</a>
               </span>
               <a id="App_Metrics_Timer_DefaultTimerMetricProvider_WithHistogram_" data-uid="App.Metrics.Timer.DefaultTimerMetricProvider.WithHistogram*"></a>
               <h4 id="App_Metrics_Timer_DefaultTimerMetricProvider_WithHistogram__1_App_Metrics_Core_Options_TimerOptions_System_Func___0__" data-uid="App.Metrics.Timer.DefaultTimerMetricProvider.WithHistogram``1(App.Metrics.Core.Options.TimerOptions,System.Func{``0})">WithHistogram&lt;T&gt;(TimerOptions, Func&lt;T&gt;)</h4>
@@ -357,7 +559,7 @@
                     <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Timer_DefaultTimerMetricProvider.md&amp;value=---%0Auid%3A%20App.Metrics.Timer.DefaultTimerMetricProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Timer/DefaultTimerMetricProvider.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Timer/DefaultTimerMetricProvider.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

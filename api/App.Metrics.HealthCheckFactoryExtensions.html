@@ -113,10 +113,139 @@
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_HealthCheckFactoryExtensions_RegisterHttpGetHealthCheck_App_Metrics_Health_Abstractions_IHealthCheckFactory_System_String_System_Uri_System_TimeSpan_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20App.Metrics.HealthCheckFactoryExtensions.RegisterHttpGetHealthCheck(App.Metrics.Health.Abstractions.IHealthCheckFactory%2CSystem.String%2CSystem.Uri%2CSystem.TimeSpan%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Health/Extensions/HealthCheckFactoryExtensions.cs/#L22">View Source</a>
+              </span>
+              <a id="App_Metrics_HealthCheckFactoryExtensions_RegisterHttpGetHealthCheck_" data-uid="App.Metrics.HealthCheckFactoryExtensions.RegisterHttpGetHealthCheck*"></a>
+              <h4 id="App_Metrics_HealthCheckFactoryExtensions_RegisterHttpGetHealthCheck_App_Metrics_Health_Abstractions_IHealthCheckFactory_System_String_System_Uri_System_TimeSpan_System_Threading_CancellationToken_" data-uid="App.Metrics.HealthCheckFactoryExtensions.RegisterHttpGetHealthCheck(App.Metrics.Health.Abstractions.IHealthCheckFactory,System.String,System.Uri,System.TimeSpan,System.Threading.CancellationToken)">RegisterHttpGetHealthCheck(IHealthCheckFactory, String, Uri, TimeSpan, CancellationToken)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IHealthCheckFactory RegisterHttpGetHealthCheck(this IHealthCheckFactory factory, string name, Uri uri, TimeSpan timeout, CancellationToken token = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Health.Abstractions.IHealthCheckFactory.html#App_Metrics_Health_Abstractions_IHealthCheckFactory">IHealthCheckFactory</a></td>
+                    <td><em>factory</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Uri</span></td>
+                    <td><em>uri</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td><em>timeout</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>token</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Health.Abstractions.IHealthCheckFactory.html#App_Metrics_Health_Abstractions_IHealthCheckFactory">IHealthCheckFactory</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_HealthCheckFactoryExtensions_RegisterPingHealthCheck_App_Metrics_Health_Abstractions_IHealthCheckFactory_System_String_System_String_System_TimeSpan_.md&amp;value=---%0Auid%3A%20App.Metrics.HealthCheckFactoryExtensions.RegisterPingHealthCheck(App.Metrics.Health.Abstractions.IHealthCheckFactory%2CSystem.String%2CSystem.String%2CSystem.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Health/Extensions/HealthCheckFactoryExtensions.cs/#L48">View Source</a>
+              </span>
+              <a id="App_Metrics_HealthCheckFactoryExtensions_RegisterPingHealthCheck_" data-uid="App.Metrics.HealthCheckFactoryExtensions.RegisterPingHealthCheck*"></a>
+              <h4 id="App_Metrics_HealthCheckFactoryExtensions_RegisterPingHealthCheck_App_Metrics_Health_Abstractions_IHealthCheckFactory_System_String_System_String_System_TimeSpan_" data-uid="App.Metrics.HealthCheckFactoryExtensions.RegisterPingHealthCheck(App.Metrics.Health.Abstractions.IHealthCheckFactory,System.String,System.String,System.TimeSpan)">RegisterPingHealthCheck(IHealthCheckFactory, String, String, TimeSpan)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IHealthCheckFactory RegisterPingHealthCheck(this IHealthCheckFactory factory, string name, string host, TimeSpan timeout)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Health.Abstractions.IHealthCheckFactory.html#App_Metrics_Health_Abstractions_IHealthCheckFactory">IHealthCheckFactory</a></td>
+                    <td><em>factory</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>host</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td><em>timeout</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Health.Abstractions.IHealthCheckFactory.html#App_Metrics_Health_Abstractions_IHealthCheckFactory">IHealthCheckFactory</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_HealthCheckFactoryExtensions_RegisterProcessPhysicalMemoryHealthCheck_App_Metrics_Health_Abstractions_IHealthCheckFactory_System_String_System_Int64_.md&amp;value=---%0Auid%3A%20App.Metrics.HealthCheckFactoryExtensions.RegisterProcessPhysicalMemoryHealthCheck(App.Metrics.Health.Abstractions.IHealthCheckFactory%2CSystem.String%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Health/Extensions/HealthCheckFactoryExtensions.cs/#L23">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Health/Extensions/HealthCheckFactoryExtensions.cs/#L77">View Source</a>
               </span>
               <a id="App_Metrics_HealthCheckFactoryExtensions_RegisterProcessPhysicalMemoryHealthCheck_" data-uid="App.Metrics.HealthCheckFactoryExtensions.RegisterProcessPhysicalMemoryHealthCheck*"></a>
               <h4 id="App_Metrics_HealthCheckFactoryExtensions_RegisterProcessPhysicalMemoryHealthCheck_App_Metrics_Health_Abstractions_IHealthCheckFactory_System_String_System_Int64_" data-uid="App.Metrics.HealthCheckFactoryExtensions.RegisterProcessPhysicalMemoryHealthCheck(App.Metrics.Health.Abstractions.IHealthCheckFactory,System.String,System.Int64)">RegisterProcessPhysicalMemoryHealthCheck(IHealthCheckFactory, String, Int64)</h4>
@@ -179,7 +308,7 @@ threshold.</p>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_HealthCheckFactoryExtensions_RegisterProcessPrivateMemorySizeHealthCheck_App_Metrics_Health_Abstractions_IHealthCheckFactory_System_String_System_Int64_.md&amp;value=---%0Auid%3A%20App.Metrics.HealthCheckFactoryExtensions.RegisterProcessPrivateMemorySizeHealthCheck(App.Metrics.Health.Abstractions.IHealthCheckFactory%2CSystem.String%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Health/Extensions/HealthCheckFactoryExtensions.cs/#L47">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Health/Extensions/HealthCheckFactoryExtensions.cs/#L101">View Source</a>
               </span>
               <a id="App_Metrics_HealthCheckFactoryExtensions_RegisterProcessPrivateMemorySizeHealthCheck_" data-uid="App.Metrics.HealthCheckFactoryExtensions.RegisterProcessPrivateMemorySizeHealthCheck*"></a>
               <h4 id="App_Metrics_HealthCheckFactoryExtensions_RegisterProcessPrivateMemorySizeHealthCheck_App_Metrics_Health_Abstractions_IHealthCheckFactory_System_String_System_Int64_" data-uid="App.Metrics.HealthCheckFactoryExtensions.RegisterProcessPrivateMemorySizeHealthCheck(App.Metrics.Health.Abstractions.IHealthCheckFactory,System.String,System.Int64)">RegisterProcessPrivateMemorySizeHealthCheck(IHealthCheckFactory, String, Int64)</h4>
@@ -242,7 +371,7 @@ threshold.</p>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_HealthCheckFactoryExtensions_RegisterProcessVirtualMemorySizeHealthCheck_App_Metrics_Health_Abstractions_IHealthCheckFactory_System_String_System_Int64_.md&amp;value=---%0Auid%3A%20App.Metrics.HealthCheckFactoryExtensions.RegisterProcessVirtualMemorySizeHealthCheck(App.Metrics.Health.Abstractions.IHealthCheckFactory%2CSystem.String%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Health/Extensions/HealthCheckFactoryExtensions.cs/#L74">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Health/Extensions/HealthCheckFactoryExtensions.cs/#L128">View Source</a>
               </span>
               <a id="App_Metrics_HealthCheckFactoryExtensions_RegisterProcessVirtualMemorySizeHealthCheck_" data-uid="App.Metrics.HealthCheckFactoryExtensions.RegisterProcessVirtualMemorySizeHealthCheck*"></a>
               <h4 id="App_Metrics_HealthCheckFactoryExtensions_RegisterProcessVirtualMemorySizeHealthCheck_App_Metrics_Health_Abstractions_IHealthCheckFactory_System_String_System_Int64_" data-uid="App.Metrics.HealthCheckFactoryExtensions.RegisterProcessVirtualMemorySizeHealthCheck(App.Metrics.Health.Abstractions.IHealthCheckFactory,System.String,System.Int64)">RegisterProcessVirtualMemorySizeHealthCheck(IHealthCheckFactory, String, Int64)</h4>
@@ -311,7 +440,7 @@ threshold.</p>
                     <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_HealthCheckFactoryExtensions.md&amp;value=---%0Auid%3A%20App.Metrics.HealthCheckFactoryExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Health/Extensions/HealthCheckFactoryExtensions.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Health/Extensions/HealthCheckFactoryExtensions.cs/#L18" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -74,7 +74,7 @@
 <ul>
 <li><strong>Satisfied:</strong> Response time less than or equal to T seconds.</li>
 <li><strong>Tolerating:</strong> Response time between T seconds and 4T seconds.</li>
-<li><strong>Satisfied:</strong> Response time greater than 4 T seconds.</li>
+<li><strong>Frustrating:</strong> Response time greater than 4 T seconds.</li>
 </ul>
 <p>App Metrics caculates the counts of the three thresholds using a <a href="histograms.html">Histogram</a> to sample data recorded. The value T seconds, histogram sample size and <a href="../sampling/index.html">reservoir sampling</a> type can be configured when creating the <code>ApdexOptions</code>.</p>
 <div class="NOTE"><h5>Note</h5><p>The Apdex score between 0 and 1 is calculated using the following:</p>

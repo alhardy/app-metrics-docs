@@ -90,6 +90,12 @@
                   <a class="xref" href="App.Metrics.Gauge.FunctionGauge.html#App_Metrics_Gauge_FunctionGauge_GetValue_System_Boolean_">FunctionGauge.GetValue(Boolean)</a>
                 </div>
                 <div>
+                  <a class="xref" href="App.Metrics.Gauge.FunctionGauge.html#App_Metrics_Gauge_FunctionGauge_Reset">FunctionGauge.Reset()</a>
+                </div>
+                <div>
+                  <a class="xref" href="App.Metrics.Gauge.FunctionGauge.html#App_Metrics_Gauge_FunctionGauge_SetValue_System_Double_">FunctionGauge.SetValue(Double)</a>
+                </div>
+                <div>
                   <span class="xref">System.Object.Equals(System.Object)</span>
                 </div>
                 <div>
@@ -115,7 +121,7 @@
               <h6><strong>Assembly</strong>:App.Metrics.dll</h6>
               <h5 id="App_Metrics_Gauge_HitRatioGauge_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public sealed class HitRatioGauge : RatioGauge, IGaugeMetric, IMetricValueProvider&lt;double&gt;</code></pre>
+                <pre><code class="lang-csharp hljs">public sealed class HitRatioGauge : RatioGauge, IGaugeMetric, IGauge, IResetableMetric, IMetricValueProvider&lt;double&gt;</code></pre>
               </div>
               <h3 id="constructors">Constructors
               </h3>
@@ -124,7 +130,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Gauge_HitRatioGauge__ctor_App_Metrics_Meter_Abstractions_IMeter_App_Metrics_Meter_Abstractions_IMeter_.md&amp;value=---%0Auid%3A%20App.Metrics.Gauge.HitRatioGauge.%23ctor(App.Metrics.Meter.Abstractions.IMeter%2CApp.Metrics.Meter.Abstractions.IMeter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Gauge/HitRatioGauge.cs/#L24">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Gauge/HitRatioGauge.cs/#L24">View Source</a>
               </span>
               <a id="App_Metrics_Gauge_HitRatioGauge__ctor_" data-uid="App.Metrics.Gauge.HitRatioGauge.#ctor*"></a>
               <h4 id="App_Metrics_Gauge_HitRatioGauge__ctor_App_Metrics_Meter_Abstractions_IMeter_App_Metrics_Meter_Abstractions_IMeter_" data-uid="App.Metrics.Gauge.HitRatioGauge.#ctor(App.Metrics.Meter.Abstractions.IMeter,App.Metrics.Meter.Abstractions.IMeter)">HitRatioGauge(IMeter, IMeter)</h4>
@@ -168,7 +174,7 @@ meters.</p>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Gauge_HitRatioGauge__ctor_App_Metrics_Meter_Abstractions_IMeter_App_Metrics_Meter_Abstractions_IMeter_System_Func_App_Metrics_Meter_MeterValue_System_Double__.md&amp;value=---%0Auid%3A%20App.Metrics.Gauge.HitRatioGauge.%23ctor(App.Metrics.Meter.Abstractions.IMeter%2CApp.Metrics.Meter.Abstractions.IMeter%2CSystem.Func%7BApp.Metrics.Meter.MeterValue%2CSystem.Double%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Gauge/HitRatioGauge.cs/#L40">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Gauge/HitRatioGauge.cs/#L40">View Source</a>
               </span>
               <a id="App_Metrics_Gauge_HitRatioGauge__ctor_" data-uid="App.Metrics.Gauge.HitRatioGauge.#ctor*"></a>
               <h4 id="App_Metrics_Gauge_HitRatioGauge__ctor_App_Metrics_Meter_Abstractions_IMeter_App_Metrics_Meter_Abstractions_IMeter_System_Func_App_Metrics_Meter_MeterValue_System_Double__" data-uid="App.Metrics.Gauge.HitRatioGauge.#ctor(App.Metrics.Meter.Abstractions.IMeter,App.Metrics.Meter.Abstractions.IMeter,System.Func{App.Metrics.Meter.MeterValue,System.Double})">HitRatioGauge(IMeter, IMeter, Func&lt;MeterValue, Double&gt;)</h4>
@@ -219,7 +225,7 @@ the value for the ratio.</p>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Gauge_HitRatioGauge__ctor_App_Metrics_Meter_Abstractions_IMeter_App_Metrics_Timer_Abstractions_ITimer_.md&amp;value=---%0Auid%3A%20App.Metrics.Gauge.HitRatioGauge.%23ctor(App.Metrics.Meter.Abstractions.IMeter%2CApp.Metrics.Timer.Abstractions.ITimer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Gauge/HitRatioGauge.cs/#L52">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Gauge/HitRatioGauge.cs/#L52">View Source</a>
               </span>
               <a id="App_Metrics_Gauge_HitRatioGauge__ctor_" data-uid="App.Metrics.Gauge.HitRatioGauge.#ctor*"></a>
               <h4 id="App_Metrics_Gauge_HitRatioGauge__ctor_App_Metrics_Meter_Abstractions_IMeter_App_Metrics_Timer_Abstractions_ITimer_" data-uid="App.Metrics.Gauge.HitRatioGauge.#ctor(App.Metrics.Meter.Abstractions.IMeter,App.Metrics.Timer.Abstractions.ITimer)">HitRatioGauge(IMeter, ITimer)</h4>
@@ -263,7 +269,7 @@ of the meters.</p>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Gauge_HitRatioGauge__ctor_App_Metrics_Meter_Abstractions_IMeter_App_Metrics_Timer_Abstractions_ITimer_System_Func_App_Metrics_Meter_MeterValue_System_Double__.md&amp;value=---%0Auid%3A%20App.Metrics.Gauge.HitRatioGauge.%23ctor(App.Metrics.Meter.Abstractions.IMeter%2CApp.Metrics.Timer.Abstractions.ITimer%2CSystem.Func%7BApp.Metrics.Meter.MeterValue%2CSystem.Double%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Gauge/HitRatioGauge.cs/#L68">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Gauge/HitRatioGauge.cs/#L68">View Source</a>
               </span>
               <a id="App_Metrics_Gauge_HitRatioGauge__ctor_" data-uid="App.Metrics.Gauge.HitRatioGauge.#ctor*"></a>
               <h4 id="App_Metrics_Gauge_HitRatioGauge__ctor_App_Metrics_Meter_Abstractions_IMeter_App_Metrics_Timer_Abstractions_ITimer_System_Func_App_Metrics_Meter_MeterValue_System_Double__" data-uid="App.Metrics.Gauge.HitRatioGauge.#ctor(App.Metrics.Meter.Abstractions.IMeter,App.Metrics.Timer.Abstractions.ITimer,System.Func{App.Metrics.Meter.MeterValue,System.Double})">HitRatioGauge(IMeter, ITimer, Func&lt;MeterValue, Double&gt;)</h4>
@@ -320,7 +326,7 @@ extract the value for the ratio.</p>
                     <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Gauge_HitRatioGauge.md&amp;value=---%0Auid%3A%20App.Metrics.Gauge.HitRatioGauge%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Gauge/HitRatioGauge.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Gauge/HitRatioGauge.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

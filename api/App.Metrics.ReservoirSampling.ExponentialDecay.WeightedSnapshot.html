@@ -113,19 +113,19 @@
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot__ctor_System_Int64_System_Collections_Generic_IEnumerable_App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSample__.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.%23ctor(System.Int64%2CSystem.Collections.Generic.IEnumerable%7BApp.Metrics.ReservoirSampling.ExponentialDecay.WeightedSample%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot__ctor_System_Int64_System_Double_System_Collections_Generic_IEnumerable_App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSample__.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.%23ctor(System.Int64%2CSystem.Double%2CSystem.Collections.Generic.IEnumerable%7BApp.Metrics.ReservoirSampling.ExponentialDecay.WeightedSample%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L24">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L25">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot__ctor_" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.#ctor*"></a>
-              <h4 id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot__ctor_System_Int64_System_Collections_Generic_IEnumerable_App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSample__" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.#ctor(System.Int64,System.Collections.Generic.IEnumerable{App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSample})">WeightedSnapshot(Int64, IEnumerable&lt;WeightedSample&gt;)</h4>
+              <h4 id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot__ctor_System_Int64_System_Double_System_Collections_Generic_IEnumerable_App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSample__" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.#ctor(System.Int64,System.Double,System.Collections.Generic.IEnumerable{App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSample})">WeightedSnapshot(Int64, Double, IEnumerable&lt;WeightedSample&gt;)</h4>
               <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.html#App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot">WeightedSnapshot</a> class.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public WeightedSnapshot(long count, IEnumerable&lt;WeightedSample&gt; values)</code></pre>
+                <pre><code class="lang-csharp hljs">public WeightedSnapshot(long count, double sum, IEnumerable&lt;WeightedSample&gt; values)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -140,7 +140,13 @@
                   <tr>
                     <td><span class="xref">System.Int64</span></td>
                     <td><em>count</em></td>
-                    <td><p>The count of the sample set.</p>
+                    <td><p>The count of all observed values.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><em>sum</em></td>
+                    <td><p>The sum of all observed values.</p>
 </td>
                   </tr>
                   <tr>
@@ -158,7 +164,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Count.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L51">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L53">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Count_" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Count*"></a>
               <h4 id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Count" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Count">Count</h4>
@@ -190,7 +196,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Max.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Max%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L54">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L58">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Max_" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Max*"></a>
               <h4 id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Max" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Max">Max</h4>
@@ -222,7 +228,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_MaxUserValue.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.MaxUserValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L57">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L61">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_MaxUserValue_" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.MaxUserValue*"></a>
               <h4 id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_MaxUserValue" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.MaxUserValue">MaxUserValue</h4>
@@ -254,7 +260,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Mean.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Mean%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L60">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L64">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Mean_" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Mean*"></a>
               <h4 id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Mean" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Mean">Mean</h4>
@@ -286,7 +292,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Median.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Median%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L80">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L84">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Median_" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Median*"></a>
               <h4 id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Median" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Median">Median</h4>
@@ -318,7 +324,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Min.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Min%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L83">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L87">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Min_" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Min*"></a>
               <h4 id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Min" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Min">Min</h4>
@@ -350,7 +356,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_MinUserValue.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.MinUserValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L86">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L90">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_MinUserValue_" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.MinUserValue*"></a>
               <h4 id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_MinUserValue" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.MinUserValue">MinUserValue</h4>
@@ -382,7 +388,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Percentile75.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Percentile75%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L89">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L93">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Percentile75_" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Percentile75*"></a>
               <h4 id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Percentile75" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Percentile75">Percentile75</h4>
@@ -414,7 +420,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Percentile95.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Percentile95%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L92">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L96">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Percentile95_" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Percentile95*"></a>
               <h4 id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Percentile95" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Percentile95">Percentile95</h4>
@@ -446,7 +452,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Percentile98.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Percentile98%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L95">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L99">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Percentile98_" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Percentile98*"></a>
               <h4 id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Percentile98" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Percentile98">Percentile98</h4>
@@ -478,7 +484,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Percentile99.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Percentile99%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L98">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L102">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Percentile99_" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Percentile99*"></a>
               <h4 id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Percentile99" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Percentile99">Percentile99</h4>
@@ -510,7 +516,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Percentile999.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Percentile999%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L101">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L105">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Percentile999_" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Percentile999*"></a>
               <h4 id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Percentile999" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Percentile999">Percentile999</h4>
@@ -542,7 +548,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Size.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Size%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L104">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L108">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Size_" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Size*"></a>
               <h4 id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Size" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Size">Size</h4>
@@ -574,7 +580,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_StdDev.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.StdDev%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L107">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L111">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_StdDev_" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.StdDev*"></a>
               <h4 id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_StdDev" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.StdDev">StdDev</h4>
@@ -603,10 +609,42 @@
                   <div><a class="xref" href="App.Metrics.Abstractions.ReservoirSampling.IReservoirSnapshot.html#App_Metrics_Abstractions_ReservoirSampling_IReservoirSnapshot_StdDev">IReservoirSnapshot.StdDev</a></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Sum.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Sum%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L55">View Source</a>
+              </span>
+              <a id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Sum_" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Sum*"></a>
+              <h4 id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Sum" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Sum">Sum</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double Sum { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="App.Metrics.Abstractions.ReservoirSampling.IReservoirSnapshot.html#App_Metrics_Abstractions_ReservoirSampling_IReservoirSnapshot_Sum">IReservoirSnapshot.Sum</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Values.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Values%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L130">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L134">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Values_" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Values*"></a>
               <h4 id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_Values" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.Values">Values</h4>
@@ -640,7 +678,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_GetValue_System_Double_.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.GetValue(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L133">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L137">View Source</a>
               </span>
               <a id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_GetValue_" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.GetValue*"></a>
               <h4 id="App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot_GetValue_System_Double_" data-uid="App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot.GetValue(System.Double)">GetValue(Double)</h4>
@@ -695,7 +733,7 @@
                     <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_ReservoirSampling_ExponentialDecay_WeightedSnapshot.md&amp;value=---%0Auid%3A%20App.Metrics.ReservoirSampling.ExponentialDecay.WeightedSnapshot%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/ReservoirSampling/ExponentialDecay/WeightedSnapshot.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -87,7 +87,7 @@
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Meter_Abstractions_IProvideMeterMetrics_Instance_App_Metrics_Core_Options_MeterOptions_.md&amp;value=---%0Auid%3A%20App.Metrics.Meter.Abstractions.IProvideMeterMetrics.Instance(App.Metrics.Core.Options.MeterOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Meter/Abstractions/IProvideMeterMetrics.cs/#L17">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Meter/Abstractions/IProvideMeterMetrics.cs/#L18">View Source</a>
               </span>
               <a id="App_Metrics_Meter_Abstractions_IProvideMeterMetrics_Instance_" data-uid="App.Metrics.Meter.Abstractions.IProvideMeterMetrics.Instance*"></a>
               <h4 id="App_Metrics_Meter_Abstractions_IProvideMeterMetrics_Instance_App_Metrics_Core_Options_MeterOptions_" data-uid="App.Metrics.Meter.Abstractions.IProvideMeterMetrics.Instance(App.Metrics.Core.Options.MeterOptions)">Instance(MeterOptions)</h4>
@@ -134,10 +134,143 @@
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Meter_Abstractions_IProvideMeterMetrics_Instance_App_Metrics_Core_Options_MeterOptions_App_Metrics_Tagging_MetricTags_.md&amp;value=---%0Auid%3A%20App.Metrics.Meter.Abstractions.IProvideMeterMetrics.Instance(App.Metrics.Core.Options.MeterOptions%2CApp.Metrics.Tagging.MetricTags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Meter/Abstractions/IProvideMeterMetrics.cs/#L40">View Source</a>
+              </span>
+              <a id="App_Metrics_Meter_Abstractions_IProvideMeterMetrics_Instance_" data-uid="App.Metrics.Meter.Abstractions.IProvideMeterMetrics.Instance*"></a>
+              <h4 id="App_Metrics_Meter_Abstractions_IProvideMeterMetrics_Instance_App_Metrics_Core_Options_MeterOptions_App_Metrics_Tagging_MetricTags_" data-uid="App.Metrics.Meter.Abstractions.IProvideMeterMetrics.Instance(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricTags)">Instance(MeterOptions, MetricTags)</h4>
+              <div class="markdown level1 summary"><p>Instantiates an instance of a <a class="xref" href="App.Metrics.Meter.Abstractions.IMeter.html#App_Metrics_Meter_Abstractions_IMeter">IMeter</a></p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IMeter Instance(MeterOptions options, MetricTags tags)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Core.Options.MeterOptions.html#App_Metrics_Core_Options_MeterOptions">MeterOptions</a></td>
+                    <td><em>options</em></td>
+                    <td><p>The details of the <a class="xref" href="App.Metrics.Meter.Abstractions.IMeter.html#App_Metrics_Meter_Abstractions_IMeter">IMeter</a>  that is being marked</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Tagging.MetricTags.html#App_Metrics_Tagging_MetricTags">MetricTags</a></td>
+                    <td><em>tags</em></td>
+                    <td><p>The runtime tags to set in addition to those defined on the options, this will create a separate metric per unique <a class="xref" href="App.Metrics.Tagging.MetricTags.html#App_Metrics_Tagging_MetricTags">MetricTags</a></p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Meter.Abstractions.IMeter.html#App_Metrics_Meter_Abstractions_IMeter">IMeter</a></td>
+                    <td><p>A new instance of an <a class="xref" href="App.Metrics.Meter.Abstractions.IMeter.html#App_Metrics_Meter_Abstractions_IMeter">IMeter</a> or the existing registered instance of the meter</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Meter_Abstractions_IProvideMeterMetrics_Instance__1_App_Metrics_Core_Options_MeterOptions_App_Metrics_Tagging_MetricTags_System_Func___0__.md&amp;value=---%0Auid%3A%20App.Metrics.Meter.Abstractions.IProvideMeterMetrics.Instance%60%601(App.Metrics.Core.Options.MeterOptions%2CApp.Metrics.Tagging.MetricTags%2CSystem.Func%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Meter/Abstractions/IProvideMeterMetrics.cs/#L54">View Source</a>
+              </span>
+              <a id="App_Metrics_Meter_Abstractions_IProvideMeterMetrics_Instance_" data-uid="App.Metrics.Meter.Abstractions.IProvideMeterMetrics.Instance*"></a>
+              <h4 id="App_Metrics_Meter_Abstractions_IProvideMeterMetrics_Instance__1_App_Metrics_Core_Options_MeterOptions_App_Metrics_Tagging_MetricTags_System_Func___0__" data-uid="App.Metrics.Meter.Abstractions.IProvideMeterMetrics.Instance``1(App.Metrics.Core.Options.MeterOptions,App.Metrics.Tagging.MetricTags,System.Func{``0})">Instance&lt;T&gt;(MeterOptions, MetricTags, Func&lt;T&gt;)</h4>
+              <div class="markdown level1 summary"><p>Instantiates an instance of a <a class="xref" href="App.Metrics.Meter.Abstractions.IMeter.html#App_Metrics_Meter_Abstractions_IMeter">IMeter</a></p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IMeter Instance&lt;T&gt;(MeterOptions options, MetricTags tags, Func&lt;T&gt; builder)where T : IMeterMetric</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Core.Options.MeterOptions.html#App_Metrics_Core_Options_MeterOptions">MeterOptions</a></td>
+                    <td><em>options</em></td>
+                    <td><p>The details of the <a class="xref" href="App.Metrics.Meter.Abstractions.IMeter.html#App_Metrics_Meter_Abstractions_IMeter">IMeter</a>  that is being marked</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Tagging.MetricTags.html#App_Metrics_Tagging_MetricTags">MetricTags</a></td>
+                    <td><em>tags</em></td>
+                    <td><p>The runtime tags to set in addition to those defined on the options, this will create a separate metric per unique <a class="xref" href="App.Metrics.Tagging.MetricTags.html#App_Metrics_Tagging_MetricTags">MetricTags</a></p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Func&lt;TResult&gt;</span>&lt;T&gt;</td>
+                    <td><em>builder</em></td>
+                    <td><p>The function used to build the meter metric.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Meter.Abstractions.IMeter.html#App_Metrics_Meter_Abstractions_IMeter">IMeter</a></td>
+                    <td><p>A new instance of an <a class="xref" href="App.Metrics.Meter.Abstractions.IMeter.html#App_Metrics_Meter_Abstractions_IMeter">IMeter</a> or the existing registered instance of the meter</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>T</em></td>
+                    <td>The type of <a class="xref" href="App.Metrics.Meter.Abstractions.IMeter.html#App_Metrics_Meter_Abstractions_IMeter">IMeter</a> to instantiate</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
                 <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Meter_Abstractions_IProvideMeterMetrics_Instance__1_App_Metrics_Core_Options_MeterOptions_System_Func___0__.md&amp;value=---%0Auid%3A%20App.Metrics.Meter.Abstractions.IProvideMeterMetrics.Instance%60%601(App.Metrics.Core.Options.MeterOptions%2CSystem.Func%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Meter/Abstractions/IProvideMeterMetrics.cs/#L26">View Source</a>
+                <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Meter/Abstractions/IProvideMeterMetrics.cs/#L27">View Source</a>
               </span>
               <a id="App_Metrics_Meter_Abstractions_IProvideMeterMetrics_Instance_" data-uid="App.Metrics.Meter.Abstractions.IProvideMeterMetrics.Instance*"></a>
               <h4 id="App_Metrics_Meter_Abstractions_IProvideMeterMetrics_Instance__1_App_Metrics_Core_Options_MeterOptions_System_Func___0__" data-uid="App.Metrics.Meter.Abstractions.IProvideMeterMetrics.Instance``1(App.Metrics.Core.Options.MeterOptions,System.Func{``0})">Instance&lt;T&gt;(MeterOptions, Func&lt;T&gt;)</h4>
@@ -214,7 +347,7 @@
                     <a href="https://github.com/alhardy/AppMetrics.DocFx/new/master/apispec/new?filename=App_Metrics_Meter_Abstractions_IProvideMeterMetrics.md&amp;value=---%0Auid%3A%20App.Metrics.Meter.Abstractions.IProvideMeterMetrics%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0-rc1/src/App.Metrics/Meter/Abstractions/IProvideMeterMetrics.cs/#L10" class="contribution-link">View Source</a>
+                    <a href="https://github.com/alhardy/AppMetrics/blob/1.0.0/src/App.Metrics/Meter/Abstractions/IProvideMeterMetrics.cs/#L11" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
