@@ -159,6 +159,11 @@
 </div>
 <h2 id="metric-tagging">Metric Tagging</h2>
 <p>Metrics can be tagged when <a href="../intro.html#measuring-application-metrics">defining your metrics</a>, these tags can then be shipped with your metric values to your database of choice which is useful for commonly-queried metadata. </p>
+<p>An example use case for tagging is recording an APIs response time per endpoint where a timer is recorded per endpoint but then reported as the same metric name tagged with by the endpoint. This allows us to more easily have a dynamic list of endpoints and their response times when visualising with Grafana for example.</p>
+<h4 id="tagging-at-runtime">Tagging at runtime</h4>
+<pre><code class="lang-csharp" name="Main">var tags = new MetricTags(new[] { &quot;client_id&quot;, &quot;route&quot; }, new[] { clientId, routeTemplate });
+metrics.Measure.Meter.Mark(OAuthRequestMetricsRegistry.Meters.RequestRate, tags);
+</code></pre><h4 id="tagging-statically">Tagging statically</h4>
 <pre><code class="lang-csharp" name="Main" highlight-lines="5,13,21">public static class AppMetricsRegistery
 {
     public static class ProcessMetrics
@@ -195,8 +200,9 @@
         };
     }
 }
-</code></pre><p>Tags can also be defined for all Metrics globally which is useful for tagging by things like machine name, envrionment, ip address, application name etc.</p>
-<pre><code class="lang-csharp" name="Main" highlight-lines="8">public class Startup
+</code></pre><h4 id="tagging-globally">Tagging globally</h4>
+<p>Tags can also be defined for all Metrics globally which is useful for tagging by things like machine name, envrionment, ip address, application name etc.</p>
+<pre><code class="lang-csharp" name="Main" highlight-lines="9">public class Startup
 {
     public void ConfigureServices(IServiceCollection services)
     {
@@ -244,11 +250,7 @@
         app.UseMetrics();
     }
 }
-</code></pre><h2 id="metric-grouping">Metric Grouping</h2>
-<p>Metrics can be assigned a group label when they are defined which applies to the context they are belong to. This allows the group to be reported as the same metric but tagged by the metric name. </p>
-<p>An example use case for grouping is recording an APIs response time per endpoint where a timer is recorded per endpoint but then reported as the same metric name tagged with by the endpoint. This allows us to more easily have a dynamic list of endpoints and their response times when visualising with Grafana for example.</p>
-<p>Metric Group names can be applied on all Metric Option types, although it is up to the reporter to apply the appropriate tagging as implemented in the <a href="../reporting/index.html#influxdb-reporter">InfluxDB Reporter</a></p>
-<h3 id="filtering-in-process-by-tag-keys">Filtering in process by Tag Keys</h3>
+</code></pre><h3 id="filtering-in-process-by-tag-keys">Filtering in process by Tag Keys</h3>
 <p>The <a href="../../api/App.Metrics.DefaultMetricsFilter.html">DefaultMetricsFilter</a> can be used to filter Metrics by a Tag Keys. This would be useful if we only wanted to report on a particular Metrics Tags.</p>
 <div class="NOTE"><h5>Note</h5><p>See <a href="../filtering/index.html">Metrics Filtering</a> for more details on filtering Metrics.</p>
 </div>

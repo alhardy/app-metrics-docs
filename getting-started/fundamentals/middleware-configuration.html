@@ -84,6 +84,7 @@
 <li><strong>PingEndpointEnabled</strong>: Allows enabling/disabling of the <code>/ping</code> endpoint, when disabled will result in a 404 status code, the default is true.</li>
 <li><strong>ApdexTrackingEnabled</strong>: Allows enabling/disabling of calculating the <a href="../metric-types/apdex.html">Apdex</a> score of a web application, the default is true.</li>
 <li><strong>ApdexTSeconds</strong>: The <a href="../metric-types/apdex.html">Apdex</a> T seconds value used in calculating the score on the samples collected.</li>
+<li><strong>IgnoredHttpStatusCodes</strong>: Allows specific http status codes to be ignored when reporting on request failes, e.g. You might not want to alert on 400 status codes or monitor 404 status codes.</li>
 </ul>
 <h2 id="changing-options-using-actionaspnetmetricsoptions">Changing options using <code>Action&lt;AspNetMetricsOptions&gt;</code></h2>
 <pre><code class="lang-csharp" name="Main" highlight-lines="10">public class Startup
@@ -131,7 +132,8 @@
         &quot;MetricsEndpoint&quot;: &quot;/app-metrics&quot;,
         &quot;MetricsTextEndpoint&quot;: &quot;/app-metrics-text&quot;,
         &quot;PingEndpoint&quot;: &quot;/api-up&quot;,
-        &quot;IgnoredRequestPatterns&quot;: [ &quot;(?i)^api/test/ignore&quot; ]
+        &quot;IgnoredRequestPatterns&quot;: [ &quot;(?i)^api/test/ignore&quot; ],
+        &quot;IgnoredHttpStatusCodes&quot;: [ 404 ]
     }
 }
 </code></pre><div class="NOTE"><h5>Note</h5><p>To have routes measured a resource filter is required to extract the route template of each request, add the resource filter when configuring Mvc options i.e.</p>
