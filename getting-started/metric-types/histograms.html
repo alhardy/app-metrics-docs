@@ -128,9 +128,29 @@ _metrics.Measure.Histogram.Update(httpStatusMeter, CalculateDocumentSize(), &quo
 }
 </code></pre><h2 id="resevoir-sampling">Resevoir Sampling</h2>
 <p>In high performance applications it is not possible to keep the entire data stream of a histogram in memory. To work around this <a href="../sampling/index.html">resevoir sampling</a> algorithms allow us to maintain a small, manageable resevoir which is statistically representative of an entire data stream.</p>
-<div class="NOTE"><h5>Note</h5><h3 id="just-a-placeholder-for-now">Just a Placeholder for now..</h3>
-<p>Implement and document  <a href="https://en.wikipedia.org/wiki/Apdex">Apdex Score</a></p>
-</div>
+<p>Out-of-box App.Metrics supports three types of <a href="../sampling/index.html">reservoir sampling</a>, Uniform, Exponentially Decaying and Sliding Window. By default all timers will use Exponentially Decaying Reservoir Sampling.</p>
+<p>It is possible to change the reservoir both globally for all metrics and for an individual metric:</p>
+<h4 id="change-the-default-reservoir-globally">Change the default Reservoir Globally</h4>
+<pre><code class="lang-csharp" name="Main">services
+   .AddMetrics()    
+   // Uniform Reservoir Sampling
+   .AddDefaultReservoir(() =&gt; new Lazy&lt;IReservoir&gt;(() =&gt; new DefaultAlgorithmRReservoir(sampleSize: 1028)))
+   // Or, Exponentially Decaying Resevoir Sampling
+   .AddDefaultReservoir(() =&gt; new Lazy&lt;IReservoir&gt;(() =&gt; new DefaultForwardDecayingReservoir(sampleSize: 1028, alpha: 0.015)))
+   // Or, Sliding Window Resevoir Sampling
+   .AddDefaultReservoir(() =&gt; new Lazy&lt;IReservoir&gt;(() =&gt; new DefaultSlidingWindowReservoir(sampleSize: 1028)))
+   .AddHealthChecks();
+
+</code></pre><h4 id="set-the-reservoir-for-a-specific-metric">Set the Reservoir for a specific metric</h4>
+<pre><code class="lang-csharp" name="Main">public static readonly HistogramOptions PostRequestSizeHistogram = new HistogramOptions
+                                                                  {
+                                                                      Context = ContextName,
+                                                                      Name = &quot;POST Size&quot;,
+                                                                      MeasurementUnit = Unit.Bytes,
+                                                                      Reservoir = new Lazy&lt;IReservoir&gt;(() =&gt; new DefaultSlidingWindowReservoir(sampleSize: 1028))                                                                        
+                                                                  };
+</code></pre><blockquote><p>Note: You can also implement custom Reservoirs by implementing <code>IReservoir</code></p>
+</blockquote>
 <h2 id="related-docs">Related Docs</h2>
 <ul>
 <li><a href="../intro.html#measuring-application-metrics">Getting Started</a></li>
