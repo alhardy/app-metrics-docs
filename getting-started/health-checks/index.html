@@ -131,7 +131,7 @@
 </div>
 <h2 id="predefined-health-checks">Predefined Health Checks</h2>
 <p>App Metrics includes some pre-defined health checks which can be registered on startup as shown below.</p>
-<pre><code class="lang-csharp" name="Main" highlight-lines="10,12,14">public void ConfigureServices(IServiceCollection services)
+<pre><code class="lang-csharp" name="Main" highlight-lines="10,12,14,16,18">public void ConfigureServices(IServiceCollection services)
 {
     var threshold = 1;
 
@@ -144,7 +144,11 @@
             // Check that the current amount of virtual memory in bytes is below a threshold
             factory.RegisterProcessVirtualMemorySizeHealthCheck(&quot;Virtual Memory Size&quot;, threshold);
             // Check that the current amount of physical memory in bytes is below a threshold
-            factory.RegisterProcessPhysicalMemoryHealthCheck(&quot;Working Set&quot;, threshold);            
+            factory.RegisterProcessPhysicalMemoryHealthCheck(&quot;Working Set&quot;, threshold);
+            // Check connectivity to google with a &quot;ping&quot;, passes if the result is `IPStatus.Success`
+            factory.RegisterPingHealthCheck(&quot;google ping&quot;, &quot;google.com&quot;, TimeSpan.FromSeconds(10));
+            // Check connectivity to github by ensuring the GET request results in `IsSuccessStatusCode`
+            factory.RegisterHttpGetHealthCheck(&quot;github&quot;, new Uri(&quot;https://github.com/&quot;), TimeSpan.FromSeconds(10));
         })
         .AddMetricsMiddleware();
 }
