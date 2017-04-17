@@ -8,7 +8,7 @@
     <title>Reporting </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Reporting ">
-    <meta name="generator" content="docfx 2.7.3.0">
+    <meta name="generator" content="docfx 2.16.0.499">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
@@ -133,6 +133,24 @@
     });
 })
 </code></pre><p>See the <a href="../../api/App.Metrics.Extensions.Reporting.InfluxDB.IInfluxDbReporterSettings.html">api documentation</a> on the <code>InfluxDbReporterSettings</code> available.</p>
+<h2 id="elasticsearch-reporter">ElasticSearch Reporter</h2>
+<p>Metrics can be reported to <a href="https://www.elastic.co/">ElasticSearch</a> using the <a href="https://www.nuget.org/packages/App.Metrics.Extensions.Reporting.ElasticSearch/">ElasticSearch Reporter package</a>.</p>
+<p><a href="../intro.html#configuring-a-console-application">Configure a Console Application</a> with App Metrics, you can then add the ElasticSearch Report Provider as below:</p>
+<pre><code class="lang-csharp" name="Main">.AddReporting(factory =&gt;
+{
+    factory.AddElasticSearch(new ElasticSearchReporterSettings
+    {
+        HttpPolicy = new HttpPolicy
+        {
+            FailuresBeforeBackoff = 3,
+            BackoffPeriod = TimeSpan.FromSeconds(30),
+            Timeout = TimeSpan.FromSeconds(3)
+        },
+        ElasticSearchSettings = new ElasticSearchSettings(new Uri(&quot;http://localhost:9200&quot;), &quot;metrics&quot;),
+        ReportInterval = TimeSpan.FromSeconds(5)
+    });
+})
+</code></pre><p>See the <a href="../../api/App.Metrics.Extensions.Reporting.ElasticSearch.ElasticSearchReporterSettings.html">api documentation</a> on the <code>ElasticSearchReporterSettings</code> available.</p>
 <h2 id="text-file-reporter">Text File Reporter</h2>
 <p><a href="../intro.html#configuring-a-console-application">Configure a Console Application</a> with App Metrics, similar to the Console Reporter example above a <a href="https://www.nuget.org/packages/App.Metrics.Extensions.Reporting.TextFile/">Text Report Provider</a> can be added as below:</p>
 <pre><code class="lang-csharp" name="Main">.AddReporting(factory =&gt;
