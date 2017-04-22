@@ -126,18 +126,18 @@ _metrics.Measure.Histogram.Update(httpStatusMeter, CalculateDocumentSize(), &quo
         }
     ]
 }
-</code></pre><h2 id="resevoir-sampling">Resevoir Sampling</h2>
-<p>In high performance applications it is not possible to keep the entire data stream of a histogram in memory. To work around this <a href="../sampling/index.html">resevoir sampling</a> algorithms allow us to maintain a small, manageable resevoir which is statistically representative of an entire data stream.</p>
-<p>Out-of-box App.Metrics supports three types of <a href="../sampling/index.html">reservoir sampling</a>, Uniform, Exponentially Decaying and Sliding Window. By default all timers will use Exponentially Decaying Reservoir Sampling.</p>
+</code></pre><h2 id="reservoir-sampling">Reservoir Sampling</h2>
+<p>In high performance applications it is not possible to keep the entire data stream of a histogram in memory. To work around this <a href="../sampling/index.html">reservoir sampling</a> algorithms allow us to maintain a small, manageable reservoir which is statistically representative of an entire data stream.</p>
+<p>Out-of-box App.Metrics supports three types of <a href="../sampling/index.html">reserreservoirvoir sampling</a>, Uniform, Exponentially Decaying and Sliding Window. By default all timers will use Exponentially Decaying Reservoir Sampling.</p>
 <p>It is possible to change the reservoir both globally for all metrics and for an individual metric:</p>
 <h4 id="change-the-default-reservoir-globally">Change the default Reservoir Globally</h4>
 <pre><code class="lang-csharp" name="Main">services
    .AddMetrics()    
    // Uniform Reservoir Sampling
    .AddDefaultReservoir(() =&gt; new Lazy&lt;IReservoir&gt;(() =&gt; new DefaultAlgorithmRReservoir(sampleSize: 1028)))
-   // Or, Exponentially Decaying Resevoir Sampling
+   // Or, Exponentially Decaying Reservoir Sampling
    .AddDefaultReservoir(() =&gt; new Lazy&lt;IReservoir&gt;(() =&gt; new DefaultForwardDecayingReservoir(sampleSize: 1028, alpha: 0.015)))
-   // Or, Sliding Window Resevoir Sampling
+   // Or, Sliding Window Reservoir Sampling
    .AddDefaultReservoir(() =&gt; new Lazy&lt;IReservoir&gt;(() =&gt; new DefaultSlidingWindowReservoir(sampleSize: 1028)))
    .AddHealthChecks();
 
