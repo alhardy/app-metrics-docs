@@ -68,6 +68,16 @@
             <article class="content wrap" id="_content" data-uid="">
               <h1 id="metric-types">Metric Types</h1>
               
+<p>App Metrics includes various types of metrics, each providing their own usefulness depending on the measurement being tracked. A great presentation can be found <a href="https://www.youtube.com/watch?v=czes-oa0yik">here</a> which explains the fundamentals well.</p>
+<p>The following metrics types are supported:</p>
+<ul>
+<li><a href="apdex.html">Apdex</a>: By definition, an <a href="https://en.wikipedia.org/wiki/Apdex">Application Performance Index</a> is an open industry standard that estimates end-user satisfaction. Apdex is provided as a metric type in App Metrics allowing us to not only estimate end-user satisfaction on a web application for example, but also allowing us to easily define SLA&#39;s on parts of our applications.</li>
+<li><a href="counters.html">Counter</a>: Counters are one of the simpliest metrics types supported and allow us to track how many times something has happened, for example the number of successful user logins. They are an atomic 64-bit integer which can be incremented or decremented.</li>
+<li><a href="gauges.html">Gauge</a>: A Gauge is simply an action that returns the instantaneous measure of a value, where the value abitrarily increases and decreases, for example CPU usage.</li>
+<li><a href="histograms.html">Histogram</a>: Histograms measure the statistical distribution of a set of values including the min, max, mean, median, standard deviation and <a href="https://en.wikipedia.org/wiki/Quantile">quantiles</a>, for example HTTP POST and PUT request sizes.</li>
+<li><a href="meters.html">Meter</a>: Meter measures the rate at which an event occurs along with a total count of the occurances, for example tracking the rate at which clients are requesting a particular HTTP resource.</li>
+<li><a href="timers.html">Timer</a>: A Timer is a combination of a Histogram and a Meter allowing us to measure the duration of a type of event, the rate of its occurrence and provide duration statistics, for example tracking the time it takes to execute a particular SQL query or HTTP request.</li>
+</ul>
 
             </article>
           </div>

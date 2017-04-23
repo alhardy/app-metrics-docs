@@ -5,18 +5,18 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>App Metric's Nuget Packages </title>
+    <title>Web Application Monitoring </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="App Metric's Nuget Packages ">
+    <meta name="title" content="Web Application Monitoring ">
     <meta name="generator" content="docfx 2.16.0.499">
     
-    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="shortcut icon" href="../favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
-    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../styles/docfx.css">
-    <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="../toc.html">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
     
   </head>
   <body data-spy="scroll" data-target="#affix">
@@ -32,8 +32,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../logo.png" alt="">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
               </a><span class="app-name">App Metrics</span>   
                  <a href="https://github.com/alhardy/AppMetrics" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;z-index:1000;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
             </div>
@@ -66,26 +66,29 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-              <h1 id="app-metrics-nuget-packages">App Metric&#39;s Nuget Packages</h1>
+              <h1 id="web-application-monitoring">Web Application Monitoring</h1>
               
-<p>The <code>App.Metrics</code> package provides the core services and application configuration to get you started with instrumenting your code to measure application metrics. This is a .NET Standard Class Library</p>
-<pre><code class="lang-console">nuget install App.Metrics -pre
-</code></pre><hr>
-<p>The <code>App.Metrics.Extensions.Reporting.Console</code> package is an App Metrics report provider which will output metrics to a console at a specified interval.</p>
-<pre><code class="lang-console">nuget install App.Metrics.Extensions.Reporting.Console -pre
-</code></pre><hr>
-<p>The <code>App.Metrics.Extensions.Reporting.TextFile</code> package is an App Metrics report provider which will output metrics to a text file at a specified interval.</p>
-<pre><code class="lang-console">nuget install App.Metrics.Extensions.Reporting.TextFile -pre
-</code></pre><hr>
-<p>The <code>App.Metrics.Extensions.Reporting.InfluxDB</code> package is an App Metrics report provider which will flush metrics to a <a href="https://www.influxdata.com/time-series-platform/influxdb/">InfluxDB</a> at a specified interval.</p>
-<pre><code class="lang-console">nuget install App.Metrics.Extensions.Reporting.InfluxDB -pre
-</code></pre><hr>
-<p>The <code>App.Metrics.Extensions.Reporting.Elasticsearch</code> package is an App Metrics report provider which will flush metrics to a <a href="https://www.elastic.co/products/elasticsearch">Elasticsearch</a> at a specified interval.</p>
-<pre><code class="lang-console">nuget install App.Metrics.Extensions.Reporting.Elasticsearch -pre
-</code></pre><hr>
-<p>The <code>App.Metrics.Formatters.Prometheus</code> package enables the <a href="https://alhardy.github.io/app-metrics-docs/getting-started/fundamentals/middleware-configuration.html">metrics</a> endpoint to serve metrics in <a href="https://prometheus.io/">Prometheus</a> format. Supports plain text and protobuf.</p>
-<pre><code class="lang-console">nuget install App.Metrics.Formatters.Prometheus -pre
-</code></pre>
+<p>Insight into real-time application metrics is such a great thing to have, especially web applications. It allows us to detect and alert on anomalies when releasing a new version, assists in identifing bottlenecks, provides insight into why our appilcation may be scaling too often during a particular time of the day, allows us to provide trending statistics to our stakeholders, allows us to identifiy how often and at what rate clients are requesting specific endpoints in an API and much much more.</p>
+<p>App Metrics makes it easy to get up and running with an open source monitoring solution, providing extensions allowing us to report to various open source Timeseries Databases (TSDB) and also provides generic dashbaords allowing us to visualize our application&#39;s metrics in real-time.</p>
+<p>There are several TSDB reporting extensions which App Metrics provides. Head over the to <a href="../reporting/index.html">reporting documentation</a> to see what&#39;s available. If you can&#39;t find what you&#39;re looking for, <a href="https://github.com/alhardy/AppMetrics.Reporters/issues/new">open a new github issue</a> to discuss adding support.</p>
+<p>Out-of-box App Metrics doesn&#39;t provide a visualization tool, instead it includes some <a href="visualization-grafana.html">generic Grafana dashbaords</a> for web application monitoring, Grafana does such an amazing job at this already and supports the most popular TSBDs available.</p>
+<h2 id="getting-started">Getting Started</h2>
+<ul>
+<li>Review the <a href="nuget-packages.html">nuget packages available</a> for web application monitoring.</li>
+<li>Take a look at the out-of-box metrics provided by the <a href="middleware.html">ASP.NET Core Middleware</a>.</li>
+<li>See the web application <a href="../getting-started/intro.html#configuring-a-web-host">getting started guide</a>.</li>
+</ul>
+<h2 id="whats-next">What&#39;s next</h2>
+<ul>
+<li>With your web application is configured, choose and configure one of the <a href="../reporting/index.html">reporters</a>.</li>
+<li>Now you have your metrics persisted, check out the <a href="visualization-grafana.html">Grafana dashboards</a> provided.</li>
+<li>Start tracking your own <a href="../getting-started/metric-types/overview.html">custom metrics</a> and graphing them with Grafana.</li>
+</ul>
+<h3 id="related-articles">Related Articles</h3>
+<ul>
+<li><a href="https://al-hardy.blog/2017/04/08/open-source-apm/">Open Source Application Performance Management</a></li>
+</ul>
+
             </article>
           </div>
           
@@ -94,7 +97,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics.DocFx/blob/master/getting-started/fundamentals/nuget-packages.md/#L1" class="contribution-link">Edit this Doc</a>
+                    <a href="https://github.com/alhardy/AppMetrics.DocFx/blob/master/web-application-monitoring/index.md/#L1" class="contribution-link">Edit this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -120,8 +123,8 @@
       </footer>
     </div>
     
-    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

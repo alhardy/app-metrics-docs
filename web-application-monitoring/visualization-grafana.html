@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Generic Dashboards </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Generic Dashboards ">
+    <meta name="generator" content="docfx 2.16.0.499">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a><span class="app-name">App Metrics</span>   
+                 <a href="https://github.com/alhardy/AppMetrics" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;z-index:1000;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+              <h1 id="generic-dashboards">Generic Dashboards</h1>
+              
+<p>Out-of-box, App.Metrics includes generic Grafana web application dashboards that are built to monitor metrics reported by application&#39;s that are using <a href="nuget-packages.html#appmetricsextensionsmiddleware">App.Metrics.Extensions.Middleware</a>.</p>
+<h2 id="generic-web-dashboard-features">Generic Web Dashboard Features</h2>
+<ul>
+<li>Metrics measured by the <a href="middleware.html">App Metrics ASP.NET Core Middleware</a> are pre-configured in the Grafana dashboard.</li>
+<li>Supports filtering graphs by environment allow the same dashbaord to be re-used across environments.</li>
+<li>Supports filtering graphs by application. The idea is to tag metrics by your application&#39;s name allow you to re-use the same dashboard instance for all web applications using App Metrics.</li>
+<li>Graphs are configured to use a <code>datasource</code> template variable so that you don&#39;t need to update all charts with the datasource you configured in Grafana.</li>
+<li>Display a health overview showing passed, degraded and failed checks as well as an overall health status, color coded by the status value.</li>
+</ul>
+<p><img alt="grafana web demo" src="https://raw.githubusercontent.com/alhardy/AppMetrics.DocFx/master/images/generic_grafana_dashboard_demo.gif"></p>
+<h2 id="generic-oauth2-web-dashboard-features">Generic OAuth2 Web Dashboard Features</h2>
+<ul>
+<li>OAUth2 Metrics measured by the <a href="middleware.html#oauth2">App Metrics ASP.NET Core Middleware</a> are pre-configured in the Grafana dashboard.</li>
+<li>Supports filtering graphs by environment, application and datasource as explained above.</li>
+<li>Supports filtering graphs by <code>client_id</code> so that we can visualize request rates for example on each API endpoint, useful for example to determine client rate limits or what versions clients are using.</li>
+<li>Supports filtering graphs by <code>route</code>, allowing us to clearly  visualize a specific endpoint. </li>
+</ul>
+<p><img alt="grafana web oauth2 demo" src="https://raw.githubusercontent.com/alhardy/AppMetrics.DocFx/master/images/generic_grafana_oauth2_dashboard_demo.gif"></p>
+<h2 id="how-to-setup-the-dashboards">How to setup the dashboards</h2>
+<ol>
+<li>Configure your application to use <a href="../getting-started/intro.html#configuring-a-web-host">App Metrics ASP.NET Core Middleware</a> and <a href="../reporting/index.html">Reporting</a> targetting your desired TSDB.</li>
+<li>Run your application to report some metrics</li>
+<li>Download and install <a href="https://grafana.com/grafana/download">Grafana</a>, then create a new datasource specifying the reporter&#39;s details configured as part of your application setup.</li>
+<li><a href="http://docs.grafana.org/reference/export_import/#importing-a-dashboard">Import the desired Grafana dashboard</a> by copying and pasting from one of the following grafana dashboard links.</li>
+</ol>
+<h2 id="get-the-grafana-dashboards">Get the Grafana dashboards!</h2>
+<h3 id="generic-web">Generic Web</h3>
+<ul>
+<li><a href="https://raw.githubusercontent.com/alhardy/AppMetrics.Extensions.InfluxDB/master/visualization/grafana-dashbaords/App.Metrics.Sandbox-InfluxDB-GenericWeb.json">InfluxDB</a>.</li>
+<li><a href="https://github.com/alhardy/AppMetrics.Extensions.Elasticsearch/raw/master/visualization/grafana-dashboards/App.Metrics.Sandbox-Elasticsearch-GenericWeb.json">Elasticsearch</a>.</li>
+<li><a href="https://github.com/alhardy/AppMetrics.Extensions.Prometheus">Prometheus</a>. <em>Dashbaord work in progress</em></li>
+<li><a href="https://github.com/alhardy/AppMetrics.Extensions.Graphite">Graphite</a>. <em>Dashbaord work in progress</em></li>
+</ul>
+<h3 id="generic-oauth2-web">Generic OAuth2 Web</h3>
+<ul>
+<li><a href="https://raw.githubusercontent.com/alhardy/AppMetrics.Extensions.InfluxDB/master/visualization/grafana-dashbaords/App.Metrics.Sandbox-InfluxDB-GenericWebOAuth2.json">InfluxDB</a>.</li>
+<li><a href="https://raw.githubusercontent.com/alhardy/AppMetrics.Extensions.Elasticsearch/master/visualization/grafana-dashboards/App.Metrics.Sandbox-Elasticsearch-GenericWebOAuth2.json">Elasticsearch</a>.</li>
+<li><a href="https://github.com/alhardy/AppMetrics.Extensions.Prometheus">Prometheus</a>. <em>Dashbaord work in progress</em></li>
+<li><a href="https://github.com/alhardy/AppMetrics.Extensions.Graphite">Graphite</a>. <em>Dashbaord work in progress</em></li>
+</ul>
+<div class="TIP"><h5>Tip</h5><p>All the <a href="../samples/index.html">sample apps</a> have <a href="https://github.com/alhardy/AppMetrics.Samples/tree/master/grafana_dashboards">sample Grafana dashboards</a> that can also be downloaded and imported into Grafana for testing.</p>
+</div>
+
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/alhardy/AppMetrics.DocFx/blob/master/web-application-monitoring/visualization-grafana.md/#L1" class="contribution-link">Edit this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2016 Allan Hardy<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>   
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
