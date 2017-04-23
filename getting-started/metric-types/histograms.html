@@ -149,8 +149,8 @@ _metrics.Measure.Histogram.Update(httpStatusMeter, CalculateDocumentSize(), &quo
                                                                       MeasurementUnit = Unit.Bytes,
                                                                       Reservoir = new Lazy&lt;IReservoir&gt;(() =&gt; new DefaultSlidingWindowReservoir(sampleSize: 1028))                                                                        
                                                                   };
-</code></pre><blockquote><p>Note: You can also implement custom Reservoirs by implementing <code>IReservoir</code></p>
-</blockquote>
+</code></pre><div class="NOTE"><h5>Note</h5><p>You can also implement custom Reservoirs by implementing <code>IReservoir</code></p>
+</div>
 <h2 id="related-docs">Related Docs</h2>
 <ul>
 <li><a href="../intro.html#measuring-application-metrics">Getting Started</a></li>
