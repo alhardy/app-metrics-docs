@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ASP.NET Core Middleware Response Formatters </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="ASP.NET Core Middleware Response Formatters ">
+    <meta name="generator" content="docfx 2.16.0.499">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.png" alt="">
+              </a><span class="app-name">App Metrics</span>   
+                 <a href="https://github.com/alhardy/AppMetrics" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;z-index:1000;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+              <h1 id="aspnet-core-middleware-response-formatters">ASP.NET Core Middleware Response Formatters</h1>
+              
+<p>App Metric&#39;s Metric Middleware supports pluggable formatters which provide the ability to serialize metric and health check data depending on your requirements. This allows the <code>Metrics</code> and <code>Health</code> endpoints <code>Content-Types</code> to be customized. </p>
+<h2 id="available-formatters">Available Formatters</h2>
+<ul>
+<li><a href="json-formatter.html">JSON</a></li>
+<li><a href="prometheus-formatter.html">Prometheus</a></li>
+</ul>
+<h2 id="implementing-a-custom-formatter">Implementing a Custom Formatter</h2>
+<p>Other than the custom serialization code, to wire up a custom formatter to plugin to App Metrics you just need to implement a couple of interfaces, <code>IHealthResponseWriter</code> if required, and <code>IMetricsResponseWriter</code>. </p>
+<p>As a guide, we can look at how to implement a custom JSON formatter:</p>
+<div class="NOTE"><h5>Note</h5><p>For brevity, the code snippets don&#39;t include the serialization code, just the required infrastructure code to plug the formatter into App Metrics Middleware.</p>
+</div>
+<h3 id="implement-the-imetricsresponsewriter-interface">Implement the <code>IMetricsResponseWriter</code> interface.</h3>
+<pre><code class="lang-csharp" name="Main">public class CustomJsonMetricsResponseWriter : IMetricsResponseWriter
+{
+	private readonly IMetricDataSerializer _serializer;
+
+	public CustomJsonMetricsResponseWriter(IMetricDataSerializer serializer)
+	{
+		_serializer = serializer ?? throw new ArgumentNullException(nameof(serializer));
+	}
+	
+	public string ContentType =&gt; &quot;application/vnd.app.metrics.v1.custom.metrics+json&quot;;
+
+	public Task WriteAsync(HttpContext context, MetricsDataValueSource metricsData, CancellationToken token = default(CancellationToken))
+	{
+		var json = _serializer.Serialize(metricsData);
+
+		return context.Response.WriteAsync(json, token);
+	}
+}
+</code></pre><h3 id="implement-the-ihealthresponsewriter-interface">Implement the <code>IHealthResponseWriter</code> interface.</h3>
+<pre><code class="lang-csharp" name="Main">public class CustomJsonHealthResponseWriter : IHealthResponseWriter
+{
+	private readonly IHealthStatusSerializer _serializer;
+
+	public CustomJsonHealthResponseWriter(IHealthStatusSerializer serializer)
+	{
+		_serializer = serializer ?? throw new ArgumentNullException(nameof(serializer));
+	}
+	
+	public string ContentType =&gt; &quot;application/vnd.app.metrics.v1.custom.health+json&quot;;
+
+	public Task WriteAsync(HttpContext context, HealthStatus healthStatus, CancellationToken token = default(CancellationToken))
+	{
+		var json = _serializer.Serialize(healthStatus);
+
+		return context.Response.WriteAsync(json, token);
+	}
+}
+</code></pre><h3 id="exposing-the-formatter-to-the-app-metrics-configuration-api">Exposing the formatter to the App Metrics configuration API</h3>
+<p>Add extensions methods on <code>IMetricsHostBuilder</code> making is easy for users to configure the formatter.</p>
+<pre><code class="lang-csharp" name="Main">public static class MetricsHostExtensions
+{
+	public static IMetricsHostBuilder AddCustomJsonHealthSerialization(this IMetricsHostBuilder host)
+	{
+		host.Services.Replace(ServiceDescriptor.Transient&lt;IHealthResponseWriter, JsonHealthResponseWriter&gt;());
+		host.Services.Replace(ServiceDescriptor.Transient&lt;IHealthStatusSerializer, HealthStatusSerializer&gt;());
+
+		return host;
+	}	
+
+	public static IMetricsHostBuilder AddCustomJsonMetricsSerialization(this IMetricsHostBuilder host)
+	{
+		host.Services.Replace(ServiceDescriptor.Transient&lt;IMetricsResponseWriter, JsonMetricsResponseWriter&gt;());
+		host.Services.Replace(ServiceDescriptor.Transient&lt;IMetricDataSerializer, MetricDataSerializer&gt;());
+
+		return host;
+	}
+
+	public static IMetricsHostBuilder AddCustomJsonSerialization(this IMetricsHostBuilder host)
+	{
+		host.AddJsonHealthSerialization();
+		host.AddJsonMetricsSerialization();
+
+		return host;
+	}
+}
+</code></pre><h3 id="using-the-formatter">Using the Formatter</h3>
+<p>Modify the application&#39;s <code>Startup.cs</code> to looking like the following:</p>
+<pre><code class="lang-csharp" name="Main">
+public class Startup
+{
+	public void ConfigureServices(IServiceCollection services)
+	{
+		services.AddMetrics()
+			.AddCustomJsonSerialization()
+			.AddHealthChecks()
+			.AddMetricsMiddleware();
+	}
+
+	public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
+	{            
+		app.UseMetrics();
+	}
+}
+</code></pre><div class="TIP"><h5>Tip</h5><p>In the <code>IMetricsHostBuilder</code> extension method code snippet, you&#39;ll notice two additional extension methods, <code>AddCustomJsonMetricsSerialization</code> and <code>AddCustomJsonHealthSerialization</code>. 
+This is useful for applications which want to format health checks differently to metrics for example, such applications can then have a dependency on mulitple formatter packages.</p>
+</div>
+
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/alhardy/AppMetrics.DocFx/blob/master/web-application-monitoring/formatters/overview.md/#L1" class="contribution-link">Edit this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2016 Allan Hardy<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>   
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

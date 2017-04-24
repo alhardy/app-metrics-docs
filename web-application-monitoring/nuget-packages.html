@@ -83,7 +83,7 @@
 <p>The <code>App.Metrics.Extensions.Mvc</code> package has a dependency on <code>App.Metrics.Extensions.Middleware</code> to automatically measure request rates etc but also provides tracking of attribute based routes for example. The separate package exists so that client applications are not forced to take a depdenency on ASP.NET Core MVC.</p>
 <pre><code class="lang-console">nuget install App.Metrics.Extensions.Mvc
 </code></pre><h2 id="appmetricsformattersjson">App.Metrics.Formatters.Json</h2>
-<p>The <code>App.Metrics.Formatters.Json</code> package provides the abliity to JSON serializer/deserializer metrics recorded by your application, for example allowing <code>/metrics</code> to return a JSON representation metrics.</p>
+<p>The <code>App.Metrics.Formatters.Json</code> package provides the abliity to JSON serialize/deserialize metrics recorded by your application, for example allowing <code>/metrics</code> to return a JSON representation metrics.</p>
 <div class="TIP"><h5>Tip</h5><p>Using <a href="https://prometheus.io/">Prometheus</a>? There is an App Metrics <a href="https://www.nuget.org/packages/App.Metrics.Formatters.Prometheus">Prometheus extension package</a> providing the ability to format metrics in prometheus format, supports protobuf and plain text.</p>
 </div>
 <pre><code class="lang-console">nuget install App.Metrics.Formatters.Json

@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Elasticsearch Reporter </title>
+    <title>ASP.NET Core Middleware Response Formatters </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Elasticsearch Reporter ">
+    <meta name="title" content="ASP.NET Core Middleware Response Formatters ">
     <meta name="generator" content="docfx 2.16.0.499">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -66,31 +66,15 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-              <h1 id="elasticsearch-reporter">Elasticsearch Reporter</h1>
+              <h1 id="aspnet-core-middleware-response-formatters">ASP.NET Core Middleware Response Formatters</h1>
               
-<p>Metrics can be reported to <a href="https://www.elastic.co/">ElasticSearch</a> using the <a href="https://www.nuget.org/packages/App.Metrics.Extensions.Reporting.ElasticSearch/">App.Metrics.Extensions.Reporting.ElasticSearch</a> nuget package.</p>
-<ol>
-<li><p>First see the <a href="../getting-started/intro.html">getting started</a> guide.</p>
-</li>
-<li><p>Configure the Elasticsearch reporter as follows:</p>
-</li>
-</ol>
-<pre><code class="lang-csharp" name="Main">.AddReporting(factory =&gt;
-{
-    factory.AddElasticSearch(new ElasticSearchReporterSettings
-    {
-        HttpPolicy = new HttpPolicy
-        {
-            FailuresBeforeBackoff = 3,
-            BackoffPeriod = TimeSpan.FromSeconds(30),
-            Timeout = TimeSpan.FromSeconds(3)
-        },
-        ElasticSearchSettings = new ElasticSearchSettings(new Uri(&quot;http://localhost:9200&quot;), &quot;metrics&quot;),
-        ReportInterval = TimeSpan.FromSeconds(5)
-    });
-})
-</code></pre><h3 id="web-monitoring">Web Monitoring</h3>
-<p>Add an index and the document mappings to Elasticsearch, there are <a href="https://raw.githubusercontent.com/alhardy/AppMetrics.Extensions.Elasticsearch/master/visualization/App.Metrics.Sandbox-Elasticsearch-IndexAndMappingSetup.json"><strong>default mappings</strong></a> provided in the github repository for the <a href="../web-application-monitoring/visualization-grafana.html"><strong>generic Grafana web dashboards</strong></a>.</p>
+<p>App Metric&#39;s Metric Middleware supports pluggable formatters which provide the ability to serialize metric and health check data depending on your requirements. This allows the <code>Metrics</code> and <code>Health</code> endpoints <code>Content-Types</code> to be customized. </p>
+<h2 id="available-formatters">Available Formatters</h2>
+<ul>
+<li><a href="json-formatter.html">JSON</a></li>
+<li><a href="prometheus-formatter.html">Prometheus</a></li>
+</ul>
+<h2 id="implementing-a-custom-formatter">Implementing a Custom Formatter</h2>
 
             </article>
           </div>
@@ -100,7 +84,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics.DocFx/blob/master/reporting/elasticsearch.md/#L1" class="contribution-link">Edit this Doc</a>
+                    <a href="https://github.com/alhardy/AppMetrics.DocFx/blob/master/web-application-monitoring/formatters.md/#L1" class="contribution-link">Edit this Doc</a>
                   </li>
                 </ul>
               </div>

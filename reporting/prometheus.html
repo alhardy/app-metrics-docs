@@ -68,8 +68,16 @@
             <article class="content wrap" id="_content" data-uid="">
               <h1 id="prometheus-reporter">Prometheus Reporter</h1>
               
-<p>The <a href="https://www.nuget.org/packages/App.Metrics.Formatters.Prometheus">App.Metrics.Formatters.Prometheus</a> package enables the <a href="../getting-started/intro.html#configuring-a-web-host">metrics</a> endpoint to serve metrics in <a href="https://prometheus.io/">Prometheus</a> format. Supports plain text and protobuf.</p>
-<p><em>TODO: Provide sample code</em></p>
+<p><a href="https://prometheus.io/">Prometheus</a> promotes a <em>Pull</em> based approach rather than <em>Push</em>, therefore App Metrics does not include a reporter to push metrics, but rather supports formatting metric data in Prometheus format.</p>
+<p>Prometheus formatting is provided by the <a href="https://www.nuget.org/packages/App.Metrics.Formatters.Prometheus">App.Metrics.Formatters.Prometheus</a> nuget package, when configured the <code>/metrics</code> endpoint will serve metrics in Prometheus format for collection.</p>
+<ol>
+<li><p>First see the <a href="../getting-started/intro.html">getting started</a> guide.</p>
+</li>
+<li><p>Configure Prometheus formatting as explained in the <a href="../web-application-monitoring/formatters/prometheus-formatter.html">formatter documentation</a></p>
+</li>
+</ol>
+<h3 id="web-monitoring">Web Monitoring</h3>
+<p>See the <a href="../web-application-monitoring/visualization-grafana.html"><strong>generic Grafana web dashboards</strong></a> provided.</p>
 
             </article>
           </div>
