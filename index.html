@@ -8,7 +8,7 @@
     <title>What is App Metrics? </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="What is App Metrics? ">
-    <meta name="generator" content="docfx 2.16.0.499">
+    <meta name="generator" content="docfx 2.16.2.2">
     
     <link rel="shortcut icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
@@ -65,7 +65,7 @@
 <p>App Metrics abstracts away the underlaying repository of your Metrics for example InfluxDB, Graphite, Elasticsearch etc, by sampling and aggregating in memory and providing extensibility points to flush metrics to a repository at a specified interval. </p>
 <p>App Metrics provides various metric types to measure things such as the rate of requests, counting the number of user logins over time, measure the time taken to execute a database query, measure the amount of free memory and so on. <a href="getting-started/metric-types/overview.html">Metrics types</a> supported are Apdex, Gauges, Counters, Meters, Histograms and Timers.</p>
 <p>App Metrics also provides a health checking system allowing you to monitor the health of your application through user defined checks.</p>
-<h1 id="whats-the-performance-overhead">Whats the Performance Overhead?</h1>
+<h1 id="whats-the-performance-overhead">What&#39;s the Performance Overhead?</h1>
 <p>The performance overhead in terms of processing is minimal, see the <a href="https://github.com/alhardy/AppMetrics/tree/master/benchmarks/App.Metrics.Benchmarks.Runner/BenchmarkDotNet.Artifacts/results">benchmark results</a> for the overhead on recording metrics.</p>
 <p>The memory overhead is also minimal, but will depend on the number of metrics your&#39;re tracking. However even with a very large number of metrics the memory overhead is still minimal. Histograms consume the most memory in terms of metric types as they keep a stream of data in memory to measure the statistical distribution of values, although App Metrics uses <a href="getting-started/sampling/index.html">Reservoir Sampling</a> to work around this which allows us to maitain a small, manageable reservoir representing the entire data stream.</p>
 <h1 id="why-build-app-metrics">Why build App Metrics?</h1>
