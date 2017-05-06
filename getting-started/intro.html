@@ -70,10 +70,8 @@
               
 <h2 id="configuring-a-web-host">Configuring a Web Host</h2>
 <ol>
-<li><p>Add the <a href="https://www.nuget.org/packages/App.Metrics/">App.Metrics</a>, <a href="https://www.nuget.org/packages/App.Metrics.Extensions.Middleware/">App.Metrics.Extensions.Middleware</a> and <a href="https://www.nuget.org/packages/App.Metrics.Formatters.Json/">App.Metrics.Formatters.Json</a> nuget packages to your project.</p>
-</li>
-<li><p>App Metrics is configured using the usual pattern to provide services and configuration to an ASP.NET Core project by adding required services to the <code>ConfigureServices</code> method in the <code>Startup.cs</code></p>
-</li>
+<li>Add the <a href="https://www.nuget.org/packages/App.Metrics/">App.Metrics</a>, <a href="https://www.nuget.org/packages/App.Metrics.Extensions.Middleware/">App.Metrics.Extensions.Middleware</a> and <a href="https://www.nuget.org/packages/App.Metrics.Formatters.Json/">App.Metrics.Formatters.Json</a> nuget packages to your project.</li>
+<li>App Metrics is configured using the usual pattern to provide services and configuration to an ASP.NET Core project by adding required services to the <code>ConfigureServices</code> method in the <code>Startup.cs</code></li>
 </ol>
 <p>Modify your <code>Startup.cs</code> with the following:</p>
 <pre><code class="lang-csharp" name="Main">public class Startup
@@ -95,7 +93,8 @@
 <ul>
 <li><code>AddMetrics</code> registers App Metrics services with the <code>IServiceCollection</code>. This method also also provides options to change the default metrics configuration if you wish to do so.</li>
 <li><code>AddHealthChecks</code> registers the Health Checking sytem, it will scan for classes within the project and any other project which has a reference to App Metrics and register any class which inherits <code>HealthCheck</code>. Alternatively, this method also provides access to the <code>IHealthCheckFactory</code> where you can register health checks inline.</li>
-<li><code>AddMetricsMiddleware</code> registers middleware components providing a serveral metrics related endpoints, which are:<ol>
+<li><p><code>AddMetricsMiddleware</code> registers middleware components providing a serveral metrics related endpoints, which are:</p>
+<ol>
 <li><code>/ping</code>: Used to determine if you can get a successful pont response, useful for load balancers</li>
 <li><code>/metrics</code>: Renders all metrics using the configured <code>IMetricsDataSerializer</code>, in our case in json format</li>
 <li><code>/metrics-text</code>: Renders a Humannized version of the metric data captured by the application</li>

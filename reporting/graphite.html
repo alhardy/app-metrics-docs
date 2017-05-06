@@ -68,7 +68,30 @@
             <article class="content wrap" id="_content" data-uid="">
               <h1 id="graphite-reporter">Graphite Reporter</h1>
               
-<p>Still a work in progress, see the <a href="https://github.com/alhardy/AppMetrics.Extensions.Graphite">AppMetrics.Extensions.Graphite</a> repo.</p>
+<p>Metrics can be reported to <a href="https://graphiteapp.org/">Graphite</a> using the <a href="https://www.nuget.org/packages/App.Metrics.Extensions.Reporting.Graphite/">App.Metrics.Extensions.Reporting.Graphite</a> nuget package.</p>
+<ol>
+<li>First see the <a href="../getting-started/intro.html">getting started</a> guide.</li>
+<li>Configure the Graphite reporter as follows:</li>
+</ol>
+<pre><code class="lang-csharp" name="Main">.AddReporting(factory =&gt;
+{
+    factory.AddGraphite(new GraphiteReporterSettings
+    {
+        HttpPolicy = new HttpPolicy
+        {
+            FailuresBeforeBackoff = 3,
+            BackoffPeriod = TimeSpan.FromSeconds(30),
+            Timeout = TimeSpan.FromSeconds(3)
+        },
+        GraphiteSettings = new GraphiteSettings(new Uri(&quot;net.tcp://127.0.0.1:2003&quot;)),
+        ReportInterval = TimeSpan.FromSeconds(5)
+    });
+})
+</code></pre><div class="NOTE"><h5>Note</h5><p>UDP is supported as well as TCP, the protocol is determined by the Uri passed into <code>GraphiteSettings</code>.</p>
+<p>e.g.<code>net.tcp://127.0.0.1:2003/</code> Or <code>net.udp://127.0.0.1:2003/</code>.</p>
+</div>
+<h2 id="web-monitoring">Web Monitoring</h2>
+<p>See the <a href="../web-application-monitoring/visualization-grafana.html"><strong>generic Grafana web dashboards</strong></a> provided.</p>
 
             </article>
           </div>
