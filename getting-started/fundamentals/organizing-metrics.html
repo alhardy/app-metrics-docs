@@ -69,16 +69,110 @@
             <article class="content wrap" id="_content" data-uid="">
               <h1 id="organizing-metrics">Organizing Metrics</h1>
               
-<p>App Metrics provides a two ways to organize your metrics: </p>
+<p>App Metrics provides a two ways to organize your metrics:</p>
 <ol>
-<li>By specifing a <strong>Context</strong> label when <a href="../intro.html#measuring-application-metrics">defining your metrics</a>. By default any all custom Metrics will belong the the &quot;Application&quot; Context.</li>
-<li>Through the use of <strong>Tags</strong> when <a href="../intro.html#measuring-application-metrics">defining your metrics</a> or by <a href="configuration.html">configuring tags</a> globally for all Metrics.</li>
+<li>Through the use of <strong>Tags</strong> when <a href="recording-metrics.html#declaring-metrics">declaring your metrics</a> or by <a href="configuration.html">configuring tags</a> globally for all Metrics.</li>
+<li>By specifing a <strong>Context</strong> label when <a href="recording-metrics.html#declaring-metrics">declaring your metrics</a>. By default any all custom Metrics will belong the the &quot;Application&quot; Context.</li>
 </ol>
-<h2 id="metric-contexts">Metric Contexts</h2>
+<h2 id="metric-tagging">Metric Tagging</h2>
+<p>Metrics can be tagged when <a href="recording-metrics.html#declaring-metrics">declaring your metrics</a>, these tags can then be shipped with your metric values to your database of choice which is useful for commonly-queried metadata.</p>
+<p>An example use case for tagging is recording an APIs response time per endpoint where a timer is recorded per endpoint but then reported as the same metric name tagged with by the endpoint. This allows us to more easily have a dynamic list of endpoints and their response times when visualising with Grafana for example.</p>
+<h3 id="tagging-at-runtime">Tagging at runtime</h3>
+<pre><code class="lang-csharp" name="Main">var tags = new MetricTags(new[] { &quot;client_id&quot;, &quot;route&quot; }, new[] { clientId, routeTemplate });
+metrics.Measure.Meter.Mark(OAuthRequestMetricsRegistry.Meters.RequestRate, tags);
+</code></pre><h3 id="tagging-globally">Tagging globally</h3>
+<p>Tags can also be defined for all Metrics globally which is useful for tagging by things like machine name, envrionment, ip address, application name etc.</p>
+<pre><code class="lang-csharp" name="Main" highlight-lines="9">public class Startup
+{
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddMvc(options =&gt; options.AddMetricsResourceFilter());
+        
+        services.AddMetrics(options =&gt; {
+                options.DefaultContextLabel = &quot;MyContext&quot;,                
+                options.GlobalTags.Add(&quot;env&quot;, &quot;stage&quot;);
+                options.MetricsEnabled = true;
+                options.ReportingEnabled = true;     	
+            })
+            .AddDefaultReservoir(() =&gt; new Lazy&lt;IReservoir&gt;(() =&gt; new DefaultSlidingWindowReservoir()))
+            .AddJsonSerialization()
+            .AddHealthChecks()
+            .AddMetricsMiddleware();
+    }
+
+    public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
+    {	        
+        app.UseMetrics();
+    }
+}
+</code></pre><h3 id="tagging-helpers">Tagging helpers</h3>
+<p>App Metrics provides an extension method on the AppMetricsOptions delegate passing some envrionment information that can be used to set global tags such as the machine name, assembly version etc.</p>
+<pre><code class="lang-csharp" name="Main" highlight-lines="7,8,9,10,11,12,13">public class Startup
+{
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddMetrics(options =&gt; {
+                options.DefaultContextLabel = &quot;MyContext&quot;;
+                options.WithGlobalTags((globalTags, envInfo) =&gt;
+                {                    
+                    globalTags.Add(&quot;server&quot;, envInfo.MachineName);
+                    globalTags.Add(&quot;app&quot;, envInfo.EntryAssemblyName);
+                    // Assumes _env is the IHostingEnvironment
+                    globalTags.Add(&quot;env&quot;, _env.IsStaging() ? &quot;stage&quot; : _env.IsProduction() ? &quot;prod&quot; : &quot;dev&quot;);
+                });  	
+            })
+            .AddJsonSerialization()
+            .AddHealthChecks()
+            .AddMetricsMiddleware();
+    }
+
+    public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
+    {	        
+        app.UseMetrics();
+    }
+}
+</code></pre><h3 id="tagging-statically">Tagging statically</h3>
+<pre><code class="lang-csharp" name="Main" highlight-lines="5,13,21">public static class AppMetricsRegistery
+{
+    public static class ProcessMetrics
+    {
+        private static readonly MetricTags CustomTags = new MetricTags(&quot;tag-key&quot;, &quot;tag-value&quot;);
+        private static readonly string ContextName = &quot;Process&quot;;
+
+        public static GaugeOptions SystemNonPagedMemoryGauge = new GaugeOptions
+        {
+            Context = ContextName,
+            Name = &quot;System Non-Paged Memory&quot;,
+            MeasurementUnit = Unit.Bytes,
+            Tags = CustomTags
+        };            
+
+        public static GaugeOptions ProcessVirtualMemorySizeGauge = new GaugeOptions
+        {
+            Context = ContextName,
+            Name = &quot;Process Virtual Memory Size&quot;,
+            MeasurementUnit = Unit.Bytes,
+            Tags = CustomTags
+        };
+    }
+
+    public static class DatabaseMetrics
+    {
+        private static readonly string ContextName = &quot;Database&quot;;
+
+        public static TimerOptions SearchUsersSqlTimer = new TimerOptions
+        {
+            Context = ContextName,
+            Name = &quot;Search Users&quot;,
+            MeasurementUnit = Unit.Calls
+        };
+    }
+}
+</code></pre><h2 id="metric-contexts">Metric Contexts</h2>
 <p>Organizing your Metrics into separate meaningful contexts is helpful for visualization and reporting. Only one level of Context categorization is supported.</p>
 <p>The default global context can be modified using the <strong>DefaultContextLabel</strong> in the <a href="configuration.html">configuration options</a> when configuring your application to use App Metrics.</p>
 <h3 id="defining-a-context-on-a-metric">Defining a Context on a Metric</h3>
-<p>To add Metrics to a particular context, the context can be specified when <a href="../intro.html#measuring-application-metrics">defining your metrics</a>. For example:</p>
+<p>To add Metrics to a particular context, the context can be specified when <a href="recording-metrics.html#declaring-metrics">declaring your metrics</a>. For example:</p>
 <pre><code class="lang-csharp" name="Main" highlight-lines="6,10,18,27,31">public static class AppMetricsRegistery
 {
     public static class ProcessMetrics
@@ -158,107 +252,10 @@
 }
 </code></pre><div class="NOTE"><h5>Note</h5><p>You&#39;ll need to install the <a href="https://www.nuget.org/packages/App.Metrics.Formatters.Json/">App.Metrics.Formatters.Json</a> nuget package and <code>AddJsonSerialization()</code> in your <code>Startup.cs</code> for formatting <code>/metrics</code> results as json.</p>
 </div>
-<h2 id="metric-tagging">Metric Tagging</h2>
-<p>Metrics can be tagged when <a href="../intro.html#measuring-application-metrics">defining your metrics</a>, these tags can then be shipped with your metric values to your database of choice which is useful for commonly-queried metadata. </p>
-<p>An example use case for tagging is recording an APIs response time per endpoint where a timer is recorded per endpoint but then reported as the same metric name tagged with by the endpoint. This allows us to more easily have a dynamic list of endpoints and their response times when visualising with Grafana for example.</p>
-<h4 id="tagging-at-runtime">Tagging at runtime</h4>
-<pre><code class="lang-csharp" name="Main">var tags = new MetricTags(new[] { &quot;client_id&quot;, &quot;route&quot; }, new[] { clientId, routeTemplate });
-metrics.Measure.Meter.Mark(OAuthRequestMetricsRegistry.Meters.RequestRate, tags);
-</code></pre><h4 id="tagging-statically">Tagging statically</h4>
-<pre><code class="lang-csharp" name="Main" highlight-lines="5,13,21">public static class AppMetricsRegistery
-{
-    public static class ProcessMetrics
-    {
-        private static readonly MetricTags CustomTags = new MetricTags(&quot;tag-key&quot;, &quot;tag-value&quot;);
-        private static readonly string ContextName = &quot;Process&quot;;
-
-        public static GaugeOptions SystemNonPagedMemoryGauge = new GaugeOptions
-        {
-            Context = ContextName,
-            Name = &quot;System Non-Paged Memory&quot;,
-            MeasurementUnit = Unit.Bytes,
-            Tags = CustomTags
-        };            
-
-        public static GaugeOptions ProcessVirtualMemorySizeGauge = new GaugeOptions
-        {
-            Context = ContextName,
-            Name = &quot;Process Virtual Memory Size&quot;,
-            MeasurementUnit = Unit.Bytes,
-            Tags = CustomTags
-        };
-    }
-
-    public static class DatabaseMetrics
-    {
-        private static readonly string ContextName = &quot;Database&quot;;
-
-        public static TimerOptions SearchUsersSqlTimer = new TimerOptions
-        {
-            Context = ContextName,
-            Name = &quot;Search Users&quot;,
-            MeasurementUnit = Unit.Calls
-        };
-    }
-}
-</code></pre><h4 id="tagging-globally">Tagging globally</h4>
-<p>Tags can also be defined for all Metrics globally which is useful for tagging by things like machine name, envrionment, ip address, application name etc.</p>
-<pre><code class="lang-csharp" name="Main" highlight-lines="9">public class Startup
-{
-    public void ConfigureServices(IServiceCollection services)
-    {
-        services.AddMvc(options =&gt; options.AddMetricsResourceFilter());
-        
-        services.AddMetrics(options =&gt; {
-                options.DefaultContextLabel = &quot;MyContext&quot;,                
-                options.GlobalTags.Add(&quot;env&quot;, &quot;stage&quot;);
-                options.MetricsEnabled = true;
-                options.ReportingEnabled = true;     	
-            })
-            .AddDefaultReservoir(() =&gt; new Lazy&lt;IReservoir&gt;(() =&gt; new DefaultSlidingWindowReservoir()))
-            .AddJsonSerialization()
-            .AddHealthChecks()
-            .AddMetricsMiddleware();
-    }
-
-    public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
-    {	        
-        app.UseMetrics();
-    }
-}
-</code></pre><p>App Metrics provides an extension method on the AppMetricsOptions delegate passing some envrionment information that can be used to set global tags such as the machine name, assembly version etc.</p>
-<pre><code class="lang-csharp" name="Main" highlight-lines="7,8,9,10,11,12,13">public class Startup
-{
-    public void ConfigureServices(IServiceCollection services)
-    {
-        services.AddMetrics(options =&gt; {
-                options.DefaultContextLabel = &quot;MyContext&quot;;
-                options.WithGlobalTags((globalTags, envInfo) =&gt;
-                {
-                    globalTags.Add(&quot;host&quot;, envInfo.HostName);
-                    globalTags.Add(&quot;machine_name&quot;, envInfo.MachineName);
-                    globalTags.Add(&quot;app_name&quot;, envInfo.EntryAssemblyName);
-                    globalTags.Add(&quot;app_version&quot;, envInfo.EntryAssemblyVersion);
-                });  	
-            })
-            .AddJsonSerialization()
-            .AddHealthChecks()
-            .AddMetricsMiddleware();
-    }
-
-    public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
-    {	        
-        app.UseMetrics();
-    }
-}
-</code></pre><h3 id="filtering-in-process-by-tag-keys">Filtering in process by Tag Keys</h3>
+<h3 id="filtering-in-process-by-tag-keys">Filtering in process by Tag Keys</h3>
 <p>The <a href="../../api/App.Metrics.DefaultMetricsFilter.html">DefaultMetricsFilter</a> can be used to filter Metrics by a Tag Keys. This would be useful if we only wanted to report on a particular Metrics Tags.</p>
 <div class="NOTE"><h5>Note</h5><p>See <a href="../filtering/index.html">Metrics Filtering</a> for more details on filtering Metrics.</p>
 </div>
-<h2 id="next-steps">Next Steps</h2>
-<ul>
-<li><a href="../intro.html#measuring-application-metrics">Measuring Application Metrics</a></li>
-</ul>
 
             </article>
           </div>
@@ -285,7 +282,7 @@ metrics.Measure.Meter.Mark(OAuthRequestMetricsRegistry.Meters.RequestRate, tags)
         <div class="footer">
           <div class="container">
             <span class="pull-right">
-              <a href="#top">Back to top</a>
+              <a href="#top"><strong>Back to top</strong></a>
             </span>
             
             <span>Copyright © 2017 Allan Hardy<br>Generated by <a alt="docfx" target="_blank" href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a></span>

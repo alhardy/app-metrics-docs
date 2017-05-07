@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Filtering Metrics </title>
+    <title>Measuring Application Metrics </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Filtering Metrics ">
+    <meta name="title" content="Measuring Application Metrics ">
     <meta name="generator" content="docfx 2.16.2.2">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -67,86 +67,94 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-              <h1 id="filtering-metrics">Filtering Metrics</h1>
+              <h1 id="measuring-application-metrics">Measuring Application Metrics</h1>
               
-<h2 id="report-filtering">Report Filtering</h2>
-<p>App Metrics allows you to filter Metrics per reporter.</p>
-<p>Below is an example reporting configuration which provides a filter to a console reporter filtering Metrics containing a tag key of &quot;filter-tag1&quot; and are Counters</p>
-<pre><code class="lang-csharp" name="Main" highlight-lines="11,12,13,20">private static void ConfigureMetrics(IServiceCollection services)
+<p>App Metrics provides access to an <code>IMetrics</code> instance, registered as a single instance. This can be injected where required to start mesuring different types of metrics.</p>
+<p>Each metric being measured should be described through one of the below, which provides details about the metric being measured. <code>Name</code> is the only required property is the property on each metric option instance.</p>
+<table>
+<thead>
+<tr>
+<th>Options</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GaugeOptions</code></td>
+<td style="text-align:left">Allows the metric context, metric name, unit of measurement, and tags to be specified.</td>
+</tr>
+<tr>
+<td><code>CounterOptions</code></td>
+<td style="text-align:left">Allows the metric context, metric name, unit of measurement, and tags to be specified.</td>
+</tr>
+<tr>
+<td><code>MeterOptions</code></td>
+<td style="text-align:left">Allows the metric context, metric name, unit of measurement, rate unit and tags to be specified.</td>
+</tr>
+<tr>
+<td><code>TimerOptions</code></td>
+<td style="text-align:left">Allows the metric context, metric name, unit of measurement, rate unit, duration unit, sampling type and tags to be specified. Also allows a custom <code>IReservoir</code> to be used for sampling.</td>
+</tr>
+<tr>
+<td><code>HistogramOptions</code></td>
+<td style="text-align:left">Allows the metric context, metric name, unit of measurement, sampling type and tags to be specified. Also allows a custom <code>IReservoir</code> to be used for sampling.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="declaring-metrics">Declaring Metrics</h2>
+<pre><code class="lang-csharp" name="Main">public static class AppMetricsRegistery
 {
-	services
-		.AddMetrics(options =&gt;
-		{                    
-			options.ReportingEnabled = true;
-			options.GlobalTags.Add(&quot;env&quot;, &quot;uat&quot;);
-		})
-		.AddReporting(factory =&gt;
-		{
-			var filter = new DefaultMetricsFilter()
-				.WhereType(MetricType.Counter)
-				.WhereMetricTaggedWithKey(&quot;filter-tag1&quot;, &quot;filter-tag2&quot;)
-				.WithHealthChecks(true)
-				.WithEnvironmentInfo(true);
-
-			factory.AddConsole(new ConsoleReporterSettings
-			{
-				ReportInterval = TimeSpan.FromSeconds(10),
-			}, filter);
-		});
-}
-</code></pre><h2 id="globally-filtering">Globally Filtering</h2>
-<p>Metrics can also be set at a global level which would apply to all Metric data queries.</p>
-<p>Below is an example of how to apply a global filter in a Web Host.</p>
-<pre><code class="lang-csharp" name="Main" highlight-lines="9,13">public void ConfigureServices(IServiceCollection services)
-{
-    services
-        .AddLogging()
-        .AddRouting(options =&gt; { options.LowercaseUrls = true; });
-
-    services.AddMvc();
-
-    var filter = new DefaultMetricsFilter().WhereType(MetricType.Counter);
-
-    services
-        .AddMetrics()
-        .AddGlobalFilter(filter)
-        .AddJsonSerialization()
-        .AddHealthChecks()
-        .AddMetricsMiddleware();
-}
-</code></pre><p>Requesting the <code>/metrics</code> endpoint with the above configuration would result in only Counter Metrics being shown in the response.</p>
-<h2 id="overriding-the-global-filter">Overriding the Global Filter</h2>
-<p>In cases where a global filter is set as well as a filter on a reporter, the reporter&#39;s filter will be used instead. </p>
-<p>It is also possible to override the global filter if you where to retrieve a snapshot of the current metrics data via the Advanced Metric contract.</p>
-<pre><code class="lang-csharp" name="Main" highlight-lines="12,13">public class MyService
-{
-    private readonly IMetrics _metrics;
-
-    public MyService(IMetrics metrics)
+    public static GaugeOptions Errors { get; } = new GaugeOptions
     {
-        _metrics = metrics;
-    }
+        Name = &quot;Errors&quot;            
+    };
 
-    public MetricsDataValueSource DoSomething()
+    public static CounterOptions SampleCounter { get; } = new CounterOptions
     {
-        var filter = new DefaultMetricsFilter().WhereMetricNameStartsWith(&quot;test_&quot;);
-        return _metrics.Snapshot.Get(filter);
-    }
+        Name = &quot;Sample Counter&quot;,
+        MeasurementUnit = Unit.Calls,
+    };
+
+    public static HistogramOptions SampleHistogram { get; } = new HistogramOptions
+    {
+        Name = &quot;Sample Histogram&quot;,
+        Reservoir = new Lazy&lt;IReservoir&gt;(() =&gt; new DefaultAlgorithmRReservoir()),
+        MeasurementUnit = Unit.MegaBytes            
+    };
+
+    public static MeterOptions SampleMeter { get; } = new MeterOptions
+    {
+        Name = &quot;Sample Meter&quot;,
+        MeasurementUnit = Unit.Calls            
+    };
+
+    public static TimerOptions SampleTimer { get; } = new TimerOptions
+    {
+        Name = &quot;Sample Timer&quot;,
+        MeasurementUnit = Unit.Items,
+        DurationUnit = TimeUnit.Milliseconds,
+        RateUnit = TimeUnit.Milliseconds,            
+        Reservoir = new Lazy&lt;IReservoir&gt;(() =&gt; new DefaultForwardDecayingReservoir(sampleSize:1028, alpha:0.015))
+    };
 }
-</code></pre><h2 id="supported-filtering">Supported Filtering</h2>
-<p>Metrics can be filtered by:</p>
+</code></pre><h2 id="recording-metrics-using-an-imetrics-instance">Recording Metrics using an <code>IMetrics</code> instance</h2>
+<pre><code class="lang-csharp" name="Main">_metrics.Measure.Counter.Increment(AppMetricsRegistery.SampleCounter);
+_metrics.Measure.Counter.Decrement(AppMetricsRegistery.SampleCounter);
+
+_metrics.Measure.Gauge.SetValue(AppMetricsRegistery.Errors, () =&gt; 1);
+
+_metrics.Provider.Histogram.Update(AppMetricsRegistery.SampleHistogram, 1);
+
+_metrics.Provider.Meter.Mark(AppMetricsRegistery.SampleMeter, 1);
+
+using(_metrics.Measure.Timer.Time(AppMetricsRegistery.SampleTimer))
+{
+    // Do something
+}
+</code></pre><h2 id="next-steps">Next Steps</h2>
 <ul>
-<li>Metric Type</li>
-<li>Tags</li>
-<li>Context</li>
-<li>Metric Name (Exact match or where name starts with)</li>
-</ul>
-<div class="TIP"><h5>Tip</h5><p>Custom Metric Filters can be implemented rather than using the <a href="../../api/App.Metrics.DefaultMetricsFilter.html">DefaultMetricsFilter</a> by implementing <a href="../../api/App.Metrics.IMetricsFilter.html">IMetricsFilter</a>.</p>
-</div>
-<h2 id="next-steps">Next Steps</h2>
-<ul>
-<li><a href="../metric-types/overview.html">Metric Types</a></li>
-<li><a href="../fundamentals/organizing-metrics.html">Organizing Metrics - Contexts and Tagging</a></li>
+<li><a href="../metric-types/overview.html">Metrics Types</a></li>
+<li><a href="configuration.html">Configuration Options</a></li>
 </ul>
 
             </article>
@@ -157,7 +165,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics.DocFx/blob/master/getting-started/filtering/index.md/#L1" class="contribution-link">Edit this Doc</a>
+                    <a href="https://github.com/alhardy/AppMetrics.DocFx/blob/master/getting-started/fundamentals/measuring-metrics.md/#L1" class="contribution-link">Edit this Doc</a>
                   </li>
                 </ul>
               </div>
