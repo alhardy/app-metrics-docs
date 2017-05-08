@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace App.Metrics.Formatters.Json
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace App.Metrics.Formatters.Json
+   ">
+    <meta name="generator" content="docfx 2.16.2.2">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="nuget" type="application/rsd+xml" href="https://www.myget.org/Discovery/Feed/alhardy/">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a><span class="app-name">App Metrics</span>   
+                 <a href="https://github.com/alhardy/AppMetrics" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;z-index:1000;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <h1 id="" data-uid="App.Metrics.Formatters.Json">Namespace App.Metrics.Formatters.Json
+              </h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="markdown level0 remarks"></div>
+                <h3 id="classes">Classes
+              </h3>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.ApdexMetric.html">ApdexMetric</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.CounterMetric.html">CounterMetric</a></h4>
+                  <section><p>
+    Counter metric types track how many times something happens, they can incremented or decremented.
+</p>
+<p>
+    Counters represent a 64-bit integer value.
+</p>
+<p>
+    Counters provide the ability to track a counter for each item in a finite set, as well as tracking a per item
+    count the overall percentage is also recorded. This is useful for example if we needed to track the total
+    number of emails sent but also the count of each type of emails sent.
+</p>
+</section>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.CounterMetric.SetItem.html">CounterMetric.SetItem</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.GaugeMetric.html">GaugeMetric</a></h4>
+                  <section><p>
+    Gauge metric types measure the value of a particular thing at a particular time, it represents an instantaneous
+    value.
+</p>
+<p>
+    Gauges represent a double value.
+</p>
+</section>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.HistogramMetric.html">HistogramMetric</a></h4>
+                  <section><p>
+    Histogram metric types track the statistical distribution of a set of values. They allow you to measure the
+    min, mean, max, standard deviation of values and also quantiles such as the median, 95th percentile, 98th
+    percentile etc.
+</p>
+<p>
+    To avoid unbound memory usage, the histogram values are genreated from a <see cref="!:IReservoir"></see> of values.
+    This is done by sampling the data as it goes through by maintaining a small manageable  reservoir which is
+    statistically representative of the data stream as a whole, allowing us to quickly calculate the quantiles
+    which are valid approximations of the actual quantiles. <a href="https://en.wikipedia.org/wiki/Reservoir_sampling">https://en.wikipedia.org/wiki/Reservoir_sampling</a>
+</p>
+<p>
+    Histograms also allow us to track user values, where for all user values provided the min, max and last user
+    value values is recorded.
+</p>
+</section>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.JsonHealthResponseWriter.html">JsonHealthResponseWriter</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.JsonMetricsResponseWriter.html">JsonMetricsResponseWriter</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.MeterMetric.html">MeterMetric</a></h4>
+                  <section><p>
+    Meter metric types are increment-only counters that also measure the rate of events over time.
+</p>
+<p>
+    The mean rate is recorded, but is only generally used for trivia as it represents the total rate for the
+    lifetime of your application, not offering a sense of recency.
+</p>
+<p>
+    Other than the mean rate, meters also are recorded using three different exponentially-weighted moving average
+    rates, 1 min, 5 min and 15 min moving averages which do provide a sense of recency.
+</p>
+<p>
+    Meters also provide the ability to track the rate for each item in a finite set, as well as tracking a per item
+    rate the overall percentage is also recorded. This is useful for example if we needed to track the total
+    number of emails sent but also the rate at which each type of email is sent.
+</p>
+</section>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.MeterMetric.SetItem.html">MeterMetric.SetItem</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.MetricBase.html">MetricBase</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.MetricContextSerializationExtensions.html">MetricContextSerializationExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.MetricData.html">MetricData</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.MetricsContext.html">MetricsContext</a></h4>
+                  <section><p>MetricsContext&#39;s are a way of grouping metrics withing a context, for example we can record all database related
+metrics in a &quot;Application.Database&quot; Context. Metric names can be duplicated across contexts</p>
+</section>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.TimerMetric.html">TimerMetric</a></h4>
+                  <section><p>
+    Timer metric types are essentially a special case of <a class="xref" href="App.Metrics.Formatters.Json.TimerMetric.html">Histogram</a>
+</p>
+<p>
+    As well as providing a <a class="xref" href="App.Metrics.Formatters.Json.TimerMetric.html">Histogram</a> of the duration of a type of event, timers also provide a
+<a class="xref" href="App.Metrics.Formatters.Json.MeterMetric.html">MeterMetric</a> of the rate of the events occurrence.
+</p>
+<p>
+    Like <a class="xref" href="App.Metrics.Formatters.Json.TimerMetric.html">Histogram</a>s, timers also allow us to track user values, where for all user values provided
+    the min, max and last user value values is recorded.
+</p>
+</section>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.TimerMetric.HistogramData.html">TimerMetric.HistogramData</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="App.Metrics.Formatters.Json.TimerMetric.RateData.html">TimerMetric.RateData</a></h4>
+                  <section></section>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top"><strong>Back to top</strong></a>
+            </span>
+            
+            <span>Copyright © 2017 Allan Hardy<br>Generated by <a alt="docfx" target="_blank" href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a></span>
+          </div>
+        </div>   
+      </footer>
+      
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-98322721-1', 'auto');
+      ga('send', 'pageview');
+    
+    </script>  </body>
+</html>

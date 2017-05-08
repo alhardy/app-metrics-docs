@@ -210,7 +210,7 @@ metrics.Measure.Meter.Mark(OAuthRequestMetricsRegistry.Meters.RequestRate, tags)
     }
 }
 </code></pre><h3 id="filtering-in-process-by-context">Filtering in process by Context</h3>
-<p>The <a href="../../api/App.Metrics.DefaultMetricsFilter.html">DefaultMetricsFilter</a> can be used to filter Metrics by a Context. This would be useful if we only wanted to report on a particular Metrics Context.</p>
+<p>The <a href="../../api/App.Metrics.Filtering.DefaultMetricsFilter.html">DefaultMetricsFilter</a> can be used to filter Metrics by a Context. This would be useful if we only wanted to report on a particular Metrics Context.</p>
 <div class="NOTE"><h5>Note</h5><p>See <a href="../filtering/index.html">Metrics Filtering</a> for more details on filtering Metrics.</p>
 </div>
 <h3 id="viewing-from-a-web-host">Viewing from a Web Host</h3>
@@ -253,7 +253,7 @@ metrics.Measure.Meter.Mark(OAuthRequestMetricsRegistry.Meters.RequestRate, tags)
 </code></pre><div class="NOTE"><h5>Note</h5><p>You&#39;ll need to install the <a href="https://www.nuget.org/packages/App.Metrics.Formatters.Json/">App.Metrics.Formatters.Json</a> nuget package and <code>AddJsonSerialization()</code> in your <code>Startup.cs</code> for formatting <code>/metrics</code> results as json.</p>
 </div>
 <h3 id="filtering-in-process-by-tag-keys">Filtering in process by Tag Keys</h3>
-<p>The <a href="../../api/App.Metrics.DefaultMetricsFilter.html">DefaultMetricsFilter</a> can be used to filter Metrics by a Tag Keys. This would be useful if we only wanted to report on a particular Metrics Tags.</p>
+<p>The <a href="../../api/App.Metrics.Filtering.DefaultMetricsFilter.html">DefaultMetricsFilter</a> can be used to filter Metrics by a Tag Keys. This would be useful if we only wanted to report on a particular Metrics Tags.</p>
 <div class="NOTE"><h5>Note</h5><p>See <a href="../filtering/index.html">Metrics Filtering</a> for more details on filtering Metrics.</p>
 </div>
 

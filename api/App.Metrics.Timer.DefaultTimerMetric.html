@@ -1,0 +1,798 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DefaultTimerMetric
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DefaultTimerMetric
+   ">
+    <meta name="generator" content="docfx 2.16.2.2">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="nuget" type="application/rsd+xml" href="https://www.myget.org/Discovery/Feed/alhardy/">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a><span class="app-name">App Metrics</span>   
+                 <a href="https://github.com/alhardy/AppMetrics" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;z-index:1000;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="" data-uid="App.Metrics.Timer.DefaultTimerMetric">Class DefaultTimerMetric
+              </h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">DefaultTimerMetric</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:App.Metrics.Timer</h6>
+              <h6><strong>Assembly</strong>:cs.temp.dll.dll</h6>
+              <h5 id="_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public sealed class DefaultTimerMetric : ITimerMetric, IDisposable</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              
+              
+              <a id="constructors" data-uid="App.Metrics.Timer.DefaultTimerMetric.#ctor*"></a>
+              <h4 id="constructors" data-uid="App.Metrics.Timer.DefaultTimerMetric.#ctor(IHistogramMetric,App.Metrics.IClock)">DefaultTimerMetric(IHistogramMetric, IClock)</h4>
+              <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="App.Metrics.Timer.DefaultTimerMetric.html">DefaultTimerMetric</a> class.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public DefaultTimerMetric(IHistogramMetric histogram, IClock clock)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IHistogramMetric</span></td>
+                    <td><em>histogram</em></td>
+                    <td><p>The histogram implementation to use.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.IClock.html">IClock</a></td>
+                    <td><em>clock</em></td>
+                    <td><p>The clock to use to measure processing duration.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="constructors" data-uid="App.Metrics.Timer.DefaultTimerMetric.#ctor*"></a>
+              <h4 id="constructors" data-uid="App.Metrics.Timer.DefaultTimerMetric.#ctor(IHistogramMetric,IMeterMetric,App.Metrics.IClock)">DefaultTimerMetric(IHistogramMetric, IMeterMetric, IClock)</h4>
+              <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="App.Metrics.Timer.DefaultTimerMetric.html">DefaultTimerMetric</a> class.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public DefaultTimerMetric(IHistogramMetric histogram, IMeterMetric meter, IClock clock)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IHistogramMetric</span></td>
+                    <td><em>histogram</em></td>
+                    <td><p>The histogram implementation to use.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">IMeterMetric</span></td>
+                    <td><em>meter</em></td>
+                    <td><p>The meter implementation to use to genreate the rate of events over time.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.IClock.html">IClock</a></td>
+                    <td><em>clock</em></td>
+                    <td><p>The clock to use to measure processing duration.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="constructors" data-uid="App.Metrics.Timer.DefaultTimerMetric.#ctor*"></a>
+              <h4 id="constructors" data-uid="App.Metrics.Timer.DefaultTimerMetric.#ctor(IReservoir,App.Metrics.IClock)">DefaultTimerMetric(IReservoir, IClock)</h4>
+              <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="App.Metrics.Timer.DefaultTimerMetric.html">DefaultTimerMetric</a> class.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public DefaultTimerMetric(IReservoir reservoir, IClock clock)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IReservoir</span></td>
+                    <td><em>reservoir</em></td>
+                    <td><p>The reservoir implementation to use for sampling values to generate the histogram.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.IClock.html">IClock</a></td>
+                    <td><em>clock</em></td>
+                    <td><p>The clock to use to measure processing duration.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="constructors" data-uid="App.Metrics.Timer.DefaultTimerMetric.#ctor*"></a>
+              <h4 id="constructors" data-uid="App.Metrics.Timer.DefaultTimerMetric.#ctor(IReservoir,IMeterMetric,App.Metrics.IClock)">DefaultTimerMetric(IReservoir, IMeterMetric, IClock)</h4>
+              <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="App.Metrics.Timer.DefaultTimerMetric.html">DefaultTimerMetric</a> class.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public DefaultTimerMetric(IReservoir reservoir, IMeterMetric meter, IClock clock)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IReservoir</span></td>
+                    <td><em>reservoir</em></td>
+                    <td><p>The reservoir to use for sampling within the histogram.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">IMeterMetric</span></td>
+                    <td><em>meter</em></td>
+                    <td><p>The meter implementation to use to genreate the rate of events over time.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.IClock.html">IClock</a></td>
+                    <td><em>clock</em></td>
+                    <td><p>The clock to use to measure processing duration.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              
+              
+              <a id="properties" data-uid="App.Metrics.Timer.DefaultTimerMetric.Value*"></a>
+              <h4 id="properties" data-uid="App.Metrics.Timer.DefaultTimerMetric.Value">Value</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public TimerValue Value { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Timer.TimerValue.html">TimerValue</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              
+              
+              <a id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.CurrentTime*"></a>
+              <h4 id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.CurrentTime">CurrentTime()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public long CurrentTime()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.Dispose*"></a>
+              <h4 id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.Dispose">Dispose()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+              </div>
+              <h5 class="implements">Implements</h5>
+                  <div><span class="xref">System.IDisposable.Dispose()</span></div>
+              
+              
+              <a id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.Dispose*"></a>
+              <h4 id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Dispose(bool disposing)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>disposing</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.EndRecording*"></a>
+              <h4 id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.EndRecording">EndRecording()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public long EndRecording()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.GetValue*"></a>
+              <h4 id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.GetValue(System.Boolean)">GetValue(Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public TimerValue GetValue(bool resetMetric = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>resetMetric</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Timer.TimerValue.html">TimerValue</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.NewContext*"></a>
+              <h4 id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.NewContext">NewContext()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public TimerContext NewContext()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Timer.TimerContext.html">TimerContext</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.NewContext*"></a>
+              <h4 id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.NewContext(System.String)">NewContext(String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public TimerContext NewContext(string userValue)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>userValue</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Timer.TimerContext.html">TimerContext</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.Record*"></a>
+              <h4 id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.Record(System.Int64,App.Metrics.TimeUnit)">Record(Int64, TimeUnit)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Record(long time, TimeUnit unit)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>time</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.TimeUnit.html">TimeUnit</a></td>
+                    <td><em>unit</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.Record*"></a>
+              <h4 id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.Record(System.Int64,App.Metrics.TimeUnit,System.String)">Record(Int64, TimeUnit, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Record(long duration, TimeUnit unit, string userValue)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>duration</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.TimeUnit.html">TimeUnit</a></td>
+                    <td><em>unit</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>userValue</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.Reset*"></a>
+              <h4 id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.Reset">Reset()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+              </div>
+              
+              
+              <a id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.StartRecording*"></a>
+              <h4 id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.StartRecording">StartRecording()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public long StartRecording()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.Time*"></a>
+              <h4 id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.Time(System.Action)">Time(Action)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Time(Action action)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Action</span></td>
+                    <td><em>action</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.Time*"></a>
+              <h4 id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.Time(System.Action,System.String)">Time(Action, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Time(Action action, string userValue)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Action</span></td>
+                    <td><em>action</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>userValue</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.Time*"></a>
+              <h4 id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.Time``1(System.Func{``0})">Time&lt;T&gt;(Func&lt;T&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public T Time&lt;T&gt;(Func&lt;T&gt; action)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Func</span>&lt;T&gt;</td>
+                    <td><em>action</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">T</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>T</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.Time*"></a>
+              <h4 id="methods" data-uid="App.Metrics.Timer.DefaultTimerMetric.Time``1(System.Func{``0},System.String)">Time&lt;T&gt;(Func&lt;T&gt;, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public T Time&lt;T&gt;(Func&lt;T&gt; action, string userValue)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Func</span>&lt;T&gt;</td>
+                    <td><em>action</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>userValue</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">T</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>T</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top"><strong>Back to top</strong></a>
+            </span>
+            
+            <span>Copyright © 2017 Allan Hardy<br>Generated by <a alt="docfx" target="_blank" href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a></span>
+          </div>
+        </div>   
+      </footer>
+      
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-98322721-1', 'auto');
+      ga('send', 'pageview');
+    
+    </script>  </body>
+</html>
