@@ -106,12 +106,12 @@
               
               
               <a id="constructors" data-uid="App.Metrics.Reporting.ReportRunner`1.#ctor*"></a>
-              <h4 id="constructors" data-uid="App.Metrics.Reporting.ReportRunner`1.#ctor(System.Func{IMetricPayloadBuilder{`0},Task{System.Boolean}},IMetricPayloadBuilder{`0},System.TimeSpan,ILoggerFactory,System.Func{System.String,System.String,System.String},App.Metrics.Reporting.MetricValueDataKeys)">ReportRunner(Func&lt;IMetricPayloadBuilder&lt;T&gt;, Task&lt;Boolean&gt;&gt;, IMetricPayloadBuilder&lt;T&gt;, TimeSpan, ILoggerFactory, Func&lt;String, String, String&gt;, MetricValueDataKeys)</h4>
+              <h4 id="constructors" data-uid="App.Metrics.Reporting.ReportRunner`1.#ctor(System.Func{IMetricPayloadBuilder{`0},Task{System.Boolean}},IMetricPayloadBuilder{`0},System.TimeSpan,ILoggerFactory)">ReportRunner(Func&lt;IMetricPayloadBuilder&lt;T&gt;, Task&lt;Boolean&gt;&gt;, IMetricPayloadBuilder&lt;T&gt;, TimeSpan, ILoggerFactory)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public ReportRunner(Func&lt;IMetricPayloadBuilder&lt;T&gt;, Task&lt;bool&gt;&gt; flushAsync, IMetricPayloadBuilder&lt;T&gt; payloadBuilder, TimeSpan reportInterval, ILoggerFactory loggerFactory, Func&lt;string, string, string&gt; metricNameFormatter, MetricValueDataKeys customDataKeys = null)</code></pre>
+                <pre><code class="lang-csharp hljs">public ReportRunner(Func&lt;IMetricPayloadBuilder&lt;T&gt;, Task&lt;bool&gt;&gt; flushAsync, IMetricPayloadBuilder&lt;T&gt; payloadBuilder, TimeSpan reportInterval, ILoggerFactory loggerFactory)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table>
@@ -143,27 +143,17 @@
                     <td><em>loggerFactory</em></td>
                     <td></td>
                   </tr>
-                  <tr>
-                    <td><span class="xref">System.Func</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
-                    <td><em>metricNameFormatter</em></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="App.Metrics.Reporting.MetricValueDataKeys.html">MetricValueDataKeys</a></td>
-                    <td><em>customDataKeys</em></td>
-                    <td></td>
-                  </tr>
                 </tbody>
               </table>
               
               
               <a id="constructors" data-uid="App.Metrics.Reporting.ReportRunner`1.#ctor*"></a>
-              <h4 id="constructors" data-uid="App.Metrics.Reporting.ReportRunner`1.#ctor(System.Func{IMetricPayloadBuilder{`0},Task{System.Boolean}},IMetricPayloadBuilder{`0},System.TimeSpan,System.String,ILoggerFactory,System.Func{System.String,System.String,System.String},App.Metrics.Reporting.MetricValueDataKeys)">ReportRunner(Func&lt;IMetricPayloadBuilder&lt;T&gt;, Task&lt;Boolean&gt;&gt;, IMetricPayloadBuilder&lt;T&gt;, TimeSpan, String, ILoggerFactory, Func&lt;String, String, String&gt;, MetricValueDataKeys)</h4>
+              <h4 id="constructors" data-uid="App.Metrics.Reporting.ReportRunner`1.#ctor(System.Func{IMetricPayloadBuilder{`0},Task{System.Boolean}},IMetricPayloadBuilder{`0},System.TimeSpan,System.String,ILoggerFactory)">ReportRunner(Func&lt;IMetricPayloadBuilder&lt;T&gt;, Task&lt;Boolean&gt;&gt;, IMetricPayloadBuilder&lt;T&gt;, TimeSpan, String, ILoggerFactory)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public ReportRunner(Func&lt;IMetricPayloadBuilder&lt;T&gt;, Task&lt;bool&gt;&gt; flushAsync, IMetricPayloadBuilder&lt;T&gt; payloadBuilder, TimeSpan reportInterval, string name, ILoggerFactory loggerFactory, Func&lt;string, string, string&gt; metricNameFormatter, MetricValueDataKeys customDataKeys = null)</code></pre>
+                <pre><code class="lang-csharp hljs">public ReportRunner(Func&lt;IMetricPayloadBuilder&lt;T&gt;, Task&lt;bool&gt;&gt; flushAsync, IMetricPayloadBuilder&lt;T&gt; payloadBuilder, TimeSpan reportInterval, string name, ILoggerFactory loggerFactory)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table>
@@ -198,16 +188,6 @@
                   <tr>
                     <td><span class="xref">ILoggerFactory</span></td>
                     <td><em>loggerFactory</em></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td><span class="xref">System.Func</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
-                    <td><em>metricNameFormatter</em></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="App.Metrics.Reporting.MetricValueDataKeys.html">MetricValueDataKeys</a></td>
-                    <td><em>customDataKeys</em></td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -353,7 +333,8 @@
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void ReportEnvironment(EnvironmentInfo environmentInfo)</code></pre>
+                <pre><code class="lang-csharp hljs">[Obsolete(&quot;Remove in 2.0.0 - Doesn't make sense to report environment info as part of metric reporting&quot;)]
+public void ReportEnvironment(EnvironmentInfo environmentInfo)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table>
@@ -380,7 +361,8 @@
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void ReportHealth(GlobalMetricTags globalTags, IEnumerable&lt;HealthCheck.Result&gt; healthyChecks, IEnumerable&lt;HealthCheck.Result&gt; degradedChecks, IEnumerable&lt;HealthCheck.Result&gt; unhealthyChecks)</code></pre>
+                <pre><code class="lang-csharp hljs">[Obsolete(&quot;Remove in 2.0.0 - Doesn't make sense to report health status as part of metric reporting, health check results are reported as guages as well&quot;)]
+public void ReportHealth(GlobalMetricTags globalTags, IEnumerable&lt;HealthCheck.Result&gt; healthyChecks, IEnumerable&lt;HealthCheck.Result&gt; degradedChecks, IEnumerable&lt;HealthCheck.Result&gt; unhealthyChecks)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table>

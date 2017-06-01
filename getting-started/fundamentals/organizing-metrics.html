@@ -75,13 +75,13 @@
 <li>By specifing a <strong>Context</strong> label when <a href="recording-metrics.html#declaring-metrics">declaring your metrics</a>. By default any all custom Metrics will belong the the &quot;Application&quot; Context.</li>
 </ol>
 <h2 id="metric-tagging">Metric Tagging</h2>
-<p>Metrics can be tagged when <a href="recording-metrics.html#declaring-metrics">declaring your metrics</a>, these tags can then be shipped with your metric values to your database of choice which is useful for commonly-queried metadata.</p>
-<p>An example use case for tagging is recording an APIs response time per endpoint where a timer is recorded per endpoint but then reported as the same metric name tagged with by the endpoint. This allows us to more easily have a dynamic list of endpoints and their response times when visualising with Grafana for example.</p>
+<p>Metrics can be tagged when they are <a href="recording-metrics.html#declaring-metrics">declared</a>, these tags can then be shipped with your metric values to your database of choice which is useful for commonly-queried metadata.</p>
+<p>An example use case for tagging is recording an APIs response time per endpoint where a timer is recorded per endpoint but then reported as the same metric name tagged with by the endpoint. This allows us to more easily have a dynamic list of endpoints and their response times when visualizing with Grafana for example.</p>
 <h3 id="tagging-at-runtime">Tagging at runtime</h3>
 <pre><code class="lang-csharp" name="Main">var tags = new MetricTags(new[] { &quot;client_id&quot;, &quot;route&quot; }, new[] { clientId, routeTemplate });
 metrics.Measure.Meter.Mark(OAuthRequestMetricsRegistry.Meters.RequestRate, tags);
 </code></pre><h3 id="tagging-globally">Tagging globally</h3>
-<p>Tags can also be defined for all Metrics globally which is useful for tagging by things like machine name, envrionment, ip address, application name etc.</p>
+<p>Tags can also be defined for all Metrics globally which is useful for tagging by things like machine name, environment, ip address, application name etc.</p>
 <pre><code class="lang-csharp" name="Main" highlight-lines="9">public class Startup
 {
     public void ConfigureServices(IServiceCollection services)
@@ -105,8 +105,32 @@ metrics.Measure.Meter.Mark(OAuthRequestMetricsRegistry.Meters.RequestRate, tags)
         app.UseMetrics();
     }
 }
-</code></pre><h3 id="tagging-helpers">Tagging helpers</h3>
-<p>App Metrics provides an extension method on the AppMetricsOptions delegate passing some envrionment information that can be used to set global tags such as the machine name, assembly version etc.</p>
+</code></pre><h3 id="default-tags">Default tags</h3>
+<p>App Metrics adds a few default global tags which are  commonly used. These are as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>app</code></td>
+<td style="text-align:left">The name of the application, which is set to the entry assembly name of the application i.e. <code>Assembly.GetEntryAssembly().GetName().Name</code>.</td>
+</tr>
+<tr>
+<td><code>server</code></td>
+<td style="text-align:left">The name of the machine the application is currently running on i.e. <code>Environment.MachineName</code>.</td>
+</tr>
+<tr>
+<td><code>env</code></td>
+<td style="text-align:left">The environment the application is running in. When running in debug mode will be set to <code>debug</code> otherwise <code>release</code>. This can be adjusted to be <code>staging</code>, <code>production</code> etc via app settings, via the <a href="organizing-metrics.html#tagging-helpers">tagging helpers</a> or disabled setting the <code>AppMetricsOptions.AddDefaultGlobalTags</code> to <code>false</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tagging-helpers">Tagging helpers</h3>
+<p>App Metrics provides an extension method on the AppMetricsOptions delegate passing some environment information that can be used to set global tags such as the machine name, assembly version etc.</p>
 <pre><code class="lang-csharp" name="Main" highlight-lines="7,8,9,10,11,12,13">public class Startup
 {
     public void ConfigureServices(IServiceCollection services)

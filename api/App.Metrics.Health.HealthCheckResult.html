@@ -168,7 +168,7 @@
               <div class="markdown level1 summary"><p>Create a Degraded status response. This is useful for when a health check may
 fail but the application itself is still functioning correct. E.g. There could be a
 health check checking the number of messages in a queue, if that number reaches a
-specificied threshold, a degraded status could be returned rather than raising a critical alert.</p>
+specified threshold, a degraded status could be returned rather than raising a critical alert.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
@@ -198,7 +198,7 @@ specificied threshold, a degraded status could be returned rather than raising a
               <div class="markdown level1 summary"><p>Create a Degraded status response. This is useful for when a health check may
 fail but the application itself is still functioning correct. E.g. There could be a
 health check checking the number of messages in a queue, if that number reaches a
-specificied threshold, a degraded status could be returned rather than raising a critical alert.</p>
+specified threshold, a degraded status could be returned rather than raising a critical alert.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
@@ -246,7 +246,7 @@ specificied threshold, a degraded status could be returned rather than raising a
               <div class="markdown level1 summary"><p>Create a Degraded status response. This is useful for when a health check may
 fail but the application itself is still functioning correct. E.g. There could be a
 health check checking the number of messages in a queue, if that number reaches a
-specificied threshold, a degraded status could be returned rather than raising a critical alert.</p>
+specified threshold, a degraded status could be returned rather than raising a critical alert.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
@@ -393,7 +393,52 @@ specificied threshold, a degraded status could be returned rather than raising a
                 <tbody>
                   <tr>
                     <td><a class="xref" href="App.Metrics.Health.HealthCheckResult.html">HealthCheckResult</a></td>
-                    <td><p>An ignored health check restul</p>
+                    <td><p>An ignored health check result</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="methods" data-uid="App.Metrics.Health.HealthCheckResult.Ignore*"></a>
+              <h4 id="methods" data-uid="App.Metrics.Health.HealthCheckResult.Ignore(System.String)">Ignore(String)</h4>
+              <div class="markdown level1 summary"><p>Ignores this health check.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static HealthCheckResult Ignore(string message)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>message</em></td>
+                    <td><p>Status message.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="App.Metrics.Health.HealthCheckResult.html">HealthCheckResult</a></td>
+                    <td><p>An ignored health check result</p>
 </td>
                   </tr>
                 </tbody>

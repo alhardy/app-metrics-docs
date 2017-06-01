@@ -69,18 +69,20 @@
             <article class="content wrap" id="_content" data-uid="">
               <h1 id="aspnet-core-middleware-prometheus-formatting">ASP.NET Core Middleware Prometheus Formatting</h1>
               
-<p>If using <a href="https://prometheus.io/">Prometheus</a> for persisting metrics, you&#39;ll find that Prometheus promotes a <em>Pull</em> rather than <em>Push</em> based model. We therefore need to have the <code>/metrics</code> endpoint return data formatted for Prometheus. Prometheus supports metric data as plain text or protobuf, App Metrics supports both of these formats.</p>
-<p>To add enable metric serilization supporting Prometheus:</p>
+<p>If using <a href="https://prometheus.io/">Prometheus</a> for persisting metrics, you&#39;ll find that Prometheus promotes a <em>Pull</em> rather than <em>Push</em> based model. We therefore need to have the <code>/metrics</code> endpoint return data formatted for Prometheus. Prometheus supports metric data as plain text or protobuf, App Metrics supports both of these formats whereby <code>/metrics-text</code> will return metrics in Prometheus plain text format and <code>/metrics</code> will return metrics in Prometheus protobuf format.</p>
+<p>To add enable metric serialization supporting Prometheus:</p>
 <ol>
 <li>Add the <a href="https://www.nuget.org/packages/App.Metrics.Formatters.Prometheus/">App.Metrics.Formatters.Prometheus</a> nuget package to your ASP.NET Core web application.</li>
-<li>Configure Protobuf serailization in your <code>Startup.cs</code></li>
+<li>Configure Protobuf &amp; Plain Text Prometheus serialization in your <code>Startup.cs</code></li>
 </ol>
-<pre><code class="lang-csharp" name="Main" highlight-lines="6">public class Startup
+<pre><code class="lang-csharp" name="Main" highlight-lines="6,7,8">public class Startup
 {
 	public void ConfigureServices(IServiceCollection services)
 	{
 		services.AddMetrics()
-			.AddPrometheusProtobufSerialization()
+			// .AddPrometheusProtobufSerialization() - Enables both plain text and protobof formats on the /metrics-text and /metrics endpoints respectively.
+			.AddPrometheusPlainTextSerialization() // Enables plain text format on the /metrics-text endpoint.
+			.AddPrometheusProtobufSerialization() // Enables protobuf format on the /metrics endpoint.
 			.AddJsonHealthSerialization()
 			.AddHealthChecks()
 			.AddMetricsMiddleware();
@@ -91,9 +93,7 @@
 		app.UseMetrics();
 	}
 }
-</code></pre><div class="NOTE"><h5>Note</h5><p>Notice the above is still using the App.Metrics.Formatters.Json package for health check serilization through <code>AddJsonHealthSerialization</code>.</p>
-</div>
-<div class="TIP"><h5>Tip</h5><p>To switch to plain text Prometheus serialization, replace <code>AddPrometheusProtobufSerialization</code> with <code>AddPrometheusPlainTextSerialization</code> in the above snippet</p>
+</code></pre><div class="NOTE"><h5>Note</h5><p>Notice the above is still using the App.Metrics.Formatters.Json package for health check serialization through <code>AddJsonHealthSerialization</code>.</p>
 </div>
 
             </article>

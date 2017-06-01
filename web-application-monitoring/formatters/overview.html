@@ -69,14 +69,20 @@
             <article class="content wrap" id="_content" data-uid="">
               <h1 id="aspnet-core-middleware-response-formatters">ASP.NET Core Middleware Response Formatters</h1>
               
-<p>App Metric&#39;s Metric Middleware supports pluggable formatters which provide the ability to serialize metric and health check data depending on your requirements. This allows the <code>Metrics</code> and <code>Health</code> endpoints <code>Content-Types</code> to be customized. </p>
+<p>App Metric&#39;s Middleware supports pluggable formatters which provide the ability to serialize metric and health check data depending on your requirements. This allows the <code>Metrics</code> and <code>Health</code> endpoints <code>Content-Types</code> to be customized.</p>
+<p>By allowing for example the <code>/metrics</code> endpoint to return metrics in a TSDB specific format, it enables a pull based collection approach rather than push via a reporter. </p>
+<p>Similar formatting options can also be used with the <code>Text File Reporter</code> if using a collection agent to flush metrics or the <code>HTTP Reporter</code> to push metrics in the required format to a custom HTTP collection endpoint.</p>
 <h2 id="available-formatters">Available Formatters</h2>
 <ul>
+<li><a href="ascii-formatter.html">ASCII</a></li>
 <li><a href="json-formatter.html">JSON</a></li>
 <li><a href="prometheus-formatter.html">Prometheus</a></li>
+<li><a href="influxdb-formatter.html">InfluxDB</a></li>
+<li><a href="elasticsearch-formatter.html">ElasticSeach</a></li>
+<li><a href="graphite-formatter.html">Graphite</a></li>
 </ul>
 <h2 id="implementing-a-custom-formatter">Implementing a Custom Formatter</h2>
-<p>Other than the custom serialization code, to wire up a custom formatter to plugin to App Metrics you just need to implement a couple of interfaces, <code>IHealthResponseWriter</code> if required, and <code>IMetricsResponseWriter</code>. </p>
+<p>Other than the custom serialization code, to wire up a custom formatter to plugin to App Metrics you just need to implement a couple of interfaces, <code>IHealthResponseWriter</code> if required, and <code>IMetricsResponseWriter</code>.</p>
 <p>As a guide, we can look at how to implement a custom JSON formatter:</p>
 <div class="NOTE"><h5>Note</h5><p>For brevity, the code snippets don&#39;t include the serialization code, just the required infrastructure code to plug the formatter into App Metrics Middleware.</p>
 </div>
@@ -146,7 +152,9 @@
 		return host;
 	}
 }
-</code></pre><h3 id="using-the-formatter">Using the Formatter</h3>
+</code></pre><div class="TIP"><h5>Tip</h5><p>Implementing a custom metrics text or environment information formatter is the same as above but instead implement the <code>IMetricsTextResponseWriter</code> or <code>IEnvironmentInfoResponseWriter</code>.</p>
+</div>
+<h3 id="using-the-formatter">Using the Formatter</h3>
 <p>Modify the application&#39;s <code>Startup.cs</code> to looking like the following:</p>
 <pre><code class="lang-csharp" name="Main">
 public class Startup

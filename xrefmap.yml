@@ -1279,6 +1279,12 @@ references:
   commentId: M:App.Metrics.Apdex.ApdexValueSourceExtensions.GetApdexValue(IProvideMetricValues,System.String,System.String)
   fullName: App.Metrics.Apdex.ApdexValueSourceExtensions.GetApdexValue(IProvideMetricValues, System.String, System.String)
   nameWithType: ApdexValueSourceExtensions.GetApdexValue(IProvideMetricValues, String, String)
+- uid: App.Metrics.Apdex.ApdexValueSourceExtensions.GetApdexValue(IProvideMetricValues,System.String,System.String,MetricTags)
+  name: GetApdexValue(IProvideMetricValues, String, String, MetricTags)
+  href: api/App.Metrics.Apdex.ApdexValueSourceExtensions.html
+  commentId: M:App.Metrics.Apdex.ApdexValueSourceExtensions.GetApdexValue(IProvideMetricValues,System.String,System.String,MetricTags)
+  fullName: App.Metrics.Apdex.ApdexValueSourceExtensions.GetApdexValue(IProvideMetricValues, System.String, System.String, MetricTags)
+  nameWithType: ApdexValueSourceExtensions.GetApdexValue(IProvideMetricValues, String, String, MetricTags)
 - uid: App.Metrics.Apdex.ApdexValueSourceExtensions.GetApdexValue*
   name: GetApdexValue
   href: api/App.Metrics.Apdex.ApdexValueSourceExtensions.html
@@ -1657,6 +1663,18 @@ references:
   commentId: T:App.Metrics.Configuration.AppMetricsOptions
   fullName: App.Metrics.Configuration.AppMetricsOptions
   nameWithType: AppMetricsOptions
+- uid: App.Metrics.Configuration.AppMetricsOptions.AddDefaultGlobalTags
+  name: AddDefaultGlobalTags
+  href: api/App.Metrics.Configuration.AppMetricsOptions.html
+  commentId: P:App.Metrics.Configuration.AppMetricsOptions.AddDefaultGlobalTags
+  fullName: App.Metrics.Configuration.AppMetricsOptions.AddDefaultGlobalTags
+  nameWithType: AppMetricsOptions.AddDefaultGlobalTags
+- uid: App.Metrics.Configuration.AppMetricsOptions.AddDefaultGlobalTags*
+  name: AddDefaultGlobalTags
+  href: api/App.Metrics.Configuration.AppMetricsOptions.html
+  commentId: Overload:App.Metrics.Configuration.AppMetricsOptions.AddDefaultGlobalTags
+  fullName: App.Metrics.Configuration.AppMetricsOptions.AddDefaultGlobalTags
+  nameWithType: AppMetricsOptions.AddDefaultGlobalTags
 - uid: App.Metrics.Configuration.AppMetricsOptions.DefaultContextLabel
   name: DefaultContextLabel
   href: api/App.Metrics.Configuration.AppMetricsOptions.html
@@ -1705,6 +1723,36 @@ references:
   commentId: Overload:App.Metrics.Configuration.AppMetricsOptions.ReportingEnabled
   fullName: App.Metrics.Configuration.AppMetricsOptions.ReportingEnabled
   nameWithType: AppMetricsOptions.ReportingEnabled
+- uid: App.Metrics.Configuration.ConfigureAppMetricsOptions
+  name: ConfigureAppMetricsOptions
+  href: api/App.Metrics.Configuration.ConfigureAppMetricsOptions.html
+  commentId: T:App.Metrics.Configuration.ConfigureAppMetricsOptions
+  fullName: App.Metrics.Configuration.ConfigureAppMetricsOptions
+  nameWithType: ConfigureAppMetricsOptions
+- uid: App.Metrics.Configuration.ConfigureAppMetricsOptions.#ctor(EnvironmentInfoProvider)
+  name: ConfigureAppMetricsOptions(EnvironmentInfoProvider)
+  href: api/App.Metrics.Configuration.ConfigureAppMetricsOptions.html
+  commentId: M:App.Metrics.Configuration.ConfigureAppMetricsOptions.#ctor(EnvironmentInfoProvider)
+  fullName: App.Metrics.Configuration.ConfigureAppMetricsOptions.ConfigureAppMetricsOptions(EnvironmentInfoProvider)
+  nameWithType: ConfigureAppMetricsOptions.ConfigureAppMetricsOptions(EnvironmentInfoProvider)
+- uid: App.Metrics.Configuration.ConfigureAppMetricsOptions.#ctor*
+  name: ConfigureAppMetricsOptions
+  href: api/App.Metrics.Configuration.ConfigureAppMetricsOptions.html
+  commentId: Overload:App.Metrics.Configuration.ConfigureAppMetricsOptions.#ctor
+  fullName: App.Metrics.Configuration.ConfigureAppMetricsOptions.ConfigureAppMetricsOptions
+  nameWithType: ConfigureAppMetricsOptions.ConfigureAppMetricsOptions
+- uid: App.Metrics.Configuration.ConfigureAppMetricsOptions.Configure(App.Metrics.Configuration.AppMetricsOptions)
+  name: Configure(AppMetricsOptions)
+  href: api/App.Metrics.Configuration.ConfigureAppMetricsOptions.html
+  commentId: M:App.Metrics.Configuration.ConfigureAppMetricsOptions.Configure(App.Metrics.Configuration.AppMetricsOptions)
+  fullName: App.Metrics.Configuration.ConfigureAppMetricsOptions.Configure(App.Metrics.Configuration.AppMetricsOptions)
+  nameWithType: ConfigureAppMetricsOptions.Configure(AppMetricsOptions)
+- uid: App.Metrics.Configuration.ConfigureAppMetricsOptions.Configure*
+  name: Configure
+  href: api/App.Metrics.Configuration.ConfigureAppMetricsOptions.html
+  commentId: Overload:App.Metrics.Configuration.ConfigureAppMetricsOptions.Configure
+  fullName: App.Metrics.Configuration.ConfigureAppMetricsOptions.Configure
+  nameWithType: ConfigureAppMetricsOptions.Configure
 - uid: App.Metrics.Core
   name: App.Metrics.Core
   href: api/App.Metrics.Core.html
@@ -3341,6 +3389,12 @@ references:
   commentId: M:App.Metrics.Counter.CounterExtensions.GetCounterValue(IProvideMetricValues,System.String,System.String)
   fullName: App.Metrics.Counter.CounterExtensions.GetCounterValue(IProvideMetricValues, System.String, System.String)
   nameWithType: CounterExtensions.GetCounterValue(IProvideMetricValues, String, String)
+- uid: App.Metrics.Counter.CounterExtensions.GetCounterValue(IProvideMetricValues,System.String,System.String,MetricTags)
+  name: GetCounterValue(IProvideMetricValues, String, String, MetricTags)
+  href: api/App.Metrics.Counter.CounterExtensions.html
+  commentId: M:App.Metrics.Counter.CounterExtensions.GetCounterValue(IProvideMetricValues,System.String,System.String,MetricTags)
+  fullName: App.Metrics.Counter.CounterExtensions.GetCounterValue(IProvideMetricValues, System.String, System.String, MetricTags)
+  nameWithType: CounterExtensions.GetCounterValue(IProvideMetricValues, String, String, MetricTags)
 - uid: App.Metrics.Counter.CounterExtensions.GetCounterValue*
   name: GetCounterValue
   href: api/App.Metrics.Counter.CounterExtensions.html
@@ -3950,6 +4004,36 @@ references:
   commentId: N:App.Metrics.Extensions.Middleware.Abstractions
   fullName: App.Metrics.Extensions.Middleware.Abstractions
   nameWithType: App.Metrics.Extensions.Middleware.Abstractions
+- uid: App.Metrics.Extensions.Middleware.Abstractions.IEnvironmentInfoResponseWriter
+  name: IEnvironmentInfoResponseWriter
+  href: api/App.Metrics.Extensions.Middleware.Abstractions.IEnvironmentInfoResponseWriter.html
+  commentId: T:App.Metrics.Extensions.Middleware.Abstractions.IEnvironmentInfoResponseWriter
+  fullName: App.Metrics.Extensions.Middleware.Abstractions.IEnvironmentInfoResponseWriter
+  nameWithType: IEnvironmentInfoResponseWriter
+- uid: App.Metrics.Extensions.Middleware.Abstractions.IEnvironmentInfoResponseWriter.ContentType
+  name: ContentType
+  href: api/App.Metrics.Extensions.Middleware.Abstractions.IEnvironmentInfoResponseWriter.html
+  commentId: P:App.Metrics.Extensions.Middleware.Abstractions.IEnvironmentInfoResponseWriter.ContentType
+  fullName: App.Metrics.Extensions.Middleware.Abstractions.IEnvironmentInfoResponseWriter.ContentType
+  nameWithType: IEnvironmentInfoResponseWriter.ContentType
+- uid: App.Metrics.Extensions.Middleware.Abstractions.IEnvironmentInfoResponseWriter.ContentType*
+  name: ContentType
+  href: api/App.Metrics.Extensions.Middleware.Abstractions.IEnvironmentInfoResponseWriter.html
+  commentId: Overload:App.Metrics.Extensions.Middleware.Abstractions.IEnvironmentInfoResponseWriter.ContentType
+  fullName: App.Metrics.Extensions.Middleware.Abstractions.IEnvironmentInfoResponseWriter.ContentType
+  nameWithType: IEnvironmentInfoResponseWriter.ContentType
+- uid: App.Metrics.Extensions.Middleware.Abstractions.IEnvironmentInfoResponseWriter.WriteAsync(HttpContext,EnvironmentInfo,CancellationToken)
+  name: WriteAsync(HttpContext, EnvironmentInfo, CancellationToken)
+  href: api/App.Metrics.Extensions.Middleware.Abstractions.IEnvironmentInfoResponseWriter.html
+  commentId: M:App.Metrics.Extensions.Middleware.Abstractions.IEnvironmentInfoResponseWriter.WriteAsync(HttpContext,EnvironmentInfo,CancellationToken)
+  fullName: App.Metrics.Extensions.Middleware.Abstractions.IEnvironmentInfoResponseWriter.WriteAsync(HttpContext, EnvironmentInfo, CancellationToken)
+  nameWithType: IEnvironmentInfoResponseWriter.WriteAsync(HttpContext, EnvironmentInfo, CancellationToken)
+- uid: App.Metrics.Extensions.Middleware.Abstractions.IEnvironmentInfoResponseWriter.WriteAsync*
+  name: WriteAsync
+  href: api/App.Metrics.Extensions.Middleware.Abstractions.IEnvironmentInfoResponseWriter.html
+  commentId: Overload:App.Metrics.Extensions.Middleware.Abstractions.IEnvironmentInfoResponseWriter.WriteAsync
+  fullName: App.Metrics.Extensions.Middleware.Abstractions.IEnvironmentInfoResponseWriter.WriteAsync
+  nameWithType: IEnvironmentInfoResponseWriter.WriteAsync
 - uid: App.Metrics.Extensions.Middleware.Abstractions.IHealthResponseWriter
   name: IHealthResponseWriter
   href: api/App.Metrics.Extensions.Middleware.Abstractions.IHealthResponseWriter.html
@@ -4010,6 +4094,36 @@ references:
   commentId: Overload:App.Metrics.Extensions.Middleware.Abstractions.IMetricsResponseWriter.WriteAsync
   fullName: App.Metrics.Extensions.Middleware.Abstractions.IMetricsResponseWriter.WriteAsync
   nameWithType: IMetricsResponseWriter.WriteAsync
+- uid: App.Metrics.Extensions.Middleware.Abstractions.IMetricsTextResponseWriter
+  name: IMetricsTextResponseWriter
+  href: api/App.Metrics.Extensions.Middleware.Abstractions.IMetricsTextResponseWriter.html
+  commentId: T:App.Metrics.Extensions.Middleware.Abstractions.IMetricsTextResponseWriter
+  fullName: App.Metrics.Extensions.Middleware.Abstractions.IMetricsTextResponseWriter
+  nameWithType: IMetricsTextResponseWriter
+- uid: App.Metrics.Extensions.Middleware.Abstractions.IMetricsTextResponseWriter.ContentType
+  name: ContentType
+  href: api/App.Metrics.Extensions.Middleware.Abstractions.IMetricsTextResponseWriter.html
+  commentId: P:App.Metrics.Extensions.Middleware.Abstractions.IMetricsTextResponseWriter.ContentType
+  fullName: App.Metrics.Extensions.Middleware.Abstractions.IMetricsTextResponseWriter.ContentType
+  nameWithType: IMetricsTextResponseWriter.ContentType
+- uid: App.Metrics.Extensions.Middleware.Abstractions.IMetricsTextResponseWriter.ContentType*
+  name: ContentType
+  href: api/App.Metrics.Extensions.Middleware.Abstractions.IMetricsTextResponseWriter.html
+  commentId: Overload:App.Metrics.Extensions.Middleware.Abstractions.IMetricsTextResponseWriter.ContentType
+  fullName: App.Metrics.Extensions.Middleware.Abstractions.IMetricsTextResponseWriter.ContentType
+  nameWithType: IMetricsTextResponseWriter.ContentType
+- uid: App.Metrics.Extensions.Middleware.Abstractions.IMetricsTextResponseWriter.WriteAsync(HttpContext,MetricsDataValueSource,CancellationToken)
+  name: WriteAsync(HttpContext, MetricsDataValueSource, CancellationToken)
+  href: api/App.Metrics.Extensions.Middleware.Abstractions.IMetricsTextResponseWriter.html
+  commentId: M:App.Metrics.Extensions.Middleware.Abstractions.IMetricsTextResponseWriter.WriteAsync(HttpContext,MetricsDataValueSource,CancellationToken)
+  fullName: App.Metrics.Extensions.Middleware.Abstractions.IMetricsTextResponseWriter.WriteAsync(HttpContext, MetricsDataValueSource, CancellationToken)
+  nameWithType: IMetricsTextResponseWriter.WriteAsync(HttpContext, MetricsDataValueSource, CancellationToken)
+- uid: App.Metrics.Extensions.Middleware.Abstractions.IMetricsTextResponseWriter.WriteAsync*
+  name: WriteAsync
+  href: api/App.Metrics.Extensions.Middleware.Abstractions.IMetricsTextResponseWriter.html
+  commentId: Overload:App.Metrics.Extensions.Middleware.Abstractions.IMetricsTextResponseWriter.WriteAsync
+  fullName: App.Metrics.Extensions.Middleware.Abstractions.IMetricsTextResponseWriter.WriteAsync
+  nameWithType: IMetricsTextResponseWriter.WriteAsync
 - uid: App.Metrics.Extensions.Middleware.ActiveRequestCounterEndpointMiddleware
   name: ActiveRequestCounterEndpointMiddleware
   href: api/App.Metrics.Extensions.Middleware.ActiveRequestCounterEndpointMiddleware.html
@@ -4283,6 +4397,30 @@ references:
   commentId: Overload:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.DefaultTrackingEnabled
   fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.DefaultTrackingEnabled
   nameWithType: AspNetMetricsOptions.DefaultTrackingEnabled
+- uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.EnvironmentInfoEndpoint
+  name: EnvironmentInfoEndpoint
+  href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.html
+  commentId: P:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.EnvironmentInfoEndpoint
+  fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.EnvironmentInfoEndpoint
+  nameWithType: AspNetMetricsOptions.EnvironmentInfoEndpoint
+- uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.EnvironmentInfoEndpoint*
+  name: EnvironmentInfoEndpoint
+  href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.html
+  commentId: Overload:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.EnvironmentInfoEndpoint
+  fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.EnvironmentInfoEndpoint
+  nameWithType: AspNetMetricsOptions.EnvironmentInfoEndpoint
+- uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.EnvironmentInfoEndpointEnabled
+  name: EnvironmentInfoEndpointEnabled
+  href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.html
+  commentId: P:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.EnvironmentInfoEndpointEnabled
+  fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.EnvironmentInfoEndpointEnabled
+  nameWithType: AspNetMetricsOptions.EnvironmentInfoEndpointEnabled
+- uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.EnvironmentInfoEndpointEnabled*
+  name: EnvironmentInfoEndpointEnabled
+  href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.html
+  commentId: Overload:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.EnvironmentInfoEndpointEnabled
+  fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.EnvironmentInfoEndpointEnabled
+  nameWithType: AspNetMetricsOptions.EnvironmentInfoEndpointEnabled
 - uid: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.HealthEndpoint
   name: HealthEndpoint
   href: api/App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.html
@@ -4415,6 +4553,36 @@ references:
   commentId: Overload:App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.PingEndpointEnabled
   fullName: App.Metrics.Extensions.Middleware.DependencyInjection.Options.AspNetMetricsOptions.PingEndpointEnabled
   nameWithType: AspNetMetricsOptions.PingEndpointEnabled
+- uid: App.Metrics.Extensions.Middleware.EnvironmentInfoMiddleware
+  name: EnvironmentInfoMiddleware
+  href: api/App.Metrics.Extensions.Middleware.EnvironmentInfoMiddleware.html
+  commentId: T:App.Metrics.Extensions.Middleware.EnvironmentInfoMiddleware
+  fullName: App.Metrics.Extensions.Middleware.EnvironmentInfoMiddleware
+  nameWithType: EnvironmentInfoMiddleware
+- uid: App.Metrics.Extensions.Middleware.EnvironmentInfoMiddleware.#ctor(RequestDelegate,AspNetMetricsOptions,ILoggerFactory,App.Metrics.IMetrics,IEnvironmentInfoResponseWriter,EnvironmentInfoProvider)
+  name: EnvironmentInfoMiddleware(RequestDelegate, AspNetMetricsOptions, ILoggerFactory, IMetrics, IEnvironmentInfoResponseWriter, EnvironmentInfoProvider)
+  href: api/App.Metrics.Extensions.Middleware.EnvironmentInfoMiddleware.html
+  commentId: M:App.Metrics.Extensions.Middleware.EnvironmentInfoMiddleware.#ctor(RequestDelegate,AspNetMetricsOptions,ILoggerFactory,App.Metrics.IMetrics,IEnvironmentInfoResponseWriter,EnvironmentInfoProvider)
+  fullName: App.Metrics.Extensions.Middleware.EnvironmentInfoMiddleware.EnvironmentInfoMiddleware(RequestDelegate, AspNetMetricsOptions, ILoggerFactory, App.Metrics.IMetrics, IEnvironmentInfoResponseWriter, EnvironmentInfoProvider)
+  nameWithType: EnvironmentInfoMiddleware.EnvironmentInfoMiddleware(RequestDelegate, AspNetMetricsOptions, ILoggerFactory, IMetrics, IEnvironmentInfoResponseWriter, EnvironmentInfoProvider)
+- uid: App.Metrics.Extensions.Middleware.EnvironmentInfoMiddleware.#ctor*
+  name: EnvironmentInfoMiddleware
+  href: api/App.Metrics.Extensions.Middleware.EnvironmentInfoMiddleware.html
+  commentId: Overload:App.Metrics.Extensions.Middleware.EnvironmentInfoMiddleware.#ctor
+  fullName: App.Metrics.Extensions.Middleware.EnvironmentInfoMiddleware.EnvironmentInfoMiddleware
+  nameWithType: EnvironmentInfoMiddleware.EnvironmentInfoMiddleware
+- uid: App.Metrics.Extensions.Middleware.EnvironmentInfoMiddleware.Invoke(HttpContext)
+  name: Invoke(HttpContext)
+  href: api/App.Metrics.Extensions.Middleware.EnvironmentInfoMiddleware.html
+  commentId: M:App.Metrics.Extensions.Middleware.EnvironmentInfoMiddleware.Invoke(HttpContext)
+  fullName: App.Metrics.Extensions.Middleware.EnvironmentInfoMiddleware.Invoke(HttpContext)
+  nameWithType: EnvironmentInfoMiddleware.Invoke(HttpContext)
+- uid: App.Metrics.Extensions.Middleware.EnvironmentInfoMiddleware.Invoke*
+  name: Invoke
+  href: api/App.Metrics.Extensions.Middleware.EnvironmentInfoMiddleware.html
+  commentId: Overload:App.Metrics.Extensions.Middleware.EnvironmentInfoMiddleware.Invoke
+  fullName: App.Metrics.Extensions.Middleware.EnvironmentInfoMiddleware.Invoke
+  nameWithType: EnvironmentInfoMiddleware.Invoke
 - uid: App.Metrics.Extensions.Middleware.ErrorRequestMeterMiddleware
   name: ErrorRequestMeterMiddleware
   href: api/App.Metrics.Extensions.Middleware.ErrorRequestMeterMiddleware.html
@@ -4511,12 +4679,12 @@ references:
   commentId: T:App.Metrics.Extensions.Middleware.MetricsEndpointTextEndpointMiddleware
   fullName: App.Metrics.Extensions.Middleware.MetricsEndpointTextEndpointMiddleware
   nameWithType: MetricsEndpointTextEndpointMiddleware
-- uid: App.Metrics.Extensions.Middleware.MetricsEndpointTextEndpointMiddleware.#ctor(RequestDelegate,AppMetricsOptions,AspNetMetricsOptions,ILoggerFactory,App.Metrics.IMetrics)
-  name: MetricsEndpointTextEndpointMiddleware(RequestDelegate, AppMetricsOptions, AspNetMetricsOptions, ILoggerFactory, IMetrics)
+- uid: App.Metrics.Extensions.Middleware.MetricsEndpointTextEndpointMiddleware.#ctor(RequestDelegate,AspNetMetricsOptions,ILoggerFactory,App.Metrics.IMetrics,IMetricsTextResponseWriter)
+  name: MetricsEndpointTextEndpointMiddleware(RequestDelegate, AspNetMetricsOptions, ILoggerFactory, IMetrics, IMetricsTextResponseWriter)
   href: api/App.Metrics.Extensions.Middleware.MetricsEndpointTextEndpointMiddleware.html
-  commentId: M:App.Metrics.Extensions.Middleware.MetricsEndpointTextEndpointMiddleware.#ctor(RequestDelegate,AppMetricsOptions,AspNetMetricsOptions,ILoggerFactory,App.Metrics.IMetrics)
-  fullName: App.Metrics.Extensions.Middleware.MetricsEndpointTextEndpointMiddleware.MetricsEndpointTextEndpointMiddleware(RequestDelegate, AppMetricsOptions, AspNetMetricsOptions, ILoggerFactory, App.Metrics.IMetrics)
-  nameWithType: MetricsEndpointTextEndpointMiddleware.MetricsEndpointTextEndpointMiddleware(RequestDelegate, AppMetricsOptions, AspNetMetricsOptions, ILoggerFactory, IMetrics)
+  commentId: M:App.Metrics.Extensions.Middleware.MetricsEndpointTextEndpointMiddleware.#ctor(RequestDelegate,AspNetMetricsOptions,ILoggerFactory,App.Metrics.IMetrics,IMetricsTextResponseWriter)
+  fullName: App.Metrics.Extensions.Middleware.MetricsEndpointTextEndpointMiddleware.MetricsEndpointTextEndpointMiddleware(RequestDelegate, AspNetMetricsOptions, ILoggerFactory, App.Metrics.IMetrics, IMetricsTextResponseWriter)
+  nameWithType: MetricsEndpointTextEndpointMiddleware.MetricsEndpointTextEndpointMiddleware(RequestDelegate, AspNetMetricsOptions, ILoggerFactory, IMetrics, IMetricsTextResponseWriter)
 - uid: App.Metrics.Extensions.Middleware.MetricsEndpointTextEndpointMiddleware.#ctor*
   name: MetricsEndpointTextEndpointMiddleware
   href: api/App.Metrics.Extensions.Middleware.MetricsEndpointTextEndpointMiddleware.html
@@ -4949,6 +5117,42 @@ references:
   commentId: N:App.Metrics.Formatters.Json.Abstractions.Serialization
   fullName: App.Metrics.Formatters.Json.Abstractions.Serialization
   nameWithType: App.Metrics.Formatters.Json.Abstractions.Serialization
+- uid: App.Metrics.Formatters.Json.Abstractions.Serialization.IEnvironmentInfoSerializer
+  name: IEnvironmentInfoSerializer
+  href: api/App.Metrics.Formatters.Json.Abstractions.Serialization.IEnvironmentInfoSerializer.html
+  commentId: T:App.Metrics.Formatters.Json.Abstractions.Serialization.IEnvironmentInfoSerializer
+  fullName: App.Metrics.Formatters.Json.Abstractions.Serialization.IEnvironmentInfoSerializer
+  nameWithType: IEnvironmentInfoSerializer
+- uid: App.Metrics.Formatters.Json.Abstractions.Serialization.IEnvironmentInfoSerializer.Deserialize*
+  name: Deserialize
+  href: api/App.Metrics.Formatters.Json.Abstractions.Serialization.IEnvironmentInfoSerializer.html
+  commentId: Overload:App.Metrics.Formatters.Json.Abstractions.Serialization.IEnvironmentInfoSerializer.Deserialize
+  fullName: App.Metrics.Formatters.Json.Abstractions.Serialization.IEnvironmentInfoSerializer.Deserialize
+  nameWithType: IEnvironmentInfoSerializer.Deserialize
+- uid: App.Metrics.Formatters.Json.Abstractions.Serialization.IEnvironmentInfoSerializer.Deserialize``1(System.String)
+  name: Deserialize<T>(String)
+  href: api/App.Metrics.Formatters.Json.Abstractions.Serialization.IEnvironmentInfoSerializer.html
+  commentId: M:App.Metrics.Formatters.Json.Abstractions.Serialization.IEnvironmentInfoSerializer.Deserialize``1(System.String)
+  name.vb: Deserialize(Of T)(String)
+  fullName: App.Metrics.Formatters.Json.Abstractions.Serialization.IEnvironmentInfoSerializer.Deserialize<T>(System.String)
+  fullName.vb: App.Metrics.Formatters.Json.Abstractions.Serialization.IEnvironmentInfoSerializer.Deserialize(Of T)(System.String)
+  nameWithType: IEnvironmentInfoSerializer.Deserialize<T>(String)
+  nameWithType.vb: IEnvironmentInfoSerializer.Deserialize(Of T)(String)
+- uid: App.Metrics.Formatters.Json.Abstractions.Serialization.IEnvironmentInfoSerializer.Serialize*
+  name: Serialize
+  href: api/App.Metrics.Formatters.Json.Abstractions.Serialization.IEnvironmentInfoSerializer.html
+  commentId: Overload:App.Metrics.Formatters.Json.Abstractions.Serialization.IEnvironmentInfoSerializer.Serialize
+  fullName: App.Metrics.Formatters.Json.Abstractions.Serialization.IEnvironmentInfoSerializer.Serialize
+  nameWithType: IEnvironmentInfoSerializer.Serialize
+- uid: App.Metrics.Formatters.Json.Abstractions.Serialization.IEnvironmentInfoSerializer.Serialize``1(``0)
+  name: Serialize<T>(T)
+  href: api/App.Metrics.Formatters.Json.Abstractions.Serialization.IEnvironmentInfoSerializer.html
+  commentId: M:App.Metrics.Formatters.Json.Abstractions.Serialization.IEnvironmentInfoSerializer.Serialize``1(``0)
+  name.vb: Serialize(Of T)(T)
+  fullName: App.Metrics.Formatters.Json.Abstractions.Serialization.IEnvironmentInfoSerializer.Serialize<T>(T)
+  fullName.vb: App.Metrics.Formatters.Json.Abstractions.Serialization.IEnvironmentInfoSerializer.Serialize(Of T)(T)
+  nameWithType: IEnvironmentInfoSerializer.Serialize<T>(T)
+  nameWithType.vb: IEnvironmentInfoSerializer.Serialize(Of T)(T)
 - uid: App.Metrics.Formatters.Json.Abstractions.Serialization.IHealthStatusSerializer
   name: IHealthStatusSerializer
   href: api/App.Metrics.Formatters.Json.Abstractions.Serialization.IHealthStatusSerializer.html
@@ -5834,6 +6038,48 @@ references:
   commentId: Overload:App.Metrics.Formatters.Json.HistogramMetric.Sum
   fullName: App.Metrics.Formatters.Json.HistogramMetric.Sum
   nameWithType: HistogramMetric.Sum
+- uid: App.Metrics.Formatters.Json.JsonEnvironmentInfoResponseWriter
+  name: JsonEnvironmentInfoResponseWriter
+  href: api/App.Metrics.Formatters.Json.JsonEnvironmentInfoResponseWriter.html
+  commentId: T:App.Metrics.Formatters.Json.JsonEnvironmentInfoResponseWriter
+  fullName: App.Metrics.Formatters.Json.JsonEnvironmentInfoResponseWriter
+  nameWithType: JsonEnvironmentInfoResponseWriter
+- uid: App.Metrics.Formatters.Json.JsonEnvironmentInfoResponseWriter.#ctor(IEnvironmentInfoSerializer)
+  name: JsonEnvironmentInfoResponseWriter(IEnvironmentInfoSerializer)
+  href: api/App.Metrics.Formatters.Json.JsonEnvironmentInfoResponseWriter.html
+  commentId: M:App.Metrics.Formatters.Json.JsonEnvironmentInfoResponseWriter.#ctor(IEnvironmentInfoSerializer)
+  fullName: App.Metrics.Formatters.Json.JsonEnvironmentInfoResponseWriter.JsonEnvironmentInfoResponseWriter(IEnvironmentInfoSerializer)
+  nameWithType: JsonEnvironmentInfoResponseWriter.JsonEnvironmentInfoResponseWriter(IEnvironmentInfoSerializer)
+- uid: App.Metrics.Formatters.Json.JsonEnvironmentInfoResponseWriter.#ctor*
+  name: JsonEnvironmentInfoResponseWriter
+  href: api/App.Metrics.Formatters.Json.JsonEnvironmentInfoResponseWriter.html
+  commentId: Overload:App.Metrics.Formatters.Json.JsonEnvironmentInfoResponseWriter.#ctor
+  fullName: App.Metrics.Formatters.Json.JsonEnvironmentInfoResponseWriter.JsonEnvironmentInfoResponseWriter
+  nameWithType: JsonEnvironmentInfoResponseWriter.JsonEnvironmentInfoResponseWriter
+- uid: App.Metrics.Formatters.Json.JsonEnvironmentInfoResponseWriter.ContentType
+  name: ContentType
+  href: api/App.Metrics.Formatters.Json.JsonEnvironmentInfoResponseWriter.html
+  commentId: P:App.Metrics.Formatters.Json.JsonEnvironmentInfoResponseWriter.ContentType
+  fullName: App.Metrics.Formatters.Json.JsonEnvironmentInfoResponseWriter.ContentType
+  nameWithType: JsonEnvironmentInfoResponseWriter.ContentType
+- uid: App.Metrics.Formatters.Json.JsonEnvironmentInfoResponseWriter.ContentType*
+  name: ContentType
+  href: api/App.Metrics.Formatters.Json.JsonEnvironmentInfoResponseWriter.html
+  commentId: Overload:App.Metrics.Formatters.Json.JsonEnvironmentInfoResponseWriter.ContentType
+  fullName: App.Metrics.Formatters.Json.JsonEnvironmentInfoResponseWriter.ContentType
+  nameWithType: JsonEnvironmentInfoResponseWriter.ContentType
+- uid: App.Metrics.Formatters.Json.JsonEnvironmentInfoResponseWriter.WriteAsync(HttpContext,EnvironmentInfo,CancellationToken)
+  name: WriteAsync(HttpContext, EnvironmentInfo, CancellationToken)
+  href: api/App.Metrics.Formatters.Json.JsonEnvironmentInfoResponseWriter.html
+  commentId: M:App.Metrics.Formatters.Json.JsonEnvironmentInfoResponseWriter.WriteAsync(HttpContext,EnvironmentInfo,CancellationToken)
+  fullName: App.Metrics.Formatters.Json.JsonEnvironmentInfoResponseWriter.WriteAsync(HttpContext, EnvironmentInfo, CancellationToken)
+  nameWithType: JsonEnvironmentInfoResponseWriter.WriteAsync(HttpContext, EnvironmentInfo, CancellationToken)
+- uid: App.Metrics.Formatters.Json.JsonEnvironmentInfoResponseWriter.WriteAsync*
+  name: WriteAsync
+  href: api/App.Metrics.Formatters.Json.JsonEnvironmentInfoResponseWriter.html
+  commentId: Overload:App.Metrics.Formatters.Json.JsonEnvironmentInfoResponseWriter.WriteAsync
+  fullName: App.Metrics.Formatters.Json.JsonEnvironmentInfoResponseWriter.WriteAsync
+  nameWithType: JsonEnvironmentInfoResponseWriter.WriteAsync
 - uid: App.Metrics.Formatters.Json.JsonHealthResponseWriter
   name: JsonHealthResponseWriter
   href: api/App.Metrics.Formatters.Json.JsonHealthResponseWriter.html
@@ -5918,6 +6164,48 @@ references:
   commentId: Overload:App.Metrics.Formatters.Json.JsonMetricsResponseWriter.WriteAsync
   fullName: App.Metrics.Formatters.Json.JsonMetricsResponseWriter.WriteAsync
   nameWithType: JsonMetricsResponseWriter.WriteAsync
+- uid: App.Metrics.Formatters.Json.JsonMetricsTextResponseWriter
+  name: JsonMetricsTextResponseWriter
+  href: api/App.Metrics.Formatters.Json.JsonMetricsTextResponseWriter.html
+  commentId: T:App.Metrics.Formatters.Json.JsonMetricsTextResponseWriter
+  fullName: App.Metrics.Formatters.Json.JsonMetricsTextResponseWriter
+  nameWithType: JsonMetricsTextResponseWriter
+- uid: App.Metrics.Formatters.Json.JsonMetricsTextResponseWriter.#ctor(IMetricDataSerializer)
+  name: JsonMetricsTextResponseWriter(IMetricDataSerializer)
+  href: api/App.Metrics.Formatters.Json.JsonMetricsTextResponseWriter.html
+  commentId: M:App.Metrics.Formatters.Json.JsonMetricsTextResponseWriter.#ctor(IMetricDataSerializer)
+  fullName: App.Metrics.Formatters.Json.JsonMetricsTextResponseWriter.JsonMetricsTextResponseWriter(IMetricDataSerializer)
+  nameWithType: JsonMetricsTextResponseWriter.JsonMetricsTextResponseWriter(IMetricDataSerializer)
+- uid: App.Metrics.Formatters.Json.JsonMetricsTextResponseWriter.#ctor*
+  name: JsonMetricsTextResponseWriter
+  href: api/App.Metrics.Formatters.Json.JsonMetricsTextResponseWriter.html
+  commentId: Overload:App.Metrics.Formatters.Json.JsonMetricsTextResponseWriter.#ctor
+  fullName: App.Metrics.Formatters.Json.JsonMetricsTextResponseWriter.JsonMetricsTextResponseWriter
+  nameWithType: JsonMetricsTextResponseWriter.JsonMetricsTextResponseWriter
+- uid: App.Metrics.Formatters.Json.JsonMetricsTextResponseWriter.ContentType
+  name: ContentType
+  href: api/App.Metrics.Formatters.Json.JsonMetricsTextResponseWriter.html
+  commentId: P:App.Metrics.Formatters.Json.JsonMetricsTextResponseWriter.ContentType
+  fullName: App.Metrics.Formatters.Json.JsonMetricsTextResponseWriter.ContentType
+  nameWithType: JsonMetricsTextResponseWriter.ContentType
+- uid: App.Metrics.Formatters.Json.JsonMetricsTextResponseWriter.ContentType*
+  name: ContentType
+  href: api/App.Metrics.Formatters.Json.JsonMetricsTextResponseWriter.html
+  commentId: Overload:App.Metrics.Formatters.Json.JsonMetricsTextResponseWriter.ContentType
+  fullName: App.Metrics.Formatters.Json.JsonMetricsTextResponseWriter.ContentType
+  nameWithType: JsonMetricsTextResponseWriter.ContentType
+- uid: App.Metrics.Formatters.Json.JsonMetricsTextResponseWriter.WriteAsync(HttpContext,MetricsDataValueSource,CancellationToken)
+  name: WriteAsync(HttpContext, MetricsDataValueSource, CancellationToken)
+  href: api/App.Metrics.Formatters.Json.JsonMetricsTextResponseWriter.html
+  commentId: M:App.Metrics.Formatters.Json.JsonMetricsTextResponseWriter.WriteAsync(HttpContext,MetricsDataValueSource,CancellationToken)
+  fullName: App.Metrics.Formatters.Json.JsonMetricsTextResponseWriter.WriteAsync(HttpContext, MetricsDataValueSource, CancellationToken)
+  nameWithType: JsonMetricsTextResponseWriter.WriteAsync(HttpContext, MetricsDataValueSource, CancellationToken)
+- uid: App.Metrics.Formatters.Json.JsonMetricsTextResponseWriter.WriteAsync*
+  name: WriteAsync
+  href: api/App.Metrics.Formatters.Json.JsonMetricsTextResponseWriter.html
+  commentId: Overload:App.Metrics.Formatters.Json.JsonMetricsTextResponseWriter.WriteAsync
+  fullName: App.Metrics.Formatters.Json.JsonMetricsTextResponseWriter.WriteAsync
+  nameWithType: JsonMetricsTextResponseWriter.WriteAsync
 - uid: App.Metrics.Formatters.Json.MeterMetric
   name: MeterMetric
   href: api/App.Metrics.Formatters.Json.MeterMetric.html
@@ -6326,6 +6614,12 @@ references:
   commentId: M:App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.#ctor
   fullName: App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.EnvironmentInfoSerializer()
   nameWithType: EnvironmentInfoSerializer.EnvironmentInfoSerializer()
+- uid: App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.#ctor(JsonSerializerSettings)
+  name: EnvironmentInfoSerializer(JsonSerializerSettings)
+  href: api/App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.html
+  commentId: M:App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.#ctor(JsonSerializerSettings)
+  fullName: App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.EnvironmentInfoSerializer(JsonSerializerSettings)
+  nameWithType: EnvironmentInfoSerializer.EnvironmentInfoSerializer(JsonSerializerSettings)
 - uid: App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.#ctor*
   name: EnvironmentInfoSerializer
   href: api/App.Metrics.Formatters.Json.Serialization.EnvironmentInfoSerializer.html
@@ -6830,6 +7124,456 @@ references:
   commentId: Overload:App.Metrics.Formatters.Json.TimerMetric.RateUnit
   fullName: App.Metrics.Formatters.Json.TimerMetric.RateUnit
   nameWithType: TimerMetric.RateUnit
+- uid: App.Metrics.Formatting
+  name: App.Metrics.Formatting
+  href: api/App.Metrics.Formatting.html
+  commentId: N:App.Metrics.Formatting
+  fullName: App.Metrics.Formatting
+  nameWithType: App.Metrics.Formatting
+- uid: App.Metrics.Formatting.Ascii
+  name: App.Metrics.Formatting.Ascii
+  href: api/App.Metrics.Formatting.Ascii.html
+  commentId: N:App.Metrics.Formatting.Ascii
+  fullName: App.Metrics.Formatting.Ascii
+  nameWithType: App.Metrics.Formatting.Ascii
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthCheckResult
+  name: AsciiHealthCheckResult
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.html
+  commentId: T:App.Metrics.Formatting.Ascii.AsciiHealthCheckResult
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthCheckResult
+  nameWithType: AsciiHealthCheckResult
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.#ctor(System.String,System.String,HealthCheckStatus)
+  name: AsciiHealthCheckResult(String, String, HealthCheckStatus)
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.html
+  commentId: M:App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.#ctor(System.String,System.String,HealthCheckStatus)
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.AsciiHealthCheckResult(System.String, System.String, HealthCheckStatus)
+  nameWithType: AsciiHealthCheckResult.AsciiHealthCheckResult(String, String, HealthCheckStatus)
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.#ctor*
+  name: AsciiHealthCheckResult
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.#ctor
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.AsciiHealthCheckResult
+  nameWithType: AsciiHealthCheckResult.AsciiHealthCheckResult
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.Format(TextWriter)
+  name: Format(TextWriter)
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.html
+  commentId: M:App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.Format(TextWriter)
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.Format(TextWriter)
+  nameWithType: AsciiHealthCheckResult.Format(TextWriter)
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.Format*
+  name: Format
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.Format
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.Format
+  nameWithType: AsciiHealthCheckResult.Format
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.Message
+  name: Message
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.html
+  commentId: P:App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.Message
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.Message
+  nameWithType: AsciiHealthCheckResult.Message
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.Message*
+  name: Message
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.Message
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.Message
+  nameWithType: AsciiHealthCheckResult.Message
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.Name
+  name: Name
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.html
+  commentId: P:App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.Name
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.Name
+  nameWithType: AsciiHealthCheckResult.Name
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.Name*
+  name: Name
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.Name
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.Name
+  nameWithType: AsciiHealthCheckResult.Name
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.Status
+  name: Status
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.html
+  commentId: P:App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.Status
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.Status
+  nameWithType: AsciiHealthCheckResult.Status
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.Status*
+  name: Status
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.Status
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthCheckResult.Status
+  nameWithType: AsciiHealthCheckResult.Status
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayload
+  name: AsciiHealthStatusPayload
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthStatusPayload.html
+  commentId: T:App.Metrics.Formatting.Ascii.AsciiHealthStatusPayload
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayload
+  nameWithType: AsciiHealthStatusPayload
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayload.Add(App.Metrics.Formatting.Ascii.AsciiHealthCheckResult)
+  name: Add(AsciiHealthCheckResult)
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthStatusPayload.html
+  commentId: M:App.Metrics.Formatting.Ascii.AsciiHealthStatusPayload.Add(App.Metrics.Formatting.Ascii.AsciiHealthCheckResult)
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayload.Add(App.Metrics.Formatting.Ascii.AsciiHealthCheckResult)
+  nameWithType: AsciiHealthStatusPayload.Add(AsciiHealthCheckResult)
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayload.Add*
+  name: Add
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthStatusPayload.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiHealthStatusPayload.Add
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayload.Add
+  nameWithType: AsciiHealthStatusPayload.Add
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayload.Format(TextWriter)
+  name: Format(TextWriter)
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthStatusPayload.html
+  commentId: M:App.Metrics.Formatting.Ascii.AsciiHealthStatusPayload.Format(TextWriter)
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayload.Format(TextWriter)
+  nameWithType: AsciiHealthStatusPayload.Format(TextWriter)
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayload.Format*
+  name: Format
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthStatusPayload.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiHealthStatusPayload.Format
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayload.Format
+  nameWithType: AsciiHealthStatusPayload.Format
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder
+  name: AsciiHealthStatusPayloadBuilder
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.html
+  commentId: T:App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder
+  nameWithType: AsciiHealthStatusPayloadBuilder
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.#ctor
+  name: AsciiHealthStatusPayloadBuilder()
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.html
+  commentId: M:App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.#ctor
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.AsciiHealthStatusPayloadBuilder()
+  nameWithType: AsciiHealthStatusPayloadBuilder.AsciiHealthStatusPayloadBuilder()
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.#ctor*
+  name: AsciiHealthStatusPayloadBuilder
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.#ctor
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.AsciiHealthStatusPayloadBuilder
+  nameWithType: AsciiHealthStatusPayloadBuilder.AsciiHealthStatusPayloadBuilder
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.Clear
+  name: Clear()
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.html
+  commentId: M:App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.Clear
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.Clear()
+  nameWithType: AsciiHealthStatusPayloadBuilder.Clear()
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.Clear*
+  name: Clear
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.Clear
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.Clear
+  nameWithType: AsciiHealthStatusPayloadBuilder.Clear
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.Init
+  name: Init()
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.html
+  commentId: M:App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.Init
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.Init()
+  nameWithType: AsciiHealthStatusPayloadBuilder.Init()
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.Init*
+  name: Init
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.Init
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.Init
+  nameWithType: AsciiHealthStatusPayloadBuilder.Init
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.Pack(System.String,System.String,HealthCheckStatus)
+  name: Pack(String, String, HealthCheckStatus)
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.html
+  commentId: M:App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.Pack(System.String,System.String,HealthCheckStatus)
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.Pack(System.String, System.String, HealthCheckStatus)
+  nameWithType: AsciiHealthStatusPayloadBuilder.Pack(String, String, HealthCheckStatus)
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.Pack*
+  name: Pack
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.Pack
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.Pack
+  nameWithType: AsciiHealthStatusPayloadBuilder.Pack
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.Payload
+  name: Payload()
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.html
+  commentId: M:App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.Payload
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.Payload()
+  nameWithType: AsciiHealthStatusPayloadBuilder.Payload()
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.Payload*
+  name: Payload
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.Payload
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.Payload
+  nameWithType: AsciiHealthStatusPayloadBuilder.Payload
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.PayloadFormatted
+  name: PayloadFormatted()
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.html
+  commentId: M:App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.PayloadFormatted
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.PayloadFormatted()
+  nameWithType: AsciiHealthStatusPayloadBuilder.PayloadFormatted()
+- uid: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.PayloadFormatted*
+  name: PayloadFormatted
+  href: api/App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.PayloadFormatted
+  fullName: App.Metrics.Formatting.Ascii.AsciiHealthStatusPayloadBuilder.PayloadFormatted
+  nameWithType: AsciiHealthStatusPayloadBuilder.PayloadFormatted
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPayload
+  name: AsciiMetricPayload
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPayload.html
+  commentId: T:App.Metrics.Formatting.Ascii.AsciiMetricPayload
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPayload
+  nameWithType: AsciiMetricPayload
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPayload.Add(App.Metrics.Formatting.Ascii.AsciiMetricPoint)
+  name: Add(AsciiMetricPoint)
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPayload.html
+  commentId: M:App.Metrics.Formatting.Ascii.AsciiMetricPayload.Add(App.Metrics.Formatting.Ascii.AsciiMetricPoint)
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPayload.Add(App.Metrics.Formatting.Ascii.AsciiMetricPoint)
+  nameWithType: AsciiMetricPayload.Add(AsciiMetricPoint)
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPayload.Add*
+  name: Add
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPayload.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiMetricPayload.Add
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPayload.Add
+  nameWithType: AsciiMetricPayload.Add
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPayload.Format(TextWriter)
+  name: Format(TextWriter)
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPayload.html
+  commentId: M:App.Metrics.Formatting.Ascii.AsciiMetricPayload.Format(TextWriter)
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPayload.Format(TextWriter)
+  nameWithType: AsciiMetricPayload.Format(TextWriter)
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPayload.Format*
+  name: Format
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPayload.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiMetricPayload.Format
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPayload.Format
+  nameWithType: AsciiMetricPayload.Format
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder
+  name: AsciiMetricPayloadBuilder
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.html
+  commentId: T:App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder
+  nameWithType: AsciiMetricPayloadBuilder
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.#ctor(System.Func{System.String,System.String,System.String},MetricValueDataKeys)
+  name: AsciiMetricPayloadBuilder(Func<String, String, String>, MetricValueDataKeys)
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.html
+  commentId: M:App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.#ctor(System.Func{System.String,System.String,System.String},MetricValueDataKeys)
+  name.vb: AsciiMetricPayloadBuilder(Func(Of String, String, String), MetricValueDataKeys)
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.AsciiMetricPayloadBuilder(System.Func<System.String, System.String, System.String>, MetricValueDataKeys)
+  fullName.vb: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.AsciiMetricPayloadBuilder(System.Func(Of System.String, System.String, System.String), MetricValueDataKeys)
+  nameWithType: AsciiMetricPayloadBuilder.AsciiMetricPayloadBuilder(Func<String, String, String>, MetricValueDataKeys)
+  nameWithType.vb: AsciiMetricPayloadBuilder.AsciiMetricPayloadBuilder(Func(Of String, String, String), MetricValueDataKeys)
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.#ctor*
+  name: AsciiMetricPayloadBuilder
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.#ctor
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.AsciiMetricPayloadBuilder
+  nameWithType: AsciiMetricPayloadBuilder.AsciiMetricPayloadBuilder
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.Clear
+  name: Clear()
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.html
+  commentId: M:App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.Clear
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.Clear()
+  nameWithType: AsciiMetricPayloadBuilder.Clear()
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.Clear*
+  name: Clear
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.Clear
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.Clear
+  nameWithType: AsciiMetricPayloadBuilder.Clear
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.DataKeys
+  name: DataKeys
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.html
+  commentId: P:App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.DataKeys
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.DataKeys
+  nameWithType: AsciiMetricPayloadBuilder.DataKeys
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.DataKeys*
+  name: DataKeys
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.DataKeys
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.DataKeys
+  nameWithType: AsciiMetricPayloadBuilder.DataKeys
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.Init
+  name: Init()
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.html
+  commentId: M:App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.Init
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.Init()
+  nameWithType: AsciiMetricPayloadBuilder.Init()
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.Init*
+  name: Init
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.Init
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.Init
+  nameWithType: AsciiMetricPayloadBuilder.Init
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.Pack(System.String,System.String,IEnumerable{System.String},IEnumerable{System.Object},MetricTags)
+  name: Pack(String, String, IEnumerable<String>, IEnumerable<Object>, MetricTags)
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.html
+  commentId: M:App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.Pack(System.String,System.String,IEnumerable{System.String},IEnumerable{System.Object},MetricTags)
+  name.vb: Pack(String, String, IEnumerable(Of String), IEnumerable(Of Object), MetricTags)
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.Pack(System.String, System.String, IEnumerable<System.String>, IEnumerable<System.Object>, MetricTags)
+  fullName.vb: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.Pack(System.String, System.String, IEnumerable(Of System.String), IEnumerable(Of System.Object), MetricTags)
+  nameWithType: AsciiMetricPayloadBuilder.Pack(String, String, IEnumerable<String>, IEnumerable<Object>, MetricTags)
+  nameWithType.vb: AsciiMetricPayloadBuilder.Pack(String, String, IEnumerable(Of String), IEnumerable(Of Object), MetricTags)
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.Pack(System.String,System.String,System.Object,MetricTags)
+  name: Pack(String, String, Object, MetricTags)
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.html
+  commentId: M:App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.Pack(System.String,System.String,System.Object,MetricTags)
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.Pack(System.String, System.String, System.Object, MetricTags)
+  nameWithType: AsciiMetricPayloadBuilder.Pack(String, String, Object, MetricTags)
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.Pack*
+  name: Pack
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.Pack
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.Pack
+  nameWithType: AsciiMetricPayloadBuilder.Pack
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.Payload
+  name: Payload()
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.html
+  commentId: M:App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.Payload
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.Payload()
+  nameWithType: AsciiMetricPayloadBuilder.Payload()
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.Payload*
+  name: Payload
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.Payload
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.Payload
+  nameWithType: AsciiMetricPayloadBuilder.Payload
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.PayloadFormatted
+  name: PayloadFormatted()
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.html
+  commentId: M:App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.PayloadFormatted
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.PayloadFormatted()
+  nameWithType: AsciiMetricPayloadBuilder.PayloadFormatted()
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.PayloadFormatted*
+  name: PayloadFormatted
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.PayloadFormatted
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPayloadBuilder.PayloadFormatted
+  nameWithType: AsciiMetricPayloadBuilder.PayloadFormatted
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPoint
+  name: AsciiMetricPoint
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPoint.html
+  commentId: T:App.Metrics.Formatting.Ascii.AsciiMetricPoint
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPoint
+  nameWithType: AsciiMetricPoint
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPoint.#ctor(System.String,IReadOnlyDictionary{System.String,System.Object},MetricTags)
+  name: AsciiMetricPoint(String, IReadOnlyDictionary<String, Object>, MetricTags)
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPoint.html
+  commentId: M:App.Metrics.Formatting.Ascii.AsciiMetricPoint.#ctor(System.String,IReadOnlyDictionary{System.String,System.Object},MetricTags)
+  name.vb: AsciiMetricPoint(String, IReadOnlyDictionary(Of String, Object), MetricTags)
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPoint.AsciiMetricPoint(System.String, IReadOnlyDictionary<System.String, System.Object>, MetricTags)
+  fullName.vb: App.Metrics.Formatting.Ascii.AsciiMetricPoint.AsciiMetricPoint(System.String, IReadOnlyDictionary(Of System.String, System.Object), MetricTags)
+  nameWithType: AsciiMetricPoint.AsciiMetricPoint(String, IReadOnlyDictionary<String, Object>, MetricTags)
+  nameWithType.vb: AsciiMetricPoint.AsciiMetricPoint(String, IReadOnlyDictionary(Of String, Object), MetricTags)
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPoint.#ctor*
+  name: AsciiMetricPoint
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPoint.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiMetricPoint.#ctor
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPoint.AsciiMetricPoint
+  nameWithType: AsciiMetricPoint.AsciiMetricPoint
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPoint.Fields
+  name: Fields
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPoint.html
+  commentId: P:App.Metrics.Formatting.Ascii.AsciiMetricPoint.Fields
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPoint.Fields
+  nameWithType: AsciiMetricPoint.Fields
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPoint.Fields*
+  name: Fields
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPoint.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiMetricPoint.Fields
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPoint.Fields
+  nameWithType: AsciiMetricPoint.Fields
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPoint.Format(TextWriter)
+  name: Format(TextWriter)
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPoint.html
+  commentId: M:App.Metrics.Formatting.Ascii.AsciiMetricPoint.Format(TextWriter)
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPoint.Format(TextWriter)
+  nameWithType: AsciiMetricPoint.Format(TextWriter)
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPoint.Format*
+  name: Format
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPoint.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiMetricPoint.Format
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPoint.Format
+  nameWithType: AsciiMetricPoint.Format
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPoint.Measurement
+  name: Measurement
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPoint.html
+  commentId: P:App.Metrics.Formatting.Ascii.AsciiMetricPoint.Measurement
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPoint.Measurement
+  nameWithType: AsciiMetricPoint.Measurement
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPoint.Measurement*
+  name: Measurement
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPoint.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiMetricPoint.Measurement
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPoint.Measurement
+  nameWithType: AsciiMetricPoint.Measurement
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPoint.Tags
+  name: Tags
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPoint.html
+  commentId: P:App.Metrics.Formatting.Ascii.AsciiMetricPoint.Tags
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPoint.Tags
+  nameWithType: AsciiMetricPoint.Tags
+- uid: App.Metrics.Formatting.Ascii.AsciiMetricPoint.Tags*
+  name: Tags
+  href: api/App.Metrics.Formatting.Ascii.AsciiMetricPoint.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiMetricPoint.Tags
+  fullName: App.Metrics.Formatting.Ascii.AsciiMetricPoint.Tags
+  nameWithType: AsciiMetricPoint.Tags
+- uid: App.Metrics.Formatting.Ascii.AsciiSyntax
+  name: AsciiSyntax
+  href: api/App.Metrics.Formatting.Ascii.AsciiSyntax.html
+  commentId: T:App.Metrics.Formatting.Ascii.AsciiSyntax
+  fullName: App.Metrics.Formatting.Ascii.AsciiSyntax
+  nameWithType: AsciiSyntax
+- uid: App.Metrics.Formatting.Ascii.AsciiSyntax.FormatReadable(System.String,System.String,System.String)
+  name: FormatReadable(String, String, String)
+  href: api/App.Metrics.Formatting.Ascii.AsciiSyntax.html
+  commentId: M:App.Metrics.Formatting.Ascii.AsciiSyntax.FormatReadable(System.String,System.String,System.String)
+  fullName: App.Metrics.Formatting.Ascii.AsciiSyntax.FormatReadable(System.String, System.String, System.String)
+  nameWithType: AsciiSyntax.FormatReadable(String, String, String)
+- uid: App.Metrics.Formatting.Ascii.AsciiSyntax.FormatReadable*
+  name: FormatReadable
+  href: api/App.Metrics.Formatting.Ascii.AsciiSyntax.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiSyntax.FormatReadable
+  fullName: App.Metrics.Formatting.Ascii.AsciiSyntax.FormatReadable
+  nameWithType: AsciiSyntax.FormatReadable
+- uid: App.Metrics.Formatting.Ascii.AsciiSyntax.FormatTimestamp(System.DateTime)
+  name: FormatTimestamp(DateTime)
+  href: api/App.Metrics.Formatting.Ascii.AsciiSyntax.html
+  commentId: M:App.Metrics.Formatting.Ascii.AsciiSyntax.FormatTimestamp(System.DateTime)
+  fullName: App.Metrics.Formatting.Ascii.AsciiSyntax.FormatTimestamp(System.DateTime)
+  nameWithType: AsciiSyntax.FormatTimestamp(DateTime)
+- uid: App.Metrics.Formatting.Ascii.AsciiSyntax.FormatTimestamp*
+  name: FormatTimestamp
+  href: api/App.Metrics.Formatting.Ascii.AsciiSyntax.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiSyntax.FormatTimestamp
+  fullName: App.Metrics.Formatting.Ascii.AsciiSyntax.FormatTimestamp
+  nameWithType: AsciiSyntax.FormatTimestamp
+- uid: App.Metrics.Formatting.Ascii.AsciiSyntax.FormatValue(System.Object)
+  name: FormatValue(Object)
+  href: api/App.Metrics.Formatting.Ascii.AsciiSyntax.html
+  commentId: M:App.Metrics.Formatting.Ascii.AsciiSyntax.FormatValue(System.Object)
+  fullName: App.Metrics.Formatting.Ascii.AsciiSyntax.FormatValue(System.Object)
+  nameWithType: AsciiSyntax.FormatValue(Object)
+- uid: App.Metrics.Formatting.Ascii.AsciiSyntax.FormatValue*
+  name: FormatValue
+  href: api/App.Metrics.Formatting.Ascii.AsciiSyntax.html
+  commentId: Overload:App.Metrics.Formatting.Ascii.AsciiSyntax.FormatValue
+  fullName: App.Metrics.Formatting.Ascii.AsciiSyntax.FormatValue
+  nameWithType: AsciiSyntax.FormatValue
+- uid: App.Metrics.Formatting.HealthStatusPayloadFormatter
+  name: HealthStatusPayloadFormatter
+  href: api/App.Metrics.Formatting.HealthStatusPayloadFormatter.html
+  commentId: T:App.Metrics.Formatting.HealthStatusPayloadFormatter
+  fullName: App.Metrics.Formatting.HealthStatusPayloadFormatter
+  nameWithType: HealthStatusPayloadFormatter
+- uid: App.Metrics.Formatting.HealthStatusPayloadFormatter.Build*
+  name: Build
+  href: api/App.Metrics.Formatting.HealthStatusPayloadFormatter.html
+  commentId: Overload:App.Metrics.Formatting.HealthStatusPayloadFormatter.Build
+  fullName: App.Metrics.Formatting.HealthStatusPayloadFormatter.Build
+  nameWithType: HealthStatusPayloadFormatter.Build
+- uid: App.Metrics.Formatting.HealthStatusPayloadFormatter.Build``1(HealthStatus,IHealthStatusPayloadBuilder{``0})
+  name: Build<TPayload>(HealthStatus, IHealthStatusPayloadBuilder<TPayload>)
+  href: api/App.Metrics.Formatting.HealthStatusPayloadFormatter.html
+  commentId: M:App.Metrics.Formatting.HealthStatusPayloadFormatter.Build``1(HealthStatus,IHealthStatusPayloadBuilder{``0})
+  name.vb: Build(Of TPayload)(HealthStatus, IHealthStatusPayloadBuilder(Of TPayload))
+  fullName: App.Metrics.Formatting.HealthStatusPayloadFormatter.Build<TPayload>(HealthStatus, IHealthStatusPayloadBuilder<TPayload>)
+  fullName.vb: App.Metrics.Formatting.HealthStatusPayloadFormatter.Build(Of TPayload)(HealthStatus, IHealthStatusPayloadBuilder(Of TPayload))
+  nameWithType: HealthStatusPayloadFormatter.Build<TPayload>(HealthStatus, IHealthStatusPayloadBuilder<TPayload>)
+  nameWithType.vb: HealthStatusPayloadFormatter.Build(Of TPayload)(HealthStatus, IHealthStatusPayloadBuilder(Of TPayload))
 - uid: App.Metrics.Formatting.Humanize
   name: App.Metrics.Formatting.Humanize
   href: api/App.Metrics.Formatting.Humanize.html
@@ -7221,6 +7965,18 @@ references:
   commentId: Overload:App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteHealthStatus
   fullName: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteHealthStatus
   nameWithType: HumanizingMetricsStringBuilderExtensions.WriteHealthStatus
+- uid: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteIgnoredHealthChecksHeader(StringBuilder)
+  name: WriteIgnoredHealthChecksHeader(StringBuilder)
+  href: api/App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.html
+  commentId: M:App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteIgnoredHealthChecksHeader(StringBuilder)
+  fullName: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteIgnoredHealthChecksHeader(StringBuilder)
+  nameWithType: HumanizingMetricsStringBuilderExtensions.WriteIgnoredHealthChecksHeader(StringBuilder)
+- uid: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteIgnoredHealthChecksHeader*
+  name: WriteIgnoredHealthChecksHeader
+  href: api/App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.html
+  commentId: Overload:App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteIgnoredHealthChecksHeader
+  fullName: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteIgnoredHealthChecksHeader
+  nameWithType: HumanizingMetricsStringBuilderExtensions.WriteIgnoredHealthChecksHeader
 - uid: App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.WriteMetricEndReport(StringBuilder,System.String,System.String)
   name: WriteMetricEndReport(StringBuilder, String, String)
   href: api/App.Metrics.Formatting.Humanize.HumanizingMetricsStringBuilderExtensions.html
@@ -7317,6 +8073,27 @@ references:
   commentId: Overload:App.Metrics.Formatting.Humanize.MetricValueStringExtensions.FormatReadableMetricValue
   fullName: App.Metrics.Formatting.Humanize.MetricValueStringExtensions.FormatReadableMetricValue
   nameWithType: MetricValueStringExtensions.FormatReadableMetricValue
+- uid: App.Metrics.Formatting.MetricDataValueSourceFormatter
+  name: MetricDataValueSourceFormatter
+  href: api/App.Metrics.Formatting.MetricDataValueSourceFormatter.html
+  commentId: T:App.Metrics.Formatting.MetricDataValueSourceFormatter
+  fullName: App.Metrics.Formatting.MetricDataValueSourceFormatter
+  nameWithType: MetricDataValueSourceFormatter
+- uid: App.Metrics.Formatting.MetricDataValueSourceFormatter.Build*
+  name: Build
+  href: api/App.Metrics.Formatting.MetricDataValueSourceFormatter.html
+  commentId: Overload:App.Metrics.Formatting.MetricDataValueSourceFormatter.Build
+  fullName: App.Metrics.Formatting.MetricDataValueSourceFormatter.Build
+  nameWithType: MetricDataValueSourceFormatter.Build
+- uid: App.Metrics.Formatting.MetricDataValueSourceFormatter.Build``1(MetricsDataValueSource,IMetricPayloadBuilder{``0})
+  name: Build<TPayload>(MetricsDataValueSource, IMetricPayloadBuilder<TPayload>)
+  href: api/App.Metrics.Formatting.MetricDataValueSourceFormatter.html
+  commentId: M:App.Metrics.Formatting.MetricDataValueSourceFormatter.Build``1(MetricsDataValueSource,IMetricPayloadBuilder{``0})
+  name.vb: Build(Of TPayload)(MetricsDataValueSource, IMetricPayloadBuilder(Of TPayload))
+  fullName: App.Metrics.Formatting.MetricDataValueSourceFormatter.Build<TPayload>(MetricsDataValueSource, IMetricPayloadBuilder<TPayload>)
+  fullName.vb: App.Metrics.Formatting.MetricDataValueSourceFormatter.Build(Of TPayload)(MetricsDataValueSource, IMetricPayloadBuilder(Of TPayload))
+  nameWithType: MetricDataValueSourceFormatter.Build<TPayload>(MetricsDataValueSource, IMetricPayloadBuilder<TPayload>)
+  nameWithType.vb: MetricDataValueSourceFormatter.Build(Of TPayload)(MetricsDataValueSource, IMetricPayloadBuilder(Of TPayload))
 - uid: App.Metrics.Gauge
   name: App.Metrics.Gauge
   href: api/App.Metrics.Gauge.html
@@ -7743,6 +8520,12 @@ references:
   commentId: M:App.Metrics.Gauge.GaugeExtensions.GetGaugeValue(IProvideMetricValues,System.String,System.String)
   fullName: App.Metrics.Gauge.GaugeExtensions.GetGaugeValue(IProvideMetricValues, System.String, System.String)
   nameWithType: GaugeExtensions.GetGaugeValue(IProvideMetricValues, String, String)
+- uid: App.Metrics.Gauge.GaugeExtensions.GetGaugeValue(IProvideMetricValues,System.String,System.String,MetricTags)
+  name: GetGaugeValue(IProvideMetricValues, String, String, MetricTags)
+  href: api/App.Metrics.Gauge.GaugeExtensions.html
+  commentId: M:App.Metrics.Gauge.GaugeExtensions.GetGaugeValue(IProvideMetricValues,System.String,System.String,MetricTags)
+  fullName: App.Metrics.Gauge.GaugeExtensions.GetGaugeValue(IProvideMetricValues, System.String, System.String, MetricTags)
+  nameWithType: GaugeExtensions.GetGaugeValue(IProvideMetricValues, String, String, MetricTags)
 - uid: App.Metrics.Gauge.GaugeExtensions.GetGaugeValue*
   name: GetGaugeValue
   href: api/App.Metrics.Gauge.GaugeExtensions.html
@@ -8028,6 +8811,18 @@ references:
   commentId: Overload:App.Metrics.Health.Abstractions.IHealthCheckFactory.Checks
   fullName: App.Metrics.Health.Abstractions.IHealthCheckFactory.Checks
   nameWithType: IHealthCheckFactory.Checks
+- uid: App.Metrics.Health.Abstractions.IHealthCheckFactory.Metrics
+  name: Metrics
+  href: api/App.Metrics.Health.Abstractions.IHealthCheckFactory.html
+  commentId: P:App.Metrics.Health.Abstractions.IHealthCheckFactory.Metrics
+  fullName: App.Metrics.Health.Abstractions.IHealthCheckFactory.Metrics
+  nameWithType: IHealthCheckFactory.Metrics
+- uid: App.Metrics.Health.Abstractions.IHealthCheckFactory.Metrics*
+  name: Metrics
+  href: api/App.Metrics.Health.Abstractions.IHealthCheckFactory.html
+  commentId: Overload:App.Metrics.Health.Abstractions.IHealthCheckFactory.Metrics
+  fullName: App.Metrics.Health.Abstractions.IHealthCheckFactory.Metrics
+  nameWithType: IHealthCheckFactory.Metrics
 - uid: App.Metrics.Health.Abstractions.IHealthCheckFactory.Register(System.String,System.Func{Task{App.Metrics.Health.HealthCheckResult}})
   name: Register(String, Func<Task<HealthCheckResult>>)
   href: api/App.Metrics.Health.Abstractions.IHealthCheckFactory.html
@@ -8268,6 +9063,12 @@ references:
   commentId: M:App.Metrics.Health.HealthCheckResult.Ignore
   fullName: App.Metrics.Health.HealthCheckResult.Ignore()
   nameWithType: HealthCheckResult.Ignore()
+- uid: App.Metrics.Health.HealthCheckResult.Ignore(System.String)
+  name: Ignore(String)
+  href: api/App.Metrics.Health.HealthCheckResult.html
+  commentId: M:App.Metrics.Health.HealthCheckResult.Ignore(System.String)
+  fullName: App.Metrics.Health.HealthCheckResult.Ignore(System.String)
+  nameWithType: HealthCheckResult.Ignore(String)
 - uid: App.Metrics.Health.HealthCheckResult.Ignore*
   name: Ignore
   href: api/App.Metrics.Health.HealthCheckResult.html
@@ -8490,6 +9291,18 @@ references:
   commentId: Overload:App.Metrics.Health.HealthStatusData.Healthy
   fullName: App.Metrics.Health.HealthStatusData.Healthy
   nameWithType: HealthStatusData.Healthy
+- uid: App.Metrics.Health.HealthStatusData.Ignored
+  name: Ignored
+  href: api/App.Metrics.Health.HealthStatusData.html
+  commentId: P:App.Metrics.Health.HealthStatusData.Ignored
+  fullName: App.Metrics.Health.HealthStatusData.Ignored
+  nameWithType: HealthStatusData.Ignored
+- uid: App.Metrics.Health.HealthStatusData.Ignored*
+  name: Ignored
+  href: api/App.Metrics.Health.HealthStatusData.html
+  commentId: Overload:App.Metrics.Health.HealthStatusData.Ignored
+  fullName: App.Metrics.Health.HealthStatusData.Ignored
+  nameWithType: HealthStatusData.Ignored
 - uid: App.Metrics.Health.HealthStatusData.Status
   name: Status
   href: api/App.Metrics.Health.HealthStatusData.html
@@ -8916,6 +9729,12 @@ references:
   commentId: M:App.Metrics.Histogram.HistogramExtensions.GetHistogramValue(IProvideMetricValues,System.String,System.String)
   fullName: App.Metrics.Histogram.HistogramExtensions.GetHistogramValue(IProvideMetricValues, System.String, System.String)
   nameWithType: HistogramExtensions.GetHistogramValue(IProvideMetricValues, String, String)
+- uid: App.Metrics.Histogram.HistogramExtensions.GetHistogramValue(IProvideMetricValues,System.String,System.String,MetricTags)
+  name: GetHistogramValue(IProvideMetricValues, String, String, MetricTags)
+  href: api/App.Metrics.Histogram.HistogramExtensions.html
+  commentId: M:App.Metrics.Histogram.HistogramExtensions.GetHistogramValue(IProvideMetricValues,System.String,System.String,MetricTags)
+  fullName: App.Metrics.Histogram.HistogramExtensions.GetHistogramValue(IProvideMetricValues, System.String, System.String, MetricTags)
+  nameWithType: HistogramExtensions.GetHistogramValue(IProvideMetricValues, String, String, MetricTags)
 - uid: App.Metrics.Histogram.HistogramExtensions.GetHistogramValue*
   name: GetHistogramValue
   href: api/App.Metrics.Histogram.HistogramExtensions.html
@@ -10752,6 +11571,42 @@ references:
   commentId: Overload:App.Metrics.Meter.Extensions.MeterExtensions.GetValueOrDefault
   fullName: App.Metrics.Meter.Extensions.MeterExtensions.GetValueOrDefault
   nameWithType: MeterExtensions.GetValueOrDefault
+- uid: App.Metrics.Meter.MeterExtensions
+  name: MeterExtensions
+  href: api/App.Metrics.Meter.MeterExtensions.html
+  commentId: T:App.Metrics.Meter.MeterExtensions
+  fullName: App.Metrics.Meter.MeterExtensions
+  nameWithType: MeterExtensions
+- uid: App.Metrics.Meter.MeterExtensions.GetMeterValue(IProvideMetricValues,System.String,System.String)
+  name: GetMeterValue(IProvideMetricValues, String, String)
+  href: api/App.Metrics.Meter.MeterExtensions.html
+  commentId: M:App.Metrics.Meter.MeterExtensions.GetMeterValue(IProvideMetricValues,System.String,System.String)
+  fullName: App.Metrics.Meter.MeterExtensions.GetMeterValue(IProvideMetricValues, System.String, System.String)
+  nameWithType: MeterExtensions.GetMeterValue(IProvideMetricValues, String, String)
+- uid: App.Metrics.Meter.MeterExtensions.GetMeterValue(IProvideMetricValues,System.String,System.String,MetricTags)
+  name: GetMeterValue(IProvideMetricValues, String, String, MetricTags)
+  href: api/App.Metrics.Meter.MeterExtensions.html
+  commentId: M:App.Metrics.Meter.MeterExtensions.GetMeterValue(IProvideMetricValues,System.String,System.String,MetricTags)
+  fullName: App.Metrics.Meter.MeterExtensions.GetMeterValue(IProvideMetricValues, System.String, System.String, MetricTags)
+  nameWithType: MeterExtensions.GetMeterValue(IProvideMetricValues, String, String, MetricTags)
+- uid: App.Metrics.Meter.MeterExtensions.GetMeterValue*
+  name: GetMeterValue
+  href: api/App.Metrics.Meter.MeterExtensions.html
+  commentId: Overload:App.Metrics.Meter.MeterExtensions.GetMeterValue
+  fullName: App.Metrics.Meter.MeterExtensions.GetMeterValue
+  nameWithType: MeterExtensions.GetMeterValue
+- uid: App.Metrics.Meter.MeterExtensions.GetValueOrDefault(IMeter)
+  name: GetValueOrDefault(IMeter)
+  href: api/App.Metrics.Meter.MeterExtensions.html
+  commentId: M:App.Metrics.Meter.MeterExtensions.GetValueOrDefault(IMeter)
+  fullName: App.Metrics.Meter.MeterExtensions.GetValueOrDefault(IMeter)
+  nameWithType: MeterExtensions.GetValueOrDefault(IMeter)
+- uid: App.Metrics.Meter.MeterExtensions.GetValueOrDefault*
+  name: GetValueOrDefault
+  href: api/App.Metrics.Meter.MeterExtensions.html
+  commentId: Overload:App.Metrics.Meter.MeterExtensions.GetValueOrDefault
+  fullName: App.Metrics.Meter.MeterExtensions.GetValueOrDefault
+  nameWithType: MeterExtensions.GetValueOrDefault
 - uid: App.Metrics.Meter.MeterValue
   name: MeterValue
   href: api/App.Metrics.Meter.MeterValue.html
@@ -11130,6 +11985,126 @@ references:
   commentId: Overload:App.Metrics.Meter.SimpleMeter.Tick
   fullName: App.Metrics.Meter.SimpleMeter.Tick
   nameWithType: SimpleMeter.Tick
+- uid: App.Metrics.MetricHealthCheckFactoryExtensions
+  name: MetricHealthCheckFactoryExtensions
+  href: api/App.Metrics.MetricHealthCheckFactoryExtensions.html
+  commentId: T:App.Metrics.MetricHealthCheckFactoryExtensions
+  fullName: App.Metrics.MetricHealthCheckFactoryExtensions
+  nameWithType: MetricHealthCheckFactoryExtensions
+- uid: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory,System.String,ApdexOptions,MetricTags,System.Func{ApdexValue,System.},System.Func{ApdexValue,System.},System.Func{ApdexValue,System.})
+  name: RegisterMetricCheck(IHealthCheckFactory, String, ApdexOptions, MetricTags, Func<ApdexValue, >, Func<ApdexValue, >, Func<ApdexValue, >)
+  href: api/App.Metrics.MetricHealthCheckFactoryExtensions.html
+  commentId: M:App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory,System.String,ApdexOptions,MetricTags,System.Func{ApdexValue,System.},System.Func{ApdexValue,System.},System.Func{ApdexValue,System.})
+  name.vb: RegisterMetricCheck(IHealthCheckFactory, String, ApdexOptions, MetricTags, Func(Of ApdexValue, ), Func(Of ApdexValue, ), Func(Of ApdexValue, ))
+  fullName: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, System.String, ApdexOptions, MetricTags, System.Func<ApdexValue, System.>, System.Func<ApdexValue, System.>, System.Func<ApdexValue, System.>)
+  fullName.vb: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, System.String, ApdexOptions, MetricTags, System.Func(Of ApdexValue, System.), System.Func(Of ApdexValue, System.), System.Func(Of ApdexValue, System.))
+  nameWithType: MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, String, ApdexOptions, MetricTags, Func<ApdexValue, >, Func<ApdexValue, >, Func<ApdexValue, >)
+  nameWithType.vb: MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, String, ApdexOptions, MetricTags, Func(Of ApdexValue, ), Func(Of ApdexValue, ), Func(Of ApdexValue, ))
+- uid: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory,System.String,ApdexOptions,System.Func{ApdexValue,System.},System.Func{ApdexValue,System.},System.Func{ApdexValue,System.})
+  name: RegisterMetricCheck(IHealthCheckFactory, String, ApdexOptions, Func<ApdexValue, >, Func<ApdexValue, >, Func<ApdexValue, >)
+  href: api/App.Metrics.MetricHealthCheckFactoryExtensions.html
+  commentId: M:App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory,System.String,ApdexOptions,System.Func{ApdexValue,System.},System.Func{ApdexValue,System.},System.Func{ApdexValue,System.})
+  name.vb: RegisterMetricCheck(IHealthCheckFactory, String, ApdexOptions, Func(Of ApdexValue, ), Func(Of ApdexValue, ), Func(Of ApdexValue, ))
+  fullName: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, System.String, ApdexOptions, System.Func<ApdexValue, System.>, System.Func<ApdexValue, System.>, System.Func<ApdexValue, System.>)
+  fullName.vb: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, System.String, ApdexOptions, System.Func(Of ApdexValue, System.), System.Func(Of ApdexValue, System.), System.Func(Of ApdexValue, System.))
+  nameWithType: MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, String, ApdexOptions, Func<ApdexValue, >, Func<ApdexValue, >, Func<ApdexValue, >)
+  nameWithType.vb: MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, String, ApdexOptions, Func(Of ApdexValue, ), Func(Of ApdexValue, ), Func(Of ApdexValue, ))
+- uid: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory,System.String,CounterOptions,MetricTags,System.Func{CounterValue,System.},System.Func{CounterValue,System.},System.Func{CounterValue,System.})
+  name: RegisterMetricCheck(IHealthCheckFactory, String, CounterOptions, MetricTags, Func<CounterValue, >, Func<CounterValue, >, Func<CounterValue, >)
+  href: api/App.Metrics.MetricHealthCheckFactoryExtensions.html
+  commentId: M:App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory,System.String,CounterOptions,MetricTags,System.Func{CounterValue,System.},System.Func{CounterValue,System.},System.Func{CounterValue,System.})
+  name.vb: RegisterMetricCheck(IHealthCheckFactory, String, CounterOptions, MetricTags, Func(Of CounterValue, ), Func(Of CounterValue, ), Func(Of CounterValue, ))
+  fullName: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, System.String, CounterOptions, MetricTags, System.Func<CounterValue, System.>, System.Func<CounterValue, System.>, System.Func<CounterValue, System.>)
+  fullName.vb: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, System.String, CounterOptions, MetricTags, System.Func(Of CounterValue, System.), System.Func(Of CounterValue, System.), System.Func(Of CounterValue, System.))
+  nameWithType: MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, String, CounterOptions, MetricTags, Func<CounterValue, >, Func<CounterValue, >, Func<CounterValue, >)
+  nameWithType.vb: MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, String, CounterOptions, MetricTags, Func(Of CounterValue, ), Func(Of CounterValue, ), Func(Of CounterValue, ))
+- uid: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory,System.String,CounterOptions,System.Func{CounterValue,System.},System.Func{CounterValue,System.},System.Func{CounterValue,System.})
+  name: RegisterMetricCheck(IHealthCheckFactory, String, CounterOptions, Func<CounterValue, >, Func<CounterValue, >, Func<CounterValue, >)
+  href: api/App.Metrics.MetricHealthCheckFactoryExtensions.html
+  commentId: M:App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory,System.String,CounterOptions,System.Func{CounterValue,System.},System.Func{CounterValue,System.},System.Func{CounterValue,System.})
+  name.vb: RegisterMetricCheck(IHealthCheckFactory, String, CounterOptions, Func(Of CounterValue, ), Func(Of CounterValue, ), Func(Of CounterValue, ))
+  fullName: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, System.String, CounterOptions, System.Func<CounterValue, System.>, System.Func<CounterValue, System.>, System.Func<CounterValue, System.>)
+  fullName.vb: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, System.String, CounterOptions, System.Func(Of CounterValue, System.), System.Func(Of CounterValue, System.), System.Func(Of CounterValue, System.))
+  nameWithType: MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, String, CounterOptions, Func<CounterValue, >, Func<CounterValue, >, Func<CounterValue, >)
+  nameWithType.vb: MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, String, CounterOptions, Func(Of CounterValue, ), Func(Of CounterValue, ), Func(Of CounterValue, ))
+- uid: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory,System.String,GaugeOptions,MetricTags,System.Func{System.Double,System.},System.Func{System.Double,System.},System.Func{System.Double,System.})
+  name: RegisterMetricCheck(IHealthCheckFactory, String, GaugeOptions, MetricTags, Func<Double, >, Func<Double, >, Func<Double, >)
+  href: api/App.Metrics.MetricHealthCheckFactoryExtensions.html
+  commentId: M:App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory,System.String,GaugeOptions,MetricTags,System.Func{System.Double,System.},System.Func{System.Double,System.},System.Func{System.Double,System.})
+  name.vb: RegisterMetricCheck(IHealthCheckFactory, String, GaugeOptions, MetricTags, Func(Of Double, ), Func(Of Double, ), Func(Of Double, ))
+  fullName: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, System.String, GaugeOptions, MetricTags, System.Func<System.Double, System.>, System.Func<System.Double, System.>, System.Func<System.Double, System.>)
+  fullName.vb: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, System.String, GaugeOptions, MetricTags, System.Func(Of System.Double, System.), System.Func(Of System.Double, System.), System.Func(Of System.Double, System.))
+  nameWithType: MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, String, GaugeOptions, MetricTags, Func<Double, >, Func<Double, >, Func<Double, >)
+  nameWithType.vb: MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, String, GaugeOptions, MetricTags, Func(Of Double, ), Func(Of Double, ), Func(Of Double, ))
+- uid: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory,System.String,GaugeOptions,System.Func{System.Double,System.},System.Func{System.Double,System.},System.Func{System.Double,System.})
+  name: RegisterMetricCheck(IHealthCheckFactory, String, GaugeOptions, Func<Double, >, Func<Double, >, Func<Double, >)
+  href: api/App.Metrics.MetricHealthCheckFactoryExtensions.html
+  commentId: M:App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory,System.String,GaugeOptions,System.Func{System.Double,System.},System.Func{System.Double,System.},System.Func{System.Double,System.})
+  name.vb: RegisterMetricCheck(IHealthCheckFactory, String, GaugeOptions, Func(Of Double, ), Func(Of Double, ), Func(Of Double, ))
+  fullName: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, System.String, GaugeOptions, System.Func<System.Double, System.>, System.Func<System.Double, System.>, System.Func<System.Double, System.>)
+  fullName.vb: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, System.String, GaugeOptions, System.Func(Of System.Double, System.), System.Func(Of System.Double, System.), System.Func(Of System.Double, System.))
+  nameWithType: MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, String, GaugeOptions, Func<Double, >, Func<Double, >, Func<Double, >)
+  nameWithType.vb: MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, String, GaugeOptions, Func(Of Double, ), Func(Of Double, ), Func(Of Double, ))
+- uid: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory,System.String,HistogramOptions,MetricTags,System.Func{HistogramValue,System.},System.Func{HistogramValue,System.},System.Func{HistogramValue,System.})
+  name: RegisterMetricCheck(IHealthCheckFactory, String, HistogramOptions, MetricTags, Func<HistogramValue, >, Func<HistogramValue, >, Func<HistogramValue, >)
+  href: api/App.Metrics.MetricHealthCheckFactoryExtensions.html
+  commentId: M:App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory,System.String,HistogramOptions,MetricTags,System.Func{HistogramValue,System.},System.Func{HistogramValue,System.},System.Func{HistogramValue,System.})
+  name.vb: RegisterMetricCheck(IHealthCheckFactory, String, HistogramOptions, MetricTags, Func(Of HistogramValue, ), Func(Of HistogramValue, ), Func(Of HistogramValue, ))
+  fullName: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, System.String, HistogramOptions, MetricTags, System.Func<HistogramValue, System.>, System.Func<HistogramValue, System.>, System.Func<HistogramValue, System.>)
+  fullName.vb: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, System.String, HistogramOptions, MetricTags, System.Func(Of HistogramValue, System.), System.Func(Of HistogramValue, System.), System.Func(Of HistogramValue, System.))
+  nameWithType: MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, String, HistogramOptions, MetricTags, Func<HistogramValue, >, Func<HistogramValue, >, Func<HistogramValue, >)
+  nameWithType.vb: MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, String, HistogramOptions, MetricTags, Func(Of HistogramValue, ), Func(Of HistogramValue, ), Func(Of HistogramValue, ))
+- uid: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory,System.String,HistogramOptions,System.Func{HistogramValue,System.},System.Func{HistogramValue,System.},System.Func{HistogramValue,System.})
+  name: RegisterMetricCheck(IHealthCheckFactory, String, HistogramOptions, Func<HistogramValue, >, Func<HistogramValue, >, Func<HistogramValue, >)
+  href: api/App.Metrics.MetricHealthCheckFactoryExtensions.html
+  commentId: M:App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory,System.String,HistogramOptions,System.Func{HistogramValue,System.},System.Func{HistogramValue,System.},System.Func{HistogramValue,System.})
+  name.vb: RegisterMetricCheck(IHealthCheckFactory, String, HistogramOptions, Func(Of HistogramValue, ), Func(Of HistogramValue, ), Func(Of HistogramValue, ))
+  fullName: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, System.String, HistogramOptions, System.Func<HistogramValue, System.>, System.Func<HistogramValue, System.>, System.Func<HistogramValue, System.>)
+  fullName.vb: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, System.String, HistogramOptions, System.Func(Of HistogramValue, System.), System.Func(Of HistogramValue, System.), System.Func(Of HistogramValue, System.))
+  nameWithType: MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, String, HistogramOptions, Func<HistogramValue, >, Func<HistogramValue, >, Func<HistogramValue, >)
+  nameWithType.vb: MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, String, HistogramOptions, Func(Of HistogramValue, ), Func(Of HistogramValue, ), Func(Of HistogramValue, ))
+- uid: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory,System.String,MeterOptions,MetricTags,System.Func{MeterValue,System.},System.Func{MeterValue,System.},System.Func{MeterValue,System.})
+  name: RegisterMetricCheck(IHealthCheckFactory, String, MeterOptions, MetricTags, Func<MeterValue, >, Func<MeterValue, >, Func<MeterValue, >)
+  href: api/App.Metrics.MetricHealthCheckFactoryExtensions.html
+  commentId: M:App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory,System.String,MeterOptions,MetricTags,System.Func{MeterValue,System.},System.Func{MeterValue,System.},System.Func{MeterValue,System.})
+  name.vb: RegisterMetricCheck(IHealthCheckFactory, String, MeterOptions, MetricTags, Func(Of MeterValue, ), Func(Of MeterValue, ), Func(Of MeterValue, ))
+  fullName: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, System.String, MeterOptions, MetricTags, System.Func<MeterValue, System.>, System.Func<MeterValue, System.>, System.Func<MeterValue, System.>)
+  fullName.vb: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, System.String, MeterOptions, MetricTags, System.Func(Of MeterValue, System.), System.Func(Of MeterValue, System.), System.Func(Of MeterValue, System.))
+  nameWithType: MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, String, MeterOptions, MetricTags, Func<MeterValue, >, Func<MeterValue, >, Func<MeterValue, >)
+  nameWithType.vb: MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, String, MeterOptions, MetricTags, Func(Of MeterValue, ), Func(Of MeterValue, ), Func(Of MeterValue, ))
+- uid: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory,System.String,MeterOptions,System.Func{MeterValue,System.},System.Func{MeterValue,System.},System.Func{MeterValue,System.})
+  name: RegisterMetricCheck(IHealthCheckFactory, String, MeterOptions, Func<MeterValue, >, Func<MeterValue, >, Func<MeterValue, >)
+  href: api/App.Metrics.MetricHealthCheckFactoryExtensions.html
+  commentId: M:App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory,System.String,MeterOptions,System.Func{MeterValue,System.},System.Func{MeterValue,System.},System.Func{MeterValue,System.})
+  name.vb: RegisterMetricCheck(IHealthCheckFactory, String, MeterOptions, Func(Of MeterValue, ), Func(Of MeterValue, ), Func(Of MeterValue, ))
+  fullName: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, System.String, MeterOptions, System.Func<MeterValue, System.>, System.Func<MeterValue, System.>, System.Func<MeterValue, System.>)
+  fullName.vb: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, System.String, MeterOptions, System.Func(Of MeterValue, System.), System.Func(Of MeterValue, System.), System.Func(Of MeterValue, System.))
+  nameWithType: MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, String, MeterOptions, Func<MeterValue, >, Func<MeterValue, >, Func<MeterValue, >)
+  nameWithType.vb: MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, String, MeterOptions, Func(Of MeterValue, ), Func(Of MeterValue, ), Func(Of MeterValue, ))
+- uid: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory,System.String,TimerOptions,MetricTags,System.Func{TimerValue,System.},System.Func{TimerValue,System.},System.Func{TimerValue,System.})
+  name: RegisterMetricCheck(IHealthCheckFactory, String, TimerOptions, MetricTags, Func<TimerValue, >, Func<TimerValue, >, Func<TimerValue, >)
+  href: api/App.Metrics.MetricHealthCheckFactoryExtensions.html
+  commentId: M:App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory,System.String,TimerOptions,MetricTags,System.Func{TimerValue,System.},System.Func{TimerValue,System.},System.Func{TimerValue,System.})
+  name.vb: RegisterMetricCheck(IHealthCheckFactory, String, TimerOptions, MetricTags, Func(Of TimerValue, ), Func(Of TimerValue, ), Func(Of TimerValue, ))
+  fullName: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, System.String, TimerOptions, MetricTags, System.Func<TimerValue, System.>, System.Func<TimerValue, System.>, System.Func<TimerValue, System.>)
+  fullName.vb: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, System.String, TimerOptions, MetricTags, System.Func(Of TimerValue, System.), System.Func(Of TimerValue, System.), System.Func(Of TimerValue, System.))
+  nameWithType: MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, String, TimerOptions, MetricTags, Func<TimerValue, >, Func<TimerValue, >, Func<TimerValue, >)
+  nameWithType.vb: MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, String, TimerOptions, MetricTags, Func(Of TimerValue, ), Func(Of TimerValue, ), Func(Of TimerValue, ))
+- uid: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory,System.String,TimerOptions,System.Func{TimerValue,System.},System.Func{TimerValue,System.},System.Func{TimerValue,System.})
+  name: RegisterMetricCheck(IHealthCheckFactory, String, TimerOptions, Func<TimerValue, >, Func<TimerValue, >, Func<TimerValue, >)
+  href: api/App.Metrics.MetricHealthCheckFactoryExtensions.html
+  commentId: M:App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory,System.String,TimerOptions,System.Func{TimerValue,System.},System.Func{TimerValue,System.},System.Func{TimerValue,System.})
+  name.vb: RegisterMetricCheck(IHealthCheckFactory, String, TimerOptions, Func(Of TimerValue, ), Func(Of TimerValue, ), Func(Of TimerValue, ))
+  fullName: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, System.String, TimerOptions, System.Func<TimerValue, System.>, System.Func<TimerValue, System.>, System.Func<TimerValue, System.>)
+  fullName.vb: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, System.String, TimerOptions, System.Func(Of TimerValue, System.), System.Func(Of TimerValue, System.), System.Func(Of TimerValue, System.))
+  nameWithType: MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, String, TimerOptions, Func<TimerValue, >, Func<TimerValue, >, Func<TimerValue, >)
+  nameWithType.vb: MetricHealthCheckFactoryExtensions.RegisterMetricCheck(IHealthCheckFactory, String, TimerOptions, Func(Of TimerValue, ), Func(Of TimerValue, ), Func(Of TimerValue, ))
+- uid: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck*
+  name: RegisterMetricCheck
+  href: api/App.Metrics.MetricHealthCheckFactoryExtensions.html
+  commentId: Overload:App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck
+  fullName: App.Metrics.MetricHealthCheckFactoryExtensions.RegisterMetricCheck
+  nameWithType: MetricHealthCheckFactoryExtensions.RegisterMetricCheck
 - uid: App.Metrics.MetricType
   name: MetricType
   href: api/App.Metrics.MetricType.html
@@ -11652,6 +12627,95 @@ references:
   commentId: N:App.Metrics.Reporting.Abstractions
   fullName: App.Metrics.Reporting.Abstractions
   nameWithType: App.Metrics.Reporting.Abstractions
+- uid: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder`1
+  name: IHealthStatusPayloadBuilder<T>
+  href: api/App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder-1.html
+  commentId: T:App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder`1
+  name.vb: IHealthStatusPayloadBuilder(Of T)
+  fullName: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder<T>
+  fullName.vb: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder(Of T)
+  nameWithType: IHealthStatusPayloadBuilder<T>
+  nameWithType.vb: IHealthStatusPayloadBuilder(Of T)
+- uid: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder`1.Clear
+  name: Clear()
+  href: api/App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder-1.html
+  commentId: M:App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder`1.Clear
+  fullName: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder<T>.Clear()
+  fullName.vb: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder(Of T).Clear()
+  nameWithType: IHealthStatusPayloadBuilder<T>.Clear()
+  nameWithType.vb: IHealthStatusPayloadBuilder(Of T).Clear()
+- uid: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder`1.Clear*
+  name: Clear
+  href: api/App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder-1.html
+  commentId: Overload:App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder`1.Clear
+  fullName: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder<T>.Clear
+  fullName.vb: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder(Of T).Clear
+  nameWithType: IHealthStatusPayloadBuilder<T>.Clear
+  nameWithType.vb: IHealthStatusPayloadBuilder(Of T).Clear
+- uid: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder`1.Init
+  name: Init()
+  href: api/App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder-1.html
+  commentId: M:App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder`1.Init
+  fullName: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder<T>.Init()
+  fullName.vb: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder(Of T).Init()
+  nameWithType: IHealthStatusPayloadBuilder<T>.Init()
+  nameWithType.vb: IHealthStatusPayloadBuilder(Of T).Init()
+- uid: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder`1.Init*
+  name: Init
+  href: api/App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder-1.html
+  commentId: Overload:App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder`1.Init
+  fullName: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder<T>.Init
+  fullName.vb: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder(Of T).Init
+  nameWithType: IHealthStatusPayloadBuilder<T>.Init
+  nameWithType.vb: IHealthStatusPayloadBuilder(Of T).Init
+- uid: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder`1.Pack(System.String,System.String,HealthCheckStatus)
+  name: Pack(String, String, HealthCheckStatus)
+  href: api/App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder-1.html
+  commentId: M:App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder`1.Pack(System.String,System.String,HealthCheckStatus)
+  fullName: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder<T>.Pack(System.String, System.String, HealthCheckStatus)
+  fullName.vb: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder(Of T).Pack(System.String, System.String, HealthCheckStatus)
+  nameWithType: IHealthStatusPayloadBuilder<T>.Pack(String, String, HealthCheckStatus)
+  nameWithType.vb: IHealthStatusPayloadBuilder(Of T).Pack(String, String, HealthCheckStatus)
+- uid: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder`1.Pack*
+  name: Pack
+  href: api/App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder-1.html
+  commentId: Overload:App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder`1.Pack
+  fullName: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder<T>.Pack
+  fullName.vb: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder(Of T).Pack
+  nameWithType: IHealthStatusPayloadBuilder<T>.Pack
+  nameWithType.vb: IHealthStatusPayloadBuilder(Of T).Pack
+- uid: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder`1.Payload
+  name: Payload()
+  href: api/App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder-1.html
+  commentId: M:App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder`1.Payload
+  fullName: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder<T>.Payload()
+  fullName.vb: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder(Of T).Payload()
+  nameWithType: IHealthStatusPayloadBuilder<T>.Payload()
+  nameWithType.vb: IHealthStatusPayloadBuilder(Of T).Payload()
+- uid: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder`1.Payload*
+  name: Payload
+  href: api/App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder-1.html
+  commentId: Overload:App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder`1.Payload
+  fullName: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder<T>.Payload
+  fullName.vb: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder(Of T).Payload
+  nameWithType: IHealthStatusPayloadBuilder<T>.Payload
+  nameWithType.vb: IHealthStatusPayloadBuilder(Of T).Payload
+- uid: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder`1.PayloadFormatted
+  name: PayloadFormatted()
+  href: api/App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder-1.html
+  commentId: M:App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder`1.PayloadFormatted
+  fullName: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder<T>.PayloadFormatted()
+  fullName.vb: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder(Of T).PayloadFormatted()
+  nameWithType: IHealthStatusPayloadBuilder<T>.PayloadFormatted()
+  nameWithType.vb: IHealthStatusPayloadBuilder(Of T).PayloadFormatted()
+- uid: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder`1.PayloadFormatted*
+  name: PayloadFormatted
+  href: api/App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder-1.html
+  commentId: Overload:App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder`1.PayloadFormatted
+  fullName: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder<T>.PayloadFormatted
+  fullName.vb: App.Metrics.Reporting.Abstractions.IHealthStatusPayloadBuilder(Of T).PayloadFormatted
+  nameWithType: IHealthStatusPayloadBuilder<T>.PayloadFormatted
+  nameWithType.vb: IHealthStatusPayloadBuilder(Of T).PayloadFormatted
 - uid: App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder`1
   name: IMetricPayloadBuilder<T>
   href: api/App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder-1.html
@@ -11677,6 +12741,22 @@ references:
   fullName.vb: App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder(Of T).Clear
   nameWithType: IMetricPayloadBuilder<T>.Clear
   nameWithType.vb: IMetricPayloadBuilder(Of T).Clear
+- uid: App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder`1.DataKeys
+  name: DataKeys
+  href: api/App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder-1.html
+  commentId: P:App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder`1.DataKeys
+  fullName: App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder<T>.DataKeys
+  fullName.vb: App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder(Of T).DataKeys
+  nameWithType: IMetricPayloadBuilder<T>.DataKeys
+  nameWithType.vb: IMetricPayloadBuilder(Of T).DataKeys
+- uid: App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder`1.DataKeys*
+  name: DataKeys
+  href: api/App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder-1.html
+  commentId: Overload:App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder`1.DataKeys
+  fullName: App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder<T>.DataKeys
+  fullName.vb: App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder(Of T).DataKeys
+  nameWithType: IMetricPayloadBuilder<T>.DataKeys
+  nameWithType.vb: IMetricPayloadBuilder(Of T).DataKeys
 - uid: App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder`1.Init
   name: Init()
   href: api/App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder-1.html
@@ -11693,23 +12773,23 @@ references:
   fullName.vb: App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder(Of T).Init
   nameWithType: IMetricPayloadBuilder<T>.Init
   nameWithType.vb: IMetricPayloadBuilder(Of T).Init
-- uid: App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder`1.Pack(System.String,IEnumerable{System.String},IEnumerable{System.Object},MetricTags)
-  name: Pack(String, IEnumerable<String>, IEnumerable<Object>, MetricTags)
+- uid: App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder`1.Pack(System.String,System.String,IEnumerable{System.String},IEnumerable{System.Object},MetricTags)
+  name: Pack(String, String, IEnumerable<String>, IEnumerable<Object>, MetricTags)
   href: api/App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder-1.html
-  commentId: M:App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder`1.Pack(System.String,IEnumerable{System.String},IEnumerable{System.Object},MetricTags)
-  name.vb: Pack(String, IEnumerable(Of String), IEnumerable(Of Object), MetricTags)
-  fullName: App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder<T>.Pack(System.String, IEnumerable<System.String>, IEnumerable<System.Object>, MetricTags)
-  fullName.vb: App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder(Of T).Pack(System.String, IEnumerable(Of System.String), IEnumerable(Of System.Object), MetricTags)
-  nameWithType: IMetricPayloadBuilder<T>.Pack(String, IEnumerable<String>, IEnumerable<Object>, MetricTags)
-  nameWithType.vb: IMetricPayloadBuilder(Of T).Pack(String, IEnumerable(Of String), IEnumerable(Of Object), MetricTags)
-- uid: App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder`1.Pack(System.String,System.Object,MetricTags)
-  name: Pack(String, Object, MetricTags)
+  commentId: M:App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder`1.Pack(System.String,System.String,IEnumerable{System.String},IEnumerable{System.Object},MetricTags)
+  name.vb: Pack(String, String, IEnumerable(Of String), IEnumerable(Of Object), MetricTags)
+  fullName: App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder<T>.Pack(System.String, System.String, IEnumerable<System.String>, IEnumerable<System.Object>, MetricTags)
+  fullName.vb: App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder(Of T).Pack(System.String, System.String, IEnumerable(Of System.String), IEnumerable(Of System.Object), MetricTags)
+  nameWithType: IMetricPayloadBuilder<T>.Pack(String, String, IEnumerable<String>, IEnumerable<Object>, MetricTags)
+  nameWithType.vb: IMetricPayloadBuilder(Of T).Pack(String, String, IEnumerable(Of String), IEnumerable(Of Object), MetricTags)
+- uid: App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder`1.Pack(System.String,System.String,System.Object,MetricTags)
+  name: Pack(String, String, Object, MetricTags)
   href: api/App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder-1.html
-  commentId: M:App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder`1.Pack(System.String,System.Object,MetricTags)
-  fullName: App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder<T>.Pack(System.String, System.Object, MetricTags)
-  fullName.vb: App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder(Of T).Pack(System.String, System.Object, MetricTags)
-  nameWithType: IMetricPayloadBuilder<T>.Pack(String, Object, MetricTags)
-  nameWithType.vb: IMetricPayloadBuilder(Of T).Pack(String, Object, MetricTags)
+  commentId: M:App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder`1.Pack(System.String,System.String,System.Object,MetricTags)
+  fullName: App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder<T>.Pack(System.String, System.String, System.Object, MetricTags)
+  fullName.vb: App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder(Of T).Pack(System.String, System.String, System.Object, MetricTags)
+  nameWithType: IMetricPayloadBuilder<T>.Pack(String, String, Object, MetricTags)
+  nameWithType.vb: IMetricPayloadBuilder(Of T).Pack(String, String, Object, MetricTags)
 - uid: App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder`1.Pack*
   name: Pack
   href: api/App.Metrics.Reporting.Abstractions.IMetricPayloadBuilder-1.html
@@ -12149,90 +13229,90 @@ references:
   commentId: Overload:App.Metrics.Reporting.PackMetricValueSourceExtensions.PackApdex
   fullName: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackApdex
   nameWithType: PackMetricValueSourceExtensions.PackApdex
-- uid: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackApdex``1(IMetricPayloadBuilder{``0},System.Func{System.String,System.String,System.String},System.String,MetricValueSourceBase{ApdexValue},IDictionary{App.Metrics.Reporting.ApdexValueDataKeys,System.String})
-  name: PackApdex<T>(IMetricPayloadBuilder<T>, Func<String, String, String>, String, MetricValueSourceBase<ApdexValue>, IDictionary<ApdexValueDataKeys, String>)
+- uid: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackApdex``1(IMetricPayloadBuilder{``0},System.String,MetricValueSourceBase{ApdexValue})
+  name: PackApdex<T>(IMetricPayloadBuilder<T>, String, MetricValueSourceBase<ApdexValue>)
   href: api/App.Metrics.Reporting.PackMetricValueSourceExtensions.html
-  commentId: M:App.Metrics.Reporting.PackMetricValueSourceExtensions.PackApdex``1(IMetricPayloadBuilder{``0},System.Func{System.String,System.String,System.String},System.String,MetricValueSourceBase{ApdexValue},IDictionary{App.Metrics.Reporting.ApdexValueDataKeys,System.String})
-  name.vb: PackApdex(Of T)(IMetricPayloadBuilder(Of T), Func(Of String, String, String), String, MetricValueSourceBase(Of ApdexValue), IDictionary(Of ApdexValueDataKeys, String))
-  fullName: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackApdex<T>(IMetricPayloadBuilder<T>, System.Func<System.String, System.String, System.String>, System.String, MetricValueSourceBase<ApdexValue>, IDictionary<App.Metrics.Reporting.ApdexValueDataKeys, System.String>)
-  fullName.vb: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackApdex(Of T)(IMetricPayloadBuilder(Of T), System.Func(Of System.String, System.String, System.String), System.String, MetricValueSourceBase(Of ApdexValue), IDictionary(Of App.Metrics.Reporting.ApdexValueDataKeys, System.String))
-  nameWithType: PackMetricValueSourceExtensions.PackApdex<T>(IMetricPayloadBuilder<T>, Func<String, String, String>, String, MetricValueSourceBase<ApdexValue>, IDictionary<ApdexValueDataKeys, String>)
-  nameWithType.vb: PackMetricValueSourceExtensions.PackApdex(Of T)(IMetricPayloadBuilder(Of T), Func(Of String, String, String), String, MetricValueSourceBase(Of ApdexValue), IDictionary(Of ApdexValueDataKeys, String))
+  commentId: M:App.Metrics.Reporting.PackMetricValueSourceExtensions.PackApdex``1(IMetricPayloadBuilder{``0},System.String,MetricValueSourceBase{ApdexValue})
+  name.vb: PackApdex(Of T)(IMetricPayloadBuilder(Of T), String, MetricValueSourceBase(Of ApdexValue))
+  fullName: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackApdex<T>(IMetricPayloadBuilder<T>, System.String, MetricValueSourceBase<ApdexValue>)
+  fullName.vb: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackApdex(Of T)(IMetricPayloadBuilder(Of T), System.String, MetricValueSourceBase(Of ApdexValue))
+  nameWithType: PackMetricValueSourceExtensions.PackApdex<T>(IMetricPayloadBuilder<T>, String, MetricValueSourceBase<ApdexValue>)
+  nameWithType.vb: PackMetricValueSourceExtensions.PackApdex(Of T)(IMetricPayloadBuilder(Of T), String, MetricValueSourceBase(Of ApdexValue))
 - uid: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackCounter*
   name: PackCounter
   href: api/App.Metrics.Reporting.PackMetricValueSourceExtensions.html
   commentId: Overload:App.Metrics.Reporting.PackMetricValueSourceExtensions.PackCounter
   fullName: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackCounter
   nameWithType: PackMetricValueSourceExtensions.PackCounter
-- uid: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackCounter``1(IMetricPayloadBuilder{``0},System.Func{System.String,System.String,System.String},System.String,MetricValueSourceBase{CounterValue},CounterValueSource,IDictionary{App.Metrics.Reporting.CounterValueDataKeys,System.String})
-  name: PackCounter<T>(IMetricPayloadBuilder<T>, Func<String, String, String>, String, MetricValueSourceBase<CounterValue>, CounterValueSource, IDictionary<CounterValueDataKeys, String>)
+- uid: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackCounter``1(IMetricPayloadBuilder{``0},System.String,MetricValueSourceBase{CounterValue},CounterValueSource)
+  name: PackCounter<T>(IMetricPayloadBuilder<T>, String, MetricValueSourceBase<CounterValue>, CounterValueSource)
   href: api/App.Metrics.Reporting.PackMetricValueSourceExtensions.html
-  commentId: M:App.Metrics.Reporting.PackMetricValueSourceExtensions.PackCounter``1(IMetricPayloadBuilder{``0},System.Func{System.String,System.String,System.String},System.String,MetricValueSourceBase{CounterValue},CounterValueSource,IDictionary{App.Metrics.Reporting.CounterValueDataKeys,System.String})
-  name.vb: PackCounter(Of T)(IMetricPayloadBuilder(Of T), Func(Of String, String, String), String, MetricValueSourceBase(Of CounterValue), CounterValueSource, IDictionary(Of CounterValueDataKeys, String))
-  fullName: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackCounter<T>(IMetricPayloadBuilder<T>, System.Func<System.String, System.String, System.String>, System.String, MetricValueSourceBase<CounterValue>, CounterValueSource, IDictionary<App.Metrics.Reporting.CounterValueDataKeys, System.String>)
-  fullName.vb: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackCounter(Of T)(IMetricPayloadBuilder(Of T), System.Func(Of System.String, System.String, System.String), System.String, MetricValueSourceBase(Of CounterValue), CounterValueSource, IDictionary(Of App.Metrics.Reporting.CounterValueDataKeys, System.String))
-  nameWithType: PackMetricValueSourceExtensions.PackCounter<T>(IMetricPayloadBuilder<T>, Func<String, String, String>, String, MetricValueSourceBase<CounterValue>, CounterValueSource, IDictionary<CounterValueDataKeys, String>)
-  nameWithType.vb: PackMetricValueSourceExtensions.PackCounter(Of T)(IMetricPayloadBuilder(Of T), Func(Of String, String, String), String, MetricValueSourceBase(Of CounterValue), CounterValueSource, IDictionary(Of CounterValueDataKeys, String))
+  commentId: M:App.Metrics.Reporting.PackMetricValueSourceExtensions.PackCounter``1(IMetricPayloadBuilder{``0},System.String,MetricValueSourceBase{CounterValue},CounterValueSource)
+  name.vb: PackCounter(Of T)(IMetricPayloadBuilder(Of T), String, MetricValueSourceBase(Of CounterValue), CounterValueSource)
+  fullName: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackCounter<T>(IMetricPayloadBuilder<T>, System.String, MetricValueSourceBase<CounterValue>, CounterValueSource)
+  fullName.vb: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackCounter(Of T)(IMetricPayloadBuilder(Of T), System.String, MetricValueSourceBase(Of CounterValue), CounterValueSource)
+  nameWithType: PackMetricValueSourceExtensions.PackCounter<T>(IMetricPayloadBuilder<T>, String, MetricValueSourceBase<CounterValue>, CounterValueSource)
+  nameWithType.vb: PackMetricValueSourceExtensions.PackCounter(Of T)(IMetricPayloadBuilder(Of T), String, MetricValueSourceBase(Of CounterValue), CounterValueSource)
 - uid: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackGauge*
   name: PackGauge
   href: api/App.Metrics.Reporting.PackMetricValueSourceExtensions.html
   commentId: Overload:App.Metrics.Reporting.PackMetricValueSourceExtensions.PackGauge
   fullName: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackGauge
   nameWithType: PackMetricValueSourceExtensions.PackGauge
-- uid: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackGauge``1(IMetricPayloadBuilder{``0},System.Func{System.String,System.String,System.String},System.String,MetricValueSourceBase{System.Double})
-  name: PackGauge<T>(IMetricPayloadBuilder<T>, Func<String, String, String>, String, MetricValueSourceBase<Double>)
+- uid: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackGauge``1(IMetricPayloadBuilder{``0},System.String,MetricValueSourceBase{System.Double})
+  name: PackGauge<T>(IMetricPayloadBuilder<T>, String, MetricValueSourceBase<Double>)
   href: api/App.Metrics.Reporting.PackMetricValueSourceExtensions.html
-  commentId: M:App.Metrics.Reporting.PackMetricValueSourceExtensions.PackGauge``1(IMetricPayloadBuilder{``0},System.Func{System.String,System.String,System.String},System.String,MetricValueSourceBase{System.Double})
-  name.vb: PackGauge(Of T)(IMetricPayloadBuilder(Of T), Func(Of String, String, String), String, MetricValueSourceBase(Of Double))
-  fullName: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackGauge<T>(IMetricPayloadBuilder<T>, System.Func<System.String, System.String, System.String>, System.String, MetricValueSourceBase<System.Double>)
-  fullName.vb: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackGauge(Of T)(IMetricPayloadBuilder(Of T), System.Func(Of System.String, System.String, System.String), System.String, MetricValueSourceBase(Of System.Double))
-  nameWithType: PackMetricValueSourceExtensions.PackGauge<T>(IMetricPayloadBuilder<T>, Func<String, String, String>, String, MetricValueSourceBase<Double>)
-  nameWithType.vb: PackMetricValueSourceExtensions.PackGauge(Of T)(IMetricPayloadBuilder(Of T), Func(Of String, String, String), String, MetricValueSourceBase(Of Double))
+  commentId: M:App.Metrics.Reporting.PackMetricValueSourceExtensions.PackGauge``1(IMetricPayloadBuilder{``0},System.String,MetricValueSourceBase{System.Double})
+  name.vb: PackGauge(Of T)(IMetricPayloadBuilder(Of T), String, MetricValueSourceBase(Of Double))
+  fullName: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackGauge<T>(IMetricPayloadBuilder<T>, System.String, MetricValueSourceBase<System.Double>)
+  fullName.vb: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackGauge(Of T)(IMetricPayloadBuilder(Of T), System.String, MetricValueSourceBase(Of System.Double))
+  nameWithType: PackMetricValueSourceExtensions.PackGauge<T>(IMetricPayloadBuilder<T>, String, MetricValueSourceBase<Double>)
+  nameWithType.vb: PackMetricValueSourceExtensions.PackGauge(Of T)(IMetricPayloadBuilder(Of T), String, MetricValueSourceBase(Of Double))
 - uid: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackHistogram*
   name: PackHistogram
   href: api/App.Metrics.Reporting.PackMetricValueSourceExtensions.html
   commentId: Overload:App.Metrics.Reporting.PackMetricValueSourceExtensions.PackHistogram
   fullName: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackHistogram
   nameWithType: PackMetricValueSourceExtensions.PackHistogram
-- uid: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackHistogram``1(IMetricPayloadBuilder{``0},System.Func{System.String,System.String,System.String},System.String,MetricValueSourceBase{HistogramValue},IDictionary{App.Metrics.Reporting.HistogramValueDataKeys,System.String})
-  name: PackHistogram<T>(IMetricPayloadBuilder<T>, Func<String, String, String>, String, MetricValueSourceBase<HistogramValue>, IDictionary<HistogramValueDataKeys, String>)
+- uid: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackHistogram``1(IMetricPayloadBuilder{``0},System.String,MetricValueSourceBase{HistogramValue})
+  name: PackHistogram<T>(IMetricPayloadBuilder<T>, String, MetricValueSourceBase<HistogramValue>)
   href: api/App.Metrics.Reporting.PackMetricValueSourceExtensions.html
-  commentId: M:App.Metrics.Reporting.PackMetricValueSourceExtensions.PackHistogram``1(IMetricPayloadBuilder{``0},System.Func{System.String,System.String,System.String},System.String,MetricValueSourceBase{HistogramValue},IDictionary{App.Metrics.Reporting.HistogramValueDataKeys,System.String})
-  name.vb: PackHistogram(Of T)(IMetricPayloadBuilder(Of T), Func(Of String, String, String), String, MetricValueSourceBase(Of HistogramValue), IDictionary(Of HistogramValueDataKeys, String))
-  fullName: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackHistogram<T>(IMetricPayloadBuilder<T>, System.Func<System.String, System.String, System.String>, System.String, MetricValueSourceBase<HistogramValue>, IDictionary<App.Metrics.Reporting.HistogramValueDataKeys, System.String>)
-  fullName.vb: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackHistogram(Of T)(IMetricPayloadBuilder(Of T), System.Func(Of System.String, System.String, System.String), System.String, MetricValueSourceBase(Of HistogramValue), IDictionary(Of App.Metrics.Reporting.HistogramValueDataKeys, System.String))
-  nameWithType: PackMetricValueSourceExtensions.PackHistogram<T>(IMetricPayloadBuilder<T>, Func<String, String, String>, String, MetricValueSourceBase<HistogramValue>, IDictionary<HistogramValueDataKeys, String>)
-  nameWithType.vb: PackMetricValueSourceExtensions.PackHistogram(Of T)(IMetricPayloadBuilder(Of T), Func(Of String, String, String), String, MetricValueSourceBase(Of HistogramValue), IDictionary(Of HistogramValueDataKeys, String))
+  commentId: M:App.Metrics.Reporting.PackMetricValueSourceExtensions.PackHistogram``1(IMetricPayloadBuilder{``0},System.String,MetricValueSourceBase{HistogramValue})
+  name.vb: PackHistogram(Of T)(IMetricPayloadBuilder(Of T), String, MetricValueSourceBase(Of HistogramValue))
+  fullName: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackHistogram<T>(IMetricPayloadBuilder<T>, System.String, MetricValueSourceBase<HistogramValue>)
+  fullName.vb: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackHistogram(Of T)(IMetricPayloadBuilder(Of T), System.String, MetricValueSourceBase(Of HistogramValue))
+  nameWithType: PackMetricValueSourceExtensions.PackHistogram<T>(IMetricPayloadBuilder<T>, String, MetricValueSourceBase<HistogramValue>)
+  nameWithType.vb: PackMetricValueSourceExtensions.PackHistogram(Of T)(IMetricPayloadBuilder(Of T), String, MetricValueSourceBase(Of HistogramValue))
 - uid: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackMeter*
   name: PackMeter
   href: api/App.Metrics.Reporting.PackMetricValueSourceExtensions.html
   commentId: Overload:App.Metrics.Reporting.PackMetricValueSourceExtensions.PackMeter
   fullName: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackMeter
   nameWithType: PackMetricValueSourceExtensions.PackMeter
-- uid: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackMeter``1(IMetricPayloadBuilder{``0},System.Func{System.String,System.String,System.String},System.String,MetricValueSourceBase{MeterValue},IDictionary{App.Metrics.Reporting.MeterValueDataKeys,System.String})
-  name: PackMeter<T>(IMetricPayloadBuilder<T>, Func<String, String, String>, String, MetricValueSourceBase<MeterValue>, IDictionary<MeterValueDataKeys, String>)
+- uid: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackMeter``1(IMetricPayloadBuilder{``0},System.String,MetricValueSourceBase{MeterValue})
+  name: PackMeter<T>(IMetricPayloadBuilder<T>, String, MetricValueSourceBase<MeterValue>)
   href: api/App.Metrics.Reporting.PackMetricValueSourceExtensions.html
-  commentId: M:App.Metrics.Reporting.PackMetricValueSourceExtensions.PackMeter``1(IMetricPayloadBuilder{``0},System.Func{System.String,System.String,System.String},System.String,MetricValueSourceBase{MeterValue},IDictionary{App.Metrics.Reporting.MeterValueDataKeys,System.String})
-  name.vb: PackMeter(Of T)(IMetricPayloadBuilder(Of T), Func(Of String, String, String), String, MetricValueSourceBase(Of MeterValue), IDictionary(Of MeterValueDataKeys, String))
-  fullName: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackMeter<T>(IMetricPayloadBuilder<T>, System.Func<System.String, System.String, System.String>, System.String, MetricValueSourceBase<MeterValue>, IDictionary<App.Metrics.Reporting.MeterValueDataKeys, System.String>)
-  fullName.vb: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackMeter(Of T)(IMetricPayloadBuilder(Of T), System.Func(Of System.String, System.String, System.String), System.String, MetricValueSourceBase(Of MeterValue), IDictionary(Of App.Metrics.Reporting.MeterValueDataKeys, System.String))
-  nameWithType: PackMetricValueSourceExtensions.PackMeter<T>(IMetricPayloadBuilder<T>, Func<String, String, String>, String, MetricValueSourceBase<MeterValue>, IDictionary<MeterValueDataKeys, String>)
-  nameWithType.vb: PackMetricValueSourceExtensions.PackMeter(Of T)(IMetricPayloadBuilder(Of T), Func(Of String, String, String), String, MetricValueSourceBase(Of MeterValue), IDictionary(Of MeterValueDataKeys, String))
+  commentId: M:App.Metrics.Reporting.PackMetricValueSourceExtensions.PackMeter``1(IMetricPayloadBuilder{``0},System.String,MetricValueSourceBase{MeterValue})
+  name.vb: PackMeter(Of T)(IMetricPayloadBuilder(Of T), String, MetricValueSourceBase(Of MeterValue))
+  fullName: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackMeter<T>(IMetricPayloadBuilder<T>, System.String, MetricValueSourceBase<MeterValue>)
+  fullName.vb: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackMeter(Of T)(IMetricPayloadBuilder(Of T), System.String, MetricValueSourceBase(Of MeterValue))
+  nameWithType: PackMetricValueSourceExtensions.PackMeter<T>(IMetricPayloadBuilder<T>, String, MetricValueSourceBase<MeterValue>)
+  nameWithType.vb: PackMetricValueSourceExtensions.PackMeter(Of T)(IMetricPayloadBuilder(Of T), String, MetricValueSourceBase(Of MeterValue))
 - uid: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackTimer*
   name: PackTimer
   href: api/App.Metrics.Reporting.PackMetricValueSourceExtensions.html
   commentId: Overload:App.Metrics.Reporting.PackMetricValueSourceExtensions.PackTimer
   fullName: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackTimer
   nameWithType: PackMetricValueSourceExtensions.PackTimer
-- uid: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackTimer``1(IMetricPayloadBuilder{``0},System.Func{System.String,System.String,System.String},System.String,MetricValueSourceBase{TimerValue},IDictionary{App.Metrics.Reporting.MeterValueDataKeys,System.String},IDictionary{App.Metrics.Reporting.HistogramValueDataKeys,System.String})
-  name: PackTimer<T>(IMetricPayloadBuilder<T>, Func<String, String, String>, String, MetricValueSourceBase<TimerValue>, IDictionary<MeterValueDataKeys, String>, IDictionary<HistogramValueDataKeys, String>)
+- uid: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackTimer``1(IMetricPayloadBuilder{``0},System.String,MetricValueSourceBase{TimerValue})
+  name: PackTimer<T>(IMetricPayloadBuilder<T>, String, MetricValueSourceBase<TimerValue>)
   href: api/App.Metrics.Reporting.PackMetricValueSourceExtensions.html
-  commentId: M:App.Metrics.Reporting.PackMetricValueSourceExtensions.PackTimer``1(IMetricPayloadBuilder{``0},System.Func{System.String,System.String,System.String},System.String,MetricValueSourceBase{TimerValue},IDictionary{App.Metrics.Reporting.MeterValueDataKeys,System.String},IDictionary{App.Metrics.Reporting.HistogramValueDataKeys,System.String})
-  name.vb: PackTimer(Of T)(IMetricPayloadBuilder(Of T), Func(Of String, String, String), String, MetricValueSourceBase(Of TimerValue), IDictionary(Of MeterValueDataKeys, String), IDictionary(Of HistogramValueDataKeys, String))
-  fullName: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackTimer<T>(IMetricPayloadBuilder<T>, System.Func<System.String, System.String, System.String>, System.String, MetricValueSourceBase<TimerValue>, IDictionary<App.Metrics.Reporting.MeterValueDataKeys, System.String>, IDictionary<App.Metrics.Reporting.HistogramValueDataKeys, System.String>)
-  fullName.vb: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackTimer(Of T)(IMetricPayloadBuilder(Of T), System.Func(Of System.String, System.String, System.String), System.String, MetricValueSourceBase(Of TimerValue), IDictionary(Of App.Metrics.Reporting.MeterValueDataKeys, System.String), IDictionary(Of App.Metrics.Reporting.HistogramValueDataKeys, System.String))
-  nameWithType: PackMetricValueSourceExtensions.PackTimer<T>(IMetricPayloadBuilder<T>, Func<String, String, String>, String, MetricValueSourceBase<TimerValue>, IDictionary<MeterValueDataKeys, String>, IDictionary<HistogramValueDataKeys, String>)
-  nameWithType.vb: PackMetricValueSourceExtensions.PackTimer(Of T)(IMetricPayloadBuilder(Of T), Func(Of String, String, String), String, MetricValueSourceBase(Of TimerValue), IDictionary(Of MeterValueDataKeys, String), IDictionary(Of HistogramValueDataKeys, String))
+  commentId: M:App.Metrics.Reporting.PackMetricValueSourceExtensions.PackTimer``1(IMetricPayloadBuilder{``0},System.String,MetricValueSourceBase{TimerValue})
+  name.vb: PackTimer(Of T)(IMetricPayloadBuilder(Of T), String, MetricValueSourceBase(Of TimerValue))
+  fullName: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackTimer<T>(IMetricPayloadBuilder<T>, System.String, MetricValueSourceBase<TimerValue>)
+  fullName.vb: App.Metrics.Reporting.PackMetricValueSourceExtensions.PackTimer(Of T)(IMetricPayloadBuilder(Of T), System.String, MetricValueSourceBase(Of TimerValue))
+  nameWithType: PackMetricValueSourceExtensions.PackTimer<T>(IMetricPayloadBuilder<T>, String, MetricValueSourceBase<TimerValue>)
+  nameWithType.vb: PackMetricValueSourceExtensions.PackTimer(Of T)(IMetricPayloadBuilder(Of T), String, MetricValueSourceBase(Of TimerValue))
 - uid: App.Metrics.Reporting.ReportFactory
   name: ReportFactory
   href: api/App.Metrics.Reporting.ReportFactory.html
@@ -12290,24 +13370,24 @@ references:
   fullName.vb: App.Metrics.Reporting.ReportRunner(Of T)
   nameWithType: ReportRunner<T>
   nameWithType.vb: ReportRunner(Of T)
-- uid: App.Metrics.Reporting.ReportRunner`1.#ctor(System.Func{IMetricPayloadBuilder{`0},Task{System.Boolean}},IMetricPayloadBuilder{`0},System.TimeSpan,ILoggerFactory,System.Func{System.String,System.String,System.String},App.Metrics.Reporting.MetricValueDataKeys)
-  name: ReportRunner(Func<IMetricPayloadBuilder<T>, Task<Boolean>>, IMetricPayloadBuilder<T>, TimeSpan, ILoggerFactory, Func<String, String, String>, MetricValueDataKeys)
+- uid: App.Metrics.Reporting.ReportRunner`1.#ctor(System.Func{IMetricPayloadBuilder{`0},Task{System.Boolean}},IMetricPayloadBuilder{`0},System.TimeSpan,ILoggerFactory)
+  name: ReportRunner(Func<IMetricPayloadBuilder<T>, Task<Boolean>>, IMetricPayloadBuilder<T>, TimeSpan, ILoggerFactory)
   href: api/App.Metrics.Reporting.ReportRunner-1.html
-  commentId: M:App.Metrics.Reporting.ReportRunner`1.#ctor(System.Func{IMetricPayloadBuilder{`0},Task{System.Boolean}},IMetricPayloadBuilder{`0},System.TimeSpan,ILoggerFactory,System.Func{System.String,System.String,System.String},App.Metrics.Reporting.MetricValueDataKeys)
-  name.vb: ReportRunner(Func(Of IMetricPayloadBuilder(Of T), Task(Of Boolean)), IMetricPayloadBuilder(Of T), TimeSpan, ILoggerFactory, Func(Of String, String, String), MetricValueDataKeys)
-  fullName: App.Metrics.Reporting.ReportRunner<T>.ReportRunner(System.Func<IMetricPayloadBuilder<T>, Task<System.Boolean>>, IMetricPayloadBuilder<T>, System.TimeSpan, ILoggerFactory, System.Func<System.String, System.String, System.String>, App.Metrics.Reporting.MetricValueDataKeys)
-  fullName.vb: App.Metrics.Reporting.ReportRunner(Of T).ReportRunner(System.Func(Of IMetricPayloadBuilder(Of T), Task(Of System.Boolean)), IMetricPayloadBuilder(Of T), System.TimeSpan, ILoggerFactory, System.Func(Of System.String, System.String, System.String), App.Metrics.Reporting.MetricValueDataKeys)
-  nameWithType: ReportRunner<T>.ReportRunner(Func<IMetricPayloadBuilder<T>, Task<Boolean>>, IMetricPayloadBuilder<T>, TimeSpan, ILoggerFactory, Func<String, String, String>, MetricValueDataKeys)
-  nameWithType.vb: ReportRunner(Of T).ReportRunner(Func(Of IMetricPayloadBuilder(Of T), Task(Of Boolean)), IMetricPayloadBuilder(Of T), TimeSpan, ILoggerFactory, Func(Of String, String, String), MetricValueDataKeys)
-- uid: App.Metrics.Reporting.ReportRunner`1.#ctor(System.Func{IMetricPayloadBuilder{`0},Task{System.Boolean}},IMetricPayloadBuilder{`0},System.TimeSpan,System.String,ILoggerFactory,System.Func{System.String,System.String,System.String},App.Metrics.Reporting.MetricValueDataKeys)
-  name: ReportRunner(Func<IMetricPayloadBuilder<T>, Task<Boolean>>, IMetricPayloadBuilder<T>, TimeSpan, String, ILoggerFactory, Func<String, String, String>, MetricValueDataKeys)
+  commentId: M:App.Metrics.Reporting.ReportRunner`1.#ctor(System.Func{IMetricPayloadBuilder{`0},Task{System.Boolean}},IMetricPayloadBuilder{`0},System.TimeSpan,ILoggerFactory)
+  name.vb: ReportRunner(Func(Of IMetricPayloadBuilder(Of T), Task(Of Boolean)), IMetricPayloadBuilder(Of T), TimeSpan, ILoggerFactory)
+  fullName: App.Metrics.Reporting.ReportRunner<T>.ReportRunner(System.Func<IMetricPayloadBuilder<T>, Task<System.Boolean>>, IMetricPayloadBuilder<T>, System.TimeSpan, ILoggerFactory)
+  fullName.vb: App.Metrics.Reporting.ReportRunner(Of T).ReportRunner(System.Func(Of IMetricPayloadBuilder(Of T), Task(Of System.Boolean)), IMetricPayloadBuilder(Of T), System.TimeSpan, ILoggerFactory)
+  nameWithType: ReportRunner<T>.ReportRunner(Func<IMetricPayloadBuilder<T>, Task<Boolean>>, IMetricPayloadBuilder<T>, TimeSpan, ILoggerFactory)
+  nameWithType.vb: ReportRunner(Of T).ReportRunner(Func(Of IMetricPayloadBuilder(Of T), Task(Of Boolean)), IMetricPayloadBuilder(Of T), TimeSpan, ILoggerFactory)
+- uid: App.Metrics.Reporting.ReportRunner`1.#ctor(System.Func{IMetricPayloadBuilder{`0},Task{System.Boolean}},IMetricPayloadBuilder{`0},System.TimeSpan,System.String,ILoggerFactory)
+  name: ReportRunner(Func<IMetricPayloadBuilder<T>, Task<Boolean>>, IMetricPayloadBuilder<T>, TimeSpan, String, ILoggerFactory)
   href: api/App.Metrics.Reporting.ReportRunner-1.html
-  commentId: M:App.Metrics.Reporting.ReportRunner`1.#ctor(System.Func{IMetricPayloadBuilder{`0},Task{System.Boolean}},IMetricPayloadBuilder{`0},System.TimeSpan,System.String,ILoggerFactory,System.Func{System.String,System.String,System.String},App.Metrics.Reporting.MetricValueDataKeys)
-  name.vb: ReportRunner(Func(Of IMetricPayloadBuilder(Of T), Task(Of Boolean)), IMetricPayloadBuilder(Of T), TimeSpan, String, ILoggerFactory, Func(Of String, String, String), MetricValueDataKeys)
-  fullName: App.Metrics.Reporting.ReportRunner<T>.ReportRunner(System.Func<IMetricPayloadBuilder<T>, Task<System.Boolean>>, IMetricPayloadBuilder<T>, System.TimeSpan, System.String, ILoggerFactory, System.Func<System.String, System.String, System.String>, App.Metrics.Reporting.MetricValueDataKeys)
-  fullName.vb: App.Metrics.Reporting.ReportRunner(Of T).ReportRunner(System.Func(Of IMetricPayloadBuilder(Of T), Task(Of System.Boolean)), IMetricPayloadBuilder(Of T), System.TimeSpan, System.String, ILoggerFactory, System.Func(Of System.String, System.String, System.String), App.Metrics.Reporting.MetricValueDataKeys)
-  nameWithType: ReportRunner<T>.ReportRunner(Func<IMetricPayloadBuilder<T>, Task<Boolean>>, IMetricPayloadBuilder<T>, TimeSpan, String, ILoggerFactory, Func<String, String, String>, MetricValueDataKeys)
-  nameWithType.vb: ReportRunner(Of T).ReportRunner(Func(Of IMetricPayloadBuilder(Of T), Task(Of Boolean)), IMetricPayloadBuilder(Of T), TimeSpan, String, ILoggerFactory, Func(Of String, String, String), MetricValueDataKeys)
+  commentId: M:App.Metrics.Reporting.ReportRunner`1.#ctor(System.Func{IMetricPayloadBuilder{`0},Task{System.Boolean}},IMetricPayloadBuilder{`0},System.TimeSpan,System.String,ILoggerFactory)
+  name.vb: ReportRunner(Func(Of IMetricPayloadBuilder(Of T), Task(Of Boolean)), IMetricPayloadBuilder(Of T), TimeSpan, String, ILoggerFactory)
+  fullName: App.Metrics.Reporting.ReportRunner<T>.ReportRunner(System.Func<IMetricPayloadBuilder<T>, Task<System.Boolean>>, IMetricPayloadBuilder<T>, System.TimeSpan, System.String, ILoggerFactory)
+  fullName.vb: App.Metrics.Reporting.ReportRunner(Of T).ReportRunner(System.Func(Of IMetricPayloadBuilder(Of T), Task(Of System.Boolean)), IMetricPayloadBuilder(Of T), System.TimeSpan, System.String, ILoggerFactory)
+  nameWithType: ReportRunner<T>.ReportRunner(Func<IMetricPayloadBuilder<T>, Task<Boolean>>, IMetricPayloadBuilder<T>, TimeSpan, String, ILoggerFactory)
+  nameWithType.vb: ReportRunner(Of T).ReportRunner(Func(Of IMetricPayloadBuilder(Of T), Task(Of Boolean)), IMetricPayloadBuilder(Of T), TimeSpan, String, ILoggerFactory)
 - uid: App.Metrics.Reporting.ReportRunner`1.#ctor*
   name: ReportRunner
   href: api/App.Metrics.Reporting.ReportRunner-1.html
@@ -14749,6 +15829,12 @@ references:
   commentId: M:App.Metrics.Timer.TimerExtensions.GetTimerValue(IProvideMetricValues,System.String,System.String)
   fullName: App.Metrics.Timer.TimerExtensions.GetTimerValue(IProvideMetricValues, System.String, System.String)
   nameWithType: TimerExtensions.GetTimerValue(IProvideMetricValues, String, String)
+- uid: App.Metrics.Timer.TimerExtensions.GetTimerValue(IProvideMetricValues,System.String,System.String,MetricTags)
+  name: GetTimerValue(IProvideMetricValues, String, String, MetricTags)
+  href: api/App.Metrics.Timer.TimerExtensions.html
+  commentId: M:App.Metrics.Timer.TimerExtensions.GetTimerValue(IProvideMetricValues,System.String,System.String,MetricTags)
+  fullName: App.Metrics.Timer.TimerExtensions.GetTimerValue(IProvideMetricValues, System.String, System.String, MetricTags)
+  nameWithType: TimerExtensions.GetTimerValue(IProvideMetricValues, String, String, MetricTags)
 - uid: App.Metrics.Timer.TimerExtensions.GetTimerValue*
   name: GetTimerValue
   href: api/App.Metrics.Timer.TimerExtensions.html
@@ -14797,6 +15883,18 @@ references:
   commentId: Overload:App.Metrics.Timer.TimerValue.ActiveSessions
   fullName: App.Metrics.Timer.TimerValue.ActiveSessions
   nameWithType: TimerValue.ActiveSessions
+- uid: App.Metrics.Timer.TimerValue.DurationUnit
+  name: DurationUnit
+  href: api/App.Metrics.Timer.TimerValue.html
+  commentId: P:App.Metrics.Timer.TimerValue.DurationUnit
+  fullName: App.Metrics.Timer.TimerValue.DurationUnit
+  nameWithType: TimerValue.DurationUnit
+- uid: App.Metrics.Timer.TimerValue.DurationUnit*
+  name: DurationUnit
+  href: api/App.Metrics.Timer.TimerValue.html
+  commentId: Overload:App.Metrics.Timer.TimerValue.DurationUnit
+  fullName: App.Metrics.Timer.TimerValue.DurationUnit
+  nameWithType: TimerValue.DurationUnit
 - uid: App.Metrics.Timer.TimerValue.Histogram
   name: Histogram
   href: api/App.Metrics.Timer.TimerValue.html
@@ -15118,6 +16216,12 @@ references:
   commentId: T:App.Metrics.Unit
   fullName: App.Metrics.Unit
   nameWithType: Unit
+- uid: App.Metrics.Unit.Bits
+  name: Bits
+  href: api/App.Metrics.Unit.html
+  commentId: F:App.Metrics.Unit.Bits
+  fullName: App.Metrics.Unit.Bits
+  nameWithType: Unit.Bits
 - uid: App.Metrics.Unit.Bytes
   name: Bytes
   href: api/App.Metrics.Unit.html
@@ -15136,6 +16240,12 @@ references:
   commentId: F:App.Metrics.Unit.Commands
   fullName: App.Metrics.Unit.Commands
   nameWithType: Unit.Commands
+- uid: App.Metrics.Unit.Connections
+  name: Connections
+  href: api/App.Metrics.Unit.html
+  commentId: F:App.Metrics.Unit.Connections
+  fullName: App.Metrics.Unit.Connections
+  nameWithType: Unit.Connections
 - uid: App.Metrics.Unit.Custom(System.String)
   name: Custom(String)
   href: api/App.Metrics.Unit.html
@@ -15241,6 +16351,12 @@ references:
   commentId: Overload:App.Metrics.Unit.GetHashCode
   fullName: App.Metrics.Unit.GetHashCode
   nameWithType: Unit.GetHashCode
+- uid: App.Metrics.Unit.GigaBytes
+  name: GigaBytes
+  href: api/App.Metrics.Unit.html
+  commentId: F:App.Metrics.Unit.GigaBytes
+  fullName: App.Metrics.Unit.GigaBytes
+  nameWithType: Unit.GigaBytes
 - uid: App.Metrics.Unit.Items
   name: Items
   href: api/App.Metrics.Unit.html
@@ -15325,6 +16441,12 @@ references:
   commentId: F:App.Metrics.Unit.Percent
   fullName: App.Metrics.Unit.Percent
   nameWithType: Unit.Percent
+- uid: App.Metrics.Unit.PetaBytes
+  name: PetaBytes
+  href: api/App.Metrics.Unit.html
+  commentId: F:App.Metrics.Unit.PetaBytes
+  fullName: App.Metrics.Unit.PetaBytes
+  nameWithType: Unit.PetaBytes
 - uid: App.Metrics.Unit.Requests
   name: Requests
   href: api/App.Metrics.Unit.html
@@ -15337,6 +16459,12 @@ references:
   commentId: F:App.Metrics.Unit.Results
   fullName: App.Metrics.Unit.Results
   nameWithType: Unit.Results
+- uid: App.Metrics.Unit.TeraBytes
+  name: TeraBytes
+  href: api/App.Metrics.Unit.html
+  commentId: F:App.Metrics.Unit.TeraBytes
+  fullName: App.Metrics.Unit.TeraBytes
+  nameWithType: Unit.TeraBytes
 - uid: App.Metrics.Unit.Threads
   name: Threads
   href: api/App.Metrics.Unit.html
@@ -15355,6 +16483,12 @@ references:
   commentId: Overload:App.Metrics.Unit.ToString
   fullName: App.Metrics.Unit.ToString
   nameWithType: Unit.ToString
+- uid: App.Metrics.Unit.Warnings
+  name: Warnings
+  href: api/App.Metrics.Unit.html
+  commentId: F:App.Metrics.Unit.Warnings
+  fullName: App.Metrics.Unit.Warnings
+  nameWithType: Unit.Warnings
 - uid: Microsoft.AspNetCore.Builder
   name: Microsoft.AspNetCore.Builder
   href: api/Microsoft.AspNetCore.Builder.html
@@ -15637,6 +16771,24 @@ references:
   commentId: T:Microsoft.Extensions.DependencyInjection.MetricsHostExtensions
   fullName: Microsoft.Extensions.DependencyInjection.MetricsHostExtensions
   nameWithType: MetricsHostExtensions
+- uid: Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.AddJsonEnvironmentInfoSerialization(Microsoft.Extensions.DependencyInjection.IMetricsHostBuilder)
+  name: AddJsonEnvironmentInfoSerialization(IMetricsHostBuilder)
+  href: api/Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.html
+  commentId: M:Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.AddJsonEnvironmentInfoSerialization(Microsoft.Extensions.DependencyInjection.IMetricsHostBuilder)
+  fullName: Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.AddJsonEnvironmentInfoSerialization(Microsoft.Extensions.DependencyInjection.IMetricsHostBuilder)
+  nameWithType: MetricsHostExtensions.AddJsonEnvironmentInfoSerialization(IMetricsHostBuilder)
+- uid: Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.AddJsonEnvironmentInfoSerialization(Microsoft.Extensions.DependencyInjection.IMetricsHostBuilder,JsonSerializerSettings)
+  name: AddJsonEnvironmentInfoSerialization(IMetricsHostBuilder, JsonSerializerSettings)
+  href: api/Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.html
+  commentId: M:Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.AddJsonEnvironmentInfoSerialization(Microsoft.Extensions.DependencyInjection.IMetricsHostBuilder,JsonSerializerSettings)
+  fullName: Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.AddJsonEnvironmentInfoSerialization(Microsoft.Extensions.DependencyInjection.IMetricsHostBuilder, JsonSerializerSettings)
+  nameWithType: MetricsHostExtensions.AddJsonEnvironmentInfoSerialization(IMetricsHostBuilder, JsonSerializerSettings)
+- uid: Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.AddJsonEnvironmentInfoSerialization*
+  name: AddJsonEnvironmentInfoSerialization
+  href: api/Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.html
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.AddJsonEnvironmentInfoSerialization
+  fullName: Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.AddJsonEnvironmentInfoSerialization
+  nameWithType: MetricsHostExtensions.AddJsonEnvironmentInfoSerialization
 - uid: Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.AddJsonHealthSerialization(Microsoft.Extensions.DependencyInjection.IMetricsHostBuilder)
   name: AddJsonHealthSerialization(IMetricsHostBuilder)
   href: api/Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.html
@@ -15673,6 +16825,24 @@ references:
   commentId: Overload:Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.AddJsonMetricsSerialization
   fullName: Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.AddJsonMetricsSerialization
   nameWithType: MetricsHostExtensions.AddJsonMetricsSerialization
+- uid: Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.AddJsonMetricsTextSerialization(Microsoft.Extensions.DependencyInjection.IMetricsHostBuilder)
+  name: AddJsonMetricsTextSerialization(IMetricsHostBuilder)
+  href: api/Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.html
+  commentId: M:Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.AddJsonMetricsTextSerialization(Microsoft.Extensions.DependencyInjection.IMetricsHostBuilder)
+  fullName: Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.AddJsonMetricsTextSerialization(Microsoft.Extensions.DependencyInjection.IMetricsHostBuilder)
+  nameWithType: MetricsHostExtensions.AddJsonMetricsTextSerialization(IMetricsHostBuilder)
+- uid: Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.AddJsonMetricsTextSerialization(Microsoft.Extensions.DependencyInjection.IMetricsHostBuilder,JsonSerializerSettings)
+  name: AddJsonMetricsTextSerialization(IMetricsHostBuilder, JsonSerializerSettings)
+  href: api/Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.html
+  commentId: M:Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.AddJsonMetricsTextSerialization(Microsoft.Extensions.DependencyInjection.IMetricsHostBuilder,JsonSerializerSettings)
+  fullName: Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.AddJsonMetricsTextSerialization(Microsoft.Extensions.DependencyInjection.IMetricsHostBuilder, JsonSerializerSettings)
+  nameWithType: MetricsHostExtensions.AddJsonMetricsTextSerialization(IMetricsHostBuilder, JsonSerializerSettings)
+- uid: Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.AddJsonMetricsTextSerialization*
+  name: AddJsonMetricsTextSerialization
+  href: api/Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.html
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.AddJsonMetricsTextSerialization
+  fullName: Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.AddJsonMetricsTextSerialization
+  nameWithType: MetricsHostExtensions.AddJsonMetricsTextSerialization
 - uid: Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.AddJsonSerialization(Microsoft.Extensions.DependencyInjection.IMetricsHostBuilder)
   name: AddJsonSerialization(IMetricsHostBuilder)
   href: api/Microsoft.Extensions.DependencyInjection.MetricsHostExtensions.html

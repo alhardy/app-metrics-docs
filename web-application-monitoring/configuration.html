@@ -136,6 +136,14 @@
 <td><strong>IgnoredHttpStatusCodes</strong></td>
 <td style="text-align:left">Allows specific http status codes to be ignored when reporting on request failes, e.g. You might not want to alert on 400 status codes or monitor 404 status codes.</td>
 </tr>
+<tr>
+<td><strong>EnvironmentInfoEndpointEnabled</strong></td>
+<td style="text-align:left">Allows enabling/disabling of the <code>/env</code> endpoint, when disabled will result in a 404 status code, the default is true.</td>
+</tr>
+<tr>
+<td><strong>EnvironmentInfoEndpoint</strong></td>
+<td style="text-align:left">Allows customization of the endpoint which will report some environment information, such as the machine name, assembly version etc. The default path is <code>/env</code>.</td>
+</tr>
 </tbody>
 </table>
 <h2 id="fluent-configuration-using-actionaspnetmetricsoptions">Fluent configuration using <code>Action&lt;AspNetMetricsOptions&gt;</code></h2>
@@ -208,11 +216,13 @@
         &quot;MetricsEndpointEnabled&quot;: true,
         &quot;MetricsTextEndpointEnabled&quot;: true,
         &quot;PingEndpointEnabled&quot;: true,
+        &quot;EnvironmentInfoEndpointEnabled&quot;: true,
         &quot;OAuth2TrackingEnabled&quot;: true,
         &quot;HealthEndpoint&quot;: &quot;/app-health&quot;,
         &quot;MetricsEndpoint&quot;: &quot;/app-metrics&quot;,
         &quot;MetricsTextEndpoint&quot;: &quot;/app-metrics-text&quot;,
         &quot;PingEndpoint&quot;: &quot;/api-up&quot;,
+        &quot;EnvironmentInfoEndpoint&quot;: &quot;/env&quot;,
         &quot;IgnoredRoutesRegexPatterns&quot;: [ &quot;(?i)^api/test/ignore&quot; ],
         &quot;IgnoredHttpStatusCodes&quot;: [ 404 ]
     }

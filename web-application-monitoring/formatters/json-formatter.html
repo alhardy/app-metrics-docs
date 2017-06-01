@@ -69,17 +69,21 @@
             <article class="content wrap" id="_content" data-uid="">
               <h1 id="aspnet-core-middleware-json-formatting">ASP.NET Core Middleware JSON Formatting</h1>
               
-<p>To serialize metrics and health as JSON when <code>/metrics</code> and <code>/health</code> are requested: </p>
+<p>To serialize metrics, environment information and/or health as JSON when <code>/metrics</code>, <code>/metrics-text</code>, <code>/env</code> and/or <code>/health</code> are requested:</p>
 <ol>
 <li>Add the <a href="https://www.nuget.org/packages/App.Metrics.Formatters.Json/">App.Metrics.Formatters.Json</a> nuget package to your ASP.NET Core web application.</li>
-<li>Configure JSON serailization in your <code>Startup.cs</code></li>
+<li>Configure JSON serialization in your <code>Startup.cs</code></li>
 </ol>
-<pre><code class="lang-csharp" name="Main" highlight-lines="6">public class Startup
+<pre><code class="lang-csharp" name="Main" highlight-lines="6,7,8,9,10">public class Startup
 {
 	public void ConfigureServices(IServiceCollection services)
 	{
 		services.AddMetrics()
-			.AddJsonSerialization()
+			// .AddJsonSerialization() - Enables json format on the /metrics-text, /metrics, /health and /env endpoints.
+			.AddJsonMetricsSerialization() // Enables json format on the /metrics-text endpoint.
+			.AddJsonMetricsTextSerialization() // Enables json format on the /metrics endpoint.
+			.AddJsonHealthSerialization() // Enables json format on the /health endpont.
+			.AddJsonEnvironmentInfoSerialization() // Enables json format on the /env endpont.
 			.AddHealthChecks()
 			.AddMetricsMiddleware();
 
