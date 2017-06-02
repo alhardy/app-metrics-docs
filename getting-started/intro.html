@@ -74,19 +74,21 @@
 <p>App Metrics includes ASP.NET Core middleware which will collect typical metrics related to a web application. See the <a href="../web-application-monitoring/middleware.html">middleware documentation</a> for more details.</p>
 <p>The following steps assume you have already created a <a href="https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc">new ASP.NET Core MVC or API project</a>.</p>
 <h3 id="step-1">Step 1</h3>
-<p>Add the <a href="https://www.nuget.org/packages/App.Metrics/">App.Metrics</a>, <a href="https://www.nuget.org/packages/App.Metrics.Extensions.Middleware/">App.Metrics.Extensions.Middleware</a> and <a href="https://www.nuget.org/packages/App.Metrics.Formatters.Json/">App.Metrics.Formatters.Json</a> nuget packages to your project.</p>
-<pre><code class="lang-console">nuget install App.Metrics
-
-nuget install App.Metrics.Extensions.Middleware
+<p>Add the <a href="https://www.nuget.org/packages/App.Metrics/">App.Metrics</a>, <a href="https://www.nuget.org/packages/App.Metrics.Extensions.Mvc/">App.Metrics.Extensions.Mvc</a> and <a href="https://www.nuget.org/packages/App.Metrics.Formatters.Json/">App.Metrics.Formatters.Json</a> nuget packages to your project.</p>
+<pre><code class="lang-console">nuget install App.Metrics.Extensions.Mvc
 
 nuget install App.Metrics.Formatters.Json
-</code></pre><h3 id="step-2">Step 2</h3>
+</code></pre><div class="TIP"><h5>Tip</h5><p>If implementing a web host without MVC and just middleware, the sample walk through applies however rather than forcing a dependency on AspNet Core MVC packages we can reference the <code>App.Metrics.Extensions.Middleware</code> package.</p>
+</div>
+<h3 id="step-2">Step 2</h3>
 <p>App Metrics is configured using the typical pattern to provide services and configuration to an ASP.NET Core project by adding required services to the <code>ConfigureServices</code> method in the <code>Startup.cs</code></p>
 <p>Modify your <code>Startup.cs</code> with the following:</p>
 <pre><code class="lang-csharp" name="Main">public class Startup
 {
 	public void ConfigureServices(IServiceCollection services)
 	{
+		services.AddMvc(options =&gt; options.AddMetricsResourceFilter());
+		
 		services.AddMetrics()
 			// .AddJsonSerialization() - Enables json format on the /metrics-text, /metrics, /health and /env endpoints.
 			.AddJsonMetricsSerialization() // Enables json format on the /metrics-text endpoint.
@@ -95,13 +97,12 @@ nuget install App.Metrics.Formatters.Json
 			.AddJsonEnvironmentInfoSerialization() // Enables json format on the /env endpont.
 			.AddHealthChecks()
 			.AddMetricsMiddleware();
-
-		services.AddMvc(options =&gt; options.AddMetricsResourceFilter());
 	}
 
 	public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
 	{            
-		app.UseMetrics();
+        app.UseMetrics();
+		app.UseMvc();
 	}
 }
 </code></pre><div class="NOTE"><h5>Note</h5><p>The <code>AddMetricsResourceFilter</code> extension method on <code>MvcOptions</code> is required to allow App Metrics to inspect route template information to tag metrics.</p>
@@ -164,7 +165,7 @@ nuget install App.Metrics.Extensions.Reporting.Console
                     
         var reporterFactory = provider.GetRequiredService&lt;IReportFactory&gt;();
         var reporter = reporterFactory.CreateReporter();
-        // Will continue to run for the confgured report internal
+        // Will continue to run for the configured report internal
         reporter.RunReports(metrics);           
 
         Console.ReadKey();
@@ -177,10 +178,12 @@ nuget install App.Metrics.Extensions.Reporting.Console
             .AddHealthChecks()
             .AddReporting(factory =&gt;
             {                    
-                factory.AddConsole(new ConsoleReporterSettings
-                {
-                    ReportInterval = TimeSpan.FromSeconds(10),                        
-                });
+                factory.AddConsole(
+                    new ConsoleReporterSettings
+                    {
+                        ReportInterval = TimeSpan.FromSeconds(20),
+                    },                    
+                    new AsciiMetricPayloadBuilder());
             });
     }
 

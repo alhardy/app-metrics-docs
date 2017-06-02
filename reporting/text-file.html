@@ -71,22 +71,22 @@
               
 <p>The <a href="https://www.nuget.org/packages/App.Metrics.Extensions.Reporting.TextFile/">App.Metrics.Extensions.Reporting.TextFile</a> nuget package is an App Metrics report provider which will output metrics to a text file at a specified interval.</p>
 <ol>
-<li><p>First see the <a href="../getting-started/intro.html">getting started</a> guide.</p>
-</li>
-<li><p>Configure the text file reporter as follows:</p>
-</li>
+<li>First see the <a href="../getting-started/intro.html">getting started</a> guide.</li>
+<li>Configure the text file reporter as follows:</li>
 </ol>
 <pre><code class="lang-csharp" name="Main">.AddReporting(factory =&gt;
 {
-    var textFileSettings = new TextFileReporterSettings
-    {
-        ReportInterval = TimeSpan.FromSeconds(30),
-        FileName = @&quot;C:\metrics\aspnet-sample.txt&quot;
-    };
-
-    factory.AddTextFile(textFileSettings);
+    factory.AddTextFile(
+        new TextFileReporterSettings
+        {
+            ReportInterval = TimeSpan.FromSeconds(5),
+            FileName = @&quot;C:\metrics\sample.txt&quot;
+        },
+        new AsciiMetricPayloadBuilder());
 })
-</code></pre>
+</code></pre><div class="TIP"><h5>Tip</h5><p>The example above is using the <code>AsciiMetricPayloadBuilder</code>, this can be substituted with with any of the InfluxDB, Elasticsearch, Prometheus, Graphite, App Metrics JSON, or a custom payload builder.</p>
+</div>
+
             </article>
           </div>
           

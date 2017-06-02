@@ -71,10 +71,8 @@
               
 <p>Metrics can be reported to <a href="https://www.influxdata.com/products/open-source/#influxdb">InfluxDB</a> using the <a href="https://www.nuget.org/packages/App.Metrics.Extensions.Reporting.InfluxDB/">App.Metrics.Extensions.Reporting.InfluxDB</a> nuget package.</p>
 <ol>
-<li><p>First see the <a href="../getting-started/intro.html">getting started</a> guide.</p>
-</li>
-<li><p>Configure the InfluxDB reporter as follows:</p>
-</li>
+<li>First see the <a href="../getting-started/intro.html">getting started</a> guide.</li>
+<li>Configure the InfluxDB reporter as follows:</li>
 </ol>
 <pre><code class="lang-csharp" name="Main">.AddReporting(factory =&gt;
 {
@@ -90,7 +88,7 @@
         ReportInterval = TimeSpan.FromSeconds(5)
     });
 })
-</code></pre><h3 id="web-monitoring">Web Monitoring</h3>
+</code></pre><h2 id="web-monitoring">Web Monitoring</h2>
 <p>See the <a href="../web-application-monitoring/visualization-grafana.html"><strong>generic Grafana web dashboards</strong></a> provided.</p>
 
             </article>

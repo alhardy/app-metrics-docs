@@ -71,12 +71,10 @@
               
 <p>The <a href="https://www.nuget.org/packages/App.Metrics.Extensions.Reporting.Console/">App.Metrics.Extensions.Reporting.Console</a> nuget package is an App Metrics report provider which will output metrics to a console at a specified interval.</p>
 <ol>
-<li><p>First see the <a href="../getting-started/intro.html">getting started</a> guide.</p>
-</li>
-<li><p>Configure the console reporter as follows:</p>
-</li>
+<li>First see the <a href="../getting-started/intro.html">getting started</a> guide.</li>
+<li>Configure the console reporter as follows:</li>
 </ol>
-<pre><code class="lang-csharp" name="Main" highlight-lines="30,31,32,33,18">public class Host
+<pre><code class="lang-csharp" name="Main" highlight-lines="29,30,31,32,33,34,35,36,37">public class Host
 { 
     public static void Main()
     {
@@ -93,7 +91,7 @@
                     
         var reporterFactory = provider.GetRequiredService&lt;IReportFactory&gt;();
         var reporter = reporterFactory.CreateReporter();
-        // Will continue to run for the confgured report internal
+        // Will continue to run for the configured report internal
         reporter.RunReports(metrics);           
 
         Console.ReadKey();
@@ -106,10 +104,12 @@
             .AddHealthChecks()
             .AddReporting(factory =&gt;
             {                    
-                factory.AddConsole(new ConsoleReporterSettings
-                {
-                    ReportInterval = TimeSpan.FromSeconds(10),                        
-                });
+                factory.AddConsole(
+                    new ConsoleReporterSettings
+                    {
+                        ReportInterval = TimeSpan.FromSeconds(20),
+                    },                    
+                    new AsciiMetricPayloadBuilder());
             });
     }
 
@@ -121,7 +121,9 @@
         services.AddLogging();            
     }       
 } 
-</code></pre>
+</code></pre><div class="TIP"><h5>Tip</h5><p>The example above is using the <code>AsciiMetricPayloadBuilder</code>, this can be substituted with with any of the InfluxDB, Elasticsearch, Prometheus, Graphite, App Metrics JSON, or a custom payload builder.</p>
+</div>
+
             </article>
           </div>
           

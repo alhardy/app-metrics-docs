@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Prometheus Reporter </title>
+    <title>HTTP Reporter </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Prometheus Reporter ">
+    <meta name="title" content="HTTP Reporter ">
     <meta name="generator" content="docfx 2.16.2.2">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,16 +67,36 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-              <h1 id="prometheus-reporter">Prometheus Reporter</h1>
+              <h1 id="http-reporter">HTTP Reporter</h1>
               
-<p><a href="https://prometheus.io/">Prometheus</a> promotes a <em>Pull</em> based approach rather than <em>Push</em>, therefore App Metrics does not include a reporter to push metrics, but rather supports formatting metric data in Prometheus format.</p>
-<p>Prometheus formatting is provided by the <a href="https://www.nuget.org/packages/App.Metrics.Formatters.Prometheus">App.Metrics.Formatters.Prometheus</a> nuget package, when configured the <code>/metrics</code> endpoint will serve metrics in Prometheus format for collection.</p>
+<p>Metrics can be reported to a custom http endpoint using the <a href="https://www.nuget.org/packages/App.Metrics.Extensions.Reporting.Http/">App.Metrics.Extensions.Reporting.Http</a> nuget package.</p>
 <ol>
 <li>First see the <a href="../getting-started/intro.html">getting started</a> guide.</li>
-<li>Configure Prometheus formatting as explained in the <a href="../web-application-monitoring/formatters/prometheus-formatter.html">formatter documentation</a></li>
+<li>Configure the HTTP reporter as follows:</li>
 </ol>
-<h2 id="web-monitoring">Web Monitoring</h2>
-<p>See the <a href="../web-application-monitoring/visualization-grafana.html"><strong>generic Grafana web dashboards</strong></a> provided.</p>
+<pre><code class="lang-csharp" name="Main">.AddReporting(factory =&gt;
+{
+    factory.AddHttp(
+        new HttpReporterSettings
+        {
+            // Set the endpoint where metrics should be posted
+            HttpSettings = new HttpSettings(new Uri(&quot;http://localhost/metrics-receive&quot;)),
+            ReportInterval = TimeSpan.FromSeconds(5),
+            HttpPolicy = new HttpPolicy
+                        {                            
+                            // The number of http failures to cause a backoff in reporting
+                            FailuresBeforeBackoff = 5, 
+                            // Duration to backoff if the number of http failures have been reached
+                            BackoffPeriod = TimeSpan.FromSeconds(30), 
+                            // Timeout of the underlaying HTTP call
+                            Timeout = TimeSpan.FromSeconds(3) 
+                        }
+        },
+        // Formats the metrics before sending over HTTP
+        new AsciiMetricPayloadBuilder());
+})
+</code></pre><div class="TIP"><h5>Tip</h5><p>The example above is using the <code>AsciiMetricPayloadBuilder</code>, this can be substituted with with any of the InfluxDB, Elasticsearch, Prometheus, Graphite, App Metrics JSON, or a custom payload builder.</p>
+</div>
 
             </article>
           </div>
@@ -86,7 +106,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/alhardy/AppMetrics.DocFx/blob/master/reporting/prometheus.md/#L1" class="contribution-link">Edit this Doc</a>
+                    <a href="https://github.com/alhardy/AppMetrics.DocFx/blob/master/reporting/http.md/#L1" class="contribution-link">Edit this Doc</a>
                   </li>
                 </ul>
               </div>
