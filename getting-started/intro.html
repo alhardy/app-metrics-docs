@@ -78,7 +78,7 @@
 <pre><code class="lang-console">nuget install App.Metrics.Extensions.Mvc
 
 nuget install App.Metrics.Formatters.Json
-</code></pre><div class="TIP"><h5>Tip</h5><p>If implementing a web host without MVC and just middleware, the sample walk through applies however rather than forcing a dependency on AspNet Core MVC packages we can reference the <code>App.Metrics.Extensions.Middleware</code> package.</p>
+</code></pre><div class="TIP"><h5>Tip</h5><p>If implementing a web host without MVC and just middleware, this walk-through applies however rather than forcing a dependency on AspNet Core MVC packages we can reference the <code>App.Metrics.Extensions.Middleware</code> package instead.</p>
 </div>
 <h3 id="step-2">Step 2</h3>
 <p>App Metrics is configured using the typical pattern to provide services and configuration to an ASP.NET Core project by adding required services to the <code>ConfigureServices</code> method in the <code>Startup.cs</code></p>
@@ -123,15 +123,19 @@ nuget install App.Metrics.Formatters.Json
 </tr>
 <tr>
 <td><code>/metrics</code></td>
-<td style="text-align:left">Renders all metrics using the configured <code>IMetricsDataSerializer</code>, in our case in json format.</td>
+<td style="text-align:left">Exposes all metrics using the configured metrics formatting.</td>
 </tr>
 <tr>
 <td><code>/metrics-text</code></td>
-<td style="text-align:left">Renders a Humannized version of the metric data captured by the application.</td>
+<td style="text-align:left">Exposes all metrics using the configured text formatting.</td>
 </tr>
 <tr>
 <td><code>/health</code></td>
-<td style="text-align:left">Executes all health checks registered to determine the health status of the application.</td>
+<td style="text-align:left">Executes all health checks registered to determine the healthiness of the application.</td>
+</tr>
+<tr>
+<td><code>/env</code></td>
+<td style="text-align:left">Exposes environment information about the application e.g. OS, Machine Name, Assembly Name, Assembly Version etc.</td>
 </tr>
 </tbody>
 </table>

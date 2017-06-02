@@ -74,11 +74,11 @@
 <p>The <code>App.Metrics.Extensions.Middleware</code> package provides a set of ASP.NET Core middleware components which will measure metrics such as request rates, errors rates and percentages, OAuth2 client tracking etc by simply installing the package and required startup configuration.</p>
 <p>The package also provides various endpoints to a web application:</p>
 <ul>
-<li><code>/metrics</code> - Exposes all metrics as JSON or Protobuf for example.</li>
+<li><code>/metrics</code> - Exposes all metrics using the configured metrics formatting.</li>
 <li><code>/health</code> - Executes all health checks registered to determine the healthiness of the application.</li>
 <li><code>/ping</code> - Used to determine if you can get a successful pont response, useful for load balancers.</li>
-<li><code>/metrics-text</code> - Returns a plain-text version of the <code>/metrics</code> endpoint.</li>
-<li><code>/env</code> - Returns environment information about the application e.g. OS, Machine Name, Assembly Name, Assembly Version etc.</li>
+<li><code>/metrics-text</code> - Exposes all metrics using the configured text formatting.</li>
+<li><code>/env</code> - Exposes environment information about the application e.g. OS, Machine Name, Assembly Name, Assembly Version etc.</li>
 </ul>
 <pre><code class="lang-console">nuget install App.Metrics.Extensions.Middleware
 </code></pre><h2 id="appmetricsextensionsmvc">App.Metrics.Extensions.Mvc</h2>
