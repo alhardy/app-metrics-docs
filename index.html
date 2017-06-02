@@ -62,23 +62,26 @@
             <article class="content wrap" id="_content" data-uid="">
               <h1 id="what-is-app-metrics">What is App Metrics?</h1>
               
-<p>App Metrics is an open-source and cross-platform .NET library used to record metrics within an application. App Metrics can run on .NET Core or on the full .NET framework also supporting .NET 4.5.2. </p>
-<p>App Metrics abstracts away the underlaying repository of your Metrics for example InfluxDB, Graphite, Elasticsearch etc, by sampling and aggregating in memory and providing extensibility points to flush metrics to a repository at a specified interval. </p>
+<p>App Metrics is an open-source and cross-platform .NET library used to record metrics within an application. App Metrics can run on .NET Core or on the full .NET framework also supporting .NET 4.5.2.</p>
+<p>App Metrics abstracts away the underlying repository of your Metrics for example InfluxDB, Prometheus, Graphite, Elasticsearch etc, by sampling and aggregating in memory and providing extensibility points to flush metrics to a repository at a specified interval.</p>
 <p>App Metrics provides various metric types to measure things such as the rate of requests, counting the number of user logins over time, measure the time taken to execute a database query, measure the amount of free memory and so on. <a href="getting-started/metric-types/overview.html">Metrics types</a> supported are Apdex, Gauges, Counters, Meters, Histograms and Timers.</p>
 <p>App Metrics also provides a health checking system allowing you to monitor the health of your application through user defined checks.</p>
-<h1 id="whats-the-performance-overhead">What&#39;s the Performance Overhead?</h1>
-<p>The performance overhead in terms of processing is minimal, see the <a href="https://github.com/alhardy/AppMetrics/tree/master/benchmarks/App.Metrics.Benchmarks.Runner/BenchmarkDotNet.Artifacts/results">benchmark results</a> for the overhead on recording metrics.</p>
-<p>The memory overhead is also minimal, but will depend on the number of metrics your&#39;re tracking. However even with a very large number of metrics the memory overhead is still minimal. Histograms consume the most memory in terms of metric types as they keep a stream of data in memory to measure the statistical distribution of values, although App Metrics uses <a href="getting-started/sampling/index.html">Reservoir Sampling</a> to work around this which allows us to maitain a small, manageable reservoir representing the entire data stream.</p>
-<h1 id="why-build-app-metrics">Why build App Metrics?</h1>
-<p>App Metrics was built to provide an easy way to capture the desired metrics within an application whilst having minimal impact on the performance of your application, and allowing these metrics to be reported to the desired respository through the library&#39;s reporting capabilities.</p>
-<p>There are many open-source time series databases and payed monitoring solutions out there each with their own pros and cons, App Metrics provides your application the ability to capture metrics and then easily swap out the underlying metric repository or report to multiple repositories with little effort.</p>
 <p>With App Metrics you can:</p>
 <ul>
 <li>Capture application metrics within any type of .NET application e.g. Windows Service, MVC Site, Web API etc</li>
 <li>Automatically measure the performance and error of each endpoint in an MVC or Web API project</li>
 <li>When securing an API with OAuth2, automatically measure the request rate and error rate per client</li>
 <li>Choose where to persist captured metrics and the dashboard you wish to use to visualize these metrics</li>
+<li>Support Push and Pull based metrics collection via TSDB specific reporting extensions and exposing metrics in the required format over http</li>
+<li>Support pushing metrics to a custom HTTP endpoint in the required format</li>
+<li>Support writing metrics to file in the required format for collection by a metrics agent</li>
 </ul>
+<h2 id="whats-the-performance-overhead">What&#39;s the Performance Overhead?</h2>
+<p>The performance overhead in terms of processing is minimal, see the <a href="https://github.com/alhardy/AppMetrics/tree/master/benchmarks/App.Metrics.Benchmarks.Runner/BenchmarkDotNet.Artifacts/results">benchmark results</a> for the overhead on recording metrics.</p>
+<p>The memory overhead is also minimal, but will depend on the number of metrics you&#39;re tracking. However even with a very large number of metrics the memory overhead is still minimal. Histograms consume the most memory in terms of metric types as they keep a stream of data in memory to measure the statistical distribution of values, although App Metrics uses <a href="getting-started/sampling/index.html">Reservoir Sampling</a> to work around this which allows us to maintain a small, manageable reservoir representing the entire data stream.</p>
+<h2 id="why-build-app-metrics">Why build App Metrics?</h2>
+<p>App Metrics was built to provide an easy way to capture the desired metrics within an application whilst having minimal impact on the performance of your application, and allowing these metrics to be reported to the desired repository through the library&#39;s reporting capabilities.</p>
+<p>There are many open-source time series databases and payed monitoring solutions out there each with their own pros and cons, App Metrics provides your application the ability to capture metrics and then easily swap out the underlying metric repository or report to multiple repositories with little effort.</p>
 
             </article>
           </div>
