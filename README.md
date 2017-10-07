@@ -5,4 +5,4 @@ Documentation should not be edited here, to contribute see the [AppMetrics.DocFx
 
 # App Metrics 2.0 Documentation Site
 
-Is now using Hugo for site generation, you can find the source [here](https://github.com/AppMetrics/Docs.V2.Hugo). This repo no longer hosts the documentation site, it has moved to netlify.
+Now using Hugo for site generation, you can find the source [here](https://github.com/AppMetrics/Docs.V2.Hugo). This repo no longer hosts the documentation site, it has moved to netlify.
